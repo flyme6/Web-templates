@@ -1,0 +1,811 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/gallery.css" rel="stylesheet" type="text/css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script src="js/jquery.min.js"></script>
+<script src="js/hover_pack.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+   <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			
+			},
+			
+			hoverEffect: function () {
+			
+				// Simple parallax effect
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+</head>
+<body>
+     <div class="header-top">
+  	    <div class="wrap">
+	  		<div class="logo">
+				<ul>
+					<li><a href="index.html"><img src="images/logo.png" alt=""></a></li> &nbsp;&nbsp;&nbsp;
+					<li class="line"> | &nbsp;&nbsp;&nbsp;I'am Your tag line</li>
+					<div class="clear"> </div>
+				</ul>
+			</div>
+	  		<div class="menu">
+				<a class="toggleMenu" href="#"><img src="images/nav_icon.png" alt="" /> </a>
+				<ul class="nav" id="nav">
+				  <li class="current"><a href="#home">Home</a></li>
+				  <li><a href="#features">Features</a></li>
+				  <li><a href="#works">Works</a></li>
+				  <li><a href="#team">Team</a></li>
+				  <li><a href="#contact">Contact</a></li>								
+				  <div class="clear"></div>
+				</ul>
+				<script type="text/javascript" src="js/responsive-nav.js"></script>
+			</div>							
+	  		<div class="clear"></div>
+	  	</div>
+	  </div>
+	  <div class="slider_left" id="home"> 
+		   	<div class="wmuSlider example1">
+			   <div class="wmuSliderWrapper">
+				   <article style="position: absolute; width: 100%; opacity: 0;"> 
+				   	<div class="slider_text">
+				   	  <h1>Meet <span class="head">Brandi!</span></h1>
+				   	  <h2><span class="green">/Creative</span> one page template.</h2>
+				   	  <div class="m_1"><span class="left_line"> </span> <p>We are a team of professionals</p><span class="right_line"> </span></div>
+				   	  <div class="social">	
+						   <ul>	
+						   	  <li class="twitter" title="twitter"><a href="#"><span> </span></a></li>
+							  <li class="facebook" title="facebook"><a href="#"><span> </span></a></li>
+							  <li class="google" title="google+"><a href="#"><span> </span></a></li>
+							  <li class="dribble" title="dribble"><a href="#"><span> </span></a></li>			
+						   </ul>
+			   		   </div>
+		            </div>
+				   </article>
+				   <article style="position: relative; width: 100%; opacity: 1;"> 
+				   	<div class="slider_text">
+				   	  <h1>Lorem<span class="head"> dolor!</span></h1>
+				   	  <h2><span class="green">/tincidu</span> one page template.</h2>
+				   	  <div class="m_1"><span class="left_line"> </span> <p>augue duis dolore te feugait</p><span class="right_line"> </span></div>
+				   	     <div class="social">	
+						   <ul>	
+						   	  <li class="twitter" title="twitter"><a href="#"><span> </span></a></li>
+							  <li class="facebook" title="facebook"><a href="#"><span> </span></a></li>
+							  <li class="google" title="google+"><a href="#"><span> </span></a></li>
+							  <li class="dribble" title="dribble"><a href="#"><span> </span></a></li>			
+						   </ul>
+			   		   </div>
+		            </div>
+				   </article>
+				    <article style="position: absolute; width: 100%; opacity: 0;"> 
+				    <div class="slider_text">
+				   	  <h1>quod <span class="head">mazim !</span></h1>
+				   	  <h2><span class="green">/Creative</span> one page template.</h2>
+				   	  <div class="m_1"><span class="left_line"> </span> <p>We are a team of professionals</p><span class="right_line"> </span></div>
+				   	    <div class="social">	
+						   <ul>	
+						   	  <li class="twitter"><a href="#"><span> </span></a></li>
+							  <li class="facebook"><a href="#"><span> </span></a></li>
+							  <li class="google"><a href="#"><span> </span></a></li>
+							  <li class="dribble"><a href="#"><span> </span></a></li>			
+						   </ul>
+			   		   </div>
+		            </div>
+				   </article>
+				 </div>
+                <ul class="wmuSliderPagination">
+                	<li><a href="#" class="">0</a></li>
+                	<li><a href="#" class="">1</a></li>
+                	<li><a href="#" class="">2</a></li>
+                </ul>
+             </div>
+            	 <script src="js/jquery.wmuSlider.js"></script> 
+				       <script>
+       						 $('.example1').wmuSlider();         
+   						</script> 	
+   	    </div>     
+   	    <div class="test-monials-grids" id="features">
+	       <div class="wrap">
+			<h3 class="m_2">Features</h3>	
+			<div class="m_3"><span class="left_line1"> </span><img src="images/heart.png" alt=""/><span class="right_line1"> </span></div>
+			  <div class="gallery autoplay items-3">
+			    <div id="item-1" class="control-operator"></div>
+			    <div id="item-2" class="control-operator"></div>
+			    <div id="item-3" class="control-operator"></div>
+				<figure class="item">
+			         <div class="box1">
+							<div class="col_1_of_3 span_1_of_3">
+								<ul class="icon1">
+									<li><i class="feather"> </i>
+										<div class="desc">
+											<h4>Branding</h4>
+											<p>soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum. </p>
+										</div>
+										<div class="clear"></div>
+									</li>
+								</ul>
+							</div>
+							<div class="col_1_of_3 span_1_of_3">
+								<ul class="icon1">
+									<li><i class="pencil"> </i>
+										<div class="desc">
+											<h4>Development</h4>
+											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim </p>
+										</div>
+										<div class="clear"></div>
+									</li>
+								</ul>
+							</div>
+							<div class="col_1_of_3 span_1_of_3">
+								<ul class="icon1">
+									<li><i class="megaphone"> </i>
+										<div class="desc">
+											<h4>Consulting</h4>
+											<p>claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. </p>
+										</div>
+										<div class="clear"></div>
+									</li>
+								</ul>
+							</div>
+							<div class="clear"></div>
+						</div>
+			    </figure>
+				<figure class="item">
+			      <div class="box1">
+							<div class="col_1_of_3 span_1_of_3">
+								<ul class="icon1">
+									<li><i class="megaphone"> </i>
+										<div class="desc">
+											<h4>Consulting</h4>
+											<p>soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. </p>
+										</div>
+										<div class="clear"></div>
+									</li>
+								</ul>
+							</div>
+							<div class="col_1_of_3 span_1_of_3">
+								<ul class="icon1">
+									<li><i class="feather"> </i>
+										<div class="desc">
+											<h4>Branding</h4>
+											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam </p>
+										</div>
+										<div class="clear"></div>
+									</li>
+								</ul>
+							</div>
+							<div class="col_1_of_3 span_1_of_3">
+								<ul class="icon1">
+									<li><i class="pencil"> </i>
+										<div class="desc">
+											<h4>Development</h4>
+											<p>claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. </p>
+										</div>
+										<div class="clear"></div>
+									</li>
+								</ul>
+							</div>
+							<div class="clear"></div>
+						</div>
+			    </figure>
+				<figure class="item">
+			      <div class="box1">
+							<div class="col_1_of_3 span_1_of_3">
+								<ul class="icon1">
+									<li><i class="pencil"> </i>
+										<div class="desc">
+											<h4>Branding</h4>
+											<p>soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. </p>
+										</div>
+										<div class="clear"></div>
+									</li>
+								</ul>
+							</div>
+							<div class="col_1_of_3 span_1_of_3">
+								<ul class="icon1">
+									<li><i class="megaphone"> </i>
+										<div class="desc">
+											<h4>Development</h4>
+											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam </p>
+										</div>
+										<div class="clear"></div>
+									</li>
+								</ul>
+							</div>
+							<div class="col_1_of_3 span_1_of_3">
+								<ul class="icon1">
+									<li><i class="feather"> </i>
+										<div class="desc">
+											<h4>Consulting</h4>
+											<p>claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. </p>
+										</div>
+										<div class="clear"></div>
+									</li>
+								</ul>
+							</div>
+							<div class="clear"></div>
+						</div>
+			    </figure>
+				<div class="controls">
+			      <a href="#item-1" class="control-button"> </a>
+			      <a href="#item-2" class="control-button"> </a>
+			      <a href="#item-3" class="control-button"> </a>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	  <div class="works" id="works">
+		 <h3 class="m_2">Works</h3>	
+			<div class="m_3"><span class="left_line1"> </span><img src="images/heart.png" alt=""/><span class="right_line1"> </span></div>
+			<p class="m_5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna<br> aliquam erat volutpat. Ut wisi enim ad minim veniam,.</p>
+				<div class="container"> 
+					<ul id="filters" class="clearfix">
+						<li><span class="filter active" data-filter="app card icon logo web">All</span></li>
+						<li><span class="filter" data-filter="app">Branding</span></li>
+						<li><span class="filter" data-filter="card">Web</span></li>
+						<li><span class="filter" data-filter="icon">Logo Design</span></li>
+						<li><span class="filter" data-filter="logo">Photography</span></li>
+					</ul>
+					<div id="portfoliolist">
+					<div class="portfolio logo1 mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/pic1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png" alt=""/></h2>
+						  	<p class="b-animate b-from-right    b-delay03 ">Lorem ipsum dolor sit amet.<br><span class="m_4">Photography</span></p></div></a>
+		                </div>
+					</div>				
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/pic2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png" alt=""/></h2>
+						  	<p class="b-animate b-from-right    b-delay03 ">Lorem ipsum dolor sit amet.<br><span class="m_4">Photography</span></p></div></a>
+		                </div>
+					</div>		
+					<div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/pic9.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png" alt=""/></h2>
+						  	<p class="b-animate b-from-right    b-delay03 ">Lorem ipsum dolor sit amet.<br><span class="m_4">Photography</span></p></div></a>
+		                </div>
+					</div>				
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/pic3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png" alt=""/></h2>
+						  	<p class="b-animate b-from-right    b-delay03 ">Lorem ipsum dolor sit amet.<br><span class="m_4">Photography</span></p></div></a>
+		                </div>
+					</div>	
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/pic4.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png" alt=""/></h2>
+						  	<p class="b-animate b-from-right    b-delay03 ">Lorem ipsum dolor sit amet.<br><span class="m_4">Photography</span></p></div></a>
+		                </div>
+					</div>			
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/pic8.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png" alt=""/></h2>
+						  	<p class="b-animate b-from-right    b-delay03 ">Lorem ipsum dolor sit amet.<br><span class="m_4">Photography</span></p></div></a>
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/pic5.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png" alt=""/></h2>
+						  	<p class="b-animate b-from-right    b-delay03 ">Lorem ipsum dolor sit amet.<br><span class="m_4">Photography</span></p></div></a>
+		                </div>
+					</div>	
+					<div class="portfolio logo1 mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/pic6.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png" alt=""/></h2>
+						  	<p class="b-animate b-from-right    b-delay03 ">Lorem ipsum dolor sit amet.<br><span class="m_4">Photography</span></p></div></a>
+		                </div>
+					</div>																																							
+				</div>
+		  </div><!-- container -->
+	   </div>
+	<div class="team" id="team">
+	   <h3 class="m_2">Meet Our Team</h3>	
+	   <div class="m_3"><span class="left_line1"> </span><img src="images/heart.png" alt=""/><span class="right_line1"> </span></div>	
+	   <p class="m_5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna<br> aliquam erat volutpat. Ut wisi enim ad minim veniam,.</p>
+	  <div class="wrap">
+		 <div class="gallery items-3">
+		    <div id="no-autoplay-1" class="control-operator"></div>
+		    <div id="no-autoplay-2" class="control-operator"></div>
+		    <div id="no-autoplay-3" class="control-operator"></div>
+		    <figure class="item">
+		         <div class="team_box">
+						<div class="col_1_of_4 span_1_of_4"><a href="#">
+						   <div class="view view-fifth">
+		                    <img src="images/pic10.jpg" />
+		                     <div class="mask">
+		                        <h2>augue duis dolore te feugait nulla facilisi.</h2>
+		                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+		                        <div class="social_hover">	
+								   <ul>	
+									  <li class="fb"><a href="#"><span> </span></a></li>
+									  <li class="tw"><a href="#"><span> </span></a></li>
+									  <li class="g1"><a href="#"><span> </span></a></li>		
+								   </ul>
+					   			</div>
+		                     </div>
+		                   </div>
+		                   </a> 
+						  <div class="clear"></div>
+						  <div class="grid_desc">
+		                    	<h4><a href="#">nostrud exerc</a></h4>
+		                    	<p>UI Designer</p>
+		                    </div>
+						</div>
+						<div class="col_1_of_4 span_1_of_4"><a href="#">
+						   <div class="view view-fifth">
+		                    <img src="images/pic11.jpg" />
+		                    <div class="mask">
+		                        <h2>augue duis dolore te feugait nulla facilisi.</h2>
+		                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+		                        <div class="social_hover">	
+								   <ul>	
+									  <li class="fb"><a href="#"><span> </span></a></li>
+									  <li class="tw"><a href="#"><span> </span></a></li>
+									  <li class="g1"><a href="#"><span> </span></a></li>		
+								   </ul>
+					   			</div>
+		                    </div>
+		                   </div>
+						  </a> 
+						  <div class="clear"></div>
+						  <div class="grid_desc">
+		                    	<h4><a href="#">augue duis</a></h4>
+		                    	<p>Web Designer</p>
+		                    </div>
+						</div>
+						<div class="col_1_of_4 span_1_of_4"><a href="#">
+						   <div class="view view-fifth">
+		                    <img src="images/pic12.jpg" />
+		                    <div class="mask">
+		                        <h2>augue duis dolore te feugait nulla facilisi.</h2>
+		                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+		                        <div class="social_hover">	
+								   <ul>	
+									  <li class="fb"><a href="#"><span> </span></a></li>
+									  <li class="tw"><a href="#"><span> </span></a></li>
+									  <li class="g1"><a href="#"><span> </span></a></li>		
+								   </ul>
+					   			</div>
+		                    </div>
+		                   </div>
+						  </a> 
+						  <div class="clear"></div>
+						  <div class="grid_desc">
+		                    	<h4><a href="#">quod mazim</a></h4>
+		                    	<p>UI Designer</p>
+		                    </div>
+						</div>
+						<div class="col_1_of_4 span_1_of_4"><a href="#">
+						   <div class="view view-fifth">
+		                    <img src="images/pic13.jpg" />
+		                    <div class="mask">
+		                        <h2>augue duis dolore te feugait nulla facilisi.</h2>
+		                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+		                        <div class="social_hover">	
+								   <ul>	
+									  <li class="fb"><a href="#"><span> </span></a></li>
+									  <li class="tw"><a href="#"><span> </span></a></li>
+									  <li class="g1"><a href="#"><span> </span></a></li>		
+								   </ul>
+					   			</div>
+		                    </div>
+		                   </div>
+						  </a> 
+						  <div class="clear"></div>
+						  <div class="grid_desc">
+		                    	<h4><a href="#">Eodem modo</a></h4>
+		                    	<p>Web Designer</p>
+		                    </div>
+						</div>
+						<div class="clear"></div>
+				   </div>
+		    </figure>
+		    <figure class="item">
+		      <div class="team_box">
+						<div class="col_1_of_4 span_1_of_4"><a href="#">
+						   <div class="view view-fifth">
+		                    <img src="images/pic13.jpg" />
+		                    <div class="mask">
+		                        <h2>augue duis dolore te feugait nulla facilisi.</h2>
+		                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+		                        <div class="social_hover">	
+								   <ul>	
+									  <li class="fb"><a href="#"><span> </span></a></li>
+									  <li class="tw"><a href="#"><span> </span></a></li>
+									  <li class="g1"><a href="#"><span> </span></a></li>		
+								   </ul>
+					   			</div>
+		                    </div>
+		                   </div>
+						  </a> 
+						  <div class="clear"></div>
+						  <div class="grid_desc">
+		                    	<h4><a href="#">nostrud exerc</a></h4>
+		                    	<p>UI Designer</p>
+		                    </div>
+						</div>
+						<div class="col_1_of_4 span_1_of_4"><a href="#">
+						   <div class="view view-fifth">
+		                    <img src="images/pic12.jpg" />
+		                    <div class="mask">
+		                        <h2>augue duis dolore te feugait nulla facilisi.</h2>
+		                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+		                        <div class="social_hover">	
+								   <ul>	
+									  <li class="fb"><a href="#"><span> </span></a></li>
+									  <li class="tw"><a href="#"><span> </span></a></li>
+									  <li class="g1"><a href="#"><span> </span></a></li>		
+								   </ul>
+					   			</div>
+		                    </div>
+		                   </div>
+						  </a> 
+						   <div class="clear"></div>
+						  <div class="grid_desc">
+		                    	<h4><a href="#">Eodem modo</a></h4>
+		                    	<p>Web Designer</p>
+		                    </div>
+						</div>
+						<div class="col_1_of_4 span_1_of_4"><a href="#">
+						   <div class="view view-fifth">
+		                    <img src="images/pic11.jpg" />
+		                    <div class="mask">
+		                        <h2>augue duis dolore te feugait nulla facilisi.</h2>
+		                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+		                        <div class="social_hover">	
+								   <ul>	
+									  <li class="fb"><a href="#"><span> </span></a></li>
+									  <li class="tw"><a href="#"><span> </span></a></li>
+									  <li class="g1"><a href="#"><span> </span></a></li>		
+								   </ul>
+					   			</div>
+		                    </div>
+		                   </div>
+						  </a> 
+						   <div class="clear"></div>
+						  <div class="grid_desc">
+		                    	<h4><a href="#">Eodem modo</a></h4>
+		                    	<p>Web Designer</p>
+		                    </div>
+						</div>
+						<div class="col_1_of_4 span_1_of_4"><a href="#">
+						   <div class="view view-fifth">
+		                    <img src="images/pic10.jpg" />
+		                    <div class="mask">
+		                        <h2>augue duis dolore te feugait nulla facilisi.</h2>
+		                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+		                        <div class="social_hover">	
+								   <ul>	
+									  <li class="fb"><a href="#"><span> </span></a></li>
+									  <li class="tw"><a href="#"><span> </span></a></li>
+									  <li class="g1"><a href="#"><span> </span></a></li>		
+								   </ul>
+					   			</div>
+		                    </div>
+		                   </div>
+						  </a> 
+						   <div class="clear"></div>
+						  <div class="grid_desc">
+		                    	<h4><a href="#">Eodem modo</a></h4>
+		                    	<p>Web Designer</p>
+		                    </div>
+						</div>
+						<div class="clear"></div>
+				   </div>
+		    </figure>
+		    <figure class="item">
+		      <div class="team_box">
+						<div class="col_1_of_4 span_1_of_4"><a href="#">
+						   <div class="view view-fifth">
+		                    <img src="images/pic10.jpg" />
+		                    <div class="mask">
+		                        <h2>augue duis dolore te feugait nulla facilisi.</h2>
+		                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+		                        <div class="social_hover">	
+								   <ul>	
+									  <li class="fb"><a href="#"><span> </span></a></li>
+									  <li class="tw"><a href="#"><span> </span></a></li>
+									  <li class="g1"><a href="#"><span> </span></a></li>		
+								   </ul>
+					   			</div>
+		                    </div>
+		                   </div>
+						  </a> 
+						   <div class="clear"></div>
+						  <div class="grid_desc">
+		                    	<h4><a href="#">Eodem modo</a></h4>
+		                    	<p>Web Designer</p>
+		                    </div>
+						</div>
+						<div class="col_1_of_4 span_1_of_4"><a href="#">
+						   <div class="view view-fifth">
+		                    <img src="images/pic11.jpg" />
+		                    <div class="mask">
+		                        <h2>augue duis dolore te feugait nulla facilisi.</h2>
+		                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+		                        <div class="social_hover">	
+								   <ul>	
+									  <li class="fb"><a href="#"><span> </span></a></li>
+									  <li class="tw"><a href="#"><span> </span></a></li>
+									  <li class="g1"><a href="#"><span> </span></a></li>		
+								   </ul>
+					   			</div>
+		                    </div>
+		                   </div>
+						  </a> 
+						   <div class="clear"></div>
+						  <div class="grid_desc">
+		                    	<h4><a href="#">Eodem modo</a></h4>
+		                    	<p>Web Designer</p>
+		                    </div>
+						</div>
+						<div class="col_1_of_4 span_1_of_4"><a href="#">
+						   <div class="view view-fifth">
+		                    <img src="images/pic12.jpg" />
+		                    <div class="mask">
+		                        <h2>augue duis dolore te feugait nulla facilisi.</h2>
+		                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+		                        <div class="social_hover">	
+								   <ul>	
+									  <li class="fb"><a href="#"><span> </span></a></li>
+									  <li class="tw"><a href="#"><span> </span></a></li>
+									  <li class="g1"><a href="#"><span> </span></a></li>		
+								   </ul>
+					   			</div>
+		                    </div>
+		                   </div>
+						  </a> 
+						   <div class="clear"></div>
+						  <div class="grid_desc">
+		                    	<h4><a href="#">Eodem modo</a></h4>
+		                    	<p>Web Designer</p>
+		                    </div>
+						</div>
+						<div class="col_1_of_4 span_1_of_4"><a href="#">
+						   <div class="view view-fifth">
+		                    <img src="images/pic13.jpg" />
+		                    <div class="mask">
+		                        <h2>augue duis dolore te feugait nulla facilisi.</h2>
+		                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+		                        <div class="social_hover">	
+								   <ul>	
+									  <li class="fb"><a href="#"><span> </span></a></li>
+									  <li class="tw"><a href="#"><span> </span></a></li>
+									  <li class="g1"><a href="#"><span> </span></a></li>		
+								   </ul>
+					   			</div>
+		                    </div>
+		                   </div>
+						  </a> 
+						   <div class="clear"></div>
+						  <div class="grid_desc">
+		                    	<h4><a href="#">Eodem modo</a></h4>
+		                    	<p>Web Designer</p>
+		                    </div>
+						</div>
+						<div class="clear"></div>
+				   </div>
+		    </figure>
+		    <div class="controls">
+		      <a href="#no-autoplay-1" class="control-button"> </a>
+		      <a href="#no-autoplay-2" class="control-button"> </a>
+		      <a href="#no-autoplay-3" class="control-button"> </a>
+		    </div>
+		   </div>
+	      </div>
+        </div>
+    <div class="facts">
+	  <div class="wrap">
+	   <h3 class="m_2">Some Fun Facts</h3>	
+	   <div class="m_3"><span class="left_line2"> </span><img src="images/heart1.png" alt=""/><span class="right_line2"> </span></div>
+	    <div class="facts_box">
+		   <div class="col_1_of_f span_1_of_f">
+			<i class="clock"> </i>
+			 <div class="clock">
+			 	<h4>3200</h4>
+			 	<p>Hours of work</p>
+			 </div>
+		   </div>
+		   <div class="col_1_of_f span_1_of_f">
+			<i class="users"> </i>
+			 <div class="clock">
+			 	<h4>120</h4>
+			 	<p>Satisfied Clients</p>
+			 </div>
+		   </div>
+		   <div class="col_1_of_f span_1_of_f">
+			<i class="rocket"> </i>
+			 <div class="clock">
+			 	<h4>360</h4>
+			 	<p>Projects Delivered</p>
+			 </div>
+		   </div>
+		   <div class="col_1_of_f span_1_of_f">
+			<i class="cup"> </i>
+			 <div class="clock">
+			 	<h4>42</h4>
+			 	<p>Awards Won</p>
+			 </div>
+		   </div>
+	 	   <div class="clear"></div>
+	   </div>
+	  </div>
+    </div>
+    <div class="footer-top" id="contact">
+	  <div class="wrap">
+	   <h3 class="m_2">Let's Discuss</h3>	
+	   <div class="m_3"><span class="left_line1"> </span><img src="images/heart.png" alt=""/><span class="right_line1"> </span></div>
+	   <p class="m_5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+	   <div class="project">
+	   	    <div class="rsidebar span_1_of_2">
+			 	<h4 class="m_8">parum claram, anteposuerit litterarum!</h4>
+				<div class="address">
+				    <p>500 Lorem Ipsum Dolor Sit,</p>
+					<p>22-56-2-9 Sit Amet, Lorem,</p>
+					<p>Phone:(00) 222 666 444</p>
+				    <p>Fax: (000) 000 00 00 0</p>
+				 	<p>Email: <span>support[at]brandi.com</span></p>
+				 </div>
+		    </div>
+		    <div class="cont span_2_of_2">
+		       <h4 class="m_9">Say hello!</h4>
+				 <div class="contact-form">
+					<div class="contact-to">
+                     	<input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+					 	<input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" style="margin-left:30px">
+					 </div>
+					<div class="text2">
+	                   <textarea value="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+	                </div>
+	             	<span><input type="submit" class="" value="Send message"></span>
+	                <div class="clear"></div>
+	               </div>
+		   </div>
+		   <div class="social_icons">	
+			  <ul>	
+				<li class="behance"><a href="#"><span> </span></a></li>
+				<li class="tw1"><a href="#"><span> </span></a></li>
+				<li class="dribble1"><a href="#"><span> </span></a></li>
+				<li class="forest"><a href="#"><span> </span></a></li>	
+				<li class="g2"><a href="#"><span> </span></a></li>	
+				<div class="clear"></div>		
+			  </ul>
+		    </div>
+		    <div class="clear"></div>
+		   </div>
+	  </div>
+	  <div class="map">
+		<iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265&amp;output=embed"></iframe><br><small><a href="https://maps.google.co.in/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Lighthouse+Point,+FL,+United+States&amp;aq=4&amp;oq=light&amp;sll=26.275636,-80.087265&amp;sspn=0.04941,0.104628&amp;ie=UTF8&amp;hq=&amp;hnear=Lighthouse+Point,+Broward,+Florida,+United+States&amp;t=m&amp;z=14&amp;ll=26.275636,-80.087265" style="color:#666;text-align:left;font-size:12px"></a></small>
+	  </div>
+   </div>
+   <div class="footer-bottom">
+	  <div class="wrap">
+		<div class="section group">
+				<div class="col_1_of_5 span_1_of_5">
+					<div class="f-logo">
+						<img src="images/f-logo.png" alt=""/>
+					</div>
+					<p class="m_10">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
+				</div>
+				<div class="col_1_of_5 span_1_of_5">
+					<h5 class="m_11">Subscribe</h5>
+					 <form class="subscribe">
+			             <input type="text" value="">
+			             <input type="submit" value="">
+			             <div class="clear"></div>
+			          </form>
+					<p class="m_10">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</p>
+				</div>
+				<div class="col_1_of_5 span_1_of_5">
+					<h5 class="m_11">Explore</h5>
+					<ul class="list">
+						<li><a href="#">consectetueradi</a></li>
+						<li><a href="#">adipiscing elit</a></li>
+						<li><a href="#">Lorem ipsum dolor</a></li>
+						<li><a href="#">consectetueradi</a></li>
+					</ul>
+					<ul class="list1">
+						<li><a href="#">consectetuer</a></li>
+						<li><a href="#">consectetueradi</a></li>
+						<li><a href="#">adipiscing elit</a></li>
+						<li><a href="#">consectetueradi</a></li>
+					</ul>
+				</div>
+				<div class="col_1_of_5 span_1_of_5">
+					<ul class="m_11">
+						<li>euismod tincidunt<img src="images/heart.png" alt=""/>laoreet dolore magna aliquam consectetuer adipiscing</li>
+					</ul>
+					<div class="copy">
+		             <p>© 2014 Template </p>
+		           </div>
+				</div>
+				<div class="clear"></div>
+	  		</div>
+	   </div>
+   </div>			
+   <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"></span></a>
+	      <script src="js/jquery.scrollTo.js"></script>
+	  <script>
+	$(document).ready(function() {
+		$('#nav').onePageNav({
+			begin: function() {
+			console.log('start')
+			},
+			end: function() {
+			console.log('stop')
+			}
+		});
+	});
+	</script>
+</body>
+</html>

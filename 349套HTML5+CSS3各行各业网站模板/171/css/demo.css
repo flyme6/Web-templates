@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+html,body {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+section, header{
+	display: block;
+}
+/* General Demo Style */
+body{
+	font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	background: #333 url(../images/bg.jpg) repeat top left;
+	font-weight: 400;
+	font-size: 15px;
+	color: #f0f0f0;
+	overflow-y: scroll;
+}
+a{
+	color: #ddd;
+	text-decoration: none;
+}
+a:hover{
+	color: #fff;
+}
+.container{
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+.clr{
+	clear: both;
+}
+.container > header{
+	padding: 20px 30px 10px 30px;
+	margin-bottom: 40px;
+	position: relative;
+	display: block;
+    text-align: center;
+}
+.container > header h1{
+	font-family: "BebasNeueRegular", Arial, sans-serif;
+	font-size: 35px;
+	position: relative;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: rgba(101,141,114,0.9);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    padding: 0px 0px 5px 0px;
+}
+.container > header h1 span{
+	color: #a0caad;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.4);
+}
+.container > header h2{
+	
+}
+/* Header Style */
+.codrops-top{
+	line-height: 24px;
+	font-size: 11px;
+	background: rgba(255, 255, 255, 0.5);
+	text-transform: uppercase;
+	z-index: 9999;
+	position: relative;
+	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+	-webkit-animation: slideOut 0.5s ease-in-out 0.3s backwards;
+}
+@-webkit-keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+.codrops-top a{
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	color: #333;
+	text-shadow: 0px 1px 1px #fff;
+	display: block;
+	float: left;
+}
+.codrops-top a:hover{
+	background: #fff;
+}
+.codrops-top span.right{
+	float: right;
+}
+.codrops-top span.right a{
+	float: left;
+	display: block;
+}
+.codrops-demos{
+	text-align:center;
+	display: block;
+	padding-top: 20px;
+}
+.codrops-demos a, 
+.codrops-demos a.current-demo,
+.codrops-demos a.current-demo:hover{
+    display: inline-block;
+	border: 1px solid #719c7f;
+	padding: 4px 10px 3px;
+	font-size: 13px;
+	line-height: 18px;
+	margin: 0px 3px;
+	font-weight: 800;
+	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+	-moz-box-shadow:0px 1px 1px rgba(0,0,0,0.1);
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #90bd9e;
+	background: -moz-linear-gradient(top, #90bd9e 0%, #72a081 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#90bd9e), color-stop(100%,#72a081));
+	background: -webkit-linear-gradient(top, #90bd9e 0%,#72a081 100%);
+	background: -o-linear-gradient(top, #90bd9e 0%,#72a081 100%);
+	background: -ms-linear-gradient(top, #90bd9e 0%,#72a081 100%);
+	background: linear-gradient(top, #90bd9e 0%,#72a081 100%);
+}
+.codrops-demos a:hover{
+	background: #85b995;
+}
+.codrops-demos a:active{
+	-webkit-box-shadow: 0px 1px 1px rgba(255,255,255,0.4);
+	-moz-box-shadow:0px 1px 1px rgba(255,255,255,0.4);
+	box-shadow: 0px 1px 1px rgba(255,255,255,0.4);
+}
+.codrops-demos a.current-demo,
+.codrops-demos a.current-demo:hover{
+	color: #506757;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
+}
+/* Media Queries */
+@media screen and (max-width: 767px) {
+	.container > header{
+		text-align: center;
+	}
+	p.codrops-demos {
+		position: relative;
+		top: auto;
+		left: auto;
+	}
+}

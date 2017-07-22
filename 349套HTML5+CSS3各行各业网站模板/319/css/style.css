@@ -1,0 +1,228 @@
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block}
+mark, rp, rt, ruby, summary, time {display:inline}
+/* Left & Right alignment */
+.left {float:left}
+.right {float:right}
+.wrapper {width:100%;overflow:hidden}
+.relative {position:relative}
+* +html .relative {position:static}
+/* Global properties */
+body {background:url(../images/bg_img.jpg) top center no-repeat #000;border:0;font:13px Arial, Helvetica, sans-serif;color:#3a3a3a;line-height:20px;min-width:980px;padding:10px 0}
+.ic, .ic a {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
+.css3 {border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;box-shadow:0 0 4px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 4px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 4px rgba(0, 0, 0, .4);position:relative}
+/* Global Structure */
+.main {margin:0 auto;width:960px;padding:10px;background:#fff;box-shadow:0 0 7px rgba(0, 0, 0, .2);-moz-box-shadow:0 0 7px rgba(0, 0, 0, .2);-webkit-box-shadow:0 0 7px rgba(0, 0, 0, .2);position:relative}
+/* main layout */
+a {color:#1d77e9;text-decoration:underline;outline:none}
+a:hover {text-decoration:none}
+h1 {padding:27px 0 0 41px;float:left}
+h2 {font-size:20px;line-height:1.2em;padding:12px 32px 16px 32px;margin-bottom:14px;background:#f7f7f7;position:relative;letter-spacing:-1px}
+h2.top {border-radius:6px 6px 0 0;-moz-border-radius:6px 6px 0 0;-webkit-border-radius:6px 6px 0 0}
+h3 {font-size:30px;color:#000;line-height:1.2em;margin-top:-4px;letter-spacing:-1px;padding:0 0 21px 0}
+h3 span {font-size:20px;color:#767676;line-height:1.2em;display:block;margin-top:-5px}
+h4 {font-size:20px;color:#000;line-height:1.2em;padding:0 0 14px 0;letter-spacing:-1px}
+p {padding-bottom:18px}
+/* header */
+header {height:230px;width:100%;overflow:hidden;background:url(../images/bg_top.jpg) 0 0 no-repeat}
+#logo {display:block;background:url(../images/logo.png) 0 0 no-repeat;width:120px;height:104px;text-indent:-9999px}
+#slogan {font-size:20px;line-height:1.2em;color:#fff;float:left;padding:95px 0 0 18px;letter-spacing:-1px}
+#top_nav {float:right;padding:38px 56px 0 0}
+#top_nav li {float:left;padding-left:25px;width:50px;text-align:center}
+#top_nav li a {display:inline-block;padding-top:13px;color:#fff}
+.nav1 {background:url(../images/img_top1.gif) center 0 no-repeat}
+.nav2 {background:url(../images/img_top2.gif) center 0 no-repeat}
+.nav3 {background:url(../images/img_top3.gif) center 0 no-repeat}
+#menu {padding:27px 0 0 42px}
+#menu li {float:left;margin-left:-1px;background:url(../images/menu_line.gif) bottom right no-repeat}
+#menu .end {background:none}
+#menu li a {display:block;height:71px;font-size:26px;line-height:71px;color:#fff;text-decoration:none;letter-spacing:-1px}
+#menu li a span {display:block}
+#menu li a span span {padding:0 32px;margin:0 6px}
+#menu li a:hover, #menu #menu_active a {background:url(../images/menu_left.png) top left no-repeat;color:#000}
+#menu li a:hover span, #menu #menu_active a span {background:url(../images/menu_right.png) top right no-repeat}
+#menu li a:hover span span, #menu #menu_active a span span {background:url(../images/menu_bg.gif) top repeat-x}
+/* content */
+#content {width:100%;overflow:hidden;padding-bottom:14px}
+.for_banners {background:url(../images/bg_top_img.jpg) 0 0 no-repeat;width:100%;height:342px;padding-top:30px}
+.pad1 {padding:30px 0;background:url(../images/bg_top2.jpg) 0 0 no-repeat}
+#page1 .pad1 {background:none}
+.pad {padding:0 27px 0 32px}
+.pad_bot1 {padding-bottom:10px}
+.pad_bot2 {padding-bottom:15px}
+.pad_bot3 {padding-bottom:32px}
+.pad_left1 {padding-left:31px}
+.pad_top1 {padding-top:11px}
+.marg_right1 {margin-right:31px}
+/* tabs begin */
+.tabs {position:relative}
+.tabs ul.nav {position:absolute;top:0}
+.tabs ul.nav li {float:left;padding-right:1px;width:95px}
+.tabs ul.nav .end {padding-right:0}
+.tabs ul.nav li a {color:#fff;text-align:center;display:block;background:url(../images/tabs.gif) 0 0 repeat-x #30c1fd;line-height:42px;text-decoration:none;border-radius:6px 6px 0 0;-moz-border-radius:6px 6px 0 0;-webkit-border-radius:6px 6px 0 0; box-shadow:0 0 3px #d0d0d0;-moz-box-shadow:0 0 3px #d0d0d0;-webkit-box-shadow:0 0 3px #d0d0d0;position:relative;overflow:hidden}
+.tabs ul.nav li a:hover, .tabs ul.nav .selected a {color:#000;background:url(../images/tabs_active.gif) top repeat-x #e7e6e6}
+.tabs .content {background:#fff;border-radius:0 0 6px 6px;-moz-border-radius:0 0 6px 6px ;-webkit-border-radius:0 0 6px 6px ; box-shadow:0 0 3px #d0d0d0;-moz-box-shadow:0 0 3px #d0d0d0;-webkit-box-shadow:0 0 3px #d0d0d0;position:relative;padding:1px;top:40px;padding-bottom:20px}
+.tabs .tab-content {}
+/*  tabs end */
+/* tabs begin */
+.tabs2 {position:relative}
+.tabs2 ul.nav {position:absolute;top:0}
+.tabs2 ul.nav li {float:left;padding-right:1px;width:185px}
+.tabs2 ul.nav .end {padding-right:0}
+.tabs2 ul.nav li a {color:#fff;text-align:center;display:block;background:url(../images/tabs.gif) 0 0 repeat-x #30c1fd;line-height:42px;text-decoration:none;border-radius:6px 6px 0 0;-moz-border-radius:6px 6px 0 0;-webkit-border-radius:6px 6px 0 0; box-shadow:0 0 3px #d0d0d0;-moz-box-shadow:0 0 3px #d0d0d0;-webkit-box-shadow:0 0 3px #d0d0d0;position:relative;overflow:hidden}
+.tabs2 ul.nav li a:hover, .tabs2 ul.nav .selected a {color:#000;background:url(../images/tabs_active.gif) top repeat-x #e7e6e6}
+.tabs2 .content {background:#fff;border-radius:0 0 6px 6px;-moz-border-radius:0 0 6px 6px ;-webkit-border-radius:0 0 6px 6px ; box-shadow:0 0 3px #d0d0d0;-moz-box-shadow:0 0 3px #d0d0d0;-webkit-box-shadow:0 0 3px #d0d0d0;position:relative;padding:1px;top:40px;padding-bottom:20px}
+.tabs2 .tab-content {}
+/* tabs end */
+/* The Nivo Slider styles */
+#slider {height:114px;overflow:hidden;width:561px !important;margin-top:200px;margin-left:40px;float:left}
+.nivoSlider {position:relative}
+.nivoSlider img {position:absolute;top:0px;left:0px}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {position:absolute;top:0px;left:0px;width:100%;height:100%;border:0;padding:0;margin:0;z-index:60;display:none}
+/* The slices in the Slider */
+.nivo-slice {display:block;position:absolute;z-index:50;height:100%}
+/* Tooltips */
+.aToolTip {border:1px solid #000;background:url(../images/opacity_50_black.png) repeat;color:#fff;margin:0;padding:2px 10px;font-size:11px}
+.aToolTip .aToolTipContent {position:relative;margin:0;padding:0}
+.button1 {display:inline-block;font-size:13px;color:#fff;text-decoration:none;line-height:28px;height:30px;padding:0 19px;background:url(../images/button_1.gif) 0 0px repeat-x #1d77e9;border-radius:5px;-moz-border-radius:5px ;-webkit-border-radius:5px ;position:relative;cursor:pointer}
+.button1 strong {display:block;padding-right:16px;background:url(../images/marker_2.gif) right 10px no-repeat}
+.button1:hover {background:url(../images/button_active.gif) 0 0 repeat-x #e7e6e6}
+.button1:hover strong {background:url(../images/marker_1.gif) right 10px no-repeat;color:#1d77e9}
+.link1 {padding-left:13px;background:url(../images/marker_1.gif) 0 6px no-repeat;display:inline-block}
+.box1 {background:#fff;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;box-shadow:0 0 3px #d0d0d0;-moz-box-shadow:0 0 3px #d0d0d0;-webkit-box-shadow:0 0 3px #d0d0d0;position:relative;padding:1px}
+.color1 {color:#7f7f7f}
+.list1 li {width:100%;overflow:hidden}
+.list1 li a {padding-left:11px;background:url(../images/marker_1.gif) 0 4px no-repeat}
+.calendar {width:100%;overflow:hidden;font-size:12px;color:#000;line-height:18px;text-align:center;padding-bottom:4px}
+.calendar .thead li {float:left;width:27px;padding-right:1px;padding-bottom:2px}
+.calendar .tbody li {float:left;padding-right:1px;width:27px;padding-bottom:1px}
+.calendar .tbody li a {display:block;border:1px solid #e5e5e5;height:18px;color:#000;text-decoration:none}
+.calendar .tbody li a.active {border:1px solid #1d77e9;background:#1d77e9;color:#fff}
+.calendar .tbody li a.selected {background:#cccccc;border:1px solid #b7b7b7}
+.box2 {background:#f7f7f7;padding:14px 32px;color:#000;margin-bottom:14px;font-size:12px}
+.box2.top {border-radius:6px 6px 0 0;-moz-border-radius:6px 6px 0 0;-webkit-border-radius:6px 6px 0 0}
+.box2 strong {font-size:13px}
+/* footer */
+footer {padding:33px 0 37px 70px;background:url(../images/bg_footer.gif) top repeat-x #d7dce6;font-size:12px;color:#3a3a3a}
+footer a {color:#1d77e9}
+footer a:hover {}
+#icons {float:left;padding-top:7px}
+#icons li {float:left;padding-right:9px}
+.links {padding-left:186px;width:310px;text-align:center;float:left}
+/* forms */
+.jqTransformInputWrapper {float:left;width:auto !important}
+.jqTransformInputWrapper div {float:left}
+/* Radios */
+.jqTransformRadioWrapper {float:left;display:block;margin-right:7px;margin-top:4px}
+.jqTransformRadio {height:12px;width:12px;display:block;background:url(../images/radio.png);background-position:bottom/*display:-moz-inline-block;*/}
+.jqTransformRadio.jqTransformChecked {background-position:top}
+/* Checkbox */
+.jqTransformCheckboxWrapper {float:left;display:block;margin-right:7px;margin-top:4px}
+.jqTransformCheckbox {height:12px;width:12px;display:block;background:url(../images/check.gif);background-position:bottom/*display:-moz-inline-block;*/}
+.jqTransformCheckbox.jqTransformChecked {background-position:top}
+/* Selects */
+.jqTransformSelectWrapper {position:relative}
+.jqTransformSelectWrapper div {float:left;font:12px Arial, Helvetica, sans-serif;color:#7f7f7f;display:block;position:relative;white-space:nowrap;height:19px;line-height:19px;overflow:hidden;cursor:pointer;border:1px solid #e5e5e5;background:#fff}
+.jqTransformSelectWrapper div span {padding:0 0 0 7px;display:block}
+a.jqTransformSelectOpen {display:block;position:absolute;top:0px;right:0px;width:17px;height:18px;background:url(../images/select.gif) 4px 6px no-repeat}
+.jqTransformSelectWrapper ul {position:absolute;top:20px;left:0px;background:#fff;border:1px solid #e5e5e5;font:12px Arial, Helvetica, sans-serif;display:none;z-index:10; padding:5px 0 2px 0;height:50px;overflow:auto;min-height:20px}
+.jqTransformSelectWrapper ul a {display:block;padding:0 7px;text-decoration:none;color:#7f7f7f}
+.jqTransformSelectWrapper ul a.selected {color:#7f7f7f}
+.jqTransformSelectWrapper ul a:hover, .jqTransformSelectWrapper ul a.selected:hover {color:#fff;background:#1d77e9; }
+/* Hidden - used to hide the original form elements */
+.jqTransformHidden {display:none}
+#form_1 .right.relative {margin-top:9px;margin-right:32px}
+#form_1 .link1 {margin-left:32px;margin-top:13px}
+#form_1 .radio {background:#f7f7f7;padding:14px 32px;margin-bottom:14px}
+#form_1 .radio .left {width:88px;padding-left:0}
+#form_1 .row {min-height:25px;width:100%;overflow:hidden}
+#form_1 .left {width:64px;padding-left:31px}
+#form_1 .input, #form_1 .input1, #form_1 .input2 {background:#fff;border:1px solid #e5e5e5;font:12px Arial, Helvetica, sans-serif;color:#7f7f7f;float:left;padding:2px 7px;height:14px;width:142px !important}
+#form_1 .input1 {width:60px !important}
+#form_1 .input2 {width:11px !important}
+#form_1 .col1 {width:177px;padding-left:0}
+#form_1 .marg_top1 {margin-top:12px}
+#form_1 .pad_left1 {padding-left:9px}
+#form_2 .radio {background:#f7f7f7;padding:14px 32px;margin-bottom:14px}
+#form_2 .left {width:64px;padding-left:31px}
+#form_2 .row {min-height:25px;width:100%;overflow:hidden}
+#form_2 .input, #form_2 .input1, #form_2 .input2 {background:#fff;border:1px solid #e5e5e5;font:12px Arial, Helvetica, sans-serif;color:#7f7f7f;float:left;padding:2px 7px;height:14px;width:142px !important}
+#form_2 .input1 {width:60px !important}
+#form_2 .input2 {width:11px !important}
+#form_2 .right.relative {margin-top:9px;margin-right:32px}
+#form_2 .link1 {margin-left:32px;margin-top:13px}
+#form_2 .pad_left1 {padding-left:9px}
+#form_2 .help {float:left;margin-left:5px;width:20px;height:20px;background:url(../images/help.gif) 0 0 no-repeat}
+#form_3 .radio {background:#f7f7f7;padding:14px 32px;margin-bottom:14px}
+#form_3 .radio .left {width:88px;padding-left:0}
+#form_3 .row {min-height:25px;width:100%;overflow:hidden}
+#form_3 .row_select {min-height:25px;width:100%}
+#form_3 .left {width:94px;padding-left:31px}
+#form_3 .input, #form_3 .input1, #form_3 .input2 {background:#fff;border:1px solid #e5e5e5;font:12px Arial, Helvetica, sans-serif;color:#7f7f7f;float:left;padding:2px 7px;height:14px;width:112px !important}
+#form_3 .input1 {width:60px !important}
+#form_3 .input2 {width:31px !important;margin-left:5px}
+#form_3 .jqTransformSelectWrapper {float:left;width:128px !important}
+#form_3 .jqTransformSelectWrapper span {float:left;width:119px !important}
+#form_3 .pad_left1 {padding-left:32px}
+#form_3 .select1 {height:30px}
+#form_3 .select1 .jqTransformSelectWrapper {float:left;width:221px !important}
+#form_3 .select1 .jqTransformSelectWrapper span {float:left;width:212px !important}
+#form_3 .right.relative {margin-top:9px;margin-right:32px}
+#form_4 {padding-top:1px;padding-bottom:19px}
+#form_4 .right.relative {margin-top:9px;margin-right:32px}
+#form_4 .link1 {margin-left:32px;margin-top:13px}
+#form_4 .row {min-height:25px;width:100%;overflow:hidden}
+#form_4 .left {width:95px;padding-left:31px}
+#form_4 .input, #form_4 .input1, #form_4 .input2 {background:#fff;border:1px solid #e5e5e5;font:12px Arial, Helvetica, sans-serif;color:#7f7f7f;float:left;padding:2px 7px;height:14px;width:111px !important}
+#form_4 .input1 {width:60px !important}
+#form_4 .input2 {width:11px !important}
+#form_4 .col1 {width:177px;padding-left:0}
+#form_4 .marg_top1 {margin-top:12px}
+#form_4 .pad_left1 {padding-left:9px}
+.form_5 .right.relative {margin-top:16px;margin-right:4px}
+.form_5 .link1 {margin-left:32px;margin-top:13px}
+.form_5 .radio {background:#f7f7f7;padding:14px 32px;margin-bottom:14px}
+.form_5 .radio .left {width:108px;padding-left:0}
+.form_5 .row {min-height:25px;width:100%;overflow:hidden}
+.form_5 .left {width:74px}
+.form_5 .input, .form_5 .input1, .form_5 .input2 {background:#fff;border:1px solid #e5e5e5;font:12px Arial, Helvetica, sans-serif;color:#7f7f7f;float:left;padding:2px 7px;height:14px;width:112px !important}
+.form_5 .input1 {width:60px !important;margin-right:6px}
+.form_5 .input2 {width:11px !important}
+.form_5 .col1 {width:247px;padding-left:0}
+.form_5 .check_box {padding-left:20px;float:left;padding-top:25px}
+.form_5 .check_box span {float:left}
+.form_5 .marg_top1 {margin-top:5px}
+.form_5 .pad_left1 {padding-left:9px}
+.form_5 .help {float:left;margin-left:5px;width:20px;height:20px;background:url(../images/help.gif) 0 0 no-repeat}
+.form_5 .under {border-bottom:1px solid #f2f2f2;padding-bottom:14px;margin-bottom:13px}
+.form_5 .cols {width:196px}
+.form_5 .marg_right1 {margin-right:27px}
+.form_5 h6 {line-height:23px;padding-left:32px;background:url(../images/marker_3.gif) 0 0 no-repeat;font-weight:normal;padding-bottom:18px}
+.form_5 h5 {line-height:23px;padding-left:32px;background:url(../images/marker_4.gif) 0 0 no-repeat;font-weight:normal;padding-bottom:18px}
+.form_5 .marker_left {float:left;background:url(../images/marker_left.gif) 0 0 no-repeat;width:20px;height:20px;margin-right:17px}
+.form_5 .marker_right {float:left;background:url(../images/marker_right.gif) 0 0 no-repeat;width:20px;height:20px;margin-left:17px}
+.form_5 .select1 {height:25px}
+.form_5 .select1 .jqTransformSelectWrapper {float:left;width:121px !important}
+.form_5 .select1 .jqTransformSelectWrapper span {float:left;width:112px !important}
+.form_5 .cols .left {width:49px;padding-left:9px}
+.form_5 .cols .select1 {height:25px}
+.form_5 .cols .select1 .left {width:45px;padding-left:0px}
+#form_8 .col2 {width:300px;padding-left:0}
+#form_8 .col2 .left {width:55px;padding-left:9px}
+#form_8 .pad_bot2 {padding-bottom:20px}
+#form_8 .markers {padding:14px 0 5px 0;width:100%;overflow:hidden}
+#form_8 .markers span {float:left;padding:0 13px 0 9px;font-size:12px}
+#form_8 .markers span.end {padding-right:0}
+#form_8 .markers strong {float:left;width:18px;height:18px;border:1px solid #e5e5e5}
+#form_8 .markers strong.active {background:#1d77e9;border:1px solid #1d77e9}
+#form_8 .markers strong.selected {background:#ccc;border:1px solid #b7b7b7}
+#form_8 {padding-bottom:23px}
+#ContactForm {padding-top:3px}
+#ContactForm span {width:65px;float:left}
+#ContactForm .wrapper {min-height:25px}
+#ContactForm .textarea_box {min-height:470px;padding-bottom:6px;width:100%;overflow:hidden}
+#ContactForm {}
+#ContactForm a {margin-left:10px;float:right}
+#ContactForm .input {float:left;width:219px;background:#fff;border:1px solid #e5e5e5;font:12px Arial, Helvetica, sans-serif;color:#7f7f7f;float:left;padding:2px 7px;height:14px}
+#ContactForm textarea {overflow:auto;width:479px;background:#fff;border:1px solid #e5e5e5;font:12px Arial, Helvetica, sans-serif;color:#7f7f7f;float:left;padding:2px 7px;height:457px;margin:0;float:left}

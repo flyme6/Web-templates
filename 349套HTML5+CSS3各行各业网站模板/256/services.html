@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Services</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+ <!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+ <!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+		
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!---- start-smoth-scrolling---->
+<!----- webfonts ------>
+	<link href='http://fonts.useso.com/css?family=Lora:400,700,400italic,700italic|Roboto:400,100,100italic,300,500,500italic,700,900' rel='stylesheet' type='text/css'>
+<!----- webfonts ------>
+<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+	<!----//End-top-nav-script---->
+</head>
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="container">
+			<!-- top-nav -->
+		<div class="top-nav">
+			<span class="menu"> </span>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li class="active"><a href="services.html">Services</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="contact.html">Contact</a></li>
+						<div class="clearfix"> </div>
+				</ul>
+		</div>
+		<!-- logo -->
+			<div class="head-logo">
+				<a href="index.html"><img src="images/logo.png"/></a>
+			</div>
+			<!-- /logo -->
+		<!-- script-for-nav -->
+				<script>
+					$(document).ready(function(){
+						$("span.menu").click(function(){
+							$(".top-nav ul").slideToggle(500);
+						});
+					});
+				</script>
+		<!-- script-for-nav -->
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!----- /start-services---->
+	<div class="service-head">
+		 <h3>SERVICES</h3>
+	</div>
+	  <div class="Services part2">
+	 			<div class="container">
+		 			<div class="service-grides">
+			 			<div class="col-md-4 service-grid">
+			 				<div class="col-md-2 service-img">
+			 					<i class="icon1"> </i>
+							</div>
+			 				<div class="col-md-10 service-text ">
+			 					<h3>Aenean nec eros nulla edin lips vitae  mauris vivamus</h3>
+			 				</div>
+			 					<div class="clearfix"> </div>
+			 					<p>Sed cursus, augue ac adipiscing iaculis, arcu massa lacinia quam  arcu massa lacinia, id ultrices erat purus eu mi. Maecenas semper arcu in mauris bibendum sit amet pellentesq eget eleifend lacus qellen iduluti duisliquam.. </p>
+			 				<a class="more-btn" href="#">More Info</a>
+			 			</div>
+		 				<div class="col-md-4 service-grid">
+			 				<div class="col-md-2 service-img">
+			 					<i class="icon2"> </i>
+							</div>
+			 				<div class="col-md-10 service-text ">
+			 					<h3>Duis vehicula massa vel felis fringilla sed pharetra mi vul</h3>
+			 				</div>
+			 					<div class="clearfix"> </div>
+			 					<p>Phasellus placerat iaculis eros, id bibendum ante hendrerit non. Donec ornare tempus lectus, quis dignissim dui suscipit quis. Aliquam et nulla at justo laoreet sodales quis vel nunc nisi ventatis pellent acru in meuris.  </p>
+			 				<a class="more-btn" href="#">More Info</a>
+			 			</div>
+			 			<div class="col-md-4 service-grid">
+			 				<div class="col-md-2 service-img">
+			 					<i class="icon3"> </i>
+							</div>
+			 				<div class="col-md-10 service-text ">
+			 					<h3>Sociosqu ad litora torquent per conubia nostra lipsum</h3>
+			 				</div>
+			 				<div class="clearfix"> </div>
+			 				<p>Croin sed magna risus. Curabitur egestas, nisi venenatis vestibulum pellentesque,, arcu massa lacinia quam, id ultrices erat purus eu mi. Maecenas semper arcu in mauris dignuss meeacens sed curse quis. </p>
+			 				<a class="more-btn" href="#">More Info</a>
+			 			</div>
+		 				<div class="clear"> </div>
+		 			</div>
+	 			</div>
+			 </div>
+		<!----- /start-libro---->
+		<!-- clients -->
+			<div class="clients">
+				<div class="container">
+					<!-- head-section -->
+						<div class="client-section">
+							<h3>Our Clients</h3>
+							<p>Praesent eget libero etmarerat imperdiet Vestibulum dapibus viverra susci</p>
+						</div>
+					<!-- client-list -->
+					<div class="client-list">
+						<ul>
+							<li><a href="#"><img src="images/p1.png" title="adidas" /></a></li>
+							<li><a href="#"><img src="images/p2.png" title="google" /></a></li>
+							<li><a href="#"><img src="images/p3.png" title="samsung" /></a></li>
+							<li><a href="#"><img src="images/p4.png" title="microsoft" /></a></li>
+						</ul>
+					</div>
+					<!-- /client-list -->
+				</div>
+			</div>
+			<!-- clients -->
+		<div id="team" class="team">
+			<div class="container">
+				<div class="team-section">
+							<h3>Our Team</h3>
+							<p>Praesent eget libero etmarerat imperdiet Vestibulum dapibus viverra susci</p>
+					 		
+				</div>
+				<div class="team-grids">
+					<div class="col-md-4 team-grid">
+						<img src="images/c1.png" alt=""/>
+						<h4>Ros nulla</h4>
+						<p>Sed cursus, augue ac adipiscing iaculis, arcum loremassa lacinia quam, id ultrices erat vitae massa egio unt sapien mollis auctor ac non.</p>
+						<lable> </lable>
+								<ul class="t-social">
+											<li><a class="facebook" href="#"><span> </span></a></li>
+											<li><a class="twitter" href="#"><span> </span></a></li>
+											<li><a class="in" href="#"><span> </span></a></li>
+											<div class="clearfix"> </div>
+										</ul>
+						</div>
+							<div class="col-md-4 team-grid">
+									<img src="images/c2.png" alt=""/>
+									<h4>Duis vehicula</h4>
+									<p>Cras lacus velit, varius non mattis dignis simte mpus id lacus. Etiam quis nibh ac velit blandit bibendum. Fusce lacinia, turpis ut.</p>
+									<lable> </lable>
+									<ul class="t-social">
+												<li><a class="facebook" href="#"><span> </span></a></li>
+												<li><a class="twitter" href="#"><span> </span></a></li>
+												<li><a class="in" href="#"><span> </span></a></li>
+												<div class="clearfix"> </div>
+											</ul>
+							</div>
+							<div class="col-md-4 team-grid">
+									<img src="images/c3.png" alt=""/>
+									<h4>Volutpat urna</h4>
+									<p>Sed cursus, augue ac adipiscing iaculis, arcum loremassa lacinia quam, id ultrices erat vitae massa egio unt sapien mollis auctor ac non.</p>
+									<lable> </lable>
+									<ul class="t-social">
+												<li><a class="facebook" href="#"><span> </span></a></li>
+												<li><a class="twitter" href="#"><span> </span></a></li>
+												<li><a class="in" href="#"><span> </span></a></li>
+												<div class="clearfix"> </div>
+											</ul>
+							</div>
+						<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!----- /start-contact---->
+		<div id="contact" class="contact">
+			<div class="container">
+				<div class="contact-section">
+					<p>rerat imperdiet Vestibulum dapibus viverra susci</p>
+					<h3> In urna urna rhoncus eu lacinia in faucibus sed nisi </h3>
+					<h4> Cras lacus velit, varius non mattis dignis simte mpus id lacus. Etiam quis nibh acvelit blandit bibendum. Fusce lacinia, turpis ut.</h4>
+				</div>	
+				 			<form>
+								 <div class="form_details">
+					                 <input type="text" class="text" value="Your Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Name';}">
+									 <input type="text" class="text" value=" Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Your Email';}">
+									 <div class="clearfix"> </div>
+									 <div class="sub-button">
+									 	<input name="submit" type="submit" value="Subscribe">
+									 </div>
+						          </div>
+						       </form>
+
+			</div>							
+		</div>
+		<!----- /end-contact---->
+		<!----- /start-footer---->
+				<div class="footer">
+						<div class="container">
+							<div class="copy-right">
+								<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+							</div>	
+						</div>							
+					</div>
+					<!----- //End-footer---->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	
+</body>
+</html>

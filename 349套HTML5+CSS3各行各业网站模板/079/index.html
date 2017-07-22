@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href='http://fonts.useso.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<!-- js -->
+<script src="js/jquery.min.js"></script>
+<!-- //js -->
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="cland Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- navigation -->
+<link href="css/component.css" rel="stylesheet" type="text/css"  />
+<!-- navigation -->
+<!--animated-css-->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+<!--/animated-css-->
+</head>
+	
+<body>
+<body class="cbp-spmenu-push">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-30027142-1', 'w3layouts.com');
+  ga('send', 'pageview');
+</script>
+<!-- banner -->
+	<div id="home" class="banner">
+	<div class="container">
+		<div class="header">
+			 <div class="top-nav">
+				<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s2">
+					<h3>Menu</h3>
+					<a class="scroll" href="#home">Home</a>
+					<a class="scroll" href="#features">Features</a>
+					<a class="scroll" href="#screenshots">Screen Shots</a>
+					<a class="scroll" href="#services">Services</a>
+					<a class="scroll" href="#about">About</a>
+					<a class="scroll" href="#products">Products</a>
+				</nav>
+				<div class="main buttonset">	
+						<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+						<button id="showRightPush"><img src="images/menu.png" alt=""/></button>
+						<!--<span class="menu"></span>-->
+				</div>
+				<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+				<script src="js/classie.js"></script>
+				<script>
+				var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+				showRightPush = document.getElementById( 'showRightPush' ),
+				body = document.body;
+
+				showRightPush.onclick = function() {
+					classie.toggle( this, 'active' );
+					classie.toggle( body, 'cbp-spmenu-push-toleft' );
+					classie.toggle( menuRight, 'cbp-spmenu-open' );
+					disableOther( 'showRightPush' );
+				};
+
+				function disableOther( button ) {
+					if( button !== 'showRightPush' ) {
+						classie.toggle( showRightPush, 'disabled' );
+					}
+				}
+			 </script>
+			</div>
+			<div class="logo wow fadeInUp" data-wow-delay="0.5s">
+				 <a href="index.html"><img src="images/logo.png" alt=""/></a>
+			</div>
+			<div class="sign-in-up">
+				<ul>
+					<li><a href="sign-in.html">Sign in</a></li>
+					<li><a href="sign-up.html" class="hvr-shutter-in-vertical up">Sign up</a></li>
+				</ul>
+			</div>
+		<div class="clearfix"></div>
+		</div>
+		<div class="banner-info wow fadeInUp" data-wow-delay="0.5s">
+			<h3>The easiest way to accept digital currencies.</h3>
+			<p>Creativity itself doesn't care at all about results - the only thing it craves is the process. Learn to love the 
+				<span>process and let whatever happens next happen, without fussing too much about it.</span></p>
+			<div class="sign-up">
+				<a href="sign-up.html" class="hvr-shutter-in-vertical1">Sign up</a>
+			</div>
+		</div>
+		<div id="screenshots" class="banner-fig wow fadeInUp" data-wow-delay="0.5s">
+			<img src="images/a.png" class="img-responsive zoom-img" alt=" " />
+		</div>
+	</div>
+	</div>
+<!-- //banner -->
+<!-- banner-bottom -->
+	<div id="services" class="banner-bottom">
+	<div class="container">
+		<h4>Recommendations and awards by a number of our clients.</h4>
+<!-- Slider-starts-Here -->
+				<script src="js/responsiveslides.min.js"></script>
+				 <script>
+				    // You can also use "$(window).load(function() {"
+				    $(function () {
+				      // Slideshow 4
+				      $("#slider3").responsiveSlides({
+				        auto: true,
+				        pager: false,
+				        nav: false,
+				        speed: 500,
+				        namespace: "callbacks",
+				        before: function () {
+				          $('.events').append("<li>before event fired.</li>");
+				        },
+				        after: function () {
+				          $('.events').append("<li>after event fired.</li>");
+				        }
+				      });
+				
+				    });
+				  </script>
+			<!--//End-slider-script -->
+			<div  id="top" class="callbacks_container wow fadeInUp" data-wow-delay="0.5s">
+				<ul class="rslides" id="slider3">
+					<li>
+						<div class="banner-grids-info">
+							<div class="col-md-3 banner-bottom-grids">
+								<img src="images/6.png" alt=" " />
+							</div>
+							<div class="col-md-3 banner-bottom-grids">
+								<img src="images/5.png" alt=" " />
+							</div>
+							<div class="col-md-3 banner-bottom-grids">
+								<img src="images/4.png" alt=" " />
+							</div>
+							<div class="col-md-3 banner-bottom-grids">
+								<img src="images/7.png" alt=" " />
+							</div>
+							<div class="clearfix"> </div>
+							<div class="all-awards">
+								<a href="#" class="hvr-shutter-in-vertical">All Awards</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="banner-grids-info">
+							<div class="col-md-3 banner-bottom-grids">
+								<img src="images/4.png" alt=" " />
+							</div>
+							<div class="col-md-3 banner-bottom-grids">
+								<img src="images/6.png" alt=" " />
+							</div>
+							<div class="col-md-3 banner-bottom-grids">
+								<img src="images/5.png" alt=" " />
+							</div>
+							<div class="col-md-3 banner-bottom-grids">
+								<img src="images/7.png" alt=" " />
+							</div>
+							<div class="clearfix"> </div>
+							<div class="all-awards">
+								<a href="#" class="hvr-shutter-in-vertical">All Awards</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="banner-grids-info">
+							<div class="col-md-3 banner-bottom-grids">
+								<img src="images/6.png" alt=" " />
+							</div>
+							<div class="col-md-3 banner-bottom-grids">
+								<img src="images/4.png" alt=" " />
+							</div>
+							<div class="col-md-3 banner-bottom-grids">
+								<img src="images/7.png" alt=" " />
+							</div>
+							<div class="col-md-3 banner-bottom-grids">
+								<img src="images/5.png" alt=" " />
+							</div>
+							<div class="clearfix"> </div>
+							<div class="all-awards">
+								<a href="#" class="hvr-shutter-in-vertical">All Awards</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+	</div>
+	</div>
+<!-- //banner-bottom -->
+<!-- things -->
+	<div id="about" class="things">
+	<div class="container">
+		<h3>Some of Amazing things you must know them.</h3>
+		<div class="col-md-6 things-left wow bounceIn" data-wow-delay="0.5s">
+			<div class="things-left-l">
+				<img src="images/finger.png" alt=" " />
+			</div>
+			<div class="things-left-r">
+				<h4>100% FEEDBACK</h4>
+				<p>Without change there is no innovation, creativity, or incentive 
+					for improvement. Those who initiate change will have a better 
+					opportunity to manage the change that is inevitable.</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="col-md-6 things-left wow bounceIn" data-wow-delay="0.5s">
+			<div class="things-left-l">
+				<img src="images/smile.png" alt=" " />
+			</div>
+			<div class="things-left-r">
+				<h4>ALL CLIENTS HAPPY</h4>
+				<p>Without change there is no innovation, creativity, or incentive 
+					for improvement. Those who initiate change will have a better 
+					opportunity to manage the change that is inevitable.</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="col-md-6 things-left wow bounceIn" data-wow-delay="0.5s">
+			<div class="things-left-l">
+				<img src="images/call.png" alt=" " />
+			</div>
+			<div class="things-left-r">
+				<h4>LIVE SUPPORT</h4>
+				<p>Without change there is no innovation, creativity, or incentive 
+					for improvement. Those who initiate change will have a better 
+					opportunity to manage the change that is inevitable.</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="col-md-6 things-left wow bounceIn" data-wow-delay="0.5s">
+			<div class="things-left-l">
+				<img src="images/tv.png" alt=" " />
+			</div>
+			<div class="things-left-r">
+				<h4>DESKTOP READY</h4>
+				<p>Without change there is no innovation, creativity, or incentive 
+					for improvement. Those who initiate change will have a better 
+					opportunity to manage the change that is inevitable.</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="clearfix"> </div>
+		<div class="live">
+			<div class="live-sup wow bounceIn" data-wow-delay="0.5s">
+				<h4>LIVE SUPPORT</h4>
+				<p>Without change there is no innovation, creativity, or incentive 
+					for improvement. Those who initiate change will have a better 
+					opportunity to manage the change that is inevitable.</p>
+			</div>
+			<div class="live-sup1 wow bounceIn" data-wow-delay="0.5s">
+				<p class="usa"><span>78%</span> from USA</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	</div>
+<!-- //things -->
+<!-- john -->
+	<div class="john">
+	<div class="container">
+<!-- Slider-starts-Here -->
+				<script src="js/responsiveslides.min.js"></script>
+				 <script>
+				    // You can also use "$(window).load(function() {"
+				    $(function () {
+				      // Slideshow 4
+				      $("#slider2").responsiveSlides({
+				        auto: true,
+				        pager: false,
+				        nav: false,
+				        speed: 500,
+				        namespace: "callbacks",
+				        before: function () {
+				          $('.events').append("<li>before event fired.</li>");
+				        },
+				        after: function () {
+				          $('.events').append("<li>after event fired.</li>");
+				        }
+				      });
+				
+				    });
+				  </script>
+			<!--//End-slider-script -->
+			<div  id="top" class="callbacks_container wow fadeInUp" data-wow-delay="0.5s">
+				<ul class="rslides" id="slider2">
+					<li>
+						<div class="john-info">
+							<div class="john-fig">
+								<img src="images/8.png" alt=" " /> 
+							</div>
+							<p>opportunity itself doesn't care at all about results - the only thing it craves is the process. Learn to love the 
+								<span>process and let whatever happens next happen, without fussing too much about it.</span></p>
+							<ul>
+								<li><img src="images/9.png" alt=" " /></li>
+								<li>John Doe</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="john-info">
+							<div class="john-fig">
+								<img src="images/8.png" alt=" " /> 
+							</div>
+							<p>Creativity itself doesn't care at all about results - the only thing it craves is the process. Learn to love the 
+								<span>process and let whatever happens next happen, without fussing too much about it.</span></p>
+							<ul>
+								<li><img src="images/9.png" alt=" " /></li>
+								<li>Micheal</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="john-info">
+							<div class="john-fig">
+								<img src="images/8.png" alt=" " /> 
+							</div>
+							<p>Creativity itself doesn't care at all about results - the only thing it craves is the process. Learn to love the 
+								<span>thing and let whatever happens next happen, without fussing too much about it.</span></p>
+							<ul>
+								<li><img src="images/9.png" alt=" " /></li>
+								<li>Willium</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+					
+	</div>
+	</div>
+<!-- //john -->
+<!-- products -->
+	<div id="products" class="products wow fadeInUp" data-wow-delay="0.5s">
+	<div class="container">
+		<div class="products-info">
+			<h3>The basic introdution of our Products.</h3>
+			<p>Creativity itself doesn't care at all about results - the only thing it craves is the process. 
+				Learn to love the process and let whatever happens next happen, 
+				without fussing too much about it. </p>
+			<img src="images/1.jpg" class="img-responsive zoom-img" alt=" " />
+			<div class="link">
+				<a href="sign-up.html" class="hvr-shutter-in-vertical">Sign up</a>
+			</div>
+		</div>
+	</div>
+	</div>
+<!-- //products -->
+<!-- about -->
+	<div id="features" class="about">
+	<div class="container">
+		<div class="about-info wow fadeInUp" data-wow-delay="0.5s">
+			<h3>Latest Stories about the company..</h3>
+			<p class="create">Creativity itself doesn't care at all about results - the only thing it craves is the process. 
+					<span>Learn to love the process and let whatever.</span></p>
+		</div>
+	<script>
+		$(document).ready(function () {
+		    size_li = $("#myList li").size();
+		    x=1;
+		    $('#myList li:lt('+x+')').show();
+		    $('#loadMore').click(function () {
+		        x= (x+1 <= size_li) ? x+1 : size_li;
+		        $('#myList li:lt('+x+')').show();
+		    });
+		    $('#showLess').click(function () {
+		        x=(x-1<0) ? 1 : x-1;
+		        $('#myList li').not(':lt('+x+')').hide();
+		    });
+		});
+	</script>
+		<div class="load_more">	
+			<ul id="myList">
+				<li>
+					<div class="about-grids">
+						<div class="about-grid wow fadeInLeft" data-wow-delay="0.5s">
+							<img src="images/2.jpg" alt=" " />
+							<p class="life">There is a fountain of youth: it is your 
+								mind, your talents, the creativity you 
+								bring to your life and the lives of 
+								people you love..<span>Sunday 29 March</span></p>
+							<div class="lives">
+								<p>New</p>
+							</div>
+							<div class="fountain">
+								<p><a href="#">There is a fountain of youth:</a></p>
+							</div>
+						</div>
+						<div class="about-grid wow fadeInUp" data-wow-delay="0.5s">
+							<img src="images/3.jpg" alt=" " />
+							<p class="life">There is a fountain of youth: it is your 
+								mind, your talents, the creativity you 
+								bring to your life and the lives of 
+								people you love..<span>Sunday 29 March</span></p>
+							<div class="lives1">
+								<p>New</p>
+							</div>
+							<div class="fountain">
+								<p><a href="#">There is a fountain of youth:</a></p>
+							</div>
+						</div>
+						<div class="about-grid wow fadeInRight" data-wow-delay="0.5s">
+							<img src="images/4.jpg" alt=" " />
+							<p class="life">There is a fountain of youth: it is your 
+								mind, your talents, the creativity you 
+								bring to your life and the lives of 
+								people you love..<span>Sunday 29 March</span></p>
+							<div class="lives">
+								<p>New</p>
+							</div>
+							<div class="fountain">
+								<p><a href="#">There is a fountain of youth:</a></p>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</li>
+				<li>
+					<div class="about-grids">
+						<div class="about-grid g_r wow fadeInLeft" data-wow-delay="0.5s">
+							<img src="images/3.jpg" alt=" " />
+							<p class="life">There is a fountain of youth: it is your 
+								mind, your talents, the creativity you 
+								bring to your life and the lives of 
+								people you love..<span>Sunday 29 March</span></p>
+							<div class="lives">
+								<p>New</p>
+							</div>
+							<div class="fountain">
+								<p><a href="#">There is a fountain of youth:</a></p>
+							</div>
+						</div>
+						<div class="about-grid g_r wow fadeInUp" data-wow-delay="0.5s">
+							<img src="images/4.jpg" alt=" " />
+							<p class="life">There is a fountain of youth: it is your 
+								mind, your talents, the creativity you 
+								bring to your life and the lives of 
+								people you love..<span>Sunday 29 March</span></p>
+							<div class="lives1">
+								<p>New</p>
+							</div>
+							<div class="fountain">
+								<p><a href="#">There is a fountain of youth:</a></p>
+							</div>
+						</div>
+						<div class="about-grid g_r wow fadeInRight" data-wow-delay="0.5s">
+							<img src="images/2.jpg" alt=" " />
+							<p class="life">There is a fountain of youth: it is your 
+								mind, your talents, the creativity you 
+								bring to your life and the lives of 
+								people you love..<span>Sunday 29 March</span></p>
+							<div class="lives">
+								<p>New</p>
+							</div>
+							<div class="fountain">
+								<p><a href="#">There is a fountain of youth:</a></p>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</li>
+			</ul>
+		</div>		
+		<div id="loadMore">See all</div>
+	</div>
+	</div>
+<!-- //about -->
+<!-- any-thing -->
+	<div class="see-all-bottom">
+	<div class="container">
+		<div class="see-all-bottom-grids">
+			<div class="see-all-bottom-left wow fadeInLeft" data-wow-delay="0.5s">
+				<h3>Any thing els you want to know? or Ready?.</h3>
+				<p>Creativity itself doesn't care at all about results - the only thing it craves is the process. Learn to love the 
+					<span>process and let whatever happens next happen, without fussing too much about it.</span></p>
+			</div>
+			<div class="see-all-bottom-right wow fadeInRight" data-wow-delay="0.5s">
+				<a href="sign-up.html" class="hvr-shutter-in-vertical1">Sign up</a>
+			</div>
+		</div>
+	</div>
+	</div>
+<!-- //any-thing -->
+<!-- question -->
+	<div class="question wow fadeInUp" data-wow-delay="0.5s">
+	<div class="container">
+		<h3>ANY QUESTION</h3>
+		<form>
+			<input type="text" placeholder="NAME" required=" ">
+			<input type="text" placeholder="EMAIL" required=" ">
+			<input type="text" class="sub" placeholder="SUBJECT" required=" ">
+			<textarea placeholder="MESSAGE" required></textarea>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+	</div>
+<!-- //question -->
+<!-- footer -->
+	<div class="footer">
+	<div class="container">
+		<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+	</div>
+	</div>
+<!-- //footer -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>

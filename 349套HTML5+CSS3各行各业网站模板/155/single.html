@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link href='http://fonts.useso.com/css?family=Raleway:400,200,600,800,700,500,300,100,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Arimo:400,700,700italic' rel='stylesheet' type='text/css'>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/jquery.min.js"></script>
+</head>
+<body>
+<!--topheader starts-->	 
+<div class="strip">	
+<div class="container">
+		 <div class="top-menu">
+			 <span class="menu"> </span>
+			 <ul>
+				 <li><a href="index.html">Home</a></li>
+				 <li><a href="about.html">About Us</a></li>
+				 <li  class="active"><a href="shop.html">Shop Online</a></li>
+				 <li><a href="404.html">Help</a></li>
+				 <li><a href="service.html">Service</a></li>
+				 <li><a href="contact.html">Contact</a></li>
+					<div class="clearfix"></div>
+			 </ul>	
+				<!----- script-for-nav ---->
+<script>
+			$( "span.menu" ).click(function() {
+			  $( ".top-menu ul" ).slideToggle( "slow", function() {
+			    // Animation complete.
+			  });
+			});
+</script>
+<!----- script-for-nav ---->
+
+		 </div>
+</div>	
+</div>
+<!--topheader ends-->
+<!-- Single Page starts Here -->
+<div class="product">
+<div class="container">
+<div class="col-md-9 ctnt-bar cntnt">
+	<div class="content-bar">
+<div class="single-page">
+	<ul class="product-head">
+		<li><a href="index.html">Home</a> <span>::</span></li>
+		<li><a href="shop.html">BOATS</a> <span>::</span></li>
+		<li class="active-page">Speed Boats</li>
+		<div class="clear"> </div>
+	</ul>
+	<!-- Include the Etalage files -->
+		<link rel="stylesheet" href="css/etalage.css">
+		<script src="js/jquery.etalage.min.js"></script>
+	<!-- Include the Etalage files -->
+	<script>
+			jQuery(document).ready(function($){
+	
+				$('#etalage').etalage({
+					thumb_image_width: 300,
+					thumb_image_height: 400,
+					source_image_width: 600,
+					source_image_height: 1000,
+					show_hint: true,
+					click_callback: function(image_anchor, instance_id){
+						alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+					}
+				});
+				// This is for the dropdown list example:
+				$('.dropdownlist').change(function(){
+					etalage_show( $(this).find('option:selected').attr('class') );
+				});
+	
+		});
+	</script>
+	<!----//details-product-slider--->
+	<div class="details-left-slider">
+		<ul id="etalage">
+			<li>
+				<a href="optionallink.html">
+					<img class="etalage_thumb_image" src="images/single/bt1.jpg" />
+					<img class="etalage_source_image" src="images/single/bt1.jpg" />
+				</a>
+			</li>
+			<li>
+				<img class="etalage_thumb_image" src="images/single/bt2.jpg" />
+				<img class="etalage_source_image" src="images/single/bt2.jpg"/>
+			</li>
+			<li>
+				<img class="etalage_thumb_image" src="images/single/bt3.jpg" />
+				<img class="etalage_source_image" src="images/single/bt3.jpg" />
+			</li>
+			<li>
+				<img class="etalage_thumb_image" src="images/single/bt4.jpg" />
+				<img class="etalage_source_image" src="images/single/bt4.jpg" />
+			</li>
+			<div class="clearfix"></div>
+		</ul>
+	</div>
+	<div class="details-left-info">
+		<h3>Stacer 619 Easy Rider</h3>
+		<p class="availability">Availability: <span class="color">In stock</span></p>
+	    <div class="price_single">
+		  <span class="reducedfrom">$14,000</span>
+		  <span class="actual">$12,000</span><a href="#">click for offer</a>
+		</div>
+		<h2 class="quick">Quick Overview:</h2>
+		<p class="quick_desc"> Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; es</p>
+		<ul class="product-colors">
+			<h3>available Colors ::</h3>
+			<li><a class="color1" href="#"><span> </span></a></li>
+			<li><a class="color2" href="#"><span> </span></a></li>
+			<li><a class="color3" href="#"><span> </span></a></li>
+			<li><a class="color4" href="#"><span> </span></a></li>			
+			<div class="clear"> </div>
+		</ul>
+		<ul class="size">
+			<h3>MODELS</h3>
+			<li><a href="#">Cruisers</a></li>
+			<li><a href="#">XUV</a></li>
+		</ul>
+		
+		<div class="single-but">
+			<input type="submit" value="Buy Now"/>
+		</div>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="products-row contact-prod">
+					<h3>Latest Models</h3>
+					<a href="single.html"><div class="product-grid models">
+						<div class="more-product-info"><span> </span></div>						
+						<div class="product-img b-link-stripe b-animate-go  thickbox">
+							<img src="images/boats6.jpg" alt="">
+							<div class="b-wrapper">
+							<h4 class="b-animate b-from-left  b-delay03 shoponline">							
+							<a href="single.html" class="btns">Buy Now</a>
+							</h4>
+							</div>
+						</div>						
+						<div class="product-info">
+							<div class="product-info-cust">
+								<a href="details.html">Details</a>
+							</div>
+							<div class="product-info-price">
+								<a href="details.html">&#8356;380</a>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div></a>
+					<a href="single.html"><div class="product-grid models">
+						<div class="more-product-info"><span> </span></div>						
+						<div class="product-img b-link-stripe b-animate-go  thickbox">
+							<img src="images/boats7.jpg" alt="">
+							<div class="b-wrapper">
+							<h4 class="b-animate b-from-left  b-delay03 shoponline">							
+							<a href="single.html" class="btns">Buy Now</a>
+							</h4>
+							</div>
+						</div>						
+						<div class="product-info">
+							<div class="product-info-cust">
+								<a href="details.html">Details</a>
+							</div>
+							<div class="product-info-price">
+								<a href="details.html">&#8356;380</a>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div></a>
+					<a href="single.html"><div class="product-grid models">
+						<div class="more-product-info"><span> </span></div>						
+						<div class="product-img b-link-stripe b-animate-go  thickbox">
+							<img src="images/boats8.jpg" alt="">
+							<div class="b-wrapper">
+							<h4 class="b-animate b-from-left  b-delay03 shoponline">							
+							<a href="single.html" class="btns">Buy Now</a>
+							</h4>
+							</div>
+						</div>						
+						<div class="product-info">
+							<div class="product-info-cust">
+								<a href="details.html">Details</a>
+							</div>
+							<div class="product-info-price">
+								<a href="details.html">&#8356;380</a>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div></a>
+					<a href="single.html"><div class="product-grid models">
+						<div class="more-product-info"><span> </span></div>						
+						<div class="product-img b-link-stripe b-animate-go  thickbox">
+							<img src="images/boats9.jpg" alt="">
+							<div class="b-wrapper">
+							<h4 class="b-animate b-from-left  b-delay03 shoponline">							
+							<a href="single.html" class="btns">Buy Now</a>
+							</h4>
+							</div>
+						</div>						
+						<div class="product-info">
+							<div class="product-info-cust">
+								<a href="details.html">Details</a>
+							</div>
+							<div class="product-info-price">
+								<a href="details.html">&#8356;380</a>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div></a>
+					<a href="single.html"><div class="product-grid boats-grid2">
+						<div class="more-product-info"><span> </span></div>						
+						<div class="product-img b-link-stripe b-animate-go  thickbox">
+							<img src="images/boats10.jpg" alt="">
+							<div class="b-wrapper">
+							<h4 class="b-animate b-from-left  b-delay03 shoponline">							
+							<a href="single.html" class="btns">Buy Now</a>
+							</h4>
+							</div>
+						</div>						
+						<div class="product-info">
+							<div class="product-info-cust">
+								<a href="details.html">Details</a>
+							</div>
+							<div class="product-info-price">
+								<a href="details.html">&#8356;380</a>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div></a>
+					<a href="single.html"><div class="product-grid boats-grid2">
+						<div class="more-product-info"><span> </span></div>						
+						<div class="product-img b-link-stripe b-animate-go  thickbox">
+							<img src="images/boats11.jpg" alt="">
+							<div class="b-wrapper">
+							<h4 class="b-animate b-from-left  b-delay03 shoponline">							
+							<a href="single.html" class="btns">Buy Now</a>
+							</h4>
+							</div>
+						</div>						
+						<div class="product-info">
+							<div class="product-info-cust">
+								<a href="details.html">Details</a>
+							</div>
+							<div class="product-info-price">
+								<a href="details.html">&#8356;380</a>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div></a>
+					<div class="clearfix"></div>
+				</div>
+</div>
+</div>
+<div class="col-md-3 sidebar_men sider">
+			  <h3>Categories</h3>
+			  <ul class="product-categories color">
+				<li><a href="#">BASS BOATS</a> <span class="count">(14)</span></li>
+				<li><a href="#">BOWRIDERS</a> <span class="count">(2)</span></li>
+				<li><a href="#">CABIN CRUISERS</a> <span class="count">(2)</span></li>
+				<li><a href="#">CATAMARANS</a> <span class="count">(8)</span></li>
+				<li><a href="#">CENTRE CONSOLES</a> <span class="count">(11)</span></li>
+				<li><a href="#">CUDDY CABINS</a> <span class="count">(3)</span></li>
+				<li><a href="#">GAMEBOATS</a> <span class="count">(3)</span></li>
+				<li><a href="#">HOUSEBOATS</a> <span class="count">(6)</span></li>
+				<li><a href="#">MOTORYACHTS</a> <span class="count">(13)</span></li>
+				<li><a href="#">RUNABOUTS</a> <span class="count">(7)</span></li>
+				<li><a href="#">SAILBOATS</a> <span class="count">(2)</span></li>
+				<li><a href="#">WALKAROUNDS</a> <span class="count">(17)</span></li>
+			 </ul>
+			  <h3>Colors</h3>
+			  <ul class="product-categories color">
+				<li><a href="#">Green</a> <span class="count">(14)</span></li>
+				<li><a href="#">Blue</a> <span class="count">(2)</span></li>
+				<li><a href="#">Red</a> <span class="count">(2)</span></li>
+				<li><a href="#">Gray</a> <span class="count">(8)</span></li>
+				<li><a href="#">Green</a> <span class="count">(11)</span></li>
+			  </ul>
+			  <h3>Sizes</h3>
+			  <ul class="product-categories color">
+				<li class="cat-item cat-item-42"><a href="#">CRUISERS</a> <span class="count">300tons</span></li>
+				<li class="cat-item cat-item-60"><a href="#">XUV</a> <span class="count">200tons</span></li>
+				<li class="cat-item cat-item-63"><a href="#">CABINES</a> <span class="count">100tons</span></li>
+			  </ul>
+			  <h3>Price</h3>
+			  <ul class="product-categories">
+				<li class="cat-item cat-item-42"><a href="#">200$-300$</a> <span class="count">(14)</span></li>
+				<li class="cat-item cat-item-60"><a href="#">300$-400$</a> <span class="count">(2)</span></li>
+				<li class="cat-item cat-item-63"><a href="#">400$-500$</a> <span class="count">(2)</span></li>
+				<li class="cat-item cat-item-54"><a href="#">500$-600$</a> <span class="count">(8)</span></li>
+				<li class="cat-item cat-item-55"><a href="#">600$-700$</a> <span class="count">(11)</span></li>
+			  </ul>
+		 </div>
+		 <div class="clearfix"></div>
+</div>
+</div>
+<!---->
+<div class="fotter">
+     <div class="container">
+		 <div class="fotter-info">
+			 <div class="fotter-logo">
+			 <a href="imdex.html"><img src="images/logo.png" alt=""/></a>
+			 </div>
+			 <div class="fotter-menu">			 
+				 <ul>
+					 <li><a href="index.html">Home</a></li>
+					 <li><a href="about.html">About Us</a></li>
+					 <li><a href="service.html">Shoponline</a></li>
+					 <li><a href="404.html">Help</a></li>
+					 <li><a href="carrers.html">Service</a></li>
+					 <li><a href="contact.html">Contact</a></li>
+						<div class="clearfix"></div>
+				 </ul>				 
+			 </div>
+			 <div class="social-icons">
+				 <a href="#"><span class="fb"> </span></a>
+				 <a href="#"><span class="twt"> </span></a>
+				 <a href="#"><span class="gog"> </span></a>
+				 <a href="#"><span class="in"> </span></a>
+				 <a href="#"><span class="pin"> </span></a>
+			 </div>
+			 <div class="clearfix"></div>
+		  </div>
+	 </div>
+	 <p class="copy-right">Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+</div>
+
+<!---->
+
+</body>
+</html>

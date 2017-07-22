@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+body            { margin: 0; padding: 0; overflow: hidden; height: 100%; width: 100%; }
+.wrapper        { height: 100%; width: 100%; position: absolute; }
+.dark-image     { display: block; width: 50%; height: 100%; background: #f2b916; float: left; text-align: right; }
+.light-image    { display: block; width: 50%; height: 100%; background: #289fcf; float: right;}
+.dark-image img { position: relative; top: 50%; margin-top: -301px; max-width: 100%; max-height: 100%; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -ms-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease; }
+.light-image img
+                { position: relative; top: 50%; margin-top: -301px; max-width: 100%; max-height: 100%; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -ms-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease; }
+a:hover img     { top: 45% }
+img             { border: 0 }
+/*------------------------------------------------------------------------- Media Queries Starts-------------*/
+@media (min-width: 980px) and (max-width: 1024px) {
+	.dark-image img, .light-image img  { margin-top: 0; top: 15%; }
+	a:hover img { top: 10%; }
+}
+
+@media (max-width: 979px) {
+	.dark-image img, .light-image img  { margin-top: 0; top: 30%; }
+	a:hover img { top: 25%; }
+}
+
+@media (max-width: 767px) {
+	.dark-image img, .light-image img  { margin: 40px 0 20px 0; top: 0; }
+	a:hover img { top: 0; }
+}
+
+@media (max-width: 479px) {
+	.dark-image img, .light-image img  { margin: 0; top: 35%; }
+	a:hover img { top: 35%; }
+}
+/*------------------------------------------------------------------------- Media Queries Ends-------------*/
+

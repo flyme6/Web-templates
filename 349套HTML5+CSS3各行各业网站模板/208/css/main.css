@@ -1,0 +1,2084 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* IMPORT colors stylesheet */
+@import url("colors/pink.css");
+@import url("wedding-bliss-bootstrap-skin.css");
+
+html {height: 100%!important; min-height: 100%!important;}
+
+body {
+	font-size: 16px;
+	color: #696262;
+	font-family: 'Droid Sans', sans-serif;
+	line-height: 26px;
+	background: url(../img/body-bg.jpg) repeat;
+	text-shadow:0px 0px 1px #fff;
+	height: 100%!important;
+}
+
+a {
+	-webkit-transition:color 0.2s ease-in;  
+	-moz-transition:color 0.2s ease-in;  
+	-o-transition:color 0.2s ease-in;  
+	transition:color 0.2s ease-in;
+   
+}
+a, a:hover, a:active, a:focus {
+	outline: 0;
+}
+
+img, iframe {
+	background-color: rgba(255, 255, 255, 0.5);
+    	border: 1px solid #FFFFFF;
+    	padding: 3px;
+    	width: 100%;
+}
+
+h1 {
+	font-size: 28px;
+	font-family: 'Cinzel',serif;
+	font-weight: bold;
+	margin-bottom: 1em;
+
+}
+h2 {
+	font-size: 25px;
+	font-family: 'Cinzel',serif;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+h3 {
+	font-size: 23px;
+	font-family: 'Cinzel',serif;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+h4 {
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Cinzel',serif;
+	margin-bottom: 1em;
+}
+h5 {
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 1em;
+
+}
+h6 {
+
+}
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+
+#ourstoryphoto img, 
+#thebridesidephoto img, 
+#thegroomsidephoto img, 
+#weddinglocationphoto img, 
+#rsvpphoto img, 
+#blog1photo img, 
+#blog2photo img, 
+#gallery1photo img, 
+#gallery2photo img 
+#registryphoto img, 
+#guestbookphoto img {
+	position: absolute;
+	background-color: transparent;
+	border: none;
+	padding: 0px;
+	margin: 20px auto;
+}
+
+#countdown-1 {
+	border: 1px solid red;
+	width: 100%;
+	height: 200px;
+}
+
+/* HELPER classes */
+.clear {
+	clear: both;
+    	display: block;
+    	height: 0;
+   	overflow: hidden;
+    	visibility: hidden;
+}
+.alignright {
+	float: right;
+	margin: 10px 10px 10px 20px
+}
+.alignleft {
+	float: left;
+	margin: 10px 20px 10px 10px
+}
+
+.fakeheight {
+	height:100px;
+}
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+
+/* "parallax settings" 
+--------------------------------------------------------------------------------*/
+
+.parallax-background {
+    	background-position:center center;
+    	-webkit-background-size: cover !important; 
+    	-moz-background-size: cover !important;  
+    	-o-background-size: cover !important; 
+    	background-size: cover !important;
+	height: 300px;
+}
+
+.parallax-background.bgfixed {
+    	background-attachment: fixed !important;
+}
+
+
+/* "preloader" screen
+--------------------------------------------------------------------------------*/
+
+
+	.bghide {
+		
+	       position:fixed;
+		height:100%;
+		width:100%;
+		top: 0;
+		left: 0;
+	       z-index: 9999;
+	}
+
+	/* the timer */
+	.remaining {
+		color: #FFFFFF;
+	    	font-family: 'Great Vibes',cursive;
+	    	font-size: 91px;
+	    	line-height: 150px;
+	    	margin: 20px auto 60px;
+	    	text-align: center;
+		
+	}
+	#timer {
+		
+		overflow: visible;
+		width:40%;
+  		max-width: 960px;
+  		min-width: 600px;
+		margin: 0 auto;
+		z-index: 9999;
+		height: 300px;
+		
+	}
+	.counterwrapper {
+		width: 100%;
+		overflow: hidden;
+		
+		
+	}
+	.counterwrapper .aligncenter {
+    		margin: 0 auto;
+    		overflow: hidden;
+    		width: 338px;
+    		padding-bottom: 30px;
+	}
+	.counter {
+		height: 6em;
+		width: 6em;
+		border-radius: 100px;
+		background: #fff;
+		float: left;
+		margin-right: 1em
+	}
+	.daysleft {
+		font-size: 50px;
+		padding-top: 15px;
+		text-align: center;
+		line-height: 70px;
+		font-family: cinzel, arial;
+		text-align: center;
+	}
+	.counter h5 {
+		display: block;
+		margin-top: 20px;
+	       font-size: 13px;
+	       line-height: 18px;
+	       margin-bottom: 15px;
+	       text-align: center;
+	       color: #fff;
+	       text-transform: uppercase;
+	}
+
+/* MENU/NAVIGATION STYLES
+--------------------------------------------------------------------------------*/
+	
+	nav {
+		font-family: 'Cinzel', serif;
+	}
+	.navbar-nav > li {
+		background: url(../img/menu-sepp.jpg) no-repeat center right;
+		padding-left: 0px;
+	}
+	.navbar-nav > li:last-child {
+		background: none;
+	}
+	.navbar-nav > li > a {
+		padding: 15px 10px;
+	}
+	.navbar-nav > li ul li {
+		background: none;
+		padding-left: 0px;
+	}
+	.left-nav {
+		float: left;
+		width: 38%;
+	}
+	.right-nav {
+		float: right;
+		width: 37%;
+	}
+	.navbar-inverse {
+		background: url(../img/header-bg.png) repeat-x 0 -50px;
+		height: 100px;
+		box-shadow: none;
+		border: none;
+		font-size: 14px;
+	}
+	.navbar-inverse a {
+		color: #3a3a3a;
+	}
+	.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
+		text-shadow:none;
+	}
+	.navbar-inverse .navbar-nav > .active > a,
+	.navbar-inverse .navbar-nav > .active > a:hover,
+	.navbar-inverse .navbar-nav > .active > a:focus {
+		background-color: transparent;
+	}
+
+	.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+		background-color: transparent;
+	}
+	.navbar-inverse .container {
+		margin-top: 7px;
+	}
+
+	/* color for the menu hover is found in the colors/colors.css stylesheet */
+
+	/* drop-down menu */
+	.dropdown-menu {
+		text-align: center;
+		left: -28px;
+	}
+
+	.dropdown-menu > li > a:hover, 
+	.dropdown-menu > li > a:focus,
+	.dropdown-menu > .active a,
+	.dropdown-menu > .active a:hover,
+	.dropdown-menu > .active a:focus {
+		background-color: transparent;
+		background-image: none;
+		background-repeat: no-repeat;
+	}
+	
+
+	.dropdown-menu:after, .dropdown-menu:before {
+		bottom: 100%;
+		left: 50%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+
+	.dropdown-menu:after {
+		border-color: rgba(255, 255, 255, 0);
+		border-width: 7px;
+		margin-left: -7px;
+	}
+	.dropdown-menu:before {
+		border-color: rgba(240, 118, 119, 0);
+		border-width: 7px;
+		margin-left: -7px;
+	}
+
+	/* date style */
+	.navbar-brand{
+		display: block;
+		float: left;
+		width: 26%;
+		margin:0 auto;
+		text-align: center;
+	}
+
+	.navbar-brand {
+		
+		font-size: 2.7em;
+		font-weight: 600;
+	}
+
+	/* the collapsed menu */
+	.navbar-inverse .navbar-toggle {
+		border:none;
+	}
+	.navbar-inverse .navbar-toggle:focus {
+		background: #fff;
+	}
+
+	.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+		border: none
+	}
+	.navbar-header .names {
+	    	display: none;
+	    	font-family: 'Great Vibes',cursive;
+	    	font-size: 40px;
+	    	margin-top: 15px;
+	    	width: 80%;
+	    	float: left;
+    	}
+
+    	/* what happens when the menu is opened in tablet/phone view*/
+    	.navbar-collapse {
+		background: #fff;
+	}
+	
+
+
+
+/* SLIDER styles
+--------------------------------------------------------------------------------*/
+	.jumbotron {
+		padding: 0px;
+		margin:0px;
+		overflow: hidden;
+
+	}
+	.flex-viewport {
+		padding-top: 80px; 
+		border: 1px solid #fff;
+	}
+
+	.slider .names {
+		
+		background: rgba(255, 255, 255, 0.6);
+	    	color: #725656;
+	    	font-family: 'Great Vibes',cursive;
+	    	font-size: 111px;
+	    	position: absolute;
+	    	text-align: center;
+	    	bottom: 0px;
+	    	width:60%;
+	    	left: 0;
+	    	right: 0;
+	    	margin: 0 auto;
+	    	padding-left: 45px;
+	    	z-index: 1028;
+	}
+	.slider {
+		position: relative;
+	}
+
+	.slides li img {
+		padding: 0px;
+		background: transparent;
+		border: none
+	}
+	.names span {
+		background: none repeat scroll 0 0 #FFFFFF;
+	    	border-radius: 50px;
+	    	font-family: arial;
+	    	font-size: 50px;
+	    	padding: 8px 3px;
+	    	box-shadow: 0px 1px 2px #b7a5a5;
+	    	margin:0px 30px;
+
+	}
+	.names span i {
+		border: 1px solid #D2C9C9;
+	    	border-radius: 40px;
+	    	padding: 4px 16px;
+	}
+	.flex-control-nav {
+		position: absolute;
+		z-index: 1029;
+		bottom: 0!important;
+	}
+	#slider1 {
+	    	margin-top: 80px;
+	}
+	#slider1 .flex-control-nav {
+		box-shadow: 0 -10px 4px -10px #656565 inset;
+		border-bottom: 1px solid #fff;
+	}
+	#slider1 .flex-control-paging li a {
+		background: #fff;
+		width: 15px;
+		height: 15px;
+	}
+
+
+/* UNDER the slider
+--------------------------------------------------------------------------------*/
+	#home {
+		font-size: 22px;
+		line-height: 35px;
+		text-align: center;
+		background: rgba(255, 255, 255, 0.5);
+		padding: 40px 0 8em 0;
+
+	}
+	#home h2 {
+		font-family: 'Cinzel',serif;
+		font-size: 34px;
+		letter-spacing: 1px;
+		margin-bottom: 40px;
+		margin-top: 0px;
+		font-weight: normal;
+	}
+	#home .btn-primary {
+		margin-top: 40px;
+	}
+
+/* the beginning of the sections */
+
+/* GENERAL STYLING for all the sections
+--------------------------------------------------------------------------------*/
+	.section-overlay header {
+		background: rgb(255,255,255); /* Old browsers */
+		background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 21%, rgba(255,255,255,0.7) 77%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(21%,rgba(255,255,255,0.7)), color-stop(77%,rgba(255,255,255,0.7)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.7) 21%,rgba(255,255,255,0.7) 77%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.7) 21%,rgba(255,255,255,0.7) 77%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.7) 21%,rgba(255,255,255,0.7) 77%,rgba(255,255,255,0) 100%); /* IE10+ */
+		background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.7) 21%,rgba(255,255,255,0.7) 77%,rgba(255,255,255,0) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+
+		border-top: 1px solid rgba(255, 255, 255, .5);
+		border-bottom: 1px solid rgba(255, 255, 255, .5);
+		-webkit-background-clip: padding-box; /* for Safari */
+		background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+		color: #5E3F3F;
+		font-family: 'Cinzel',serif;
+		font-size: 33px;
+		margin-top: 10%;
+		padding: 20px 20px;
+		text-align: center;
+		text-shadow: none;
+		z-index: 1;
+		line-height: 35px;
+	}
+	.section-overlay header span {
+		font-size: 16px;
+		font-style: italic;
+		font-family: 'Droid Sans', sans-serif;
+		display: block;
+		margin-top: 7px;
+		line-height: 22px;
+	}
+
+/* "our love story" section
+--------------------------------------------------------------------------------*/
+	.section-overlay {
+		background: url(../img/overlay-pattern.png) repeat;
+		height: 300px;
+		width: 100%;
+	}
+	
+	#ourstory {
+		margin-bottom: 10em;
+	}
+
+
+	/* the header */
+	#ourstoryphoto {
+		background-image:url(../img/parallax/brideside.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 300px;
+		height: 300px; 
+		margin: 0 auto; 
+		width: 100%; 
+		max-width: 1920px; 
+		margin-bottom: 50px;
+		
+	}
+
+	#ourstory .row.couple-photos {
+		margin-top:50px;
+	}
+
+	/* the couple photos */
+	.couple-photos {
+		margin-bottom: 30px;
+		position: relative;
+	}
+	.couple-photos .hearts {
+		background-color: rgba(0, 0, 0, 0);
+		width: 67px;
+		border: medium none;
+		left: 47.6%;
+		padding: 0;
+		position: absolute;
+		top: 20.9%;
+		-webkit-animation-duration: 1s;
+		-moz-animation-duration: 1s;
+		-o-animation-duration: 1s;
+		-webkit-animation-delay: 0.3s;
+		-moz-animation-delay: 0.3s;
+		-o-animation-delay: 0.3s;
+		/*-o-animation-iteration-count: infinite;*/
+	}
+	.couple-photos .bride, .couple-photos .groom {
+		height: 350px;
+	}
+	.couple-photos .bride {
+		margin-right: -50px;
+		margin-left: 60px;
+	}
+	.couple-photos .groom {
+		margin-left: -60px;
+	}
+	.couple-photos .round-frame {
+		height: 350px;
+    		width: 350px;
+    		border-radius: 250px;
+    		overflow: hidden;
+    		
+	}
+	.couple-photos .round-frame img {
+		padding: 0px;
+		border: none;
+		background: none;
+	}
+	.couple-photos .round-frame-bg {
+		background-color: rgba(255, 255, 255, 0.5);
+	    	border: 1px solid #FFFFFF;
+	    	border-radius: 250px;
+	    	height: 360px;
+	    	padding: 4px;
+	    	width: 361px;
+	    	margin: 0;
+	}
+	.couple-photos .alignright {
+		margin: 0px;
+	}
+
+
+	/* the timeline */
+
+	.thetimeline {
+		overflow: hidden;
+    		position: relative;
+	}
+	.thetimeline .line {
+		background: none repeat scroll 0 0 #d9d9d9;
+	    	height: 100%;
+	    	left: 50%;
+	    	margin: 0 -2px;
+	    	position: absolute;
+	    	top: 0;
+	    	width: 4px;
+	}
+	.thetimeline .year {
+		
+		border-radius: 10px;
+		color: #FFFFFF;
+		display: inline-block;
+		height: 28px;
+		margin: 0px auto 30px auto;
+		position: relative;
+		width: auto;
+		padding: 0 20px
+	}
+	.thetimeline .year:last-child {
+		margin-bottom: 0px;
+		margin-top: 30px;
+	}
+	.thetimeline .post {
+
+	}
+	.thetimeline .post.odd p {
+		text-align: right;
+	}
+	.thetimeline .post.even p {
+		text-align: left;
+	}
+	.thetimeline .post-content {
+		width: 48%;
+		padding: 20px;
+	}
+	.thetimeline .odd .post-content {
+		float: left;
+	}
+	.thetimeline .even .post-content {
+		float: right;
+	}
+
+
+	/* the post box */
+
+	.lb-details {
+		text-shadow:none;
+		color: #fff;
+	}
+
+	.thetimeline .post-box:before {
+		-moz-border-bottom-colors: none;
+	    	-moz-border-left-colors: none;
+	    	-moz-border-right-colors: none;
+	    	-moz-border-top-colors: none;
+	    	background-color: #FFFFFF;
+		border-color: rgba(0, 0, 0, 0.15) -moz-use-text-color -moz-use-text-color rgba(0, 0, 0, 0.15);
+		border-image: none;
+		border-style: solid none none solid;
+		border-width: 0 0px 1px;
+		box-shadow: -1px 1px 1px #c1c1c1;
+		content: "";
+		display: block;
+		height: 15px;
+		left: auto;
+		position: absolute;
+		right: -7px;
+		transform: rotate(-139deg);
+		-ms-transform:rotate(-139deg); /* IE 9 */
+		-webkit-transform:rotate(-139deg); /* Safari and Chrome */
+		width: 15px;
+	}
+	.thetimeline .post-box:after {
+		background-clip: padding-box;
+	    	background-color: #F5F5F5;
+	    	border-radius: 10px;
+	    	content: "";
+	    	display: block;
+	    	height: 20px;
+	    	left: auto;
+	    	right: -53px;
+	    	position: absolute;
+	    	top: 18px;
+	    	width: 20px;
+	}
+	.thetimeline .post.even .post-box:after {
+		right: auto;
+		left: -53px;
+	}
+	.thetimeline .post.even .post-box:before {
+		left:-8px;
+		transform: rotate(50deg);
+		-ms-transform:rotate(-50deg); /* IE 9 */
+	   	-webkit-transform:rotate(-315deg); /* Safari and Chrome */
+	}
+	.theyear {
+		width: 100%;
+		overflow: hidden;
+		text-align: center;
+	}
+	.post-box {
+		background-clip: padding-box;
+	    	background-color: #FFFFFF;
+	    	border-radius: 6px;
+	    	box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+	    	margin: 0 0 1.52em;
+	    	padding: 20px;
+	    	position: relative;
+	    	box-shadow: 0px 0px 2px #999999;
+	    	font-size: 15px;
+	    
+	}
+	 .post-box .readmore  {
+	 	display: block;
+		width: auto;
+		text-transform: uppercase;
+		
+	 }
+	.thetimeline .post.odd .post-box .readmore {
+		padding: 0 10px 0 0;
+		float: right;
+		
+	}
+	.thetimeline .post.even .post-box .readmore {
+
+		float: left;
+		padding: 0 10px 0 0;
+	}
+	.post .excerpt {
+		position: relative;
+		padding: 10px 0 0 35px;
+		float: right;
+		width: 50%;
+		
+	}
+	.post .excerpt-content {
+		font-size: 30px;
+		line-height: 45px;
+		color: #929292;
+		font-style: italic;
+		text-align: center;
+	}
+	.post .excerpt-content.gallery {
+		width: 100%;
+		overflow: hidden;
+	}
+	.post .excerpt-content.gallery h4 {
+		text-align: left;
+		margin-bottom: 20px;
+		font-style: normal;
+	}
+	.post .excerpt-content a {
+		display: block;
+		float: left;
+		margin-right: 5px;
+	}
+	.post .excerpt-content a:last-child {
+		margin-right: 0px;
+	}
+	.post .excerpt-content span {
+		color: #FFFFFF;
+	    	display: block;
+	    	float: left;
+	    	font-size: 100px;
+	    	margin-right: 20px;
+	    	margin-top: 23px;
+	    	font-family: arial, sans-serif
+	}
+	.excerpt-content.gallery {
+		padding: 0px 10px;
+	}
+	.post.odd .excerpt-content.quote {
+		padding: 20px 40px 20px 20px;
+	}
+	.post.even .excerpt {
+		padding: 10px 0 0 0px
+	}
+	.post.even .excerpt-content.quote {
+		padding: 20px 90px 20px 0px;
+	}
+	
+
+	.thetimeline .post-content header {
+		width: 100%;
+		overflow: hidden;
+		margin-bottom: 20px;
+		font-size: 14px;
+	}
+
+	.thetimeline .post-content header .date {
+		width: auto;
+		float: left;
+		text-align: center;
+		text-transform: uppercase;
+		width: 29%;
+	}
+	.thetimeline .post-content header .date span {
+		display: block;
+		border-top: 2px solid #e1e0e0;
+		border-bottom: 1px solid #e1e0e0;
+	}
+	.thetimeline .post-content header h2 {
+		width: 69%;
+		float: right;
+		text-align: right;
+		display: block;
+		margin: 0px;
+		font-family: 'Cinzel', serif;
+		padding-top: 10px;
+		font-weight: normal;
+		font-size: 26px;
+	}
+	.post.even header .date {
+		float: right;
+	}
+	.post.even .post-content header h2 {
+		float: left;
+		text-align: left;
+		padding-top: 10px;
+	}
+
+
+/* "THE BRIDE's SIDE" section
+--------------------------------------------------------------------------------*/
+	
+	#thebrideside {
+		margin-bottom: 10em;
+		font-size: 15px;
+		min-height: 100em;
+	}
+
+	
+	#thebrideside h5{
+		font-family: 'Cinzel',serif;
+		text-align: center;
+		font-size: 20px;
+		color: #818181;
+		line-height: 22px;
+		font-weight: normal;
+	}
+
+	#thebrideside .bridemom, #thebrideside .bridedad, #thebrideside .thebride, .bridesmaid {
+		padding: 40px;
+	}
+	
+	#thebrideside .col-md-4.thebride{
+		padding: 0;
+	}
+	/* the header */
+
+	
+	#thebridesidephoto {
+		background-image:url(../img/parallax/ourlovestory.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 300px;
+		height: 300px; 
+		margin: 0 auto; 
+		width: 100%; 
+		max-width: 1920px; 
+		margin-bottom: 50px;
+	}
+	
+	/* Bride's mom and dad photos */
+
+	.bridemom .round-frame, .bridedad .round-frame {
+		height: 200px;
+    		width: 200px;
+    		border-radius: 250px;
+    		overflow: hidden;
+    		
+	}
+	.bridemom .round-frame img, .bridedad .round-frame img {
+		padding: 0px;
+		border: none;
+		background: none;
+	}
+	.bridemom .round-frame-bg, .bridedad .round-frame-bg {
+		background-color: rgba(255, 255, 255, 0.5);
+	    	border: 1px solid #FFFFFF;
+	    	border-radius: 250px;
+	    	height: 210px;
+	    	padding: 4px;
+	    	width: 211px;
+	    	margin:0 auto;
+	}
+
+	/* Bride's photo */
+	.thebride .round-frame {
+		height: 350px;
+    		width: 350px;
+    		border-radius: 250px;
+    		overflow: hidden;
+    		
+	}
+	.thebride .round-frame img {
+		padding: 0px;
+		border: none;
+		background: none;
+	}
+	.thebride .round-frame-bg {
+		background-color: rgba(255, 255, 255, 0.5);
+	    	border: 1px solid #FFFFFF;
+	    	border-radius: 250px;
+	    	height: 360px;
+	    	padding: 4px;
+	    	width: 361px;
+	    	margin:0 auto;
+	}
+
+	/* Bride maid's photo */
+	.bridesmaid .round-frame {
+		height: 250px;
+    		width: 250px;
+    		border-radius: 250px;
+    		overflow: hidden;
+    		
+	}
+	.bridesmaid .round-frame img {
+		padding: 0px;
+		border: none;
+		background: none;
+	}
+	.bridesmaid .round-frame-bg {
+		background-color: rgba(255, 255, 255, 0.5);
+	    	border: 1px solid #FFFFFF;
+	    	border-radius: 250px;
+	    	height: 260px;
+	    	padding: 4px;
+	    	width: 261px;
+	    	margin:0 auto;
+	}
+
+
+/* "THE GROOM's SIDE" section
+--------------------------------------------------------------------------------*/
+	
+	#thegroomside {
+		margin-bottom: 10em;
+		font-size: 15px;
+		min-height: 100em;
+	}
+	
+	#thegroomside h5{
+		font-family: 'Cinzel',serif;
+		text-align: center;
+		font-size: 20px;
+		color: #818181;
+		line-height: 22px;
+		font-weight: normal;
+	}
+	#thegroomside .groommom, #thegroomside .groomdad, #thegroomside .thegroom, .groomsmaid {padding: 40px;} {
+		padding: 40px;
+	}
+	#thegroomside .col-md-4.thegroom{
+		padding: 0;
+	}
+
+	/* the header */
+
+	#thegroomsidephoto {
+		background-image:url(../img/parallax/thegroomside.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 300px;
+		height: 300px; 
+		margin: 0 auto; 
+		width: 100%; 
+		max-width: 1920px; 
+		margin-bottom: 50px;
+	}
+	
+	
+	/* groom's mom and dad photos */
+
+	.groommom .round-frame, .groomdad .round-frame {
+		height: 200px;
+    		width: 200px;
+    		border-radius: 250px;
+    		overflow: hidden;
+    		
+	}
+	.groommom .round-frame img, .groomdad .round-frame img {
+		padding: 0px;
+		border: none;
+		background: none;
+	}
+	.groommom .round-frame-bg, .groomdad .round-frame-bg {
+		background-color: rgba(255, 255, 255, 0.5);
+	    	border: 1px solid #FFFFFF;
+	    	border-radius: 250px;
+	    	height: 210px;
+	    	padding: 4px;
+	    	width: 211px;
+	   	margin:0 auto;
+	}
+
+	/* groom's photo */
+	.thegroom .round-frame {
+		height: 350px;
+    		width: 350px;
+    		border-radius: 250px;
+    		overflow: hidden;
+    		
+	}
+	.thegroom .round-frame img {
+		padding: 0px;
+		border: none;
+		background: none;
+	}
+	.thegroom .round-frame-bg {
+		background-color: rgba(255, 255, 255, 0.5);
+	    	border: 1px solid #FFFFFF;
+	    	border-radius: 250px;
+	    	height: 360px;
+	    	padding: 4px;
+	    	width: 361px;
+	    	margin:0 auto;
+	}
+
+	/* groom maid's photo */
+	.groomsmaid .round-frame {
+		height: 250px;
+    		width: 250px;
+    		border-radius: 250px;
+    		overflow: hidden;
+    		
+	}
+	.groomsmaid .round-frame img {
+		padding: 0px;
+		border: none;
+		background: none;
+	}
+	.groomsmaid .round-frame-bg {
+		background-color: rgba(255, 255, 255, 0.5);
+	    	border: 1px solid #FFFFFF;
+	    	border-radius: 250px;
+	    	height: 260px;
+	    	padding: 4px;
+	    	width: 261px;
+	    	margin:0 auto;
+	}
+
+/* "wedding location" section
+--------------------------------------------------------------------------------*/
+	
+	#weddinglocation {
+		margin-bottom: 10em;
+		font-size: 15px;
+	}
+	#weddinglocation h4 {
+
+		margin-bottom: 10px;
+	}
+	#weddinglocation iframe {
+		margin-top: 20px;
+	}
+	#weddinglocation .sectionmaintitle {
+		margin-bottom: 0.5em;
+		margin-top: 0.2em;
+	}
+	
+	.location.fakeheight {min-height: 27em;}
+	.hotels.fakeheight{min-height: 15em;}
+	.attractions.fakeheight{min-height: 15em;}
+
+	/* the header */
+	#weddinglocationphoto {
+		background:url(../img/parallax/weddinglocation.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 300px;
+		height: 300px; 
+		margin: 0 auto; 
+		width: 100%; 
+		max-width: 1920px; 
+		margin-bottom: 50px;
+	}
+
+	/* location details */
+	#weddinglocation h5{
+		text-align: left;
+		font-size: 15px;
+		font-weight: bold;
+		margin-bottom: 5px;
+		color: #818181;
+		line-height: 18px;
+	}
+	
+	.locationdetails {
+		margin:20px 0px;
+		padding: 0px;
+		width: 100%;
+		overflow: hidden;
+		padding-bottom: 30px;
+	}
+	.locationdetails p {
+		margin-bottom: 0px;
+	}
+	.locationdetails li {
+		list-style-type: none;
+		width: 45%;
+		float: left;
+		padding-left: 0px;
+		background: none;
+	}
+	.locationdetails li:last-child {
+		float: right;
+		width: 30%
+	}
+	.locationdetails li span {
+		display: block;
+		float: left;
+		margin-right: 20px;
+		margin-top: 8px;
+		width: 10px;
+	}
+	.locationdetails .alignleft {
+		margin: 0px;
+	}
+	/* hotels and attractions */
+	.hotels {
+		background-color: rgba(255, 255, 255, 0.4);
+		background: rgba(255, 255, 255, 0.4);
+		padding: 30px 0;
+		margin-bottom: 100px;
+	}
+	
+	#weddinglocation .hotels .row {
+		margin-bottom: 0px;
+	}
+	.hotels p, .attractions p {
+		margin-bottom: 0px;
+	}
+	
+	.hotels .readmore, .attractions .readmore {
+		border-radius: 8px;
+	    	color: #FFFFFF;
+	    	display: block;
+	    	font-size: 13px;
+	    	margin-top: 10px;
+	    	padding: 0 12px;
+	    	text-align: center;
+	   	 text-transform: uppercase;
+	    	width: 80px;
+	    	line-height: 23px;
+	    	-webkit-transition:all 0.2s ease-in;  
+	   	-moz-transition:all 0.2s ease-in;  
+	   	-o-transition:all 0.2s ease-in;  
+	   	transition:all 0.2s ease-in;
+	}
+	.hotels .readmore:hover, .attractions .readmore:hover {
+		text-decoration: none;
+		background: #e06465;
+	}
+	.hotels .round-frame-bg, .attractions .round-frame-bg {
+		 background-color: rgba(255, 255, 255, 0.5);
+	    	border: 1px solid #FFFFFF;
+	    	border-radius: 250px;
+	    	float: left;
+	    	height: 79px;
+	    	margin-right: 10px;
+	    	padding: 3px;
+	    	width: 78px;
+	    	margin-top: 10px;
+	}
+	.hotels .round-frame, .attractions .round-frame {
+		border-radius: 250px;
+	    	height: 70px;
+	    	overflow: hidden;
+	    	width: 70px;
+	}
+	.hotels .round-frame img, .attractions .round-frame img {
+		background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	    	border: medium none;
+	    	padding: 0;
+	}
+	.hotels .alignright, .attractions .alignright {
+		margin:0px;
+		padding-top: 10px;
+		width: 174px;
+	}
+
+	
+
+	/* the transition effects */
+	.hotels .col-md-3, .attractions .col-md-3{
+		 -webkit-transition:all 0.2s ease-in;  
+		   -moz-transition:all 0.2s ease-in;  
+		   -o-transition:all 0.2s ease-in;  
+		   transition:all 0.2s ease-in;
+		   overflow: hidden;
+	}
+	.hotels .col-md-3:hover, .attractions .col-md-3:hover{
+		 margin-top: -10px;
+	}
+	.hotels .col-md-3:first-child:hover, .attractions .col-md-3:first-child:hover {
+		margin-top: inherit;
+	}
+
+
+/* "BLOG MODEL 1" section
+--------------------------------------------------------------------------------*/
+
+	#blog1 {
+		margin-bottom: 10em;
+		font-size: 15px;
+	}
+	
+
+
+	/* the header */
+	#blog1photo {
+		background:url(../img/parallax/blog1.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 300px;
+		height: 300px; 
+		margin: 0 auto; 
+		width: 100%; 
+		max-width: 1920px; 
+		margin-bottom: 50px;
+	}
+	
+	
+
+	/* gallery container */
+	.blog1-container {
+		max-width:1260px;
+		min-width:240px;
+		width:auto;
+		margin:auto;
+		padding:0px 30px;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		overflow: hidden;
+
+	}
+	 
+	.megafolio-container3{  
+		width:100%; 
+	   	position:relative;
+	   	-moz-box-sizing: border-box;
+	   	box-sizing: border-box;
+	   	-webkit-box-sizing: border-box;
+	}
+	.blog1-container .mega-socialbar {
+		background: #fff;
+		height: 20px;
+		padding-top: 10px;
+	}
+	.blog1-container .mega-socialbar span {
+		text-shadow:none;
+		font-size: 13px;
+	}	
+
+	
+
+
+
+/* "BLOG MODEL 2" section
+--------------------------------------------------------------------------------*/
+
+	#blog2 {
+		margin-bottom: 10em;
+		font-size: 15px;
+	}
+	
+
+	/* the header */
+	#blog2photo {
+		background:url(../img/parallax/blog2.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 300px;
+		height: 300px; 
+		margin: 0 auto; 
+		width: 100%; 
+		max-width: 1920px; 
+		margin-bottom: 50px;
+	}
+
+	
+	/* the blog posts */
+	#blog2 .post{
+		margin-top: 20px;
+		padding: 20px;
+	}
+	
+	#blog2 .post-title {
+		font-family: 'Cinzel',serif;
+		margin-bottom: 0.5em
+	}
+	.post-title {
+
+	}
+	#blog2 .post .btn-primary {
+		margin:0 auto;
+	}
+	#blog2 .post p {
+		margin-bottom: 20px;
+	}
+
+	#blog2 .post.odd {
+		text-align: left;
+	}
+	#blog2 .post.even {
+		text-align: right;
+	}
+	#blog2 .fakeheight {height: 20em}
+
+/* "GALLERY MODEL 1" section
+--------------------------------------------------------------------------------*/
+
+	#gallery1 {
+		margin-bottom: 10em;
+		font-size: 15px;
+	}
+	
+
+	/* the header */
+	#gallery1photo {
+		background:url(../img/parallax/gallery1.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 300px;
+		height: 300px; 
+		margin: 0 auto; 
+		width: 100%; 
+		max-width: 1920px; 
+		margin-bottom: 50px;
+	}
+
+
+
+	/* gallery container */
+	.gallery-container {
+		max-width:1260px;
+		min-width:240px;
+		width:auto;
+		margin:auto;
+		padding:0px 30px;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		overflow: hidden;
+
+	}
+	 
+	.megafolio-container{  
+		width:100%; 
+	   	position:relative;
+	   	-moz-box-sizing: border-box;
+	   	box-sizing: border-box;
+	   	-webkit-box-sizing: border-box;
+	}
+	
+	/* gallery filter */
+
+	.filter-list {
+		padding-left: 0px;
+		background-color: #d9d9d9;
+		border-radius: 20px;
+		margin: 70px auto;
+		width: 90%;
+	}
+
+	.filter-list li {
+		display: inline;
+		padding: 5px 18px;
+		margin:0px;
+		font-family: 'Cinzel',serif;
+		text-shadow:none;
+		
+	}
+	.filter-list li:first-child.filter {
+		border-radius: 20px 0 0 20px;
+		color: #fff;
+	}
+
+	.filter-list li.filter {
+		background: transparent;
+		border-right: 1px solid #e9e9e9;
+		font-weight: 300;
+		color: #584040;
+		-webkit-transition:all 0.2s ease-in;  
+	   	-moz-transition:all 0.2s ease-in;  
+	   	-o-transition:all 0.2s ease-in;  
+	   	transition:all 0.2s ease-in;
+	}
+	.filter-list li.filter:hover {
+		color: #fff;
+	}
+	.filter-list li.filter.selected {
+		color: #fff;
+	}
+	.filter-list li:last-child.filter {
+		border-right: none
+	}
+	.gallery-container .mega-hover {
+		background-color: rgba(255,255,255, 0.7);
+		border-radius: 0;
+	}
+	.gallery-container .mega-hovertitle {
+		color: #725656;
+		text-transform: uppercase;
+		line-height: 20px;
+	}
+	.gallery-container .mega-hovertitle .mega-hoversubtitle {
+		font-style: italic;
+		color: #725656;
+		font-weight: bold;
+	}
+
+
+
+/* "GALLERY MODEL 2" section
+--------------------------------------------------------------------------------*/
+
+	#gallery2 {
+		margin-bottom: 10em;
+		font-size: 15px;
+	}
+	
+
+	/* the header */
+	#gallery2photo {
+		background:url(../img/parallax/gallery2.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 300px;
+		height: 300px; 
+		margin: 0 auto; 
+		width: 100%; 
+		max-width: 1920px; 
+		margin-bottom: 50px;
+	}
+	
+
+
+	/* gallery container */
+	.gallery-container2 {
+		width: 100%;
+		margin:50px auto;
+		padding:0px 30px;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		overflow: hidden;
+
+
+	}
+	 
+	.megafolio-container2{  
+		width:100%; 
+	   	position:relative;
+	   	-moz-box-sizing: border-box;
+	   	box-sizing: border-box;
+	   	-webkit-box-sizing: border-box;
+	}
+
+	.gallery-container2 .mega-hover {
+		background-color: rgba(255,255,255, 0.7);
+		border-radius: 0;
+	}
+	.gallery-container2 .mega-hovertitle {
+		color: #725656;
+		text-transform: uppercase;
+		line-height: 20px;
+	}
+	.gallery-container2 .mega-hovertitle .mega-hoversubtitle {
+		font-style: italic;
+		color: #725656;
+		font-weight: bold;
+	}
+	.gallery-container2 .mega-entry .mega-entry-innerwrap {
+		/*border: 2px solid #fff;*/
+		border-radius: 0px; 
+		background-color: rgba(255, 255, 255, 0.5);
+		border: 1px solid #FFFFFF;
+		padding: 3px;
+	}
+	.gallery-container2 .mega-hover {
+		width: 98%;
+		height: 98%;
+	}
+
+/* "REGISTRY" section
+--------------------------------------------------------------------------------*/
+
+	#registry {
+		margin-bottom: 10em;
+		font-size: 15px;
+	}
+	#registry h4{
+
+		margin-bottom: 20px;
+		
+	}
+	#registry h5 {
+	    	color: #818181;
+	    	font-size: 15px;
+	    	font-weight: bold;
+	    	line-height: 18px;
+	    	margin-bottom: 5px;
+	    	text-align: left;
+	}
+	.registry.fakeheight, .donation.fakeheight {height: 17em;}
+
+	/* the header */
+	#registryphoto {
+		background:url(../img/parallax/registry.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 300px;
+		height: 300px; 
+		margin: 0 auto; 
+		width: 100%; 
+		max-width: 1920px; 
+		margin-bottom: 50px;
+	}
+
+
+	/* the registry listings */
+
+	.registry {
+		background: none repeat scroll 0 0 rgba(255, 255, 255, 0.4);
+	    	margin: 40px 0;
+	    	padding: 30px 0;
+	}
+	.registry .col-md-4{
+		-webkit-transition:all 0.2s ease-in;  
+		-moz-transition:all 0.2s ease-in;  
+		-o-transition:all 0.2s ease-in;  
+		transition:all 0.2s ease-in;
+		margin-bottom: 20px;
+	}
+	.registry .col-md-4:hover{
+		 margin-top: -10px;
+	}
+	.registry .round-frame-bg {
+		background-color: rgba(255, 255, 255, 0.5);
+	    	border: 1px solid #FFFFFF;
+	    	border-radius: 250px;
+	    	float: left;
+	    	height: 119px;
+	    	width: 118px;
+	    	margin-right: 10px;
+	    	margin-top: 10px;
+	    	padding: 3px;
+	    
+	}
+	.registry .round-frame {
+		border-radius: 250px;
+	    	height: 110px;
+	    	overflow: hidden;
+	    	width: 110px;
+	}
+	.registry .round-frame img {
+		background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	    	border: medium none;
+	    	padding: 0;
+	}
+	.registry .alignright {
+		margin: 0;
+   	 	padding-top: 10px;
+   	 	width: 60%
+	}
+	.registry .readmore {
+		border-radius: 8px;
+	    	color: #FFFFFF;
+	    	display: block;
+	    	font-size: 13px;
+	    	line-height: 23px;
+	    	margin-top: 10px;
+	    	padding: 0 12px;
+	    	text-align: center;
+	    	text-transform: uppercase;
+	    	-webkit-transition:all 0.2s ease-in;  
+	   	-moz-transition:all 0.2s ease-in;  
+	   	-o-transition:all 0.2s ease-in;  
+	   	transition:all 0.2s ease-in;
+	   	width: 80px;
+	}
+	.registry .readmore:hover{
+		text-decoration: none;
+		background: #e06465;
+	}
+
+
+	/* donation */
+	
+	.donation span {
+		font-size: 74px;
+		text-align: center;
+		line-height: 90px;
+		padding-right: 0.2em;
+		display: block;
+
+
+	}
+	.donation span sup {
+		font-size: 23px; 
+		color: #6f6f6f;
+		top:-1.5em;
+	}
+	.donation .readmore {
+		border-radius: 8px;
+	    	color: #FFFFFF;
+	    	font-size: 13px;
+	    	line-height: 23px;
+	   	 margin-top: 10px;
+	   	 padding: 3px 15px;
+	    	text-align: center;
+	    	text-transform: uppercase;
+	    	-webkit-transition:all 0.2s ease-in;  
+	   	-moz-transition:all 0.2s ease-in;  
+	   	-o-transition:all 0.2s ease-in;  
+	  	 transition:all 0.2s ease-in;
+	    	width: 80px;
+	}
+	.donation .readmore:hover{
+		text-decoration: none;
+		background: #e06465;
+		text-align: center;
+	}
+	.donation .col-md-2 {
+		text-align: center;
+		padding-top: 3em
+	}
+	
+
+/* "GUEST BOOK" section
+--------------------------------------------------------------------------------*/
+
+	#guestbook {
+		margin-bottom: 10em;
+		font-size: 15px;
+	}
+	#guestbook .sectionmaintitle {
+		font-size: 25px;
+		font-weight: bold;
+		font-family: 'Cinzel',serif;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	/* the header */
+	#guestbookphoto {
+		background:url(../img/parallax/guestbook.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 300px;
+		height: 300px; 
+		margin: 0 auto; 
+		width: 100%; 
+		max-width: 1920px; 
+		margin-bottom: 50px;
+	}
+
+
+	#guestbook .border {
+		width: 100%;
+		overflow: hidden;
+		padding: 15px;
+		margin-bottom: 3em;
+	}
+	#guestbook .border .row{
+		border: 1px dashed #a8a8a8;
+		border-bottom: none;
+		border-right: none;
+		margin-top: 0px;
+		background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3)
+		
+	}
+	#guestbook .border .row .col-md-1, #guestbook .border .row .col-md-2, #guestbook .border .row .col-md-3,
+	#guestbook .border .row .col-md-4, #guestbook .border .row .col-md-5, #guestbook .border .row .col-md-6,
+	#guestbook .border .row .col-md-7, #guestbook .border .row .col-md-8, #guestbook .border .row .col-md-9,
+	#guestbook .border .row .col-md-10, #guestbook .border .row .col-md-11, #guestbook .border .row .col-md-12 {
+		border-right: 1px dashed #a8a8a8;
+		border-bottom: 1px dashed #a8a8a8;
+		-webkit-transition:all 0.2s ease-in;  
+		-moz-transition:all 0.2s ease-in;  
+		-o-transition:all 0.2s ease-in;  
+		transition:all 0.2s ease-in;
+		padding: 20px;
+	}
+	#guestbook .border .row .col-md-1 .date, #guestbook .border .row .col-md-2 .date, #guestbook .border .row .col-md-3 .date,
+	#guestbook .border .row .col-md-4 .date, #guestbook .border .row .col-md-5 .date, #guestbook .border .row .col-md-6 .date,
+	#guestbook .border .row .col-md-7 .date, #guestbook .border .row .col-md-8 .date, #guestbook .border .row .col-md-9 .date,
+	#guestbook .border .row .col-md-10 .date, #guestbook .border .row .col-md-11 .date, #guestbook .border .row .col-md-12 .date {
+		-webkit-transition:all 0.2s ease-in;  
+		-moz-transition:all 0.2s ease-in;  
+		-o-transition:all 0.2s ease-in;  
+		transition:all 0.2s ease-in;
+	}
+	#guestbook .border .row .col-md-1:hover, #guestbook .border .row .col-md-2:hover, #guestbook .border .row .col-md-3:hover,
+	#guestbook .border .row .col-md-4:hover, #guestbook .border .row .col-md-5:hover, #guestbook .border .row .col-md-6:hover,
+	#guestbook .border .row .col-md-7:hover, #guestbook .border .row .col-md-8:hover, #guestbook .border .row .col-md-9:hover,
+	#guestbook .border .row .col-md-10:hover, #guestbook .border .row .col-md-11:hover, #guestbook .border .row .col-md-12:hover {
+		background-color: rgba(255, 255, 255, 0.5);
+		background: rgba(255, 255, 255, 0.5);
+	}
+	#guestbook .border .row .col-md-1:hover .date, #guestbook .border .row .col-md-2:hover .date, #guestbook .border .row .col-md-3:hover .date,
+	#guestbook .border .row .col-md-4:hover .date, #guestbook .border .row .col-md-5:hover .date, #guestbook .border .row .col-md-6:hover .date,
+	#guestbook .border .row .col-md-7:hover .date, #guestbook .border .row .col-md-8:hover .date, #guestbook .border .row .col-md-9:hover .date,
+	#guestbook .border .row .col-md-10:hover .date, #guestbook .border .row .col-md-11:hover .date, #guestbook .border .row .col-md-12:hover .date {
+		padding-top: 20px;
+		padding-bottom: 10px;
+	}
+
+	#guestbook .col-md-1 > div, #guestbook .col-md-2 > div, #guestbook .col-md-3 > div,
+	#guestbook .col-md-4 > div, #guestbook .col-md-5 > div, #guestbook .col-md-6 > div,
+	#guestbook .col-md-7 > div, #guestbook .col-md-8 > div, #guestbook .col-md-9 > div,
+	#guestbook .col-md-10 > div, #guestbook .col-md-11 > div, #guestbook .col-md-12 > div {
+		height: 230px;
+		overflow: hidden;
+	}
+
+	
+	#guestbook .col-md-1 .row, #guestbook .col-md-2 .row, #guestbook .col-md-3 .row,
+	#guestbook .col-md-4 .row, #guestbook .col-md-5 .row, #guestbook .col-md-6 .row,
+	#guestbook .col-md-7 .row, #guestbook .col-md-8 .row, #guestbook .col-md-9 .row,
+	#guestbook .col-md-10 .row, #guestbook .col-md-11 .row, #guestbook .col-md-12 .row {
+		background-color: rgba(255, 255, 255, 0.3);
+		background: rgba(255, 255, 255, 0.3);
+	}
+	#guestbook .border img {
+		background-color: transparent;
+		border: none;
+		padding: 0px;
+		width: inherit;
+	}
+	#guestbook .border h5 {
+		width: 75%;
+		float: right;
+		font-size: 16px;
+		font-family: 'Cinzel',serif;
+	}
+	#guestbook .border h5 span {
+		display: block;
+		margin-top: 5px;
+		font-family: 'Droid', arial;
+		font-size: 14px;
+		font-style: italic;
+	}
+	#guestbook .border p {
+		margin-top: 1em;
+	}
+
+/* "EVENTS CALENDAR / RSVP" section
+--------------------------------------------------------------------------------*/
+	#rsvp {
+		margin-bottom: 10em;
+		font-size: 15px;
+	}
+	#rsvp .sectionmaintitle {
+		font-size: 25px;
+		font-weight: bold;
+		font-family: 'Cinzel',serif;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	#rsvp h5 {
+		font-size: 15px;
+	    	font-weight: bold;
+	    	margin-bottom: 5px;
+	    	text-align: center;
+	    	color: #818181;
+	    	line-height: 18px;
+	}
+
+
+	/* the header */
+	#rsvpphoto {
+		background:url(../img/parallax/events.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 300px;
+		height: 300px; 
+		margin: 0 auto; 
+		width: 100%; 
+		max-width: 1920px; 
+		margin-bottom: 50px;
+	}
+
+
+	/* the calendar */
+	#rsvp .row {
+		margin-top: 2em;
+	}
+	#rsvp .border {
+		width: 100%;
+		overflow: hidden;
+		padding: 15px;
+	}
+	#rsvp .border .row{
+		border: 1px dashed #a8a8a8;
+		border-right: none;
+		margin-top: 0px;
+		
+	}
+	.calendar .border .row > div {
+		border-right: 1px dashed #a8a8a8;
+		-webkit-transition:all 0.2s ease-in;  
+		-moz-transition:all 0.2s ease-in;  
+		-o-transition:all 0.2s ease-in;  
+		transition:all 0.2s ease-in;
+	}
+	.calendar .border .row > div .date {
+		-webkit-transition:all 0.2s ease-in;  
+		-moz-transition:all 0.2s ease-in;  
+		-o-transition:all 0.2s ease-in;  
+		transition:all 0.2s ease-in;
+	}
+	.calendar .border .row > div:hover {
+		background-color: rgba(255, 255, 255, 0.5);
+		background: rgba(255, 255, 255, 0.5);
+		cursor: pointer
+	}
+	.calendar .border .row > div:hover .date {
+		padding-top: 20px;
+		padding-bottom: 10px;
+	}
+
+	.calendar > div .row >div {
+		height: 150px;
+	}
+
+	
+	.calendar > div .row {
+		background-color: rgba(255, 255, 255, 0.3);
+		background: rgba(255, 255, 255, 0.3);
+	}
+	.calendar > div .date {
+		font-size: 45px;
+		font-family: 'Cinzel',serif;
+		text-align: center;
+		padding-top: 30px;
+	}
+	.calendar > div .date span  {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	#rsvpform {
+		padding-top:0.8em;
+	}
+	#rsvpform h5 {
+		font-size: 21px;
+		font-weight: normal;
+		text-align: left;
+		line-height: 25px;
+		margin-top: 0px;
+	}
+	#rsvpform h5 span {
+		font-size: 15px;
+		display: block;
+	}
+	#rsvpform .row {
+		margin-top: 0em; 
+		margin-bottom: 1em
+	}
+	#rsvpform .eventTag {
+		background: #f9f9f9; 
+		border: 1px solid #dadada; 
+		border-radius: 20px; 
+		padding: 0px 10px 0 10px;
+		font-size: 14px;
+		float: left;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+	#rsvpform .checkbox-inline input {
+		display: none
+	}
+	#rsvpform .checkbox-inline {
+		padding-left: 10px;
+	}
+	#rsvpform .eventTag span {
+		text-align: right;
+		padding-left: 10px;
+		cursor: pointer;
+	}
+	#rsvp .alert-danger {display: none;}
+	#rsvp .alert-success {display: none;}
+	#rsvp .notcompleted {background-color:#f3abab!important;}
+
+
+/* UIELEMENTS STYLES
+--------------------------------------------------------------------------------*/
+	
+
+	#uielements {
+		margin-bottom: 10em;
+		font-size: 15px;
+	}
+	#uielements .sectionmaintitle {
+		font-size: 25px;
+		font-weight: bold;
+		font-family: 'Cinzel',serif;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	/* the header */
+	#uielementsphoto {
+		background:url(../img/parallax/uielements.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 300px;
+		height: 300px; 
+		margin: 0 auto; 
+		width: 100%; 
+		max-width: 1920px; 
+		margin-bottom: 50px;
+	}
+
+
+	#uielements .row {
+		margin-bottom: 5em;
+	}
+	.bs-glyphicons {
+		padding-left: 0px;
+	}
+	.bs-glyphicons li {
+		list-style:none;
+		width: 60px;
+		float: left;
+		text-align: center;
+		padding: 15px 0;
+		border: 1px dashed #A8A8A8;
+		background:none;
+	}
+
+/* SINGLE PAGE WITH RIGHT COLUMN
+--------------------------------------------------------------------------------*/
+	/* the header */
+	#single-rightcolumnphoto {
+		background:url(../img/parallax/events.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 300px;
+		height: 300px; 
+		margin: 0 auto; 
+		width: 100%; 
+		max-width: 1920px; 
+		margin-bottom: 50px;
+	}
+
+
+	/* the right column */
+	.right-column ul {
+		padding-left: 10px;
+	}
+
+	.right-column ul li {
+		list-style: none;
+		margin-bottom: 4em;
+		background: none;
+		font-size: 15px;
+		line-height: 23px;
+	}
+	.right-column ul li ul li {
+		margin-bottom: 10px;
+		background: url("../img/list-arrow.png") no-repeat scroll 0 10px rgba(0, 0, 0, 0);
+	}
+
+	.textwidget {
+		background: none repeat scroll 0 0 rgba(255, 255, 255, 0.5);
+		text-align: center;
+		padding: 15px 15px 25px 15px;
+	}
+	.textwidget p {
+		margin-bottom: 20px;
+	}
+	.searchbtn {
+		background: url("../img/lupe.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+	    	border: medium none;
+	    	border-radius: 100px;
+	    	height: 40px;
+	    	position: absolute;
+	    	width: 40px;
+	    	right: 0px;
+	    	top:-2px;
+	}
+	.search-box .form-group {
+		position: relative;
+	}
+	.flickr-box .photos {
+		padding-left: 0px;
+		width: 100%;
+		overflow: hidden;
+		margin-top: 20px;
+	}
+	.flickr-box .photos li {
+		padding-left: 0px;
+		display: block;
+		float: left;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		width: 100px;
+	}
+	.recent-comments ul, .recent-comments ul li {
+		width: 100%;
+		overflow: hidden;
+	}
+	.recent-comments ul {
+		padding-left: 0px;
+	}
+	.recent-comments ul li {
+		padding-left: 0px!important;
+		background:none!important;
+	}
+	.recent-comments ul li img {
+		width: 60px;
+		background: none;
+		border: none;
+		padding: 0px;
+
+	}
+	.recent-comments ul li .alignleft {
+		margin:10px 0 0 0px;
+	}
+	.recent-comments ul li .alignright {
+		width: 76%;
+		margin: 0px;
+	}
+	.recent-comments ul li .alignright h5 {
+		margin-bottom: 5px;
+	}
+	.postedin{
+		margin-top: 20px;
+		width: 100%;
+		overflow: hidden;
+		margin-bottom: 5em
+	}
+	.postedin a {
+		background: none repeat scroll 0 0 #F9F9F9;
+	    	border: 1px solid #DADADA;
+	    	border-radius: 20px;
+	    	float: left;
+	    	font-size: 14px;
+	    	margin-bottom: 10px;
+	    	margin-right: 10px;
+	    	padding: 0 10px;
+	}
+	#disqus_thread iframe {
+		padding: 20px;
+	}
+
+
+/* "CONTACT US" modal window
+--------------------------------------------------------------------------------*/
+	#myModalLabel {
+		font-family: 'Cinzel',serif;
+		font-size: 30px;
+		text-align: center;
+		padding: 10px 20px;
+		
+	}
+	.form-control {
+		box-shadow: none;
+		border-radius:2px;
+	}
+	.modal-footer {
+		text-align: center;
+	}
+	.modal .alert-success, .modal .alert-danger {display: none}
+	
+/* THE FOOTER
+--------------------------------------------------------------------------------*/
+	footer {
+		background: none repeat scroll 0 0 #FFFFFF;
+		color: #A5A5A5;
+		font-size: 12px;
+		padding: 10px 0 0;
+		text-align: center;
+	}
+	footer .names {
+		color: #725656;
+	    	padding-top: 10px;
+	    
+	}

@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>MOVE</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/superfish.css" rel="stylesheet" type="text/css" />
+
+
+
+<!-- ICONS -->
+    <link rel="shortcut icon" href="img/favicon.png"/>
+
+<script type="text/javascript" src="js/jquery1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="js/jquery.quicksand.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/jflickrfeed.js"></script>
+<script type="text/javascript" src="js/jquery.twitter.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+		
+	$('.ourHolder li').live('hover', function(){
+		$('.ourHolder li').hover(function(){
+			$(this).find('.boxHover').fadeIn();
+			$(this).find('.boxHover span').animate({
+				bottom: '0px'
+			}, {queue:false});
+		}, function(){
+			$(this).find('.boxHover').fadeOut();
+			$(this).find('.boxHover span').animate({
+				bottom: '-36px'
+			}, {queue:false});
+		});
+	});
+	$('.ourHolder li.trigger').find('.boxHover span').trigger('mouseenter');
+});
+</script>
+
+<!--[if IE 7]>
+<style type="text/css">
+	.container_bottom {*padding:12px 0 35px 0;}
+    .contentBlock1 {*padding:0 0 15px 0;}
+    .getPad1 {*padding:0px;}
+    .full_width {*padding:40px 13px 0 28px;}
+    .full_block_top {*padding:0 0 25px 0;}
+    .content_main2 {*padding:12px 12px 0 12px;}
+    .small_PicBox {*margin:0 8px -3px 0;}
+    .getPad2 {*padding:12px 12px 0 12px;}
+    .cont_bottom {*padding:12px 12px 0 12px;}
+    .protfolioBox_Menu ul li {*padding:0 22px;}
+</style>
+<![endif]-->
+
+</head>
+
+<body class="bg3">
+	<header class="header_wrapper"> <!--header_wrapper Start-->
+	  <div class="header"> <!--header Start-->
+       	  <div class="logo fltleft">
+            	<a href="index-2.html"><img src="img/logo.png" alt="" /></a>
+            </div>
+            <div class="navigation fltright"> <!--navigation Start-->
+            	 <ul class="sf-menu">
+        <li><a href="index-2.html">Home</a></li>
+        <li class="active"><a href="portfolio.html">Portfolio</a></li>
+        <li> <a href="aboutus.html">About Us</a>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Billing Settings</a></li>
+            <li><a href="#">Notifications</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="fullwidth.html">Full Width</a></li>
+        <li id="nosep"><a href="contact.html">Contact</a></li>
+      </ul>
+            </div> <!--navigation End-->
+            
+        </div> <!--header End-->    	
+    </header> <!--header_wrapper End-->
+    
+    <section class="container_middle"> <!--container_top Start-->
+    	<section class="container_top"> <!--container_bottom Start-->
+    		<section class="container_bottom"> <!--container_middle Start-->
+         		<section class="content_main3"> <!--content_main3 Start-->
+                	<section class="tab_area">
+                    
+                	<div class="protfolioBox_Menu"> <!--protfolioBox_Menu Start-->
+                    	<div class="protfolioBox_border">
+                    	<h2>What We Do</h2>
+                    	<ul class="tabs" id="filterOptions">
+                   	    <li class="active"><a href="#" class="all">All  <img src="img/p1.png" width="10" height="9" alt="p"></a></li>
+							<li><a href="#" class="illus">Ilustration  <img src="img/p1.png" width="10" height="9" alt="p"></a></li>
+							<li><a href="#" class="logos">Logo  <img src="img/p1.png" width="10" height="9" alt="p"></a></li>
+							<li><a href="#" class="photo">Photography  <img src="img/p1.png" width="10" height="9" alt="p"></a></li>
+							<li><a href="#" class="print">Print  <img src="img/p1.png" width="10" height="9" alt="p"></a></li>
+							<li><a href="#" class="video">Video  <img src="img/p1.png" width="10" height="9" alt="p"></a></li>
+							<li class="nopad2"><a href="#" class="web">Web  <img src="img/p1.png" width="10" height="9" alt="p"></a></li>
+					  </ul>
+                      <div class="clrflt"></div>
+                      </div>
+                    </div> <!--protfolioBox_Menu End--> 
+                    
+                    <nav class="protfolioBox1 clearfix"> <!--protfolioBox1 Start-->
+                    	<ul class="ourHolder">
+                        	<li class="small_PicBox trigger" data-id="id-1" data-type="web"><a href="#"><img src="img/portfolio/portfolio_pic1.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Tenue De Nîmes (Photo)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-2" data-type="print"><a href="#"><img src="img/portfolio/portfolio_pic2.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Build Conference (Logo)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-3" data-type="photo"><a href="#"><img src="img/portfolio/portfolio_pic33.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Lacosta Fashion (Photo)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-4" data-type="art"><a href="#"><img src="img/portfolio/portfolio_pic4.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Wired UK (Illustartion)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-5" data-type="illus"><a href="#"><img src="img/portfolio/portfolio_pic5.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Chief's Skincare (Logo)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-6" data-type="photo"><a href="#"><img src="img/portfolio/portfolio_pic30.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Freeassociation  (Icon)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-7" data-type="video"><a href="#"><img src="img/portfolio/portfolio_pic15.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Town World  (Illustration)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-8" data-type="art"><a href="#"><img src="img/portfolio/portfolio_pic8.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Big Fish (Photo)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-9" data-type="logos"><a href="#"><img src="img/portfolio/portfolio_pic9.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>New Hero (Illustration)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-10" data-type="photo"><a href="#"><img src="img/portfolio/portfolio_pic10.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>To Resolve Project (Print)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-11" data-type="web"><a href="#"><img src="img/portfolio/portfolio_pic29.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Haerlemsche Helden (Illsutration)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-12" data-type="art"><a href="#"><img src="img/portfolio/portfolio_pic12.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>The Last Resort (Icon)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-13" data-type="logos"><a href="#"><img src="img/portfolio/portfolio_pic13.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Wintr (Print)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-14" data-type="print"><a href="#"><img src="img/portfolio/portfolio_pic14.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Fourt Pencil's (Illustrations)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-15" data-type="illus"><a href="#"><img src="img/portfolio/portfolio_pic7.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Field And Stream (Logo)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-16" data-type="video"><a href="#"><img src="img/portfolio/portfolio_pic16.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Made By Katy (Logo)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-17" data-type="illus"><a href="#"><img src="img/portfolio/portfolio_pic17.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Wired Us (Photo)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-18" data-type="print"><a href="#"><img src="img/portfolio/portfolio_pic18.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>What You Love (Print)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-19" data-type="web"><a href="#"><img src="img/portfolio/portfolio_pic19.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>AARP Magazine (Illustration)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-20" data-type="web"><a href="#"><img src="img/portfolio/portfolio_pic20.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Venture (Logo)</span></a></div></li>  
+                            
+                            <li class="small_PicBox" data-id="id-16" data-type="illus"><a href="#"><img src="img/portfolio/portfolio_pic40.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Made By Katy (Logo)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-17" data-type="illus"><a href="#"><img src="img/portfolio/portfolio_pic22.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Wired Us (Photo)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-18" data-type="illus"><a href="#"><img src="img/portfolio/portfolio_pic38.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>What You Love (Print)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-19" data-type="illus"><a href="#"><img src="img/portfolio/portfolio_pic24.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>AARP Magazine (Illustration)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-20" data-type="illus"><a href="#"><img src="img/portfolio/portfolio_pic25.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Venture (Logo)</span></a></div></li>  
+                            <li class="small_PicBox" data-id="id-19" data-type="illus"><a href="#"><img src="img/portfolio/portfolio_pic11.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>AARP Magazine (Illustration)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-20" data-type="illus"><a href="#"><img src="img/portfolio/portfolio_pic31.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Venture (Logo)</span></a></div></li>  
+                            
+                            
+                            <li class="small_PicBox" data-id="id-16" data-type="logos"><a href="#"><img src="img/portfolio/portfolio_pic28.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Made By Katy (Logo)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-17" data-type="logos"><a href="#"><img src="img/portfolio/portfolio_pic26.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Wired Us (Photo)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-18" data-type="logos"><a href="#"><img src="img/portfolio/portfolio_pic6.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>What You Love (Print)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-19" data-type="logos"><a href="#"><img src="img/portfolio/portfolio_pic27.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>AARP Magazine (Illustration)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-20" data-type="logos"><a href="#"><img src="img/portfolio/portfolio_pic32.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Venture (Logo)</span></a></div></li>  
+                            <li class="small_PicBox" data-id="id-19" data-type="logos"><a href="#"><img src="img/portfolio/portfolio_pic3.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>AARP Magazine (Illustration)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-20" data-type="logos"><a href="#"><img src="img/portfolio/portfolio_pic34.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Venture (Logo)</span></a></div></li>  
+                                   
+                                                <li class="small_PicBox" data-id="id-16" data-type="photo"><a href="#"><img src="img/portfolio/portfolio_pic35.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Made By Katy (Logo)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-17" data-type="photo"><a href="#"><img src="img/portfolio/portfolio_pic36.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Wired Us (Photo)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-18" data-type="photo"><a href="#"><img src="img/portfolio/portfolio_pic37.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>What You Love (Print)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-19" data-type="video"><a href="#"><img src="img/portfolio/portfolio_pic23.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>AARP Magazine (Illustration)</span></a></div></li>
+                            <li class="small_PicBox" data-id="id-20" data-type="video"><a href="#"><img src="img/portfolio/portfolio_pic39.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>Venture (Logo)</span></a></div></li>  
+                            <li class="small_PicBox" data-id="id-19" data-type="video"><a href="#"><img src="img/portfolio/portfolio_pic21.jpg" alt=""></a><div class="boxHover"><a href="single_page_portfolio.html"><span>AARP Magazine (Illustration)</span></a></div></li>
+                    	</ul>
+                        <div class="clrflt"></div>
+                    </nav> <!--protfolioBox1 End-->
+                    </section>
+                </section> <!--content_main3 End-->
+            </section> <!--container_middle End-->    	
+        </section> <!--container_bottom End-->
+    </section> <!--container_top End-->
+
+    </section> <!--container_top End-->
+
+<!--dummy_textBox_top End-->
+        
+        
+<footer class="footerwrapper"> <!--footerwrapper_bottom Start-->
+        <section class="footer_main"> <!--footer_main Start-->
+            <section class="footer_top"> 
+                <div class="box2">
+                    <img src="img/logo3.png" alt="" />
+                </div>
+                
+                <div class="box2">
+                    Twitter Widget
+                </div>
+                
+                <div class="box2">
+                    Recent Comments
+                </div>
+                
+                <div class="box2 nomar2">
+                    Flickr Widget
+                </div>
+                <div class="clear"></div>
+            </section> <!--footer_top End--> 
+            <section class="footer_mid"> <!--footer_mid Start-->
+                 <div class="box2_text">
+                    <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus.</p>
+                    <p>Posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                   
+                </div>
+                
+                 <div id="twitter">
+                    
+                </div>
+                
+                <div class="box2_text">
+        <p> <em><strong>Deni:</strong></em> The Most Famous Chocolate Manufacturer in Town!<br><br>
+          <em><strong>Bori:</strong></em> The Epicenter of Fashion
+          Sensation of Death <br><br><em><strong>Aqifi:</strong></em> An Ironic Piece on Alcoholic Tables in Bars
+          2009 Street. </p>
+      </div>
+                
+                
+                 <div class="box2_text nomar2">
+                    <ul id="basicuse" class="thumbs"></ul>
+                </div>
+                <div class="clear"></div>
+            </section> <!--footer_mid End--> 
+            
+            <section class="footer_bottom"> <!--footer_bottom Start-->
+                <div class="bottomLeft fltleft"> <!--bottomLeft Start-->
+                        <div class="social fltleft">
+                            <ul>
+                                <li class="i"><a href="http://h2design.taobao.com"></a></li>
+                                <li class="ii"><a href="#"></a></li>
+                                <li class="iii"><a href="#"></a></li>
+                                <li class="iv"><a href="#"></a></li>
+                                <li class="v"><a href="#"></a></li>
+                                <li class="vi"><a href="#"></a></li>
+                                <li class="vii"><a href="#"></a></li>
+                                <li class="viii"><a href="#"></a></li>
+                                <li class="ix"><a href="#"></a></li>
+                                <li class="x"><a href="#"></a></li>
+                                <li class="xi"><a href="#"></a></li>
+                                <li class="xii"><a href="#"></a></li>
+                                <li class="xiii"><a href="#"></a></li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                        
+                </div> <!--bottomLeft End-->
+                <div class="bottomRight fltright"> <!--bottomRight Start-->
+                    <div class="copy_right">Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></div>
+                </div> <!--bottomRight End-->
+                <div class="clear"></div>
+            </section> <!--footer_bottom End-->
+        </section> <!--footer_main End-->
+    </footer> <!--footerwrapper_bottom Start-->
+
+
+
+</body>
+</html>

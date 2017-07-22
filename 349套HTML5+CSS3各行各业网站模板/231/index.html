@@ -1,0 +1,525 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!--jQuery (necessary for Bootstrap's JavaScript plugins)-->
+<script src="js/jquery.min.js"></script>
+ <!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<!--Custom Theme files-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</script>
+
+<!--webfonts-->
+	<link href='http://fonts.useso.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.useso.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<!--webfonts-->
+<!--start-smoth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+		
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+
+</head>
+<body>
+<!--header-->
+	<div class="header">
+		<div class="header-top">
+			<div class="container">
+				<div class="logo">
+					<a href="index.html"><img src="images/head-logo.png" /></a>
+				</div>
+			<!--top-nav-->
+			<div class="top-nav">
+					<span class="menu"> </span>
+					<ul>
+						<li class="active"><a href="#home" class="scroll">Home </a></li>
+								<li><a href="#service" class="scroll">Services</a></li>
+								<li><a href="#team" class="scroll">Team</a></li>
+								<li><a href="#portfolio" class="scroll">Portfolio</a></li>
+								<li><a href="#offices" class="scroll">Offices</a></li>
+								<li><a href="#client" class="scroll">clients</a></li>
+								<li><a href="#contact" class="scroll">Contact</a></li>
+						<div class="clearfix"> </div>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+		<!-- script-for-menu -->
+				<script>
+					$(document).ready(function(){
+						$("span.menu").click(function(){
+							$(".top-nav ul").slideToggle(200);
+						});
+					});
+				</script>
+	<!--End-top-nav-script-->
+				<div class="clearfix"> </div>
+		</div>
+	</div>
+		<!--banner-->
+			<div class="banner">
+					<div class="container">
+						 <div class="banner-info">
+						 	<img src="images/logo.png" />
+						 	<h1>Idea, Design and Code</h1>
+						 	<p>Lorem ipsum dolor sit amet, offendit volutpat sea ex, at omnium scripta pro, ei mea oratio malorum forensibus. Sed ei omnes laoreet posidonium</p>
+						 	<a class="slide-btn" href="#">Know More</a>
+						</div>
+					</div>
+			 	</div>
+			</div>
+			<section class="color ss-style-bigtriangle ">
+				 <div id="service" class="Services">
+				 	<div class="service-section">
+				 		<div class="container">
+				 		<h3>Services</h3>
+				 		<lable> </lable>
+
+				 		</div>
+				 	</div>
+		 			<div class="service-grids">
+			 				<div class="container">
+					 				<div class="col-md-4 service-grid1">
+					 					<i class="icon1"> </i>
+					 					<h3>IDEA</h3>
+					 					<p>Lorem ipsum dolor sit amet, offendit volutpat sea ex, at omnium scripta pro, ei mea oratio malorum forensibus. Sed ei omnes laoreet posidonium</p>
+					 				</div>
+					 					<div class="col-md-4 service-grid2">
+					 					<i class="icon2"> </i>
+					 					<h3>DESIGN</h3>
+					 					<p>Lorem ipsum dolor sit amet, offendit volutpat sea ex, at omnium scripta pro, ei mea oratio malorum forensibus. Sed ei omnes laoreet posidonium</p>
+					 				</div>
+					 				<div class="col-md-4 service-grid3">
+					 					<i class="icon3"> </i>
+					 					<h3>CODE</h3>
+					 					<p>Lorem ipsum dolor sit amet, offendit volutpat sea ex, at omnium scripta pro, ei mea oratio malorum forensibus. Sed ei omnes laoreet posidonium</p>
+					 				</div>
+				 				<div class="clearfix"> </div>
+				 			</div>
+			 			</div>
+	 			</div>
+
+			</section>
+			<svg id="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+				<path d="M0 0 L50 100 L100 0 Z" />
+			</svg>
+		<!--/End-banner-->
+		<div id="portfolio" class="portfolio">
+			<div class="container">
+				<div class="port-section">
+					 		<h3>OUR PORTFOLIO</h3>
+					 		<lable> </lable>
+				</div>
+				<div class="portfolio">
+					<ul id="filters" class="clearfix">
+						<li><span class="filter" data-filter="app card icon logo web">All</span></li>
+						<li><span class="filter" data-filter="card">Branding</span></li>
+						<li class="active"><span class="filter" data-filter="app"> Webdesign</span></li>
+						<li><span class="filter" data-filter="logo"> Photography</span></li>
+					</ul>
+					<div id="portfoliolist">
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+						     <img src="images/pic1.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png" alt=""/></h2>
+						  	<p class="b-animate b-from-right  b-delay03 "><span class="m_4">Photography</span><br>Lorem ipsum dolor sit amet, offendit volutpat sea ex, at omnium scripta pro, ei mea oratio malorum forensibus. Sed ei omnes laoreet posidonium</p></div></a>
+		                </div>
+					</div>				
+				<div class="portfolio logo mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+						     <img src="images/pic2.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png" alt=""/></h2>
+						  	<p class="b-animate b-from-right  b-delay03 "><span class="m_4">Photography</span><br>Lorem ipsum dolor sit amet, offendit volutpat sea ex, at omnium scripta pro, ei mea oratio malorum forensibus. Sed ei omnes laoreet posidonium</p></div></a>
+		                </div>
+					</div>				
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog2" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+						     <img src="images/pic3.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png" alt=""/></h2>
+						  	<p class="b-animate b-from-right    b-delay03 "><span class="m_4">Photography</span><br>Lorem ipsum dolor sit amet, offendit volutpat sea ex, at omnium scripta pro, ei mea oratio malorum forensibus. Sed ei omnes laoreet posidonium.</p></div></a>
+		                </div>
+					</div>				
+					<div class="portfolio logo mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog3" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+						     <img src="images/pic4.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png" alt=""/></h2>
+						  	<p class="b-animate b-from-right    b-delay03 "><span class="m_4">Photography</span><br>Lorem ipsum dolor sit amet, offendit volutpat sea ex, at omnium scripta pro, ei mea oratio malorum forensibus. Sed ei omnes laoreet posidonium.</p></div></a>
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog4" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+						     <img src="images/pic5.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png" alt=""/></h2>
+						  	<p class="b-animate b-from-right    b-delay03 "><span class="m_4">Photography</span><br>Lorem ipsum dolor sit amet, offendit volutpat sea ex, at omnium scripta pro, ei mea oratio malorum forensibus. Sed ei omnes laoreet posidonium.</p></div></a>
+		                </div>
+					</div>			
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog5" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+						     <img src="images/pic6.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png" alt=""/></h2>
+						  	<p class="b-animate b-from-right    b-delay03 "><span class="m_4">Photography</span><br>Lorem ipsum dolor sit amet, offendit volutpat sea ex, at omnium scripta pro, ei mea oratio malorum forensibus. Sed ei omnes laoreet posidonium</p></div></a>
+		                </div>
+					</div>	
+					<div class="clearfix"></div>
+				</div>
+				</div>
+				
+				<!---pop-up-box---->
+					  <script type="text/javascript" src="js/modernizr.custom.min.js"></script>    
+					<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+					<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+					<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			
+			},
+			
+			hoverEffect: function () {
+			
+				// Simple parallax effect
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+				<!---//pop-up-box---->
+					<div id="small-dialog" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/pop-up.png" alt=""/>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						</div>
+					</div>
+					<div id="small-dialog1" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/pop-up.png" alt=""/>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						</div>
+					</div>
+					<div id="small-dialog2" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/pop-up.png" alt=""/>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						</div>
+					</div>
+					<div id="small-dialog3" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/pop-up2.png" alt=""/>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						</div>
+					</div>
+					<div id="small-dialog4" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/pop-up.png" alt=""/>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						</div>
+					</div>
+					<div id="small-dialog5" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/pop-up2.png" alt=""/>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						</div>
+					</div>
+					<div id="small-dialog6" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/pop-up.png" alt=""/>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						</div>
+					</div>
+					<div id="small-dialog7" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/pop-up2.png" alt=""/>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						</div>
+					</div>
+					<div id="small-dialog8" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/pop-up.png" alt=""/>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						</div>
+					</div>
+			<script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>		
+
+
+			</div>
+		</div>
+			<section class="color ss-style-bigtriangle">
+				 <div id="team" class="Team">
+				 	<div class="container">
+				 	<div class="team-section">
+				 		<h3>OUR TEAM</h3>
+					 		<lable> </lable>
+					 		<p>Lorem ipsum dolor sit amet, offendit volutpat sea ex, at omnium scripta pro, ei mea oratio malorum forensibus. Sed ei omnes laoreet posidonium.</p>
+				 		</div>
+				 	<div class="row text-center teams">
+       				<div class="col-md-3 team_grid1">
+       					<div class="view second-effect">
+							 <img src="images/t1.png" />
+								<div class="mask">
+									<a href="#" class="info">Read More</a>
+								</div>
+							</div>
+       					<h3>AHMED YEHIA KADRY</h3>
+       					<h4>Speciality here</h4>
+       				</div>
+       				<div class="col-md-3 team_grid2">
+       				<div class="view second-effect">
+							 <img src="images/t2.png" />
+								<div class="mask">
+									<a href="#" class="info">Read More</a>
+								</div>
+							</div>
+       					<h3>MOHAMED MOUSTAFA ROUSHDY</h3>
+       					<h4>Speciality here</h4>
+       				</div>
+       				<div class="col-md-3 team_grid3">
+       					<div class="view second-effect">
+							 <img src="images/t3.png" />
+								<div class="mask">
+									<a href="#" class="info">Read More</a>
+								</div>
+							</div>
+       					<h3>FAROUK HOSNI</h3>
+       					<h4>Speciality here</h4>
+       				</div>
+       				<div class="col-md-3 team_grid4">
+       					<div class="view second-effect">
+							 <img src="images/t4.png" />
+								<div class="mask">
+									<a href="#" class="info">Read More</a>
+								</div>
+							</div>
+       					<h3>WAHID MAGDY</h3>
+       					<h4>Speciality here</h4>
+       				</div>
+       					<div class="clearfix"></div>
+       				</div>
+       			</div>
+
+	 			</div>
+
+			</section>
+			<svg id="bigTriangleColor3" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+				<path d="M0 0 L50 100 L100 0 Z" />
+			</svg>
+			<!-----clients---->
+			 <div id="offices" class="offices">
+			 	 <div class="container">
+				 		<div class="offices-section">
+							<h3>OUR OFFICES</h3>
+						 		<lable> </lable>
+								<p>Lorem ipsum dolor sit amet, offendit volutpat sea ex, at omnium scripta pro, ei mea oratio malorum forensibus. Sed ei omnes laoreet posidonium.</p>
+							</div>
+							<div class ="map">
+								<div class="location">
+									<ul>
+										<li><a href="#"><i class="icon_1"></i><span class="s1">USA </span> </a></li>
+										<li><a href="#"><i class="icon_2"></i><span class="s2">FRANCE</span> </a></li>
+										<li><a href="#"><i class="icon_3"></i><span class="s3">EGYPT</span> </a></li>
+									</ul>
+
+								</div>
+
+							</div>
+       					</div>
+       				</div>
+					<section class="color ss-style-bigtriangle">
+		 			 <div id="client" class="Clients">
+		 			 	<div class="container">
+					 	<div class="client-section">
+					 		<h3>OUR CLIENTS</h3>
+					 		<lable> </lable>
+							<p>Lorem ipsum dolor sit amet, offendit volutpat sea ex, at omnium scripta pro, ei mea oratio malorum forensibus. Sed ei omnes laoreet posidonium.</p>
+					 		</div>
+					 		<div class="client-grids">
+					 			<div class="clients-icons">
+										<ul>
+											<li><a href="#"><img src="images/c1.png" alt=""/></a></li>
+											<li><a href="#"><img src="images/c2.png" alt=""/></a></li>
+											<li class="box"><a href="#"><img src="images/c3.png" alt=""/></a></li>
+											<li class="man"><a href="#"><img src="images/c4.png" alt=""/></a></li><br>
+											<li class="facebook"><a href="#"><img src="images/c5.png" alt=""/></a></li>
+											<li class="sony"><a href="#"><img src="images/c6.png" alt=""/></a></li>
+											<div class="clearfix"> </div>
+										</ul>
+									</div>
+							</div>	
+					 	</div>
+				 	</div>
+				 	<!---/start-text-slider----->
+				 	<!----sreen-gallery-cursual---->
+						<div class="sreen-gallery-cursual">
+							<link href="css/owl.carousel.css" rel="stylesheet">
+							    <script src="js/owl.carousel.js"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							        items :1,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation : true,
+							        navigationText :  false,
+							        pagination : true,
+							      });
+							    });
+							    </script>
+							 <!-- //requried-jsfiles-for owl -->
+							 <!-- start content_slider -->
+						       <div id="owl-demo" class="owl-carousel text-center">
+					                 <div class="item">
+					                	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.</p>
+										<h4>Virgin Mega Store</h4>
+					                </div>
+					                <div class="item">
+					                	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.</p>
+										<h4>Virgin Mega Store</h4>
+					                </div>
+					                <div class="item">
+					                	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis.</p>
+										<h4>Virgin Mega Store</h4>
+					                </div>
+				              </div>
+				            </div>
+				</section>
+			<svg id="bigTriangleColor3" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+				<path d="M0 0 L50 100 L100 0 Z" />
+			</svg>
+			<!-----contact---->
+				 <div id="contact" class="Contact">
+				 	<div class="container">
+					 	<div class="contact-section">
+					 		<h3>Contact US</h3>
+							 <lable> </lable>
+							</div>
+						 <div class="contact-content">
+							<ul class="contact-grids">
+			       				<li class="contact-grid phone">
+			       					<i class="icon11"> </i>
+			       					<h4>Customer Care</h4>
+			       					<h5>(+00) 123456789</h5>
+			       				</li>
+			       				<li class="contact-grid">
+			       					<i class="icon12"> </i>
+			       					<h4>Mail</h4>
+			       					<h5>Support@Arrow.com</h5>
+			       				</li>
+			       				<li class="contact-grid">
+			       					<i class="icon13"> </i>
+			       					<h4>Twitter</h4>
+			       					<h5>@Arrow</h5>
+			       				</li>
+			       				<li class="contact-grid fb">
+			       					<i class="icon14"> </i>
+			       					<h4>Facebook</h4>
+			       					<h5>Arrow.Agency</h5>
+			       				</li>
+       							<div class="clearfix"> </div>
+       						</ul>
+       							<form method="post" action="#">
+							    	<input type="text" class="textbox" value=" Your Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Name';}">
+							    	<input type="text" class="textbox" value="Your E-Mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your E-Mail';}">
+										<div class="clear"> </div>
+								    <div>
+								    	<textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Message ';}">Your Message</textarea>
+								    </div>	
+								   <div class="submit"> 
+								    	<input type="submit" value="SEND " />
+					              </div>
+								</form>
+							</div>
+ 						</div>	
+ 					</div>	
+				
+		<!----- /start-footer---->
+				<div class="footer">
+						<div class="container">
+								<div class="foter-bottom">
+									<div class="copy-right">
+											<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+
+									</div>	
+									<div class="logo-2">
+											<img src="images/logo.png" />
+
+									</div>
+									<div class="clearfix"> </div>
+								</div>				
+						</div>								
+					</div>
+					<!----- //End-footer---->
+						<!----- //End-footer---->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"></span></a>
+
+
+</body>
+</html>

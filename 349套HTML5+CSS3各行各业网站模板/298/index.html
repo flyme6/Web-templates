@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/bigvideo.css">
+<script src="js/modernizr-2.5.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/sliding_effect.js"></script>
+</head>
+<body>
+ 	<div class="wrapper">
+        <div class="screen" id="screen-1" data-video="vid/bird.mp4">
+            <img src="images/slider1.jpg" class="big-image" />
+        </div>
+        <div class="screen" id="screen-2" data-video="vid/satellite.mp4">
+            <img src="images/slider2.jpg" class="big-image" />
+        </div>
+        <div class="screen" id="screen-3" data-video="vid/camera.mp4">
+            <img src="images/slider3.jpg" class="big-image" />
+        </div>
+        <div class="screen" id="screen-4" data-video="vid/spider.mp4">
+            <img src="images/slider4.jpg" class="big-image" />
+        </div>
+    </div>
+   <nav id="next-btn">
+        <a href="#" class="next-icon"></a>
+    </nav>
+    <!-- BigVideo Dependencies -->
+    <script src="js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.8.1.min.js"><\/script>')</script>
+    <script src="js/jquery-ui-1.8.22.custom.min.js"></script>
+    <script src="js/jquery.imagesloaded.min.js"></script>
+    <script src="js/video.js"></script>
+    <!-- BigVideo -->
+    <script src="js/bigvideo.js"></script>
+    <!-- Tutorial Demo -->
+    <script src="js/jquery.transit.min.js"></script>
+    <script>
+        $(function() {
+
+            // Use Modernizr to detect for touch devices, 
+            // which don't support autoplay and may have less bandwidth, 
+            // so just give them the poster images instead
+            var screenIndex = 1,
+                numScreens = $('.screen').length,
+                isTransitioning = false,
+                transitionDur = 1000,
+                BV,
+                videoPlayer,
+                isTouch = Modernizr.touch,
+                $bigImage = $('.big-image'),
+                $window = $(window);
+            
+            if (!isTouch) {
+                // initialize BigVideo
+                BV = new $.BigVideo({forceAutoplay:isTouch});
+                BV.init();
+                showVideo();
+                
+                BV.getPlayer().addEvent('loadeddata', function() {
+                    onVideoLoaded();
+                });
+
+                // adjust image positioning so it lines up with video
+                $bigImage
+                    .css('position','relative')
+                    .imagesLoaded(adjustImagePositioning);
+                // and on window resize
+                $window.on('resize', adjustImagePositioning);
+            }
+            
+            // Next button click goes to next div
+            $('#next-btn').on('click', function(e) {
+                e.preventDefault();
+                if (!isTransitioning) {
+                    next();
+                }
+            });
+
+            function showVideo() {
+                BV.show($('#screen-'+screenIndex).attr('data-video'),{ambient:true});
+            }
+
+            function next() {
+                isTransitioning = true;
+                
+                // update video index, reset image opacity if starting over
+                if (screenIndex === numScreens) {
+                    $bigImage.css('opacity',1);
+                    screenIndex = 1;
+                } else {
+                    screenIndex++;
+                }
+                
+                if (!isTouch) {
+                    $('#big-video-wrap').transit({'left':'-100%'},transitionDur)
+                }
+                    
+                (Modernizr.csstransitions)?
+                    $('.wrapper').transit(
+                        {'left':'-'+(100*(screenIndex-1))+'%'},
+                        transitionDur,
+                        onTransitionComplete):
+                    onTransitionComplete();
+            }
+
+            function onVideoLoaded() {
+                $('#screen-'+screenIndex).find('.big-image').transit({'opacity':0},500)
+            }
+
+            function onTransitionComplete() {
+                isTransitioning = false;
+                if (!isTouch) {
+                    $('#big-video-wrap').css('left',0);
+                    showVideo();
+                }
+            }
+
+            function adjustImagePositioning() {
+                $bigImage.each(function(){
+                    var $img = $(this),
+                        img = new Image();
+
+                    img.src = $img.attr('src');
+
+                    var windowWidth = $window.width(),
+                        windowHeight = $window.height(),
+                        r_w = windowHeight / windowWidth,
+                        i_w = img.width,
+                        i_h = img.height,
+                        r_i = i_h / i_w,
+                        new_w, new_h, new_left, new_top;
+
+                    if( r_w > r_i ) {
+                        new_h   = windowHeight;
+                        new_w   = windowHeight / r_i;
+                    }
+                    else {
+                        new_h   = windowWidth * r_i;
+                        new_w   = windowWidth;
+                    }
+
+                    $img.css({
+                        width   : new_w,
+                        height  : new_h,
+                        left    : ( windowWidth - new_w ) / 2,
+                        top     : ( windowHeight - new_h ) / 2
+                    })
+
+                });
+
+            }
+        });
+    </script>
+<div class="main">
+<div class="left">
+<div class="header">
+	<div class="logo">
+		<h1><a href="index.html"><img src="images/logo.png" alt=""/></a></h1>
+	</div>
+	 <ul id="sliding-navigation">
+         <li class="sliding-element"><a href="home.html">Home</a></li>
+         <li class="sliding-element"><a href="about.html">About</a></li>
+         <li class="sliding-element"><a href="service.html">Services</a></li>
+         <li class="sliding-element"><a href="contact.html">Contact</a></li>
+    </ul>
+	<div class="dail">
+		<h4>Call Us Now</h4>
+		<p><img src="images/mobile.png" alt=""/>+00- 12345- 890</p>
+		<p><img src="images/chat.png" alt=""/>Live Chat</p>
+	</div>
+	<div class="address">
+		<p>500 Lorem Ipsum Dolor Sit,</p>
+		<p>22-56-2-9 Sit Amet,dummy,</p>
+		<p>Lorem Ipsum,USA</p>
+		<p>Fax: (000) 000 00 00 0</p>
+	 </div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

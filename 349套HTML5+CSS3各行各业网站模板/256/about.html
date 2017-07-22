@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>About</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+ <!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+ <!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+		
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!---- start-smoth-scrolling---->
+<!----- webfonts ------>
+	<link href='http://fonts.useso.com/css?family=Lora:400,700,400italic,700italic|Roboto:400,100,100italic,300,500,500italic,700,900' rel='stylesheet' type='text/css'>
+<!----- webfonts ------>
+<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+	<!----//End-top-nav-script---->
+</head>
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="container">
+			<!-- top-nav -->
+		<div class="top-nav">
+			<span class="menu"> </span>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="about.html">About</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="contact.html">Contact</a></li>
+						<div class="clearfix"> </div>
+				</ul>
+		</div>
+		<!-- logo -->
+			<div class="head-logo">
+				<a href="index.html"><img src="images/logo.png"/></a>
+			</div>
+			<!-- /logo -->
+		<!-- script-for-nav -->
+				<script>
+					$(document).ready(function(){
+						$("span.menu").click(function(){
+							$(".top-nav ul").slideToggle(500);
+						});
+					});
+				</script>
+		<!-- script-for-nav -->
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--main-head-->
+		 <div class="About-head">
+		 		 		<h3>ABOUT US</h3>
+		 			</div>
+		 <div class="About-section">
+		 	<div class="container">
+		 		 	<div class="col-md-4 about-pic">
+		 				<img src="images/ab-pic.png"/>
+		 			</div>
+		 			<div class="col-md-8 about-text">
+		 				<h4>Fusce interdum metus et turpis ornare sed usce consectetur aliquam erat, laoreet luctus purusorbi volutpat enim place rat ipsum raesent porttitor congue elit, non tempus ed libero purus, vulputate</h4>
+		 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae dapibus ipsum. Fusce imperdiet sapienFusce imperdiet sapien enim. Praesent porta lacus sed eros finibus vulputate. enim. Praesent porta lacus sed eros finibus vulputate. Fusce bibendum consequat vestibulum. Sed velit augue, porttitor eu urna auctor, ultricies ultricies sapien. In orci dui, mattis vel purus consequat, congue pellentesque turpis. Nam ac urna tristique, <p>
+		 				<span>condimentum dignissim dolor, a aliquet nisi quam non arcu. Nam venenatis dui at erat placerat fringilla. Fusce imperdiet sapien enim. Praesent porta Fusce imperdiet sapien enim. Praesent porta lacus sed eros finibus vulputate.lacus sed eros finibus vulputate.Aenean interdum, lectus eu mattis consectetur adipiscing elit. In vitae convallis odio, id congue enim. Morbi libero mauris, rhoncus vitae efficitur pellentesque, placerat in turpis. In a nisi mattis, tempus mauris non, ultrices purus.</span>
+		 				
+		 			</div>
+		 			<div class="clearfix"> </div>
+		 		</div>
+		 </div>
+		<!----- /start-libro---->
+		<div id="team" class="team">
+			<div class="container">
+				<div class="team-section">
+							<h3>Our Team</h3>
+							<p>Praesent eget libero etmarerat imperdiet Vestibulum dapibus viverra susci</p>
+					 		
+				</div>
+				<div class="team-grids">
+					<div class="col-md-4 team-grid">
+						<img src="images/c4.png" alt=""/>
+						<h4>Ros nulla</h4>
+						<p>Sed cursus, augue ac adipiscing iaculis, arcum loremassa lacinia quam, id ultrices erat vitae massa egio unt sapien mollis auctor ac non.</p>
+						<lable> </lable>
+								<ul class="t-social">
+											<li><a class="facebook" href="#"><span> </span></a></li>
+											<li><a class="twitter" href="#"><span> </span></a></li>
+											<li><a class="in" href="#"><span> </span></a></li>
+											<div class="clearfix"> </div>
+										</ul>
+						</div>
+							<div class="col-md-4 team-grid">
+									<img src="images/c5.png" alt=""/>
+									<h4>Duis vehicula</h4>
+									<p>Cras lacus velit, varius non mattis dignis simte mpus id lacus.simte mpus id lacus Etiam quis nibh ac velit blandit bibendum. Fusce lacinia, turpis ut .</p>
+									<lable> </lable>
+									<ul class="t-social">
+												<li><a class="facebook" href="#"><span> </span></a></li>
+												<li><a class="twitter" href="#"><span> </span></a></li>
+												<li><a class="in" href="#"><span> </span></a></li>
+												<div class="clearfix"> </div>
+											</ul>
+							</div>
+							<div class="col-md-4 team-grid">
+									<img src="images/c6.png" alt=""/>
+									<h4>Volutpat urna</h4>
+									<p>Sed cursus, augue ac adipiscing iaculis, arcum loremassa lacinia quam, id ultrices erat vitae massa egio unt sapien mollis auctor ac non.</p>
+									<lable> </lable>
+									<ul class="t-social">
+												<li><a class="facebook" href="#"><span> </span></a></li>
+												<li><a class="twitter" href="#"><span> </span></a></li>
+												<li><a class="in" href="#"><span> </span></a></li>
+												<div class="clearfix"> </div>
+											</ul>
+							</div>
+						<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!----- /start-contact---->
+		<div id="contact" class="contact">
+			<div class="container">
+				<div class="contact-section">
+					<p>rerat imperdiet Vestibulum dapibus viverra susci</p>
+					<h3> In urna urna rhoncus eu lacinia in faucibus sed nisi </h3>
+					<h4> Cras lacus velit, varius non mattis dignis simte mpus id lacus. Etiam quis nibh acvelit blandit bibendum. Fusce lacinia, turpis ut.</h4>
+				</div>	
+				 			<form>
+								 <div class="form_details">
+					                 <input type="text" class="text" value="Your Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Name';}">
+									 <input type="text" class="text" value=" Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Your Email';}">
+									 <div class="clearfix"> </div>
+									 <div class="sub-button">
+									 	<input name="submit" type="submit" value="Subscribe">
+									 </div>
+						          </div>
+						       </form>
+
+			</div>							
+		</div>
+		<!----- /end-contact---->
+		<!----- /start-footer---->
+				<div class="footer">
+						<div class="container">
+							<div class="copy-right">
+								<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+							</div>	
+						</div>							
+					</div>
+					<!----- //End-footer---->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	
+</body>
+</html>

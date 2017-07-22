@@ -1,0 +1,401 @@
+.caption-s {
+	display: none;
+	top: 3px;
+	width: 359px;
+	position: absolute;
+	background: rgba(255, 153, 0, 0.59);
+	height: 259px;
+	text-align: center;
+	cursor: pointer;
+	left: 8px;
+	border: 6px solid#FF5A5F;
+	-webkit-transition: all 0.3s ease;
+			-moz-transition: all 0.3s ease;
+			-o-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+}
+.caption-s span {
+	background: url(../images/hover-img.png) no-repeat 0px 0px;
+	width:70px;
+	height:70px;
+	display: inline-block;
+	cursor: pointer;
+	margin:25% 0px;
+}
+.cbp-vm-view-grid ul li:hover div.caption-s {
+	display: block;
+}
+/* Main container */
+.cbp-vm-switcher {
+	padding:40px 0;
+}
+a.cbp-vm-icon.cbp-vm-add {
+	text-decoration: none;
+}
+/* options/select wrapper with switch anchors */
+.cbp-vm-options {
+	right: 14%;
+	position: absolute;
+	top: 1.57%;
+}
+.gallery-section {
+position: relative;
+}
+.cbp-vm-options a {
+	display: inline-block;
+	width:20px;
+	height:20px;
+	overflow: hidden;
+	white-space: nowrap;
+	background: url(../images/windows.png)no-repeat 2px 1px;
+	margin: 2px;
+	text-decoration: none;
+}
+a.cbp-vm-icon.cbp-vm-list {
+	display: inline-block;
+	width:20px;
+	height:20px;
+	overflow: hidden;
+	white-space: nowrap;
+	background: url(../images/work-nav.png)no-repeat 2px 1px;
+	margin: 2px;
+	text-decoration: none;
+}
+.cbp-vm-options a:before {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 30px;
+	text-align: center;
+	display: inline-block;
+}
+
+/* General style of switch items' list */
+
+.cbp-vm-switcher ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* Clear eventual floats */
+.cbp-vm-switcher ul:before, 
+.cbp-vm-switcher ul:after { 
+	content: " "; 
+	display: table; 
+}
+
+.cbp-vm-switcher ul:after { 
+	clear: both; 
+}
+
+.cbp-vm-switcher ul li {
+	display: block;
+	position: relative;
+}
+
+.cbp-vm-image {
+	display: block;
+	margin: 0 auto;
+}
+
+.cbp-vm-image img {
+	display: inline-block;
+	max-width: 100%;
+	border: none;
+}
+
+.cbp-vm-title {
+	margin: 0;
+	padding: 0;
+}
+
+.cbp-vm-price {
+	color: #c0c0c0;
+}
+
+.cbp-vm-add {
+	color: #fff;
+	background: #FF9900;
+	padding: 10px 20px;
+	border-radius: 2px;
+	margin: 0px 0 0;
+	display: inline-block;
+	transition: background 0.2s;
+}
+
+.cbp-vm-add:hover {
+	color: #fff;
+	background: #ff5a5f;
+}
+
+.cbp-vm-add:before {
+	margin-right: 5px;
+}
+
+/* Common icon styles */
+
+.cbp-vm-grid:before {
+	width:20px;
+	height:20px;
+	background: url(../images/windows.png)no-repeat 2px 1px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.cbp-vm-list:before {
+	width:15px;
+	height:15px;
+	background: url(../images/work-nav.png)no-repeat 2px 1px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.cbp-vm-add span{
+	background: url(../images/plus.png) no-repeat 0px 0px;
+	width:15px;
+	height:15px;
+	display: inline-block;
+	cursor: pointer;
+	margin-right: 9px;
+	vertical-align: sub;
+}
+
+/* Individual view mode styles */
+
+/* Large grid view */
+.cbp-vm-view-grid ul {
+	text-align: center;
+}
+
+.cbp-vm-view-grid ul li {
+	width:33%;
+	text-align: center;
+	padding: 4px;
+	margin: 17px 0 0;
+	display: inline-block;
+	min-height: 240px;
+	vertical-align: top;
+}
+
+.cbp-vm-view-grid .cbp-vm-title {
+	font-size: 1.3em;
+	text-transform: uppercase;
+	color: #FF5A5F;
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	text-align:center;
+}
+.cbp-vm-details p{
+	font-size: 15px;
+	color: #999;
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+}
+.cbp-vm-view-grid .cbp-vm-details {
+	max-width: 300px;
+	min-height:53px;
+	margin: 0 auto;
+} 
+
+.cbp-vm-view-grid .cbp-vm-price {
+	margin: 10px 0;
+	font-size: 1.5em;
+}
+
+
+/* List view */
+.cbp-vm-view-list li {
+	padding: 20px 0;
+	white-space: nowrap;
+}
+
+.cbp-vm-view-list .cbp-vm-image,
+.cbp-vm-view-list .cbp-vm-title,
+.cbp-vm-view-list .cbp-vm-details,
+.cbp-vm-view-list .cbp-vm-price,
+.cbp-vm-view-list .cbp-vm-add {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.cbp-vm-view-list .cbp-vm-image {
+	width: 10%;
+}
+
+.cbp-vm-view-list .cbp-vm-title {
+	padding: 0 10px;
+	white-space: normal;
+	width: 23%;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	color: #FF5A5F;
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+
+.cbp-vm-view-list .cbp-vm-price {
+	font-size: 1.3em;
+	width: 10%;
+}
+
+.cbp-vm-view-list .cbp-vm-details {
+	width: 40%;
+	padding: 0 15px;
+	overflow: hidden;
+	white-space: normal;
+}
+
+.cbp-vm-view-list .cbp-vm-add {
+	margin: 0;
+}
+/*------------*/
+@media(max-width:1680px){
+	.cbp-vm-options {
+	right: 16%;
+	position: absolute;
+	top: 1.57%;
+	}
+}
+@media(max-width:1440px){
+	.cbp-vm-options {
+	right: 10%;
+	position: absolute;
+	top: 1.57%;
+	}
+}
+@media(max-width:1366px){
+	.cbp-vm-options {
+	right: 8%;
+	position: absolute;
+	top: 1.57%;
+	}
+}
+@media(max-width:1280px){
+	.cbp-vm-options {
+	right: 5%;
+	top: 1.57%;
+	}
+}
+@media(max-width:1024px){
+	.caption-s span {
+	margin: 27% 0px;
+	}
+	.caption-s {
+	width: 96%;
+	height: 61%;
+	}
+	.cbp-vm-options {
+	right: 4%;
+	top: 1.57%;
+	}
+	.cbp-vm-image img {
+	display: inline-block;
+	max-width: 97%;
+	border: none;
+	}
+	
+}
+@media(max-width:768px){
+	.cbp-vm-options {
+	right: 6%;
+top: 2.1%;
+	}
+	.caption-s span {
+	width: 65px;
+	height: 65px;
+	margin: 27% 0px;
+	background-size: 100%;
+	}
+	.caption-s {
+	display: none;
+	top: 3px;
+	 width: 96%;
+		height: 61%;
+	}
+	.cbp-vm-details p {
+	font-size: 1.05em;
+	}
+	.cbp-vm-view-grid .cbp-vm-title {
+	font-size: 1.2em;
+	text-align: center;
+	}
+	.cbp-vm-add {
+	padding: 10px 13px;
+	}
+	.cbp-vm-view-grid ul li {
+	width: 46%;
+	text-align: center;
+	padding: 4px;
+	margin: 17px 0 0;
+	display: inline-block;
+	min-height: 240px;
+	vertical-align: top;
+	}
+	.gallery-section {
+	position: relative;
+	margin-top: 3em;
+	}
+	.strip {
+	background: url(../images/strip.jpg) no-repeat -101px 0px;
+	background-size: 126%;
+	}
+	
+}
+@media(max-width:640px){
+	.cbp-vm-view-grid ul li {
+	width: 48%;
+	}
+	.cbp-vm-view-grid .cbp-vm-title {
+	font-size: 1em;
+	}
+	.caption-s {
+	top: 3px;
+	width: 95.3%;
+	height: 58.4%;
+	}
+	.cbp-vm-options {
+	right: 4%;
+	top: 2.2%;
+	}
+	.cbp-vm-view-grid .cbp-vm-details {
+	max-width: 300px;
+	min-height: 41px;
+	margin: 0 auto;
+	}
+	.cbp-vm-add {
+	padding: 10px 13px;
+	margin-top: 0.7em;
+	}
+	.left-blog {
+	width: 65%;
+	}
+	.blog-left p {
+	font-size: 5em;
+	margin-left: 0.5em;
+	}
+	.blog-left span {
+	font-size: 2.5em;
+	margin-left: 0.8em;
+	}
+	.top-blog a.fast {
+	font-size: 1.15em;
+	}
+	a.read-more {
+	width: 31%;
+	}
+	.strip {
+	background: url(../images/strip.jpg) no-repeat -101px 0px;
+	background-size: 126%;
+	}
+}
+@media(max-width:480px){
+	
+}
+@media(max-width:320px){
+	
+}

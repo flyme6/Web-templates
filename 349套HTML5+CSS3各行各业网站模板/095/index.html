@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Opoiki Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<!--// css -->
+<!-- js -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- js -->
+<!--fonts-->
+	<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<!--/fonts-->
+	<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- start-smoth-scrolling -->
+
+</head>
+<body>
+<!--header-->
+<div class="header">
+	<div class="container">
+		<div class="header-left">
+			<a href="index.html"><img src="images/logo.png" alt=""/></a>
+		</div>
+		<div class="header-right">
+			<span class="menu">MENU</span>
+					<ul class="nav1">
+						<li><a class="scroll active" href="#home">HOME</a></li>
+						<li><a class="scroll" href="#about">ABOUT</a></li>	
+						<li><a class="scroll" href="#approach">OUR  APPROACH</a></li>
+						<li><a class="scroll" href="#services">OUR SERVICES</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+					</ul>
+				<!-- script for menu -->
+						<script> 
+							$( "span.menu" ).click(function() {
+							$( "ul.nav1" ).slideToggle( 300, function() {
+							 // Animation complete.
+							});
+							});
+						</script>
+				<!-- //script for menu -->
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!--//header-->
+<!--banner-->
+<div id="home" class="banner">
+	<div class="container">
+			<!-- responsiveslides -->
+					<script src="js/responsiveslides.min.js"></script>
+						<script>
+							// You can also use "$(window).load(function() {"
+							$(function () {
+							 // Slideshow 4
+							$("#slider3").responsiveSlides({
+								auto: true,
+								pager: true,
+								nav: false,
+								speed: 500,
+								namespace: "callbacks",
+								before: function () {
+							$('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+								$('.events').append("<li>after event fired.</li>");
+								}
+								});
+								});
+					</script>
+				<!-- responsiveslides -->
+		<div  id="top" class="callbacks_container">
+			<ul class="rslides" id="slider3">
+				<li>
+					<div class="banner-info text-center">
+						<h1>WELCOME TO THE OPOIKI</h1>
+						<p>Affordable pricing and guaranteed quality.</p>
+						<div class="start">
+								<a href="#">START TOUR</a>
+								<a href="#">SEND A QUOTE</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="banner-info text-center">
+						<h1>SED UT PERSPICIATIS UNDE</h1>
+						<p>I must explain to you how all of the system</p>
+						<div class="start">
+								<a href="#">START TOUR</a>
+								<a href="#">SEND A QUOTE</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="banner-info text-center">
+						<h1>ON THE OTHER DENOUNCE </h1>
+						<p>These cases are perfectly simple distinguish.</p>
+						<div class="start">
+								<a href="#">START TOUR</a>
+								<a href="#">SEND A QUOTE</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--//banner-->
+<!--about-->
+<div id="about" class="about">
+	<div class="about-grids">
+		<div class="about-left">
+			<div class="about-info">
+				<h3>ABOUT US</h3>
+				<p>For 17 years we have been helping organizations develop rich and comprehensive asset management software system content. </p>
+				<p>The success of a client’s asset management software (EAM, CMMS, ERP) system begins with theirmaster data sets. </p>
+				<a href="#">READ MORE</a>
+			</div>
+		</div>
+		<div class="about-right">
+			<img src="images/pic1.jpg" alt=""/>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!--//about-->
+<!--behind-->
+<div class="behind">
+	<div class="container">
+		<p>“Behind every successful asset management software implementation is great content.”</p>
+	</div>
+</div>
+<!--//behind-->
+<!--approach-->
+<div id="approach" class="approach">
+	<div class="approach-grids">
+		<div class="approach-left">
+			<img src="images/pic2.jpg" alt=""/>
+		</div>
+		<div class="approach-right">
+			<h3>OUR APPROACH</h3>
+			<p>To every client engagement we bring the industry’s most comprehensive asset management software data library. </p>
+			<p>Our data library jump starts the client development effort and is built on industry proven ISO standards.
+			Our data library helps clients implement faster and provides the assurance that their asset management 
+			software system is built on a rock solid foundation. </p>
+			<p>Naming conventions, nomenclature standards, classification schemes, coding warehouses for work 
+			(types, classes, priorities, etc.), materials management (return to storeroom, cycle count, etc.) 
+			and purchasing functions (vendor performance, etc.), data structures</p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!--//approach-->
+<!--kick-->
+<div class="kick">
+	<div class="container">
+		<p>“Kick start your reliability initiative with our equipment based Problem, Failure, Action Library. Contact us for a free demo”</p>
+	</div>
+</div>
+<!--//kick-->
+<!--services-->
+<div id="services" class="services">
+	<div class="container">
+		<h3>OUR SERVICES</h3>
+	</div>
+</div>
+<!--//services-->
+<div class="services-grids">
+	<div class="services-left">
+		<p>We work with our clients in two ways. We can help you design your master data sets, 
+		provide a blueprint for your organization to execute, or we can design and execute database 
+		development activities. Do it all. A few of the content services we offer…</p>
+	</div>
+	<div class="services-right">
+		<div class="services-list">
+			<ul>
+				<li>Equipment walk-down and identification </li>
+				<li>MRO materials storeroom walk-down and identification </li>
+				<li>Best practice work order code development </li>
+				<li>Equipment database design and hierarchy development </li>
+				<li>MRO supply chain code development </li>
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<!--clients-->
+<div class="clients">
+	<div class="container">
+		<h3>SOME OF OUR CLIENTS</h3>
+		<div class="flex-slider">
+			<ul id="flexiselDemo1">			
+				<li>
+					<img src="images/pic5.jpg" alt=""/>
+				</li>
+				<li>
+					<img src="images/pic6.jpg" alt=""/>
+				</li>
+				<li>
+					<img src="images/pic7.jpg" alt=""/>
+				</li>
+				<li>
+					<img src="images/pic8.jpg" alt=""/>
+				</li>
+				<li>
+					<img src="images/pic9.jpg" alt=""/>
+				</li>
+			</ul>
+			<script type="text/javascript">
+							$(window).load(function() {
+								$("#flexiselDemo1").flexisel({
+									visibleItems: 5,
+									animationSpeed: 1000,
+									autoPlay: true,
+									autoPlaySpeed: 3000,    		
+									pauseOnHover: true,
+									enableResponsiveBreakpoints: true,
+									responsiveBreakpoints: { 
+										portrait: { 
+											changePoint:320,
+											visibleItems: 1
+										}, 
+										landscape: { 
+											changePoint:640,
+											visibleItems: 3
+										},
+										tablet: { 
+											changePoint:768,
+											visibleItems: 4
+										}
+									}
+								});
+								
+							});
+			</script>
+			<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+		</div>
+	</div>
+</div>
+<!--//clients-->
+<!--keep in touch-->
+<div class="keep">
+	<div class="container">
+		<h3>Keep in touch with Us</h3>
+		<ul>
+			<li><a class="facebook" href="#"></a></li>
+			<li><a class="twitter" href="#"></a></li>
+			<li><a class="googl" href="#"></a></li>
+			<li><a class="message" href="#"></a></li>
+		</ul>
+	</div>
+</div>
+<!--//keep in touch-->
+<!--footer-->
+<div class="footer">
+	<div class="container">
+		<p>Any questions? Contact us :  <a href="mailto:sample@example.com">contact@blabla.com</a> | 11-1111-1124</p>
+		<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+	</div>
+</div>
+<!--//footer-->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Best Buy</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.etalage.min.js"></script>
+<link href="css/component.css" rel='stylesheet' type='text/css' />
+<!-- Include the Etalage files -->
+<script>
+		jQuery(document).ready(function($){
+
+			$('#etalage').etalage({
+				thumb_image_width: 400,
+				thumb_image_height: 350,
+				
+				show_hint: true,
+				click_callback: function(image_anchor, instance_id){
+					alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+				}
+			});
+			// This is for the dropdown list example:
+			$('.dropdownlist').change(function(){
+				etalage_show( $(this).find('option:selected').attr('class') );
+			});
+
+	});
+</script>
+<!----//details-product-slider--->
+</head>
+<body>
+<!-- Header Starts Here -->
+<div class="header">
+	<div class="container">
+		<div class="header-top">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png"></a>
+			</div>
+			<span class="menu"></span>
+			<div class="clear"></div>
+			<div class="navigation">
+				<ul class="navig">
+					<li><a href="bikes.html">Bikes</a></li>
+					<li><a href="best.html">Best Buy</a></li>
+					<li><a href="bikes.html">Offers</a></li>
+					<li><a href="best.html">Accessories</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="about.html">About Us</a></li>
+				</ul>
+				<script>
+					$( "span.menu" ).click(function() {
+					  $( ".navigation ul.navig" ).slideToggle( "slow", function() {
+					    // Animation complete.
+					  });
+					});
+				</script>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="about">
+			<div class="product">
+				<div class="product-listy">
+					<h3>Our Products</h3>
+					<ul class="product-list">
+						<li><a href="">New Products</a></li>
+						<li><a href="">Old Products</a></li>
+						<li><a href="">Sports</a></li>
+						<li><a href="">Clasical</a></li>
+						<li><a href="">New trend</a></li>
+						<li><a href="">New Release</a></li>
+						<li><a href="login.html">Log In</a></li>
+						<li><a href="register.html">Register</a></li>
+					</ul>
+				</div>
+				<div class="latest-bis">
+					<img src="images/offer.jpg" class="img-responsive">
+					<div class="offer">
+						<p>40%</p>
+						<small>Top Offer</small>
+					</div>
+				</div>
+				<div class="tags">
+				    	<h4 class="tag_head">Tags Widget</h4>
+				         <ul class="tags_links">
+							<li><a href="#">Kitesurf</a></li>
+							<li><a href="#">Super</a></li>
+							<li><a href="#">Duper</a></li>
+							<li><a href="#">Theme</a></li>
+							<li><a href="#">Men</a></li>
+							<li><a href="#">Women</a></li>
+							<li><a href="#">Equipment</a></li>
+							<li><a href="#">Best</a></li>
+							<li><a href="#">Accessories</a></li>
+							<li><a href="#">Men</a></li>
+							<li><a href="#">Apparel</a></li>
+							<li><a href="#">Super</a></li>
+							<li><a href="#">Duper</a></li>
+							<li><a href="#">Theme</a></li>
+							<li><a href="#">Responsiv</a></li>
+					        <li><a href="#">Women</a></li>
+							<li><a href="#">Equipment</a></li>
+						</ul>
+						<a href="#" class="link1">View all tags</a>
+				     </div>
+
+			</div>
+			<div class="new-product">
+				<div class="new-product-top">
+					<ul class="product-top-list">
+						<li><a href="index.html">Home</a>&nbsp;<span>&gt;</span></li>
+						<li><span class="act">Contact Us</span>&nbsp;</li>
+					</ul>
+					<p class="back"><a href="index.html">Back to Previous</a></p>
+					<div class="clearfix"></div>
+				</div>
+				<div class="singel_right">
+			     <div class="lcontact span_1_of_contact">
+				      <div class="contact-form">
+				  	        <form method="post" action="contact-post.html">
+					    	    <p class="comment-form-author"><label for="author">Your Name:</label>
+					    	    	<input type="text" class="textbox" value="Enter your name here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your name here...';}">
+						    	</p>
+						        <p class="comment-form-author"><label for="author">Email:</label>
+						     	   <input type="text" class="textbox" value="Enter your email here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+						        </p>
+						        <p class="comment-form-author"><label for="author">Message:</label>
+						    	  <textarea value="Enter your message here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Enter your message here...</textarea>
+						        </p>
+						        <input name="submit" type="submit" id="submit" value="Submit">
+					        </form>
+				       </div>
+			     </div>
+			     <div class="contact_grid span_2_of_contact_right">
+					<h3>Address</h3>
+				    <div class="address">
+						<i class="pin_icon"></i>
+					    <div class="contact_address">
+						  Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non
+					    </div>
+					    <div class="clearfix"></div>
+					</div>
+					<div class="address">
+						<i class="phone"></i>
+					    <div class="contact_address">
+						   1-25-2568-897
+					    </div>
+					    <div class="clearfix"></div>
+					</div>
+					<div class="address">
+						<i class="mail"></i>
+					    <div class="contact_email">
+						  <a href="mailto:example@gmail.com">info(at)company.com</a>
+					    </div>
+					    <div class="clearfix"></div>
+					</div>
+		        </div>
+		        <div class="clearfix"></div>
+		    </div>
+		    <div class="map">
+		    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387144.007583421!2d-73.97800349999999!3d40.7056308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1413440825630" frameborder="0" style="border:0"></iframe>
+		    </div>
+			</div>
+			<div class="clearfix"></div>
+			<!--- fOOTER Starts Here --->
+		<div class="footer-top abt-ft">
+			<ul class="bottom-list">
+				<li><a href="#">terms & conditions</a></li>
+				<li><a href="#">return policy</a></li>
+				<li><a href="#">reviews</a></li>
+				<li><a href="#">about shop</a></li>
+				<li><a href="#">secure payment</a></li>
+			</ul>
+		</div>
+		<ul class="payment-list">
+			<li><i class="paypal"></i></li>
+			<li><i class="wi"></i></li>
+			<li><i class="visa"></i></li>
+			<li><i class="amazon"></i></li>
+			<li><i class="sm"></i></li>
+		</ul>
+		<p class="copyright">Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+	</div>
+	<!--- fOOTER Starts Here --->
+
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Uibrush Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href='http:///fonts.useso.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+<!-- start plugins -->
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/fliplightbox.min.js"></script>
+		<script type="text/javascript">
+			$('body').flipLightBox()
+		</script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				var filterList = {
+
+					init : function() {
+
+						// MixItUp plugin
+						// http://mixitup.io
+						$('#portfoliolist').mixitup({
+							targetSelector : '.portfolio',
+							filterSelector : '.filter',
+							effects : ['fade'],
+							easing : 'snap',
+							// call the hover effect
+							onMixEnd : filterList.hoverEffect()
+						});
+
+					},
+
+					hoverEffect : function() {
+
+						// Simple parallax effect
+						$('#portfoliolist .portfolio').hover(function() {
+							$(this).find('.label').stop().animate({
+								bottom : 0
+							}, 200, 'easeOutQuad');
+							$(this).find('img').stop().animate({
+								top : -30
+							}, 500, 'easeOutQuad');
+						}, function() {
+							$(this).find('.label').stop().animate({
+								bottom : -40
+							}, 200, 'easeInQuad');
+							$(this).find('img').stop().animate({
+								top : 0
+							}, 300, 'easeOutQuad');
+						});
+
+					}
+				};
+
+				// Run the show!
+				filterList.init();
+
+			});
+		</script>
+<!-- start light_box -->
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+<script type="text/javascript" src="js/jquery.fancybox-1.2.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("div.fancyDemo a").fancybox();
+		});
+	</script>
+</head>
+<body>
+<div class="header">
+  <div class="container">
+	<div class="logo">
+		<a href="index.html"><img src="images/logo.png" alt=""></a>
+	</div>
+    <div class="menu">
+	   <a class="toggleMenu" href="#"><img src="images/menu.png" alt="" /> </a>
+	   <ul class="nav" id="nav">
+		 <li><a href="index.html">Home</a></li>
+		 <li><a href="about.html">About Us</a></li>
+		 <li><a href="services.html">Services</a></li>
+		 <li class="current"><a href="portfolio.html">Portfolio</a></li>
+		 <li><a href="blog.html">Blog</a></li>
+		 <li><a href="contact.html">Contact Us</a></li>								
+	  </ul>
+	  <script type="text/javascript" src="js/responsive-nav.js"></script>
+	</div>							
+    <div class="clearfix"> </div>
+	<!----//End-top-nav---->
+  </div>
+</div>
+<div class="about">
+	<div class="container">
+		<ul class="about_head">
+			<li class="about_head-left"><h1>Portfolio</h1></li>
+			<li class="about_head-right"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p></li>
+		</ul>	
+	</div>	  
+</div> 
+<div class="container">
+     <div class="portfolio_main">
+     	  <h2>Our Portfolio</h2>
+						<ul id="filters" class="clearfix">
+							<li>
+								<span class="filter active" data-filter="app card icon web">All</span>
+							</li>
+							<li>
+								<span class="filter" data-filter="app  icon">Portfolio</span>
+							</li>
+							<li>
+								<span class="filter" data-filter="card ">Html</span>
+							</li>
+							<li>
+								<span class="filter" data-filter="icon app card ">css</span>
+							</li>
+							<li>
+								<span class="filter" data-filter="web card icon">Wordpress</span>
+							</li>
+						</ul>
+						<div id="portfoliolist">
+							<div class="portfolio logo1" data-cat="logo">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="images/p1.jpg"><img src="images/p1.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">Logo</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio app" data-cat="app">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="images/p2.jpg"><img src="images/p2.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">APP</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio web" data-cat="web">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="images/p3.jpg"><img src="images/p3.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">Web design</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio card" data-cat="card">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="images/p4.jpg"><img src="images/p4.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">Business card</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio app" data-cat="app">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="images/p5.jpg"><img src="images/p5.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">APP</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio card" data-cat="card">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="images/p6.jpg"><img src="images/p6.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">Business card</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio card" data-cat="card">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="images/p7.jpg"><img src="images/p7.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">Business card</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio logo1" data-cat="web">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="images/p8.jpg"><img src="images/p8.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">Logo</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio app" data-cat="app">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="images/p9.jpg"><img src="images/p9.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">APP</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio card" data-cat="card">
+								<div class="portfolio-wrapper">
+									<div class="fancyDemo">
+										<a rel="group" title="" href="images/p10.jpg"><img src="images/p10.jpg" alt=""class="img-responsive"/></a>
+									</div>
+									<div class="label">
+										<div class="label-text">
+											<span class="text-category">Business card</span>
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+		</div>
+</div>	
+<div class="footer">
+	<div class="container">
+		<div class="col-md-3 box_3">
+			<h3>About Us</h3>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+		</div>
+		<div class="col-md-3 box_5">
+			<h3>Latest Blog Posts</h3>
+			<div class="footer-list">
+			    <ul>
+				    <li class="list_top"><i class="arrow"> </i>
+					<p>Lorem ipsum Dolor Sit Amet<br><a href="#">15 March 2015</a></p></li>
+					<li class="list_top"><i class="arrow"> </i>
+					<p>Lorem ipsum Dolor Sit Amet<br><a href="#">15 March 2015</a></p></li>
+		       </ul>
+			</div>
+		</div>
+		<div class="col-md-3 box_5">
+			<h3>Site Map</h3>
+			<div class="footer-list1">
+			    <ul>
+				    <li><a href="#">Home</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact Us</a></li>
+		       </ul>
+			</div>
+		</div>
+		<div class="col-md-3 box_5">
+			<h3>Contact Us</h3>
+			<div class="footer-list">
+			    <ul>
+				    <li class="list_top"><i class="location"> </i>
+					<p>It is a long established fact that a reader will be distracted by</p></li>
+					<li class="list_top"><i class="phone"> </i>
+					<p>00-254-68974</p></li>
+		       </ul>
+		    </div>
+		    <p>Lorem ipsum dolor sit amet, adipiscing elit diam nonummy nibh euismod tincidunt laoreet dolore magna aliquam erat volutpat. </p>
+		</div>
+	</div>
+</div>
+<div class="footer_bottom">
+	<div class="container">
+		<div class="copy">
+			<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+		</div>
+		<ul class="footer_social">
+		  <li><a href=""> <i class="fb"> </i> </a></li>
+		  <li><a href=""><i class="tw"> </i> </a></li>
+		  <li><a href=""><i class="instagram"> </i> </a></li>
+		  <li><a href=""><i class="linkedin"> </i> </a></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>		

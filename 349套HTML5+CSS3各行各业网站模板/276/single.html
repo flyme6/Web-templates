@@ -1,0 +1,402 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>single</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!--jQuery (necessary for Bootstrap's JavaScript plugins)-->
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+<link rel="stylesheet" type="text/css" href="css/thumbs.css">
+<!--Custom Theme files-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+
+ <!--start-smoth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+		
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+<!--webfonts-->
+	<link href='http://fonts.useso.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.useso.com/css?family=Cinzel+Decorative:400,700,900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!--header-->
+	<div class="header-section">
+		<div class="header-top">
+			<div class="container">
+			<!--logo-->
+			   <div class="logo">
+					<h1><a href="index.html">HOME INTERIO</a></h1>
+				</div>
+			<!--top-nav-->
+				<div class="top-icons">
+					<ul>
+						<li><a class="you" href="#"><span> </span></a></li>
+						<li><a class="in" href="#"><span> </span></a></li>
+						<li><a class="tw" href="#"><span> </span></a></li>
+						<li><a class="fb" href="#"><span> </span></a></li>
+						<li><a class="gp" href="#"><span> </span></a></li>
+						<div class="clearfix"> </div>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="sub-header">
+			<div class="top-nav">
+					<span class="menu"> </span>
+					<ul class="cl-effect-16">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="latest.html">Latest furniture</a></li>
+						<li><a href="online.html">Onlineshop</a></li>
+						<li><a href="door.html">Door Delivery</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<div class="clearfix"> </div>
+					</ul>
+				</div>
+			</div>
+				<div class="clearfix"> </div>
+		<!-- script-for-menu -->
+				<script>
+					$(document).ready(function(){
+						$("span.menu").click(function(){
+							$(".top-nav ul").slideToggle(200);
+						});
+					});
+				</script>
+			<div class="clearfix"> </div>
+		</div>
+		<!--/header-->
+<!-- Single Page starts Here -->
+<div class="product">
+<div class="container">
+<div class="col-md-9 ctnt-bar">
+	<div class="content-bar">
+<div class="single-page">
+	<ul class="product-head">
+		<li><a href="index.html">Home</a> <span>::</span></li>
+		<li><a href="online.html">Products</a> <span>::</span></li>
+		<li class="active-page">single</li>
+		<div class="clear"> </div>
+	</ul>
+	<!-- Include the Etalage files -->
+		<link rel="stylesheet" href="css/etalage.css">
+		<script src="js/jquery.etalage.min.js"></script>
+	<!-- Include the Etalage files -->
+	<script>
+			jQuery(document).ready(function($){
+	
+				$('#etalage').etalage({
+					thumb_image_width: 300,
+					thumb_image_height: 400,
+					source_image_width: 600,
+					source_image_height: 1000,
+					show_hint: true,
+					click_callback: function(image_anchor, instance_id){
+						alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+					}
+				});
+				// This is for the dropdown list example:
+				$('.dropdownlist').change(function(){
+					etalage_show( $(this).find('option:selected').attr('class') );
+				});
+	
+		});
+	</script>
+	<!--//details-product-slider-->
+	<div class="details-left-slider">
+		<ul id="etalage">
+			<li>
+				<a href="optionallink.html">
+					<img class="etalage_thumb_image" src="images/l-f.jpg" />
+					<img class="etalage_source_image" src="images/l-f.jpg" />
+				</a>
+			</li>
+			<li>
+				<img class="etalage_thumb_image" src="images/l-l.jpg" />
+				<img class="etalage_source_image" src="images/l-l.jpg">
+			</li>
+			<li>
+				<img class="etalage_thumb_image" src="images/l-u.jpg" />
+				<img class="etalage_source_image" src="images/l-u.jpg" />
+			</li>
+			<li>
+				<img class="etalage_thumb_image" src="images/l-m.jpg" />
+				<img class="etalage_source_image" src="images/l-m.jpg" />
+			</li>
+			<div class="clearfix"></div>
+		</ul>
+	</div>
+	<div class="details-left-info">
+		<h3>Dressing Table in Wenge Finish by Spacewood</h3>
+		<p class="availability">Availability: <span class="color">In stock</span></p>
+	    <div class="price_single">
+		  <span class="reducedfrom">$7,772</span>
+		  <span class="actual">$5,999.00</span><a href="#">click for offer</a>
+		</div>
+		<h2 class="quick">Quick Overview:</h2>
+		<p class="quick_desc"> Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; es</p>
+		<ul class="product-colors">
+			<h3>available Colors ::</h3>
+			<li><a class="color1" href="#"><span> </span></a></li>
+			<li><a class="color2" href="#"><span> </span></a></li>
+			<li><a class="color3" href="#"><span> </span></a></li>
+			<li><a class="color4" href="#"><span> </span></a></li>
+			<li><a class="color5" href="#"><span> </span></a></li>
+			<li><a class="color6" href="#"><span> </span></a></li>
+			<li><a class="color7" href="#"><span> </span></a></li>
+			<li><a class="color8" href="#"><span> </span></a></li>
+			<div class="clear"> </div>
+		</ul>
+		<ul class="size">
+			<h3>Length</h3>
+			<li><a href="#">32</a></li>
+			<li><a href="#">34</a></li>
+		</ul>
+		<div class="quantity_box">
+			<ul class="product-qty">
+			   <span>Quantity:</span>
+			   <select>
+				 <option>1</option>
+				 <option>2</option>
+				 <option>3</option>
+				 <option>4</option>
+				 <option>5</option>
+				 <option>6</option>
+			   </select>
+		    </ul>
+		</div>
+		<div class="clearfix"></div>
+		<div class="single-but">
+			<input type="submit" value="add to cart"/>
+		</div>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="products-row contact-prod">
+					<h3>Latest Productss</h3>
+					<a href="single.html"><div class="product-grid">
+						<div class="more-product-info">
+								<span> </span>
+						</div>
+						<div class="product-img">
+							<img src="images/f11.jpg" alt="">
+						</div>
+						<div class="product-info">
+							<div class="product-info-cust">
+								<a href="single.html">Details</a>
+							</div>
+							<div class="product-info-price">
+								<a href="single.html">&#8356;380</a>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div></a>
+					<a href="single.html"><div class="product-grid">
+						<div class="more-product-info">
+								<span> </span>
+						</div>
+						<div class="product-img">
+							<img src="images/f2.jpg" alt="">
+						</div>
+						<div class="product-info">
+							<div class="product-info-cust">
+								<a href="single.html">Details</a>
+							</div>
+							<div class="product-info-price">
+								<a href="single.html">&#8356;380</a>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div></a>
+					<a href="single.html"><div class="product-grid product-gridy">
+						<div class="more-product-info">
+								<span> </span>
+						</div>
+						<div class="product-img">
+							<img src="images/f3.jpg" alt="">
+						</div>
+						<div class="product-info">
+							<div class="product-info-cust">
+								<a href="single.html">Details</a>
+							</div>
+							<div class="product-info-price">
+								<a href="single.html">&#8356;380</a>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div></a>
+					<a href="single.html"><div class="product-grid">
+						<div class="more-product-info">
+								<span> </span>
+						</div>
+						<div class="product-img">
+							<img src="images/f4.jpg" alt="">
+						</div>
+						<div class="product-info">
+							<div class="product-info-cust">
+								<a href="single.html">Details</a>
+							</div>
+							<div class="product-info-price">
+								<a href="single.html">&#8356;380</a>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div></a>
+					<a href="single.html"><div class="product-grid">
+						<div class="more-product-info">
+								<span> </span>
+						</div>
+						<div class="product-img">
+							<img src="images/f5.jpg" alt="">
+						</div>
+						<div class="product-info">
+							<div class="product-info-cust">
+								<a href="single.html">Details</a>
+							</div>
+							<div class="product-info-price">
+								<a href="single.html">&#8356;380</a>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div></a>
+					<a href="single.html"><div class="product-grid product-gridy">
+						<div class="more-product-info">
+								<span> </span>
+						</div>
+						<div class="product-img">
+							<img src="images/f6.jpg" alt="">
+						</div>
+						<div class="product-info">
+							<div class="product-info-cust">
+								<a href="single.html">Details</a>
+							</div>
+							<div class="product-info-price">
+								<a href="single.html">&#8356;380</a>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div></a>
+					<div class="clearfix"></div>
+				</div>
+</div>
+</div>
+<div class="col-md-3 sidebar_men">
+	   <h3>Categories</h3>
+	  <ul class="product-categories color"><li class="cat-item cat-item-42"><a href="#">PRODUCTS</a> <span class="count">(14)</span></li>
+		<li class="cat-item cat-item-60"><a href="#"> HOME DECORS</a> <span class="count">(2)</span></li>
+		<li class="cat-item cat-item-63"><a href="#">BED / BATH</a> <span class="count">(2)</span></li>
+		<li class="cat-item cat-item-54"><a href="#">KITCHEN</a> <span class="count">(8)</span></li>
+		<li class="cat-item cat-item-55"><a href="#">Tables</a> <span class="count">(11)</span></li>
+		<li class="cat-item cat-item-64"><a href="#">SOFAS</a> <span class="count">(3)</span></li>
+		<li class="cat-item cat-item-61"><a href="#">DINING</a> <span class="count">(3)</span></li>
+		<li class="cat-item cat-item-57"><a href="#">APPLIANCES</a> <span class="count">(13)</span></li>
+		<li class="cat-item cat-item-58"><a href="#">DIWAN SETS</a> <span class="count">(7)</span></li>
+		<li class="cat-item cat-item-62"><a href="#">MIRRORS</a> <span class="count">(2)</span></li>
+		<li class="cat-item cat-item-41"><a href="#">BATH MATS</a> <span class="count">(17)</span></li>
+	 </ul>
+	  <h3>Colors</h3>
+	  <ul class="product-categories color"><li class="cat-item cat-item-42"><a href="#">Green</a> <span class="count">(14)</span></li>
+		<li class="cat-item cat-item-60"><a href="#">Blue</a> <span class="count">(2)</span></li>
+		<li class="cat-item cat-item-63"><a href="#">Red</a> <span class="count">(2)</span></li>
+		<li class="cat-item cat-item-54"><a href="#">Gray</a> <span class="count">(8)</span></li>
+		<li class="cat-item cat-item-55"><a href="#">Green</a> <span class="count">(11)</span></li>
+	  </ul>
+	  <h3>Sizes</h3>
+	  <ul class="product-categories color"><li class="cat-item cat-item-42"><a href="#">L</a> <span class="count">(14)</span></li>
+		<li class="cat-item cat-item-60"><a href="#">M</a> <span class="count">(2)</span></li>
+		<li class="cat-item cat-item-63"><a href="#">S</a> <span class="count">(2)</span></li>
+		<li class="cat-item cat-item-54"><a href="#">XL</a> <span class="count">(8)</span></li>
+		<li class="cat-item cat-item-55"><a href="#">XS</a> <span class="count">(11)</span></li>
+	  </ul>
+	  <h3>Price</h3>
+	  <ul class="product-categories"><li class="cat-item cat-item-42"><a href="#">200$-300$</a> <span class="count">(14)</span></li>
+		<li class="cat-item cat-item-60"><a href="#">300$-400$</a> <span class="count">(2)</span></li>
+		<li class="cat-item cat-item-63"><a href="#">400$-500$</a> <span class="count">(2)</span></li>
+		<li class="cat-item cat-item-54"><a href="#">500$-600$</a> <span class="count">(8)</span></li>
+		<li class="cat-item cat-item-55"><a href="#">600$-700$</a> <span class="count">(11)</span></li>
+	  </ul>
+	</div>
+<div class="clearfix"></div>
+</div>
+</div>
+<!--/start-footer-->                                                             
+	<div class="footer">
+				<div class="container">
+					<div class="footer-grids">
+						<div class="col-md-4 footer-grid bottom-nav">
+							<h3>Categories </h3>
+								<ul>
+									<li><a href="#">Benches</a></li>
+									<li><a href="#">Day Beds</a></li>
+									<li><a href="#">Chairs</a></li>
+									<li><a href="#">Sets</a></li>
+									<li><a href="#">Sections<a></li>
+									<li><a href="#">Sofa Set</a></li>
+									<li><a href="#">Tables</a></li>
+									<div class="clearfix"> </div>
+								</ul>
+							</div>
+							<div class="col-md-4 footer-grid bottom-nav">
+								<h3>my Account </h3>
+									<ul>
+										<li><a href="#">My  Orders</li>
+										<li><a href="#">My Merchant returns</li>
+										<li><a href="#">My Address</li>
+										<li><a href="#">My Credit</li>
+										<li><a href="#">Personal Info</li>
+										<li><a href="login.html">Login</a></li>
+										<li><a href="login.html">Register</a></li>
+										<div class="clearfix"> </div>
+									</ul>
+							</div>
+							<div class="col-md-4  footer-grid">
+								 	 <h3> My Address</h3>
+								 	 <div class="bottom-icons">
+											<ul>
+												<li><a class="home" href="#"><span> </span></a>Lorem ipsy street,Newyork</li>
+												<li><a class="mail" href="mailto:info@example.com"><span> </span>123 int@example.com</a></li>
+												<div class="clearfix"> </div>
+											</ul>
+										
+										</div>
+										<p class="copyright">Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+									
+								</div>	
+						<div class="clearfix"> </div>							
+					</div>
+				</div>
+					<!--//End-foote-->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+</body>
+</html>

@@ -1,0 +1,449 @@
+.cr-container{
+	width: 640px;
+    height: 439px;
+	position: relative;
+	margin: 0 auto;
+	border: 20px solid #00AAAD;
+}
+.cr-container label{
+	font-style: italic;
+	    width: 140px;
+	height: 30px;
+	cursor: pointer;
+	color: #fff;
+	line-height: 32px;
+	    font-size: 17px;
+	float:left;
+	position: relative;
+	margin-top:350px;
+	z-index: 1000;
+	text-align: center;
+}
+.cr-container label:before{
+	    content: '';
+    width: 34px;
+    height: 34px;
+    background: rgb(165, 205, 57);
+    position: absolute;
+    left: 50%;
+    margin-left: -17px;
+    border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+    z-index: -1;
+}
+.cr-container label:after{
+	width: 1px;
+	height: 400px;
+	content: '';
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+	position: absolute;
+	bottom: -20px;
+	right: 0px;
+}
+.cr-container label.cr-label-img-4:after{
+	width: 0px;
+}
+.cr-container input.cr-selector-img-1:checked ~ label.cr-label-img-1,
+.cr-container input.cr-selector-img-2:checked ~ label.cr-label-img-2,
+.cr-container input.cr-selector-img-3:checked ~ label.cr-label-img-3,
+.cr-container input.cr-selector-img-4:checked ~ label.cr-label-img-4{
+	    color: #fff;
+}
+.cr-container input.cr-selector-img-1:checked ~ label.cr-label-img-1:before,
+.cr-container input.cr-selector-img-2:checked ~ label.cr-label-img-2:before,
+.cr-container input.cr-selector-img-3:checked ~ label.cr-label-img-3:before,
+.cr-container input.cr-selector-img-4:checked ~ label.cr-label-img-4:before{
+	 background: rgb(165, 205, 57);
+	box-shadow: 0px 0px 0px 4px rgba(0, 170, 173, 0.69);
+	-o-box-shadow: 0px 0px 0px 4px rgba(0, 170, 173, 0.69);
+	-webkit-box-shadow: 0px 0px 0px 4px rgba(0, 170, 173, 0.69);
+	-moz-box-shadow: 0px 0px 0px 4px rgba(0, 170, 173, 0.69);
+}
+.cr-container input{
+	display: none;
+}
+.cr-bgimg{
+	width: 600px;
+	height: 400px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+}
+.cr-bgimg{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.cr-bgimg div{
+	width: 150px;
+	height: 100%;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+.cr-bgimg div span{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 400px;
+	left: 0px;
+	z-index: 2;
+	text-indent: -9000px;
+}
+.cr-bgimg div:nth-child(even) span{
+	top: -400px;
+}
+.cr-container input.cr-selector-img-1:checked ~ .cr-bgimg,
+.cr-bgimg div span:nth-child(1){
+	background-image: url(../images/1.jpg);
+}
+.cr-container input.cr-selector-img-2:checked ~ .cr-bgimg,
+.cr-bgimg div span:nth-child(2){
+	background-image: url(../images/2.jpg);
+}
+.cr-container input.cr-selector-img-3:checked ~ .cr-bgimg,
+.cr-bgimg div span:nth-child(3){
+	background-image: url(../images/3.jpg);
+}
+.cr-container input.cr-selector-img-4:checked ~ .cr-bgimg,
+.cr-bgimg div span:nth-child(4){
+	background-image: url(../images/4.jpg);
+}
+.cr-bgimg div:nth-child(1) span{
+	background-position: 0px 0px;
+}
+.cr-bgimg div:nth-child(2) span{
+	background-position: -150px 0px;
+}
+.cr-bgimg div:nth-child(3) span{
+	background-position: -300px 0px;
+}
+.cr-bgimg div:nth-child(4) span{
+	background-position: -450px 0px;
+}
+
+.cr-container input:checked ~ .cr-bgimg div span{
+	-webkit-animation: slideOutUp 0.6s ease-in-out;
+	-moz-animation: slideOutUp 0.6s ease-in-out;
+	-o-animation: slideOutUp 0.6s ease-in-out;
+	-ms-animation: slideOutUp 0.6s ease-in-out;
+	animation: slideOutUp 0.6s ease-in-out;
+}
+.cr-container input:checked ~ .cr-bgimg div:nth-child(even) span{
+	-webkit-animation: slideOutDown 0.6s ease-in-out;
+	-moz-animation: slideOutDown 0.6s ease-in-out;
+	-o-animation: slideOutDown 0.6s ease-in-out;
+	-ms-animation: slideOutDown 0.6s ease-in-out;
+	animation: slideOutDown 0.6s ease-in-out;
+}
+@-webkit-keyframes slideOutUp{
+	0%{ top: 0px; }
+	100%{ top: -400px; }
+}
+@-webkit-keyframes slideOutDown{
+	0%{ top: 0px; }
+	100%{ top: 400px; }
+}
+@-moz-keyframes slideOutUp{
+	0%{ top: 0px; }
+	100%{ top: -400px; }
+}
+@-moz-keyframes slideOutDown{
+	0%{ top: 0px; }
+	100%{ top: 400px; }
+}
+@-o-keyframes slideOutUp{
+	0%{ top: 0px; }
+	100%{ top: -400px; }
+}
+@-o-keyframes slideOutDown{
+	0%{ top: 0px; }
+	100%{ top: 400px; }
+}
+@-ms-keyframes slideOutUp{
+	0%{ top: 0px; }
+	100%{ top: -400px; }
+}
+@-ms-keyframes slideOutDown{
+	0%{ top: 0px; }
+	100%{ top: 400px; }
+}
+@keyframes slideOutUp{
+	0%{ top: 0px; }
+	100%{ top: -400px; }
+}
+@keyframes slideOutDown{
+	0%{ top: 0px; }
+	100%{ top: 400px; }
+}
+.cr-container input.cr-selector-img-1:checked ~ .cr-bgimg div span:nth-child(1),
+.cr-container input.cr-selector-img-2:checked ~ .cr-bgimg div span:nth-child(2),
+.cr-container input.cr-selector-img-3:checked ~ .cr-bgimg div span:nth-child(3),
+.cr-container input.cr-selector-img-4:checked ~ .cr-bgimg div span:nth-child(4){
+	-webkit-transition: top 0.5s ease-in-out;
+	-moz-transition: top 0.5s ease-in-out;
+	-o-transition: top 0.5s ease-in-out;
+	-ms-transition: top 0.5s ease-in-out;
+	transition: top 0.5s ease-in-out;
+	-webkit-animation: none;
+	-moz-animation: none;
+	-o-animation: none;
+	-ms-animation: none;
+	animation: none;
+	top: 0px;
+	z-index: 10;
+}
+.cr-titles h3{
+	color: #fff;
+}
+.cr-titles h3 span{
+	z-index: 10000;
+	position: absolute;
+	width:95%;
+	left: 15px;
+	text-align: center;
+	opacity: 0;
+}
+.cr-titles h3 span:nth-child(1){
+	top: 10%;
+	    font-size: 50px;
+	-webkit-transition: opacity 0.8s ease-in-out, top 0.8s ease-in-out;
+	-moz-transition: opacity 0.8s ease-in-out, top 0.8s ease-in-out;
+	-o-transition: opacity 0.8s ease-in-out, top 0.8s ease-in-out;
+	-ms-transition: opacity 0.8s ease-in-out, top 0.8s ease-in-out;
+	transition: opacity 0.8s ease-in-out, top 0.8s ease-in-out;
+}
+.cr-titles h3 span:nth-child(2){
+	    top: 50%;
+    margin-top: 84px;
+    letter-spacing: 0px;
+       background: rgba(165, 205, 57, 0.55);
+    font-size: 14px;
+    padding: 10px 0px;
+    font-style: italic;
+    -webkit-transition: opacity 0.8s ease-in-out;
+    -moz-transition: opacity 0.8s ease-in-out;
+    -o-transition: opacity 0.8s ease-in-out;
+    -ms-transition: opacity 0.8s ease-in-out;
+    transition: opacity 0.8s ease-in-out;
+}
+.cr-container input.cr-selector-img-1:checked ~ .cr-titles h3:nth-child(1) span:nth-child(1),
+.cr-container input.cr-selector-img-2:checked ~ .cr-titles h3:nth-child(2) span:nth-child(1),
+.cr-container input.cr-selector-img-3:checked ~ .cr-titles h3:nth-child(3) span:nth-child(1),
+.cr-container input.cr-selector-img-4:checked ~ .cr-titles h3:nth-child(4) span:nth-child(1){
+	opacity: 1;
+	top:44%;
+}
+.cr-container input.cr-selector-img-1:checked ~ .cr-titles h3:nth-child(1) span:nth-child(2),
+.cr-container input.cr-selector-img-2:checked ~ .cr-titles h3:nth-child(2) span:nth-child(2),
+.cr-container input.cr-selector-img-3:checked ~ .cr-titles h3:nth-child(3) span:nth-child(2),
+.cr-container input.cr-selector-img-4:checked ~ .cr-titles h3:nth-child(4) span:nth-child(2){
+	opacity: 1;
+}
+/* Media Query: Let's show the inputs on mobile sized browsers because they probably don't support the label trick: */
+@media screen and (max-width: 768px) {
+	.cr-container input{
+		display: inline;
+		width: 24%;
+		margin-top: 350px;
+		z-index: 1000;
+		position: relative;
+		    cursor: pointer;
+	}
+	.cr-container label{
+		display: none;
+	}
+}
+@media screen and (max-width:640px) {
+	.cr-bgimg {
+	width:580px!important;
+    height: 399px;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		z-index: 1;
+	}
+	.cr-container {
+    width: 620px;
+    height: 439px;
+	}
+	.cr-bgimg div {
+    width: 145px;
+    height: 100%;
+	}
+}
+@media screen and (max-width:568px) {
+.cr-container {
+		width:440px;
+		border: 10px solid #00AAAD;
+		height: 417px;
+	}
+	.cr-bgimg div {
+		width:105px;
+		height: 100%;
+	}
+	.cr-bgimg {
+	width:420px!important;
+    height: 399px;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		z-index: 1;
+	}
+	.cr-titles h3 span {
+    z-index: 10000;
+    position: absolute;
+    width: 92%;
+    left: 15px;
+    text-align: center;
+    opacity: 0;
+	}
+	.testi-text h4 {
+		font-size: 1.8em;
+	}
+	}
+@media screen and (max-width:480px) {
+	.cr-container {
+		width:440px;
+		border: 10px solid #00AAAD;
+		height: 417px;
+	}
+	.cr-bgimg div {
+		width:105px;
+		height: 100%;
+	}
+	.cr-bgimg {
+	width:420px!important;
+    height: 399px;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		z-index: 1;
+	}
+	.cr-titles h3 span {
+    z-index: 10000;
+    position: absolute;
+    width: 92%;
+    left: 15px;
+    text-align: center;
+    opacity: 0;
+	}
+	.testi-text h4 {
+		font-size: 1.8em;
+	}
+	.banner.two {
+		background: url(../images/banner.jpg) no-repeat center top;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		-ms-background-size: cover;
+		min-height: 96px;
+	}
+	
+}
+@media screen and (max-width:414px){
+	.cr-bgimg {
+    width: 312px!important;
+    height: 399px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+  }
+  .cr-container {
+    width: 332px;
+    border: 10px solid #00AAAD;
+    height: 418px;
+	}
+	.cr-bgimg div {
+		width: 78px;
+		height: 100%;
+	}
+}
+@media screen and (max-width:384px){
+	.cr-bgimg {
+    width: 312px!important;
+    height: 399px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+  }
+  .cr-container {
+    width: 332px;
+    border: 10px solid #00AAAD;
+    height: 418px;
+	}
+	.cr-bgimg div {
+		width: 78px;
+		height: 100%;
+	}
+}
+@media screen and (max-width:375px){
+	.cr-bgimg {
+    width: 312px!important;
+    height: 399px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+  }
+  .cr-container {
+    width: 332px;
+    border: 10px solid #00AAAD;
+    height: 418px;
+	}
+	.cr-bgimg div {
+		width: 78px;
+		height: 100%;
+	}
+	.cr-titles h3 span:nth-child(1) {
+    top: 10%;
+    font-size: 37px;
+	}
+}
+@media screen and (max-width:320px){
+	.cr-container {
+		width: 283px;
+		border: 10px solid #00AAAD;
+		height: 418px;
+	}
+	.cr-bgimg {
+    width: 263px!important;
+    height: 399px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+	}
+	.cr-bgimg div {
+			width:65px;
+			height: 100%;
+	}
+	.cr-container input {
+		display: inline;
+		width: 22%;
+		margin-top: 350px;
+		z-index: 1000;
+		position: relative;
+		cursor: pointer;
+	}
+	.cr-titles h3 span {
+		width: 89%;
+		left: 15px;
+		text-align: center;
+		opacity: 0;
+	}
+
+}

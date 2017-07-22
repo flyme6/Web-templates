@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Home</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link href='http://fonts.useso.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.useso.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<!-- js -->
+		<script src="js/jquery.min.js"></script>
+		<!-- //js -->
+		<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Princi_Gym Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+				function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!-- //for-mobile-apps -->
+		<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!-- start-smoth-scrolling -->
+<!--start-top-nav-script-->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+<!--End-top-nav-script-->
+</head>
+	
+<body>
+<!-- header -->
+	<div class="header">
+	<div class="container">
+		<div class="header-top-left" id="home">
+			<ul>
+				<li class="activ"><a href="#">LAST NOTICE</a></li>
+				<li>Aliquam sit amet gravida ipsum,vitae scelerisque mi.Maecenas ullamcorper in 
+					metus a ullamcorper.Sed dictum neque</li> 
+			</ul>
+		</div>
+		<div class="header-top-right">
+			<p>Phone Number:<span> 043-234-3453</span></p>
+		</div>
+		<div class="clearfix"> </div>
+		<div class="head-logo">
+			<a href="index.html"><span> </span></a>
+		</div>
+		<div class="header-top">
+		
+		<div class="navigation">
+				 <span class="menu"></span> 
+					<ul class="navig">
+						<li><a href="index.html">Home</a></li>
+						<li class="plan active"><a href="single.html">CLASSES</a>
+							<ul class="sub-nav">
+								<li><a href="single.html">DROP ITEM1</a></li>
+								<li><a href="single.html">DROP ITEM2</a></li>
+							</ul>
+						</li>
+						<li><a href="404.html">PAGES</a></li>
+						<li><a href="news.html">NEWS</a></li>
+						<li><a href="gallery.html">GALLERY</a></li>
+						<li><a href="trainers.html">TRAINERS</a></li>
+						<li><a href="contact.html"  class="act">CONTACT</a></li>
+						<li><a href="#" class="home-box" class="act">CONTACT</a></li>
+						<div class="clearfix"> </div>
+					</ul>
+					
+		</div>
+		<div class="search">
+				<form>
+					<input type="text" placeholder="Type and search..." required=" ">
+				</form>
+		</div>
+		<div class="clearfix"> </div>
+		</div>
+	</div>
+	</div>
+			<!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(" ul.navig").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+		 <!-- script-for-menu -->
+
+<!-- //header -->
+<!-- contact -->
+	<div class="contact">
+	<div class="container">
+		<h3>CONTACT</h3>
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3333.8706869752255!2d-111.79140199999999!3d33.322196!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872ba85ec32d3209%3A0x627ed595fced65e8!2sUSA+Youth+Fitness+Center!5e0!3m2!1sen!2sin!4v1426243996483" frameborder="0" style="border:0"></iframe>
+		</div>
+		<div class="map-bottom-grids">
+			<div class="map-bottom-grid">
+				<div class="home">
+					<span> </span>
+				</div>
+				<p>257 Atlantis Ltd<span>Asian Countries</span>Asia-300567</p>
+			</div>
+			<div class="map-bottom-grid map-bottom-mid">
+				<div class="call">
+					<span> </span>
+				</div>
+				<p>+0120 300567895<span>+0120 794367895</span></p>
+			</div>
+			<div class="map-bottom-grid">
+				<div class="mes">
+					<span> </span>
+				</div>
+				<a href="mailto:info@example.com">Someone@yahoo.com</a>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<h4>Contact Us</h4>
+		<form>
+			<input type="text" placeholder="Name" required=" ">
+			<input type="text" placeholder="Email" required=" ">
+			<input type="text" placeholder="Phone Number" required=" ">
+			<textarea placeholder="Message" required></textarea>
+			<input type="submit" value="Send">
+		</form>
+	</div>
+	</div>
+<!-- //contact -->
+<!-- footer -->
+	<div class="footer">
+	<div class="container">
+		<div class="footer-icon">
+			<a href="#home" class="scroll"><img src="images/row.png" alt=" " /></a>
+		</div>
+		<div class="footer-social">
+			<ul>
+				<li><a href="#" class="dribble"> </a></li>
+				<li><a href="#" class="facebook"> </a></li>
+				<li><a href="#" class="twitter"> </a></li>
+				<li><a href="#" class="be"> </a></li>
+				<li><a href="#" class="in"> </a></li>
+				<li><a href="#" class="fli"> </a></li>
+				<li><a href="#" class="rad"> </a></li>
+			</ul>
+		</div>
+		<div class="footer-nav">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="single.html">ABOUT</a></li>
+				<li><a href="news.html">NEWS</a></li>
+				<li><a href="trainers.html">ARCHIVES</a></li>
+				<li><a href="contact.html" class="foot">CONTACT</a></li>
+			</ul>
+		</div>
+		<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+	</div>
+	</div>
+<!-- //footer -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>

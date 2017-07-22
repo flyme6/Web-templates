@@ -1,0 +1,638 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="ico/favicon.ico">
+
+    <title>h2design</title>
+
+    <!-- Bootstrap core CSS -->
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href='http://fonts.useso.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    
+    <!-- Navigation -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="..."></a>
+        </div>
+        <div class="collapse navbar-collapse">        
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="index.html">Homepage 1</a></li>
+                <li><a href="index-full.html">Homepage 2</a></li>
+              </ul>
+            </li>
+			<li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="portfolio-item-1.html">Portfolio Item</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="coming-soon.html">Coming Soon</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="help-center.html">Help Center</a></li>
+                <li><a href="help-item.html">Help Item</a></li>
+                <li><a href="pricing-table.html">Pricing Table</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="sign-in.html">Sign In</a></li>
+                <li><a href="sign-up.html">Sign Up</a></li>
+                <li><a href="error-page.html">404 Error Page</a></li>
+              </ul>
+            </li>            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="blog-post.html">Blog Post</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="shop-item.html">Shop Item</a></li>
+                <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                <li><a href="user-profile.html">User Profile</a></li>
+              </ul>
+            </li>
+            <li class="hidden-sm active">
+              <a href="ui-elements.html">UI Elements</a>
+            </li>            
+            <!-- Navbar Search -->
+            <li class="hidden-xs" id="navbar-search">
+              <a href="#">
+                <i class="fa fa-search"></i>
+              </a>
+              <div class="hidden" id="navbar-search-box">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <span class="input-group-btn">
+                    <button class="btn btn-danger" type="button">Go!</button>
+                  </span>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- Mobile Search -->
+          <form class="navbar-form navbar-right visible-xs" role="search">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <span class="input-group-btn">
+                <button class="btn btn-danger" type="button">Search!</button>
+              </span>
+            </div>
+          </form>          
+        </div><!--/.nav-collapse -->
+      </div>
+    </div> <!-- / .navigation -->
+	<span id="header_shadow" style="width: 100%; top: 30px;"></span>
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+	  
+	  <!-- Topic Header -->
+      <div class="topic">
+        <div class="container">
+          <div class="row">            
+            <ol class="breadcrumb hidden-xs">
+              <li><a href="index.html">Home</a></li>
+              <li class="active">UI Elements</li>
+            </ol>                      
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </div> <!-- / .Topic Header -->
+	  
+      <div class="container">
+        <div class="row">
+          <!-- Vertical Navigation -->
+          <div class="col-md-3">
+            <div class="panel-group" id="help-nav">
+			  <div class="panel">
+                <div class="panel-heading bg-darkblue">
+                  <a data-toggle="collapse" data-parent="#help-nav" href="#help-nav-one">
+                    <strong>User Menu</strong>
+                  </a>
+                </div>
+                <div id="help-nav-one" class="panel-collapse collapse in">
+                  <div class="panel-body bg-red">
+                    <ul>
+				      <li><a href="#typography">Typography</a></li>
+                      <li><a href="#buttons">Buttons</a></li>
+                      <li><a href="#navs">Navs</a></li>
+                      <li><a href="#pagination">Pagination</a></li>
+                      <li><a href="#tooltips">Tooltips</a></li>
+                      <li><a href="#popovers">Popovers</a></li>
+                      <li><a href="#panels">Panels</a></li>
+                      <li><a href="#accordions">Accordion</a></li>
+                      <li><a href="#carousel">Carousel</a></li>
+                      <li><a href="#info-boards">Info Boards</a></li>
+                      <li><a href="#social-links">Social Links</a></li>
+                      <li><a href="#responsive-iframes">Responsive iFrames</a></li>
+                    </ul>
+			      </div>
+                </div>
+			  </div>
+            </div>          
+          </div> <!-- / .col-md-3 -->
+          <div class="col-md-9">
+
+            <!-- Typography -->
+            <h2 class="first-child" id="typography"><span>Typography</span></h2><hr />
+            <div class="row">
+              <div class="col-sm-8">
+                <p class="lead">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac amel hendrerit nunc luctus.
+                </p>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                </p>
+				<br />
+				<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<p class="text-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<p class="text-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<p class="text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<p class="text-warning">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<p class="text-danger">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="col-sm-4">
+                <h1 class="first-child">Typography</h1>
+                <h2>Typography</h2>
+                <h3>Typography</h3>
+                <h4>Typography</h4>
+                <h5>Typography</h5>
+                <h6>Typography</h6>
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <h2 id="buttons"><span>Buttons</span></h2><hr />
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="panel-body">
+                  <p><a class="btn btn-lg btn-default">Large Button Red</a> <a class="btn btn-lg btn-red">Large Button Red</a> </p>
+                  <p><a class="btn btn-default">Default Button</a> <a class="btn btn-red">Default Button</a> </p>
+                  <p><a class="btn btn-sm btn-default">Small Button</a> <a class="btn btn-sm btn-red">Small Button</a> </p>
+                  <p><a class="btn btn-xs btn-default">Extra Small</a> <a class="btn btn-xs btn-red">Extra Small</a> </p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="panel-body">
+                  <p><a class="btn btn-lg btn-default">Large Button Blue</a> <a class="btn btn-lg btn-darkblue">Large Button Blue</a> </p>
+                  <p><a class="btn btn-default">Default Button</a> <a class="btn btn-darkblue">Default Button</a> </p>
+                  <p><a class="btn btn-sm btn-default">Small Button</a> <a class="btn btn-sm btn-darkblue">Small Button</a> </p>
+                  <p><a class="btn btn-xs btn-default">Extra Small</a> <a class="btn btn-xs btn-darkblue">Extra Small</a> </p>
+                </div>
+              </div>
+            </div>	
+
+            <!-- Navs -->
+            <h2 id="navs"><span>Navs</span></h2><hr />
+            <div class="row">
+              <div class="col-sm-6">
+                <h3 class="first-child">Tabs</h3>
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Messages</a></li>
+                </ul>				
+              </div>
+              <div class="col-sm-6">
+                <h3 class="second-child">Pills</h3>
+                <ul class="nav nav-pills">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Messages</a></li>
+                </ul>				
+              </div>
+            </div>
+			
+			<div class="row">
+              <div class="col-sm-6">
+                <h3 class="first-child">Tabs with dropdowns</h3>
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Profile</a></li>
+                  <li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                      Messages <span class="caret"></span>
+                    </a>
+					 <ul class="dropdown-menu" role="menu">
+						<li>Action</li>
+						<li>Another action</li>
+						<li>Something else here</li>
+						<li>sparated link</li>
+					 </ul>
+				  </li>
+                </ul>				
+              </div>
+              <div class="col-sm-6">
+                <h3 class="second-child">Pills with dropdowns</h3>
+                <ul class="nav nav-pills">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Profile</a></li>
+                  <li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                      Messages <span class="caret"></span>
+                    </a>
+					 <ul class="dropdown-menu" role="menu">
+						<li>Action</li>
+						<li>Another action</li>
+						<li>Something else here</li>
+						<li>sparated link</li>
+					 </ul>
+				  </li>
+                </ul>				
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <h2 id="pagination"><span>Pagination</span></h2><hr />
+
+            <!-- Pagination Large -->
+            <div class="pagination-example">
+              <ul class="pagination pagination-lg">
+                <li><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+            </div>
+            <!-- Pagination Default -->
+            <div class="pagination-example">
+              <ul class="pagination">
+                <li><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+            </div>
+            <!-- Pagination Small -->
+            <div class="pagination-example">
+              <ul class="pagination pagination-sm">
+                <li><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+            </div>
+
+            <!-- Tooltips -->
+            <h2 id="tooltips"><span>Tooltips</span></h2><hr />
+            <div class="tooltip-test">
+              <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+              <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+              <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+              <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+            </div>
+
+            <!-- Popovers -->
+            <h2 id="popovers"><span>Popovers</span></h2><hr />
+            <div class="popover-test">
+              <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                Popover on left
+              </button>
+              <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                Popover on top
+              </button>
+              <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                Popover on bottom
+              </button>
+              <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+                Popover on right
+              </button>
+            </div>
+
+            <!-- Panels -->
+            <h2 id="panels"><span>Panels</span></h2><hr />
+            <div class="row">
+              <div class="col-sm-4">
+                <!-- Panel default -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">Panel default</div>
+                  <div class="panel-body">
+                    Panel content
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <!-- Panel red -->
+                <div class="panel panel-red">
+                  <div class="panel-heading">Panel red</div>
+                  <div class="panel-body">
+                    Panel content
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <!-- Panel blue -->
+                <div class="panel panel-blue">
+                  <div class="panel-heading">Panel blue</div>
+                  <div class="panel-body">
+                    Panel content
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion -->
+            <h2 id="accordions"><span>Accordion</span></h2><hr />
+            <div class="panel-group" id="accordion">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                    <span class="text-red">Collapsible 1</span>
+                  </a>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac amel hendrerit nunc luctus. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac amel hendrerit nunc luctus.
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-heading bg-darkblue">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">
+                    Collapsible 2
+                  </a>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac amel hendrerit nunc luctus. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac amel hendrerit nunc luctus.
+                  </div>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-heading bg-red">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">
+                    Collapsible 3
+                  </a>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac amel hendrerit nunc luctus. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac amel hendrerit nunc luctus.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Info Boards -->
+            <h2 id="info-boards"><span>Info Boards</span></h2><hr />
+            <div class="row">
+              <div class="col-sm-6">
+                <!-- Info Board Red -->
+                <div class="info-board info-board-red">
+                  <h4>Boards share</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac amel hendrerit nunc luctus.
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <!-- Info Board Blue -->
+                <div class="info-board info-board-blue">
+                  <h4>Boards share</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac amel hendrerit nunc luctus.
+                  </p>
+                </div>
+              </div>
+            </div> <!-- / .row -->
+
+            <!-- Social Links -->
+            <h2 id="social-links"><span>Social Links</span></h2><hr />
+            <div class="social social-lg">
+              <ul class="list-inline">
+                <li><a href="#" class="rss"><i class="fa fa-rss"></i></a></li>
+                <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" class="plus"><i class="fa fa-plus"></i></a></li>
+                <li><a href="#" class="vk"><i class="fa fa-vk"></i></a></li>
+                <li><a href="#" class="vimeo"><i class="fa fa-vimeo-square"></i></a></li>
+                <li><a href="#" class="github"><i class="fa fa-github"></i></a></li>
+                <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#" class="dropbox"><i class="fa fa-dropbox"></i></a></li>
+                <li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
+              </ul>
+            </div>
+            <div class="social">
+              <ul class="list-inline">
+                <li><a href="#" class="rss"><i class="fa fa-rss"></i></a></li>
+                <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" class="plus"><i class="fa fa-plus"></i></a></li>
+                <li><a href="#" class="vk"><i class="fa fa-vk"></i></a></li>
+                <li><a href="#" class="vimeo"><i class="fa fa-vimeo-square"></i></a></li>
+                <li><a href="#" class="github"><i class="fa fa-github"></i></a></li>
+                <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#" class="dropbox"><i class="fa fa-dropbox"></i></a></li>
+                <li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
+              </ul>
+            </div>
+            <div class="social social-sm">
+              <ul class="list-inline">
+                <li><a href="#" class="rss"><i class="fa fa-rss"></i></a></li>
+                <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" class="plus"><i class="fa fa-plus"></i></a></li>
+                <li><a href="#" class="vk"><i class="fa fa-vk"></i></a></li>
+                <li><a href="#" class="vimeo"><i class="fa fa-vimeo-square"></i></a></li>
+                <li><a href="#" class="github"><i class="fa fa-github"></i></a></li>
+                <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#" class="dropbox"><i class="fa fa-dropbox"></i></a></li>
+                <li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
+              </ul>
+            </div>
+
+          </div> <!-- / .col-md-9 -->
+        </div>
+      </div> <!-- / .container -->
+
+    </div> <!-- / .wrapper -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+		
+          <!-- Contact Us -->
+          <div class="col-xs-12 col-sm-3 col-md-3">
+            <h4>Contact Us</h4>            
+			<p>
+			  051 Ave C South Saskatoon, 10 Elizabeth <br />
+			  Street Mountain Road, CA United States.
+			  <br /><br />
+			  Phone : 92 026 365 2569<br />
+			  Fax   : 92 026 365 2570
+			  <br /><br />
+			  <a href="mailto:#">supportcenter@mail.com</a>
+			</p>			
+          </div><!-- / .Contact Us -->
+		  
+		  <!-- Useful Links -->
+          <div class="col-xs-12 col-sm-3 col-md-3">            
+            <h4>Useful Links</h4>
+            <p>
+              <a href="#">Simple and clean blog design </a><br />
+              <a href="#">We bring good to online presence  </a><br />
+              <a href="#">Fully responsive creative design  </a><br />
+              <a href="#">Creative homepage design </a><br />
+              <a href="#">Our services are most nifty  </a><br />
+              <a href="#">Most flexible theme </a><br />
+            </p>
+          </div><!-- / .Useful Links -->
+		  
+          <!-- Recent Tweets -->
+          <div class="col-xs-12 col-sm-3 col-md-3">
+            <h4>Photo Stream</h4>
+			<div class="gallery clearfix">
+			  <ul class="list-unstyled">
+			    <li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>	
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>				
+			   </ul>
+			</div>
+          </div><!-- / .Recent Tweets -->
+		  
+          <!-- Newsletter -->
+          <div class="col-xs-12 col-sm-3 col-md-3">
+            <h4>Newsletter</h4>
+            <p>
+              By subscribing to our mailing list you will get the latest news from us.              
+            </p>
+            <form class="form" role="form">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="input-group">
+                    <label class="sr-only" for="subscribe-email">Email address</label>
+                    <input type="email" class="form-control" id="subscribe-email" placeholder="Enter your email">
+                    <span class="input-group-btn">
+                      <button type="submit" class="btn btn-danger">Subscribe</button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </form>
+			<br />
+			<h4>Follow us on</h4>
+			  <ul class="list-inline">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="#"><i class="fa fa-skype"></i></a></li>				
+			  </ul>
+          </div><!-- / .Newsletter -->
+		  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		  
+        </div> <!-- / .row -->		
+      </div> <!-- / .container --> 	  
+    </footer><!-- / .Footer -->
+	
+	<!-- Copyright -->
+	<div class="copyrights">
+		<div class="container">
+		  <div class="row">
+			<div class="col-sm-12">
+			  <div class="copyright">
+				Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a>
+			  </div>
+			</div>
+		  </div> <!-- / .row -->
+		</div> <!-- / .container --> 
+	</div><!-- / .Copyright -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.useso.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrolltopcontrol.js"></script>
+	<script src="js/SmoothScroll.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/ui-elements.js"></script>
+	<script>
+    window.onload = function () {
+        var latlng = new google.maps.LatLng(39.690281,-100.997314);
+         var styles = [{
+            stylers: [{
+                hue: '#2babcf'
+            }, {
+                saturation: -20
+            }]
+        }];
+        var myOptions = {
+            zoom: 5,
+            scrollwheel: false,
+            center: latlng,
+            mapTypeControl: true,
+            mapTypeControlOptions: {
+                style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+            },
+            navigationControl: true,
+            navigationControlOptions: {
+                style: google.maps.NavigationControlStyle.SMALL
+            },
+            styles: styles
+        };
+        map = new google.maps.Map(document.getElementById('google-maps'), myOptions);
+        var marker = new google.maps.Marker({
+          position: latlng,
+          map: map,
+          icon: 'img/logo/mapimg.jpg'
+        });
+    }
+</script>
+  </body>
+</html>

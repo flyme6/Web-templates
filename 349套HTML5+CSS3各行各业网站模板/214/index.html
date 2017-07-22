@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (Bootstrap's JavaScript plugins) -->
+<script src="http://ajax.useso.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link href="css/component.css" rel="stylesheet" type="text/css"  />
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Smart Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+		</script>
+<!---- start-smoth-scrolling---->
+</head>
+<body class="cbp-spmenu-push">
+<div id="home" class="banner">
+	 <div class="container">
+		 <div class="header">
+			 <div class="logo">
+				 <a href="#"><img src="images/logo.png" alt=""/></a>
+			 </div>	
+			 <div class="top-nav">
+				<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+					<h3>Menu</h3>
+					<a class="scroll" href="#home" class="active">Home</a>
+					<a class="scroll" href="#feature">Features</a>
+					<a class="scroll" href="#screenshots">Screen Shots</a>
+					<a class="scroll" href="#team">Team</a>
+				</nav>
+				<div class="main buttonset">	
+						<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+						<button id="showRightPush"><img src="images/menu-icon.png" alt=""/></button>
+						<!--<span class="menu"></span>-->
+				</div>
+				<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+				<script src="js/classie.js"></script>
+				<script>
+				var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+				showRightPush = document.getElementById( 'showRightPush' ),
+				body = document.body;
+
+				showRightPush.onclick = function() {
+					classie.toggle( this, 'active' );
+					classie.toggle( body, 'cbp-spmenu-push-toleft' );
+					classie.toggle( menuRight, 'cbp-spmenu-open' );
+					disableOther( 'showRightPush' );
+				};
+
+				function disableOther( button ) {
+					if( button !== 'showRightPush' ) {
+						classie.toggle( showRightPush, 'disabled' );
+					}
+				}
+			 </script>
+	     </div>
+			<div class="clearfix"></div>
+		 </div>
+		 
+		 <div class="banner-info">
+			 <h1>MOBILE APP<span>LANDING PAGE</span></h1>
+			 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+			 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+			 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+			 sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			 <a href="#"><img src="images/app.png" alt=""/></a>
+		 </div>
+		 <div class="down">
+		 <a class="scroll" href="#feature"><img src="images/scroll.png" alt=""/></a>
+		 </div>
+	 </div>
+	 <div class="hand">
+		 <img src="images/hand.png" alt=""/>
+	 </div>
+</div>
+<!--features-->
+<div id="feature" class="features">
+	 <div class="container">
+		 <div class="feature-info text-center">
+		 <h3>APP FEATURES</h3>
+		 <p>Lorem ipsum dolor sit amet consectetur adictum piscing elit fusce sit amet inerdum 
+		  neque ultra icies scelerisque non tempor neque dolor set egestas at.</p>
+		 </div>
+		 <div class="feature-grids">
+			 <div class="col-md-6 feature-sec">
+				 <div class="feature-grid grid1">
+					 <h3>Includes PSD Layers</h3>
+					 <p>Lorem ipsum dolor sit amet consectetur adictum 
+						piscing elit fusce sit amet inerdum neque ultra 
+						icies scelerisque non tempor neque dolor set 
+						egestas at.</p>
+				 </div>
+				 <div class="feature-grid grid2">
+					 <h3>Easy to Customizable</h3>
+					 <p>Lorem ipsum dolor sit amet consectetur adictum 
+						piscing elit fusce sit amet inerdum neque ultra 
+						icies scelerisque non tempor neque dolor set 
+						egestas at.</p>
+				 </div>
+			 </div>
+			 <div class="col-md-6 feature-sec">
+				 <div class="feature-grid grid3">
+					 <h3>Fully Responsive</h3>
+					 <p>Lorem ipsum dolor sit amet consectetur adictum 
+						piscing elit fusce sit amet inerdum neque ultra 
+						icies scelerisque non tempor neque dolor set 
+						egestas at.</p>
+				 </div>
+				 <div class="feature-grid grid4">
+					 <h3>Colors Customization</h3>
+					 <p>Lorem ipsum dolor sit amet consectetur adictum 
+						piscing elit fusce sit amet inerdum neque ultra 
+						icies scelerisque non tempor neque dolor set 
+						egestas at.</p>
+				 </div>
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>
+	</div>
+</div>
+<!--landing-->
+<div class="landing">
+		 <h3>Landing page for Mobile app</h3>
+		 <div class="alnding-sec">
+			 <div class="col-md-6 slades">
+				 <img src="images/shape2.jpg" alt=""/>
+			 </div>
+			 <div class="col-md-6 landing-info">
+				 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+				 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+				 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+				 esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				 <p class="lndng-text">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..
+				 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+				 sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			 </div>
+			 <div class="clearfix"></div>
+	 </div>
+</div>
+<!--screenshots-->
+<div id="screenshots" class="screen-shots">
+	 <div class="container">
+		 <h3>SCREEN SHOTS</h3>
+		  <div class="review-slider">
+			 <ul id="flexiselDemo1">
+				<li><img src="images/ss1.jpg" alt=""/></li>
+				<li><img src="images/ss2.jpg" alt=""/></li>
+				<li><img src="images/ss3.jpg" alt=""/></li>
+				<li><img src="images/ss4.jpg" alt=""/></li>
+				<li><img src="images/ss5.jpg" alt=""/></li>			
+			 </ul>
+				<script type="text/javascript">
+			 $(window).load(function() {
+				
+			  $("#flexiselDemo1").flexisel({
+					visibleItems: 4,
+					animationSpeed: 1000,
+					autoPlay: true,
+					autoPlaySpeed: 3000,    		
+					pauseOnHover: true,
+					enableResponsiveBreakpoints: true,
+					responsiveBreakpoints: { 
+						portrait: { 
+							changePoint:480,
+							visibleItems: 2
+						}, 
+						landscape: { 
+							changePoint:640,
+							visibleItems: 3
+						},
+						tablet: { 
+							changePoint:768,
+							visibleItems: 4
+						}
+					}
+				});
+				});
+			 </script>
+			 <script type="text/javascript" src="js/jquery.flexisel.js"></script>	
+		  </div>
+	  </div>
+</div>
+<!--team-->
+<div id="team" class="team">
+	<div class="container">
+		 <h3>TEAM</h3>
+		 <div class="team-grids">
+			 <div class="col-md-4 team-grid text-center">
+				 <img src="images/t1.jpg" alt=""/>
+				 <h4>Mickel</h4>
+				 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+				 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+				 <div class="social-icons">
+					 <a href="#"><span class="fb"></span></a>
+					 <a href="#"><span class="tweet"></span></a>
+					 <a href="#"><span class="drib"></span></a>
+				 </div>
+			 </div>
+			 <div class="col-md-4 team-grid text-center">
+				 <img src="images/t2.jpg" alt=""/>
+				 <h4>John Deo</h4>
+				 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+				 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+				 <div class="social-icons">
+					 <a href="#"><span class="fb"></span></a>
+					 <a href="#"><span class="tweet"></span></a>
+					 <a href="#"><span class="drib"></span></a>
+				 </div>
+			 </div>
+			 <div class="col-md-4 team-grid text-center">
+				 <img src="images/t3.jpg" alt=""/>
+				 <h4>Jennifer</h4>
+				 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+				 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+				 <div class="social-icons">
+					 <a href="#"><span class="fb"></span></a>
+					 <a href="#"><span class="tweet"></span></a>
+					 <a href="#"><span class="drib"></span></a>
+				 </div>
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>
+	 </div>
+</div>
+<!--team-->
+<div class="subscribe">
+	 <div class="container">
+		 <h3>SUBSCRIBE</h3>
+		 <form>
+			 <input type="text" value="Subscride" onfocus="this.value=''" onblur="this.value='Subscride'">
+			 <input type="submit" value="Send">
+		 </form>
+	 </div>
+</div>
+<!--footer-->
+<div class="footer">
+	 <div class="container">
+		 <p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+	 </div>
+</div>
+
+</body>
+</html>

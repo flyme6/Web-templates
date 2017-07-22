@@ -1,0 +1,144 @@
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Elastislide Style */
+
+.elastislide-list {
+	list-style-type: none;
+	display: none;
+}
+
+.no-js .elastislide-list {
+	display: block;
+}
+
+.elastislide-carousel ul li {
+	min-width: 20px; /* minimum width of the image (min width + border) */
+	
+}
+
+.elastislide-wrapper {
+	position: relative;
+	/*background-color: #fff;*/
+	margin: 0 auto;
+	min-height: 40px;
+	/*box-shadow: 1px 1px 3px rgba(0,0,0,0.2);*/
+}
+
+.elastislide-wrapper.elastislide-loading {
+	background-image: url(../images/loading.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	position:relative;
+}
+
+.elastislide-horizontal {
+	padding:4px 0px;
+	top:-200%;
+	right:0%;
+}
+
+.elastislide-vertical {
+	padding: 36px 4px;
+}
+
+.elastislide-carousel {
+	overflow: hidden;
+	position: relative;
+}
+
+.elastislide-carousel ul {
+	top:-50%;
+	right:0%;
+	display: block;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	-o-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+.elastislide-horizontal ul {
+	white-space: nowrap;
+	font-size:0pt;
+}
+
+.elastislide-carousel ul li {
+	margin: 0;
+	-webkit-backface-visibility: hidden;
+	
+}
+
+.elastislide-horizontal ul li {
+	height: 100%;
+	display: inline-block;
+	padding:3px;
+}
+ul#demo2carousel li, ul#demo2carousel li.active{
+}
+.elastislide-vertical ul li {
+	display: block;
+}
+
+.elastislide-carousel ul li a {
+	display:block;
+	outline:none;
+	border:4px solid #fff;
+	transition:border-color .2s ease-in , background-color .2s ease-in ;
+	box-shadow:0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.elastislide-carousel ul li a img {
+	display: block;
+	max-width: 100%;
+	/*border:4px solid #fff;*/
+	border:none;
+	
+}
+.elastislide-carousel ul li a:hover {
+	
+}
+.elastislide-carousel ul li.active a
+{
+	border:4px solid #f60;
+}
+
+/* Navigation Arrows */
+.elastislide-horizontal nav span {
+	position:absolute;
+	background-image:url(nav-h1.gif);
+	width:19px;
+	height:33px;
+	text-indent: -9000px;
+	cursor:pointer;
+	background-position: -8px center;
+	background-repeat:no-repeat;
+	
+}
+.elastislide-horizontal nav span {
+	top: 50%;
+	left: 10px;
+	margin-top: -16px;
+}
+.elastislide-horizontal nav span.elastislide-next {
+	right: 10px;
+	left: auto;
+	background-position:-128px center;
+}
+.elastislide-horizontal nav span:hover {
+	background-position:-48px center;
+}
+.elastislide-horizontal nav span.elastislide-next:hover {
+	background-position:-88px center;
+}
+ul#demo2carousel li {
+}

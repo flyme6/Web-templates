@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Travaux Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery-1.11.0.min.js"></script>
+<link href='http://fonts.useso.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+</head>
+<body>
+<!--start-banner-->
+	<div class="banner banner-1" id="home">
+		<div class="container">
+			<div class="banner-top">
+				<a href="index.html"><img src="images/logo.png" alt="" /></a>
+			</div>
+		</div>	
+	</div>	
+	<!--end-banner-->
+	<!--start-back-->
+	<div class="back">
+		<div class="container">
+			<div class="back-main">
+				<a href="index.html" class="hvr-sweep-to-right">Back to home</a>
+			</div>
+		</div>
+	</div>
+	<!--end-back-->
+	<!--start-touch-->
+	<div class="touch">
+		<div class="container">
+				<div class="touch-top">
+					<div class="col-md-8 touch-left">
+						<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" />
+						<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" />
+						<textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message..</textarea>
+						<div class="t-btn">
+							<form>
+								<input type="submit" value="SUBMIT">
+							</form>	
+						</div>
+					</div>
+					<div class="col-md-4 touch-right">
+						<div class="touch-right-top">
+								<span class="add"> </span>
+								<h4>123 MAIN STREET,<label>CITY, COUNTRY</label></h4>
+							</div>
+							<div class="touch-right-top">
+								<span class="mail"> </span>
+								<p><a href="mailto:example@email.com">EMAIL@DOMAIN.COM</a></p>
+							</div>
+							<div class="touch-right-top">
+								<span class="num"> </span>
+								<p>+0123 456 789</p>
+							</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+		</div>
+	</div>
+	<!--end-touch-->
+	<!--start-map-->
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48261.706004532236!2d-74.046561!3d40.8859914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2fa1bb7efde49%3A0x420aad8868dd16d7!2sHackensack%2C+NJ%2C+USA!5e0!3m2!1sen!2sin!4v1427784560516"  frameborder="0" style="border:0"></iframe>
+	</div>
+	<!--end-map-->
+	<!--start-contact-->
+	<div class="contact contact-1">
+		<div class="container">
+			<div class="contact-bottom contact-btm">
+				<a href="index.html"><img src="images/logo-1.png" alt="" /></a>
+				<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+			</div>
+		</div>
+		<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+	<!--end-contact-->			
+</body>
+</html>

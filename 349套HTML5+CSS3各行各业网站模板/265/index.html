@@ -1,0 +1,376 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="js/jquery.min.js"></script>
+ <link href='http://fonts.useso.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/move-top.js"></script>
+       <script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+				});
+			});
+		</script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+				/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+				*/
+		$().UItoTop({ easingType: 'easeOutQuart' });
+});
+</script>
+</head>
+<body>
+<!-- header -->
+	<div class="banner">
+		<div class="container">
+			<div class="header">
+				<div class="menu">												
+						<a href="#" class="right_bt" id="activator"><img src="images/menu.png" alt=""/></a>
+							<div class="box" id="box">
+								<div class="box_content">
+								   <div class="menu_box_list">
+									   <ul>
+										   <li class="active"><a href="#home" class="scroll">home</a></li>
+											<li><a href="#about" class="scroll">About us</a></li>
+											<li><a href="#services" class="scroll">Services</a></li>
+											<li><a href="#portfolio" class="scroll">portfolio</a></li>
+											<li><a href="#contact-us" class="scroll">contact </a></li>
+												<div class="clearfix"></div>
+										</ul>
+									</div>
+									<a class="boxclose" id="boxclose"><img src="images/close.png" alt=""/></a>
+								</div>                
+							</div>
+							<script type="text/javascript" src="js/easing.js"></script>
+								 <script type="text/javascript">
+										var $ = jQuery.noConflict();
+											$(function() {
+												$('#activator').click(function(){
+														$('#box').animate({'top':'0px'},500);
+												});
+												$('#boxclose').click(function(){
+														$('#box').animate({'top':'-700px'},500);
+												});
+											});
+											$(document).ready(function(){
+											
+											//Hide (Collapse) the toggle containers on load
+											$(".toggle_container").hide(); 
+											
+											//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+											$(".trigger").click(function(){
+												$(this).toggleClass("active").next().slideToggle("slow");
+												return false; //Prevent the browser jump to the link anchor
+											});
+											
+											});
+										</script>
+				</div> 
+				
+						<div class="clearfix"></div>
+			</div>
+			<div class="logo">
+				<a href="#"><img src="images/logo.png" alt=""></a>
+			</div>
+			<div class="banner-info">
+				<h1>We Provide The Best Food At The<span> Right Price.</span></h1>
+			</div>
+		</div>
+	</div>
+<!-- header -->
+<!-- content -->	
+<div class="happy" id="home">
+	<div class="col-md-3 happy-1">
+		<h5>Happy Hour</h5>
+		<h6>Part Time</h6>
+	</div>
+	<div class="col-md-3 happy-2">
+		<h4>Breakfast</h4>
+	</div>
+	<div class="col-md-3 happy-3">
+		<h4>Lunch</h4>
+	</div>
+	<div class="col-md-3 happy-4">
+		<h4>Dinner</h4>
+	</div>
+		<div class="clearfix"></div>
+</div>
+<!-- content -->
+<!-- fastfood -->
+<div class="fast food" id="services">
+	<div class="container">
+		<div class="col-md-6 fast-left">
+			<img src="images/4.jpg" class="img-responsive" alt="">
+		</div>
+		<div class="col-md-6 fast-right">
+			<h3>Fast Food</h3>
+			<h5>You'll love our delicious fastfood</h5>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.</p>
+			<a class="view" href="#">VIEW GALLERY<i class="arrow-rt1"></i></a>
+		</div>
+				<div class="clearfix"></div>
+			<div class="fast-foo">
+				<div class="col-md-6 fast-right1">
+					<h3>Drinks</h3>
+					<h5>We also produce delicious drinks</h5>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.</p>
+					<a class="view" href="#">VIEW GALLERY<i class="arrow-rt1"></i></a>
+				</div>
+				<div class="col-md-6 fast-left1">
+					<img src="images/5.jpg" class="img-responsive" alt="">
+				</div>
+					<div class="clearfix"></div>
+			</div>
+	</div>
+</div>
+<!-- fastfood -->
+<!-- team-->
+<div class="ourteam" id="portfolio">
+	<div class="container">
+		<div class="team">
+			<div class="product-tabs">
+					<!--Horizontal Tab-->
+				    <div id="horizontalTab">
+				        <ul>
+				            <li><a href="#tab-1">Fast Food</a></li>
+				            <li><a href="#tab-2">Drinks</a></li>
+				            <li><a href="#tab-3">Chicken</a></li>
+							 <li><a href="#tab-4">Rice</a></li>
+				        </ul>
+						<div id="tab-1" class="product-complete-info">
+							<!---- product-details ---->
+						
+							<!-- //product-details ---->
+							  <ul id="flexiselDemo3">
+								<li>
+									<div class="team1">
+										<img src="images/8.jpg" class="img-responsive" alt="" />
+										<h4>Chicken Burger</h4>
+									</div>
+								</li>
+								<li>
+									<div class="team1">
+										<img src="images/7.jpg" class="img-responsive" alt="" />
+										<h4>Beef Burger</h4>
+									</div>
+								</li>
+								<li>
+									<div class="team1">
+										<img src="images/6.jpg" class="img-responsive" alt="" />
+										<h4>Chicken Pizza</h4>
+									</div>
+								</li>
+								<li>
+									<div class="team1">
+										<img src="images/7.jpg" class="img-responsive" alt="" />
+										<h4>Beef Burger</h4>
+									</div>
+								</li>
+								<li>
+									<div class="team1">
+										<img src="images/8.jpg" class="img-responsive" alt="" />
+										<h4>Chicken Burger</h4>
+									</div>
+								</li>
+							 </ul>
+						
+						 <script type="text/javascript">
+							$(window).load(function() {
+								
+								$("#flexiselDemo3").flexisel({
+									visibleItems: 3,
+									animationSpeed: 1000,
+									autoPlay: true,
+									autoPlaySpeed: 3000,    		
+									pauseOnHover: true,
+									enableResponsiveBreakpoints: true,
+									responsiveBreakpoints: { 
+										portrait: { 
+											changePoint:480,
+											visibleItems: 1
+										}, 
+										landscape: { 
+											changePoint:640,
+											visibleItems: 2
+										},
+										tablet: { 
+											changePoint:768,
+											visibleItems: 3
+										}
+									}
+								});
+								
+							});
+							</script>
+							<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+			
+				        </div>
+					<div id="tab-2" class="product-complete-info">
+				        	<img src="images/2.jpg" class="img-responsive" alt="">
+							<img src="images/3.jpg" class="img-responsive" alt="">
+				        </div>
+						<div id="tab-3" class="product-complete-info">
+							<img src="images/8.jpg" class="img-responsive" alt="">
+				        </div>
+						<div id="tab-4" class="product-complete-info">
+				        	<h3>DESCRIPTION:</h3>
+				        	<p>With its beautiful premium leather, lace-up oxford styling, recycled rubber outsoles and 9-inch height, this Earthkeepers City Premium style is an undeniably handsome boot. To complement its rustic, commanding outer appearance, we've paid attention to the inside as well - by adding SmartWool® faux shearling to the linings and crafting the footbed using our exclusive anti-fatigue comfort foam technology to absorb shock. Imported.</p>
+				       		<p>lace-up oxford styling, recycled rubber outsoles and 9-inch height, this Earthkeepers City Premium style is an undeniably handsome boot. To complement its rustic, commanding outer appearance,</p>
+				       		<span>DETAILS:</span>
+				       		<div class="product-fea">
+				       			<p>Premium burnished full-grain leather and suede upper</p>
+				       			<p>Leather is from a tannery rated Silver for its water, energy and waste-management practices</p>
+				       			<p>Leather lining and footbed for a premium feel and optimal comfort</p>
+				       			<p>SmartWool® faux shearling lining is made with 60% merino wool and 40% PET</p>
+				       			<p>Reflective insole board for additional warmth under foot</p>
+				       		</div>
+				        </div>
+				    </div>
+					
+				    <!-- Responsive Tabs JS -->
+				    <script src="js/jquery.responsiveTabs.js" type="text/javascript"></script>
+				
+				    <script type="text/javascript">
+				        $(document).ready(function () {
+				            $('#horizontalTab').responsiveTabs({
+				                rotate: false,
+				                startCollapsed: 'accordion',
+				                collapsible: 'accordion',
+				                setHash: true,
+				                disabled: [4,5],
+				                activate: function(e, tab) {
+				                    $('.info').html('Tab <strong>' + tab.id + '</strong> activated!');
+				                }
+				            });
+				
+				            $('#start-rotation').on('click', function() {
+				                $('#horizontalTab').responsiveTabs('active');
+				            });
+				            $('#stop-rotation').on('click', function() {
+				                $('#horizontalTab').responsiveTabs('stopRotation');
+				            });
+				            $('#start-rotation').on('click', function() {
+				                $('#horizontalTab').responsiveTabs('active');
+				            });
+				            $('.select-tab').on('click', function() {
+				                $('#horizontalTab').responsiveTabs('activate', $(this).val());
+				            });
+				
+				        });
+				    </script>
+				</div>
+				</div>
+				</div>
+				</div>
+
+<!-- team -->
+<!-- customers -->
+<div class="customers" id="about">
+	<div class="container">
+		<div class="customer-1">
+			<div class="col-md-8 ourhappy">
+				<div class="wmuSlider example1 section" id="section-1">
+			   <article style="position: absolute; width: 100%; opacity: 0; height: 240px;"> 
+			   	   	 <h4>Our Happy Customers</h4>
+					 <h6>George Richard</h6>
+					 <p>Great food menu is awesome,there foods are not only great but also in the right price.i'll highly recommend:)</p>
+					 <ul>
+						<li><img src="images/9.png" class="img-responsive" alt="" /></li>
+						<li><img src="images/10.png" class="img-responsive" alt="" /></li>
+						<li><img src="images/11.png" class="img-responsive" alt="" /></li>
+					</ul>
+				</article>
+				 <article style="position: absolute; width: 100%; opacity: 0; height: 240px;"> 
+			   	   	 <h4>Our Happy Customers</h4>
+					 <h6>George Richard</h6>
+					 <p>Great food menu is awesome,there foods are not only great but also in the right price.i'll highly recommend:)</p>
+					 <ul>
+						<li><img src="images/10.png" class="img-responsive" alt="" /></li>
+						<li><img src="images/11.png" class="img-responsive" alt="" /></li>
+						<li><img src="images/9.png" class="img-responsive" alt="" /></li>
+					</ul>
+				</article>
+				 <article style="position: absolute; width: 100%; opacity: 0; height: 240px;"> 
+			   	   	 <h4>Our Happy Customers</h4>
+					 <h6>George Richard</h6>
+					 <p>Great food menu is awesome,there foods are not only great but also in the right price.i'll highly recommend:)</p>
+					<ul>
+						<li><img src="images/11.png" class="img-responsive" alt="" /></li>
+						<li><img src="images/9.png" class="img-responsive" alt="" /></li>
+						<li><img src="images/10.png" class="img-responsive" alt="" /></li>
+					</ul>
+				</article>
+				<ul class="wmuSliderPagination">
+                	<li><a href="#" class="">0</a></li>
+                	<li><a href="#" class="">1</a></li>
+                	<li><a href="#" class="">2</a></li>
+                </ul>
+		  </div>
+		  </div>
+		  <!-- script -->
+          <script src="js/jquery.wmuSlider.js"></script> 
+			<script>
+       			$('.example1').wmuSlider();         
+   		    </script>
+			<!-- script -->			
+		
+			<div class="col-md-4 about">
+				<h4>About Menu</h4>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+			</div>
+			<div class="clearfix"></div>
+			</div>
+			
+			
+		</div>
+	</div>
+<!-- customers -->
+<!-- daily -->
+	<div class="daily" id="contact-us">
+		<div class="container">
+			<h3>Get our daily food items deliver to our mail</h3>
+				<div class="col-md-7 text-field-email">
+						<form>
+							<input type="text" class="text" value="your e-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'your e-mail ';}">
+						</form>
+					</div>
+					<div class="col-md-5 button1">
+						<form>
+							<input type="submit" value="subscribe">
+						</form>
+					</div>
+		</div>
+	</div>
+<!-- daily -->
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<img src="images/footer.png" class="img-responsive" alt="" />
+			<h4>Thats What We Are</h4>
+				<ul>
+					<li><a href="#"><i class="fb"></i></a></li>
+					<li><a href="#"><i class="twt"></i></a></li>
+					<li><a href="#"><i class="paa"></i></a></li>
+						<div class="clearfix"></div>
+				</ul>
+				<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+		</div>
+	</div>
+	<a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 0;"></span> <span id="toTopHover" style="opacity: 0;"> </span></a>
+<!-- footer -->
+
+</body>
+</html>

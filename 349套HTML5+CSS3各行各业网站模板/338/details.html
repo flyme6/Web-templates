@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Details</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+   		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+	</head>
+	<body>
+		<!-- container -->
+			<!-- header -->
+			<div class="header">
+				<div class="container">
+				<!-- logo -->
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" title="baku" /></a>
+				</div>
+				<!-- logo -->
+				<!-- cart-info -->
+				<div class="cart-info">
+					<ul>
+						<li><a href="#">Login</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Stores</a></li>
+						<li class="cartinfo"><a href="#"><span> </span>My bag (0) items</a></li>
+						<div class="clearfix"> </div>
+					</ul>
+				</div>
+				<!-- /cart-info -->
+			</div>
+			<!-- header -->
+		</div>
+		<!-- sub-header -->
+		<div class="sub-header">
+			<div class="container">
+				<!-- top-nav -->
+				<div class="top-nav">
+					<span class="menu"> </span>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="404.html">About</a></li>
+						<li><a href="collections.html">What's new</a></li>
+						<li class="active"><a href="collections.html">Collections</a></li>
+						<li><a href="404.html">Baku Club</a></li>
+						<li><a href="404.html">Store Loation</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<div class="clearfix"> </div>
+					</ul>
+				</div>
+				<!-- top-nav -->
+				<!-- script-for-nav -->
+				<script>
+					$(document).ready(function(){
+						$("span.menu").click(function(){
+							$(".top-nav ul").slideToggle(300);
+						});
+					});
+				</script>
+				<!-- script-for-nav -->
+				<!-- search-form -->
+				<div class="search-form">
+					<form>
+						<input type="text" class="text" value="Keyword or product code" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Keyword or product code';}">
+						<input type="submit" value="" />
+					</form>
+				</div>
+				<div class="clearfix"> </div>
+				<!-- /search-form -->
+			</div>
+		</div>
+		<!-- /sub-header -->
+		<!-- content -->
+		<!-- details -->
+		<div class="details">
+			<div class="details-head">
+				
+			</div>
+			<div class="details-cate">
+				<div class="container">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Arizume</a></li>
+						<li><a href="#">Fern Clamper Bracelet</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- product-single-details -->
+			<div class="product-single-details">
+				<div class="container">
+					<div class="product-single-details-left">
+						<!----details-product-slider--->
+				<!-- Include the Etalage files -->
+					<link rel="stylesheet" href="css/etalage.css">
+					<script src="js/jquery.etalage.min.js"></script>
+				<!-- Include the Etalage files -->
+				<script>
+						jQuery(document).ready(function($){
+			
+							$('#etalage').etalage({
+								thumb_image_width: 300,
+								thumb_image_height: 400,
+								source_image_width: 900,
+								source_image_height: 1000,
+								show_hint: true,
+								click_callback: function(image_anchor, instance_id){
+									alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+								}
+							});
+							// This is for the dropdown list example:
+							$('.dropdownlist').change(function(){
+								etalage_show( $(this).find('option:selected').attr('class') );
+							});
+
+					});
+				</script>
+				<!----//details-product-slider--->
+				<div class="details-left">
+					<div class="details-left-slider">
+						<ul id="etalage" class="etalage" style="display: block; width: 314px; height: 552px;">
+							<li class="etalage_thumb thumb_1" style="display: none; opacity: 0; background-image: none;">
+								<a href="optionallink.html">
+									<img class="etalage_thumb_image" src="images/product-slide/image1_thumb.jpg" style="display: inline; width: 300px; height: 400px; opacity: 1;">
+									<img class="etalage_source_image" src="images/product-slide/image1_large.jpg">
+								</a>
+							</li>
+							<li class="etalage_thumb thumb_2" style="display: none; opacity: 0; background-image: none;">
+								<img class="etalage_thumb_image" src="images/product-slide/image2_thumb.jpg" style="display: inline; width: 300px; height: 400px; opacity: 1;">
+								<img class="etalage_source_image" src="images/product-slide/image2_large.jpg">
+							</li>
+							<li class="etalage_thumb thumb_3 etalage_thumb_active" style="display: list-item; opacity: 1; background-image: none;">
+								<img class="etalage_thumb_image" src="images/product-slide/image3_thumb.jpg" style="display: inline; width: 300px; height: 400px; opacity: 1;">
+								<img class="etalage_source_image" src="images/product-slide/image3_large.jpg">
+							</li>
+							<li class="etalage_thumb thumb_4" style="display: none; opacity: 0; background-image: none;">
+								<img class="etalage_thumb_image" src="images/product-slide/image4_thumb.jpg" style="display: inline; width: 300px; height: 400px; opacity: 1;">
+								<img class="etalage_source_image" src="images/product-slide/image4_large.jpg">
+							</li>
+							<li class="etalage_thumb thumb_5" style="display: none; opacity: 0; background-image: none;">
+								<img class="etalage_thumb_image" src="images/product-slide/image5_thumb.jpg" style="display: inline; width: 300px; height: 400px; opacity: 1;">
+								<img class="etalage_source_image" src="images/product-slide/image5_large.jpg">
+							</li>
+							<li class="etalage_thumb thumb_6" style="display: none; opacity: 0; background-image: none;">
+								<img class="etalage_thumb_image" src="images/product-slide/image6_thumb.jpg" style="display: inline; width: 300px; height: 400px; opacity: 1;">
+								<img class="etalage_source_image" src="images/product-slide/image6_large.jpg">
+							</li>
+							<li class="etalage_thumb thumb_7" style="display: none; opacity: 0; background-image: none;">
+								<img class="etalage_thumb_image" src="images/product-slide/image1_thumb.jpg" style="display: inline; width: 300px; height: 400px; opacity: 1;">
+								<img class="etalage_source_image" src="images/product-slide/image1_large.jpg">
+							</li>
+						<li class="etalage_magnifier" style="margin: 0px; padding: 0px; left: 6px; top: 6px; display: none; opacity: 0.05449673905968666;"><div style="margin: 0px; padding: 0px; width: 195px; height: 215px;"><img src="http://192.168.2.7/chaitanya/spike_shoes/images/product-slide/image3_thumb.jpg" style="margin: 0px; padding: 0px; width: 300px; height: 400px; display: inline; left: 0px; top: 0px;"></div></li><li class="etalage_icon" style="display: list-item; top: 380px; left: 20px; opacity: 1;">°°</li><li class="etalage_hint" style="display: none; margin: 0px; top: -15px; right: -15px;">°°</li><li class="etalage_zoom_area" style="margin: 0px; opacity: 0; left: 324px; display: none; background-image: none;"><div class="etalage_description" style="width: 546px; bottom: 6px; left: 6px; opacity: 0.7; display: none;"></div><div style="width: 586px; height: 538px;"><img class="etalage_zoom_img" src="images/product-slide/image3_large.jpg" style="width: 900px; height: 1000px; left: -157.34166420232418px; top: 0px;"></div></li><li class="etalage_small_thumbs" style="width: 314px; top: 424px;"><ul style="width: 1072px;"><li class="etalage_smallthumb_navtoend" style="opacity: 0.4; margin: 0px 10px 0px 0px; left: -216px;"><img class="etalage_small_thumb" src="http://192.168.2.7/chaitanya/spike_shoes/images/product-slide/image7_thumb.jpg" width="90" style="width: 90px; height: 120px;"></li><li class="" style="opacity: 0.4; margin: 0px 10px 0px 0px; left: -216px;"><img class="etalage_small_thumb" src="http://192.168.2.7/chaitanya/spike_shoes/images/product-slide/image1_thumb.jpg" width="90" style="width: 90px; height: 120px;"></li><li class="etalage_smallthumb_first" style="opacity: 0.4; margin: 0px 10px 0px 0px; left: -216px;"><img class="etalage_small_thumb" src="http://192.168.2.7/chaitanya/spike_shoes/images/product-slide/image2_thumb.jpg" width="90" style="width: 90px; height: 120px;"></li><li class="etalage_smallthumb_active" style="opacity: 1; margin: 0px 10px 0px 0px; left: -216px;"><img class="etalage_small_thumb" src="http://192.168.2.7/chaitanya/spike_shoes/images/product-slide/image3_thumb.jpg" width="90" style="width: 90px; height: 120px;"></li><li class="etalage_smallthumb_last" style="opacity: 0.4; margin: 0px 10px 0px 0px; left: -216px;"><img class="etalage_small_thumb" src="http://192.168.2.7/chaitanya/spike_shoes/images/product-slide/image4_thumb.jpg" width="90" style="width: 90px; height: 120px;"></li><li class="" style="opacity: 0.4; margin: 0px 10px 0px 0px; left: -216px;"><img class="etalage_small_thumb" src="http://192.168.2.7/chaitanya/spike_shoes/images/product-slide/image5_thumb.jpg" width="90" style="width: 90px; height: 120px;"></li><li class="" style="opacity: 0.4; margin: 0px 10px 0px 0px; left: -216px;"><img class="etalage_small_thumb" src="http://192.168.2.7/chaitanya/spike_shoes/images/product-slide/image6_thumb.jpg" width="90" style="width: 90px; height: 120px;"></li><li class="" style="opacity: 0.4; margin: 0px 10px 0px 0px; left: -216px;"><img class="etalage_small_thumb" src="http://192.168.2.7/chaitanya/spike_shoes/images/product-slide/image7_thumb.jpg" width="90" style="width: 90px; height: 120px;"></li><li class="etalage_smallthumb_navtostart" style="opacity: 0.4; margin: 0px 10px 0px 0px; left: -216px;"><img class="etalage_small_thumb" src="http://192.168.2.7/chaitanya/spike_shoes/images/product-slide/image1_thumb.jpg" width="90" style="width: 90px; height: 120px;"></li></ul></li></ul>
+					</div>
+					</div>
+				</div>
+					<div class="product-single-details-right">
+						<h2>Fern Clamper Bracelet</h2>
+						<p>Description:<span> Mexican Silver Fern Clamper Bracelet. 7 1/4INCH </span></p>
+						<ul class="r-list">
+							<li class="rating"><span> </span>340 Ratings</li>
+							<li class="heart"><span> </span>Add to Watchlist</li>
+						</ul>
+						<!-- price-details -->
+						<div class="price-details">
+							<div class="price-details-left">
+								<p>Product Code 	: C425001A</p>
+								<p>Best price: $ 820.00</p>
+							</div>
+							<div class="price-details-right">
+								<input type="button" value="Add to cart" />
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<!-- price-details -->
+						<!-- product-description -->
+						<div class="product-description">
+							<h3>More Dscription:</h3>
+							<!-- des-tabs -->
+							<div class="des-tabs">
+								<div class="tab1 tab">
+									<h4>Style Note</h4>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. I</p>
+								</div>
+								<div class="tab2 tab">
+									<h4>Product Details</h4>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. I</p>
+								</div>
+								<div class="tab3 tab">
+									<h4>Material & Care</h4>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. I</p>
+								</div>
+							</div>
+							<!-- des-tabs -->
+							<!-- script-for-tabs -->
+							<script>
+								$(document).ready(function(){
+									$(".tab2 p").hide();
+									$(".tab3 p").hide();
+									$(".tab2 h4").click(function(){
+										$(".tab2 p").slideToggle(300);
+										$(".tab1 p").hide();
+										$(".tab3 p").hide();
+									});
+									$(".tab1 h4").click(function(){
+										$(".tab1 p").slideToggle(300);
+										$(".tab2 p").hide();
+										$(".tab3 p").hide();
+									});
+									$(".tab3 h4").click(function(){
+										$(".tab3 p").slideToggle(300);
+										$(".tab2 p").hide();
+										$(".tab1 p").hide();
+									});
+								});
+							</script>
+							<!-- script-for-tabs -->
+						</div>
+						<!-- product-description -->
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!-- product-single-details -->
+		</div>
+		<!-- details -->
+		<!-- content -->
+		<!-- footer -->
+		<div class="footer">
+			<div class="footer-grids">
+				<div class="container">
+					<div class="col-md-3 footer-grid">
+						<h4>Services</h4>
+						<ul>
+							<li><a href="#">Contact Customer Service</a></li>
+							<li><a href="#">Free Delivery over $150</a></li>
+							<li><a href="#">View your Wishlist</a></li>
+							<li><a href="#">Ring Size Guide</a></li>
+							<li><a href="#">Returns</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 footer-grid">
+						<h4>Information (FAQ)</h4>
+						<ul>
+							<li><a href="#">Gift certificates</a></li>
+							<li><a href="#">Jewellery care guide</a></li>
+							<li><a href="#">International customers</a></li>
+							<li><a href="#">Wholesale enquires</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 footer-grid">
+						<h4>More details</h4>
+						<ul>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms & COndition</a></li>
+							<li><a href="#">Secure payment</a></li>
+							<li><a href="#">Site map</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 footer-grid contact-grid">
+						<h4>Contact us</h4>
+						<ul>
+							<li><span class="c-icon"> </span>Baku international Pty LTD</li>
+							<li><span class="c-icon1"> </span><a href="#">info@baku.com.au</a></li>
+							<li><span class="c-icon2"> </span>AUSTRALIA  (02) 9283 2280</li>
+						</ul>
+						<ul class="social-icons">
+							<li><a href="#"><span class="facebook"> </span></a></li>
+							<li><a href="#"><span class="twitter"> </span></a></li>
+							<li><a href="#"><span class="thumb"> </span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- news-letter -->
+			<div class="container">
+			<div class="news-letter">
+					<div class="news-letter-left">
+						<a href="#"><span> </span> News letter</a>
+					</div>
+					<div class="news-letter-right">
+						<p>Subscribe to notification about disconunts anf Offers from our store enter your Email id :</p>
+						<form>
+							<input type="text" class="text" value="Enter your mail id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your mail id';}">
+							<input type="submit" value="" />
+						</form>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!-- news-letter -->
+		</div>
+		<!-- footer -->
+		<!-- copy-right -->
+		<div class="copy-right">
+				<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">«‚…Ëº∆</a></p>
+		</div>
+		<!-- copy-right -->
+		<!-- container -->
+	
+</body>
+</html>
+

@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='http://fonts.useso.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>	
+</head>
+<body>
+<!-- header -->
+	<div class="single-banner">
+			<div class="single-bottom">
+				<div class="container">
+					<div class="logo1">
+						<a href="index.html"><img src="images/logo1.png" class="img-responsive" alt="" /></a>
+					</div>
+					<div class="head-nav">
+						<span class="menu"> </span>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">portfolio</a></li>
+								<li><a href="#">services</a></li>
+								<li><a href="blog.html">pages</a></li>
+								<li class="active"><a href="contact.html">contact</a></li>
+								<div class="clearfix"> </div>
+							</ul>
+					</div>
+				<!-- script-for-nav -->
+					<script>
+						$( "span.menu" ).click(function() {
+						  $( ".head-nav ul" ).slideToggle(300, function() {
+							// Animation complete.
+						  });
+						});
+					</script>
+				<!-- script-for-nav -->		
+					<div class="search-box">
+				        <form>
+				            <input type="text" name="s" class="textbox" value="search" onfocus="this.value = '';" onblur="if
+				                  	(this.value == '') {this.value = 'search';}">
+				            <input type="submit" value>
+				        </form>
+		            </div>
+						<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="single-info">
+				<div class="container">	
+					<h1>contact</h1>
+					<div class="single-nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="blog.html">contact</a></li>
+								<div class="clearfix"> </div>
+						</ul>
+					</div>					
+				</div>
+			</div>
+	</div>
+<!-- header -->
+<!-- contact-section -->
+	<div class="contact-section">
+		<div class="container">
+			<div class="map">	
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106034.86973547915!2d151.21288358178987!3d-33.84869089455211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2sSydney+NSW%2C+Australia!5e0!3m2!1sen!2sin!4v1413550737925" width="" height="" frameborder="0" style="border:0"></iframe>
+			</div>
+			<div class="get-touch">
+					<h5>Contact information.</h5>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+				<div class="col-md-12 get-touch1">
+					<form>
+						<input type="text" class="text" value="FIRST NAME" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'FIRST NAME';}">
+						<input type="text" class="text" value="LAST NAME" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'LAST NAME';}">
+						<input type="text" class="text" value="E-MAIL ADDRESS" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-MAIL ADDRESS ';}">
+					</form>
+					<div class="text-field-area-">
+						<form>
+							<textarea value="MESSAGE:" onfocus="if(this.value == 'MESSAGE') this.value='';" onblur="if(this.value == '') this.value='MESSAGE';">MESSAGE</textarea>
+						</form>
+					</div>
+					<div class="button-1">
+						<form>
+							<input type="submit" value="send message">
+						</form>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+<!-- contact-section  -->
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="social">
+				<ul>
+					<li><a href="#"><i class="fb"> </i></li></a>
+					<li><a href="#"><i class="twt"> </i></li></a>
+					<li><a href="#"><i class="drib"> </i></li></a>
+					<li><a href="#"><i class="behanc"> </i></li></a>
+					<li><a href="#"><i class="link"> </i></li></a>
+					<div class="clearfix"></div>
+				</ul>
+			</div>
+			<div class="bottom">
+				<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+			</div>
+		</div>
+	</div>
+<!-- footer -->
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Contact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="The Opoiki Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<!--// css -->
+<!-- js -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- js -->
+<!--fonts-->
+	<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<!--/fonts-->
+	<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- start-smoth-scrolling -->
+
+</head>
+<body>
+<!--header-->
+<div class="header">
+	<div class="container">
+		<div class="header-left">
+			<a href="index.html"><img src="images/logo.png" alt=""/></a>
+		</div>
+		<div class="header-right">
+			<span class="menu">MENU</span>
+					<ul class="nav1">
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="index.html">ABOUT</a></li>	
+						<li><a href="index.html">OUR  APPROACH</a></li>
+						<li><a href="index.html">OUR SERVICES</a></li>
+						<li><a class="active" href="contact.html">CONTACT</a></li>
+					</ul>
+				<!-- script for menu -->
+						<script> 
+							$( "span.menu" ).click(function() {
+							$( "ul.nav1" ).slideToggle( 300, function() {
+							 // Animation complete.
+							});
+							});
+						</script>
+				<!-- //script for menu -->
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!--//header-->
+<!-- contact-page -->
+<div class="contact">
+	<div class="container">
+		<div class="contact-info">
+			<h3>KEEP IN <span>TOUCH</span></h3>
+		</div>
+		<div class="contact-map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2482.432383990807!2d0.028213999961443994!3d51.52362882484525!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1423469959819" frameborder="0" style="border:0"></iframe>
+		</div>
+		<div class="contact-form">
+			<div class="contact-info">
+				<h3>CONTACT <span>FORM</span></h3>
+			</div>
+			<form>
+				<div class="contact-left">
+					<input type="text" placeholder="Name" required>
+					<input type="text" placeholder="E-mail" required>
+					<input type="text" placeholder="Subject" required>
+				</div>
+				<div class="contact-right">
+					<textarea placeholder="Message" required></textarea>
+				</div>
+				<div class="clearfix"></div>
+				<input type="submit" value="SUBMIT">
+			</form>
+		</div>
+	</div>
+</div>
+<!-- //contact-page -->
+<!--keep in touch-->
+<div class="keep">
+	<div class="container">
+		<h3>Keep in touch with Us</h3>
+		<ul>
+			<li><a class="facebook" href="#"></a></li>
+			<li><a class="twitter" href="#"></a></li>
+			<li><a class="googl" href="#"></a></li>
+			<li><a class="message" href="#"></a></li>
+		</ul>
+	</div>
+</div>
+<!--//keep in touch-->
+<!--footer-->
+<div class="footer">
+	<div class="container">
+		<p>Any questions? Contact us :  <a href="mailto:sample@example.com">contact@blabla.com</a> | 11-1111-1124</p>
+		<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+	</div>
+</div>
+<!--//footer-->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+</body>
+</html>

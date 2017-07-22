@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+		<!-- js -->
+		<script src="js/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!-- //js -->
+		<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		<!-- //end-smoth-scrolling -->
+	</head>
+	<body>
+		<!-- header -->
+		<div id="home" class="header">
+			<div class="top-nav">
+						<div class="nav-icon">
+							<a href="#" class="right_bt" id="activator"><span> </span> </a>
+						</div>
+						 <div class="box" id="box" style="top: -1000px;">
+							 <div class="box_content">        					                         
+								<div class="box_content_center">
+								 	<div class="form_content">
+										<div class="menu_box_list">
+											<ul>
+												<li><a href="#home" class="scroll"><span>home</span></a></li>
+												<li><a href="#gallery" class="scroll"><span>gallery</span></a></li>
+												<li><a href="#skills" class="scroll"><span>skills</span></a></li>
+												<li><a href="#contact" class="scroll"><span>contact</span></a></li>
+												<div class="clearfix"> </div>
+											</ul>
+										</div>
+										<a class="boxclose" id="boxclose"> <span> </span></a>
+									</div>                                  
+								</div> 	
+							</div>  	  
+						</div>
+					<!-- start-click-drop-down-menu -->
+			        <!-- start-dropdown -->
+			         <script type="text/javascript">
+						var $ = jQuery.noConflict();
+							$(function() {
+								$('#activator').click(function(){
+									$('#box').animate({'top':'0px'},900);
+								});
+								$('#boxclose').click(function(){
+								$('#box').animate({'top':'-1000px'},900);
+								});
+							});
+							$(document).ready(function(){
+							//Hide (Collapse) the toggle containers on load
+							$(".toggle_container").hide(); 
+							//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+							$(".trigger").click(function(){
+								$(this).toggleClass("active").next().slideToggle("500");
+									return false; //Prevent the browser jump to the link anchor
+							});
+												
+						});
+					</script>
+					<!-- //End-click-drop-down-menu -->
+					<!-- top-nav -->
+				</div>
+			<div class="head-info">
+				<div class="head-info-text">
+					<p>Hi, we are a</p>
+					<h3>Fashion</h3>
+					<p class="bottom-text">AND models 
+						recruitment company
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- content-got -->
+		<div class="content-got">
+			<div class="col-md-4 got-info">
+				<div class="got-info-text">
+					<p>Do you</p>
+					<h2>got</h2>
+					<p class="top-text">
+						what it takes to become a model?
+					</p>
+				</div>
+				<p class="middle-text">
+					Featured article of the day
+				</p>
+				<p class="bottom-text">
+					Aenean venenatis arcu at magna commodo mollis. Sed vestibulum, nunc id consectetur posuere, mi nulla elei-fend lorem, id facilisis tortor lectus vel erat. Cras feugiat lorem tellus, ut sagittis urna placerat nec.
+				</p>
+				<p class="read">
+					<a href="#">READ THE FULL STORY</a>
+				</p>
+			</div>
+			<div class="col-md-4 img-red">
+				<img src="images/12.jpg" alt="" />
+			</div>
+			<div class="col-md-4 img-green">
+				<img src="images/14.jpg" alt="" />
+				<div class="img-info">
+					<p>benefit from</p>
+					<h3>THIS SUMMER</h3>
+					<p class="bottom-text">
+						campaign
+					</p>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<!-- //content-got -->
+		<!-- about-models -->
+		<div id="gallery" class="about-models">
+			<div class="grid-left">
+				<div class="grid-left-info">
+					<h3>models</h3>
+					<p class="bottom-text">
+						Aenean venenatis arcu at magna commodo mollis. Sed vestibulum, nunc id consectetur 
+					</p>
+				</div>
+			</div>
+			<div class="middle-left">
+				<div class="middle-left-top">
+					<div class="middle-left-top-info">
+						<h3>models</h3>
+						<p class="bottom-text">
+							Aenean venenatis arcu at magna commodo mollis.
+						</p>
+					</div>
+				</div>
+				<div class="middle-left-bottom">
+					<div class="middle-left-top-info">
+						<h3>models</h3>
+						<p class="bottom-text">
+							Aenean venenatis arcu at magna commodo mollis.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="middle-right">
+				<div class="middle-right-top">
+					<div class="middle-left-top-info">
+						<h3>models</h3>
+						<p class="bottom-text">
+							Aenean venenatis arcu at magna commodo mollis.
+						</p>
+					</div>
+				</div>
+				<div class="middle-right-bottom">
+					<div class="middle-left-top-info">
+						<h3>models</h3>
+						<p class="bottom-text">
+							Aenean venenatis arcu at magna commodo mollis.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="middle-right-grid">
+				<div class="grid-left-info">
+					<h3>models</h3>
+					<p class="bottom-text">
+						Aenean venenatis arcu at magna commodo mollis. Sed vestibulum, nunc id consectetur 
+					</p>
+				</div>
+			</div>
+			<div class="grid-right">
+				<div class="grid-left-info">
+					<h3>models</h3>
+					<p class="bottom-text">
+						Aenean venenatis arcu at magna commodo mollis. Sed vestibulum, nunc id consectetur 
+					</p>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<!-- //about-models -->
+		<!-- upload -->
+		<div class="upload">
+			<div class="upload-text">
+				<h3>Upload your resume and photos</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<form>
+					<input type="submit" value="Upload">
+				</form>
+			</div>
+			<div class="mobile-device">
+				
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<!-- //upload -->
+		<!-- skills -->
+		<div id="skills" class="skills">
+			<div class="skills-info">
+				<h3>Skills <span>and other info </span>you ned to know</h3>
+				<p>Aenean venenatis arcu at magna commodo mollis. Sed vestibulum, nunc id consectetur posuere, mi nulla elei-fend lorem, id facilisis tortor lectus vel erat. Cras feugiat lorem tellus, ut sagittis urna placerat nec.</p>
+			</div>
+			<div class="experience years">
+				<h4>12 years</h4>
+				<p>of experience</p>
+				<div class="border"> </div>
+			</div>
+			<div class="experience awards">
+				<h4>180 awards</h4>
+				<p>During our existance</p>
+				<div class="border green"> </div>
+			</div>
+			<div class="experience models">
+				<h4>1058 Models</h4>
+				<p>Over the last year</p>
+				<div class="border-red"> </div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<!-- //skills -->
+		<!-- twitter-grid -->
+		<div class="twitter-grid">
+			<img src="images/twitter.png" alt="" />
+			<p><a href="#">Fashionate<span>@lorem</span></a></p>
+			<p class="sub-text">Lorem ipsum dolor #Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		</div>
+		<!-- //twitter-grid -->
+		<!-- contact -->
+		<div class="contact">
+			<div class="contact-bg">
+				<!-- container -->
+				<div class="container">
+					<div class="contact-text">
+						<div class="col-md-6">
+							<div class="about-fashion">
+								<h3>About Fashionate</h3>
+								<p>Aenean venenatis arcu at magna commodo mollis. Sed vestibulum, nunc id consectetur posuere, mi nulla elei-fend lorem, id facilisis tortor lectus vel erat. Cras feugiat lorem tellus, ut sagittis urna placerat nec.</p>
+							</div>
+							<div class="blog">
+								<h3>From our Blog</h3>
+								<p class="caption">by Admin on 25 Agusut, 2014</p>
+								<p><span>Nam vitae augue tempus</span>
+									vestibulum purus in, interdum nibh. Nam maximus massa nisl, ac venenatis elit sollicitudin in. Aenean ut turpis vel metus vehicula laoreet. Nullam posuere non sem quis hendrerit. Vivamus molestie dignissim ligula quis pharetra. Aenean mattis sapien sed massa elemen-tum, tincidunt condimentum quam lobortis. Aliquam sit amet purus eleifend, sollicitudin dolor id, sagittis nulla. </p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div id="contact" class="Quick-Contact">
+								<h3>Quick Contact</h3>
+								<form>
+									<input type="text" class="text" maxlength="20" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+									<input type="text" class="text" maxlength="20" value="Phone Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone Number';}">
+									<textarea class="text" value="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+									<input type="submit" value="Send">
+								</form>
+							</div>
+							<div class="map">
+								<iframe src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Marion+PI&amp;aq=&amp;sll=12.963205,77.614213&amp;sspn=0.003811,0.006539&amp;ie=UTF8&amp;hq=Marion+PI&amp;hnear=&amp;radius=15000&amp;ll=45.627896,12.566851&amp;spn=0.071946,0.071946&amp;t=m&amp;output=embed"></iframe>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<!-- //container -->
+				<div class="border-bottom"> </div>
+				<!-- footer -->
+				<div class="footer">
+					<!-- container -->
+					<div class="container">
+						<div class="footer-left">
+							<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+						</div>
+						<div class="footer-right">
+							<ul>
+								<li><a href="#"><span class="fb"> </span></a></li>
+								<li><a href="#"><span class="twit"> </span></a></li>
+								<li><a href="#"><span class="dribble"> </span></a></li>
+								<li><a href="#"><span class="skip"> </span></a></li>
+								<li><a href="#"><span class="msg"> </span></a></li>
+							</ul>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<!-- //container -->
+				</div>
+				<!-- //footer -->
+			</div>
+		</div>
+		<!-- //contact -->
+		<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!-- content-Get-in-touch -->
+
+</body>
+</html>

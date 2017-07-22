@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Contact</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+ <!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+ <!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+		
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!---- start-smoth-scrolling---->
+<!----- webfonts ------>
+	<link href='http://fonts.useso.com/css?family=Lora:400,700,400italic,700italic|Roboto:400,100,100italic,300,500,500italic,700,900' rel='stylesheet' type='text/css'>
+<!----- webfonts ------>
+<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+	<!----//End-top-nav-script---->
+</head>
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="container">
+			<!-- top-nav -->
+		<div class="top-nav">
+			<span class="menu"> </span>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li class="active"><a href="contact.html">Contact</a></li>
+						<div class="clearfix"> </div>
+				</ul>
+		</div>
+		<!-- logo -->
+			<div class="head-logo">
+				<a href="index.html"><img src="images/logo.png"/></a>
+			</div>
+			<!-- /logo -->
+		<!-- script-for-nav -->
+				<script>
+					$(document).ready(function(){
+						$("span.menu").click(function(){
+							$(".top-nav ul").slideToggle(500);
+						});
+					});
+				</script>
+		<!-- script-for-nav -->
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+		<!----- /start-contact---->
+	<div class="service-head">
+		 <h3>CONTACT US</h3>
+	</div>
+			<div class="contact-map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1578265.0941403757!2d-98.9828708842255!3d39.41170802696131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sin!4v1407515822047"> </iframe>
+			</div>
+		<div id="contact" class="contact">
+			<div class="container">
+				<div class="contact-section">
+					<p>rerat imperdiet Vestibulum dapibus viverra susci</p>
+					<h3> In urna urna rhoncus eu lacinia in faucibus sed nisi </h3>
+					<h4> Cras lacus velit, varius non mattis dignis simte mpus id lacus. Etiam quis nibh acvelit blandit bibendum. Fusce lacinia, turpis ut.</h4>
+				</div>	
+				 			<form>
+								 <div class="form_details">
+					                 <input type="text" class="text" value="Your Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Name';}">
+									 <input type="text" class="text" value=" Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Your Email';}">
+									 <textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Message ';}">Your Message</textarea>
+									<div class="clearfix"> </div>
+									 <div class="sub-button">
+									 	<input name="submit" type="submit" value="Send">
+									 </div>
+						          </div>
+						       </form>
+
+			</div>							
+		</div>
+		<!----- /end-contact---->
+				<div class="footer">
+						<div class="container">
+							<div class="copy-right">
+								<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+							</div>	
+						</div>							
+					</div>
+					<!----- //End-footer---->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	
+</body>
+</html>
+		
+	

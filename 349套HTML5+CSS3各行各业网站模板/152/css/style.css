@@ -1,0 +1,4179 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+body{
+	padding:0;
+	margin:0;
+	font-family: 'Raleway', sans-serif;
+	background:#fff;
+}
+body a{
+    transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+input[type="button"],input[type="submit"]{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;			   
+}	
+p{
+	margin:0;
+}
+ul{
+	margin:0;
+	padding:0;
+}
+label{
+	margin:0;
+}
+/*-----start-header----*/
+.header{
+	background: url('../images/banner.jpg') no-repeat;
+	background-size:cover;
+	min-height:1100px;
+}
+
+.header-info-head h1{
+	color:#fff;
+	font-size:6.5em;
+	text-transform:uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight:700;
+}
+
+.header-info-head a{
+	text-decoration:none;
+}
+.page-header-info-head a{
+	text-decoration:none;
+}
+.header-info-head h2{
+	color:#fff;
+	font-size:5em;
+	text-transform:uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight:500;
+	margin: 0.5em 0 2.5em 0;
+}
+.header-info {
+	width: 79%;
+	margin: 0 auto;
+	padding-top: 12em;
+}
+
+.top-search {
+	width: 47%;
+	float: left;
+	margin: 2px 2% 0 14%;
+}
+/* start h_menu */
+.header_bottom_right{
+	float:right;
+}
+.toggleMenu {
+    display: none;
+	background:#ff530d;
+	width: 100%;
+	color: #FFF;
+	font-size: 1.5em;
+}
+
+.nav {
+    list-style: none;
+    margin: 21.5em 0 0 14em;
+}
+.nav:before,
+.nav:after {
+    content: " "; 
+    display: table; 
+}
+.nav:after {
+    clear: both;
+}
+.nav ul {
+    list-style: none;
+	width: 13em;
+	border-bottom:5px solid #ff7b3d;
+	z-index:888;
+}
+.nav li a {
+	display: block;
+	padding: 10px 25px;
+	color: #fff;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	text-decoration: none;
+}
+.nav li{
+	
+}
+.nav li a:hover {
+	color:#ff7b3d;;
+}
+
+.nav li {
+    position: relative;
+}
+.nav li.active{
+	
+}
+.nav > li > a.parent:hover{
+	background: url('../images/arrow.png') no-repeat 50px 33px;
+	padding: 10px 10px 10px 30px;
+	color:#ff7b3d;
+}
+.nav > li > a.root:hover{
+	background: url('../images/arrow.png') no-repeat 55px 33px;
+	padding: 10px 30px 10px 10px;	
+	color:#ff7b3d;
+}
+.nav > li {
+    float:left;
+    
+}
+.nav > li.hover > ul {
+    left:-1px;
+    top:44px;
+}
+.nav li li.hover ul {
+    left: 100%;
+   -webkit-transition: background .2s linear;
+	-moz-transition: background .2s linear;
+	-ms-transition: background .2s linear;
+	-o-transition:  background .2s linear;
+	transition: background .2s linear;
+}
+.nav > li > li > a{
+	font-size: 0.85em;
+	padding: 10px 20px;
+	display: block;
+	color: #555;
+	background: #fff;
+	position: relative;
+	z-index: 9999;
+	font-weight: normal;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	width: 100%;
+	text-decoration: none;
+	margin: 0;
+	text-transform: lowercase;
+}
+.nav li li {
+	border-top:none;
+}
+.nav li li:hover{
+	border-top:none;
+}
+.nav li li a{
+	text-transform: capitalize;
+	font-size:0.95em;
+	border-top: 1px solid #e8ebf1;
+}
+.nav li li a:hover{
+	color: #fff;
+	background: #ff7b3d;
+}
+.nav > li >  ul {
+    position: absolute;
+    left: -9999px;
+    padding: 0;
+    z-index: 9999;
+    background:#444444;
+}
+/***** Media Quries *****/
+@media screen and (max-width: 800px) {
+	.h_logo4{
+		text-align:center;
+		float: none;
+		margin: 4% 0;
+	}
+	.h_menu4{
+		float: none;
+	}
+	.toggleMenu {
+		padding: 5px 23px;
+		width: 100%;
+		display:block;
+	}
+	a.toggleMenu {
+		padding: 5px 23px;
+		color: #fff;
+		font-size: 20px;
+		font-weight: 600;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	.nav {
+		margin-top: 0;
+	}
+	.nav li a {
+		padding: 10px 15px;
+	}
+
+    .active {
+        display: block;
+    }
+    .nav > li {
+        float: none;
+    }
+	.nav > li > .parent {
+		background-position: 52% 97% !important;
+	}
+   .nav ul {
+        display: block;
+        width: 100%;
+    }
+   .nav > li.hover > ul , .nav li li.hover ul {
+        position: static;
+    }
+	.header_bottom_right {
+		float: right;
+		width: 77%;
+		text-align: center;
+	}
+	.h_menu4 {
+		width: 45%;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 640px) {
+	.toggleMenu {
+		width:100%;
+	}
+}
+@media screen and (max-width: 480px) {
+	.toggleMenu {
+		width:100%;
+	}
+}
+@media screen and (max-width: 320px) {
+	.toggleMenu {
+		width:100%;
+	}
+}
+i.flow{
+	width: 25px;
+	height: 25px;
+	background: url('../images/img-sprite.png') no-repeat -238px -8px;
+	display: inline-block;
+	position: absolute;
+	bottom: -23.7em;
+	left: 41em;
+}
+i.flow1{
+	width: 25px;
+	height: 25px;
+	background: url('../images/img-sprite.png') no-repeat -238px -8px;
+	display: inline-block;
+	position: absolute;
+	bottom: 43.4em;
+	left: 42.9em;
+}
+i.flow2{
+	width: 25px;
+	height: 25px;
+	background: url('../images/img-sprite.png') no-repeat -238px -8px;
+	display: inline-block;
+	position: absolute;
+	bottom: 43.4em;
+	left: 51em;
+}
+i.flow3{
+	width: 25px;
+	height: 25px;
+	background: url('../images/img-sprite.png') no-repeat -238px -8px;
+	display: inline-block;
+	position: absolute;
+	bottom: 43.4em;
+	left: 61em;
+}
+i.flow4{
+	width: 25px;
+	height: 25px;
+	background: url('../images/img-sprite.png') no-repeat -238px -8px;
+	display: inline-block;
+	position: absolute;
+	bottom: 43.4em;
+	left: 71.8em;
+}
+.services-section-left {
+	background: #ff7b3d;
+	width: 40%;
+	float: left;
+	padding: 5em 7em 8em 11em;
+}
+.services-section-left h3 {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 2.2em;
+}
+.services-section-left h5 {
+	color: #fff;
+	font-size: 2em;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-bottom:1.5em;
+}
+.services-section-right {
+	width: 60%;
+	float: left;
+	padding: 6em 5em 2.35em 5em;
+}
+.services-section-image {
+	width: 30%;
+	float: left;
+	margin-right:5%;
+}
+.services-section-image img{
+	width:100%;
+}
+.services-section-right-text {
+	width: 65%;
+	float: left;
+}
+.services-section-right-text p {
+	color: #828181;
+	font-size: 16px;
+	font-weight: 400;
+	margin: 0 0 20px 0px;
+	line-height: 1.5em;
+	text-indent: 20px;
+}
+.services-section-right-text p img {
+	margin: -14px 6px 0px 0px;
+}
+p.end-q img {
+	margin: 0 0 -6px 6px;
+}
+.services-section-right-text a{
+	color: #ff7b3d;
+	font-size: 19px;
+	font-weight: 500;
+}
+.services-section-right-text span{
+	color: #ffa27f;
+	font-size: 20px;
+	font-weight: 400;
+	display: block;
+}
+i.phone{
+	width:30px;
+	height:40px;
+	background: url('../images/img-sprite.png') no-repeat 0px 0px;
+	display:inline-block;
+	vertical-align:middle;
+	margin-right: 8px;
+}
+i.msg{
+	width: 40px;
+	height: 38px;
+	background: url('../images/img-sprite.png') no-repeat -73px -5px;
+	display: inline-block;
+	vertical-align: sub;
+	margin-right: 8px;
+}
+.call-us {
+	background: #444444;
+	padding: 1.6em 0;
+	margin-top:5em;
+}
+.call-us h3 {
+	color: #fff;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.mail {
+	background: #ff7b3d;
+	padding: 1.6em 0;
+}
+.mail h3 {
+	color: #fff;
+	font-size: 2.7em;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.map iframe {
+	width: 100%;
+	min-height: 220px;
+}
+.main-map iframe {
+	width: 100%;
+	min-height: 500px;
+	margin-bottom: -5px;
+}
+i.location{
+	width: 35px;
+	height: 40px;
+	background: url('../images/img-sprite.png') no-repeat -117px 3px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+.contact-section{
+	padding:5em 0;
+	background:#444444;
+}
+.contact-section input[type="text"], .contact-section textarea{
+	border: none;
+	padding: 17px 18px;
+	width: 31%;
+	margin: 0 24px 35px 0;
+	font-size: 16px;
+	font-weight: 500;
+	outline: none;
+	background: #353535;
+	color: #fff;
+}
+.contact-section textarea{
+	resize: none;
+	width: 97.8%;
+	height: 15em;
+	margin: 0;
+}
+.contact-section input[type="submit"] {
+	background: #ff7b3d;
+	border: none;
+	outline: none;
+	width: 30%;
+	padding: 0.25em 0.8em;
+	color: #fff;
+	margin: 30px 0 0 35%;
+	font-size: 27px;
+	text-transform: uppercase;
+	font-weight: 600;
+	border:1px dashed #ff7b3d;
+}
+.contact-section input[type="submit"]:hover{
+	border:1px dashed #353535;
+}
+.footer {
+	padding: 2em 0;
+	background: #444444;
+}
+.copy-rights p {
+	color: #fff;
+	font-size: 17px;
+	font-weight: 400;
+}
+.copy-rights a{
+	color: #ff7b3d;
+	font-size: 18px;
+	font-weight: 400;
+}
+.planning-section-left h3 {
+	color: #ff7b3d;
+	font-size: 2.3em;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.planning-section-left h4 {
+	color: #ff7b3d;
+	font-size: 1.9em;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.planning-section {
+	padding: 4em 0;
+	background:#fff;
+}
+/******** SAP ************/
+.sap_tabs{
+	clear:both;
+	padding: 4em 0 2em;
+}
+.tab_box{
+	background:#fd926d;
+	padding: 2em;
+}
+.top1{
+	margin-top: 2%;
+}
+.resp-tabs-list {
+	width: 100%;
+	list-style: none;
+	padding: 0;
+}
+.resp-tab-item:first-child{
+	border-left:none;
+}
+.resp-tab-item{
+	color:#fff;
+	font-size: 1.2em;
+	font-weight: 600;
+	cursor: pointer;
+	padding: 12px 10px;
+	display: inline-block;
+	margin: 0;
+	text-align: center;
+	list-style: none;
+	float: left;
+	width:33.3333%;
+	background: #444444;
+	outline: none;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+    text-transform: uppercase;
+	border-left: 1px solid #fff;
+}
+.resp-tab-item:hover {
+	text-shadow: none;
+	background: #ff7b3d;
+}
+.resp-tab-active{
+	text-shadow: none;
+	background: #ff7b3d;
+	color:#fff;
+}
+.resp-tab-item.active {
+	background: #ffd400;
+}
+.resp-tabs-container {
+	padding: 0px;
+	background-color: #fff;
+	clear: left;
+}
+h2.resp-accordion {
+	cursor: pointer;
+	padding: 5px;
+	display: none;
+}
+.resp-tab-content {
+	display: none;
+}
+.resp-content-active, .resp-accordion-active {
+   display: block;
+}
+
+@media only screen and (max-width:480px) {
+	.sap_tabs{
+		padding-top:0;
+	}
+	.resp-tabs-container{
+		padding:0px;
+	}
+ul.resp-tabs-list {
+  	display: none;
+}
+h2.resp-accordion {
+	display: block;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 8px;
+}
+.resp-vtabs .resp-tab-content {
+  	border: 1px solid #C1C1C1;
+}
+.resp-vtabs .resp-tabs-container {
+	border: none;
+	float: none;
+	width: 100%;
+	min-height: initial;
+	clear: none;
+}
+.resp-accordion-closed {
+	display: none !important;
+}
+}
+ul.tab_img{
+	padding:0;
+	list-style:none;
+	position: relative;
+	padding:0;
+}
+ul.tab_img li {
+	float: left;
+	width: 33.333%;
+}
+.view.view-first img {
+	width: 100%;
+	border-left: 1px solid #fff;
+	border-top: 1px solid #fff;
+}
+ul.tab_img li.last{
+	margin-right:0;
+	padding: 0;
+}
+.view {
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   cursor: default;
+}
+.view .mask,.view .content {
+   position: absolute;
+   overflow: hidden;
+	top: 16em;
+	left: 7em;
+}
+.tab_desc {
+	background: #f2f2f2;
+	padding: 2em;
+	border-left: 1px solid #fff;
+}
+.tab_desc h5 {
+	color: #444444;
+	font-size: 18px;
+	font-weight: 500;
+}
+.tab_desc span{
+	display: block;
+	color: #cacaca;
+	font-size: 15px;
+	margin: 2px 0 0 0;
+}
+.tab_desc a{
+	color: #ff7b3d;
+	font-size: 17px;
+	font-weight: 600;
+}
+/******** SAP-ENDS ************/
+.yup-text {
+	width: 55%;
+	float: Left;
+}
+.couple-text {
+	width: 55%;
+	float: Left;
+}
+.image img {
+	width: 100%;
+}
+.image {
+	width: 45%;
+	float: Left;
+}
+.couple-image {
+	width: 45%;
+	float: Left;
+	position: absolute;
+	top: -35px;
+	right: -31px;
+}
+.yup-text h3 {
+	color: #444444;
+	font-size: 1.8em;
+	font-weight: 600;
+	margin-top: 24px;
+}
+.planning-section-right-grid {
+	border: 1px solid #f2f2f2;
+	padding: 1em 1.3em;
+	margin-bottom:2.5em;
+}
+.planning-section-right-grid2 {
+	border: 1px solid #f2f2f2;
+	padding: 2em 1.3em;
+	margin-bottom:5em;
+	position: relative;
+}
+.couple-text h3 {
+	color: #444444;
+	font-size: 1.8em;
+	font-weight: 600;
+	margin-top: 0;
+}
+.planning-section-right {
+	margin-top: 5em;
+}
+.news-search-box {
+	position: relative;	
+	background: #ff7b3d;
+	margin: 20px 0 15px 0em;
+}
+.news-search-box form input[type="text"]   {
+	border: none;
+	outline: none;
+	padding: 8px 8px;
+	-webkit-apperance: none;
+	margin: 0;
+	background: #fff;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	color: #000333;
+	width: 88%;
+	border: 1px solid #f2f2f2;
+}
+.top-search input[type="text"] {
+	border: none;
+	outline: none;
+	background: #fff;
+	font-size: 17px;
+	font-weight: 500;
+	padding: 12px 10px;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	color: #444444;
+	width:100%;
+}
+.news-search-box form input[type="submit"] {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background: url(../images/img-sprite.png) no-repeat -33px 0px;
+	position:absolute;
+	right: 4px;
+	bottom: 4px;
+	padding: 0;
+	width: 35px;
+	height: 30px;
+}
+.planning-section-right h4 {
+	color: #acabab;
+	font-size:24px;
+	font-weight:600;
+}
+/* WRAPPER */
+.dropdown-button:first-child{
+	margin-left:0;
+}
+.dropdown-button{
+	width:25%;
+}
+.dropdown-button{
+	display:inline-block;
+}
+.flat{
+	position: relative;	
+	cursor: pointer;
+	font-weight:600;
+	background:#ff7b3d;
+	color:#898989;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+.flat.open{
+	z-index: 2;
+}
+.flat:hover,
+.flat.focus{
+	color:#666;
+}
+/* OLD SELECT (HIDDEN) */
+.flat .old{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+}
+.flat select{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.flat.touch select{
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+/* SELECTED FEEDBACK ITEM */ 
+.flat .selected {
+    color:#fff;
+}
+.flat .selected,
+.flat li{
+	display: block;
+	font-size: 1.1em;
+	padding: 14px 0px 14px 20px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: left;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.flat .selected::after{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding:20px 20px;
+	background: url(../images/img-sprite.png) no-repeat 0px -46px;
+	border-radius: 0 5px 5px 0;
+	-webkit-border-radius: 0 5px 5px 0;
+	-moz-border-radius: 0 5px 5px 0;
+	-o-border-radius: 0 5px 5px 0;
+}
+.flat:hover .selected::after,
+.flat.focus .selected::after{
+	background:url(../images/img-sprite.png) no-repeat -43px -46px;
+}
+/* DROP DOWN WRAPPER */
+.flat div{
+	position: absolute;
+	height: 0;
+	left: 0;
+	right: 0;
+	top: 100%;
+	margin-top:1px;
+	background:#444444;
+	overflow: hidden;
+	opacity: 0;
+	color: #FFF;
+}
+/* Height is adjusted by JS on open */
+.flat.open div{
+	opacity: 1;
+	z-index: 2;
+}
+/* FADE OVERLAY FOR SCROLLING LISTS */
+.flat.scrollable div::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 50px;
+}
+.flat.scrollable.bottom div::after{
+	opacity: 0;
+}
+/* DROP DOWN LIST */
+.flat ul{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	padding:0;
+	list-style: none;
+	overflow: hidden;
+}
+.flat.scrollable.open ul{
+	overflow-y: auto;
+}
+/* DROP DOWN LIST ITEMS */
+.flat li{
+	list-style: none;
+	padding: 6px 10px;
+	padding: 6px 19px;
+	font-size: 1em;
+	font-weight: 600;
+}
+.flat li:last-child {
+    border-bottom: 0;
+}
+/* .focus class is also added on hover */
+.flat li:hover{
+	background-color:#ff7b3d;
+}
+.flat li.focus{
+	background:#ff7b3d;
+	position: relative;
+	z-index: 3;
+	color:#FFF;
+}
+.flat li.active{
+    background-color:#ff7b3d;
+	color: #fff;
+}
+
+/*-- payment-page --*/
+.list {
+    list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.paymemt-row-wrap {
+	margin: 3em 0;
+}
+.list-center {
+	display: table;
+	margin: 0 auto;
+}
+.list-inline-block > li {
+	display: inline-block;
+}
+.list-horizontal > li,
+.list-inline > li {
+	float: left;
+	margin-right: 10px;
+	padding: 0;
+	display: block;
+}
+.list-horizontal > li:last-child,
+.list-inline > li:last-child {
+	margin-right: 0;
+}
+.list-horizontal.list-border > li,
+.list-inline.list-border > li {
+	margin-right: 10px;
+	padding-right: 10px;
+	border-right: 1px solid rgba(0,0,0,0.13);
+}
+.list-horizontal.list-border > li:last-child,
+.list-inline.list-border > li:last-child {
+	margin-right: 0;
+	padding-right: 0;
+	border: none;
+}
+.list-horizontal:after,
+.list-inline:after {
+	content: '.';
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.booking-item-passengers > li {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 2px dashed #e6e6e6;
+}
+.booking-item-passengers > li:last-child {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 2px dashed #e6e6e6;
+}
+.booking-item-passengers label {
+	font-weight: 400;
+	font-size: 13px;
+}
+.booking-item-payment-total-flight {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background: #f2f2f2;
+	margin-right: 30px;
+}
+.booking-item-payment-total-flight > li {
+	padding: 10px 15px;
+	background: #4d4d4d;
+	color: #e6e6e6;
+}
+.booking-item-payment-total-flight > li:first-child {
+	border-bottom: 1px dashed #1a1a1a;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+.booking-item-payment-total-flight > li:first-child > h5 {
+	line-height: 1em;
+	margin: 3px 0;
+	color: #f09644;
+}
+.booking-item-payment-total-flight > li:last-child {
+	-webkit-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+}
+.booking-item-payment-total-flight > li.booking-item-payment-total-flight-wait {
+	background: #333;
+}
+.booking-item-payment-total-flight > li.booking-item-payment-total-flight-wait > p {
+	font-size: 13px;
+	line-height: 1.4em;
+	margin: 0;
+	text-align: center;
+}
+.booking-item-payment-total-flight > li h5 {
+	color: #fff;
+}
+.booking-item-payment-total-flight > li .booking-item-flight-details .booking-item-departure .fa-plane,
+.booking-item-payment-total-flight > li .booking-item-flight-details .booking-item-arrival .fa-plane {
+	font-size: 20px;
+}
+.booking-item-payment-total-flight > li .booking-item-flight-details .booking-item-departure h5,
+.booking-item-payment-total-flight > li .booking-item-flight-details .booking-item-arrival h5 {
+	font-size: 14px;
+}
+.booking-item-payment-total-flight > li .booking-item-flight-details .booking-item-departure .booking-item-date,
+.booking-item-payment-total-flight > li .booking-item-flight-details .booking-item-arrival .booking-item-date {
+	padding-left: 23px;
+	font-size: 11px;
+}
+.booking-item-payment-total-flight > li .booking-item-flight-details .booking-item-destination {
+	font-size: 12px;
+}
+.booking-item-payment-total-flight > li .booking-item-flight-duration > p {
+	margin-bottom: 5px;
+	line-height: 1em;
+	font-size: 13px;
+}
+.booking-item-payment-total-flight > li .booking-item-flight-duration > h5 {
+	font-weight: 400;
+}
+.booking-item-payment-flight .booking-item-flight-details .booking-item-departure .fa-plane,
+.booking-item-payment-flight .booking-item-flight-details .booking-item-arrival .fa-plane {
+	font-size: 20px;
+}
+.booking-item-payment-flight .booking-item-flight-details .booking-item-departure h5,
+.booking-item-payment-flight .booking-item-flight-details .booking-item-arrival h5 {
+	font-size: 14px;
+}
+.booking-item-payment-flight .booking-item-flight-details .booking-item-departure .booking-item-date,
+.booking-item-payment-flight .booking-item-flight-details .booking-item-arrival .booking-item-date {
+	padding-left: 23px;
+	font-size: 11px;
+}
+.booking-item-payment-flight .booking-item-flight-details .booking-item-destination {
+	font-size: 12px;
+}
+.booking-item-payment-flight .booking-item-flight-duration > p {
+	margin-bottom: 5px;
+	line-height: 1em;
+	font-size: 13px;
+}
+.booking-item-payment-flight .booking-item-flight-duration > h5 {
+	font-weight: 400;
+}
+.booking-item-dates-change {
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 15px 20px;
+	border: 1px solid #ed8323;
+	-webkit-box-shadow: 0 2px 1px rgba(0,0,0,0.15);
+	box-shadow: 0 2px 1px rgba(0,0,0,0.15);
+}
+.booking-item-payment {
+	-webkit-box-shadow: 0 2px 1px rgba(0,0,0,0.1);
+	box-shadow: 0 2px 1px rgba(0,0,0,0.1);
+	border: 1px solid rgba(0,0,0,0.15);
+}
+.booking-item-payment > header {
+	padding: 10px 15px;
+	background: #f7f7f7;
+}
+.booking-item-payment > header .booking-item-payment-img {
+	float: left;
+	display: block;
+	width: 30%;
+	margin-right: 5%;
+}
+.booking-item-payment > header .booking-item-payment-title {
+	font-size: 14px;
+	margin-bottom: 0;
+}
+.booking-item-payment > header .booking-item-rating-stars {
+	font-size: 11px;
+}
+.booking-item-payment .booking-item-payment-total {
+	margin-bottom: 0;
+	padding: 8px 30px 8px 15px;
+	font-size: 12px;
+}
+.booking-item-payment .booking-item-payment-total > span {
+	font-size: 24px;
+	color: #686868;
+	font-weight: 400;
+	letter-spacing: -2px;
+}
+.booking-item-payment .booking-item-payment-details {
+	list-style: none;
+	margin: 0;
+	padding: 15px;
+	border-top: 1px solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+}
+.booking-item-payment .booking-item-payment-details > li {
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.booking-item-payment .booking-item-payment-details > li:last-child {
+	margin-bottom: 0;
+}
+.booking-item-payment .booking-item-payment-details > li > h5 {
+	line-height: 1em;
+}
+.booking-item-payment .booking-item-payment-details > li > p {
+	margin-bottom: 0;
+	color: #686868;
+}
+.booking-item-payment .booking-item-payment-details > li .booking-item-payment-item-title {
+	color: #515151;
+}
+.booking-item-payment .booking-item-payment-details > li .booking-item-payment-date,
+.booking-item-payment .booking-item-payment-details > li .booking-item-payment-date-separator {
+	float: left;
+	display: block;
+}
+.booking-item-payment .booking-item-payment-details > li .booking-item-payment-date-separator {
+	width: 15%;
+	text-align: center;
+}
+.booking-item-payment .booking-item-payment-details > li .booking-item-payment-date .booking-item-payment-date-day {
+	margin-bottom: 5px;
+	line-height: 1em;
+	color: #686868;
+}
+.booking-item-payment .booking-item-payment-details > li .booking-item-payment-date .booking-item-payment-date-weekday {
+  font-size: 12px;
+  margin-bottom: 0;
+  line-height: 1em;
+  color: #7a7a7a;
+}
+.booking-item-payment .booking-item-payment-details > li .booking-item-payment-price {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.booking-item-payment .booking-item-payment-details > li .booking-item-payment-price > li {
+  width: 70%;
+  overflow: hidden;
+  font-size: 12px;
+  border-bottom: 1px dashed #d9d9d9;
+}
+.booking-item-payment .booking-item-payment-details > li .booking-item-payment-price > li .booking-item-payment-price-title,
+.booking-item-payment .booking-item-payment-details > li .booking-item-payment-price > li .booking-item-payment-price-amount {
+  float: left;
+  margin: 0;
+}
+.booking-item-payment .booking-item-payment-details > li .booking-item-payment-price > li .booking-item-payment-price-amount {
+  float: right;
+}
+.booking-item-payment .booking-item-payment-details > li .booking-item-payment-price > li .booking-item-payment-price-amount > small {
+  margin-left: 3px;
+}
+img.pp-img {
+	width: 70%;
+}
+.cc-form .form-group.form-group-cc-number,
+.cc-form .form-group.form-group-cc-name {
+  width: 60%;
+  margin-right: 5%;
+}
+.cc-form .form-group.form-group-cc-date,
+.cc-form .form-group.form-group-cc-cvc {
+  width: 25%;
+}
+.cc-form .form-group.form-group-cc-number .cc-card-icon {
+  display: block;
+  width: 41px;
+  height: 26px;
+  position: absolute;
+  right: 4px;
+  top: 34px;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translate3d(0, -10px, 0);
+  -moz-transform: translate3d(0, -10px, 0);
+  -o-transform: translate3d(0, -10px, 0);
+  -ms-transform: translate3d(0, -10px, 0);
+  transform: translate3d(0, -10px, 0);
+}
+.cc-form .form-group.form-group-cc-number input.identified + .cc-card-icon {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+.cc-form .form-group.form-group-cc-number input.visa + .cc-card-icon {
+  background-image: url("../img/payment/visa-curved-32px.png");
+}
+.cc-form .form-group.form-group-cc-number input.mastercard + .cc-card-icon {
+  background-image: url("../img/payment/mastercard-curved-32px.png");
+}
+.cc-form .form-group.form-group-cc-number input.amex  + .cc-card-icon {
+  background-image: url("../img/payment/american-express-curved-32px.png");
+}
+.cc-form .form-group.form-group-cc-number input.discover + .cc-card-icon {
+  background-image: url("../img/payment/discover-curved-32px.png");
+}
+.cc-form .form-group.form-group-cc-number input.maestro + .cc-card-icon {
+  background-image: url("../img/payment/maestro-curved-32px.png");
+}
+.booking-item-flight-details .booking-item-departure .fa-plane,
+.booking-item-flight-details .booking-item-arrival .fa-plane {
+  float: left;
+  display: block;
+  font-size: 30px;
+  margin-right: 5px;
+  position: relative;
+  top: 4px;
+}
+.booking-item-flight-details .booking-item-departure h5,
+.booking-item-flight-details .booking-item-arrival h5 {
+  margin-bottom: 0;
+}
+.booking-item-flight-details .booking-item-departure .booking-item-date,
+.booking-item-flight-details .booking-item-arrival .booking-item-date {
+  margin-bottom: 7px;
+  font-size: 12px;
+  line-height: 1em;
+  padding-left: 32px;
+}
+.booking-item-flight-details .booking-item-departure {
+  margin-right: 6%;
+}
+.booking-item-flight-details .booking-item-destination {
+  font-size: 12px;
+  line-height: 1.3em;
+}
+.booking-item-airline-logo > p {
+  margin-bottom: 0;
+  font-size: 12px;
+  margin-top: 5px;
+  line-height: 1.3em;
+}
+.booking-item-airline-logo > img {
+  width: 40px;
+}
+.booking-item-flight-class {
+  margin-bottom: 7px;
+  margin-top: -5px;
+  font-size: 11px;
+  color: #8f8f8f;
+  line-height: 1em;
+}
+.booking-item-features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.booking-item-features > li {
+  float: left;
+  position: relative;
+  margin-right: 7px;
+  margin-bottom: 7px;
+}
+.booking-item-features > li:hover > i {
+  border-color: #d66f11;
+}
+.booking-item-features > li .booking-item-feature-sign {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  line-height: 1em;
+  width: 100%;
+}
+.booking-item-features > li > i {
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 35px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 23px;
+  display: block;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: #686868;
+}
+.booking-item-features-dark > li > i {
+  background: #4d4d4d;
+  border: 1px solid #333;
+  color: #fff;
+}
+.datepicker table tr td,
+.datepicker table tr th {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+.table-striped .datepicker table tr td,
+.table-striped .datepicker table tr th {
+  background-color: transparent;
+}
+.datepicker table tr td.day:hover,
+.datepicker table tr td.day.focused {
+  background: #eee;
+  cursor: pointer;
+}
+.datepicker table tr td.day {
+  border: 1px solid #e6e6e6;
+}
+.datepicker table tr td.old,
+.datepicker table tr td.new {
+  color: #999;
+}
+.datepicker table tr td.disabled,
+.datepicker table tr td.disabled:hover {
+  background: none;
+  color: #999;
+  cursor: default;
+}
+.datepicker table tr td.today,
+.datepicker table tr td.today:hover,
+.datepicker table tr td.today.disabled,
+.datepicker table tr td.today.disabled:hover {
+  color: #000;
+  position: relative;
+}
+.datepicker table tr td.today:before,
+.datepicker table tr td.today:hover:before,
+.datepicker table tr td.today.disabled:before,
+.datepicker table tr td.today.disabled:hover:before {
+  content: '';
+  bottom: 2px;
+  right: 2px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 7px 7px;
+  border-color: transparent transparent #ed8323 transparent;
+  position: absolute;
+}
+.datepicker table tr td.today:active,
+.datepicker table tr td.today:hover:active,
+.datepicker table tr td.today.disabled:active,
+.datepicker table tr td.today.disabled:hover:active,
+.datepicker table tr td.today.active,
+.datepicker table tr td.today:hover.active,
+.datepicker table tr td.today.disabled.active,
+.datepicker table tr td.today.disabled:hover.active,
+.open .dropdown-toggle.datepicker table tr td.today,
+.open .dropdown-toggle.datepicker table tr td.today:hover,
+.open .dropdown-toggle.datepicker table tr td.today.disabled,
+.open .dropdown-toggle.datepicker table tr td.today.disabled:hover {
+  background-image: none;
+}
+.datepicker table tr td.today.disabled,
+.datepicker table tr td.today:hover.disabled,
+.datepicker table tr td.today.disabled.disabled,
+.datepicker table tr td.today.disabled:hover.disabled,
+.datepicker table tr td.today[disabled],
+.datepicker table tr td.today:hover[disabled],
+.datepicker table tr td.today.disabled[disabled],
+.datepicker table tr td.today.disabled:hover[disabled],
+fieldset[disabled] .datepicker table tr td.today,
+fieldset[disabled] .datepicker table tr td.today:hover,
+fieldset[disabled] .datepicker table tr td.today.disabled,
+fieldset[disabled] .datepicker table tr td.today.disabled:hover,
+.datepicker table tr td.today.disabled:hover,
+.datepicker table tr td.today:hover.disabled:hover,
+.datepicker table tr td.today.disabled.disabled:hover,
+.datepicker table tr td.today.disabled:hover.disabled:hover,
+.datepicker table tr td.today[disabled]:hover,
+.datepicker table tr td.today:hover[disabled]:hover,
+.datepicker table tr td.today.disabled[disabled]:hover,
+.datepicker table tr td.today.disabled:hover[disabled]:hover,
+fieldset[disabled] .datepicker table tr td.today:hover,
+fieldset[disabled] .datepicker table tr td.today:hover:hover,
+fieldset[disabled] .datepicker table tr td.today.disabled:hover,
+fieldset[disabled] .datepicker table tr td.today.disabled:hover:hover,
+.datepicker table tr td.today.disabled:focus,
+.datepicker table tr td.today:hover.disabled:focus,
+.datepicker table tr td.today.disabled.disabled:focus,
+.datepicker table tr td.today.disabled:hover.disabled:focus,
+.datepicker table tr td.today[disabled]:focus,
+.datepicker table tr td.today:hover[disabled]:focus,
+.datepicker table tr td.today.disabled[disabled]:focus,
+.datepicker table tr td.today.disabled:hover[disabled]:focus,
+fieldset[disabled] .datepicker table tr td.today:focus,
+fieldset[disabled] .datepicker table tr td.today:hover:focus,
+fieldset[disabled] .datepicker table tr td.today.disabled:focus,
+fieldset[disabled] .datepicker table tr td.today.disabled:hover:focus,
+.datepicker table tr td.today.disabled:active,
+.datepicker table tr td.today:hover.disabled:active,
+.datepicker table tr td.today.disabled.disabled:active,
+.datepicker table tr td.today.disabled:hover.disabled:active,
+.datepicker table tr td.today[disabled]:active,
+.datepicker table tr td.today:hover[disabled]:active,
+.datepicker table tr td.today.disabled[disabled]:active,
+.datepicker table tr td.today.disabled:hover[disabled]:active,
+fieldset[disabled] .datepicker table tr td.today:active,
+fieldset[disabled] .datepicker table tr td.today:hover:active,
+fieldset[disabled] .datepicker table tr td.today.disabled:active,
+fieldset[disabled] .datepicker table tr td.today.disabled:hover:active,
+.datepicker table tr td.today.disabled.active,
+.datepicker table tr td.today:hover.disabled.active,
+.datepicker table tr td.today.disabled.disabled.active,
+.datepicker table tr td.today.disabled:hover.disabled.active,
+.datepicker table tr td.today[disabled].active,
+.datepicker table tr td.today:hover[disabled].active,
+.datepicker table tr td.today.disabled[disabled].active,
+.datepicker table tr td.today.disabled:hover[disabled].active,
+fieldset[disabled] .datepicker table tr td.today.active,
+fieldset[disabled] .datepicker table tr td.today:hover.active,
+fieldset[disabled] .datepicker table tr td.today.disabled.active,
+fieldset[disabled] .datepicker table tr td.today.disabled:hover.active {
+  background-color: #ffdb99;
+  border-color: #ffb733;
+}
+.datepicker table tr td.today:hover:hover {
+  color: #000;
+}
+.datepicker table tr td.today.active:hover {
+  color: #fff;
+}
+.datepicker table tr td.range,
+.datepicker table tr td.range:hover,
+.datepicker table tr td.range.disabled,
+.datepicker table tr td.range.disabled:hover {
+  background: #eee;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.datepicker table tr td.range.today,
+.datepicker table tr td.range.today:hover,
+.datepicker table tr td.range.today.disabled,
+.datepicker table tr td.range.today.disabled:hover {
+  color: #000;
+  background-color: #f7ca77;
+  border-color: #f1a417;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.datepicker table tr td.range.today:hover,
+.datepicker table tr td.range.today:hover:hover,
+.datepicker table tr td.range.today.disabled:hover,
+.datepicker table tr td.range.today.disabled:hover:hover,
+.datepicker table tr td.range.today:focus,
+.datepicker table tr td.range.today:hover:focus,
+.datepicker table tr td.range.today.disabled:focus,
+.datepicker table tr td.range.today.disabled:hover:focus,
+.datepicker table tr td.range.today:active,
+.datepicker table tr td.range.today:hover:active,
+.datepicker table tr td.range.today.disabled:active,
+.datepicker table tr td.range.today.disabled:hover:active,
+.datepicker table tr td.range.today.active,
+.datepicker table tr td.range.today:hover.active,
+.datepicker table tr td.range.today.disabled.active,
+.datepicker table tr td.range.today.disabled:hover.active,
+.open .dropdown-toggle.datepicker table tr td.range.today,
+.open .dropdown-toggle.datepicker table tr td.range.today:hover,
+.open .dropdown-toggle.datepicker table tr td.range.today.disabled,
+.open .dropdown-toggle.datepicker table tr td.range.today.disabled:hover {
+  color: #000;
+  background-color: #f4bb51;
+  border-color: #bf800c;
+}
+.datepicker table tr td.range.today:active,
+.datepicker table tr td.range.today:hover:active,
+.datepicker table tr td.range.today.disabled:active,
+.datepicker table tr td.range.today.disabled:hover:active,
+.datepicker table tr td.range.today.active,
+.datepicker table tr td.range.today:hover.active,
+.datepicker table tr td.range.today.disabled.active,
+.datepicker table tr td.range.today.disabled:hover.active,
+.open .dropdown-toggle.datepicker table tr td.range.today,
+.open .dropdown-toggle.datepicker table tr td.range.today:hover,
+.open .dropdown-toggle.datepicker table tr td.range.today.disabled,
+.open .dropdown-toggle.datepicker table tr td.range.today.disabled:hover {
+  background-image: none;
+}
+.datepicker table tr td.range.today.disabled,
+.datepicker table tr td.range.today:hover.disabled,
+.datepicker table tr td.range.today.disabled.disabled,
+.datepicker table tr td.range.today.disabled:hover.disabled,
+.datepicker table tr td.range.today[disabled],
+.datepicker table tr td.range.today:hover[disabled],
+.datepicker table tr td.range.today.disabled[disabled],
+.datepicker table tr td.range.today.disabled:hover[disabled],
+fieldset[disabled] .datepicker table tr td.range.today,
+fieldset[disabled] .datepicker table tr td.range.today:hover,
+fieldset[disabled] .datepicker table tr td.range.today.disabled,
+fieldset[disabled] .datepicker table tr td.range.today.disabled:hover,
+.datepicker table tr td.range.today.disabled:hover,
+.datepicker table tr td.range.today:hover.disabled:hover,
+.datepicker table tr td.range.today.disabled.disabled:hover,
+.datepicker table tr td.range.today.disabled:hover.disabled:hover,
+.datepicker table tr td.range.today[disabled]:hover,
+.datepicker table tr td.range.today:hover[disabled]:hover,
+.datepicker table tr td.range.today.disabled[disabled]:hover,
+.datepicker table tr td.range.today.disabled:hover[disabled]:hover,
+fieldset[disabled] .datepicker table tr td.range.today:hover,
+fieldset[disabled] .datepicker table tr td.range.today:hover:hover,
+fieldset[disabled] .datepicker table tr td.range.today.disabled:hover,
+fieldset[disabled] .datepicker table tr td.range.today.disabled:hover:hover,
+.datepicker table tr td.range.today.disabled:focus,
+.datepicker table tr td.range.today:hover.disabled:focus,
+.datepicker table tr td.range.today.disabled.disabled:focus,
+.datepicker table tr td.range.today.disabled:hover.disabled:focus,
+.datepicker table tr td.range.today[disabled]:focus,
+.datepicker table tr td.range.today:hover[disabled]:focus,
+.datepicker table tr td.range.today.disabled[disabled]:focus,
+.datepicker table tr td.range.today.disabled:hover[disabled]:focus,
+fieldset[disabled] .datepicker table tr td.range.today:focus,
+fieldset[disabled] .datepicker table tr td.range.today:hover:focus,
+fieldset[disabled] .datepicker table tr td.range.today.disabled:focus,
+fieldset[disabled] .datepicker table tr td.range.today.disabled:hover:focus,
+.datepicker table tr td.range.today.disabled:active,
+.datepicker table tr td.range.today:hover.disabled:active,
+.datepicker table tr td.range.today.disabled.disabled:active,
+.datepicker table tr td.range.today.disabled:hover.disabled:active,
+.datepicker table tr td.range.today[disabled]:active,
+.datepicker table tr td.range.today:hover[disabled]:active,
+.datepicker table tr td.range.today.disabled[disabled]:active,
+.datepicker table tr td.range.today.disabled:hover[disabled]:active,
+fieldset[disabled] .datepicker table tr td.range.today:active,
+fieldset[disabled] .datepicker table tr td.range.today:hover:active,
+fieldset[disabled] .datepicker table tr td.range.today.disabled:active,
+fieldset[disabled] .datepicker table tr td.range.today.disabled:hover:active,
+.datepicker table tr td.range.today.disabled.active,
+.datepicker table tr td.range.today:hover.disabled.active,
+.datepicker table tr td.range.today.disabled.disabled.active,
+.datepicker table tr td.range.today.disabled:hover.disabled.active,
+.datepicker table tr td.range.today[disabled].active,
+.datepicker table tr td.range.today:hover[disabled].active,
+.datepicker table tr td.range.today.disabled[disabled].active,
+.datepicker table tr td.range.today.disabled:hover[disabled].active,
+fieldset[disabled] .datepicker table tr td.range.today.active,
+fieldset[disabled] .datepicker table tr td.range.today:hover.active,
+fieldset[disabled] .datepicker table tr td.range.today.disabled.active,
+fieldset[disabled] .datepicker table tr td.range.today.disabled:hover.active {
+  background-color: #f7ca77;
+  border-color: #f1a417;
+}
+.datepicker table tr td.selected,
+.datepicker table tr td.selected:hover,
+.datepicker table tr td.selected.disabled,
+.datepicker table tr td.selected.disabled:hover {
+  color: #fff;
+  background-color: #999;
+  border-color: #555;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+}
+.datepicker table tr td.selected:hover,
+.datepicker table tr td.selected:hover:hover,
+.datepicker table tr td.selected.disabled:hover,
+.datepicker table tr td.selected.disabled:hover:hover,
+.datepicker table tr td.selected:focus,
+.datepicker table tr td.selected:hover:focus,
+.datepicker table tr td.selected.disabled:focus,
+.datepicker table tr td.selected.disabled:hover:focus,
+.datepicker table tr td.selected:active,
+.datepicker table tr td.selected:hover:active,
+.datepicker table tr td.selected.disabled:active,
+.datepicker table tr td.selected.disabled:hover:active,
+.datepicker table tr td.selected.active,
+.datepicker table tr td.selected:hover.active,
+.datepicker table tr td.selected.disabled.active,
+.datepicker table tr td.selected.disabled:hover.active,
+.open .dropdown-toggle.datepicker table tr td.selected,
+.open .dropdown-toggle.datepicker table tr td.selected:hover,
+.open .dropdown-toggle.datepicker table tr td.selected.disabled,
+.open .dropdown-toggle.datepicker table tr td.selected.disabled:hover {
+  border-color: #373737;
+}
+.datepicker table tr td.selected:hover color: #ffffff,
+.datepicker table tr td.selected:hover:hover color: #ffffff,
+.datepicker table tr td.selected.disabled:hover color: #ffffff,
+.datepicker table tr td.selected.disabled:hover:hover color: #ffffff,
+.datepicker table tr td.selected:focus color: #ffffff,
+.datepicker table tr td.selected:hover:focus color: #ffffff,
+.datepicker table tr td.selected.disabled:focus color: #ffffff,
+.datepicker table tr td.selected.disabled:hover:focus color: #ffffff,
+.datepicker table tr td.selected:active color: #ffffff,
+.datepicker table tr td.selected:hover:active color: #ffffff,
+.datepicker table tr td.selected.disabled:active color: #ffffff,
+.datepicker table tr td.selected.disabled:hover:active color: #ffffff,
+.datepicker table tr td.selected.active color: #ffffff,
+.datepicker table tr td.selected:hover.active color: #ffffff,
+.datepicker table tr td.selected.disabled.active color: #ffffff,
+.datepicker table tr td.selected.disabled:hover.active color: #ffffff,
+.open .dropdown-toggle.datepicker table tr td.selected color: #ffffff,
+.open .dropdown-toggle.datepicker table tr td.selected:hover color: #ffffff,
+.open .dropdown-toggle.datepicker table tr td.selected.disabled color: #ffffff,
+.open .dropdown-toggle.datepicker table tr td.selected.disabled:hover color: #ffffff {
+  background-color: #858585;
+}
+.datepicker table tr td.selected:active,
+.datepicker table tr td.selected:hover:active,
+.datepicker table tr td.selected.disabled:active,
+.datepicker table tr td.selected.disabled:hover:active,
+.datepicker table tr td.selected.active,
+.datepicker table tr td.selected:hover.active,
+.datepicker table tr td.selected.disabled.active,
+.datepicker table tr td.selected.disabled:hover.active,
+.open .dropdown-toggle.datepicker table tr td.selected,
+.open .dropdown-toggle.datepicker table tr td.selected:hover,
+.open .dropdown-toggle.datepicker table tr td.selected.disabled,
+.open .dropdown-toggle.datepicker table tr td.selected.disabled:hover {
+  background-image: none;
+}
+.datepicker table tr td.selected.disabled,
+.datepicker table tr td.selected:hover.disabled,
+.datepicker table tr td.selected.disabled.disabled,
+.datepicker table tr td.selected.disabled:hover.disabled,
+.datepicker table tr td.selected[disabled],
+.datepicker table tr td.selected:hover[disabled],
+.datepicker table tr td.selected.disabled[disabled],
+.datepicker table tr td.selected.disabled:hover[disabled],
+fieldset[disabled] .datepicker table tr td.selected,
+fieldset[disabled] .datepicker table tr td.selected:hover,
+fieldset[disabled] .datepicker table tr td.selected.disabled,
+fieldset[disabled] .datepicker table tr td.selected.disabled:hover,
+.datepicker table tr td.selected.disabled:hover,
+.datepicker table tr td.selected:hover.disabled:hover,
+.datepicker table tr td.selected.disabled.disabled:hover,
+.datepicker table tr td.selected.disabled:hover.disabled:hover,
+.datepicker table tr td.selected[disabled]:hover,
+.datepicker table tr td.selected:hover[disabled]:hover,
+.datepicker table tr td.selected.disabled[disabled]:hover,
+.datepicker table tr td.selected.disabled:hover[disabled]:hover,
+fieldset[disabled] .datepicker table tr td.selected:hover,
+fieldset[disabled] .datepicker table tr td.selected:hover:hover,
+fieldset[disabled] .datepicker table tr td.selected.disabled:hover,
+fieldset[disabled] .datepicker table tr td.selected.disabled:hover:hover,
+.datepicker table tr td.selected.disabled:focus,
+.datepicker table tr td.selected:hover.disabled:focus,
+.datepicker table tr td.selected.disabled.disabled:focus,
+.datepicker table tr td.selected.disabled:hover.disabled:focus,
+.datepicker table tr td.selected[disabled]:focus,
+.datepicker table tr td.selected:hover[disabled]:focus,
+.datepicker table tr td.selected.disabled[disabled]:focus,
+.datepicker table tr td.selected.disabled:hover[disabled]:focus,
+fieldset[disabled] .datepicker table tr td.selected:focus,
+fieldset[disabled] .datepicker table tr td.selected:hover:focus,
+fieldset[disabled] .datepicker table tr td.selected.disabled:focus,
+fieldset[disabled] .datepicker table tr td.selected.disabled:hover:focus,
+.datepicker table tr td.selected.disabled:active,
+.datepicker table tr td.selected:hover.disabled:active,
+.datepicker table tr td.selected.disabled.disabled:active,
+.datepicker table tr td.selected.disabled:hover.disabled:active,
+.datepicker table tr td.selected[disabled]:active,
+.datepicker table tr td.selected:hover[disabled]:active,
+.datepicker table tr td.selected.disabled[disabled]:active,
+.datepicker table tr td.selected.disabled:hover[disabled]:active,
+fieldset[disabled] .datepicker table tr td.selected:active,
+fieldset[disabled] .datepicker table tr td.selected:hover:active,
+fieldset[disabled] .datepicker table tr td.selected.disabled:active,
+fieldset[disabled] .datepicker table tr td.selected.disabled:hover:active,
+.datepicker table tr td.selected.disabled.active,
+.datepicker table tr td.selected:hover.disabled.active,
+.datepicker table tr td.selected.disabled.disabled.active,
+.datepicker table tr td.selected.disabled:hover.disabled.active,
+.datepicker table tr td.selected[disabled].active,
+.datepicker table tr td.selected:hover[disabled].active,
+.datepicker table tr td.selected.disabled[disabled].active,
+.datepicker table tr td.selected.disabled:hover[disabled].active,
+fieldset[disabled] .datepicker table tr td.selected.active,
+fieldset[disabled] .datepicker table tr td.selected:hover.active,
+fieldset[disabled] .datepicker table tr td.selected.disabled.active,
+fieldset[disabled] .datepicker table tr td.selected.disabled:hover.active {
+  background-color: #999;
+  border-color: #555;
+}
+.datepicker table tr td.active,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled:hover {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #357ebd;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+}
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active:hover:hover,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active.disabled:hover:hover,
+.datepicker table tr td.active:focus,
+.datepicker table tr td.active:hover:focus,
+.datepicker table tr td.active.disabled:focus,
+.datepicker table tr td.active.disabled:hover:focus,
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.active,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled:hover.active,
+.open .dropdown-toggle.datepicker table tr td.active,
+.open .dropdown-toggle.datepicker table tr td.active:hover,
+.open .dropdown-toggle.datepicker table tr td.active.disabled,
+.open .dropdown-toggle.datepicker table tr td.active.disabled:hover {
+  color: #fff;
+  background-color: #ed8323;
+  border-color: #e27513;
+}
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.active,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled:hover.active,
+.open .dropdown-toggle.datepicker table tr td.active,
+.open .dropdown-toggle.datepicker table tr td.active:hover,
+.open .dropdown-toggle.datepicker table tr td.active.disabled,
+.open .dropdown-toggle.datepicker table tr td.active.disabled:hover {
+  background-image: none;
+}
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active:hover.disabled,
+.datepicker table tr td.active.disabled.disabled,
+.datepicker table tr td.active.disabled:hover.disabled,
+.datepicker table tr td.active[disabled],
+.datepicker table tr td.active:hover[disabled],
+.datepicker table tr td.active.disabled[disabled],
+.datepicker table tr td.active.disabled:hover[disabled],
+fieldset[disabled] .datepicker table tr td.active,
+fieldset[disabled] .datepicker table tr td.active:hover,
+fieldset[disabled] .datepicker table tr td.active.disabled,
+fieldset[disabled] .datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active:hover.disabled:hover,
+.datepicker table tr td.active.disabled.disabled:hover,
+.datepicker table tr td.active.disabled:hover.disabled:hover,
+.datepicker table tr td.active[disabled]:hover,
+.datepicker table tr td.active:hover[disabled]:hover,
+.datepicker table tr td.active.disabled[disabled]:hover,
+.datepicker table tr td.active.disabled:hover[disabled]:hover,
+fieldset[disabled] .datepicker table tr td.active:hover,
+fieldset[disabled] .datepicker table tr td.active:hover:hover,
+fieldset[disabled] .datepicker table tr td.active.disabled:hover,
+fieldset[disabled] .datepicker table tr td.active.disabled:hover:hover,
+.datepicker table tr td.active.disabled:focus,
+.datepicker table tr td.active:hover.disabled:focus,
+.datepicker table tr td.active.disabled.disabled:focus,
+.datepicker table tr td.active.disabled:hover.disabled:focus,
+.datepicker table tr td.active[disabled]:focus,
+.datepicker table tr td.active:hover[disabled]:focus,
+.datepicker table tr td.active.disabled[disabled]:focus,
+.datepicker table tr td.active.disabled:hover[disabled]:focus,
+fieldset[disabled] .datepicker table tr td.active:focus,
+fieldset[disabled] .datepicker table tr td.active:hover:focus,
+fieldset[disabled] .datepicker table tr td.active.disabled:focus,
+fieldset[disabled] .datepicker table tr td.active.disabled:hover:focus,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active:hover.disabled:active,
+.datepicker table tr td.active.disabled.disabled:active,
+.datepicker table tr td.active.disabled:hover.disabled:active,
+.datepicker table tr td.active[disabled]:active,
+.datepicker table tr td.active:hover[disabled]:active,
+.datepicker table tr td.active.disabled[disabled]:active,
+.datepicker table tr td.active.disabled:hover[disabled]:active,
+fieldset[disabled] .datepicker table tr td.active:active,
+fieldset[disabled] .datepicker table tr td.active:hover:active,
+fieldset[disabled] .datepicker table tr td.active.disabled:active,
+fieldset[disabled] .datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active:hover.disabled.active,
+.datepicker table tr td.active.disabled.disabled.active,
+.datepicker table tr td.active.disabled:hover.disabled.active,
+.datepicker table tr td.active[disabled].active,
+.datepicker table tr td.active:hover[disabled].active,
+.datepicker table tr td.active.disabled[disabled].active,
+.datepicker table tr td.active.disabled:hover[disabled].active,
+fieldset[disabled] .datepicker table tr td.active.active,
+fieldset[disabled] .datepicker table tr td.active:hover.active,
+fieldset[disabled] .datepicker table tr td.active.disabled.active,
+fieldset[disabled] .datepicker table tr td.active.disabled:hover.active {
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+.datepicker table tr td span {
+  display: block;
+  width: 23%;
+  height: 54px;
+  line-height: 54px;
+  float: left;
+  margin: 1%;
+  cursor: pointer;
+}
+.datepicker table tr td span:hover {
+  background: #eee;
+}
+.datepicker table tr td span.disabled,
+.datepicker table tr td span.disabled:hover {
+  background: none;
+  color: #999;
+  cursor: default;
+}
+.datepicker table tr td span.active,
+.datepicker table tr td span.active:hover,
+.datepicker table tr td span.active.disabled,
+.datepicker table tr td span.active.disabled:hover {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #357ebd;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+}
+.datepicker table tr td span.active:hover,
+.datepicker table tr td span.active:hover:hover,
+.datepicker table tr td span.active.disabled:hover,
+.datepicker table tr td span.active.disabled:hover:hover,
+.datepicker table tr td span.active:focus,
+.datepicker table tr td span.active:hover:focus,
+.datepicker table tr td span.active.disabled:focus,
+.datepicker table tr td span.active.disabled:hover:focus,
+.datepicker table tr td span.active:active,
+.datepicker table tr td span.active:hover:active,
+.datepicker table tr td span.active.disabled:active,
+.datepicker table tr td span.active.disabled:hover:active,
+.datepicker table tr td span.active.active,
+.datepicker table tr td span.active:hover.active,
+.datepicker table tr td span.active.disabled.active,
+.datepicker table tr td span.active.disabled:hover.active,
+.open .dropdown-toggle.datepicker table tr td span.active,
+.open .dropdown-toggle.datepicker table tr td span.active:hover,
+.open .dropdown-toggle.datepicker table tr td span.active.disabled,
+.open .dropdown-toggle.datepicker table tr td span.active.disabled:hover {
+  color: #fff;
+  background-color: #ed8323;
+  border-color: #e27513;
+}
+.datepicker table tr td span.active:active,
+.datepicker table tr td span.active:hover:active,
+.datepicker table tr td span.active.disabled:active,
+.datepicker table tr td span.active.disabled:hover:active,
+.datepicker table tr td span.active.active,
+.datepicker table tr td span.active:hover.active,
+.datepicker table tr td span.active.disabled.active,
+.datepicker table tr td span.active.disabled:hover.active,
+.open .dropdown-toggle.datepicker table tr td span.active,
+.open .dropdown-toggle.datepicker table tr td span.active:hover,
+.open .dropdown-toggle.datepicker table tr td span.active.disabled,
+.open .dropdown-toggle.datepicker table tr td span.active.disabled:hover {
+  background-image: none;
+}
+.datepicker table tr td span.active.disabled,
+.datepicker table tr td span.active:hover.disabled,
+.datepicker table tr td span.active.disabled.disabled,
+.datepicker table tr td span.active.disabled:hover.disabled,
+.datepicker table tr td span.active[disabled],
+.datepicker table tr td span.active:hover[disabled],
+.datepicker table tr td span.active.disabled[disabled],
+.datepicker table tr td span.active.disabled:hover[disabled],
+fieldset[disabled] .datepicker table tr td span.active,
+fieldset[disabled] .datepicker table tr td span.active:hover,
+fieldset[disabled] .datepicker table tr td span.active.disabled,
+fieldset[disabled] .datepicker table tr td span.active.disabled:hover,
+.datepicker table tr td span.active.disabled:hover,
+.datepicker table tr td span.active:hover.disabled:hover,
+.datepicker table tr td span.active.disabled.disabled:hover,
+.datepicker table tr td span.active.disabled:hover.disabled:hover,
+.datepicker table tr td span.active[disabled]:hover,
+.datepicker table tr td span.active:hover[disabled]:hover,
+.datepicker table tr td span.active.disabled[disabled]:hover,
+.datepicker table tr td span.active.disabled:hover[disabled]:hover,
+fieldset[disabled] .datepicker table tr td span.active:hover,
+fieldset[disabled] .datepicker table tr td span.active:hover:hover,
+fieldset[disabled] .datepicker table tr td span.active.disabled:hover,
+fieldset[disabled] .datepicker table tr td span.active.disabled:hover:hover,
+.datepicker table tr td span.active.disabled:focus,
+.datepicker table tr td span.active:hover.disabled:focus,
+.datepicker table tr td span.active.disabled.disabled:focus,
+.datepicker table tr td span.active.disabled:hover.disabled:focus,
+.datepicker table tr td span.active[disabled]:focus,
+.datepicker table tr td span.active:hover[disabled]:focus,
+.datepicker table tr td span.active.disabled[disabled]:focus,
+.datepicker table tr td span.active.disabled:hover[disabled]:focus,
+fieldset[disabled] .datepicker table tr td span.active:focus,
+fieldset[disabled] .datepicker table tr td span.active:hover:focus,
+fieldset[disabled] .datepicker table tr td span.active.disabled:focus,
+fieldset[disabled] .datepicker table tr td span.active.disabled:hover:focus,
+.datepicker table tr td span.active.disabled:active,
+.datepicker table tr td span.active:hover.disabled:active,
+.datepicker table tr td span.active.disabled.disabled:active,
+.datepicker table tr td span.active.disabled:hover.disabled:active,
+.datepicker table tr td span.active[disabled]:active,
+.datepicker table tr td span.active:hover[disabled]:active,
+.datepicker table tr td span.active.disabled[disabled]:active,
+.datepicker table tr td span.active.disabled:hover[disabled]:active,
+fieldset[disabled] .datepicker table tr td span.active:active,
+fieldset[disabled] .datepicker table tr td span.active:hover:active,
+fieldset[disabled] .datepicker table tr td span.active.disabled:active,
+fieldset[disabled] .datepicker table tr td span.active.disabled:hover:active,
+.datepicker table tr td span.active.disabled.active,
+.datepicker table tr td span.active:hover.disabled.active,
+.datepicker table tr td span.active.disabled.disabled.active,
+.datepicker table tr td span.active.disabled:hover.disabled.active,
+.datepicker table tr td span.active[disabled].active,
+.datepicker table tr td span.active:hover[disabled].active,
+.datepicker table tr td span.active.disabled[disabled].active,
+.datepicker table tr td span.active.disabled:hover[disabled].active,
+fieldset[disabled] .datepicker table tr td span.active.active,
+fieldset[disabled] .datepicker table tr td span.active:hover.active,
+fieldset[disabled] .datepicker table tr td span.active.disabled.active,
+fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+.datepicker table tr td span.old,
+.datepicker table tr td span.new {
+  color: #999;
+}
+.datepicker th.datepicker-switch {
+  width: 145px;
+}
+.datepicker thead tr:first-child th,
+.datepicker tfoot tr th {
+  cursor: pointer;
+}
+.btn-primary {
+  background: #ed8323;
+  border-color: #e27513;
+  margin-top: 24px;
+}
+.btn-primary:hover {
+	background: #ff7b3d;
+	border-color: #ff7b3d;
+}
+.btn-primary-invert {
+  background: #127cdc;
+  border-color: #1070c6;
+  color: #fff;
+}
+.btn-primary-invert:hover {
+  color: #fff;
+  background: #1070c6;
+  border-color: #0e63b0;
+}
+.btn-paypal {
+  background: #0079c1;
+  color: #fff;
+  border-color: #006dae;
+}
+.btn-paypal:hover {
+  color: #fff;
+  background: #006dae;
+  border-color: #00619a;
+}
+.btn-ghost {
+  background: none;
+}
+.btn-ghost.btn-primary {
+  color: #ed8323;
+}
+.btn-ghost.btn-primary:hover {
+  background: #ed8323;
+}
+.row.row-wrap {
+	margin: 2em 0 3em 0;
+}
+.booking-item-payment-flight p {
+	margin: 0 0 10px 0;
+	font-size: 14px;
+	font-weight: 600;
+}
+.row.row-wrap h3 {
+	text-transform: uppercase;
+	font-weight: 600;
+}
+/*-- search-page --*/
+h3.page-title {
+	font-size: 58px;
+	margin: 28px 0;
+	font-weight: 400;
+}
+.nav-pills > li.active > a {
+  background: #ed8323;
+  cursor: default;
+}
+.nav-pills > li.active > a:hover {
+  background: #ed8323;
+}
+.form-group .input-icon {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  display: block;
+  top: 29px;
+  left: 1px;
+  text-align: center;
+  color: #b3b3b3;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 2;
+}
+.form-group .input-icon.input-icon-show {
+  -webkit-transform: translate3d(0, -10px, 0);
+  -moz-transform: translate3d(0, -10px, 0);
+  -o-transform: translate3d(0, -10px, 0);
+  -ms-transform: translate3d(0, -10px, 0);
+  transform: translate3d(0, -10px, 0);
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.form-group .input-icon.input-icon-show + label + .form-control {
+  padding: 6px 12px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+.mb20 {
+  margin-bottom: 20px !important;
+  margin-top: 2em;
+}.hover-img .hover-hold {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.hover-img .hover-hold.hover-title-center,
+.hover-img .hover-hold.hover-icon {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.hover-img .hover-hold.hover-title-center-top,
+.hover-img .hover-hold.hover-title-center-bottom,
+.hover-img .hover-hold.hover-icon-center-top,
+.hover-img .hover-hold.hover-icon-center-bottom,
+.hover-img .hover-hold.hover-icon-group-center-top,
+.hover-img .hover-hold.hover-icon-group-center-bottom {
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+}
+.hover-img .hover-hold.hover-icon-group {
+  -webkit-transform: translate3d(0, -50%, 0);
+  -moz-transform: translate3d(0, -50%, 0);
+  -o-transform: translate3d(0, -50%, 0);
+  -ms-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+}
+.hover-img .hover-inner-block {
+	height: auto;
+}
+.hover-img .hover-inner {
+width: 100%;
+height: 100%;
+padding: 15px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+color: #fff !important;
+text-decoration:none;
+}
+.hover-img .hover-hold {
+opacity: 1;
+-ms-filter: none;
+filter: none;
+-webkit-transform: translate(0, 0);
+-moz-transform: translate(0, 0);
+-o-transform: translate(0, 0);
+-ms-transform: translate(0, 0);
+transform: translate(0, 0);
+}
+.hover-img .hover-inner-block {
+height: auto;
+}
+.hover-img .hover-inner-bg-black {
+background: rgba(0,0,0,0.5) !important;
+}
+.hover-img >.hover-inner {
+position: absolute;
+width: 100%;
+height: 44%;
+padding: 15px;
+top: 23px;
+left: 0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+opacity: 1;
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+filter: alpha(opacity=0);
+-webkit-transform: translate(0, 100%);
+-moz-transform: translate(0, 100%);
+-o-transform: translate(0, 100%);
+-ms-transform: translate(0, 100%);
+transform: translate(0, 100%);
+-webkit-transition: 0.3s;
+-moz-transition: 0.3s;
+-o-transition: 0.3s;
+-ms-transition: 0.3s;
+transition: 0.3s;
+}
+.hover-img {
+z-index: 1;
+display: block;
+position: relative;
+overflow: hidden;
+-webkit-transition: 0.3s;
+-moz-transition: 0.3s;
+-o-transition: 0.3s;
+-ms-transition: 0.3s;
+transition: 0.3s;
+}
+.text-smaller {
+  font-size: 75%;
+}
+.text-small {
+  font-size: 12px;
+  line-height: 1.5em;
+}
+.text-small p {
+  margin-bottom: 4px;
+  font-size: 11px;
+  line-height: 1.4em;
+}
+.text-small h5 {
+  font-size: 14px;
+  line-height: 1em;
+  margin-bottom: 4px;
+}
+.thumb img {
+	width: 100%;
+}
+.row.row-wrap > [class^="col-"], .row.row-col-gap > [class^="col-"] {
+margin-bottom: 30px;
+}
+.hover-img >img {
+ -webkit-transition: 4s;
+-moz-transition: 4s;
+-o-transition: 4s;
+-ms-transition: 4s;
+transition: 4s;
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+-ms-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+.reservation{
+	padding:16px 10px;
+	float: left;
+	width:100%;
+}
+.reservation ul li{
+	float: left;
+	list-style:none;
+}
+.reservation ul li.left{
+	margin-left: 15px;
+}
+.reservation ul li.span1_of_1{
+width: 20%;
+margin-left: 1em;
+}
+.reservation ul li.span1_of_2{
+	width: 9.33333%;
+}
+.reservation ul li.span1_of_4{
+	width: 8%;
+	margin-left: 18px;
+}
+.reservation h5{
+	font-size: 15px;
+	color: #000000;
+	text-transform: capitalize;
+	margin-bottom: 6px;
+}
+.book_date input[type="text"]{
+	width: 100% !important;
+	color: #858585;
+	font-size: 1em;
+	padding: 7px 23px;
+	outline: none;
+	border: 1px solid #DFDFDF;
+	box-shadow: inset 0 0 2px rgb(236, 236, 236);
+	-webkit-box-shadow: inset 0 0 2px rgb(236, 236, 236);
+	-moz-box-shadow: inset 0 0 2px rgb(236, 236, 236);
+	-o-box-shadow: inset 0 0 2px rgb(236, 236, 236);
+	-webkit-appearance: none;
+	border-radius: 9px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	-o-border-radius: 9px;
+}
+.date{
+	background:url(../images/icon.png) no-repeat 3% 50% #FFF;
+}
+.date_btn{
+	margin:22px 0 0 0px;
+}
+.date_btn form input[type="submit"] {
+	text-transform:capitalize;
+	width: 90% !important;
+	background: #FFD700;
+	color: #2A2E33;
+	padding: 8px;
+	border: none;
+	font-size: 14px;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	outline: none;
+	cursor: pointer;
+	font-weight:bold;
+	border-radius: 9px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	-o-border-radius: 9px;
+}
+.date_btn form input[type="submit"]:hover{
+	background: #00CCFF;
+}
+select {
+	width: 100%;
+	color: #858585;
+	font-size: 1em;
+	padding: 8px;
+	outline: none;
+	background: #ffffff;
+	border: 1px solid #DFDFDF;
+	border-radius: 9px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	-o-border-radius: 9px;
+}
+p.round-trip {
+color: red;
+font-size: 16px;
+font-weight: 400;
+}
+p.round-trip a {
+background: #ff7b3d;
+color: #fff;
+text-transform: uppercase;
+padding: 8px 1em;
+font-weight: 600;
+margin: 0 14px 0 0;
+text-decoration:none;
+}
+
+/*-- booking-page --*/
+/* start booking_room */
+.page-header-info-head h1{
+	color:#fff;
+	font-size:4em;
+	text-transform:uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight:700;
+}
+.page-header{
+	background:#444444;
+	margin:0;
+	padding: 1em 0;
+}
+ul.p-nav {	
+	margin: 10px auto 0;
+	width: 55%;
+}
+.online_reservation{
+    margin: 18px 0 25px 0;
+	z-index: 999;
+}
+.b_room{
+	margin: 2% 0%;
+	display: inline-flex;
+	box-shadow: 0px 0px 4px rgb(97, 97, 97);
+	-webkit-box-shadow: 0px 0px 4px rgb(97, 97, 97);
+	-moz-box-shadow: 0px 0px 4px rgb(97, 97, 97);
+	-o-box-shadow: 0px 0px 4px rgb(97, 97, 97);
+}
+.booking_room{
+	padding: 3% 10px;
+	float: left;
+	width: 30%;
+	background: #E4E4E4;
+}
+.booking_room h4{
+	font-size: 1.5em;
+	color: #202020;
+	text-transform: capitalize;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.booking_room p{
+	font-size: 1em;
+	color: #6b6b6b;
+	line-height: 1.6em;
+}
+.reservation{
+	padding: 3.5% 0 2% 0;
+	float: left;
+	background: #FFFFFF;
+}
+.reservation ul li{
+	float: left;
+}
+.reservation ul li.left{
+	margin-left: 15px;
+}
+.reservation ul li.span1_of_1{
+	width: 21.33333%;
+}
+.reservation ul li.span1_of_2{
+	width: 9.33333%;
+}
+.reservation ul li.span1_of_3{
+	width: 14.33333%;
+	margin-left: 26px;
+}
+.reservation h5{
+	font-size: 1em;
+	color: #5F5F5F;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+}
+select {
+	width: 100%;
+	color: #858585;
+	font-size: 1em;
+	padding: 7px;
+	outline: none;
+	margin: 5px 0;
+	background: #ffffff;
+	border: 1px solid #DFDFDF;
+	box-shadow: inset 0 0 2px rgb(236, 236, 236);
+	-webkit-box-shadow: inset 0 0 2px rgb(236, 236, 236);
+	-moz-box-shadow: inset 0 0 2px rgb(236, 236, 236);
+	-o-box-shadow: inset 0 0 2px rgb(236, 236, 236);
+}
+select option{
+	border: 1px solid #DFDFDF;
+	outline: none;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.book_date input[type="text"]{
+	width: 88%;
+	color: #858585;
+	font-size: 1em;
+	padding: 8px 8px 8px 33px;
+	outline: none;
+	margin: 5px 0;
+	border: 1px solid #DFDFDF;
+	box-shadow: inset 0 0 2px rgb(236, 236, 236);
+	-webkit-box-shadow: inset 0 0 2px rgb(236, 236, 236);
+	-moz-box-shadow: inset 0 0 2px rgb(236, 236, 236);
+	-o-box-shadow: inset 0 0 2px rgb(236, 236, 236);
+	-webkit-appearance: none;
+}
+
+.date_btn{
+	margin-top: 27px;
+}
+.date_btn form input[type="submit"] {
+	text-transform:capitalize;
+	width: 100% !important;
+	background: #444444;
+	color: #FFF;
+	padding: 8px;
+	border: none;
+	font-size: 1em;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	outline: none;
+	cursor: pointer;
+}
+.date_btn form input[type="submit"]:hover{
+	background: #ff7b3d;
+}
+/* start grids_of_3 */
+.grids_of_3{
+	display: block;
+	padding: 0% 0% 1%;
+}
+.grid1_of_3{
+	float: left;
+	width: 30.333333%;
+	margin-left: 4.33333%;
+
+}
+.grid1_of_3:first-child,.grid1_of_3:nth-child(4){
+	margin-left: 0;
+}
+.grid1_of_3 h4 a{
+	margin: 4% 0;
+	display:block;
+	font-size: 1.5em;
+	text-decoration: none;
+	color: #8A8A8A;
+	text-transform: capitalize;
+	font-weight: 400;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.grid1_of_3 h4 span{
+	font-weight: 600;
+	padding-left: 10px;
+	color: #202020;
+}
+.grid1_of_3 h4 a:hover{
+	color: #202020;
+}
+.grid1_of_3 p{
+	font-size: 1em;
+	color: #444444;
+	line-height: 1.8em;
+	margin-bottom: 3em;
+}
+.grid1_of_3_img{
+		position: relative;	
+}
+span.next{
+	-o-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-webkit-transition: -webkit-transform 1s;
+	background: url(../images/next.png) center no-repeat;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	bottom: 4px;
+	z-index: 10;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+span.next:hover {
+	opacity: 0.9;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.grid1_of_3_img img {
+	width: 100%;
+}
+/* start details */
+.details h2{
+	text-transform: capitalize;
+	font-size: 2em;
+	color: #000000;
+	font-weight: 600;
+}
+.det_pic{
+	margin: 2% 0;
+}
+.det_pic img {
+	width: 100%;
+}
+.read_more{
+	margin-top: 2%;
+}
+.read_more a{
+	display: inline-block;
+	text-transform: capitalize;
+	background: #444444;
+	text-decoration: none;
+	color: #FFF;
+	padding: 12px 36px;
+	border: none;
+	font-size: 1.2em;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	outline: none;
+}
+.read_more a:hover{
+	background: #ff7b3d;
+}
+.details {
+	margin: 3em 0;
+}
+p.para{
+	font-size: 1.1em;
+	color: #6b6b6b;
+	line-height: 1.8em;
+	font-weight: 500;
+	margin-bottom: 1em;
+}
+.room-content{
+	float: left;
+	width: 68.333333%;
+	margin-right: 3.3333%;
+}
+.sidebar{
+	float: left;
+	width: 24.333333%;
+	padding-left: 3.3333%;
+	border-left: 1px solid rgb(184, 184, 184);
+}
+.room {
+    padding-bottom: 4%;
+    border-bottom: 2px dashed rgb(109, 109, 109);
+}
+.room h4{
+	text-transform: capitalize;
+	font-size: 2em;
+	color: #000000;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+p.para{
+	font-size: 1em;
+	color: #444444;
+	line-height: 1.8em;
+}
+.sidebar h4{
+	text-transform: capitalize;
+	font-size: 1.4em;
+	color: #444444;
+	font-weight: 600;
+	margin: 10% 0 4%;
+}
+.s_nav li{
+	border-bottom: 1px solid rgb(194, 194, 194);
+	margin: 15px 0;
+	list-style-type: none;
+}
+.s_nav li a{
+	display: block;
+	padding:4px 0;
+	text-transform: capitalize;
+	font-size: 1em;
+	color: #6b6b6b;
+	line-height: 1.6em;
+}
+.s_nav li a:hover{
+	color: #ff7b3d;
+}
+.s_nav1 li{
+	display: inline-block;
+	margin-right: 10px;
+}
+.s_nav1 li a{
+	display: block;
+	background: url('../images/s_icons.png') no-repeat 0px 0px;
+	width: 32px;
+	height: 32px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.s_nav1 li a.icon1{
+	background-position:0px 0px;
+}
+.s_nav1 li a.icon2{
+	background-position:-42px 0px;
+}
+.s_nav1 li a.icon3{
+	background-position:-84px 0px;
+}
+.s_nav1 li a.icon4{
+	background-position:-125px 0px;
+}
+.s_nav1 li a:hover{
+	zoom: 1;
+	filter: alpha(opacity=50);
+	opacity: 0.7;
+	-webkit-transition: opacity .15s ease-in-out;
+	-moz-transition: opacity .15s ease-in-out;
+	-ms-transition: opacity .15s ease-in-out;
+	-o-transition: opacity .15s ease-in-out;
+	transition: opacity .15s ease-in-out;
+}
+.grids_of_2{
+	display: block;
+	margin: 6% 0;
+}
+.grids_of_img{
+	float: left;
+	width: 24.33333%;
+}
+.grids_of_para{
+	float: left;
+	width:73.333333%;
+	margin-left: 2.333333%;
+}
+.grids_of_img img {
+	width: 100%;
+}
+.room-main {
+	margin: 4em 0 2em 0;
+}
+/* res_online */
+.res_online h4 {
+	text-transform: capitalize;
+	font-size: 2em;
+	color: #252525;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+.span_of_2{
+	padding: 4% 0;
+	margin: 6% 0;
+	border-bottom: 2px dashed rgb(109, 109, 109);
+	border-top: 2px dashed rgb(109, 109, 109);
+}
+.span2_of_1{
+	float:left;
+	width: 47.33333%;
+	margin-left: 4.33333%;
+}
+.span2_of_1:first-child{
+	margin-left: 0;
+}
+.span2_of_1 h4{
+	text-transform: capitalize;
+	font-size: 1em;
+	color: #303030;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+.sel_room{
+	float:left;
+	width: 47.77777%;
+}
+.sel_room.left{
+	margin-left: 4.33333%;	
+}
+.book_date.btm{
+	margin-bottom: 15px;
+}
+.res_btn{
+	text-align: center;
+	display: block;
+}
+.res_btn form input[type="submit"] {
+	display: inline-block;
+	text-transform: capitalize;
+	width: 23% !important;
+	background: #444444;
+	color: #FFF;
+	padding: 15px;
+	border: none;
+	font-size: 1.2em;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	outline: none;
+	cursor: pointer;
+	-webkit-appearance: none;
+}
+.res_btn form input[type="submit"]:hover{
+	background: #ff7b3d;
+}
+.res-main {
+	margin: 4em 0;
+}
+/* start contact */
+.contact {
+	display: block;
+	margin: 4em 0 5em 0;
+}
+.contact_left {
+	float:left;
+	margin-right:3.3333%;
+	width: 32.3333%;
+}
+.contact_right {
+	float:left;
+	width: 63.3333%;
+}
+.contact_left h3{
+	margin-bottom: 2%;
+	text-transform: capitalize;
+	font-size: 2em;
+	color: #000000;
+	font-weight: 600;
+}
+.company_address{
+	padding-top:5px;
+}
+.company_address p{
+	color: #242424;
+	text-shadow: 0 1px 0 #ffffff;
+	line-height: 1.8em;
+	font-size: 1em;
+	font-weight: 600;
+}
+.company_address p a{
+	color: #ff7b3d;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	text-shadow: 0 1px 0 #ffffff;
+}
+.company_address p a:hover{
+	color: #242424;
+}
+.map{
+	margin: 6% 0 4%;
+}
+.contact_right h3{
+	margin-bottom: 2%;
+	text-transform: capitalize;
+	font-size: 2em;
+	color: #000000;
+	font-weight: 600;
+}
+.contact-form{
+	position:relative;
+	padding-bottom:30px;
+}
+.contact-form div{
+	padding:5px 0;
+}
+.contact-form span{
+	display: block;
+	color: #252525;
+	text-shadow: 0 1px 0 #ffffff;
+	line-height: 1.5em;
+	font-size: 0.7825em;
+}
+.contact-form input[type="text"],.contact-form textarea{
+	margin-top: 5px;
+	padding: 10px;
+	display: block;
+	width: 100% !important;
+	background: rgba(255, 255, 255, 1);
+	outline: none;
+	color: #444444;
+	font-size: 1.3em;
+	border: 1px solid rgb(224, 224, 224);
+	-webkit-appearance: none;
+	font-weight:500;
+}
+.contact-form input[type="text"]:hover, .contact-form textarea:hover {
+	border: 1px solid #ff7b3d;
+}
+.contact-form textarea{
+	resize:none;
+	height:160px;		
+}
+.contact-form input[type="submit"]{
+	margin-top: 10px;
+	display: inline-block;
+	text-transform: uppercase;
+	background: #444444;
+	color: #FFF;
+	padding: 15px;
+	border: none;
+	font-size: 1.4em;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	outline: none;
+	cursor: pointer;
+	font-weight: 600;
+	float: right;
+	width: 21% !important;
+	-webkit-appearance: none;
+}
+.contact-form input[type="submit"]:hover{
+	background: #ff7b3d;
+}
+.contact-form div span label {
+	font-size: 1.3em;
+	font-weight: 500;
+}
+.confer h2{
+	color: #2A2E33;
+	margin: 1.5em 0 27px 0px;
+	font-weight: 600;
+	font-size: 34px;
+	text-align: center;
+	text-transform:uppercase;
+	font-family: 'Roboto', sans-serif;
+}
+.confer h2 span{
+color: #FFD700;
+font-size: 1.5em;
+}
+.conference-slider{
+	position:relative;
+	width: 75%;
+	margin: 0 auto;
+}
+.conference-rslide {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+.conference-rslide li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+.conference-rslide li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+.conference-rslide img {
+display: block;
+height: 450px;
+float: left;
+width: 855px;
+border: 0;
+  }
+.rslides_tabs {
+  text-align: center;
+  width: 100%;
+  position:absolute;
+  bottom:-37px;
+  z-index:999;
+  }
+.rslides_tabs li {
+  display: inline;
+  }
+.rslides_tabs a {
+   border:1px solid #999;
+  }
+.rslides_tabs li:first-child {
+  margin-left: 0;
+  }
+.rslides_tabs .rslides_here a {
+  color: #fff;
+  font-weight: bold;
+  }
+#slider3-pager a {
+  display: inline-block;
+}
+#slider3-pager img {
+  float: left;
+  display:block;
+  width: 100%;
+}
+#slider3-pager .rslides_here a {
+  background: transparent;
+  border:1px solid #000;
+}
+#slider3-pager a {
+  padding:0.2em;
+}
+/*-- responsive-mediaqueries --*/
+@media (max-width:768px){
+	#slider3-pager a {
+		width: 13%;
+	}
+	.rslides_tabs {
+		bottom: 10px;
+	}
+}
+@media (max-width:640px){
+	#slider3-pager a {
+		width: 13%;
+	}
+	.rslides_tabs {
+		bottom: 15px;
+	}
+}
+@media (max-width:480px){
+	#slider3-pager a {
+		width: 13%;
+	}
+	.rslides_tabs {
+		bottom: 20px;
+	}
+}
+@media (max-width:320px){
+	#slider3-pager a {
+		width: 15%;
+	}
+	.rslides_tabs {
+		bottom: 25px;
+	}
+}
+.confer {
+	margin-bottom: 4em;
+}
+
+/*-- responsive-design --*/
+@media only screen and (max-width:1366px) {
+	.header {
+		min-height: 877px;
+	}
+	.header-info {
+		padding-top: 10em;
+	}
+	.header-info-head h1 {
+		font-size: 6em;
+	}
+	.header-info-head h2 {
+		font-size: 4.5em;
+		margin: 0.3em 0 1.7em 0;
+	}
+	.nav {
+		margin: 16.5em 0 0 12em;
+	}
+	i.flow {
+		bottom: -16.33em;
+		left: 30em;
+	}
+	.services-section-left {
+		padding: 4em 7em 6.5em 10em;
+	}
+	i.flow1 {
+		bottom: 34.89em;
+		left: 33.9em;
+	}
+}
+@media only screen and (max-width:1280px) {
+	.header-info-head h1 {
+		font-size: 5.8em;
+	}
+	.header-info-head h2 {
+		font-size: 4em;
+		margin: 0.1em 0 1.8em 0;
+	}
+	.header-info {
+		padding-top: 9em;
+		width: 68%;
+	}
+	.header {
+		min-height: 820px;
+	}
+	.nav {
+		margin: 16.5em 0 0 6em;
+	}
+	i.flow {
+		bottom: -9.969em;
+		left: 25.35em;
+	}
+	.services-section-left {
+		padding: 4em 7em 5.5em 9em;
+	}
+	.services-section-left h3 {
+		font-size: 2em;
+	}
+	.services-section-left h5 {
+		font-size: 1.8em;
+		margin-bottom: 1.4em;
+	}
+	.services-section-right {
+		padding: 4em 3em 1.35em 3em;
+	}
+	.call-us h3 {
+		font-size: 2.3em;
+	}
+	.call-us {
+		padding: 1.2em 0;
+		margin-top: 3.5em;
+	}
+	.mail h3 {
+		font-size: 2.5em;
+	}
+	.mail {
+		padding: 1em 0;
+	}
+	.main-map iframe {
+		min-height: 450px;
+	}
+	.contact-section {
+		padding: 4em 0;
+	}
+	.page-header-info-head h1 {
+		font-size: 3.5em;
+	}
+	h3.page-title {
+		font-size: 52px;
+	}
+}
+@media only screen and (max-width:1024px) {
+	.header-info {
+		padding-top: 7em;
+		width: 77%;
+	}
+	.header-info-head h1 {
+		font-size: 5em;
+	}
+	.header-info-head h2 {
+		font-size: 3.5em;
+		margin: 0.1em 0 1.6em 0;
+	}
+	.flat .selected, .flat li {
+		padding: 11px 0px 11px 12px;
+		font-size:1em;
+	}
+	.top-search input[type="text"] {
+		font-size: 16px;
+		padding: 9px 10px;
+	}
+	.flat .selected::after {
+		top: -4px;
+	}
+	.top-search {
+		margin: 1px 2% 0 14%;
+	}
+	.nav li a {
+		padding: 10px 20px;
+	}
+	.header {
+		min-height: 662px;
+	}
+	.nav {
+		margin: 12em 0 0 6em;
+	}
+	i.flow {
+		bottom: -6.75em;
+		left: 18.35em;
+	}
+	.services-section-left {
+		padding: 3em 6em 4em 6em;
+		width: 35%;
+	}
+	.services-section-right {
+		width: 65%;
+	}
+	.services-section-left h3 {
+		font-size: 1.95em;
+	}
+	.services-section-right {
+		padding: 2.5em 1em 0em 2em;
+	}
+	.services-section-image {
+		width: 33%;
+		margin-right: 2%;
+	}
+	.services-section-right-text p {
+		font-size: 15px;
+		margin: 0 0 15px 0px;
+		line-height: 1.6em;
+	}
+	span.quote1 {
+		bottom: -25%;
+		left: 58%;
+	}
+	span.quote2 {
+		bottom: -51%;
+		left: 89%;
+	}
+	.call-us h3 {
+		font-size: 2.1em;
+	}
+	.call-us {
+		padding: 1em 0;
+		margin-top: 3em;
+	}
+	.planning-section-left h3 {
+		font-size: 2.1em;
+	}
+	.planning-section-left h4 {
+		font-size: 1.7em;
+	}
+	.planning-section {
+		padding: 2.5em 0;
+	}
+	.yup-text h3 {
+		font-size: 1.6em;
+		margin-top: 13px;
+	}
+	.couple-text h3 {
+		font-size: 1.45em;
+	}
+	.news-search-box form input[type="text"] {
+		width: 85%;
+	}
+	.mail h3 {
+		font-size: 2.2em;
+	}
+	.mail {
+		padding: 0.7em 0;
+	}
+	.main-map iframe {
+		min-height: 400px;
+	}
+	.contact-section input[type="text"], .contact-section textarea {
+		padding: 13px 14px;
+		margin: 0 19px 30px 0;
+		font-size: 15px;
+	}
+	.contact-section textarea {
+		height: 12em;
+	}
+	.contact-section input[type="submit"] {
+		width: 27%;
+		padding: 0.2em 0;
+		margin: 0px 0 0 37%;
+		font-size: 25px;
+	}
+	.contact-section {
+		padding: 4em 0 2em 0;
+	}
+	.page-header-info-head h1 {
+		font-size: 3.1em;
+	}
+	.nav li a {
+		font-size: 1.1em;
+	}
+	ul.p-nav {
+		width: 58%;
+	}
+	.grid1_of_3 {
+		width: 31.333333%;
+		margin-left: 2.33333%;
+	}
+	.reservation {
+		padding: 6% 0 2% 0;
+	}
+	.room-main {
+		margin: 3em 0 1em 0;
+	}
+	p.para {
+		margin-bottom: 0em;
+	}
+	.grids_of_2 {
+		margin: 5% 0;
+	}
+	.grids_of_img {
+		width: 33.33333%;
+	}
+	.grids_of_para {
+		width: 64.333333%;
+		margin-left: 2.333333%;
+	}
+	h3.page-title {
+		font-size: 45px;
+		margin: 20px 0;
+	}
+	p.round-trip a {
+		padding: 6px 1em;
+		font-size: 15px;
+	}
+	.reservation ul li.span1_of_1 {
+		width: 19.33333%;
+	}
+	.reservation ul li.span1_of_4 {
+		width: 13%;
+	}
+	.book_date input[type="text"] {
+		padding: 7px 8px 7px 33px;
+	}
+	.row.row-wrap > [class^="col-"], .row.row-col-gap > [class^="col-"] {
+		margin-bottom: 18px;
+		padding: 0 15px 0 0;
+	}
+	.hover-img >.hover-inner {
+		padding: 9px;
+	}
+	.details {
+		margin: 2em 0 3em 0;
+	}
+	.confer h2 {
+		margin: 1em 0 15px 0px;
+		font-size: 32px;
+	}
+	.conference-rslide img {
+		height: 400px;
+		width: 706px;
+	}
+	.cc-form .form-group.form-group-cc-date, .cc-form .form-group.form-group-cc-cvc {
+		width: 30%;
+	}
+	.radio-inline + .radio-inline, .checkbox-inline + .checkbox-inline {
+		margin-left: 25px;
+	}
+	.nav > li.hover > ul {
+		top: 41px;
+	}
+	.nav > li > a.parent:hover {
+		background: url('../images/arrow.png') no-repeat 50px 32px;
+	}
+}
+@media only screen and (max-width:800px) {
+	.sidebar h4 {
+		margin: 6% 0 4%;
+	}
+	.sidebar {
+		width: 53.333333%;
+		padding-left: 0;
+		border-left: none;
+	}
+	.nav {
+		margin:0;
+	}
+	i.flow {
+		display: none;
+	}
+	i.flow1 {
+		display: none;
+	}
+	i.flow2{
+		display: none;
+	}
+	i.flow3 {
+		display: none;
+	}
+	i.flow4{
+		display: none;
+	}
+	.header-info-head h1 {
+		font-size: 4em;
+	}
+	.header-info-head h2 {
+		font-size: 3em;
+		margin: 0.1em 0 1.1em 0;
+	}
+	.header-info {
+		padding-top: 5.5em;
+	}
+	.top-search {
+		margin: 1px 2% 65px 10%;
+	}
+	.flat .selected, .flat li {
+		padding: 10px 0px 10px 9px;
+	}
+	.dropdown-button {
+		width: 28%;
+	}
+	.header {
+		min-height: 504px;
+	}
+	.services-section-left {
+		padding: 3em 2em 3em 2em;
+		width: 30%;
+	}
+	.services-section-left h3 {
+		font-size: 1.8em;
+	}
+	.services-section-left h5 {
+		font-size: 1.5em;
+		margin-bottom: 1.5em;
+	}
+	.services-section-right {
+		width: 70%;
+	}
+	.services-section-right {
+		padding: 2.3em 1em 0em 1em;
+	}
+	.services-section-right-text p {
+		margin: 0 0 12px 0px;
+		height: 69px;
+		overflow: hidden;
+	}
+	.services-section-right-text a {
+		font-size: 17px;
+	}
+	.services-section-right-text span {
+		font-size: 18px;
+		margin-top: -4px;
+	}
+	.services-section-right-text p img {
+		display: none;
+	}
+	.call-us h3 {
+		font-size: 1.8em;
+	}
+	.call-us {
+		padding: 10px 0;
+		margin-top: 2.5em;
+	}
+	.planning-section-left h3 {
+		font-size: 2em;
+	}
+	.planning-section-left h4 {
+		font-size: 1.6em;
+	}
+	.sap_tabs {
+		padding: 2em 0 00;
+	}
+	.planning-section-right-grid {
+		margin-bottom: 1em;
+		width: 47%;
+		float: left;
+	}
+	.planning-section-right-grid2 {
+		margin-bottom: 2em;
+		padding: 2.35em 1.4em;
+		width: 50%;
+		float: right;
+	}
+	.couple-text h3 {
+		font-size: 1.6em;
+	}
+	.planning-section-right {
+		margin-top: 4em;
+	}
+	.news-search-box {
+		margin: 10px 0 6px 0em;
+	}
+	.news-search-box form input[type="text"] {
+		width: 93.5%;
+	}
+	.mail h3 {
+		font-size: 2em;
+	}
+	.mail {
+		padding: 0.5em 0;
+	}
+	.main-map iframe {
+		min-height: 350px;
+	}
+	.contact-section input[type="text"], .contact-section textarea {
+		padding: 11px 12px;
+		margin: 0 14px 24px 0;
+		font-size: 14px;
+	}
+	.contact-section {
+		padding: 3em 0 1em 0;
+	}
+	.contact-section textarea {
+		height: 11em;
+	}
+	.contact-section input[type="submit"] {
+		width: 25%;
+		margin: 0px 0 0 38%;
+		font-size: 20px;
+	}
+	.copy-rights p {
+		font-size: 15px;
+	}
+	.copy-rights a {
+		font-size: 16px;
+	}
+	.yup-text h3 {
+		margin-top: 20px;
+	}
+	.tab_desc {
+		padding: 1.5em 0;
+	}
+	.page-header-info-head h1 {
+		font-size: 3em;
+		margin-bottom: 6px;
+	}
+	.grid1_of_3 h4 a {
+		font-size: 1.1em;
+	}
+	.grid1_of_3 p {
+		height: 95px;
+		overflow: hidden;
+	}
+	.booking_room {
+		width: 100%;
+	}
+	.b_room {
+		display: block;
+	}
+	.reservation {
+		padding: 4% 0 2% 0;
+	}
+	.online_reservation {
+		margin: 30px 0;
+	}
+	.grids_of_3 {
+		padding: 0% 0% 0%;
+	}
+	.room-content {
+		width: 100%;
+		margin-right: 0;
+	}
+	.room {
+		padding-bottom: 25px;
+	}
+	.grids_of_img {
+		width: 31.33333%;
+	}
+	.grids_of_para {
+		width: 65.333333%;
+		margin-left: 3.333333%;
+	}
+	.reservation ul li.span1_of_1 {
+		width: 33.33333%;
+	}
+	.reservation h5 {
+		margin-bottom: 3px;
+	}
+	h3.page-title {
+		font-size: 37px;
+		margin: 16px 0;
+	}
+	.mb20 {
+		margin-top: 1.2em;
+	}
+	.row.row-wrap > [class^="col-"], .row.row-col-gap > [class^="col-"] {
+		width: 33.333%;
+		float:left;
+	}
+	.contact{
+		margin: 2.5em 0 3.5em 0;
+	}
+	.contact_left h3 {
+		font-size: 1.8em;
+	}
+	.contact_left{
+		margin-right: 0;
+		width: 100%;
+	}
+	.map {
+		margin: 2% 0 2%;
+	}
+	.contact_right {
+		width: 100%;
+	}
+	.contact-form {
+		margin-top: 1em;
+	}
+	.contact_right h3 {
+		font-size: 1.8em;
+	}
+	.contact-form input[type="submit"] {
+		width: 24% !important;
+	}
+	.details h2 {
+		font-size: 1.8em;
+	}
+	.read_more a {
+		padding: 10px 30px;
+	}
+		.conference-slider {
+		width: 90%;
+	}
+	.conference-rslide img {
+		height: 375px;
+		width: 648px;
+	}
+	.confer h2 {
+		margin: 0.81em 0 15px 0px;
+		font-size: 30px;
+	}
+	img.pp-img {
+		width: 30%;
+	}
+	.btn-primary {
+		margin: 18px 0 27px 0;
+	}
+	.paymemt-row-wrap {
+		margin: 2em 0 3em 0;
+	}
+	ul.p-nav {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width:768px) {
+	.services-section-left h3 {
+		font-size: 1.7em;
+	}
+	.header {
+		min-height: 494px;
+	}
+	.rslides_tabs {
+		bottom: -33px;
+	}
+}
+@media only screen and (max-width:640px) {
+	.header-info-head h1 {
+		font-size: 3.2em;
+	}
+	.header-info-head h2 {
+		font-size: 1.9em;
+		margin: 0.1em 0 2.1em 0;
+	}
+	.header-info {
+		padding-top: 4.5em;
+	}
+	.top-search input[type="text"] {
+		font-size: 15px;
+		padding: 6px 9px;
+	}
+	.flat .selected, .flat li {
+		padding: 8px 0px 8px 7px;
+		font-size: 0.9em;
+	}
+	.flat .selected::after {
+		top: -7px;
+		right: -4px;
+	}
+	.dropdown-button {
+		width: 30%;
+	}
+	a.toggleMenu {
+		padding: 4px 23px;
+		font-size: 19px;
+	}
+	.nav li a {
+		padding: 5px 20px;
+		font-size: 1.1em;
+	}
+	.top-search {
+		margin: 1px 2% 55px 10%;
+	}
+	.header {
+		min-height: 410px;
+	}
+	.call-us h3 {
+		font-size: 1.5em;
+	}
+	i.phone {
+		width: 20px;
+		height: 30px;
+		background: url('../images/img-sprite.png') no-repeat -2px -1px;
+		margin-right: 4px;
+		background-size: 240px;
+	}
+	.call-us {
+		padding: 8px 0;
+		margin-top: 2em;
+	}
+	.planning-section-left h3 {
+		font-size: 1.7em;
+	}
+	.planning-section-left h4 {
+		font-size: 1.4em;
+	}
+	.planning-section {
+		padding: 1.5em 0;
+	}
+	.resp-tab-item {
+		font-size: 1.1em;
+		padding: 9px 10px;
+	}
+	.tab_desc {
+		padding: 0.7em 0;
+	}
+	.tab_desc h5 {
+		font-size: 17px;
+	}
+	.tab_desc span {
+		font-size: 14px;
+		margin: 0px 0 0 0;
+	}
+	.tab_desc a {
+		font-size: 16px;
+	}
+	.yup-text h3 {
+		font-size: 1.4em;
+		margin-top: 13px;
+	}
+	.couple-text h3 {
+		font-size: 1.4em;
+	}
+	.planning-section-right-grid2 {
+		padding: 1.8em 1em;
+	}
+	.planning-section-right h4 {
+		font-size: 23px;
+	}
+	.news-search-box form input[type="text"] {
+		width: 92%;
+	}
+	.mail h3 {
+		font-size: 1.8em;
+	}
+	i.msg {
+		margin-right: 5px;
+	}
+	.main-map iframe {
+		min-height: 300px;
+	}
+	.contact-section input[type="text"], .contact-section textarea {
+		padding: 10px 12px;
+		margin: 0 11px 20px 0;
+		font-size: 13px;
+	}
+	.contact-section input[type="submit"] {
+		width: 24%;
+		margin: 0px 0 0 39%;
+		font-size: 19px;
+	}
+	.copy-rights p {
+		font-size: 14px;
+	}
+	.copy-rights a {
+		font-size: 15px;
+	}
+	.services-section-left {
+		padding: 2em 1em 2em 2em;
+	}
+	.services-section-left h3 {
+		font-size: 1.4em;
+	}
+	.services-section-left h5 {
+		font-size: 1.3em;
+	}
+	.services-section-right {
+		padding: 1em 1em 0em 1em;
+	}
+	.services-section-image {
+		margin-top: 1.5em;
+	}
+	.services-section-right-text p {
+		margin: 15px 0 12px 0px;
+		height: 48px;
+	}
+	.reservation ul li.span1_of_1 {
+		width: 45.33333%;
+	}
+	.reservation ul li.span1_of_2 {
+		width: 26.33333%;
+	}
+	.reservation h5 {
+		margin-bottom: 3px;
+	}
+	.grid1_of_3:first-child, .grid1_of_3:nth-child(3), .grid1_of_3:nth-child(5) {
+		margin-left: 0;
+	}
+	.grid1_of_3 {
+		width: 47.833333%;
+		margin-left: 4.33333%;
+	}
+	.grid1_of_3:nth-child(4) {
+		margin-left: 4.33333%;
+	}
+	.sidebar {
+		width: 64.333333%;
+	}
+	p.para {
+		height: 125px;
+		overflow: hidden;
+	}
+	.res-main {
+		margin: 2.5em 0;
+	}
+	.res_btn form input[type="submit"] {
+		width: 26% !important;
+		background: #444444;
+		padding: 10px;
+	}
+	h3.page-title {
+		font-size: 32px;
+		margin: 15px 0;
+	}
+	.hover-img >.hover-inner {
+		top: 15px;
+	}
+	.row.row-wrap {
+		margin: 2em 0 2em 0;
+	}
+	.details h2 {
+		font-size: 1.6em;
+	}
+	.conference-rslide img {
+		height: 310px;
+		width: 533px;
+	}
+	.confer h2 {
+		margin: 0.6em 0 13px 0px;
+		font-size: 27px;
+	}
+}
+@media only screen and (max-width:480px) {
+	.header-info-head h1 {
+		font-size: 2.6em;
+	}
+	.header-info {
+		padding-top: 2.8em;
+		width: 90%;
+	}
+	.header-info-head h2 {
+		font-size: 1.5em;
+		margin: 0.1em 0 2em 0;
+	}
+	.top-search input[type="text"] {
+		font-size: 13px;
+		padding: 5px 8px;
+	}
+	.top-search {
+		margin: 1px 2% 45px 7%;
+	}
+	.flat .selected, .flat li {
+		padding: 7px 0px 7px 6px;
+		font-size: 0.82em;
+	}
+	.dropdown-button {
+		width: 35%;
+	}
+	a.toggleMenu {
+		font-size: 17px;
+	}
+	.nav li a {
+		padding: 5px 15px;
+		font-size: 1em;
+	}
+	.header {
+		min-height: 304px;
+	}
+	.flat .selected::after {
+		padding: 17px 17px;
+	}
+	.services-section-left h3:nth-child(3) {
+		display: none;
+	}
+	.services-section-left {
+		padding: 3em 1em 2em 2em;
+	}
+	.services-section-right-text p {
+		margin: 12px 0 10px 0px;
+		height: 43px;
+	}
+	.services-section-right-text a {
+		font-size: 16px;
+	}
+	.services-section-right-text span {
+		font-size: 17px;
+		margin-top: -6px;
+	}
+	.call-us h3 {
+		font-size: 1.1em;
+	}
+	.planning-section-left h3 {
+		font-size: 1.5em;
+	}
+	.planning-section-left h4 {
+		font-size: 1.25em;
+	}
+	.planning-section-right-grid {
+		margin-bottom: 3em;
+		width: 100%;
+		float: none;
+		padding: 0em 1.3em;
+	}
+	.planning-section-right-grid2 {
+		margin-bottom: 1.5em;
+		padding: 2.35em 1.4em;
+		width: 100%;
+		float: none;
+	}
+	.planning-section-right {
+		margin-top: 1em;
+	}
+	.yup-text h3 {
+		font-size: 1.5em;
+		margin-top: 30px;
+	}
+	.news-search-box form input[type="text"] {
+		width: 89%;
+	}
+	.mail h3 {
+		font-size: 1.5em;
+	}
+	.main-map iframe {
+		min-height: 260px;
+	}
+	.contact-section input[type="text"], .contact-section textarea {
+		padding: 10px 10px;
+		margin: 0 7px 20px 0;
+	}
+	.reservation ul li.span1_of_2 {
+		width: 22.33333%;
+	}
+	.page-header-info-head h1 {
+		font-size: 2.8em;
+	}
+	.reservation ul li.span1_of_3 {
+		width: 19.33333%;
+		margin-left: 13px;
+	}
+	.date_btn {
+		margin-top: 21px;
+	}
+	.date_btn form input[type="submit"] {
+		font-size: 0.95em;
+	}
+	p.para {
+		height: 91px;
+		overflow: hidden;
+		font-size: 0.95em;
+		line-height: 1.7em;
+	}
+	.sidebar {
+		width: 88.333333%;
+	}
+	.s_nav li {
+		margin: 7px 0;
+	}
+	.s_nav li a {
+		padding: 2px 0;
+		font-size: 0.97em;
+	}
+	.res_online h4 {
+		font-size: 1.8em;
+		margin-bottom: 5px;
+	}
+	.sel_room.left {
+		margin-left: 0;
+	}
+	.sel_room {
+		width: 100%;
+	}
+	select {
+		margin: 5px 0 7px 0;
+	}
+	h3.page-title {
+		font-size: 28px;
+	}
+	p.round-trip a {
+		font-size: 13px;
+	}
+	.row.row-wrap > [class^="col-"], .row.row-col-gap > [class^="col-"] {
+		width: 50%;
+		padding: 0 9px;
+	}
+	.reservation ul li.span1_of_4 {
+		width: 44%;
+	}
+	.contact-form div span label {
+		font-size: 1.2em;
+	}
+	.contact-form input[type="text"], .contact-form textarea {
+		padding: 8px;
+	}
+	.contact-form textarea {
+		height: 140px;
+	}
+	.contact-form input[type="submit"] {
+		width: 33% !important;
+		padding: 12px;
+	}
+	.details h2 {
+		font-size: 1.2em;
+	}
+	.read_more a {
+		padding: 9px 30px;
+		font-size: 1.1em;
+	}
+
+	.conference-rslide img {
+		height: 260px;
+	}
+	.confer {
+		margin-bottom: 2.5em;
+	}
+}
+@media only screen and (max-width:320px) {
+	.header-info-head h1 {
+		font-size: 1.8em;
+		margin-bottom: 1em;
+	}
+	.header-info-head h2 {
+		display: none;
+	}
+	.header-info {
+		padding-top: 2em;
+		width: 100%;
+	}
+	.top-search {
+		margin: 1px 2% 35px 3%;
+	}
+	.flat .selected, .flat li {
+		font-size: 0.8em;
+		padding: 6px 0px 7px 6px;
+	}
+	.dropdown-button {
+		width: 40%;
+	}
+	a.toggleMenu {
+		font-size: 15px;
+		padding: 3px 23px;
+	}
+	.h_menu4 {
+		width: 50%;
+	}
+	.nav li a {
+		padding: 4px 15px;
+		font-size: 0.95em;
+	}
+	.header {
+		min-height: 199px;
+	}
+	.top-search input[type="text"] {
+		font-size: 12px;
+		padding: 5px 8px;
+	}
+	.planning-section-left {
+		padding: 0;
+	}
+	.services-section-left {
+		padding: 1em 3em;
+		width: 100%;
+	}
+	.services-section-left h5 {
+		margin-bottom: 0;
+	}
+	.services-section-right {
+		width: 100%;
+		padding: 1em;
+	}
+	.services-section-right-text p {
+		margin: 0px 0 7px 0px;
+		height: 44px;
+		line-height:1.4em;
+	}
+	.services-section-image {
+		margin-top: 1em;
+	}
+	.call-us h3 {
+		font-size: 0.85em;
+	}
+	.services-section-right-text a {
+		font-size: 15px;
+	}
+	.services-section-right-text span {
+		font-size: 16px;
+	}
+	.call-us {
+		padding: 6px 0;
+		margin-top: 0em;
+	}
+	.planning-section-left h3 {
+		font-size: 1.3em;
+	}
+	.planning-section-left h4 {
+		font-size: 1.1em;
+	}
+	.planning-section {
+		padding: 1em 0;
+	}
+	.sap_tabs {
+		padding: 1.3em 0 0 0;
+	}
+	h2.resp-accordion {
+		font-size: 14px;
+		padding: 7px;
+	}
+	.tab_desc h5 {
+		font-size: 15px;
+	}
+	.tab_desc span {
+		font-size: 12px;
+	}
+	.tab_desc a {
+		font-size: 15px;
+	}
+	.planning-section-right {
+		padding: 0;
+	}
+	.yup-text h3 {
+		font-size: 1.3em;
+		margin-top: 16px;
+	}
+	.couple-image img {
+		width: 75%;
+	}
+	.couple-text h3 {
+		font-size: 1.3em;
+	}
+	.planning-section-right-grid2 {
+		padding: 1.5em 1em;
+	}
+	.couple-image {
+		width: 43%;
+		top: -28px;
+		right: -16px;
+	}
+	.planning-section-right h4 {
+		font-size: 22px;
+	}
+	.news-search-box form input[type="text"] {
+		width: 83%;
+	}
+	.mail h3 {
+		font-size: 1.1em;
+	}
+	i.msg {
+		width: 25px;
+		height: 30px;
+		background: url('../images/img-sprite.png') no-repeat -56px -2px;
+		background-size: 220px;
+	}
+	i.location {
+		width: 30px;
+		height: 35px;
+		background: url('../images/img-sprite.png') no-repeat -107px 1px;
+		margin-right: 3px;
+		background-size: 270px;
+	}
+	.main-map iframe {
+		min-height: 240px;
+	}
+	.contact-section input[type="text"], .contact-section textarea {
+		width: 97%;
+		padding: 8px 10px;
+		margin: 0 0px 15px 0;
+	}
+	.contact-section {
+		padding: 2em 0 0em 0;
+	}
+	.contact-section input[type="submit"] {
+		width: 35%;
+		margin: 0px 0 0 31%;
+		font-size: 17px;
+	}
+	.page-header-info-head h1 {
+		font-size: 2em;
+	}
+	.booking_room h4 {
+		font-size: 1.4em;
+		margin-bottom: 2px;
+	}
+	.reservation ul li.span1_of_1 {
+		width: 88.33333%;
+	}
+	.reservation ul li.span1_of_2 {
+		width: 43.33333%;
+	}
+	.reservation ul li.span1_of_3 {
+		width: 39.33333%;
+		margin-left: 15px;
+	}
+	.grid1_of_3 {
+		width: 100%;
+		margin: 0;
+	}
+	.grid1_of_3:nth-child(4) {
+		margin-left: 0;
+	}
+	span.next {
+		display:none;
+	}
+	ul.p-nav {
+		width: 100%;
+	}
+	.room h4 {
+		font-size: 1.7em;
+		margin-bottom: 4px;
+	}
+	.text-small h5 {
+		font-size: 18px;
+	}
+	.room-main {
+		margin: 1.5em 0 1em 0;
+	}
+	.text-small p {
+		font-size: 14px;
+	}
+	.hover-img .hover-inner-bg-black {
+		background: rgba(0, 0, 0, 0.68) !important;
+	}
+	p.para {
+		height: 62px;
+		font-size: 0.95em;
+		line-height: 1.6em;
+	}
+	.sidebar {
+		width: 100%;
+	}
+	.res-main {
+		margin: 1.5em 0;
+	}
+	.res_btn form input[type="submit"] {
+		width: 44% !important;
+		padding: 7px;
+	}
+	img.pp-img {
+		width: 50%;
+	}
+	.cc-form .form-group.form-group-cc-number, .cc-form .form-group.form-group-cc-name {
+		width: 85%;
+	}
+	.cc-form .form-group.form-group-cc-date, .cc-form .form-group.form-group-cc-cvc {
+		width: 45%;
+	}
+	.row.row-wrap > [class^="col-"], .row.row-col-gap > [class^="col-"] {
+		width: 100%;
+		padding: 0 5px;
+	}
+	.hover-img >.hover-inner {
+		padding: 15px;
+	}
+	.hover-img >.hover-inner {
+		top: 23px;
+	}
+	.mb20 {
+		margin-top: 1em;
+		margin-bottom: 0px !important;
+		font-size: 20px;
+	}
+	h3.mb20 {
+		font-size: 20px;
+	}
+	h3.page-title {
+		font-size: 25px;
+	}
+	.confer h2 {
+		margin: 0.4em 0 10px 0px;
+		font-size: 22px;
+	}
+	.conference-slider {
+		width: 100%;
+	}
+	.conference-rslide img {
+		height: 200px;
+		width: 273px;
+	}
+	.rslides_tabs li:nth-child(7){
+		display:none;
+	}
+	.rslides_tabs {
+		bottom: -21px;
+	}
+	.confer {
+		margin-bottom: 2em;
+	}
+	.contact-form input[type="submit"] {
+		width: 50% !important;
+		padding: 10px;
+	}
+	.contact {
+		margin: 1.5em 0 2.5em 0;
+	}
+	.read_more {
+		margin-top: 6%;
+	}
+	.read_more a {
+		padding: 7px 25px;
+	}
+	.details {
+		margin: 1.5em 0 2em 0;
+	}
+	.footer {
+		padding: 1.5em 0;
+	}
+}

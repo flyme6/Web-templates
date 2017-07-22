@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Home</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<div class="main-header">
+		<!----- start-header---->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							   <img src="images/logo.png" alt="">
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">Home</a></li>
+								<li><a href="#themes" class="scroll">Themes</a></li>
+								<li><a href="#extensions " class="scroll">Extensions</a></li>
+								<li><a href="#support " class="scroll"> Support </a></li>
+								<li><a href="#blog " class="scroll"> Blog </a></li>	
+								<li><a href="#join " class="scroll">Join </a></li>		
+							</ul>
+							<a href="#" id="pull"><img src="images/menu-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<div class="welcome-note">
+					<div class="content-left">
+						<p>increadibly</p>
+						<h3>beautiful</h3>
+						<h2>templates </h2>
+						<h1>for joomla!</h1>
+							<div class="slide-btns">
+			          			<a class="livedemo" href="#">Themes</a>
+			          			<a class="startnow" href="#">Demo</a>
+			          		</div>
+					</div>
+				</div>
+		</div>
+		<!----- //End-header---->
+			 <div id="themes" class="Themes">
+	 			<div class="container">
+	 			<div class="Pramotion">
+		 			<div class="col-md-4 pramotion-grid">
+		 					<i>	</i>
+		 					<h3>Join</h3>
+		 					<p>Signup for one of our membership plans</p>
+		 			</div>
+	 				<div class="col-md-4 pramotion-grid2">
+	 					<i> </i>
+	 					<h3>Download</h3>
+	 					<p>Download your Template</p>
+	 				</div>
+	 				<div class="col-md-4 pramotion-grid3">
+	 					<i>	</i>
+	 					<h3>Start using</h3>
+	 					<p>Signup for one of our membership plans</p>
+	 				</div>
+	 				<div class="clearfix"> </div>
+	 			</div>
+	 			</div>
+		 </div>
+		  <!------------//End---join---------->
+	<script src="js/jquery.openCarousel.js" type="text/javascript"></script>
+       <script>
+			$( function() {
+				$( '#cbp-fwslider' ).cbpFWSlider();
+
+			} );
+		</script>
+		    <div id="extensions" class="Extensions ">
+		    	 <div class="Extensions-content">
+				  			 <div id="extensions" div class="ocarousel_slider">
+				  			 	<div class="ocarousel_text">
+				  			 		<div class="blue-text">
+				  						<h3>NEW JOOMLA TEMPLATES</h3>
+				  						<a class="tem-btn" href="#">All Templates</a>
+				  					</div>
+
+				  				</div> 
+				  					<div class="ocarousel example_photos" data-ocarousel-perscroll="3">
+				  					<div class="ocarousel_window">
+						                  <a href="#" ><img src="images/slide1.png" class="img-responsive" alt="" /></a>
+						                   <a href="#"><img src="images/slide2.png" class="img-responsive" alt="" /></a>
+						                   <a href="#"> <img src="images/slide4.png" class="img-responsive" alt="" /></a>
+						                   <a href="#"> <img src="images/slide3.png" class="img-responsive" alt="" /></a>
+						                   <a href="#"><img src="images/slide2.png" class="img-responsive" alt="" /></a>
+						                   <a href="#"> <img src="images/slide1.png" class="img-responsive" alt="" /></a>
+						                </div>
+							            <span>           
+							                 <a href="#" data-ocarousel-link="left" style="float: left;" class="prev"> </a>
+                							<a href="#" data-ocarousel-link="right" style="float: right;" class="next"> </a>
+
+							            </span>
+							        </div>
+							        <div class="clearfix"> </div>
+							   </div>
+				     		</div>      		
+	  					</div>	
+		  <!------------/start------------->
+		  	 <div id="support" class="support ">
+				<div class="container">
+					<div class="row  top-grids">
+						<div class="col-md-4 easy-them">
+							<a href="#"><img class="img-responsive" src="images/s-1.png" alt=""/></a>
+							<h4>responsive design</h4>
+							<p>Our themes easily fit different screen sizes and mobile devices. One interface to fit them all.</p>
+						</div>
+						<div class="col-md-4 easy-them">
+							<a href="#"><img class="img-responsive" src="images/s-2.png" alt=""/></a>
+							<h4>Quick Installation</h4>
+							<p>Our themes easily fit different screen sizes and mobile devices. One interface to fit them all.</p>
+						</div>
+						<div class="col-md-4 easy-them">
+							<a href="#"><img class="img-responsive" src="images/s-3.png"  alt=""/></a>
+							<h4>Easy CustomIzAtion</h4>
+							<p>Our themes easily fit different screen sizes and mobile devices. One interface to fit them all.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					
+					<div class="row bottom-grids">
+						<div class="col-md-4 easy-them2">
+							<a href="#"><img class="img-responsive" src="images/s-4.png" alt=""/></a>
+							<h4>ADVANCED Features</h4>
+							<p>Our themes easily fit different screen sizes and mobile devices. One interface to fit them all.</p>
+						</div>
+						<div class="col-md-4 easy-them2">
+							<a href="#"><img class="img-responsive" src="images/s-5.png" alt=""/></a>
+							<h4>simple management</h4>
+							<p>Our themes easily fit different screen sizes and mobile devices. One interface to fit them all.</p>
+						</div>
+						<div class="col-md-4 easy-them2">
+							<a href="#"><img class="img-responsive" src="images/s-6.png"  alt=""/></a>
+							<h4>featured extensions</h4>
+							<p>Our themes easily fit different screen sizes and mobile devices. One interface to fit them all.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>	
+			</div>
+		<!---container--->
+		  <!---------/start-blog--------->
+		 				<div id="blog" class="blog">
+										<div class="container">
+											<div class="news">
+										       	<div class="col-md-4 blog_grid">
+										       		<img src="images/blog-1.png" alt=""/>
+										       			<div class="team-info">
+											       			<div class="team-head">
+											       				<h3>On this so curious territory</h3>
+																<span>2013, May, 29</span>
+											       			</div>
+											       			<div class="n-icons">
+											       				<ul class="n-social unstyled-list list-inline">
+												       				<li><a class="comment" href="#"><span> </span></a></li>
+																	<li><a class="facebook" href="#">23</a></li>
+																	<div class="clearfix"> </div>
+																</ul>
+											       			</div>
+											       			<div class="clearfix"></div>
+										       			</div>
+										       			<p>Our themes easily fit different screen sizes and mobile devices. One interface to fit them all.</p>
+										       		</div>
+										       		<div class="col-md-4 blog_grid">
+										       			<img src="images/blog-2.png" alt=""/>
+										       				<div class="team-info">
+											       			     <div class="team-head">
+											       					<h3>On this so curious territory</h3>
+																	<span>2013, May, 29</span>
+											       				 </div>
+											       				  <div class="n-icons">
+											       					   <ul class="n-social unstyled-list list-inline">
+												       					  <li><a class="comment" href="#"><span> </span></a></li>
+																		  <li><a class="facebook" href="#">23</a></li>
+																		    <div class="clearfix"> </div>
+																		</ul>
+											       						</div>
+											       					<div class="clearfix"></div>
+										       					</div>
+										       					<p>Our themes easily fit different screen sizes and mobile devices. One interface to fit them all.</p>
+															</div>
+										       			<div class="col-md-4 blog_grid">
+										       			<img src="images/blog-3.png" alt=""/>
+										       				<div class="team-info">
+											       			     <div class="team-head">
+											       					<h3>On this so curious territory</h3>
+																	<span>2013, May, 29</span>
+											       				 </div>
+											       				  <div class="n-icons">
+											       					   <ul class="n-social unstyled-list list-inline">
+												       					  <li><a class="comment" href="#"><span> </span></a></li>
+																		  <li><a class="facebook" href="#">23</a></li>
+																		    <div class="clearfix"> </div>
+																		</ul>
+											       						</div>
+											       					<div class="clearfix"></div>
+										       					</div>
+										       					<p>Our themes easily fit different screen sizes and mobile devices. One interface to fit them all.</p>
+															</div>
+										       				<div class="clearfix"> </div>
+										       			</div>
+													</div>
+												</div>
+				<!------------//end----------------->	
+				<!----------/start--join------------->		
+					<div class="join" id="join">
+						<div class="contact">
+							<div class="col-md-8 join-red">
+								<div class="news-letter">
+									<h4>News letter</h4>
+									<p>Subscribe to our mailing list to be informed about new products, news and updates.</p>
+									<form>
+					                     	<input type="text" size="30px"  value="cresent sbsum..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'cresent sbsum...';}">
+		                                    <input type="submit" value="Subscribe">
+		                           </form>
+								</div>
+								
+							</div>
+							<div class="col-md-4 join-blue">
+								<div class="social-icons">
+										<ul class="t-social unstyled-list list-inline">
+														<li><a class="gg" href="#"><span> </span></a></li>
+														<li><a class="pin" href="#"><span> </span></a></li>
+														<li><a class="you" href="#"><span> </span></a></li>
+														<li><a class="fb" href="#"><span> </span></a></li>
+														<li><a class="twitter" href="#"><span> </span></a></li>
+														<div class="clearfix"> </div>
+										</ul>
+									</div>
+							</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			 <!---------/start-footer--------->
+			 	<div class="footer">
+			 		<div class="container">
+			 			<div class="copy-right">
+							<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+
+						</div>	
+			 		</div>
+			 		<div class="clearfix"> </div>
+			 	</div>
+			 <!-------//End-footer----------->
+				<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+</body>
+</html>

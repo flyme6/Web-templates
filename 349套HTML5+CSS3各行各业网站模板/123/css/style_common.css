@@ -1,0 +1,133 @@
+.view {
+   width: 360px;
+   height: 260px;
+   margin: 10px;
+   float: left;
+   border: 10px solid #fff;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   -webkit-box-shadow: 1px 1px 2px #e6e6e6;
+   -moz-box-shadow: 1px 1px 2px #e6e6e6;
+   box-shadow: 1px 1px 2px #e6e6e6;
+   cursor: default;
+   background: #fff url(../images/bgimg.jpg) no-repeat center center;
+}
+.view .mask,.view .content {
+   width: 360px;
+   height: 260px;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+.view img {
+   display: block;
+   position: relative;
+}
+.view h2 {
+   text-transform: uppercase;
+   color: #fff;
+   text-align: center;
+   position: relative;
+   font-size: 17px;
+   padding: 10px;
+   background: rgba(0, 0, 0, 0.8);
+   margin: 50px 0 0 0;
+}
+.view p {
+   font-family: Georgia, serif;
+   font-style: italic;
+   font-size: 12px;
+   position: relative;
+   color: #fff;
+   padding: 10px 20px 20px;
+   text-align: center;
+}
+.view span.info {
+   display: inline-block;
+   text-decoration: none;
+   padding: 7px 14px;
+   background: #a6192e;
+   color: #fff;
+   text-transform: uppercase;
+}
+.view span.info:hover {
+ background:#000;
+}
+
+@media(max-width:1024px){
+.view {
+  width: 292px;
+  height: 215px;
+}
+.view .mask, .view .content {
+  width: 292px;
+  height: 200px;
+}
+.view h2 {
+  margin: 30px 0 0 0;
+}
+}
+@media(max-width:768px){
+.view {
+  width: 335px;
+  height: 250px;
+}
+.view .mask, .view .content {
+  width: 335px;
+  height: 250px;
+}
+.view h2 {
+  margin: 40px 0 0 0;
+}
+}
+@media(max-width:640px){
+.view {
+  width: 273px;
+  height: 205px;
+}
+.view .mask, .view .content {
+  width: 275px;
+  height: 210px;
+}
+.view span.info {
+  padding: 7px 10px;
+  font-size: 12px;
+}
+.view h2 {
+  margin: 25px 0 0 0;
+}
+}
+@media(max-width:480px){
+.view {
+  width: 194px;
+  height: 145px;
+}
+.view .mask, .view .content {
+  width: 194px;
+  height: 145px;
+}
+.view h2 {
+  font-size: 12px;
+  padding: 6px;
+}
+.view h2 {
+  margin: 3px 0 0 0;
+}
+.view p {
+  font-size: 12px;
+  padding: 5px 19px 7px;
+}
+}
+@media(max-width:320px){
+.view .mask, .view .content {
+  width: 125px;
+  height: 97px;
+}
+.view {
+  width: 126px;
+  height: 97px;
+  margin: 4px;
+}
+}

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Military Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery-1.11.0.min.js"></script>
+<link href='http://fonts.useso.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Arimo:400,700,700italic' rel='stylesheet' type='text/css'>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+</head>
+<body>
+	<!--banner-->
+	<div class="banner" id="home">
+		<div class="container">
+			<div class="header">
+				<div class="header-left">
+					<a href="index.html"><img src="images/logo-3.png" alt="" /></a>
+				</div>
+				<div class="header-right">
+					 <span class="menu"></span> 
+						<ul class="navig">
+							<li><a href="index.html"  class="active">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="gallery.html">Our Gallery</a></li>
+							<li><a href="#contact" class="scroll">Contact</a></li>
+						</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="banner-bottom">
+				<h1>WE HAVE WORKED WITH</h1>
+				<div class="banner-btm">
+					<div id="top" class="callbacks_container">
+						<ul class="rslides" id="slider4">
+							<li>
+				  			<div class="col-md-2 banner-left">
+				  				<img src="images/w-1.png" alt="" />
+				  			</div>
+				  			<div class="col-md-2 banner-left">
+				  				<img src="images/w-2.png" alt="" />
+				  			</div>
+				  			<div class="col-md-2 banner-left">
+				  				<img src="images/w-3.png" alt="" />
+				  			</div>
+				  			<div class="col-md-2 banner-left">
+				  				<img src="images/w-4.png" alt="" />
+				  			</div>
+				  			<div class="col-md-2 banner-left">
+				  				<img src="images/w-5.png" alt="" />
+				  			</div>
+				  			<div class="col-md-2 banner-left">
+				  				<img src="images/w-6.png" alt="" />
+				  			</div>
+				  			<div class="clearfix"></div>
+				  			</li>
+				  			<li>
+				  			<div class="col-md-2 banner-left">
+				  				<img src="images/w-4.png" alt="" />
+				  			</div>
+				  			<div class="col-md-2 banner-left">
+				  				<img src="images/w-5.png" alt="" />
+				  			</div>
+				  			<div class="col-md-2 banner-left">
+				  				<img src="images/w-6.png" alt="" />
+				  			</div>
+				  			<div class="col-md-2 banner-left">
+				  				<img src="images/w-1.png" alt="" />
+				  			</div>
+				  			<div class="col-md-2 banner-left">
+				  				<img src="images/w-2.png" alt="" />
+				  			</div>
+				  			<div class="col-md-2 banner-left">
+				  				<img src="images/w-3.png" alt="" />
+				  			</div>
+				  			<div class="clearfix"></div>
+				  			</li>
+					 	</ul>
+					</div>
+				<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--banner-->
+	 <!--Slider-Starts-Here-->
+				<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!--End-slider-script--> 
+	<!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(" ul.navig").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+		 <!-- script-for-menu -->
+	<!--portfolio-->
+	<div class="portfolio">
+		<div class="container">
+			<div class="portfolio-text">
+				<h3>PORTFOLIO</h3>
+			</div>
+			<div class="portfolio-bottom">
+				<div class="portfolio-one">
+					<div class="col-md-3 port-left">
+						<a href="images/p1.jpg" class=" mask b-link-stripe b-animate-go   swipebox"  title="Image Title">
+								<img src="images/p1.jpg" alt="" class="img-responsive zoom-img"/>
+						</a>
+					</div>
+					<div class="col-md-3 port-left">
+						<a href="images/p2.jpg" class=" mask b-link-stripe b-animate-go   swipebox"  title="Image Title">
+								<img src="images/p2.jpg" alt="" class="img-responsive zoom-img"/>
+						</a>
+					</div>
+					<div class="col-md-3 port-left">
+						<a href="images/p3.jpg" class=" mask b-link-stripe b-animate-go   swipebox"  title="Image Title">
+								<img src="images/p3.jpg" alt="" class="img-responsive zoom-img"/>
+						</a>
+					</div>
+					<div class="col-md-3 port-left">
+						<a href="images/p4.jpg" class=" mask b-link-stripe b-animate-go   swipebox"  title="Image Title">
+								<img src="images/p4.jpg" alt="" class="img-responsive zoom-img"/>
+						</a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="portfolio-one">
+					<div class="col-md-3 port-left">
+						<a href="images/p5.jpg" class=" mask b-link-stripe b-animate-go   swipebox"  title="Image Title">
+								<img src="images/p5.jpg" alt="" class="img-responsive zoom-img"/>
+						</a>
+					</div>
+					<div class="col-md-3 port-left">
+						<a href="images/p6.jpg" class=" mask b-link-stripe b-animate-go   swipebox"  title="Image Title">
+								<img src="images/p6.jpg" alt="" class="img-responsive zoom-img"/>
+						</a>
+					</div>
+					<div class="col-md-3 port-left">
+						<a href="images/p7.jpg" class=" mask b-link-stripe b-animate-go   swipebox"  title="Image Title">
+								<img src="images/p7.jpg" alt="" class="img-responsive zoom-img"/>
+						</a>
+					</div>
+					<div class="col-md-3 port-left">
+						<a href="images/p8.jpg" class=" mask b-link-stripe b-animate-go   swipebox"  title="Image Title">
+								<img src="images/p8.jpg" alt="" class="img-responsive zoom-img"/>
+						</a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--portfolio-->
+	<!--swipebox -->	
+			<link rel="stylesheet" href="css/swipebox.css">
+				<script src="js/jquery.swipebox.min.js"></script> 
+				<script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+				</script>
+			<!--//swipebox Ends --> 
+	<!--how-->
+	<div class="how">
+			<div class="how-top">
+				<div class="col-md-6 how-left">
+					<h3>STEPS TO JOIN</h3>
+					<div class="how-bottom">
+						<div class="h-1">
+							<div class="how-bottom-left">
+								<h4>1</h4>
+							</div>
+							<div class="how-bottom-right">
+								<h5>Vestibulum ante ipsum</h5>
+								<p>Maecenas porta, purus nec ultrices tempus, nulla metus pellentesque ante, a lobortis elit ante id dui. Nam a ante ut felis vehicula ornare.</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="h-1">
+							<div class="how-bottom-left">
+								<h4>2</h4>
+							</div>
+							<div class="how-bottom-right">
+								<h5>Quisque pulvinar justo</h5>
+								<p>Maecenas porta, purus nec ultrices tempus, nulla metus pellentesque ante, a lobortis elit ante id dui. Nam a ante ut felis vehicula ornare.</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="h-1">
+							<div class="how-bottom-left">
+								<h4>3</h4>
+							</div>
+							<div class="how-bottom-right">
+								<h5>Donec interdum dolor</h5>
+								<p>Maecenas porta, purus nec ultrices tempus, nulla metus pellentesque ante, a lobortis elit ante id dui. Nam a ante ut felis vehicula ornare.</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="h-1">
+							<div class="how-bottom-left">
+								<h4>4</h4>
+							</div>
+							<div class="how-bottom-right">
+								<h5>Cras sollicitudin</h5>
+								<p>Maecenas porta, purus nec ultrices tempus, nulla metus pellentesque ante, a lobortis elit ante id dui. Nam a ante ut felis vehicula ornare.</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 how-right">
+					<img src="images/h-1.jpg" alt="" />
+				</div>
+				<div class="clearfix"></div>
+			</div>
+	</div>
+	<!--how-->
+	<!--mission-->
+	<div class="mission">
+		<div class="container">
+			<div class="mission-main">
+				<div class="col-md-4 mission-left">
+					<h3>OUR MISSION</h3>
+					<p>Pellentesque quis diam lacus. Sed mollis consectetur lacus ac volutpat. Nam sit amet mattis magna, non feugiat urna. Aliquam sed gravida nisl, sit amet dignissim dolor.</p>
+					<div class="m-btn">
+						<a href="#" class="hvr-bounce-to-right">Read more</a>
+					</div>				
+				</div>
+				<div class="col-md-4 mission-left">
+					<h3>WHAT WE OFFER</h3>
+					<p>Pellentesque quis diam lacus. Sed mollis consectetur lacus ac volutpat. Nam sit amet mattis magna, non feugiat urna. Aliquam sed gravida nisl, sit amet dignissim dolor.</p>
+					<div class="m-btn">
+						<a href="#" class="hvr-bounce-to-right">Read more</a>
+					</div>
+				</div>
+				<div class="col-md-4 mission-left">
+					<h3>OUR LEADERSHIP</h3>
+					<p>Pellentesque quis diam lacus. Sed mollis consectetur lacus ac volutpat. Nam sit amet mattis magna, non feugiat urna. Aliquam sed gravida nisl, sit amet dignissim dolor.</p>
+					<div class="m-btn">
+						<a href="#" class="hvr-bounce-to-right">Read more</a>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--mission-->
+	<!--news-->
+	<div class="news">
+		<div class="container">
+			<div class="news-top">
+				<h3>MILITARY NEWS</h3>
+			</div>
+			<div class="news-main">
+				<div class="col-md-4 news-left">
+					<span>03-12-2014</span>
+					<h4>Aliquam faucibus lorem</h4>
+					<p>Nunc vehicula orci aliquet, vulputate nisi vitae, tristique nulla. Morbi id sapien id mi dictum porta.</p>
+				</div>
+				<div class="col-md-4 news-left">
+					<span>29-12-2014</span>
+					<h4>Integer ac orci et</h4>
+					<p>Nunc vehicula orci aliquet, vulputate nisi vitae, tristique nulla. Morbi id sapien id mi dictum porta.</p>
+				</div>
+				<div class="col-md-4 news-left">
+					<span>13-03-2014</span>
+					<h4>Ut bibendum nec</h4>
+					<p>Nunc vehicula orci aliquet, vulputate nisi vitae, tristique nulla. Morbi id sapien id mi dictum porta.</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--news-->
+	<!--footer-->
+	<div class="footer" id="contact">
+		<div class="container">
+			<div class="footer-main">
+				<div class="col-md-8 footer-left">
+					<div class="footer-top">
+						<h3>REQUEST A QUOTE</h3>
+					</div>
+					<form>
+						<input type="text" value="Your Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Name';}"/>
+						<input type="text" value="Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email';}"/>
+						<textarea value="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+						<input type="submit" value="SEND" />
+					</form>	
+				</div>
+				<div class="col-md-4 footer-left">
+					<div class="footer-top">
+						<h3>CONTACT</h3>
+					</div>
+					<ul>
+						<li><span class="area"> </span><p>Tempor Eiusmod inc, 9560 St Dolore Place,</p></li>
+						<li><span class="ph"> </span><p>+1 800 300 5555</p></li>
+						<li><span class="mail"> </span><p><a href="mailto:example@email.com"> mail@example.com</a></p></li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="footer-text">
+				<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+			</div>
+		</div>
+		<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+	<!--footer-->		
+</body>
+</html>

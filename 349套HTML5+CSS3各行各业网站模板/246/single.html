@@ -1,0 +1,367 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Single</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Google Fonts -->
+<link href='http://fonts.useso.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<!-- Script Starts Here -->
+<!----//End-slider-script---->
+<!----Calender -------->
+  <link rel="stylesheet" href="css/clndr.css" type="text/css" />
+  <script src="js/underscore-min.js"></script>
+  <script src= "js/moment-2.2.1.js"></script>
+  <script src="js/clndr.js"></script>
+  <script src="js/site.js"></script>
+<!----End Calender -------->
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	$(".scroll").click(function(event){		
+		event.preventDefault();
+		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+	});
+});
+</script>
+</head>
+<body>
+<!-- Header Starts Here --->
+	<div class="header" id="home">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt=""></a>
+			</div>
+			<span class="menu"></span>
+			<div class="cleare"></div>
+			<script>
+					$( "span.menu" ).click(function() {
+					  $( "ul.navig" ).slideToggle( "slow", function() {
+					    // Animation complete.
+					  });
+					});
+				</script>
+			<div class="navigation">
+				<ul class="navig">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html" class="scroll">About</a></li>
+					<li><a href="index.html" class="scroll">Services</a></li>
+					<li><a href="index.html" class="scroll">WORKS </a></li>
+					<li><a href="index.html" class="scroll">CLIENTS</a></li>
+					<li><a href="blog.html" class="active">BLOG</a></li>
+					<li><a href="index.html" class="scroll">CONTACT</a></li>	
+				</ul>
+			
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+<!-- Header Ends Here --->
+<!-- Blog Starts Here --->
+<div class="blog">
+	<div class="container">
+		<h3 class="top-head">Our Blogs</h3>
+		<p class="head-sub">Duis vitae velit mollis, congue nisi dignissim, pellentesque lorem</p>
+	</div>
+</div>
+<div class="blog-list">
+	<div class="container">
+		<div class="row blog-row">
+			<div class="col-md-8 content-bar">
+		<!-- Post One Start Here --->
+				<img src="images/blog.jpg" alt="">
+				<!-- Blog Description -->
+					<div class="blog-desc single-desc">
+						<div class="desc-left">
+							<i class="des-p"></i>
+							<p>31</p>
+							<h4>MAR</h4>
+						</div>
+						<div class="desc-right">
+							<h3>Standart Blog Post With Featured Image</h3>
+							<ul class="blog-list">
+								<li><span class="person"></span> <a href="#">Mike</a></li>
+								<li><span class="fol"></span> <a href="#">Web design</a></li>
+								<li><span class="cmt"></span> <a href="#">0 Comment</a></li>
+							</ul>
+							<span class="blog-line"></span>
+							<p class="head-sub">Donec quis vestibulum nisl, a bibendum velit. Proin cursus mauris non malesuada euismod. In vitae accumsan neque. Phasellus blandit arcu id ante feugiat</p>
+							<div class="social-status">
+								<ul class="status-list">
+									<li><span class="facebook"></span><i class="count">105</i></li>
+									<li><span class="twitter"></span><i class="count">98</i></li>
+									<li><span class="googleplus"></span><i class="count">56</i></li>
+								</ul>
+							</div>
+							<div class="blog-para">
+								<p>P  ellentesque rhoncus est tincidunt, facilisis augue a, dictum metus. Aenean ut enim ut est          lacinia laoreet id sed purus. Phasellus ut pharetra felis, sed accumsan leo. In at neque posuere tellus et, hendrerit eros. Maecenas ac dictum est, et egestas mi. Suspendisse massa massa, auctor id fringilla in, laoreet nec mauris.</p>
+								<p>Fusce non malesuada urna. Suspendisse ac erat ut orci faucibus porta. Phasellus in libero id mi condimentum sollicitudin nec a ante. Ut dignissim iaculis sem sit amet vulputate. Quisque sed lorem odio. Vestibulum aliquet, ante ac tempor congue, libero enim vehicula dui, a viverra ligula nibh ut mi.</p>
+								<p>Donec porttitor velit purus, eget blandit sem posuere vitae. Vestibulum lobortis non enim vitae porttitor. Nulla eros tortor, auctor ac eleifend tristique, tincidunt eu ligula. Vestibulum faucibus magna non dui tristique, vulputate vulputate neque dignissim. Donec euismod sem a consectetur tempus.</p>
+								<div class="blog-quote">
+									<div class="blog-quote-bor">
+										<h3>Some great quote that you love and want to share as a single post.</h3>
+										<span class="blog-line"></span>
+										<small>Quote Author</small>
+									</div>
+								</div>
+								<p>Integer rutrum, turpis ut hendrerit semper, sapien quam imperdiet felis, id lacinia nunc ipsum sed neque. Pellentesque a rhoncus massa. Mauris blandit lectus risus, non facilisis neque laoreet in. Sed vel enim rutrum, feugiat nisl vel, hendrerit justo. Sed quis turpis id eros malesuada sollicitudin a vitae lorem. Donec tincidunt at quam nec ultrices.</p>
+							</div>
+							<ul class="tags_links">
+								<li><a href="#">Design</a></li>
+								<li><a href="#">Branding</a></li>
+								<li><a href="#">Art</a></li>
+							</ul>
+							<div class="blog-about">
+								<i class="autor-pic"></i>
+								<div class="blog-auth-right">
+									<h3 class="top-head caty">ABOUT DIDI</h3>
+									<span class="blog-line thik"></span>
+									<p class="head-sub bl-x">Sed sit amet molestie tellus. Integer dictum ultrices dolor, at accumsan eros mollis id. Vivamus mollis purus vehicula eros eleifend ornare. Quisque dapibus dui sed est pretium, ut varius massa sagittis.</p>
+									<div class="auth-bot">
+										<ul class="t-social bot-x">
+											<li><i class="fa"></i></li>
+											<li><i class="fb"></i></li>
+											<li><i class="fc"></i></li>
+											<li><i class="fd"></i></li>
+											<li><i class="fe"></i></li>
+										</ul>
+										<p class="bot-y"><a href="#">ALL FROM DIDI ></a></p>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<!-- Related Post -->
+								<div class="related-post">
+									<h3 class="top-head caty">RELATED POSTS</h3>
+									<span class="blog-line thik thiky"></span>
+									<div class="row related-row">
+										<div class="col-md-5 related-column">
+											<img src="images/blog-rel1.jpg" alt="">
+											<h3 class="rel-hed">Some Similar Post</h3>
+											<span class="blog-line thik"></span>
+											<p class="head-sub bl-x">Donec quis vestibulum nisl, a bibendum velit. Proin cursus mauris non malesuada euismod. In vitae accumsan neque</p>
+											<div class="read-more">
+												<a href="#">Read More</a>
+											</div>
+										</div>
+										<div class="col-md-5 related-column">
+											<img src="images/blog-rel2.jpg" alt="">
+											<h3 class="rel-hed">Some Similar Post</h3>
+											<span class="blog-line thik"></span>
+											<p class="head-sub bl-x">Donec quis vestibulum nisl, a bibendum velit. Proin cursus mauris non malesuada euismod. In vitae accumsan neque</p>
+											<div class="read-more">
+												<a href="#">Read More</a>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							<!-- Related Post -->
+							<!-- Comments -->
+								<div class="comments">
+									<h3 class="top-head caty">2 comments</h3>
+									<span class="blog-line thik thiky"></span>
+									<div class="comments-top">
+										<i class="comment-profile"><img src="images/cmt-1.jpg"  alt=""/></i>
+										<div class="comment-right">
+											<p><a href="#">MIKE</a>&nbsp;&nbsp;On April 14, 2014, 18:01</p>
+											<p class="cmt-mat">Cool!</p>
+											<div class="reply">
+												<a href="#">Reply</a>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+									<div class="comments-top">
+										<i class="comment-profile"><img src="images/cmt-2.jpg"  alt=""/></i>
+										<div class="comment-right">
+											<p><a href="#">DIDI</a>&nbsp;&nbsp;  On April 14, 2014, 17:59 @NELLY ATANASOFF</p>
+											<p class="cmt-mat">Fusce id mauris ut mauris dictum congue vel nec diam. Sed vel risus velit. Nulla magna risus, tempus sit amet metus at, malesuada bibendum urna. Nam vitae leo auctor, auctor odio nec, auctor metus. Aenean turpis tellus, vehicula ut odio eu, blandit congue enim. </p>
+											<div class="reply">
+												<a href="#">Reply</a>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+									<div class="comments-top">
+										<i class="comment-profile"><img src="images/cmt-1.jpg"  alt=""/></i>
+										<div class="comment-right">
+											<p><a href="#">NELLY ATANASOFF </a>&nbsp;&nbsp; On April 14, 2014, 17:53</p>
+											<p class="cmt-mat">Fusce id mauris ut mauris dictum congue vel nec diam. Sed vel risus velit. Nulla magna risus, tempus sit amet metus at, malesuada bibendum urna. Nam vitae leo auctor, auctor odio nec, auctor metus. Aenean turpis tellus, vehicula ut odio eu, blandit congue enim. </p>
+											<div class="reply">
+												<a href="#">Reply</a>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							<!-- Comments -->
+							<!-- Leave A Reply -->
+								<div class="reply">
+									<h3 class="top-head caty">LEAVE A REPLY</h3>
+									<span class="blog-line thik thiky"></span>
+									<p class="head-sub">Duis vitae velit mollis, congue nisi dignissim, pellentesque lorem</p>
+									<div class="reply-box">
+										<div class="reply-text">
+											<input type="text" placeholder="YOUR NAME" required=""/>
+											<input type="text" placeholder="YOUR EMAIL" required="" />
+										</div>
+										<div class="reply-text">
+											<textarea placeholder="THE REPLY" required ></textarea>
+										</div>
+										<div class="reply-text">
+											<input type="submit" value="LEAVE THE REPLY" />
+										</div>
+									</div>
+								</div>
+							<!-- Leave A Reply -->
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				<!-- Blog Description -->
+		</div>
+			<div class="col-md-4 side-bar">
+				<div class="search-bar">
+					<span><input type="text" placeholder="SEARCH.." required=""  /><input type="submit" value="" /></span>
+				</div>
+				<div class="cate">
+					<h3 class="top-head cat">CATEGORIES</h3>
+					<span class="blog-line thik"></span>
+					<ul class="catg-list">
+						<li> <a href="#">WEB DESIGN</a></li>
+						<li> <a href="#">GRAPHIC DESIGN</a></li>
+						<li> <a href="#">PHOTOGRAPHY</a></li>
+						<li> <a href="#">DEVELOPING</a></li>
+						<li class="cat-act"> <a href="#">CONSULTING</a></li>
+					</ul>
+				</div>
+				<div class="cate">
+					<h3 class="top-head cat">Popular Posts</h3>
+					<span class="blog-line thik"></span>
+					<ul class="popular">
+						<li>
+							<h3>The Most Readed Blog Post Here</h3>
+							<span class="ey"></span> <a href="#">1280</a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="person"></span> <a href="#">Mike</a>
+						</li>
+						<li>
+							<h3>Second Most Popular Post</h3>
+							<span class="ey"></span> <a href="#">1011</a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="person"></span> <a href="#">Elly</a>
+						</li>
+						<li>
+							<h3>The Third Hot Post</h3>
+							<span class="ey"></span> <a href="#">956</a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="person"></span> <a href="#">Vall</a>
+						</li>
+					</ul>
+				</div>
+				<div class="cate">
+					<h3 class="top-head cat">POPULAR TAGS</h3>
+					<span class="blog-line thik"></span>
+					 <ul class="tags_links">
+							<li><a href="#">Design</a></li>
+							<li><a href="#">Branding</a></li>
+							<li><a href="#">Art</a></li>
+							<li><a href="#">Developing</a></li>
+							<li><a href="#">CSS</a></li>
+							<li><a href="#">HTML</a></li>
+							<li><a href="#">Wordpress</a></li>
+							<li><a href="#">Photography</a></li>
+					</ul>
+
+				</div>
+				<div class="cate">
+					<h3 class="top-head cat">SUBSCRIBE FOR NEWSLETTER</h3>
+					<span class="blog-line thik"></span>
+					<div class="subscribe">
+						<p class="head-sub">Duis vitae velit mollis, pellentesque lorem</p>
+						<div class="subt">
+							<input type="text" placeholder="YOUR EMAIL ADDRESS" required="" />
+						</div>
+						<div class="subt">
+							<span></span><a href="#">Subscribe</a>
+						</div>
+					</div>
+				</div>
+				<div class="cate">
+					<h3 class="top-head cat">POSTS BY DATE</h3>
+					<span class="blog-line thik"></span>
+					 <div class="column_right_grid calender">
+	                      <div class="cal1"><div class="clndr"><div class="clndr-controls"><div class="clndr-control-button"><p class="clndr-previous-button">previous</p></div>
+	                      <div class="month">March 2014</div><div class="clndr-control-button rightalign"><p class="clndr-next-button">next</p></div></div>
+	                      <table class="clndr-table" border="0" cellspacing="0" cellpadding="0"><thead><tr class="header-days">
+	                      	<td class="header-day">Sun</td><td class="header-day">Mon</td><td class="header-day">T</td><td class="header-day">W</td><td class="header-day">T</td>
+	                      	<td class="header-day">F</td><td class="header-day">S</td></tr></thead><tbody><tr><td class="day past adjacent-month last-month calendar-day-2014-02-23">
+	                      	<div class="day-contents">23</div></td><td class="day past adjacent-month last-month calendar-day-2014-02-24"><div class="day-contents">24</div></td>
+	                      	<td class="day past adjacent-month last-month calendar-day-2014-02-25"><div class="day-contents">25</div></td>
+	                      	<td class="day past adjacent-month last-month calendar-day-2014-02-26"><div class="day-contents">26</div></td>
+	                      	<td class="day past adjacent-month last-month calendar-day-2014-02-27"><div class="day-contents">27</div></td><td class="day past adjacent-month last-month calendar-day-2014-02-28"><div class="day-contents">28</div></td><td class="day past calendar-day-2014-03-01"><div class="day-contents dat-c">1</div></td></tr><tr><td class="day past calendar-day-2014-03-02"><div class="day-contents">2</div></td><td class="day past calendar-day-2014-03-03"><div class="day-contents">3</div></td><td class="day past calendar-day-2014-03-04"><div class="day-contents">4</div></td><td class="day past calendar-day-2014-03-05"><div class="day-contents">5</div></td><td class="day past calendar-day-2014-03-06"><div class="day-contents">6</div></td><td class="day past calendar-day-2014-03-07"><div class="day-contents">7</div></td><td class="day past calendar-day-2014-03-08"><div class="day-contents">8</div></td></tr><tr><td class="day past calendar-day-2014-03-09"><div class="day-contents">9</div></td><td class="day past event calendar-day-2014-03-10"><div class="day-contents">10</div></td><td class="day past event calendar-day-2014-03-11"><div class="day-contents">11</div></td><td class="day past event calendar-day-2014-03-12"><div class="day-contents">12</div></td><td class="day past event calendar-day-2014-03-13"><div class="day-contents">13</div></td><td class="day past event calendar-day-2014-03-14"><div class="day-contents">14</div></td><td class="day past calendar-day-2014-03-15"><div class="day-contents">15</div></td></tr><tr><td class="day past calendar-day-2014-03-16"><div class="day-contents">16</div></td><td class="day past calendar-day-2014-03-17"><div class="day-contents">17</div></td><td class="day past calendar-day-2014-03-18"><div class="day-contents">18</div></td><td class="day past calendar-day-2014-03-19"><div class="day-contents">19</div></td><td class="day past calendar-day-2014-03-20"><div class="day-contents">20</div></td><td class="day past event calendar-day-2014-03-21"><div class="day-contents">21</div></td><td class="day past event calendar-day-2014-03-22"><div class="day-contents">22</div></td></tr><tr><td class="day past event calendar-day-2014-03-23"><div class="day-contents">23</div></td><td class="day past calendar-day-2014-03-24"><div class="day-contents">24</div></td><td class="day today calendar-day-2014-03-25"><div class="day-contents">25</div></td><td class="day calendar-day-2014-03-26"><div class="day-contents">26</div></td><td class="day calendar-day-2014-03-27"><div class="day-contents">27</div></td><td class="day calendar-day-2014-03-28"><div class="day-contents">28</div></td><td class="day calendar-day-2014-03-29"><div class="day-contents">29</div></td></tr><tr><td class="day calendar-day-2014-03-30"><div class="day-contents">30</div></td><td class="day calendar-day-2014-03-31"><div class="day-contents">31</div></td><td class="day adjacent-month next-month calendar-day-2014-04-01"><div class="day-contents">1</div></td><td class="day adjacent-month next-month calendar-day-2014-04-02"><div class="day-contents">2</div></td><td class="day adjacent-month next-month calendar-day-2014-04-03"><div class="day-contents">3</div></td><td class="day adjacent-month next-month calendar-day-2014-04-04"><div class="day-contents">4</div></td><td class="day adjacent-month next-month calendar-day-2014-04-05"><div class="day-contents">5</div></td></tr></tbody></table></div></div>
+					 </div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- Find Us Starts Here -->
+<div class="find">
+	<div class="container">
+		<h3 class="top-head td">Find US</h3>
+		<p class="head-sub tdd">Duis vitae velit mollis, congue nisi dignissim, pellentesque lorem</p>
+		<div class="row find-row">
+			<div class="col-md-4 find-column">
+				<i class="ph"></i>
+				<div class="find-right">
+					<h3>PHONES</h3>
+					<p>+359 2 88 55 999<br>+359 89 88 55 999</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="col-md-4 find-column">
+				<i class="ad"></i>
+				<div class="find-right">
+					<h3>OFFICE ADDRESS</h3>
+					<p>4 Byala Cherkva Str.<br>3rd Floor<br>Sofia, 1000,<br>Bulgaria</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="col-md-4 find-column">
+				<i class="em"></i>
+				<div class="find-right">
+					<h3>EMAILS</h3>
+					<p><a href="mailto:example@gmail.com">office@trendy.com</a></p>
+					<p><a href="mailto:example@gmail.com">sales@trendy.com</a></p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- Find Us Ends Here -->
+<div class="footer">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+		<ul class="social-list">
+			<li><i class="sa"></i></li>
+			<li><i class="sb"></i></li>
+			<li><i class="sc"></i></li>
+			<li><i class="sd"></i></li>
+			<li><i class="se"></i></li>
+			<li><i class="sf"></i></li>
+			<li><i class="sg"></i></li>
+			<li><i class="sh"></i></li>
+			<li><i class="si"></i></li>
+		</ul>
+				<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+	</div>
+</div>
+
+</body>
+</html>

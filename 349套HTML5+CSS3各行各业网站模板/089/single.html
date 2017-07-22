@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Shop underwear Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--fonts-->
+<link href='http://fonts.useso.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+<!--//fonts-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+				<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+					</script>
+<link rel="stylesheet" href="css/etalage.css">
+<script src="js/jquery.etalage.min.js"></script>
+<script>
+			jQuery(document).ready(function($){
+
+				$('#etalage').etalage({
+					thumb_image_width: 300,
+					thumb_image_height: 400,
+					source_image_width: 900,
+					source_image_height: 1200,
+					show_hint: true,
+					click_callback: function(image_anchor, instance_id){
+						alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+					}
+				});
+
+			});
+		</script>
+<link href="css/flexslider.css" rel='stylesheet' type='text/css' />
+							  <script defer src="js/jquery.flexslider.js"></script>
+							  <script type="text/javascript">
+								$(function(){
+								  SyntaxHighlighter.all();
+								});
+								$(window).load(function(){
+								  $('.flexslider').flexslider({
+									animation: "slide",
+									start: function(slider){
+									  $('body').removeClass('loading');
+									}
+								  });
+								});
+							  </script>
+<script>$(document).ready(function(c) {
+	$('.alert-close1').on('click', function(c){
+		$('.message1').fadeOut('slow', function(c){
+	  		$('.message1').remove();
+		});
+	});	  
+});
+</script>
+<script>$(document).ready(function(c) {
+	$('.alert-close').on('click', function(c){
+		$('.message').fadeOut('slow', function(c){
+	  		$('.message').remove();
+		});
+	});	  
+});
+</script>
+</head>
+<body>
+	<!--header-->
+	<div class="container">
+	<div class="header">
+		<div class="header-top">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt="" ></a>
+			</div>
+			<div class="header-top-on">
+				<ul class="icon1 sub-icon1">
+					<li><div class="cart1">
+									<a href="#" class="cart-in"> </a>
+								</div>
+					<ul class="sub-icon1 list">
+						  <h3>Recently added items(2)</h3>
+						  <div class="shopping_cart">
+							  <div class="cart_box">
+							   	 <div class="message">
+							   	     <div class="alert-close"> </div> 
+					                <div class="list_img"><img src="images/10.jpg" class="img-responsive" alt=""></div>
+								    <div class="list_desc"><h4><a href="#">velit esse molestie</a></h4>1 x<span class="actual">
+		                             $12.00</span></div>
+		                              <div class="clearfix"></div>
+	                              </div>
+	                            </div>
+	                            <div class="cart_box1">
+								  <div class="message1">
+							   	     <div class="alert-close1"> </div> 
+					                <div class="list_img"><img src="images/4.jpg" class="img-responsive" alt=""></div>
+								    <div class="list_desc"><h4><a href="#">velit esse molestie</a></h4>1 x<span class="actual">
+		                             $12.00</span></div>
+		                              <div class="clearfix"></div>
+	                              </div>
+	                            </div>
+	                        </div>
+	                        <div class="total">
+	                        	<div class="total_left">CartSubtotal : </div>
+	                        	<div class="total_right">$250.00</div>
+	                        	<div class="clearfix"> </div>
+	                        </div>
+                            <div class="login_buttons">
+							  <div class="check_button"><a href="checkout.html">Check out</a></div>
+							  <div class="clearfix"></div>
+						    </div>
+					      <div class="clearfix"></div>
+						</ul>Cart : (empty)</li>	
+				</ul>
+			</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!---->
+			<div class="header-bottom">
+				<div class="top-nav">
+					<span class="menu"> </span>
+					<ul>
+						<li class="active" ><a href="index.html" >SWIMWEAR</a> </li>
+						<li><a href="men.html" data-hover="PANTIES" >PANTIES</a></li>
+						<li><a href="men.html" data-hover="BOXERS"> BOXERS </a></li>
+						<li><a href="men.html" data-hover="BRIEFS"> BRIEFS</a></li>
+						<li><a href="men.html" data-hover="SLEEP">SLEEP </a></li>
+						<li><a href="men.html" data-hover="THONGS">THONGS </a></li>
+					</ul>
+					<!--script-->
+				<script>
+					$("span.menu").click(function(){
+						$(".top-nav ul").slideToggle(500, function(){
+						});
+					});
+			</script>
+				</div>
+					<div class="search">
+						<form>
+							<input type="text" value="Search.." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" >
+							<input type="submit" value="">
+						</form>
+					</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+		<!---->
+<div class="men">
+	<div class="container">
+	  <div class="single_top">
+	       <div class="col-md-9 single_right">
+	   	       <div class="grid images_3_of_2">
+						<ul id="etalage">
+							<li>
+								<a href="optionallink.html">
+									<img class="etalage_thumb_image" src="images/15.JPEG" class="img-responsive" />
+									<img class="etalage_source_image" src="images/15.JPEG" class="img-responsive" title="" />
+								</a>
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/16.JPEG" class="img-responsive" />
+								<img class="etalage_source_image" src="images/16.JPEG" class="img-responsive" title="" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/17.JPEG" class="img-responsive"  />
+								<img class="etalage_source_image" src="images/17.JPEG"class="img-responsive"  />
+							</li>
+						    <li>
+								<img class="etalage_thumb_image" src="images/16.JPEG" class="img-responsive"  />
+								<img class="etalage_source_image" src="images/16.JPEG"class="img-responsive"  />
+							</li>
+						</ul>
+						 <div class="clearfix"></div>		
+				  </div> 
+				  <div class="desc1 span_3_of_2">
+				    <h1>Lorem ipsum dolor sit amet</h1>
+				    <div class="price_single">
+				  <span class="reducedfrom">$140.00</span>
+				  <span class="actual">$120.00</span><a href="#">click for offer</a>
+				</div>
+				    
+					 <span class="m_link"><a href="#">login to save in wishlist</a> </span>
+					 <p class="m_text2">quis nostrud exerci tatn hendrerit in vulputate velit esse molestie consequat, vulputate velit esse molestie  vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit </p>
+				<ul class="size">
+					<h3>Size</h3>
+					<li><a href="#">25</a></li>
+					<li><a href="#">26</a></li>
+					<li><a href="#">27</a></li>
+					<li><a href="#">28</a></li>
+					<li><a href="#">29</a></li>
+					<li><a href="#">30</a></li>
+					<li><a href="#">31</a></li>
+					<li><a href="#">32</a></li>
+					<li><a href="#">33</a></li>
+				</ul>
+				<ul class="size">
+					<h3>Length</h3>
+					<li><a href="#">32</a></li>
+					<li><a href="#">34</a></li>
+				</ul>
+				<ul class="product-qty">
+				   <span>Quantity:</span>
+				   <select>
+					 <option>1</option>
+					 <option>2</option>
+					 <option>3</option>
+					 <option>4</option>
+					 <option>5</option>
+					 <option>6</option>
+				   </select>
+			    </ul>
+				<div class="btn_form">
+				   <form>
+					 <input type="submit" value="Add to Cart" title="">
+				  </form>
+				</div>
+				</div>
+				  <div class="clearfix"></div>	
+       </div>
+       <div class="col-md-3 flx">
+      	<!-- FlexSlider -->
+              <section class="slider_flex">
+				  <div class="flexslider">
+					<ul class="slides">
+						<li><img src="images/10.jpg" class="img-responsive" alt=""/></li>
+						<li><img src="images/9.jpg" class="img-responsive" alt=""/></li>
+						<li><img src="images/8.jpg" class="img-responsive" alt=""/></li>
+						<li><img src="images/7.jpg" class="img-responsive" alt=""/></li>
+				    </ul>
+				  </div>
+	          </section>
+<!-- FlexSlider -->
+      </div>
+      <div class="clearfix"> </div>
+     </div>
+       <div class="toogle">
+     	<h2>Product Details</h2>
+     	<p class="m_text2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.</p>
+     </div>
+     <div class="toogle">
+     	<h2>More Information</h2>
+     	<p class="m_text2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+     </div>
+     <h4 class="head_single">Related Products</h4>
+     <div class="span_3">
+	          	 <div class="col-sm-3 grid_1">
+	          	    <a href="single.html">
+				     <img src="images/9.jpg" class="img-responsive" alt=""/>
+				     <h3>parum clari</h3>
+				   	 <p>Duis autem vel eum iriure</p>
+				   	 <h4>Rs.399</h4>
+			         </a>  
+				  </div> 
+				<div class="col-sm-3 grid_1">
+	          	    <a href="single.html">
+				     <img src="images/8.jpg" class="img-responsive" alt=""/>
+				     <h3>parum clari</h3>
+				   	 <p>Duis autem vel eum iriure</p>
+				   	 <h4>Rs.399</h4>
+			         </a>  
+				  </div> 
+				 <div class="col-sm-3 grid_1">
+	          	    <a href="single.html">
+				     <img src="images/1.jpg" class="img-responsive" alt=""/>
+				     <h3>parum clari</h3>
+				   	 <p>Duis autem vel eum iriure</p>
+				   	 <h4>Rs.399</h4>
+			         </a>  
+				  </div> 
+				  <div class="col-sm-3 grid_1">
+	          	    <a href="single.html">
+				     <img src="images/3.jpg" class="img-responsive" alt=""/>
+				     <h3>parum clari</h3>
+				   	 <p>Duis autem vel eum iriure</p>
+				   	 <h4>Rs.399</h4>
+			         </a>  
+				  </div> 
+				  <div class="clearfix"></div>
+	     </div>
+      </div>
+</div>
+<!---->
+		<div class="footer">
+		<div class="container">
+			<div class="footer-top">
+				<div class="col-md-4 amet-sed">
+				<h4>navigation</h4>
+					<ul class="nav-bottom">
+						<li class="active" ><a href="index.html" >SWIMWEAR</a> </li>
+						<li><a href="men.html" data-hover="PANTIES" >PANTIES</a></li>
+						<li><a href="men.html" data-hover="BOXERS"> BOXERS </a></li>
+						<li><a href="men.html" data-hover="BRIEFS"> BRIEFS</a></li>
+						<li><a href="men.html" data-hover="SLEEP">SLEEP </a></li>
+						<li><a href="men.html" data-hover="THONGS">THONGS </a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 amet-sed ">
+				<h4>get in touch</h4>
+					<ul class="nav-bottom">
+						<li  ><a href="contact.html" >CONTACT US</a> </li>
+						<li><a href="#" >PRIVACY POLICY</a></li>
+						<li><a href="#">TERMS &amp; CONDITIONS </a></li>					
+					</ul>
+					<p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+				</div>
+				<div class="col-md-4 amet-sed ">
+				<h4>share this page</h4>
+				<ul class="social-in msg-social">
+					<li><a href="#"><i> </i></a></li>						
+					<li><a href="#"><i class="tin"> </i></a></li>
+					<li><a href="#"><i class="message"> </i></a></li>
+					<li><a href="#"><i class="youtube"> </i></a></li>
+				</ul>
+				<p>follow us on twitter:<a href="#">@example</a></p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+				<p class="footer-class">Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+		</div>
+		 <script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+</body>
+</html>

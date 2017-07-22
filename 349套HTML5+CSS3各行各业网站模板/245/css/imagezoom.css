@@ -1,0 +1,47 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.zm-viewer
+{
+	position:absolute;
+	display:none;
+	overflow:hidden;
+	background:url(loading.gif)  no-repeat center center ;
+	cursor:crosshair;
+	z-index:9999;
+}
+.zm-handler
+{
+	position:absolute !important;
+	display:none;
+	overflow:hidden ;
+	cursor:crosshair;
+	border:none !important;
+}
+.zm-handlerarea
+{
+	background:url(lens.png);
+	opacity:.9;
+	position:relative;
+}
+.zm-description
+{
+	position:absolute;
+	bottom:6px;
+	left:6px;
+	right:6px;
+	background-color:#eee;
+	background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    color: rgba(0,0,0,.6);
+    font-size: 13px;
+    text-align: center;
+    text-shadow: 1px 1px 0 rgba(255,255,255,.3);
+	padding:4px;
+}
+
+.followViewer,.standardViewer {
+	border:2px solid #fefefe;
+	border:4px solid rgba(255, 255, 255, .2);
+	box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+}

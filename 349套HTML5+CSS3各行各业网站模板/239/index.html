@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--fonts-->
+	<link href='http://fonts.useso.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.useso.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+<!--//fonts-->
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+</head>
+<body>
+	<!--header-->
+	<div class="header">
+		<div class="container">
+			<div class="logo">
+				<a href="#"><img src="images/logo.png" alt=" " /></a>
+			</div>
+			<div class="top-nav">
+				<span class="menu"> </span>
+				<ul>
+					<li class="active"><a href="#" class="scroll">Home</a></li>
+					<li><a href="#services" class="scroll">Services</a></li>
+					<li><a href="#team" class="scroll">Team</a></li>
+					<li><a href="#gallery" class="scroll">Gallery</a></li>
+					<li><a href="#price" class="scroll">Price</a></li>
+					<li><a href="#news" class="scroll">News</a></li>
+					<li><a href="#contact" class="scroll">Contact </a></li>
+				</ul>
+				<!-- script-nav -->
+			<script>
+			$("span.menu").click(function(){
+				$(".top-nav ul").slideToggle(500, function(){
+				});
+			});
+			</script>
+			<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+					</script>
+				<!-- //script-nav -->
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//header-->
+	<!--banner-->
+		 <div class="banner">
+			<div class="wmuSlider example1">
+				   <div class="wmuSliderWrapper">
+					   <article style="position: absolute; width: 100%; opacity: 0;">
+					   	<div class="banner-matter">
+							<h2>ROBOT<span>X</span></h2>
+							<p>WEB DEVELOPMENT SOLUTIONS</p>
+						</div>
+					 	</article>
+					 	<article style="position: absolute; width: 100%; opacity: 0;">
+						<div class="banner-matter">
+							<h2>DESIGN<span>X</span></h2>
+							<p>WEB DEVELOPMENT SOLUTIONS</p>
+						</div>
+					 	</article>
+					 	<article style="position: absolute; width: 100%; opacity: 0;">
+						<div class="banner-matter">
+							<h2>DEVELOP<span>X</span></h2>
+							<p>WEB DEVELOPMENT SOLUTIONS</p>
+						</div>
+					 	</article>
+					 </div>
+	                <ul class="wmuSliderPagination">
+	                	<li><a href="#" class="">0</a></li>
+	                	<li><a href="#" class="">1</a></li>
+	                	<li><a href="#" class="">2</a></li>
+	                </ul>
+	            </div>
+	            <script src="js/jquery.wmuSlider.js"></script> 
+				  <script>
+	       			$('.example1').wmuSlider();         
+	   		     </script> 	           	         
+		</div>
+	<!--//banner-->
+	<!--content-->
+	<div class="content">
+		<div class="container">
+			<div class="services" id="services">
+				<h3>our <span>services</span></h3>
+				<div class="services-grid">
+					<div class="service-grid-left">
+						<img src="images/tv.png" alt="" />
+						<h4>Responsive Design</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+						<a class="more" href="#">more</a>
+					</div>
+					<div class="service-grid-left">
+						<img src="images/wo.png" alt="" />
+						<h4>Responsive Design</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+						<a class="more" href="#">more</a>
+					</div>
+					<div class="service-grid-left">
+						<img src="images/cl.png" alt="" />
+						<h4>Responsive Design</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+						<a class="more" href="#">more</a>
+					</div>
+					<div class="service-grid-left">
+						<img src="images/mob.png" alt="" />
+						<h4>Responsive Design</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+						<a class="more" href="#">more</a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+			<!--team-->
+		<div class="team" id="team">
+			<div class="container">
+				<h3>our <span>team</span></h3>
+				<div class="team-grid">
+					<div class="col-md-3 team-grid-left">
+						<img class="img-responsive men" src="images/1.jpg" alt="" />
+						<h4>Designer</h4>
+							<p>Lorem ipsum dolor sit amet</p>
+							<div class="arrow-para">
+								<div class="in-arrow"> 
+									<label class="line-in"> </label>
+									<span class="arrow"> </span>
+								</div> 
+								<ul class="social">
+									<li class="facebook"><a href="#"><span> </span></a></li>
+									<li class="twitter"><a href="#"><span> </span></a></li>
+									<li class="inline"><a href="#"><span> </span></a></li>
+									<li class="gmail"><a href="#"><span> </span></a></li>
+								</ul>
+							</div>
+					</div>
+					<div class="col-md-3 team-grid-left">
+						<img class="img-responsive men" src="images/2.jpg" alt="" />
+						<h4>Web Designer</h4>
+						<p>Lorem ipsum dolor sit amet</p>
+						<div class="arrow-para">
+								<div class="in-arrow"> 
+									<label class="line-in"> </label>
+									<span class="arrow"> </span>
+								</div> 
+								<ul class="social">
+									<li class="facebook"><a href="#"><span> </span></a></li>
+									<li class="twitter"><a href="#"><span> </span></a></li>
+									<li class="inline"><a href="#"><span> </span></a></li>
+									<li class="gmail"><a href="#"><span> </span></a></li>
+								</ul>
+							</div>
+					</div>
+					<div class="col-md-3 team-grid-left men-ss">
+						<img class="img-responsive men" src="images/3.jpg" alt="" />
+						<h4>Web Designer</h4>
+						<p>Lorem ipsum dolor sit amet</p>
+						<div class="arrow-para">
+								<div class="in-arrow"> 
+									<label class="line-in"> </label>
+									<span class="arrow"> </span>
+								</div> 
+								<ul class="social">
+									<li class="facebook"><a href="#"><span> </span></a></li>
+									<li class="twitter"><a href="#"><span> </span></a></li>
+									<li class="inline"><a href="#"><span> </span></a></li>
+									<li class="gmail"><a href="#"><span> </span></a></li>
+								</ul>
+							</div>
+					</div>
+					<div class="col-md-3 team-grid-left men-ss">
+						<img class="img-responsive men" src="images/4.jpg" alt="" />
+						<h4>Apps Designer</h4>
+						<p>Lorem ipsum dolor sit amet</p>
+						<div class="arrow-para">
+								<div class="in-arrow"> 
+									<label class="line-in"> </label>
+									<span class="arrow"> </span>
+								</div> 
+								<ul class="social">
+									<li class="facebook"><a href="#"><span> </span></a></li>
+									<li class="twitter"><a href="#"><span> </span></a></li>
+									<li class="inline"><a href="#"><span> </span></a></li>
+									<li class="gmail"><a href="#"><span> </span></a></li>
+								</ul>
+							</div>
+					</div>
+						<div class="clearfix"> </div>
+				</div>
+				<h4 class="skill">SKILL</h4>
+				<div class="team-grid-bottom">
+					<div class="col-md-3 team-word">
+						<p>word press</p>
+						<p>HTML5</p>
+						<p>CSS3</p>
+						<p>RESPONSIVE DESIGN</p>
+					</div>
+					<div class="col-md-9">
+						<div class="team-per">
+							<div class="col-md-11">
+								<div class="content-green">
+									<div style="width:25%;" >
+									 </div>
+								</div>
+							</div>
+								<div class="col-md-1">
+									<label class="percentage">80%</label> 
+								</div>
+						</div>
+						<div class="team-per">
+							<div class="col-md-11">
+								<div class="content-green">
+									<div style="width:15%;" >
+									 </div>
+								</div>
+							</div>
+								<div class="col-md-1">
+									<label class="percentage">90%</label> 
+								</div>
+						</div>
+						<div class="team-per">
+							<div class="col-md-11">
+								<div class="content-green">
+									<div style="width:18%;" >
+									 </div>
+								</div>
+							</div>
+								<div class="col-md-1">
+									<label class="percentage">85%</label> 
+								</div>
+						</div>
+						<div class="team-per">
+							<div class="col-md-11">
+								<div class="content-green">
+									<div style="width:18%;" >
+									 </div>
+								</div>
+							</div>
+								<div class="col-md-1">
+									<label class="percentage">85%</label> 
+								</div>
+						</div>
+						<div class="clearfix"> </div>
+						</div>
+					<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+				<!--gallery-->
+		<div class="gallery" id="gallery">
+			<div class="container">
+				<div class="gallery-grid">
+				<h3>our <span>gallery</span></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+				</div>
+			</div>
+			<ul id="filters">
+						<li class="active"><span class="filter" data-filter="app card icon logo set web">ALL</span></li>
+						<li><span class="filter" data-filter="app">CORPORATE WEB SITE</span></li>
+						<li><span class="filter" data-filter="card">RESPONSIVE DESIGN </span></li>
+						<li><span class="filter" data-filter="icon">MOBILE aPPS</span></li>
+						<li><span class="filter" data-filter="logo">wORDPRESS THEME </span></li>
+						<li><span class="filter" data-filter="set">WEB HOSTING</span></li>
+					</ul>
+					<div id="portfoliolist">
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper ">		
+							<a href="#" class="b-link-stripe b-animate-go  thickbox play-icon">
+						  <img class="img-responsive " src="images/pic1.jpg" alt="" />
+						    </a>
+						     <ul class="social-ic">
+								<li class="down"><a href="#"><span> </span></a></li>
+								<li class="search"><a href="#"><span> </span></a></li>
+							</ul>	               
+						</div>
+					</div>				
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#" class="b-link-stripe b-animate-go  thickbox play-icon ">
+						    <img class="img-responsive" src="images/pic8.jpg" alt=""  /></a>
+						    <ul class="social-ic">
+								<li class="down"><a href="#"><span> </span></a></li>
+								<li class="search"><a href="#"><span> </span></a></li>
+							</ul>
+		                </div>
+					</div>		
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#" class="b-link-stripe b-animate-go  thickbox play-icon ">
+						     <img class="img-responsive" src="images/pic7.jpg"  alt="" /></a>
+						      <ul class="social-ic">
+								<li class="down"><a href="#"><span> </span></a></li>
+								<li class="search"><a href="#"><span> </span></a></li>
+							</ul>
+		                </div>
+					</div>				
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper ">		
+							<a href="#" class="b-link-stripe b-animate-go  thickbox play-icon ">
+						     <img class="img-responsive" src="images/pic6.jpg" alt=""  /></a>
+						     <ul class="social-ic">
+								<li class="down"><a href="#"><span> </span></a></li>
+								<li class="search"><a href="#"><span> </span></a></li>
+							</ul>
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper ">		
+							<a href="#" class="b-link-stripe b-animate-go  thickbox play-icon ">
+						     <img class="img-responsive" src="images/pic5.jpg" alt=""  /></a>
+						     <ul class="social-ic">
+								<li class="down"><a href="#"><span> </span></a></li>
+								<li class="search"><a href="#"><span> </span></a></li>
+							</ul>
+		                </div>
+					</div>			
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog5" class="b-link-stripe b-animate-go  thickbox play-icon ">
+						     <img class="img-responsive" src="images/pic4.jpg" alt=""  />
+						     </a>
+						     <ul class="social-ic">
+								<li class="down"><a href="#"><span> </span></a></li>
+								<li class="search"><a href="#"><span> </span></a></li>
+							</ul>
+		               </div>
+					</div>
+					<div class="portfolio set mix_all" data-cat="set" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog5" class="b-link-stripe b-animate-go  thickbox play-icon ">
+						     <img class="img-responsive" src="images/pic3.jpg" alt=""  />
+						     </a>
+						     <ul class="social-ic">
+								<li class="down"><a href="#"><span> </span></a></li>
+								<li class="search"><a href="#"><span> </span></a></li>
+							</ul>
+		               </div>
+					</div>
+					<div class="portfolio logo mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog5" class="b-link-stripe b-animate-go  thickbox play-icon ">
+						     <img class="img-responsive" src="images/pic2.jpg" alt=""  />
+						     </a>
+						     <ul class="social-ic">
+								<li class="down"><a href="#"><span> </span></a></li>
+								<li class="search"><a href="#"><span> </span></a></li>
+							</ul>
+		               </div>
+					</div>
+					<div class="portfolio set mix_all" data-cat="set" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog5" class="b-link-stripe b-animate-go  thickbox play-icon ">
+						     <img class="img-responsive" src="images/pic1.jpg" alt=""  />
+						     </a>
+						     <ul class="social-ic">
+								<li class="down"><a href="#"><span> </span></a></li>
+								<li class="search"><a href="#"><span> </span></a></li>
+							</ul>
+		               </div>
+					</div>
+					<div class="portfolio logo mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog5" class="b-link-stripe b-animate-go  thickbox play-icon ">
+						     <img class="img-responsive" src="images/pic.jpg" alt=""  />
+						     </a>
+						     <ul class="social-ic">
+								<li class="down"><a href="#"><span> </span></a></li>
+								<li class="search"><a href="#"><span> </span></a></li>
+							</ul>
+		               </div>
+					</div>
+					<div class="clearfix"> </div>
+					</div>	
+			<!-- Script for gallery Here -->
+				<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+					$(function () {
+						
+						var filterList = {
+						
+							init: function () {
+							
+								// MixItUp plugin
+								// http://mixitup.io
+								$('#portfoliolist').mixitup({
+									targetSelector: '.portfolio',
+									filterSelector: '.filter',
+									effects: ['fade'],
+									easing: 'snap',
+									// call the hover effect
+									onMixEnd: filterList.hoverEffect()
+								});				
+							
+							},
+							
+							hoverEffect: function () {
+							
+								// Simple parallax effect
+								$('#portfoliolist .portfolio').hover(
+									function () {
+										$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+										$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+									},
+									function () {
+										$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+										$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+									}		
+								);				
+							
+							}
+				
+						};
+						
+						// Run the show!
+						filterList.init();
+						
+						
+					});	
+					</script>
+			<!-- Gallery Script Ends -->
+			</div>
+			<!---->
+			<div class="price" id="price">
+				<div class="container">
+					<h3>our <span>price</span></h3>
+					<div class="price-grid">
+						<div class="col-md-4 pack">
+							<div class="price-top">
+								<h5>Pro Package</h5>
+								<span class="blub"> </span>
+								<p>$<label>99</label>/month</p>
+							</div>
+							<div class="price-bottom">
+								<p>Lorem ipsum dolor sit</p>
+								<p>Amet,consectetur</p>
+								<p>Dipiscing elit sed </p>
+								<p>Musmode tempor</p>
+								<p class="para">Vcididunt ut labore</p>
+								<a class="now" href="#">SUBSCRIBE NOW</a>
+							</div>
+						</div>
+						<div class="col-md-4 pack">
+							<div class="price-top top-price-left">
+								<h5>Standard Package</h5>
+								<span class="world"> </span>
+								<p>$<label>99</label>/month</p>
+							</div>
+							<div class="price-bottom">
+								<p>Lorem ipsum dolor sit</p>
+								<p>Amet,consectetur</p>
+								<p>Dipiscing elit sed </p>
+								<p>Musmode tempor</p>
+								<p class="para">Vcididunt ut labore</p>
+								<a class="now now-more" href="#">SUBSCRIBE NOW</a>
+							</div>
+						</div>
+						<div class="col-md-4 pack">
+							<div class="price-top" id="top-price-right">
+								<h5>Basic Package</h5>
+								<span class="clock"> </span>
+								<p>$<label>99</label>/month</p>
+							</div>
+							<div class="price-bottom">
+								<p>Lorem ipsum dolor sit</p>
+								<p>Amet,consectetur</p>
+								<p>Dipiscing elit sed </p>
+								<p>Musmode tempor</p>
+								<p class="para">Vcididunt ut labore</p>
+								<a class="now" href="#">SUBSCRIBE NOW</a>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		<!--news-->
+		<div class="news" id="news">
+			<div class="container">
+				<h3>our <span>news</span></h3>
+				<div class="our-new">
+				<div class="news-left">
+					<h4>Latest News</h4>
+					<div class="news-grid">
+						<div class="col-md-2 news-grid-left">
+							<label>21</label>	
+							<small>DEC</small>					
+						</div>
+						<div class="col-md-10 news-grid-right ">
+							<a href="#"><h6>Enim ad minim veniam, quis nostrud </h6></a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+							<ul class="eye">
+								<li><a href="#"><span> </span></a></li>
+								<li><a href="#"><b>129</b></a></li>
+							</ul>
+							<ul class="eye">
+								<li class="round"><a href="#"><span> </span></a></li>
+								<li><a href="#"><b>81</b></a></li>
+							</ul>
+								<div class="clearfix"> </div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="news-grid new-gr-grid">
+						<div class="col-md-2 news-grid-left">
+							<label>18</label>	
+							<small>DEC</small>					
+						</div>
+						<div class="col-md-10 news-grid-right ">
+							<a href="#"><h6>Minim veniam, quis nostrud uenim ad</h6></a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+							<ul class="eye">
+								<li><a href="#"><span> </span></a></li>
+								<li><a href="#"><b>129</b></a></li>
+							</ul>
+							<ul class="eye">
+								<li class="round"><a href="#"><span> </span></a></li>
+								<li><a href="#"><b>81</b></a></li>
+							</ul>
+								<div class="clearfix"> </div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="news-grid new-gr-grid">
+						<div class="col-md-2 news-grid-left">
+							<label>12</label>	
+							<small>DEC</small>					
+						</div>
+						<div class="col-md-10 news-grid-right ">
+							<a href="#"><h6>Quis  ad minim veniam, quis nostrud</h6></a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+							<ul class="eye">
+								<li><a href="#"><span> </span></a></li>
+								<li><a href="#"><b>129</b></a></li>
+							</ul>
+							<ul class="eye">
+								<li class="round"><a href="#"><span> </span></a></li>
+								<li><a href="#"><b>81</b></a></li>
+							</ul>
+								<div class="clearfix"> </div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="news-right">
+					<div class="news-grid">
+						<div class="col-md-2 news-grid-left news-right-grid">
+							<label>10</label>	
+							<small>DEC</small>					
+						</div>
+						<div class="col-md-10 news-grid-right news-grid-grid">
+							<a href="#"><h6>Uenim ad minim veniam </h6></a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+							<ul class="eye ">
+								<li class="black"><a href="#"><span > </span></a></li>
+								<li><a href="#"><b>129</b></a></li>
+							</ul>
+							<ul class="eye black">
+								<li class="black-round"><a href="#"><span> </span></a></li>
+								<li><a href="#"><b>81</b></a></li>
+							</ul>
+								<div class="clearfix"> </div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="news-grid">
+						<div class="col-md-2 news-grid-left news-right-grid">
+							<label>08</label>	
+							<small>DEC</small>					
+						</div>
+						<div class="col-md-10 news-grid-right news-grid-grid">
+							<a href="#"><h6>Uenim ad minim veniam </h6></a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+							<ul class="eye ">
+								<li class="black"><a href="#"><span > </span></a></li>
+								<li><a href="#"><b>129</b></a></li>
+							</ul>
+							<ul class="eye black">
+								<li class="black-round"><a href="#"><span> </span></a></li>
+								<li><a href="#"><b>81</b></a></li>
+							</ul>
+								<div class="clearfix"> </div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="news-grid new-gr-grid">
+						<div class="col-md-2 news-grid-left news-right-grid">
+							<label>07</label>	
+							<small>DEC</small>					
+						</div>
+						<div class="col-md-10 news-grid-right news-grid-grid">
+							<a href="#"><h6>Uenim ad minim veniam </h6></a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+							<ul class="eye ">
+								<li class="black"><a href="#"><span > </span></a></li>
+								<li><a href="#"><b>129</b></a></li>
+							</ul>
+							<ul class="eye black">
+								<li class="black-round"><a href="#"><span> </span></a></li>
+								<li><a href="#"><b>81</b></a></li>
+							</ul>
+								<div class="clearfix"> </div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="news-grid new-gr-grid">
+						<div class="col-md-2 news-grid-left news-right-grid">
+							<label>06</label>	
+							<small>DEC</small>					
+						</div>
+						<div class="col-md-10 news-grid-right news-grid-grid">
+							<a href="#"><h6>Uenim ad minim veniam </h6></a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+							<ul class="eye ">
+								<li class="black"><a href="#"><span > </span></a></li>
+								<li><a href="#"><b>129</b></a></li>
+							</ul>
+							<ul class="eye black">
+								<li class="black-round"><a href="#"><span> </span></a></li>
+								<li><a href="#"><b>81</b></a></li>
+							</ul>
+								<div class="clearfix"> </div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="news-grid new-gr-grid">
+						<div class="col-md-2 news-grid-left news-right-grid">
+							<label>04</label>	
+							<small>DEC</small>					
+						</div>
+						<div class="col-md-10 news-grid-right news-grid-grid">
+							<a href="#"><h6>Uenim ad minim veniam </h6></a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+							<ul class="eye ">
+								<li class="black"><a href="#"><span > </span></a></li>
+								<li><a href="#"><b>129</b></a></li>
+							</ul>
+							<ul class="eye black">
+								<li class="black-round"><a href="#"><span> </span></a></li>
+								<li><a href="#"><b>81</b></a></li>
+							</ul>
+								<div class="clearfix"> </div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="news-grid new-gr-grid">
+						<div class="col-md-2 news-grid-left news-right-grid">
+							<label>02</label>	
+							<small>DEC</small>					
+						</div>
+						<div class="col-md-10 news-grid-right news-grid-grid">
+							<a href="#"><h6>Uenim ad minim veniam </h6></a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+							<ul class="eye ">
+								<li class="black"><a href="#"><span > </span></a></li>
+								<li><a href="#"><b>129</b></a></li>
+							</ul>
+							<ul class="eye black">
+								<li class="black-round"><a href="#"><span> </span></a></li>
+								<li><a href="#"><b>81</b></a></li>
+							</ul>
+								<div class="clearfix"> </div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				<div class="clearfix"> </div>
+			</div>
+			</div>
+		</div>
+		</div>
+		<!--contact-->
+			<div class="contact" id="contact">
+				<div class="container">
+					<h3>our <span>contact</span></h3>
+				</div>
+				<div class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d117451.83412789257!2d72.4782171300925!3d23.083554293042766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1408175172215"> </iframe>
+					<label> </label>	
+				</div>
+				<div class="clearfix"> </div>
+				<div class="container">
+					<div class="contact-our">
+						<p class="contact-para"><a href="#">+29 20 466 4241 <b>info@robotx.com</b></a></p>
+						<div class="contact-right">
+							<p>365 Main Street Your City, State Country.</p>
+							<span class="city"> </span>
+							<img class="drop-p" src="images/dr.png" alt=""  />
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					</div>
+					<div class="container">
+						<div class="contact-gr-grid">
+							<form>
+								<div class="grid-contact">
+								<div class="col-md-4 contact-grid">
+									<p class="your-para">Your name:</p>
+									<input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
+								</div>
+								<div class="col-md-4 contact-grid">
+									<p class="your-para">Your mail:</p>
+									<input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
+								</div>
+								<div class="col-md-4 contact-grid">
+									<p class="your-para">Your phone number:</p>
+									<input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
+								</div>
+								</div>
+								<p class="message-para">Your message:</p>
+								<textarea cols="77" rows="6" value=" " onfocus="this.value='';" onblur="if (this.value == '') {this.value = '';}"></textarea>
+								<div class="send">
+								<input type="submit" value="Send your message" >
+								</div>
+							</form>
+						</div>
+				</div>
+			</div>		
+		</div>
+	<!--//content-->
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+				<img class="footer-left" src="images/f-l.png" alt=" " />
+				<div class="footer-class">
+					 <p class="footer-grid">Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+					 <ul class="social-ic-icons">
+						<li class="facebook"><a href="#"><span> </span></a></li>
+						<li class="twitter"><a href="#"><span> </span></a></li>
+						<li class="inline"><a href="#"><span> </span></a></li>
+						<li class="gmail"><a href="#"><span> </span></a></li>
+						<li class="browser"><a href="#"><span> </span></a></li>
+					</ul>
+				<div class="clearfix"> </div>
+			 	</div>
+			 	<div class="clearfix"> </div>
+		 </div>
+		 <script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	 </div>
+</body>
+</html>

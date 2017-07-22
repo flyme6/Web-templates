@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='http://fonts.useso.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>	
+</head>
+<body>
+<!-- header -->
+	<div class="single-banner">
+			<div class="single-bottom">
+				<div class="container">
+					<div class="logo1">
+						<a href="index.html"><img src="images/logo1.png" class="img-responsive" alt="" /></a>
+					</div>
+					<div class="head-nav">
+						<span class="menu"> </span>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">portfolio</a></li>
+								<li><a href="#">services</a></li>
+								<li class="active"><a href="blog.html">pages</a></li>
+								<li><a href="contact.html">contact</a></li>
+								<div class="clearfix"> </div>
+							</ul>
+					</div>
+				<!-- script-for-nav -->
+					<script>
+						$( "span.menu" ).click(function() {
+						  $( ".head-nav ul" ).slideToggle(300, function() {
+							// Animation complete.
+						  });
+						});
+					</script>
+				<!-- script-for-nav -->		
+					<div class="search-box">
+				        <form>
+				            <input type="text" name="s" class="textbox" value="search" onfocus="this.value = '';" onblur="if
+				                  	(this.value == '') {this.value = 'search';}">
+				            <input type="submit" value>
+				        </form>
+		            </div>
+						<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="single-info">
+				<div class="container">	
+					<h1>blog</h1>				
+					<div class="single-nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="blog.html">Pages</a></li>
+							<li class="active"><a href="blog.html">Blog</a></li>
+							<li><a href="single.html">Singlepost</a></li>
+								<div class="clearfix"> </div>
+						</ul>
+					</div>
+				</div>
+			</div>
+	</div>
+<!-- header -->
+	<div class="single">
+		<div class="container">
+			<div class="col-md-9">
+				<a href="single.html"><img src="images/img15.jpg" class="img-responsive" alt="" /></a>
+				<div class="blog-content">
+					<h2><a href="single.html">we can create a brand that tands out</h2></a>
+					<h6>posted on aug 10,2014 by admin</h6>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					<a class="read-more" href="#">read more</a>
+					<div class="single-rupert2">
+						<div class="single-rupert">
+							<ul>
+								<li><i class="ink"> </i><li>
+								<li><a href="#">Web,<li></a>
+								<li><a href="#">Design,<li></a>
+								<li><a href="#">Media,<li></a>
+								<li><a href="#">Themes,<li></a>
+							</ul>
+						</div>
+						<div class="single-rupert1">
+							<ul>
+								<li><a href="#"><i class="love"> </i></a><li>
+								<li><a href="#"><i class="share1"> </i></a><li>
+							</ul>
+						</div>
+							<div class="clearfix"> </div>		
+					</div>
+				</div>
+				 <section class="slider">
+							<div class="flexslider">
+							  <ul class="slides">
+								<li>
+									<div class="featured">
+										<a href="#"><img src="images/img16.jpg" class="img-responsive" alt="" /></a>
+									</div>
+								</li>
+								<li>
+									<div class="featured">
+										<a href="#"><img src="images/img16.jpg" class="img-responsive" alt="" /></a>
+									</div>
+								</li>
+								<li>
+									<div class="featured">
+										<a href="#"><img src="images/img16.jpg" class="img-responsive" alt="" /></a>
+									</div>
+								</li>
+							  </ul>
+							</div>
+						  </section>
+						  <!-- FlexSlider -->
+						  <script defer src="js/jquery.flexslider.js"></script>
+						  <script type="text/javascript">
+							$(function(){
+							  SyntaxHighlighter.all();
+							});
+							$(window).load(function(){
+							  $('.flexslider').flexslider({
+								animation: "slide",
+								start: function(slider){
+								  $('body').removeClass('loading');
+								}
+							  });
+							});
+						  </script>
+				<div class="blog-content">
+					<h2><a href="#">gallery post example</h2></a>
+					<h6>posted on aug 10,2014 by admin</h6>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					<a class="read-more" href="#">read more</a>
+					<div class="single-rupert2">
+						<div class="single-rupert">
+							<ul>
+								<li><i class="ink"> </i><li>
+								<li><a href="#">Web,<li></a>
+								<li><a href="#">Design,<li></a>
+								<li><a href="#">Media,<li></a>
+								<li><a href="#">Themes,<li></a>
+							</ul>
+						</div>
+						<div class="single-rupert1">
+							<ul>
+								<li><a href="#"><i class="love"> </i></a><li>
+								<li><a href="#"><i class="share1"> </i></a><li>
+							</ul>
+						</div>
+							<div class="clearfix"> </div>		
+					</div>
+				</div>
+				<div class="player">
+					<iframe src="//player.vimeo.com/video/102611132" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+				</div>
+				<div class="blog-content">
+					<h2><a href="#">video post example</h2></a>
+					<h6>posted on aug 10,2014 by admin</h6>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					<a class="read-more" href="#">read more</a>
+					<div class="single-rupert2">
+						<div class="single-rupert">
+							<ul>
+								<li><i class="ink"> </i><li>
+								<li><a href="#">Web,<li></a>
+								<li><a href="#">Design,<li></a>
+								<li><a href="#">Media,<li></a>
+								<li><a href="#">Themes,<li></a>
+							</ul>
+						</div>
+						<div class="single-rupert1">
+							<ul>
+								<li><a href="#"><i class="love"> </i></a><li>
+								<li><a href="#"><i class="share1"> </i></a><li>
+							</ul>
+						</div>
+							<div class="clearfix"> </div>		
+					</div>
+				</div>
+			</div>		
+			<div class="col-md-3 side-content">
+					<div class="search-box1">
+				        <form>
+				            <input type="text" name="s" class="textbox" value="search" onfocus="this.value = '';" onblur="if
+				                  	(this.value == '') {this.value = 'search';}">
+				            <input type="submit" value>
+				        </form>
+		            </div>
+				<ul class="sidebar">
+					<h3>Categories</h3>
+		            <li><a href="#">Artist (09)</a></li>
+		            <li><a href="#">Articles (04)</a></li>
+		            <li><a href="#">Design (08)</a></li>
+		            <li><a href="#">Website (15)</a></li>
+		            <li><a href="#">Creative (90)</a></li>
+		            <li><a href="#">Best (04)</a></li>
+				</ul>
+				<ul class="tags">
+					<h3>tags</h3>
+						<li><a href="#">Web,<li></a>
+						<li><a href="#">Design,<li></a>
+						<li><a href="#">Media,<li></a>
+						<li><a href="#">Themes,<li></a>
+						<li><a href="#">Cool,<li></a>
+						<li><a href="#">Wodpress,<li></a>
+						<li><a href="#">Lorel,<li></a>
+						<li><a href="#">Demo version,<li></a>
+				</ul>
+					<h3>Archive</h3>
+		        <ul class="sidebar">
+		            <li><a href="">January (05)</a></li>
+					<li><a href="#">Feb (04)</a></li>
+		            <li><a href="#">may (15)</a></li>
+		            <li><a href="#">July (54)</a></li>
+		            <li><a href="#">Aug (04)</a></li>		                 
+		        </ul>
+			</div>
+				<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="social">
+				<ul>
+					<li><a href="#"><i class="fb"> </i></li></a>
+					<li><a href="#"><i class="twt"> </i></li></a>
+					<li><a href="#"><i class="drib"> </i></li></a>
+					<li><a href="#"><i class="behanc"> </i></li></a>
+					<li><a href="#"><i class="link"> </i></li></a>
+					<div class="clearfix"></div>
+				</ul>
+			</div>
+			<div class="bottom">
+				<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+			</div>
+		</div>
+	</div>
+<!-- footer -->
+
+</body>
+</html>

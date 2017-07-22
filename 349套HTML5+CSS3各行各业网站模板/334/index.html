@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+		<!-- js -->
+		<script src="js/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!-- js -->
+		<!-- start-smoth-scrolling-->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!-- start-smoth-scrolling-->
+<!-- animated-css -->
+		<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<script src="js/wow.min.js"></script>
+		<script>
+		 new WOW().init();
+		</script>
+<!-- animated-css -->
+	</head>
+	<body>
+		<!-- header -->
+		<div id="home" class="heder">
+			<!-- container -->
+			<div class="container">
+				<div class="header-top">
+					<div class="heder-logo">
+						<h1><a href="#">IDDO</a></h1>
+					</div>
+					<div class="top-nav">
+					<span class="menu"><img src="images/menu.png" alt=""></span>
+						<ul class="nav1">
+							<li><a class="scroll" href="#home">Home</a></li>
+							<li><a class="scroll" href="#services">Services</a></li>
+							<li><a class="scroll" href="#portfolio">Portfolio</a></li>
+							<li><a class="scroll" href="#about">About</a></li>
+							<li><a class="scroll" href="#contact">Contact</a></li>
+							<li><a class="Signup play-icon popup-with-zoom-anim" href="#small-dialog2">Sign up</a></li>
+						</ul>
+						<!-- script-for-menu -->
+							 <script>
+							   $( "span.menu" ).click(function() {
+								 $( "ul.nav1" ).slideToggle( 300, function() {
+								 // Animation complete.
+								  });
+								 });
+							</script>
+						<!-- /script-for-menu -->
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- header -->
+		<!-- banner -->
+		<div class="banner">
+			<!-- container -->
+			<div class="container">
+				<div class="banner-info wow bounceIn" data-wow-delay="0.4s">
+					<a class="play-icon popup-with-zoom-anim" href="#small-dialog">
+						<span> </span>
+					</a>
+					<div class="banner-text">
+						<h2>Let me show you a few things.</h2>
+						<p><a class="play-icon popup-with-zoom-anim" href="#small-dialog">Click to play video</a></p>
+					</div>
+					<!--pop-up-box-->
+					<script type="text/javascript" src="js/modernizr.custom.min.js"></script>    
+					<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+					<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+					<!--//pop-up-box-->
+				<div id="small-dialog" class="mfp-hide">
+					<iframe src="//player.vimeo.com/video/38584262"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+				</div>
+				<div id="small-dialog2" class="mfp-hide">
+					<div class="signup">
+						<h3>Sign Up</h3>
+						<h4>Please Enter Your Details</h4>
+						<input type="text" value="First Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}" />
+						<input type="text" value="Second Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Second Name';}" />
+						<input type="text" class="email"value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"  />
+						<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"/>
+						<input type="submit"  value="Sign Up"/>
+					</div>
+				</div>	
+				 <script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>				
+				</div>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- banner -->
+		<!-- services -->
+		<div id="services" class="services">
+			<!-- container -->
+			<div class="container">
+				<div class="col-md-4 services-hedding wow bounceIn" data-wow-delay="0.4s">
+					<h3>Our Services.</h3>
+				</div>
+				<div class="col-md-4 services-info wow bounceIn" data-wow-delay="0.4s">
+					<div class="col-md-3 img-grid">
+						<span> </span>
+					</div>
+					<div class="col-md-9 img-grid-text">
+						<h4>Feature 1</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+					</div>
+				</div>
+				<div class="col-md-4 services-info wow bounceIn" data-wow-delay="0.4s">
+					<div class="col-md-3 img-grid">
+						<span class="food"> </span>
+					</div>
+					<div class="col-md-9 img-grid-text">
+						<h4>Feature 2</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+					</div>
+				</div>
+				<div class="col-md-4 services-info wow bounceIn" data-wow-delay="0.4s">
+					<div class="col-md-3 img-grid">
+						<span class="power"> </span>
+					</div>
+					<div class="col-md-9 img-grid-text">
+						<h4>Feature 3</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+					</div>
+				</div>
+				<div class="col-md-4 services-info wow bounceIn" data-wow-delay="0.4s">
+					<div class="col-md-3 img-grid">
+						<span class="wood"> </span>
+					</div>
+					<div class="col-md-9 img-grid-text">
+						<h4>Feature 4</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- services -->
+		<!-- icons -->
+		<div class="icons">
+			<!-- container -->
+			<div class="container">
+				<ul class="wow bounceIn" data-wow-delay="0.4s">
+					<li>
+						<span class="light"> </span>
+					</li>
+					<li>
+						<span class="glob"> </span>
+					</li>
+					<li>
+						<span class="camra"> </span>
+					</li>
+					<li>
+						<span class="setting"> </span>
+					</li>
+					<li>
+						<span class="mike"> </span>
+					</li>
+					<li>
+						<span class="money"> </span>
+					</li>
+				</ul>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- icons -->
+		<!-- works -->
+		<div id="portfolio" class="works">
+			<!-- container -->
+			<div class="container">
+				<div class="works-hedding wow bounceIn" data-wow-delay="0.4s">
+					<h3>Our works.</h3>
+				</div>
+				<ul id="filters">
+					<li><span class="filter active wow bounceIn" data-wow-delay="0.4s"" data-filter="app card icon logo web">All</span></li>
+					<li><span class="filter wow bounceIn" data-wow-delay="0.4s"" data-filter="app">Website</span></li>
+					<li><span class="filter wow bounceIn" data-wow-delay="0.4s"" data-filter="card">Branding</span></li>
+				</ul>
+				<div id="portfoliolist">
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">		
+							<a href="#small-dialog" class="b-link-stripe b-animate-go">
+						     <img src="images/ball.png" alt="" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">NAME PREJECT</h2>
+							 <p class="b-animate b-from-left    b-delay03 ">designed by Authour | May 23, 2014</p>
+						  	</div></a>
+		                </div>
+					</div>				
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">		
+							<a href="#small-dialog1" class="b-link-stripe b-animate-go">
+						     <img src="images/hokey.png" alt="" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">NAME PREJECT</h2>
+							 <p class="b-animate b-from-left    b-delay03 ">designed by Authour | May 23, 2014</p>
+						  	</div></a>
+		                </div>
+					</div>		
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">		
+							<a href="#small-dialog2" class="b-link-stripe b-animate-go">
+						     <img src="images/Football.png" alt="" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">NAME PREJECT</h2>
+							 <p class="b-animate b-from-left b-delay03" id="para">designed by Authour | May 23, 2014</p>
+						  	</div></a>
+		                </div>
+					</div>				
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">		
+							<a href="#small-dialog3" class="b-link-stripe b-animate-go">
+						     <img src="images/Football1.png" alt="" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">NAME PREJECT</h2>
+							 <p class="b-animate b-from-left    b-delay03 ">designed by Authour | May 23, 2014</p>
+						  	</div></a>
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">		
+							<a href="#small-dialog4" class="b-link-stripe b-animate-go">
+						     <img src="images/Icc.png" alt="" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">NAME PREJECT</h2>
+							 <p class="b-animate b-from-left    b-delay03 ">designed by Authour | May 23, 2014</p>
+						  	</div></a>
+		                </div>
+					</div>			
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">		
+							<a href="#small-dialog5" class="b-link-stripe b-animate-go">
+						     <img src="images/ball1.png" alt="" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">NAME PREJECT</h2>
+							 <p class="b-animate b-from-left    b-delay03 ">designed by Authour | May 23, 2014</p>
+						  	</div></a>
+		                </div>
+					</div>
+					<div class="clearfix"></div>	
+				</div>
+				<!-- Script for gallery Here -->
+				<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+					$(function () {
+						
+						var filterList = {
+						
+							init: function () {
+							
+								// MixItUp plugin
+								// http://mixitup.io
+								$('#portfoliolist').mixitup({
+									targetSelector: '.portfolio',
+									filterSelector: '.filter',
+									effects: ['fade'],
+									easing: 'snap',
+									// call the hover effect
+									onMixEnd: filterList.hoverEffect()
+								});				
+							
+							},
+							
+							hoverEffect: function () {
+							
+								// Simple parallax effect
+								$('#portfoliolist .portfolio').hover(
+									function () {
+										$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+										$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+									},
+									function () {
+										$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+										$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+									}		
+								);				
+							
+							}
+				
+						};
+						
+						// Run the show!
+						filterList.init();	
+					});	
+					</script>
+			<!-- Gallery Script Ends -->
+				<div class="clearfix"></div>
+				<div class="plus wow fadeInLeft"> 
+					<a href="#"><img src="images/plus.png" alt="" /></a>
+				</div>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- works -->
+		<!-- works-bottom -->
+		<div class="work-bottom">
+			<!-- container -->
+			<div class="container">
+			<!-- banner Slider starts Here -->
+	  			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: false,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!--//End-slider-script-->
+				<div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			          <div class="slider-top wow bounceIn" data-wow-delay="0.4s">
+			          	<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiamvoluptatem."</p>
+			          	<img src="images/user2.png" alt="" />
+						<p class="title">Jack Efron</p>
+			          </div>
+			        </li>
+			        <li>
+			          <div class="slider-top wow bounceIn" data-wow-delay="0.4s">
+			          	<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiamvoluptatem."</p>
+			          	<img src="images/user.png" alt="" />
+						<p class="title">Jack Efron</p>
+			          </div>
+			        </li>
+			        <li>
+			          <div class="slider-top wow bounceIn" data-wow-delay="0.4s">
+			          	<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiamvoluptatem."</p>
+			          	<img src="images/user1.png" alt="" />
+						<p class="title">Jack Efron</p>
+			          </div>
+			        </li>
+			      </ul>
+			    </div>
+			    <div class="clearfix"> </div>
+	  			<!-- banner Slider Ends Here --> 
+			</div>
+			<!-- container -->
+		</div>
+		<!-- works-bottom -->
+		<!-- team -->
+		<div class="our-team">
+			<!-- container -->
+			<div class="container">
+				<div class="team-hedding wow bounceIn" data-wow-delay="0.4s">
+					<h3>Our team.</h3>
+				</div>
+				<div class="team-grids">
+					<div class="col-md-4 team-grid">
+						<img src="images/team.png" alt="" class="wow bounceIn" data-wow-delay="0.4s" />
+						<ul class="plus wow fadeInRight">
+							<li class="twitter"><a href="#"> </a></li>
+							<li class="facebook"><a href="#"> </a></li>
+							<li class="cam"><a href="#"> </a></li>
+						</ul>
+						<div class="team-grid-text wow bounceIn" data-wow-delay="0.4s">
+							<h5>Michael Joe</h5>
+							<p class="caption">CEO & Founder</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+						</div>
+					</div>
+					<div class="col-md-4 team-grid">
+						<img src="images/team1.png" alt="" class="wow bounceIn" data-wow-delay="0.4s" />
+						<ul class="plus wow fadeInRight">
+							<li class="twitter"><a href="#"> </a></li>
+							<li class="facebook"><a href="#"> </a></li>
+							<li class="cam"><a href="#"> </a></li>
+						</ul>
+						<div class="team-grid-text wow bounceIn" data-wow-delay="0.4s">
+							<h5>Michael Joe</h5>
+							<p class="caption">CEO & Founder</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+						</div>
+					</div>
+					<div class="col-md-4 team-grid">
+						<img src="images/team2.png" alt="" class="wow bounceIn" data-wow-delay="0.4s" />
+						<ul class="plus wow fadeInRight">
+							<li class="twitter"><a href="#"> </a></li>
+							<li class="facebook"><a href="#"> </a></li>
+							<li class="cam"><a href="#"> </a></li>
+						</ul>
+						<div class="team-grid-text wow bounceIn" data-wow-delay="0.4s">
+							<h5>Michael Joe</h5>
+							<p class="caption">CEO & Founder</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="plus wow fadeInLeft"> 
+					<a href="#"><img src="images/plus.png" alt="" /></a>
+				</div>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- team -->
+		<!-- team-bottom -->
+		<div class="team-bottom">
+			<!-- container -->
+			<div class="container">
+				<div class="col-md-3 gift wow bounceIn" data-wow-delay="0.4s">
+					<span> </span>
+					<p>2009</p>
+					<p class="text">PERSPICIATIS</p>
+				</div>
+				<div class="col-md-3 gift wow bounceIn" data-wow-delay="0.4s">
+					<span class="comments"> </span>
+					<p>13,562</p>
+					<p class="text">COMMENTS</p>
+				</div>
+				<div class="col-md-3 gift wow bounceIn" data-wow-delay="0.4s">
+					<span class="cups"> </span>
+					<p>8,710</p>
+					<p class="text">COFFEE CUPS</p>
+				</div>
+				<div class="col-md-3 gift wow bounceIn" data-wow-delay="0.4s">
+					<span class="awards"> </span>
+					<p>715</p>
+					<p class="text">AWARDS</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- team-bottom -->
+		<!-- skills -->
+		<div id="about" class="skills">
+			<!-- container -->
+			<div class="container">
+				<div class="skills-hedding wow bounceIn" data-wow-delay="0.4s">
+					<h3>Our skills.</h3>
+				</div>
+				<div class="col-md-9">
+					<div class="col-md-3 skills-grid">
+						<div class="circle" id="circles-1"></div>
+					</div>
+					<div class="col-md-3 skills-grid">
+						<div class="circle" id="circles-2"></div>
+					</div>
+					<div class="col-md-3 skills-grid">
+						<div class="circle" id="circles-3"></div>
+					</div>
+					<div class="col-md-3 skills-grid">
+						<div class="circle" id="circles-4"></div>
+					</div>
+					<div class="clearfix"> </div>
+					<!-->
+				 <script type="text/javascript" src="js/circles.js"></script>
+					         <script>
+								var colors = [
+										['#FFFFFF', '#42B8DD'], ['#FFFFFF', '#42B8DD'], ['#FFFFFF', '#42B8DD'], ['#FFFFFF', '#42B8DD']
+									];
+								for (var i = 1; i <= 5; i++) {
+									var child = document.getElementById('circles-' + i),
+										percentage = 40 + (i * 10);
+										
+									Circles.create({
+										id:         child.id,
+										percentage: percentage,
+										radius:     80,
+										width:      10,
+										number:   	percentage / 10,
+										text:       '%',
+										colors:     colors[i - 1]
+									});
+								}
+						
+				</script>
+				<!--/-->
+					<div class="skills-grid-text">
+						<h5 class="plus wow fadeInRight">Something about our skills</h5>
+						<p class="wow bounceIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+							exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+							in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+							Excepteur sint occaecat cupidatat non proident.
+						</p>
+						<p class="wow bounceIn" data-wow-delay="0.4s">	Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+							totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
+							dicta.
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="totam">
+						<div class="tab1 wow bounceIn" data-wow-delay="0.4s">
+							<ul>
+								<li><span> </span></li>
+								<li class="text">Totam rem aperiam eaque</li>
+								<li class="minus">-</li>
+							</ul>
+							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+						</div>
+						<div class="tab2 wow bounceIn" data-wow-delay="0.4s">
+							<ul>
+								<li class="lock"></li>
+								<li class="sub-text">Nemo enim ipsam voluptatem</li>
+								<li class="char">+</li>
+							</ul>
+							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+						</div>
+						<div class="tab3 wow bounceIn" data-wow-delay="0.4s">
+							<ul>
+								<li class="tower"></li>
+								<li class="sub-text">Ut enim ad minima veniam</li>
+								<li class="char">+</li>
+							</ul>
+							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+						</div>
+						<div class="tab4 wow bounceIn" data-wow-delay="0.4s">
+							<ul>
+								<li class="phone"></li>
+								<li class="sub-text">Quis nostrum exercitationem ullam</li>
+								<li class="char">+</li>
+							</ul>
+							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+						</div>
+						<div class="tab5 wow bounceIn" data-wow-delay="0.4s">
+							<ul>
+								<li class="book"></li>
+								<li class="sub-text">Neque porro quisquam est qui</li>
+								<li class="char">+</li>
+							</ul>
+							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+						</div>
+					</div>
+					
+						<script>
+							$(document).ready(function(){
+								$(".tab1 p").hide();
+								$(".tab2 p").hide();
+								$(".tab3 p").hide();
+								$(".tab4 p").hide();
+								$(".tab5 p").hide();
+								$(".tab1 ul").click(function(){
+									$(".tab1 p").slideToggle(300);
+									$(".tab2 p").hide();
+									$(".tab3 p").hide();
+									$(".tab4 p").hide();
+									$(".tab5 p").hide();
+								})
+								$(".tab2 ul").click(function(){
+									$(".tab2 p").slideToggle(300);
+									$(".tab1 p").hide();
+									$(".tab3 p").hide();
+									$(".tab4 p").hide();
+									$(".tab5 p").hide();
+								})
+								$(".tab3 ul").click(function(){
+									$(".tab3 p").slideToggle(300);
+									$(".tab4 p").hide();
+									$(".tab5 p").hide();
+									$(".tab2 p").hide();
+									$(".tab1 p").hide();
+								})
+								$(".tab4 ul").click(function(){
+									$(".tab4 p").slideToggle(300);
+									$(".tab3 p").hide();
+									$(".tab2 p").hide();
+									$(".tab1 p").hide();
+									$(".tab5 p").hide();
+								})
+								$(".tab5 ul").click(function(){
+									$(".tab5 p").slideToggle(300);
+									$(".tab4 p").hide();
+									$(".tab3 p").hide();
+									$(".tab2 p").hide();
+									$(".tab1 p").hide();
+									
+								})
+								
+							});
+						</script>
+						<!-- script -->
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- skills -->
+		<!-- skills-middle -->
+		<div class="skills-middle">
+			<!-- container -->
+			<div class="container">
+				<div class="skills-middle-text">
+					<form>
+						<input type="text" class="text plus wow fadeInLeft" value="Enter your e-mail here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your e-mail here...';}">
+						<input type="submit" class="text plus wow fadeInRight" value="Subscribe">
+					</form>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- skills-middle -->
+		<!-- skills-bottom -->
+		<div class="skills-bottom">
+			<!-- container -->
+			<div class="container">
+				<div class="skills-images wow bounceIn" data-wow-delay="0.4s">
+					<div class="envato"><img src="images/envato.png"></div>
+					<div class="envato"><img src="images/word.png"></div>
+					<div class="envato"><img src="images/dribble.png"></div>
+					<div class="envato"><img src="images/envato.png"></div>
+					<div class="envato"><img src="images/word.png"></div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- skills-bottom -->
+		<!-- contact -->
+		<div id="contact" class="contact">
+			<!-- container -->
+			<div class="container">
+				<div class="contact-hedding wow bounceIn" data-wow-delay="0.4s">
+					<h3>Contact us.</h3>
+				</div>
+				<p class="wow bounceIn" data-wow-delay="0.4s">123A Building, Road Street, Orlando District, US
+					<span>+01 234 567 89 - +01 234 567 89 | contact@book.com</span>
+				</p>
+				<div class="social-icons wow bounceIn" data-wow-delay="0.4s">
+					<ul>
+						<li class="twit"></li>
+						<li class="fb"></li>
+						<li class="google"></li>
+						<li class="pinterest"></li>
+						<li class="rect"></li>
+						<li class="youtube"></li>
+						<li class="skip"></li>
+						<li class="dribbble"></li>
+					</ul>
+				</div>
+				<div class="col-md-8 text-fields">
+					<div class="text-fields-left">
+						<div class="text-field-email">
+							<form>
+								<input type="text" class="text" value="EMAIL" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'EMAIL';}">
+							</form>
+							<div class="msg-img"></div>
+						</div>
+						<div class="text-field-name">
+							<form>
+								<input type="text" class="text" value="NAME" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'NAME';}">
+							</form>
+							<div class="user-img"></div>
+						</div>
+						<div class="clearfix"> </div>
+						<div class="text-field-area wow fadeInLeft">
+							<form>
+								<textarea value="MESSAGE:" onfocus="if(this.value == 'MESSAGE') this.value='';" onblur="if(this.value == '') this.value='MESSAGE';">MESSAGE</textarea>
+							</form>
+							<div class="pen-img"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-fields">
+					<div class="text-fields-right wow fadeInRight">
+						<form>
+							<input type="submit" value="Submit">
+						</form>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- contact -->
+		<!-- footer -->
+		<div class="footer">
+			<!-- container -->
+			<div class="container">
+				<h4>IDDO</h4>
+				<div class="copyright">
+					<p>
+						Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a>
+					</p>
+				</div>
+				<a class="scroll" href="#home"><img src="images/up-arrow.png" alt="" /></a>
+			</div>
+			<!-- container -->
+		</div>
+		<!-- footer -->
+
+</body>
+</html>

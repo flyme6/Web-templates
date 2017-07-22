@@ -1,0 +1,1362 @@
+/*Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+body{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+body a{
+    transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+@font-face {
+    font-family: 'aleobold';
+    src: url('../fonts/Aleo-Bold-webfont.eot');
+    src: url('../fonts/Aleo-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Aleo-Bold-webfont.woff') format('woff'),
+         url('../fonts/Aleo-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/Aleo-Bold-webfont.svg#aleobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.banner{
+	background: url(../images/banner1.jpg) no-repeat  center fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	min-height:640px;
+	text-align:center;
+}
+.head-nav ul li a{
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.2em;
+}
+.head-nav a:hover,
+.head-nav a:focus {
+	outline: none;
+}
+.head-nav {
+	padding: 2em 0em;
+}
+.head-nav ul{
+	padding:0;
+	margin: 0;
+}
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.head-nav ul li {
+	display: inline-block;
+	margin: 0 .5em;
+	outline: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	font-size: 16px;
+}
+.head-nav ul li a{
+	color: #fff;
+}
+ul a:hover,
+ul a:focus {
+	outline: none;
+	color: #FFF;
+	text-decoration: none;
+}
+/* Effect 7: second border slides up */
+.cl-effect-7 a {
+	padding: 12px 10px 10px;
+	color: #566473;
+	text-shadow: none;
+	font-weight: 700;
+}
+.cl-effect-7 a::before,
+.cl-effect-7 a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	content: '';
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transform: scale(0.85);
+	-moz-transform: scale(0.85);
+	transform: scale(0.85);
+}
+.cl-effect-7 a::after {
+	opacity: 0;
+	-webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s;
+	transition: top 0.3s, opacity 0.3s, transform 0.3s;
+}
+.cl-effect-7 a:hover::before,
+.cl-effect-7 a:hover::after,
+.cl-effect-7 a:focus::before,
+.cl-effect-7 a:focus::after {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	transform: scale(1);
+}
+.cl-effect-7 a:hover::after,
+.cl-effect-7 a:focus::after {
+	top: 0%;
+	opacity: 1;
+}
+.banner-info{
+}
+.banner-info  p{
+	font-size:2em;
+	font-weight:300;
+	color:#fff;
+	line-height:1.8em;
+	width:57%;
+	margin:0 auto;
+}
+.ENCHANTMENT-right {
+	text-align: center;
+	padding: 3em 8em;
+}
+.ENCHANTMENT-right h3{
+	font-size:1.8em;
+	font-weight:400;
+	font-family: 'Playfair Display SC', serif;
+	color:#000000;
+	line-height:1.8em;
+	margin:0.5em 0em;
+}
+.ENCHANTMENT-right p{
+	font-size:1.2em;
+	font-weight:300;
+	color:#000000;
+	line-height:1.8em;
+	margin:1em 0em;
+}
+.ENCHANTMENT-left {
+	padding: 0;
+}
+.wonder-left{
+	padding:0;	
+}
+.wonder-mid {
+	text-align: center;
+	padding: 3em 4em;
+}
+.wonder-right {
+	padding: 0;
+}
+.wonder-mid h3{
+	font-size:1.8em;
+	font-weight:400;
+	font-family: 'Playfair Display SC', serif;
+	color:#000000;	
+}
+.wonder-mid p{
+	font-size:1.2em;
+	font-weight:300;
+	color:#000000;
+	line-height:1.8em;
+	margin:1em 0em;
+}
+.wonder-mid h5{
+	font-size:1.4em;
+	font-weight:400;
+	font-family: 'Playfair Display SC', serif;
+	color:#000000;	
+}
+.rooms-1 {
+background: url(../images/bed5.jpg) no-repeat;
+display: block;
+background-size: cover;
+min-height: 540px;
+text-align: center;
+}
+.rooms-2 {
+background: url(../images/bed3.jpg) no-repeat;
+display: block;
+background-size: cover;
+min-height: 540px;
+text-align: center;
+}
+.rooms-3{
+background: url(../images/bed4.jpg) no-repeat;
+display: block;
+background-size: cover;
+min-height: 540px;
+text-align: center;
+}
+.rooms-1{
+	padding:0;
+	
+}
+.room-info {
+	text-align:center;
+	margin: 5em 0em 0em;
+}
+.room-info1 ul{
+	padding:0;
+}
+.room-info1 ul li{
+	display:inline-block;
+}
+.room-info1 ul li a{
+	font-size:1.2em;
+	color:#590c0c;
+	background:#ffffff;
+	padding:0.3em 1.5em 0.3em 1em;
+	margin:0em 0.5em;
+	border-radius:5px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+.room-info1 ul li a:hover{
+	background:#590c0c;
+	color:#ffffff;
+}
+.room-info1 {
+	text-align: center;
+	margin: 5em 0em 0em;
+}
+i.search {
+	width: 30px;
+	height: 19px;
+	background: url(../images/img-sprite.png)no-repeat -0px -4px;
+	display: inline-block;
+}
+i.search:hover{
+	background: url(../images/img-sprite.png)no-repeat -0px -25px;
+}
+i.boo {
+	width: 30px;
+	height: 19px;
+	background: url(../images/img-sprite.png)no-repeat -25px -4px;
+	display: inline-block;
+	
+}
+i.boo:hover{
+	background: url(../images/img-sprite.png)no-repeat -25px -24px;
+}
+i.bro {
+	width: 30px;
+	height: 19px;
+	background: url(../images/img-sprite.png)no-repeat -51px -3px;
+	display: inline-block;
+}
+i.bro:hover{
+	background: url(../images/img-sprite.png)no-repeat -51px -25px;
+}
+.services-left{
+	text-align:center;
+	padding:2em 1em;
+}
+.services-left h2{
+	font-size:2.1em;
+	font-weight:400;
+	font-family: 'Playfair Display SC', serif;
+	color:#000000;	
+}
+.services-left1 {
+	text-align:left;
+}
+.services-left1 ul{
+	padding:0;
+}
+.services-left1 ul li{
+	display:block;	
+}
+.services-left1 h5{
+	font-size:1.8em;
+	font-weight:400;
+	color:#000000;	
+}
+.services-left1 ul li a{
+	font-size:1.2em;
+	color:#000000;
+	line-height:1.8em;	
+}
+.services-left1 ul li a:hover{
+	color:#A0181C;
+}
+.services-left1 p{
+	font-size:1.2em;
+	font-weight:400;
+	color:#000000;	
+}
+.services-right {
+	padding: 0;
+}
+.contact-details {
+	width: 48%;
+	float: left;
+	margin: 0em 2em 0em 0em;
+	padding: 0em 2em;
+}
+.contact-left{
+	background: url(../images/6.jpg) no-repeat;
+	display: block;
+	background-size: cover;
+	min-height: 618px;
+	text-align: center;
+}
+.contact-left1 {
+	text-align: center;
+	margin: 16em 0em 0em;
+}
+.contact-right {
+	padding: 4em 1em;
+}
+.reservation-details{
+	width:48%;
+	float:left;
+	padding: 0em 2em;
+}
+.contact-details form input[type="text"] {
+	width: 100%;
+	padding: 2.5% 0;
+	margin-bottom: 7%;
+	background: none;
+	color: #ADADAD;
+	font-size: 18px;
+	outline: none;
+	font-weight: 400;
+	text-indent: 10px;
+	border: 1px solid #590c0c;
+	border-radius: 3px;
+}
+.reservation-details form input[type="text"] {
+	width: 100%;
+	padding: 2.5% 0;
+	margin-bottom: 7%;
+	background: none;
+	color: #ADADAD;
+	font-size: 18px;
+	outline: none;
+	font-weight: 400;
+	text-indent: 10px;
+	border: 1px solid #590c0c;
+	border-radius: 3px;
+}
+.text-field-name-2 form input[type="text"] {
+	width: 46%;
+	padding: 2.5% 0;
+	margin-bottom: 7%;
+	background: none;
+	color: #ADADAD;
+	font-size: 18px;
+	outline: none;
+	font-weight: 400;
+	text-indent: 10px;
+	border: 1px solid #590c0c;
+	border-radius: 3px;
+	margin: 0px 16px 0px 0px;
+}
+.contact form input[type="submit"] {
+	background: #5a0b07;
+	padding: 0.5em 7em;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 19px;
+	font-weight: 400;
+	display: block;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+	margin:0 auto;
+}
+.contact form input[type="submit"]:hover{
+	background:#254963;
+	color:#fff;
+}
+.contact-left h3 {
+	font-size: 2.1em;
+	font-weight: 400;
+	font-family: 'Playfair Display SC', serif;
+	color: #fff;
+}
+.reservation-details h3 {
+	font-size: 1.5em;
+	font-weight: 400;
+	font-family: 'Playfair Display SC', serif;
+	color: #000000;
+	margin:1em 0em;
+}
+.contact-details h3 {
+	font-size: 1.5em;
+	font-weight: 400;
+	font-family: 'Playfair Display SC', serif;
+	color: #000000;
+	margin:1em 0em;
+}
+.guests{
+	background: url(../images/footbanner.jpg) no-repeat center fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	text-align:center;
+	padding:4em 0em;
+}
+.guests h3 {
+	font-size: 2.2em;
+	font-weight: 400;
+	font-family: 'Playfair Display SC', serif;
+	color: #fff;
+	margin:1em 0em;
+}
+.guests p {
+	font-size: 1.2em;
+	font-weight: 400;
+	font-family: 'Playfair Display SC', serif;
+	color: #fff;
+	width:60%;
+	margin:0 auto;
+	line-height:1.8em;
+}
+.footer-left {
+	padding: 0;
+	position:relative;
+}
+.footer-left1 {
+	text-align: center;
+	position: absolute;
+	top: 237px;
+	left: 90px;
+}
+.footer-left2 {
+	text-align: center;
+	position: absolute;
+	top:170px;
+	right:50px;
+}
+.footer-left2 ul{
+	padding:0;
+}
+.footer-left2 ul li {
+	display: block;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	line-height: 1.8em;
+	color:#fff;
+}
+.footer-left2 p {
+	font-size: 1.3em;
+	margin: 2em 0em 0em;
+	color:#fff;
+}
+.footer-left2 h6 a{
+	font-size: 1.1em;
+	text-transform: uppercase;
+	font-weight: 600;
+	color:#fff;
+}
+.footer-left2 h6 a:hover{
+	color:#FFC200;
+}
+.footer-right p {
+	font-size: 1.4em;
+	font-weight: 400;
+	color: #000000;
+	line-height: 1.8em;
+	margin: 0em 0em 5em;
+}
+.footer-right p:before {
+	content: url(../images/stat.png) 0px 0px;
+	position: absolute;
+	left: 330px;
+	top:95px;
+}
+.footer-right p:after {
+	content: url(../images/end.png) 0px 0px;
+	position: absolute;
+	left:360px;
+	top: 225px;
+}
+.footer-right {
+	padding: 9em 11em;
+}
+.footer-right h6 {
+	color: #000000;
+	font-size: 1.2em;
+	margin: 4em 0em 0em;
+	text-align: center;
+}
+.footer-right a {
+	color: #5a0b07;
+}
+.footer-left3 ul{
+	padding:0;
+}
+.footer-left3 ul li{
+	display:inline-block;
+}
+i.fb {
+	width: 20px;
+	height: 26px;
+	background: url(../images/img-sprite.png)no-repeat -92px -3px;
+	display: inline-block;
+}
+i.fb:hover{
+	opacity:0.5;
+}
+i.twt {
+	width: 20px;
+	height: 26px;
+	background: url(../images/img-sprite.png)no-repeat -113px -2px;
+	display: inline-block;
+}
+i.twt:hover{
+	opacity:0.5;
+}
+i.goop {
+	width: 20px;
+	height: 26px;
+	background: url(../images/img-sprite.png)no-repeat -139px -3px;
+	display: inline-block;
+}
+i.goop:hover{
+	opacity:0.5;
+}
+i.in {
+	width: 20px;
+	height: 26px;
+	background: url(../images/img-sprite.png)no-repeat -161px -2px;
+	display: inline-block;
+}
+i.in:hover{
+	opacity:0.5;
+}
+i.do {
+	width: 20px;
+	height: 26px;
+	background: url(../images/img-sprite.png)no-repeat -183px -3px;
+	display: inline-block;
+}
+i.do:hover{
+	opacity:0.5;
+}
+i.drib {
+	width: 20px;
+	height: 26px;
+	background: url(../images/img-sprite.png)no-repeat -207px -2px;
+	display: inline-block;
+}
+i.drib:hover{
+	opacity:0.5;
+}
+i.tet{
+	width: 20px;
+	height: 26px;
+	background: url(../images/img-sprite.png)no-repeat -229px -2px;
+	display: inline-block;
+}
+i.tet:hover{
+	opacity:0.5;
+}
+.footer-left3 {
+	position: absolute;
+	top: 36em;
+	left: 23em;
+}
+.text-field-name-2 {
+	position: relative;
+}
+span{
+	font-style:italic;
+}
+.checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+	float: left;
+	margin-left: -20px;
+	display: none;
+}
+.checkbox {
+	margin-bottom: 4px;
+	padding-left: 27px;
+	font-size: 1.1em;
+	line-height: 27px;
+	cursor: pointer;
+}
+.checkbox {
+	float: left;
+	position: relative;
+	font-size: 1em;
+	color:#555;
+}
+.checkbox:last-child {
+	margin: 3em 12em 0em;
+}
+.news-letter {
+	color: #555;
+	font-weight:600;
+	font-size: 0.85em;
+	margin-bottom: 1em;
+	display: block;
+	text-transform: uppercase;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	clear: both;
+}
+.checkbox i {
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	display: block;
+	width:20px;
+	height:20px;
+	outline: none;
+	background: #5c0b0a;
+}
+.checkbox input + i:after {
+	content: '';
+	background: url("../images/tick1.png") no-repeat 1px 2px ;
+	top: 1px;
+	left: 1px;
+	width: 20px;
+	height: 20px;
+	font: normal 12px/16px FontAwesome;
+	text-align: center;
+}
+.checkbox input + i:after {
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.1s;
+	-o-transition: opacity 0.1s;
+	-ms-transition: opacity 0.1s;
+	-moz-transition: opacity 0.1s;
+	-webkit-transition: opacity 0.1s;
+}
+.checkbox input {
+	position: absolute;
+	left: -9999px;
+}
+.checkbox input:checked + i:after {
+	opacity: 1;
+}
+.news-letter:hover {
+	color:#00BFF0;
+}
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	overflow: hidden;
+	width: 48px;
+	height: 48px;
+	border: none;
+	text-indent: 100%;
+	background: url(../images/arrow.1.png) no-repeat 0px 0px;
+}
+#toTop:hover{
+	outline: none;
+}
+/*--responsive design--*/
+@media (max-width:1280px){
+.ENCHANTMENT-right {
+	padding: 1em 2em;
+}
+.wonder-mid {
+	padding: 3em 2em;
+}
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	max-width: 100%;
+	height: 100%;
+}
+.room-info {
+	top: 60px;
+	left: 70px;
+}
+.room-info1 ul li a {
+	font-size: 1em;
+}
+i.search {
+	top: -6px;
+	left: 6px;
+}
+i.boo {
+	top: -6px;
+	left: 118px;
+}
+i.bro {
+	top: -6px;
+	left: 243px;
+}
+.services-left1 h5 {
+	font-size: 1.5em;
+}
+.services-left {
+	padding: 1em 1em;
+}
+.services-left1 p {
+	font-size: 1.1em;
+}
+.text-field-name-2 form input[type="text"] {
+	margin: 0px 11px 0px 0px;
+}
+.checkbox:last-child {
+	margin: 3em 10em 0em;
+}
+.button {
+	margin: 3em 0em 0em;
+}
+.footer-right {
+	padding: 7em 6em;
+}
+.footer-right p:before {
+	left: 260px;
+	top: 70px;
+}
+.footer-right p:after {
+	left: 270px;
+	top: 193px;
+}
+.footer-left3 {
+	top: 36em;
+	left: 16em;
+}
+}
+/*--responsive design--*/
+@media (max-width:1024px){
+.banner-info p {
+	font-size: 1.7em;
+	width: 70%;
+}
+.ENCHANTMENT-right h3 {
+	font-size: 1.5em;
+}
+.ENCHANTMENT-right {
+	padding: 3em 2em;
+}
+.wonder-mid {
+	padding: 2em 2em;
+}
+.wonder-mid h3 {
+	font-size: 1.5em;
+}
+.room-info1 ul li a {
+	padding: 0.3em 1em 0.3em 0.5em;
+	margin: 0em 0.1em;
+}
+i.search {
+	top: -6px;
+	left: 6px;
+}
+i.boo {
+	top: -6px;
+	left: 104px;
+}
+i.bro {
+	top: -6px;
+	left: 214px;
+}
+.services-left h2 {
+	font-size: 1.7em;
+}
+.contact-details h3 {
+	font-size: 1.3em;
+}
+.reservation-details h3 {
+	font-size: 1.3em;
+}
+.contact-details {
+	margin: 0em 1em 0em 0em;
+}
+.text-field-name-2 form input[type="text"] {
+	margin: 0px 7px 0px 0px;
+}
+.checkbox:last-child {
+	margin: 3em 7em 0em;
+}
+.guests h3 {
+	font-size: 1.7em;
+}
+.guests p {
+	width: 70%;
+}
+.footer-right {
+	padding: 7em 2em;
+}
+.footer-right p:before {
+	left: 205px;
+	top: 70px;
+}
+.footer-right p:after {
+	left: 220px;
+	top: 193px;
+}
+.footer-left1 {
+	top: 220px;
+	left: 25px;
+}
+.footer-left2 {
+	top: 150px;
+	right: 50px;
+}
+.footer-left3 {
+	top: 35em;
+	left: 11em;
+}
+.services-left1:nth-child(4){
+display:none;
+}
+.services-left1 {
+	width:33.333%;
+}
+}
+/*--responsive design--*/
+@media (max-width:768px){
+.head-nav ul li{
+	display:block;
+	float:none;
+}
+.head-nav ul li a{
+	border-right:none;
+	color:#fff;
+}
+.head-nav ul{
+	position: absolute;
+	margin: 0;
+	padding: 2% 0;
+	z-index: 999;
+	width: 92%;
+	display: none;
+	text-align: center;
+	background:rgba(25, 57, 82, 0.67);
+	left:2em;
+	top:3em;
+}
+.head-nav span.menu {
+	display: block;
+	background: none;
+	position: absolute;
+	top: 18px;
+	right: 30px;
+}
+.head-nav span.menu:before{
+	content:url(../images/menu.png);
+	color:#FFF;
+	font-size:1.3em;
+	text-transform:uppercase;
+	text-align:right;
+	cursor:pointer;
+}
+.banner-info p {
+	font-size: 1.5em;
+	width: 77%;
+}
+.banner {
+	min-height: 500px;
+}
+div#ourresort {
+	margin: 20px 10px;
+}
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	max-width: 100%;
+	height: auto;
+}
+.ENCHANTMENT-right {
+	padding: 2em 2em 5em;
+}
+.wonder {
+	margin: 20px 10px;
+	text-align: center;
+}
+div#suites {
+	margin: 20px 10px;
+	text-align: center;
+}
+.rooms-1 {
+	margin: 3em 0em 0em;
+}
+div#services {
+	margin: 20px 10px;
+}
+div#reservations {
+	text-align: center;
+	margin: 20px 10px;
+}
+.footer-right1 {
+	width: 50%;
+	float: left;
+	text-align:center;
+}
+.footer-right2 {
+	width: 50%;
+	float: left;
+	text-align:center;
+}
+.footer-right {
+	padding: 2em 2em 1em;
+}
+.footer-right p {
+	margin: 2em 0em 3em;
+}
+.footer-left3 {
+	top: 35em;
+	left: 21em;
+}
+.footer {
+	margin: 20px 10px;
+}
+.room-info {
+	padding:4em 0em 0em;
+}
+.room-info1 {
+	top: 400px;
+	left: 219px;
+}
+.contact-left1 {
+	text-align: center;
+	margin: 3em 0em 0em;
+	padding: 3em 0em 0em;
+}
+.contact-left h3 {
+	font-size: 1.5em;
+	margin: 1em -1em 1em -1em;
+}
+.ENCHANTMENT-right h3 {
+	font-size: 1.4em;
+}
+.wonder-mid h5 {
+	font-size: 1.2em;
+}
+.wonder-mid h3 {
+	font-size: 1.4em;
+}
+.services-left h2 {
+	font-size: 1.4em;
+	margin:1em 0em;
+}
+.guests h3 {
+	font-size: 1.4em;
+}
+.guests p {
+	font-size: 1em;
+}
+.footer-left1 {
+	top: 220px;
+	left: 190px;
+}
+.footer-left2 {
+	top: 150px;
+	right: 190px;
+}
+.footer-right p:before {
+	left: 300px;
+	top: 36px;
+}
+.footer-right p:after {
+	left: 294px;
+	top: 130px;
+}
+.services-left1 {
+	margin: 0em 0em 2em;
+}
+.head-nav ul li a {
+	margin: 0px;
+	font-size:1em;
+}
+.services-left1 {
+	width:100%;
+}
+.contact-left {
+min-height: 250px;
+}
+}
+/*--responsive design--*/
+@media (max-width:640px){
+.logo img {
+	width: 35%;
+}
+.banner-info p {
+	font-size: 1.4em;
+	width: 83%;
+}
+.banner {
+	min-height: 400px;
+}
+.ENCHANTMENT-right h3 {
+	font-size: 1.3em;
+}
+.ENCHANTMENT-right p {
+	font-size: 1.2em;
+	margin: 1em 0em 0em;
+}
+.wonder-mid h5 {
+	font-size: 1.1em;
+}
+.wonder-mid h3 {
+	font-size: 1.3em;
+}
+.room-info {
+	top: 60px;
+	left: 152px;
+}
+.room-info1 {
+	top: 400px;
+	left: 146px;
+}
+.services-left h2 {
+	font-size: 1.3em;
+}
+.services-left1 h5 {
+	font-size: 1.3em;
+}
+.contact-left1 {
+	top: 210px;
+	left: 270px;
+}
+.contact-details h3 {
+	font-size: 1.2em;
+}
+.reservation-details h3 {
+	font-size: 1.2em;
+}
+.guests h3 {
+	font-size: 1.3em;
+}
+.guests {
+	padding: 2em 0em;
+}
+.footer-left1 {
+	top: 140px;
+	left: 150px;
+}
+.footer-left2 {
+	top: 55px;
+	right: 150px;
+}
+.footer-left3 {
+	top: 23em;
+	left: 15em;
+}
+.footer-right p {
+	font-size: 1.3em;
+}
+}
+/*--responsive design--*/
+@media (max-width:480px){
+.logo img {
+	width: 30%;
+}
+.banner-info p {
+	font-size: 1.3em;
+	width: 98%;
+}
+.banner {
+	min-height: 310px;
+}
+.ENCHANTMENT-right h3 {
+	font-size: 1.2em;
+}
+.ENCHANTMENT-right p {
+	font-size: 1.1em;
+}
+.ENCHANTMENT-right {
+	padding: 2em 0em 5em;
+}
+.wonder-mid h5 {
+	font-size: 1em;
+}
+.wonder-mid h3 {
+	font-size: 1.2em;
+}
+.wonder-mid p {
+	font-size: 1.1em;
+	margin: 0em 0em;
+}
+.room-info {
+	top: 30px;
+	left: 72px;
+}
+.room-info1 {
+	top: 360px;
+	left: 68px;
+}
+.services-left1 ul li a {
+	font-size: 1.1em;
+}
+.services-left h2 {
+	font-size: 1.2em;
+}
+.contact-left1 {
+	top: 210px;
+	left: 180px;
+}
+.contact-details h3 {
+	font-size: 1.1em;
+}
+.contact-details {
+	width: 100%;
+	float: none;
+}
+.reservation-details h3 {
+	font-size: 1.1em;
+}
+.reservation-details {
+	width: 100%;
+	float: none;
+	padding: 0em 1em;
+}
+.contact-details form input[type="text"] {
+	font-size: 16px;
+}
+.reservation-details form input[type="text"] {
+	font-size: 16px;
+}
+.checkbox:last-child {
+	margin: 2em 10em 0em;
+}
+.checkbox:last-child {
+	margin: 2em 10em 0em;
+}
+.contact-right {
+	padding: 2em 1em 1em;
+}
+.footer-right p {
+	font-size: 1.2em;
+}
+.footer-right p:before {
+	left: 190px;
+	top: 34px;
+}
+.footer-right p:after {
+	left: 190px;
+	top: 143px;
+}
+.footer-left2 {
+	top:40px;
+	right: 60px;
+}
+.footer-left1 {
+	top: 102px;
+	left: 60px;
+}
+.footer-left3 {
+	top: 20em;
+	left: 10em;
+}
+.guests h3 {
+	font-size: 1.2em;
+}
+.guests p {
+	width: 99%;
+}
+.room-info1 {
+	text-align: center;
+	margin: 3em 0em 0em;
+}
+.room-info {
+	padding: 2em 0em 0em;
+}
+.rooms-1 {
+	min-height: 440px;
+}
+.rooms-2 {
+	min-height: 440px;
+}
+.rooms-3 {
+	min-height: 440px;
+}
+}
+/*--responsive design--*/
+@media (max-width:320px){
+.head-nav {
+	padding: 1em 0em;
+}
+.banner-info p {
+	font-size: 0.9em;
+	width: 98%;
+}
+.banner {
+	min-height: 200px;
+}
+.ENCHANTMENT-right h3 {
+	font-size: 1em;
+}
+.ENCHANTMENT-right p {
+	font-size: 1em;
+	margin:0em;
+}
+.ENCHANTMENT-right {
+	padding: 2em 0em 2em;
+}
+.wonder-mid h5 {
+	font-size: 0.9em;
+}
+.wonder-mid h3 {
+	font-size: 1em;
+}
+.wonder-mid p {
+	font-size: 1em;
+}
+.wonder-mid {
+	padding: 2em 0em;
+}
+.contact form input[type="submit"] {
+	padding: 0.5em 4em;
+	font-size: 16px;
+}
+.room-info img {
+	width: 45%;
+}
+.room-info1 {
+	text-align: center;
+	margin: 2em 0em 0em;
+}
+.room-info1 ul li a {
+	font-size: 0.875em;
+}
+.room-info {
+	padding: 1em 0em 0em;
+}
+i.boo {
+	top: -6px;
+	left: 90px;
+}
+i.bro {
+	top: -6px;
+	left: 186px;
+}
+.contact-left1 {
+	top: 158px;
+	left: 118px;
+}
+.contact-left {
+	position: relative;
+	padding: 20px 10px;
+}
+.guests p {
+	font-size: 0.875em;
+}
+.footer-left1 {
+	top: 37px;
+	left: 0px;
+}
+.footer-left2 {
+	top: 4px;
+	right: 0px;
+}
+.footer-left2 p {
+	font-size: 1em;
+	margin: 0em 0em 0em;
+}
+.footer-left2 ul li {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+.footer-right {
+	padding: 1em 1em 1em;
+}
+.footer-right p {
+	margin: 1em 0em 2em;
+}
+.footer-right p:before {
+	left: 116px;
+	top: 6px;
+}
+.footer-right p:after {
+	left: 110px;
+	top: 122px;
+}
+.footer-right p {
+	font-size: 1.1em;
+}
+.footer-left3 {
+	top: 12em;
+	left: 4.5em;
+}
+.footer-right h6 {
+	font-size: 1.1em;
+	margin: 2em 0em 0em;
+}
+.contact-left h3 {
+	font-size: 1.2em;
+}
+.checkbox:last-child {
+	margin: 2em 5em 0em;
+}
+.button {
+	margin: 1em 0em 0em;
+}
+.contact-details form input[type="text"] {
+	font-size: 15px;
+}
+.reservation-details form input[type="text"] {
+	font-size: 15px;
+}
+.reservation-details h3 {
+	font-size: 1em;
+}
+.contact-details h3 {
+	font-size: 1em;
+}
+.reservation-details form input[type="text"] {
+	font-size: 15px;
+}
+.contact form input[type="submit"] {
+	padding: 0.5em 4em;
+	font-size: 14px;
+}
+.head-nav ul {
+	left: 1em;
+}
+.head-nav ul li a{
+	margin: 0px;
+	font-size: 0.875em;
+}
+.cl-effect-7 a {
+	padding: 6px 10px 10px;
+}
+.services-left h2 {
+	font-size: 1.1em;
+}
+.rooms-1 {
+	min-height: 220px;
+}
+.rooms-2 {
+	min-height: 220px;
+	padding: 0;
+}
+.rooms-3 {
+	min-height: 220px;
+	padding: 0;
+}
+i.search {
+	background: url(../images/img-sprite.png)no-repeat -0px -3px;
+}
+i.search:hover {
+	background: url(../images/img-sprite.png)no-repeat -0px -24px;
+}
+.contact-left1 {
+	text-align: center;
+	margin: 3em 0em 0em;
+	padding: 0em 0em 0em;
+}
+}

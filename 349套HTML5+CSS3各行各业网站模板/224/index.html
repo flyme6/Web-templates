@@ -1,0 +1,356 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>The Minimalist bootstrap Website Template | Home :: w3layouts</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!--jQuery (necessary for Bootstrap's JavaScript plugins)-->
+<script src="js/jquery.min.js"></script>
+ <!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<!--Custom Theme files-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</script>
+
+<!--start-smoth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+		
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+</head>
+<body>
+<!--header-->
+	<div class="header">
+		<div class="header-top">
+			<div class="container">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" /></a>
+				</div>
+			<!--top-nav-->
+			 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">Home </a></li>
+								<li><a href="#feature" class="scroll">Features</a></li>
+								<li><a href="#portfolio" class="scroll">Portfolio</a></li>
+								<li><a href="#subscribe" class="scroll">Subscribe</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/menu-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+		<!-- script-for-menu -->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+
+	<!--End-top-nav-script-->
+				<div class="clearfix"> </div>
+		</div>
+	</div>
+		<!--banner-->
+			<div class="banner">
+					<div class="container">
+						 <div class="banner-info">
+						 	<h1>One Page Template</h1>
+						 	<h2>Minimalist</h2>
+						 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse gravida placerat ultricies. Donec in lorem porta, tempus odio ut, iaculis lacus. Etiam dictum, est sit amet cursus dignissim, nulla velit commodo leo, id lacinia nulla elit non libero. </p>
+						 	<a href="#feature" class="scroll"><h3>Discover<img src="images/Arrow.png" class="scroll1" alt=""/></h3></a>
+
+						</div>
+					</div>
+			 	</div>
+			</div>
+		<!--Features-->
+		<div class="Features" id="feature">
+			<div class="container">
+				<div class="feature-section">
+					<div class="col-md-6 phone">
+						<img src="images/phone.png" class="img-responsive" alt="" />
+
+					</div>
+					<div class="col-md-6 phone-text">
+						<h3>Vivamus com<span>modo tellus</span></h3>
+						<p>Fusce eget sapien cursus, elementum nunc vitae, euismod est. Donec vehicula purus enim, id placerat arcu volutpat quis. Aliquam non elementum purus, vitae tristique est. Ut vitae auctor velit. Proin ut malesuada nibh. Suspendisse laoreet elit id aliquam pulvinar. In et lacus nec arcu sodales euismod. Aenean quam turpis, pulvinar eu nibh id.</p>
+						<a class="slide-btn" href="#">Next<span> </span></a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!--portfolio-->
+		<div class="Portfolio" id="portfolio">
+			<div class="container">
+				<div class="port-section">
+					 		<h3>PORTFOLIO</h3>
+				</div>
+				<div class="portfolio">
+					<ul id="filters" class="clearfix">
+						<li><span class="filter" data-filter="app card icon logo web">All</span></li>
+						<li><span class="filter" data-filter="card">Branding</span></li>
+						<li><span class="filter" data-filter="logo">App Store</span></li>
+						<li class="active"><span class="filter" data-filter="app">Photography</span></li>
+					</ul>
+					<div id="portfoliolist">
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+						     <img src="images/pic1.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png" alt=""/></h2>
+						  	<p class="b-animate b-from-right  b-delay03 "></p></div></a>
+		                </div>
+					</div>				
+				<div class="portfolio logo mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+						     <img src="images/pic2.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png" alt=""/></h2>
+						  	<p class="b-animate b-from-right  b-delay03 "></p></div></a>
+		                </div>
+					</div>				
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog2" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+						     <img src="images/pic3.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png" alt=""/></h2>
+						  		<p class="b-animate b-from-right  b-delay03 "></p></div></a>
+		                </div>
+					</div>				
+					<div class="portfolio logo mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog3" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+						     <img src="images/pic4.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png" alt=""/></h2>
+						  	<p class="b-animate b-from-right  b-delay03 "></p></div></a>
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog4" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+						     <img src="images/pic5.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png" alt=""/></h2>
+						  	<p class="b-animate b-from-right  b-delay03 "></p></div></a>
+		                </div>
+					</div>			
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog5" class="b-link-stripe b-animate-go  thickbox popup-with-zoom-anim">
+						     <img src="images/pic6.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png" alt=""/></h2>
+						  	<p class="b-animate b-from-right  b-delay03 "></p></div></a>
+		                </div>
+					</div>	
+					<div class="clearfix"></div>
+				</div>
+				</div>
+				
+				<!---pop-up-box---->
+					  <script type="text/javascript" src="js/modernizr.custom.min.js"></script>    
+					<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+					<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+					<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			
+			},
+			
+			hoverEffect: function () {
+			
+				// Simple parallax effect
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+				<!---//pop-up-box---->
+					<div id="small-dialog" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/pop-up.png" alt=""/>
+							<h4>App Store</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+						</div>
+					</div>
+					<div id="small-dialog1" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/pop-up.png" alt=""/>
+							<h4>App store</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+						</div>
+					</div>
+					<div id="small-dialog2" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/pop-up2.png" alt=""/>
+							<h4>Mobile Apps</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+						</div>
+					</div>
+					<div id="small-dialog3" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/pop-up2.png" alt=""/>
+							<h4>App Store</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+						</div>
+					</div>
+					<div id="small-dialog4" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/pop-up.png" alt=""/>
+							<h4>App store</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+						</div>
+					</div>
+					<div id="small-dialog5" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/pop-up2.png" alt=""/>
+							<h4>Mobile Apps</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+						</div>
+					</div>
+					<div id="small-dialog6" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/pop-up.png" alt=""/>
+							<h4>App store</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+						</div>
+					</div>
+					<div id="small-dialog7" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/pop-up2.png" alt=""/>
+							<h4>Mobile Apps</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+						</div>
+					</div>
+					<div id="small-dialog8" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/pop-up.png" alt=""/>
+							<h4>App Store</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+						</div>
+					</div>
+					<div class="clearfix"> </div>  
+			<script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>		
+
+
+			</div>
+		</div>
+	<!--subscribe-->
+		<div class="Subscribe" id="subscribe">
+			<div class="container">
+				<div class="subscribe-section">
+					<h3>Subscribe now</h3>
+					<p>Fusce eget sapien cursus, elementum nunc vitae, euismod est. Donec vehicula purus enim, id placerat arcu volutpat quis. Aliquam non elementum purus, vitae tristique est. Ut vitae auctor velit. Proin ut malesuada nibh. Suspendisse laoreet elit.</p>
+					<form>
+					     <input type="text" size="30px"  value="Your address mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your address mail';}">
+		                 <input type="submit" value="Submit">
+		                 <div class="clearfix"> </div>  
+		            </form>
+				</div>
+			</div>
+			<div class="clearfix"> </div> 
+		</div>
+		<!--footer-->
+		<!----- /start-footer---->
+				<div class="footer">
+						<div class="container">
+							<div class="footer-content">
+								<div class="footer-icons">
+										<ul>
+											<li><a class="gg" href="#"><span> </span></a></li>
+											<li><a class="twitter" href="#"><span> </span></a></li>
+											<li><a class="fb" href="#"><span> </span></a></li>
+											<li><a class="db" href="#"><span> </span></a></li>
+											<div class="clearfix"> </div>
+										</ul>
+									</div>
+									<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+							</div>	
+						</div>	
+						<div class="clearfix"> </div>  							
+					</div>
+					<!----- //End-footer---->
+				<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+</body>
+</html>

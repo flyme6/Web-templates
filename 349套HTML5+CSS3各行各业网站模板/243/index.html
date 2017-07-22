@@ -1,0 +1,511 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <title>4everyone</title>
+  	<meta charset="utf-8">
+    <meta name="description" content="4everyone">
+    <meta name="keywords" content="4everyone">
+    <meta name="author" content="4everyone">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>	
+   
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobilemenu.css">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+	<script type="text/javascript" src="js/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.session.js"></script>
+    <script type="text/javascript" src="js/parallax.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="js/message-form.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		$(window).scroll(function () {
+			if (jQuery(this).scrollTop() > 550) {
+				jQuery('header').addClass('scrolled');
+			} else {
+				jQuery('header').removeClass('scrolled');
+			}
+			$('.flexslider').flexslider({
+				animation: "fade",
+				animationSpeed: 500,
+				smoothHeight: true,
+				animationLoop: true,
+				touch: true,
+				directionNav: false
+			});
+		});
+    </script>
+<!--[if lt IE 8]>
+<div style=' clear: both; text-align:center; position: relative;'>
+ <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+   <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+</a>
+</div>
+<![endif]-->
+<!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+<![endif]-->
+</head>
+	<body>
+        <div class="color_wrap color_wrap_open">
+        	<a class="btn_skin"></a>
+        	<div>skin</div>
+            <div class="basic"><a onClick="get_theme('style')">Basic</a></div>
+            <div class="theme_1"><a onClick="get_theme('theme_1')">theme_1</a></div>
+            <div class="theme_2"><a onClick="get_theme('theme_2')">theme_2</a></div>
+            <div class="theme_3"><a onClick="get_theme('theme_3')">theme_3</a></div>
+            <div class="theme_4"><a onClick="get_theme('theme_4')">theme_4</a></div>
+            <div class="theme_5"><a onClick="get_theme('theme_5')">theme_5</a></div>
+        </div>
+
+		<div class="header_top_wrap">
+        	<h1>4everyone</h1>
+            <div class="container"><div class="slogan">It's suitable for corporate, creative, personal,<br>noncommercial needs!</div></div>
+		</div>
+
+		<header class="home_page">
+			<div class="container">
+            	<div class="row">
+                    <div class="span12">
+                        <a class="logo" href="index.htm">4everyone</a>
+                        <button class="nav-button">menu</button>
+                        <ul class="menu">
+                            <li><a class="home" href="#home">Home</a></li>
+                            <li><a class="about" href="#about">About</a></li>
+                            <li><a class="work" href="#work">Work</a></li>
+                            <li><a href="blog.htm">Blog</a></li>
+                            <li><a class="contact" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+			</div><!--/container-->
+		</header>		
+		<div class="container-fill">
+			<div class="row_1" id="about">
+                <div class="container">
+                    <h3 class="border">Welcome!</h3>
+                    <div class="row">
+                        <article class="span4">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eui smod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis.</p>
+                        </article>
+                        <article class="span4">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eui smod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullam corper suscipit lobortis nisl ut.</p>
+                        </article>
+                        <article class="span4">
+                            <p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="row_1">
+                <div class="container">
+                    <h3 class="border">What We Do</h3>
+                    <div class="row">
+                        <article class="span4 box_1">
+                            <div class="icon_bg"><img src="images/icon-1.png" alt=""></div>
+                            <h6><a href="#">Strategy</a></h6>
+                            <p>Lorem ipsum dolor sit ametet<br>uer adipiscing elit, sed diam nonummy nibh euismod tincidu.</p>
+                            <a href="#" class="btn btn_1">read more</a>
+                        </article>
+                        <article class="span4 box_1">
+                            <div class="icon_bg"><img src="images/icon-2.png" alt=""></div>
+                            <h6><a href="#">user experience</a></h6>
+                            <p>Lorem ipsum dolor sit ametet<br>uer adipiscing elit, sed diam nonummy nibh euismod tincidu.</p>
+                            <a href="#" class="btn btn_1">read more</a>
+                        </article>
+                        <article class="span4 box_1">
+                            <div class="icon_bg"><img src="images/icon-3.png" alt=""></div>
+                            <h6><a href="#">design</a></h6>
+                            <p>Lorem ipsum dolor sit ametet<br>uer adipiscing elit, sed diam nonummy nibh euismod tincidu.</p>
+                            <a href="#" class="btn btn_1">read more</a>
+                        </article>
+                    </div>
+                    <div class="row">
+                        <article class="span4 box_1">
+                            <div class="icon_bg"><img src="images/icon-4.png" alt=""></div>
+                            <h6><a href="#">development</a></h6>
+                            <p>Lorem ipsum dolor sit ametet<br>uer adipiscing elit, sed diam nonummy nibh euismod tincidu.</p>
+                            <a href="#" class="btn btn_1">read more</a>
+                        </article>
+                        <article class="span4 box_1">
+                            <div class="icon_bg"><img src="images/icon-5.png" alt=""></div>
+                            <h6><a href="#">Wordpress</a></h6>
+                            <p>Lorem ipsum dolor sit ametet<br>uer adipiscing elit, sed diam nonummy nibh euismod tincidu.</p>
+                            <a href="#" class="btn btn_1">read more</a>
+                        </article>
+                        <article class="span4 box_1">
+                            <div class="icon_bg"><img src="images/icon-6.png" alt=""></div>
+                            <h6><a href="#">ceo</a></h6>
+                            <p>Lorem ipsum dolor sit ametet<br>uer adipiscing elit, sed diam nonummy nibh euismod tincidu.</p>
+                            <a href="#" class="btn btn_1">read more</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="row_1" id="work">
+                <div class="container">
+                    <h3 class="border">Selected Work</h3>
+                    <div class="row">
+                        <article class="span8 offset2 text-center">
+                            <p>Here is a selection of some works we're craftes over the last few months<br>Click the button below, If you would like to see more.</p>
+                            <div><a href="#" class="btn btn_1">see more of our Works</a></div>
+                        </article>
+                    </div>
+                    <div class="row gallery_wrapper">
+                    	<section class="span3 gallery_item gallery_item_1">
+                        	<figure class="">
+                            	<img src="images/gallery_img_1.png" alt="">
+                                <figcaption>
+                                	<p>Wordpress Theme Front-End Development</p>
+                                    <h6>website</h6>
+                                    <h6><a href="#">Read details</a></h6>
+                                </figcaption>
+                            </figure>
+                        </section>
+                    	<section class="span3 gallery_item gallery_item_2">
+                        	<figure class="">
+                            	<img src="images/gallery_img_2.png" alt="">
+                                <figcaption>
+                                	<p>Wordpress Theme Front-End Development</p>
+                                    <h6>website</h6>
+                                    <h6><a href="#">Read details</a></h6>
+                                </figcaption>
+                            </figure>
+                        </section>
+                    	<section class="span3 gallery_item gallery_item_3">
+                        	<figure class="">
+                            	<img src="images/gallery_img_3.png" alt="">
+                                <figcaption>
+                                	<p>Wordpress Theme Front-End Development</p>
+                                    <h6>website</h6>
+                                    <h6><a href="#">Read details</a></h6>
+                                </figcaption>
+                            </figure>
+                        </section>
+                    	<section class="span3 gallery_item gallery_item_4">
+                        	<figure class="">
+                            	<img src="images/gallery_img_4.png" alt="">
+                                <figcaption>
+                                	<p>Wordpress Theme Front-End Development</p>
+                                    <h6>website</h6>
+                                    <h6><a href="#">Read details</a></h6>
+                                </figcaption>
+                            </figure>
+                        </section>
+                    	<section class="span3 gallery_item gallery_item_5">
+                        	<figure class="">
+                            	<img src="images/gallery_img_5.png" alt="">
+                                <figcaption>
+                                	<p>Wordpress Theme Front-End Development</p>
+                                    <h6>website</h6>
+                                    <h6><a href="#">Read details</a></h6>
+                                </figcaption>
+                            </figure>
+                        </section>
+                    	<section class="span3 gallery_item gallery_item_6">
+                        	<figure class="">
+                            	<img src="images/gallery_img_6.png" alt="">
+                                <figcaption>
+                                	<p>Wordpress Theme Front-End Development</p>
+                                    <h6>website</h6>
+                                    <h6><a href="#">Read details</a></h6>
+                                </figcaption>
+                            </figure>
+                        </section>
+                    	<section class="span3 gallery_item gallery_item_7">
+                        	<figure class="">
+                            	<img src="images/gallery_img_7.png" alt="">
+                                <figcaption>
+                                	<p>Wordpress Theme Front-End Development</p>
+                                    <h6>website</h6>
+                                    <h6><a href="#">Read details</a></h6>
+                                </figcaption>
+                            </figure>
+                        </section>
+                    	<section class="span3 gallery_item gallery_item_8">
+                        	<figure class="">
+                            	<img src="images/gallery_img_8.png" alt="">
+                                <figcaption>
+                                	<p>Wordpress Theme Front-End Development</p>
+                                    <h6>website</h6>
+                                    <h6><a href="#">Read details</a></h6>
+                                </figcaption>
+                            </figure>
+                        </section>
+                    	<section class="span3 gallery_item gallery_item_9">
+                        	<figure class="">
+                            	<img src="images/gallery_img_9.png" alt="">
+                                <figcaption>
+                                	<p>Wordpress Theme Front-End Development</p>
+                                    <h6>website</h6>
+                                    <h6><a href="#">Read details</a></h6>
+                                </figcaption>
+                            </figure>
+                        </section>
+                    	<section class="span3 gallery_item gallery_item_10">
+                        	<figure class="">
+                            	<img src="images/gallery_img_10.png" alt="">
+                                <figcaption>
+                                	<p>Wordpress Theme Front-End Development</p>
+                                    <h6>website</h6>
+                                    <h6><a href="#">Read details</a></h6>
+                                </figcaption>
+                            </figure>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="row_1">
+                <div class="container">
+                    <h3 class="border">Meet Our Team</h3>
+                    <div class="row">
+                        <article class="span10 offset1">
+                            <p class="text-center">Before starting any project we always make sure to get to know our clients first. We not only want to learn what it is you're looking for , but also why.</p>
+                        </article>
+                    </div>
+                    <div class="row">
+                        <article class="span3">
+                            <figure class="figure">
+                                <img src="images/img-1.jpg" alt="">
+                                <figcaption>
+                                    <h5><a href="#">Tom Smith</a></h5>
+                                    <h6>Founder</h6>
+                                    <div class="wrapper">
+                                        <ul class="soc_list">
+                                            <li><a href="#"><img src="images/soc-icon-1.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images/soc-icon-2.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images/soc-icon-3.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images/soc-icon-4.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images/soc-icon-5.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images/soc-icon-6.png" alt=""></a></li>
+                                        </ul>
+                                    </div>
+                                    <h6><a href="#">@tomsmith</a></h6>
+                                </figcaption>
+                            </figure>
+                        </article>
+                        <article class="span3">
+                            <figure class="figure">
+                                <img src="images/img-2.jpg" alt="">
+                                <figcaption>
+                                    <h5><a href="#">Sam Peterson</a></h5>
+                                    <h6>developer</h6>
+                                    <div class="wrapper">
+                                        <ul class="soc_list">
+                                            <li><a href="#"><img src="images/soc-icon-1.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images/soc-icon-2.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images/soc-icon-3.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images/soc-icon-4.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images/soc-icon-5.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images/soc-icon-6.png" alt=""></a></li>
+                                        </ul>
+                                    </div>
+                                    <h6><a href="#">@sampeterson</a></h6>
+                                </figcaption>
+                            </figure>
+                        </article>
+                        <article class="span3">
+                            <figure class="figure">
+                                <img src="images/img-3.jpg" alt="">
+                                <figcaption>
+                                    <h5><a href="#">Andy W. Braun</a></h5>
+                                    <h6>designer</h6>
+                                    <div class="wrapper">
+                                        <ul class="soc_list">
+                                            <li><a href="#"><img src="images/soc-icon-1.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images/soc-icon-2.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images/soc-icon-3.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images/soc-icon-4.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images/soc-icon-5.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images/soc-icon-6.png" alt=""></a></li>
+                                        </ul>
+                                    </div>
+                                    <h6><a href="#">@andywbraun</a></h6>
+                                </figcaption>
+                            </figure>
+                        </article>
+                        <article class="span3">
+                            <figure class="figure">
+                                <img src="images/img-4.jpg" alt="">
+                                <figcaption>
+                                    <h5><a href="#">Sarah Smith</a></h5>
+                                    <h6>clients support</h6>
+                                    <div class="wrapper">
+                                        <ul class="soc_list">
+                                            <li><a href="#"><img src="images/soc-icon-1.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images/soc-icon-2.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images/soc-icon-3.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images/soc-icon-4.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images/soc-icon-5.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images/soc-icon-6.png" alt=""></a></li>
+                                        </ul>
+                                    </div>
+                                    <h6><a href="#">@sarahsmith</a></h6>
+                                </figcaption>
+                            </figure>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="row_1">
+                <div class="container">
+                    <h3 class="border">What Our Clients Say</h3>
+                    <div class="row">
+                        <article class="span12">
+                            <div class="slider-wrapper">
+                                <div class="flexslider">
+                                    <ul class="slides">
+                                        <li>
+                                        	<h6><a href="#">allan Pete</a> <span>, usa</span></h6>
+                                        	<p>"Lorem ipsum dolor sit ametet<br>uer adipiscing elit, sed diam nonummy nibh euismod tincidu. nt ut laordolore magna aliquam."</p>
+                                        </li>
+                                        <li>
+                                        	<h6><a href="#">Sam Peterson</a> <span>, usa</span></h6>
+                                        	<p>"Ut wisi enim ad minim veniam, quis nostrud exerci tation ullam corper suscipit lobortis nisl ut. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullam corper suscipit lobortis nisl ut."</p>
+                                        </li>
+                                        <li>
+                                        	<h6><a href="#">Sarah Smith</a> <span>, usa</span></h6>
+                                        	<p>"Sed diam nonummy nibh euismod tincidu. nt ut laordolore magna aliquam. Lorem ipsum dolor sit ametet<br>uer adipiscing elit"</p>
+                                        </li>
+                                    </ul>
+                                </div><!--/flexslider-->
+                            </div><!--/slider-wrapper-home-->		
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="row_1">
+                <div class="container">
+                    <h3 class="border">The Blog</h3>
+                    <div class="row">
+                        <article class="span12">
+                            <p class="text-center">If you want to read more of our posts. <a href="blog.htm" class="btn btn_1">click here</a></p>
+                        </article>
+                        <section class="span3">
+                            <div class="blog_post_preview blog_post_preview_bg">
+                                <h6><time datetime="2013-01-01" class="time">august 28,2012</time></h6>
+                                <h5><a href="blog_post.htm">Lorem ipsum dolor sit amet, consectetuer adipiscing!</a></h5>
+                                <p>Elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam...</p>
+                                <a href="blog_post.htm" class="btn btn_1">view post</a>
+                            </div>
+                        </section>
+                        <section class="span3">
+                            <div class="blog_post_preview blog_post_preview_bg_no">
+                                <h6><time datetime="2013-01-01" class="time">august 28,2012</time></h6>
+                                <figure class="">
+                                    <img src="images/img-5.jpg" alt="">
+                                </figure>
+                                <h5><a href="blog_post.htm">Ipsum dolorsit ame consectetu.</a></h5>
+                                <p>Elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam...</p>
+                                <a href="blog_post.htm" class="btn btn_1">view post</a>
+                            </div>
+                        </section>
+                        <section class="span3">
+                            <div class="blog_post_preview blog_post_preview_bg">
+                                <h6><time datetime="2013-01-01" class="time">august 28,2012</time></h6>
+                                <figure class="">
+                                    <img src="images/img-6.jpg" alt="">
+                                </figure>
+                                <h5><a href="blog_post.htm">Ipsum dolor sit amet, consectetuer adipiscing  elit, sed diam nonum.</a></h5>
+                                <p>Elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
+                                <a href="blog_post.htm" class="btn btn_1">view post</a>
+                            </div>
+                        </section>
+                        <section class="span3">
+                            <div class="blog_post_preview blog_post_preview_bg_no">
+                                <h6><time datetime="2013-01-01" class="time">august 28,2012</time></h6>
+                                <h5><a href="blog_post.htm">Lorem ipsum dolor sit amet, consectetuer adipiscing!</a></h5>
+                                <p>Elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam...</p>
+                                <a href="blog_post.htm" class="btn btn_1">view post</a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="row_1">
+                <div class="container">
+                    <h3 class="border"></h3>
+                    <div class="row">
+                    	<ul class="soc_list_2">
+                        	<li class="span2 offset1"><div><a href="#"><img src="images/soc-icon-7.png" alt=""></a></div></li>
+                        	<li class="span2"><div><a href="#"><img src="images/soc-icon-8.png" alt=""></a></div></li>
+                        	<li class="span2"><div><a href="#"><img src="images/soc-icon-9.png" alt=""></a></div></li>
+                        	<li class="span2"><div><a href="#"><img src="images/soc-icon-10.png" alt=""></a></div></li>
+                        	<li class="span2"><div><a href="#"><img src="images/soc-icon-11.png" alt=""></a></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="contact">
+            	<div class="map_wrapper">
+                    <div class="container">
+                        <h3 class="border">Send Us a Message</h3>
+                        <div class="row">
+                            <section class="span3">
+                            	<div class="indent1">
+                                	<h6>postal address</h6>
+                                    <h5><span>Ground Floor 49 Cheltenham Place Brighton</span></h5>
+                                    <h5 class="color_1">Monday - Thursday 5:30AM - 10PM</h5>
+                                    <h5 class="color_1">T - 123.456.7890<br>F - 123.789.3456</h5>
+                                    <h6><a href="mailto:@oursitemail.com">@oursitemail.com</a></h6>
+                                </div>
+                            </section>
+                            <section class="span9">
+                            	<div class="indent2">
+                                	<h6>Do you have a cool idea? Drop us a line or two.</h6>
+                                    <form id="message_form">
+                                        <div class="success"></div>
+                                        <fieldset>
+                                            <div class="row">
+                                                <div class="span3">
+                                                    <label class="name">
+                                                        <input type="text" value="Your Name">
+                                                    </label>
+                                                    <label class="email">
+                                                        <input type="text" value="Email">
+                                                    </label>
+                                                    <label class="notRequired">
+                                                        <input type="text" value="Website">
+                                                    </label>
+                                                </div>
+                                                <div class="span4">
+                                                    <label class="message">
+                                                        <textarea>Message</textarea>
+                                                    </label>
+                                                    <a class="btn btn_1" data-type="submit">Send Message</a>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="span12 text-center">
+                            Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+		</div><!--/container-fill-->
+<script type="text/javascript">
+	$(window).load(function(){
+		$('#message_form').forms({
+			ownerEmail:'test@test.test'
+		})
+	})
+</script>
+
+</body>
+</html>

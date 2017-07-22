@@ -1,0 +1,87 @@
+.nav-button { display: none; } /* hide the navigation button by default */
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+	/* Navigation Button
+	-------------------------------------------------------- */
+
+	.nav-button {
+		display: block;
+		position: absolute;
+		top:20px;
+		right:65px;
+		cursor: pointer;
+		border: 0 none;
+		z-index: 999;
+		width:24px;
+		height:21px;
+		background:url(../images/mobile_menu.png) left top no-repeat;
+		overflow:hidden;
+		text-indent:-999px;
+	}
+	.nav-button:hover { 
+		border: none;
+	}
+	.nav-button.open {
+	}
+
+	/* Navigation Bar
+	-------------------------------------------------------- */
+
+	ul.menu {
+		width:131px;
+		background-color: #fff; /* change the menu color */
+		display: block;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		position: absolute;
+		top:60px;
+		right: 10px;
+		z-index: 998;
+		clear: both;
+		background:#212121;
+		border-radius:5px;
+	}
+	ul.menu li {
+		display: none;
+		width: 100%;
+		padding:0;
+		text-align:center;
+	}
+	ul.menu li a {
+		display: block;
+		padding: 5px 0;
+		color: #fffefe;
+		text-decoration: none;
+		border: 0px;
+	}
+	ul.menu li a:hover {
+		background:#e8e8e8;
+		color:#afafaf;
+	}
+	ul.menu > li:first-child {
+	}
+
+	/* Toggle the navigation bar open  */
+
+	ul.menu.open {
+		padding:15px 0;
+		height: auto; 
+	}
+	ul.menu.open li { 
+		display: block; 
+	}
+
+	/* Submenus – optional .parent class indicates dropdowns */
+
+
+
+
+} /* End Mobile Styles */
+/* ~~~~~~~~~ Small Mobile/iPhone(portrait) ~~~~~~~~~ */
+@media screen and (max-width: 479px) {
+.nav-button {
+	right:10px;
+}
+}

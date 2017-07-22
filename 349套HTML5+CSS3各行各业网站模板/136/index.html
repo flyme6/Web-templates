@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="ico/favicon.ico">
+
+    <title>h2design</title>
+	
+    <!-- Bootstrap core CSS -->
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+	<link href="css/cubeportfolio.min.css" rel="stylesheet">
+    <link href='http://fonts.useso.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+	
+	<script type="text/javascript" src="js/modernizr.custom.69142.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="..."></a>
+        </div>
+        <div class="collapse navbar-collapse">        
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="index.html">Homepage 1</a></li>
+                <li><a href="index-full.html">Homepage 2</a></li>
+              </ul>
+            </li>
+			<li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="portfolio-item-1.html">Portfolio Item</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="coming-soon.html">Coming Soon</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="help-center.html">Help Center</a></li>
+                <li><a href="help-item.html">Help Item</a></li>
+                <li><a href="pricing-table.html">Pricing Table</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="sign-in.html">Sign In</a></li>
+                <li><a href="sign-up.html">Sign Up</a></li>
+                <li><a href="error-page.html">404 Error Page</a></li>
+              </ul>
+            </li>            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="blog-post.html">Blog Post</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="shop-item.html">Shop Item</a></li>
+                <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                <li><a href="user-profile.html">User Profile</a></li>
+              </ul>
+            </li>
+            <li class="hidden-sm">
+              <a href="ui-elements.html">UI Elements</a>
+            </li>            
+            <!-- Navbar Search -->
+            <li class="hidden-xs" id="navbar-search">
+              <a href="#">
+                <i class="fa fa-search"></i>
+              </a>
+              <div class="hidden" id="navbar-search-box">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <span class="input-group-btn">
+                    <button class="btn btn-danger" type="button">Go!</button>
+                  </span>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- Mobile Search -->
+          <form class="navbar-form navbar-right visible-xs" role="search">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <span class="input-group-btn">
+                <button class="btn btn-danger" type="button">Search!</button>
+              </span>
+            </div>
+          </form>          
+        </div><!--/.nav-collapse -->
+      </div>
+    </div> <!-- / .navigation -->
+	<span id="header_shadow" style="width: 100%; top: 30px;"></span>
+    <!-- Wrapper -->
+    <div class="wrapper">
+
+      <!-- Home Slider -->
+      <div class="home-slider">
+        <!-- Carousel -->
+        <div id="home-slider" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#home-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#home-slider" data-slide-to="1"></li>
+            <li data-target="#home-slider" data-slide-to="2"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <!-- Slide #1 -->
+            <div class="item active" id="item-1">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-7">
+                    <h1 class="first-child animated slideInDown delay-3"><strong>RESPONSIVE DESIGN</strong></h1>
+					<h3 class="animated fadeInUpBig delay-4">Zero Multipurpose Theme, now offering you html pages fully customizable and very easy to use! <span class="text-darkblue"><strong>Lifetime free update!</strong></span>Read more...</h3>                    
+					<br />
+					<h4 class="animated bounceInDown delay-5"><span>HTML Pages</span></h4>
+					<h4 class="animated bounceInDown delay-5"><span>Fully Responsive</span></h4>
+					<h4 class="animated bounceInDown delay-5"><span>Easy Custumize</span></h4>                    
+                  </div>                 
+                </div> <!-- / .row -->
+              </div> <!-- / .container -->
+            </div> <!-- / .item -->
+            <!-- Slide #2 -->
+            <div class="item" id="item-2">
+              <div class="container">
+                <div class="row">				  
+                  <div class="col-sm-12">
+				    <h1 class="first-child animated fadeInUpBig delay-2"><strong>FEATURED</strong></h1> 
+                    <ul class="string">
+					  <li class="animated fadeInUpBig delay-4"><span><strong>Perfect With <a href="index.html"><span class="text-white">Zero</span></a></strong></span></li>                                           
+                    </ul>
+					<h2 class="animated bounceInDown delay-4"><span class="bg-darkblue">HTML5</span> <span class="bg-yellow">CSS3</span></h2>
+                  </div> 
+                </div> <!-- / .row -->
+              </div> <!-- / .container -->          
+            </div> <!-- / .item -->
+            <!-- Slide #3 -->
+            <div class="item" id="item-3">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-12">                    
+					<h1 class="first-child animated fadeInUpBig delay-3"><strong><span class="bg-yellow text-white">PROMO</span></strong></h1>					
+                    <ul class="animated flipInX delay-5">
+                      <li><i class="fa fa-star"></i> Discount 60%</li>
+                      <li><i class="fa fa-star"></i> Bonus handbag</li>
+                      <li><i class="fa fa-star"></i> Free Shipping</li>
+					  <li><i class="fa fa-star"></i> Guarantee 3 Months</li>
+                    </ul>				
+					  <a href="#" class="btn btn-lg btn-red animated bounceInDown delay-3">Buy Now</a>					
+                  </div>                 
+                </div> <!-- / .row -->
+              </div> <!-- / .container -->            
+            </div> <!-- / .item -->
+          </div> <!-- / .carousel -->
+          <!-- Controls -->
+          <a class="carousel-arrow carousel-arrow-prev hidden-xs hidden-sm" href="#home-slider" data-slide="prev">
+            <i class="fa fa-angle-left fa-2x"></i>
+          </a>
+          <a class="carousel-arrow carousel-arrow-next hidden-xs hidden-sm" href="#home-slider" data-slide="next">
+            <i class="fa fa-angle-right fa-2x"></i>
+          </a>
+        </div>
+      </div> <!-- / .home-slider -->	  
+	  
+	  <!-- Divider Shadow -->
+	  <div class="divider-shadow">
+		<img src="img/divider-shadow1.png" alt="devider" class="responsive-img"/>
+	  </div><!-- /.Divider Shadow -->
+	  
+	  <!-- Browser Showcase -->
+	  <div class="browser-showcase">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1 class="first-child text-center">Welcome To <a href="index.html"><strong><span class="text-darkblue">Zero</span></strong></a></h1>
+              <h4 class="text-darkblue text-center"> Proffesional & Responsive Multipurpose Business Template  </h4>
+            </div>
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+	  </div> <!-- / .Browser Showcase -->
+
+      <!-- Main Services -->
+      <div class="main-services">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="services">
+                <div class="service-item">
+                  <i class="fa fa-lightbulb-o"></i>
+                  <div class="service-desc">
+                    <h4>Smart Support</h4>
+                    <p>Cum sociis natoque pen ibus Mauris pede arcuats moles tied Aliquam or Mauris pede arcuats.</p>
+                  </div>
+                </div>
+              </div> <!-- / .services -->
+            </div>
+            <div class="col-sm-4">
+              <div class="services">
+                <div class="service-item">
+                  <i class="fa fa-book"></i>
+                  <div class="service-desc">
+                    <h4>Well Documented</h4>
+                    <p>Cum sociis natoque pen ibus Mauris pede arcuats moles tied Aliquam or Mauris pede arcuats.</p>
+                  </div>
+                </div>
+              </div> <!-- / .services -->
+            </div>
+            <div class="col-sm-4">
+              <div class="services">
+                <div class="service-item">
+                  <i class="fa fa-thumbs-o-up"></i>
+                  <div class="service-desc">
+                    <h4>Free Support</h4>
+                    <p>Cum sociis natoque pen ibus Mauris pede arcuats moles tied Aliquam or Mauris pede arcuats.</p>
+                  </div>
+                </div>
+              </div> <!-- / .services -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="services">
+                <div class="service-item">
+                  <i class="fa fa-leaf"></i>
+                  <div class="service-desc">
+                    <h4>Clean Code</h4>
+                    <p>Cum sociis natoque pen ibus Mauris pede arcuats moles tied Aliquam or Mauris pede arcuats.</p>
+                  </div>
+                </div>
+              </div> <!-- / .services -->
+            </div>
+            <div class="col-sm-4">
+              <div class="services">
+                <div class="service-item">
+                  <i class="fa fa-cogs"></i>
+                  <div class="service-desc">
+                    <h4>Highly Custumizable</h4>
+                    <p>Cum sociis natoque pen ibus Mauris pede arcuats moles tied Aliquam or Mauris pede arcuats.</p>
+                  </div>
+                </div>
+              </div> <!-- / .services -->
+            </div>
+            <div class="col-sm-4">
+              <div class="services">
+                <div class="service-item">
+                  <i class="fa fa-camera"></i>
+                  <div class="service-desc">
+                    <h4>Photography</h4>
+                    <p>Cum sociis natoque pen ibus Mauris pede arcuats moles tied Aliquam or Mauris pede arcuats.</p>
+                  </div>
+                </div>
+              </div> <!-- / .services -->
+            </div>
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </div> <!-- / .main-features -->
+	  
+	  <!-- Tag Banner -->
+      <div class="responsive-tag-banner">
+        <div class="container">
+            <div class="row">
+			  <div class="col-md-6 col-sm-6 col-xs-12">
+			    <div class="text-center">
+                  <img class="img-responsive" src="img/people-2.png" alt="...">
+				</div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <h2>With <a href="index.html"><strong><span class="text-red"><em>Zero</em></span></strong></a> You Will Get Your Excellent Project!</h2>
+                <p class="lead text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu. Cras consectetur sapien et purus posuere, ac amel hendrerit nunc luctus.
+                </p>			
+				<ul class="lead text-muted">
+				  <li><span><i class="fa fa-hand-o-right"></i></span>Lorem ipsum dolor sit amet.</li>
+				  <li><span><i class="fa fa-hand-o-right"></i></span>Lorem ipsum dolor sit amet.</li>
+				  <li><span><i class="fa fa-hand-o-right"></i></span>Lorem ipsum dolor sit amet.</li>
+				  <li><span><i class="fa fa-hand-o-right"></i></span>Lorem ipsum dolor sit amet. </li>
+				  <li><span><i class="fa fa-hand-o-right"></i></span>Lorem ipsum dolor sit amet.</li>
+				  <li><span><i class="fa fa-hand-o-right"></i></span>Lorem ipsum dolor sit amet.</li>
+				</ul>
+				<br />				
+			    <a class="btn btn-lg btn-red" href="#">Learn more info</a> &nbsp;&nbsp;&nbsp; 
+			    <a class="btn btn-lg btn-darkblue" href="#">Purchase Now!</a>
+              </div>              
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </div> <!-- / .Tag Banner -->      
+
+      <!-- Services feature1 -->
+      <div class="services-feature1">
+        <div class="container">
+          <div class="row">			
+			<div class="col-xs-12 col-sm-6 col-md-6">
+              <div class="service-feature1">
+				<a href="#"><i class="fa fa-desktop"></i></a>              
+                <h3>Fully Responsive</h3>
+				<div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  </p>
+                </div>
+              </div>
+            </div>
+			<div class="col-xs-12 col-sm-6 col-md-6">
+              <div class="service-feature1">
+				<a href="#"><i class="fa fa-cogs"></i></a>              
+                <h3>Diffrent Websites</h3>
+				<div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+			<div class="col-xs-12 col-sm-6 col-md-6">
+              <div class="service-feature1">
+				<a href="#"><i class="fa fa-camera"></i></a>              
+                <h3>Diffrent Footers</h3>
+				<div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>			
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <div class="service-feature1">
+				<a href="#"><i class="fa fa-pagelines"></i></a>             
+                <h3>Diffrent Headers</h3>
+				<div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>		
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <div class="service-feature1">
+				<a href="#"><i class="fa fa-comments-o"></i></a>               
+                <h3>100+ Feature Sections</h3>
+				<div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <div class="service-feature1">
+				<a href="#"><i class="fa fa-magic"></i></a>               
+                <h3>Use for Any Website</h3>
+				<div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>           
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </div> <!-- / .Service Feature1 -->
+	  
+	  <!-- Services feature2 -->
+	  <div class="service-feature2">
+		<div class="container">
+	      <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-8">
+              <h1>Join Zero and Give your Website Brand</h1>
+              <h4><em><strong>Multipurpose Responsive Design</strong></em></h4>
+            </div>
+			<div class="col-xs-12 col-sm-4 col-md-4">
+              <a class="btn btn-lg btn-darkblue pull-right" href="#">Purchase Now!</a>    
+			</div>
+		  </div> <!-- / .row -->
+        </div> <!-- / .container -->
+	  </div><!-- / .Services feature2 -->	  
+	  
+	  <!-- Fresh Works1 -->	  
+	  <div class="fresh-works1">
+	    <div class="header text-center">
+	      <h1><span class="text-red">Recent</span> <strong><span class="text-darkblue">Work</span></strong></h1>
+		  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+		</div>
+		<div class="container_full">		  
+		  <br /><br />		  
+          <div id="grid-container" class="cbp-l-grid-fullScreen">
+            <ul>
+              <li class="cbp-item identity logo">
+                <a href="img/freshworks/freshwork1.jpg" class="cbp-caption cbp-lightbox" data-title="Corporate">
+                  <div class="cbp-caption-defaultWrap">
+                    <img src="img/freshworks/freshwork1.jpg" alt="" />
+                  </div>
+                  <div class="cbp-caption-activeWrap">
+                    <div class="cbp-l-caption-alignLeft">
+                      <div class="cbp-l-caption-body">
+                        <div class="cbp-l-caption-title">Corporate</div>
+                        <div class="cbp-l-caption-desc">HTML</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="cbp-item web-design">
+                <a href="img/freshworks/freshwork2.jpg" class="cbp-caption cbp-lightbox" data-title="Entertainment">
+                  <div class="cbp-caption-defaultWrap">
+                    <img src="img/freshworks/freshwork2.jpg" alt="" />
+                  </div>
+                  <div class="cbp-caption-activeWrap">
+                    <div class="cbp-l-caption-alignLeft">
+                      <div class="cbp-l-caption-body">
+						<div class="cbp-l-caption-title">Entertaiment</div>
+                        <div class="cbp-l-caption-desc">CMS</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="cbp-item motion identity">
+                <a href="img/freshworks/freshwork3.jpg" class="cbp-caption cbp-lightbox" data-title="Creative">
+                  <div class="cbp-caption-defaultWrap">
+                    <img src="img/freshworks/freshwork3.jpg" alt="" />
+                  </div>
+                  <div class="cbp-caption-activeWrap">
+                    <div class="cbp-l-caption-alignLeft">
+                      <div class="cbp-l-caption-body">
+                        <div class="cbp-l-caption-title">Crative</div>
+                        <div class="cbp-l-caption-desc">HTML</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="cbp-item identity graphic">
+                <a href="img/freshworks/freshwork4.jpg" class="cbp-caption cbp-lightbox" data-title="Business">
+                  <div class="cbp-caption-defaultWrap">
+                    <img src="img/freshworks/freshwork4.jpg" alt="" />
+                  </div>
+                  <div class="cbp-caption-activeWrap">
+                    <div class="cbp-l-caption-alignLeft">
+                      <div class="cbp-l-caption-body">
+                        <div class="cbp-l-caption-title">Business</div>
+                        <div class="cbp-l-caption-desc">Wordpress</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="cbp-item motion logo">
+                <a href="img/freshworks/freshwork5.jpg" class="cbp-caption cbp-lightbox" data-title="Creative">
+                  <div class="cbp-caption-defaultWrap">
+                    <img src="img/freshworks/freshwork5.jpg" alt="" />
+                  </div>
+                  <div class="cbp-caption-activeWrap">
+                    <div class="cbp-l-caption-alignLeft">
+                      <div class="cbp-l-caption-body">
+                        <div class="cbp-l-caption-title">Creative</div>
+                        <div class="cbp-l-caption-desc">Wordpress</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="cbp-item web-design">
+                <a href="img/freshworks/freshwork6.jpg" class="cbp-caption cbp-lightbox" data-title="Creative">
+                  <div class="cbp-caption-defaultWrap">
+                    <img src="img/freshworks/freshwork6.jpg" alt="" />
+                  </div>
+                  <div class="cbp-caption-activeWrap">
+                    <div class="cbp-l-caption-alignLeft">
+                      <div class="cbp-l-caption-body">
+                        <div class="cbp-l-caption-title">Creative</div>
+                        <div class="cbp-l-caption-desc">CMS</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="cbp-item identity motion">
+                <a href="img/freshworks/freshwork7.jpg" class="cbp-caption cbp-lightbox" data-title="Entertainment">
+                  <div class="cbp-caption-defaultWrap">
+                    <img src="img/freshworks/freshwork7.jpg" alt="" />
+                  </div>
+                  <div class="cbp-caption-activeWrap">
+                    <div class="cbp-l-caption-alignLeft">
+                      <div class="cbp-l-caption-body">
+                        <div class="cbp-l-caption-title">Entertainment</div>
+                        <div class="cbp-l-caption-desc">CMS</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="cbp-item web-design graphic">
+                <a href="img/freshworks/freshwork8.jpg" class="cbp-caption cbp-lightbox" data-title="Corporate">
+                  <div class="cbp-caption-defaultWrap">
+                    <img src="img/freshworks/freshwork8.jpg" alt="" />
+                  </div>
+                  <div class="cbp-caption-activeWrap">
+                    <div class="cbp-l-caption-alignLeft">
+                      <div class="cbp-l-caption-body">
+                        <div class="cbp-l-caption-title">Corporate</div>
+                        <div class="cbp-l-caption-desc">HTML</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>		
+			</ul>
+          </div>
+      	  <div class="cbp-l-loadMore-text">
+			<div data-href="#" class="cbp-l-loadMore-text-link"></div>
+      	  </div>
+		</div><!-- / .container full -->
+	  </div><!-- / .Fresh Works1 -->
+	  
+	  <!-- Responsive Showcase3 -->
+	  <div class="responsive-showcase3">
+		<div class="container">
+		  <div class="row">	
+			<div class="col-md-5 col-sm-5 col-xs-12">
+			  <div class="text-center">
+			   <img class="img-responsive" src="img/ipad.png" alt="...">
+			  </div>
+			</div>
+			<div class="col-md-7 col-sm-7 col-xs-12">    
+			  <div class="text-left">    	   
+			    <h2>Core <strong><span class="text-red">Features</span></strong></h2>
+			    <h4>Easy-to-customize and fully featured design</h4>        
+			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget turpis pulvinar, tempor odio sed, adipiscing dolor. Donec nisi velit, malesuada id dolor non, elementum auctor arcu.</p>
+			    <br />
+			    <div class="col-sm-6">
+				  <ul class="list-1">
+                    <li><i class="fa fa-chevron-circle-right"></i> Diffrent Website Layouts</li>
+                    <li><i class="fa fa-chevron-circle-right"></i> Exclusive Slideshows</li>
+                    <li><i class="fa fa-chevron-circle-right"></i> Font Awesome Support</li>
+                    <li><i class="fa fa-chevron-circle-right"></i> Parallax Background</li>
+                    <li><i class="fa fa-chevron-circle-right"></i> Clean Code &amp; Easy to Use</li>
+				  </ul>
+			    </div>        
+			    <div class="col-sm-6">
+				  <ul class="list-1">
+				    <li><i class="fa fa-chevron-circle-right"></i> Simple Menu</li>                    
+                    <li><i class="fa fa-chevron-circle-right"></i> Well Structured Pages</li>
+                    <li><i class="fa fa-chevron-circle-right"></i> Mobile Friendly Theme</li>
+                    <li><i class="fa fa-chevron-circle-right"></i> Cross Browsere Check</li>
+				  </ul>
+			    </div>				
+			  </div>
+			  <br /><br />
+			  <a href="#" class="tn btn-lg btn-darkblue">View All Features</a> 
+			</div>		
+		  </div><!-- / .row -->
+        </div><!-- / .container -->
+	  </div><!-- / .Responsive Showcase3 -->
+	  
+	  <!-- Services Feature5 -->	  
+	  <div class="service-feature5">
+		<div class="container">
+		  <div class="row">	
+			<div class="col-xs-12 col-sm-12 col-md-4">    
+			  <h4 class="white">Will cover many web sites still in their infancy websites</h4>		
+			    <div class="service-feature5-img">
+				  <img class="img-responsive" src="img/site-img1.jpg" />
+				</div>
+			  <p>Lorem Ipsum as their default model the and a search for lorem ipsum will uncover many web sites the stilin infancy versions have evolved over the years.</p>      		       
+			</div>
+			
+			<div class="col-xs-12 col-sm-12 col-md-4">  
+			  <h4 class="white">Lorem Ipsum passages and more recently with desktop</h4>	
+				<div class="service-feature5-img">			  
+				  <img class="img-responsive" src="img/site-img2.jpg" />
+			    </div>
+			  <p>Lorem Ipsum as their default model the and a search for lorem ipsum will uncover many web sites the stilin infancy versions have evolved over the years.</p>                
+			</div>
+			
+			<div class="col-xs-12 col-sm-12 col-md-4">  
+			  <h4 class="white">The point of using psum is that has more normal letters</h4>			 
+				<div class="service-feature5-img">		  
+				  <img class="img-responsive" src="img/site-img3.jpg" />
+			    </div>  
+			  <p>Lorem Ipsum as their default model the and a search for lorem ipsum will uncover many web sites the stilin infancy versions have evolved over the years.</p>              
+            </div>
+		  </div><!-- / .row -->
+        </div><!-- / .container -->
+	  </div><!-- / .Services Feature5 -->
+	  
+	  <!-- Blog Posts -->
+	  <div class="blog-posts">
+		<div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h2 class="text-center">Blog Posts</h2>
+            </div>
+          </div> <!-- / .row -->
+          <div class="row">            
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <div class="blog">
+                <img src="img/avatar.jpg" alt="...">
+                <div class="blog-desc">
+                  <h3>
+                    <a href="blog-post.html">At vero eos et accu samus et iusto odio dignis simos ducimus qui bland itiis prae sentium voluptatum.</a>
+                  </h3>
+                  <hr>
+                  <p class="text-muted">by John smith</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas tuerpis.....</p>
+                  
+                </div>
+				<a class="btn btn-red" href="blog-post.html">Read More...</a>
+              </div>
+            </div>
+			<div class="col-xs-12 col-sm-6 col-md-6">
+              <div class="blog">
+                <img src="img/avatar.jpg" alt="...">
+                <div class="blog-desc">
+                  <h3>
+                    <a href="blog-post.html">At vero eos et accu samus et iusto odio dignis simos ducimus qui bland itiis prae sentium voluptatum.</a>
+                  </h3>
+                  <hr>
+                  <p class="text-muted">by John smith</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas tuerpis.....</p>
+                  <a class="btn btn-red" href="blog-post.html">Read More...</a>
+                </div>
+              </div>
+            </div>
+          </div> <!-- / .row -->
+		</div> <!-- / .container -->
+	  </div> <!-- / .blog posts -->
+	  
+    </div> <!-- / .wrapper -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+		
+          <!-- Contact Us -->
+          <div class="col-xs-12 col-sm-3 col-md-3">
+            <h4>Contact Us</h4>            
+			<p>
+			  051 Ave C South Saskatoon, 10 Elizabeth <br />
+			  Street Mountain Road, CA United States.
+			  <br /><br />
+			  Phone : 92 026 365 2569<br />
+			  Fax   : 92 026 365 2570
+			  <br /><br />
+			  <a href="mailto:#">supportcenter@mail.com</a>
+			</p>			
+          </div><!-- / .Contact Us -->
+		  
+		  <!-- Useful Links -->
+          <div class="col-xs-12 col-sm-3 col-md-3">            
+            <h4>Useful Links</h4>
+            <p>
+              <a href="#">Simple and clean blog design </a><br />
+              <a href="#">We bring good to online presence  </a><br />
+              <a href="#">Fully responsive creative design  </a><br />
+              <a href="#">Creative homepage design </a><br />
+              <a href="#">Our services are most nifty  </a><br />
+              <a href="#">Most flexible theme </a><br />
+            </p>
+          </div><!-- / .Useful Links -->
+		  
+          <!-- Recent Tweets -->
+          <div class="col-xs-12 col-sm-3 col-md-3">
+            <h4>Photo Stream</h4>
+			<div class="gallery clearfix">
+			  <ul class="list-unstyled">
+			    <li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>	
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>				
+			   </ul>
+			</div>
+          </div><!-- / .Recent Tweets -->
+		  
+          <!-- Newsletter -->
+          <div class="col-xs-12 col-sm-3 col-md-3">
+            <h4>Newsletter</h4>
+            <p>
+              By subscribing to our mailing list you will get the latest news from us.              
+            </p>
+            <form class="form" role="form">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="input-group">
+                    <label class="sr-only" for="subscribe-email">Email address</label>
+                    <input type="email" class="form-control" id="subscribe-email" placeholder="Enter your email">
+                    <span class="input-group-btn">
+                      <button type="submit" class="btn btn-danger">Subscribe</button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </form>
+			<br />
+			<h4>Follow us on</h4>
+			  <ul class="list-inline">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="#"><i class="fa fa-skype"></i></a></li>				
+			  </ul>
+          </div><!-- / .Newsletter -->
+		  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		  
+        </div> <!-- / .row -->		
+      </div> <!-- / .container --> 	  
+    </footer><!-- / .Footer -->
+	
+	<!-- Copyright -->
+	<div class="copyrights">
+		<div class="container">
+		  <div class="row">
+			<div class="col-sm-12">
+			  <div class="copyright">
+				Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a>
+			  </div>
+			</div>
+		  </div> <!-- / .row -->
+		</div> <!-- / .container --> 
+	</div><!-- / .Copyright -->
+
+    <!-- JavaScript -->
+    <script src="https://ajax.useso.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrolltopcontrol.js"></script>
+	<script src="js/SmoothScroll.js"></script>
+    <script src="js/lightbox-2.6.min.js"></script>
+	<script src="js/jquery.cubeportfolio.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

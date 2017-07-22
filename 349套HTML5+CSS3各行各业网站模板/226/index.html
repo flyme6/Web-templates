@@ -1,0 +1,498 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+			<!-- script-for-portfolio -->
+						jQuery(document).ready(function($) {
+							$(".scroll").click(function(event){		
+								event.preventDefault();
+								$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+							});
+						});
+					</script>					
+				<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+				<script type="text/javascript">
+						$(function () {
+			
+							var filterList = {
+			
+								init: function () {
+				
+					// MixItUp plugin
+					// http://mixitup.io
+					$('#portfoliolist').mixitup({
+						targetSelector: '.portfolio',
+						filterSelector: '.filter',
+						effects: ['fade'],
+						easing: 'snap',
+						// call the hover effect
+						onMixEnd: filterList.hoverEffect()
+					});				
+				
+				},
+				
+				hoverEffect: function () {
+				
+					// Simple parallax effect
+					$('#portfoliolist .portfolio').hover(
+						function () {
+							$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+							$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+						},
+						function () {
+							$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+							$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+							}		
+						);				
+				
+					}
+
+				};
+			
+				// Run the show!
+				filterList.init();
+			});	
+			</script>
+			<!-- script-for-portfolio -->
+			<!-- pop-up-box -->
+			<script type="text/javascript" src="js/modernizr.custom.min.js"></script>
+				<script src="js/jquery.magnific-popup.js" type="text/javascript"></script> 
+			<script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>
+				<!-- pop-up-box -->
+				<script type="text/javascript" src="js/move-top.js"></script>
+       <script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+				});
+			});
+		</script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+				/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+				*/
+		$().UItoTop({ easingType: 'easeOutQuart' });
+});
+</script>
+</head>
+<body>
+<!-- header -->
+	<div class="banner">
+		<div class="header" >
+			<div class="container">
+				<div class="logo">
+					<a href="#"><img src="images/logo.png" alt="" /></a>
+				</div>
+				<div class="menu">														
+					<a href="#" class="right_bt" id="activator"><img src="images/menu.png" alt=""/></a>
+						<div class="box" id="box">
+							<div class="box_content">
+							   <div class="menu_box_list">
+								   <ul>
+									   <li class="active"><a href="#home" class="scroll">home</a></li>
+										<li><a href="#about" class="scroll">About us</a></li>
+										<li><a href="#services" class="scroll">Services</a></li>
+										<li><a href="#portfolio" class="scroll">portfolio</a></li>
+										<li><a href="#contact-us" class="scroll">contact </a></li>
+									</ul>
+								</div>
+								<a class="boxclose" id="boxclose"><img src="images/close.png" alt=""/></a>
+							</div>                
+						</div>
+						<script type="text/javascript" src="js/easing.js"></script>
+							 <script type="text/javascript">
+									var $ = jQuery.noConflict();
+										$(function() {
+											$('#activator').click(function(){
+													$('#box').animate({'top':'0px'},500);
+											});
+											$('#boxclose').click(function(){
+													$('#box').animate({'top':'-700px'},500);
+											});
+										});
+										$(document).ready(function(){
+										
+										//Hide (Collapse) the toggle containers on load
+										$(".toggle_container").hide(); 
+										
+										//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+										$(".trigger").click(function(){
+											$(this).toggleClass("active").next().slideToggle("slow");
+											return false; //Prevent the browser jump to the link anchor
+										});
+										
+										});
+									</script>
+				</div> 
+					<div class="clearfix"> </div>				
+			</div>			
+		</div>
+		<div class="container">
+			<section class="slider">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<div class="banner-info" id="home">
+								<h1>hi there, we are <span> m&n </span></h1>
+								<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit </p>
+							</div>
+						</li>
+						<li>
+							<div class="banner-info">
+								<h1>hi there, we are <span> m&n </span></h1>
+								<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit </p>
+							</div>
+						</li>
+						<li>	
+							<div class="banner-info">
+								<h1>hi there, we are <span> m&n </span></h1>
+								<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit </p>
+							</div>
+						</li>
+						<li>	
+							<div class="banner-info">
+								<h1>hi there, we are <span> m&n </span></h1>
+								<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit </p>
+							</div>
+						</li>
+						<li>
+							<div class="banner-info">
+								<h1>hi there, we are <span> m&n </span></h1>
+								<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit </p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+						<!-- FlexSlider -->
+							  <script defer src="js/jquery.flexslider.js"></script>
+							  <script type="text/javascript">
+								$(function(){
+								  SyntaxHighlighter.all();
+								});
+								$(window).load(function(){
+								  $('.flexslider').flexslider({
+									animation: "slide",
+									start: function(slider){
+									  $('body').removeClass('loading');
+									}
+								  });
+								});
+							  </script>
+						<!-- FlexSlider -->
+		<div class="info">
+			<div class="container">
+				<a class="work" href="#">My work</a>
+				<a class="hire" href="#">Hire me</a>
+			</div>
+		</div>
+	</div>
+<!-- header -->	
+<!-- ourstory -->
+<div class="ourstory" id="about">
+	<div class="container">
+		<div class="col-md-6">
+			<h2>OUR <span>STORY</span></h2>
+			<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non </p>
+		</div>
+		<div class="ourstory-1">
+		<div class="col-md-6">
+		<h6>"All our dreams can come true, if we have the courage to pursue them."</h6>
+		</div>
+			<div class="clearfix"> </div>
+			<img src="images/device.png" class="img-responsive" alt="" />
+		</div>	
+	</div>
+</div>	
+<!-- ourstory -->	
+<div class="ourservices" id="services">
+	<div class="container">
+		<div class="col-md-5">
+			<h2>OUR <span>SERVICES |</span></h2>
+		</div>
+		<div class="col-md-7">
+			<h6>We provide the best digital solutions</h6>
+		</div>
+			<div class="clearfix"> </div>
+		<div class="col-md-4">
+			<div class="icons">
+				<i class="bed"> </i>
+			</div>
+				<div class="icon-data">
+					<h5><a href="#">PRINT MEDIA DESIGN</a></h5>
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat</p>
+				</div>
+					<div class="clearfix"> </div>
+					
+		</div>
+		<div class="col-md-4">
+			<div class="icons">
+				<i class="lcd"> </i>
+			</div>
+				<div class="icon-data">
+					<h5><a href="#">BRANDING DESGIN</a></h5>
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat</p>
+				</div>
+					<div class="clearfix"> </div>
+		</div>
+		<div class="col-md-4">
+			<div class="icons">
+				<i class="mobile"> </i>
+			</div>
+				<div class="icon-data">
+					<h5><a href="#">UI/UX DESGIN</a></h5>
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat</p>
+				</div>
+					<div class="clearfix"> </div>
+		</div>
+			<div class="clearfix"> </div>
+		<div class="col-md-4">
+			<div class="icons">
+				<i class="settings"> </i>
+			</div>
+				<div class="icon-data">
+					<h5><a href="#">DEVELOPMENT</a></h5>
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat</p>
+				</div>
+					<div class="clearfix"> </div>
+		</div>
+		<div class="col-md-4">
+			<div class="icons">
+				<i class="camera"> </i>
+			</div>
+				<div class="icon-data">
+					<h5><a href="#">PHOTOGRAPHY</a></h5>
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat</p>
+				</div>
+					<div class="clearfix"> </div>
+		</div>
+		<div class="col-md-4">
+			<div class="icons">
+				<i class="bulb"> </i>
+			</div>
+				<div class="icon-data">
+					<h5><a href="#">CREATIVE IDEA</a></h5>
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat</p>
+				</div>
+					<div class="clearfix"> </div>
+		</div>
+	<div class="clearfix"> </div>
+	</div>
+</div>
+	<!-- portfolio -->
+<div class="our-work-section" id="portfolio">
+		<div class="container">
+			<div class="our-work-section-head ">
+				  <h3>OUR <span>WORK |</span></h3>
+			</div>
+				<ul id="filters" class="clearfix">
+							<li><span class="filter active" data-filter="app card icon web">show</span></li>
+							<li><span class="filter" data-filter="app">all</span></li>
+							<li><span class="filter" data-filter="card">Web</span></li>
+							<li><span class="filter" data-filter="icon">branding</span></li>
+							</ul>
+						<div id="portfoliolist">
+						<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog2" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+								 <img src="images/lap.jpg" class="img-responsive" alt="" /><div class="b-wrapper"><h5 class="b-animate b-from-left    b-delay03 "><img src="images/cross.png" class="img-responsive" alt=""/></h5>
+								<p class="b-animate b-from-right    b-delay03 "></p></div></a>
+							</div>
+						</div>				
+						<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog3" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+								 <img src="images/green.jpg" class="img-responsive"  alt=""/><div class="b-wrapper"><h5 class="b-animate b-from-left    b-delay03 "><img src="images/cross.png" class="img-responsive" alt=""/></h5>
+								<p class="b-animate b-from-right    b-delay03 "></p></div></a>
+							</div>
+						</div>		
+						<div class="portfolio web mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="web" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog4" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+								 <img src="images/adronts.jpg" class="img-responsive"  alt=""/><div class="b-wrapper"><h5 class="b-animate b-from-left    b-delay03 "><img src="images/cross.png" class="img-responsive" alt=""/></h5>
+								<p class="b-animate b-from-right    b-delay03 "></p></div></a>
+							</div>
+						</div>				
+						<div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog5" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+								 <img src="images/smiley.jpg" class="img-responsive" alt="" /><div class="b-wrapper"><h5 class="b-animate b-from-left    b-delay03 "><img src="images/cross.png" class="img-responsive" alt=""/></h5>
+								<p class="b-animate b-from-right    b-delay03 "></p></div></a>
+							</div>
+						</div>
+						<div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog6" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+								 <img src="images/tank.jpg" class="img-responsive" alt="" /><div class="b-wrapper"><h5 class="b-animate b-from-left    b-delay03 "><img src="images/cross.png" class="img-responsive" alt=""/></h5>
+								<p class="b-animate b-from-right    b-delay03 "></p></div></a>
+							</div>
+						</div>
+						<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#small-dialog7" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+								 <img src="images/umberrela.jpg" class="img-responsive" alt="" /><div class="b-wrapper"><h5 class="b-animate b-from-left    b-delay03 "><img src="images/cross.png" class="img-responsive" alt=""/></h5>
+								<p class="b-animate b-from-right    b-delay03 "></p></div></a>
+							</div>
+						</div>			
+							<div class="clearfix"></div>					
+					</div>
+		</div>		<div class="clearfix"></div>
+	</div>
+			  <!-- script-for-portfolio -->
+				<!-- Gallery Script Ends -->
+			<div id="small-dialog2" class="mfp-hide">
+				<div class="image-top">
+					<img src="images/lap.jpg" alt=""/>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to book. </p>
+				</div>
+			</div>
+			<div id="small-dialog3" class="mfp-hide">
+				<div class="image-top">
+					<img src="images/green.jpg" alt=""/>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to book.</p>
+				</div>
+			</div>
+			<div id="small-dialog4" class="mfp-hide">
+				<div class="image-top">
+					<img src="images/adronts.jpg" alt=""/>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to book.</p>
+				</div>
+			</div>
+			<div id="small-dialog5" class="mfp-hide">
+				<div class="image-top">
+					<img src="images/smiley.jpg" alt=""/>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to book. </p>
+				</div>
+			</div>
+			<div id="small-dialog6" class="mfp-hide">
+				<div class="image-top">
+					<img src="images/tank.jpg" alt=""/>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to book. </p>
+				</div>
+			</div>
+			<div id="small-dialog7" class="mfp-hide">
+				<div class="image-top">
+					<img src="images/umberrela.jpg" alt=""/>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to book. </p>
+				</div>
+			</div>
+<!-- portfolio -->
+<!-- contact -->
+<div class="hello" id="contact-us">
+	<div class="container">
+		<div class="col-md-4">
+			<h3>SAY <span>HELLO | </span></h3>
+		</div>
+		<div class="col-md-8">
+			<h6> Do you have any project</h6>
+		</div>
+			<div class="clearfix"> </div>
+				<p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional website</p>
+				<div class="say">	
+					<div class="col-md-5">
+						<div class="icon">
+							<i class="addres"> </i>
+						</div>
+						<div class="icon-data1">
+							<h5>address</h5>
+							<p>516 south 2nd Street, Suite 721New York, NY 10010</p>
+				
+						</div>
+							<div class="clearfix"> </div>
+						<div class="icon">
+							<i class="phone"> </i>
+						</div>
+						<div class="icon-data1">
+							<h5>PHONE NUMBER</h5>
+							<p>99 88888 777 666  |  012345678</p>
+				
+						</div>
+							<div class="clearfix"> </div>
+						<div class="icon">
+							<i class="mail"> </i>
+						</div>
+						<div class="icon-data1">
+							<h5>EMAIL</h5>
+							<p>surendra@gmail.com hello@address.com</p>
+						</div>
+							<div class="clearfix"> </div>			
+					</div>
+					<div class="col-md-7">
+						<div class="text-field-firstname">
+							<form>
+								<input type="text" class="text" value="Eftakher Ala|" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Eftakher Ala|';}">
+							</form>
+						</div>
+						<div class="text-field-lastname">
+							<form>
+								<input type="text" class="text" value="Lastname" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Lastname';}">
+							</form>
+						</div>
+						<div class="text-field-email">
+							<form>
+								<input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+							</form>
+						</div>
+						<div class="text-field-name">
+							<form>
+								<input type="text" class="text" value="Project name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Project name';}">
+							</form>
+							<div class="user-img"></div>
+						</div>
+							<div class="clearfix"> </div>
+						<div class="text-field-area">
+							<form>
+								<textarea value="MESSAGE:" onfocus="if(this.value == 'MESSAGE') this.value='';" onblur="if(this.value == '') this.value='MESSAGE';">MESSAGE</textarea>
+							</form>
+						</div>
+						<div class="button">
+							<form>
+								<input type="submit" value="send">
+							</form>
+						</div>
+							<div class="clearfix"> </div>		
+					</div>
+						<div class="clearfix"> </div>
+				</div>
+				<div class="bottom">
+					<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+				</div>
+	</div>
+</div>
+<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- contact -->
+
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<!--web-fonts-->
+<link href='http://fonts.useso.com/css?family=Exo:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic' rel='stylesheet' type='text/css'>
+<!--js-->
+<script src="js/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }>
+</script>
+<meta name="keywords" content="Sea Foods Responsive web template, Bootstrap Web Templates, Flat Web Templates, AndriodCompatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+<!-- //end-smoth-scrolling -->
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+<script type="text/javascript">
+$(function () {
+	
+	var filterList = {
+	
+		init: function () {
+		
+			// MixItUp plugin
+			// http://mixitup.io
+			$('#portfoliolist').mixitup({
+				targetSelector: '.portfolio',
+				filterSelector: '.filter',
+				effects: ['fade'],
+				easing: 'snap',
+				// call the hover effect
+				onMixEnd: filterList.hoverEffect()
+			});				
+		
+		},
+		
+		hoverEffect: function () {
+		
+			// Simple parallax effect
+			$('#portfoliolist .portfolio').hover(
+				function () {
+					$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+					$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+				},
+				function () {
+					$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+					$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+				}		
+			);				
+		
+		}
+
+	};
+	
+	// Run the show!
+	filterList.init();
+	
+	
+});	
+</script>
+</head>
+<body>
+<!--banner start here-->
+<div class="banner">
+	<div class="header-main">
+	  <div class="container">
+	        <div class="header-navg">
+	        	<span class="menu"> <img src="images/icon.png" alt=""/></span>
+				<ul class="res">
+					<li><a class="active" href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="recipies.html">RECIPIES</a></li>
+					<li><a href="news.html">NEWS</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+				 <script>
+                                  $( "span.menu").click(function() {
+                                                                    $(  "ul.res" ).slideToggle("slow", function() {
+                                                                     // Animation complete.
+                                                                     });
+                                                                     });
+                 </script>
+			</div>
+			<div class="search">
+				<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"/>
+				<input type="submit" value="">
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.png" alt=""/></a>
+		</div>
+			<div class="slider">
+                  <section class="slider">
+                      <div class="flexslider">
+                      <ul class="slides">
+                 <li>
+    	           <p>Hen an unknown printer took a galley of type and scrambled it to make a type specimen<br> book. It has survived not only five centuries, but also the leap into electronic </p>
+  	    		</li>
+ 	    		<li>
+  	    	      <p>In a free hour, when our power of choice is untrammelled and when nothing prevents our being<br> able to do what we like best, every pleasure is to be welcomed and every pain avoided.</p>
+  	    		</li>
+  	    		<li>
+	    	      <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur<br> magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+  	    		</li>
+          </ul>
+        </div>
+      </section>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+  <!--FlexSlider-->
+  <script defer src="js/jquery.flexslider.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+</div>
+</div>
+<!--banner end here-->
+<!--see grid star here-->
+<div class="seegrid">
+	<div class="container">
+		<div class="seegrid-main">
+			<div class="col-md-6 seegrid-left">
+				<span class="flyfish">  </span>
+				<h3>MANY DESKTOP PUBLISHING PACKAGES AND WEB PAG</h3>
+				<p>the first true generator on the Internet. It uses adictionary of over 200 Latin words, combined witha handful of model sentence structures, togenerate Lorem Ipsum which looks reasonable. The generated Lorem</p>
+			    <p>the first true generator on the Internet. It uses adictionary of over 200 Latin words, combined witha handful of model sentence structures, togenerate Lorem Ipsum which looks reasonable. The generated Lorem</p>
+			</div>
+			<div class="col-md-6 seegrid-right">
+				<img src="images/gr.jpg" alt=""/>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--see grid  end here-->
+<!--see  gallery start here-->
+<div class="gallery-inf">
+	<div class="container">
+		<div class="gallery-main">
+		<div class="work-bottom">
+				<ul id="filters" class="clearfix">
+						<li><span class="filter cr" data-filter="app card icon logo web"> </span></li>
+						<li><span class="filter fi" data-filter="app"> </span></li>
+						<li><span class="filter san" data-filter="card"> </span></li>
+						<li><span class="filter octo" data-filter="icon"> </span></li>
+					</ul>
+					<div id="portfoliolist">
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/gr1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  		</div></a>
+		                </div>
+					</div>				
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/gr2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+					</div>		
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/gr3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+					</div>				
+					<div class="portfolio logos mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/gr4.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go thickbox">
+						     <img src="images/gr5.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+					</div>			
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/gr6.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+					</div>	
+					</div>	
+					<div class="clearfix"> </div>				
+				</div>
+				<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--see  gallery end here-->
+<!--see info start here-->
+<div class="see-info">
+	<div class="container">
+		<div class="see-info-main">
+		    <div class="see-info-top">
+				<span class="mess"> </span>
+				<h3>RECENT NEWS</h3>
+				<span class="long-line"> </span>
+				<p>content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,</p>
+			</div>
+			<div class="see-info-bottom">
+				<div class="see-info-grid">
+					<img src="images/bis.jpg" alt=""/>
+					<h3>YOU NEED TO BE SURE THERE</h3>
+					<span class="line"> </span>
+                    <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                    <div class="see-info-bwn">
+                    	<a href="#">LEARN MORE</a>
+                    </div>
+				</div>
+				<div class="see-info-grid">
+					<img src="images/stra.jpg" alt=""/>
+					<h3>YOU NEED TO BE SURE THERE</h3>
+					<span class="line"> </span>
+                    <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                    <div class="see-info-bwn">
+                    	<a href="#">LEARN MORE</a>
+                    </div>
+				</div>
+				<div class="see-info-grid inf">
+					<img src="images/sup.jpg" alt=""/>
+					<h3>YOU NEED TO BE SURE THERE</h3>
+					<span class="line"> </span>
+                    <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                    <div class="see-info-bwn">
+                    	<a href="#">LEARN MORE</a>
+                    </div>
+				</div>
+			  <div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+	   </div>
+	</div>
+</div>
+<!--see info end here-->
+<!--footer start here-->
+<div class="footer">
+	<div class="footer-bg">
+	<div class="container">
+		<div class="footer-main">
+			<div class="footer-top">
+				<i> </i>
+				<span class="ver-line"> </span>
+			</div>
+			<div class="footer-bottom">
+				<div class="email">
+					<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"/>
+				</div>
+				<div class="sign-up">
+					<input type="submit"  value="Subscribe"/>
+				</div>
+			   <div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+			<div class="layout">
+				<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+			</div>
+			<div class="clearfix"> </div>
+	   </div>
+	</div>
+  </div>
+</div>
+<!--footer end here-->
+
+</body>
+</html>

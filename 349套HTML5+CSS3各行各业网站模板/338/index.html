@@ -1,0 +1,338 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Home</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+   		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+	</head>
+	<body>
+		<!-- container -->
+			<!-- header -->
+			<div class="header">
+				<div class="container">
+				<!-- logo -->
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" title="baku" /></a>
+				</div>
+				<!-- logo -->
+				<!-- cart-info -->
+				<div class="cart-info">
+					<ul>
+						<li><a href="#">Login</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Stores</a></li>
+						<li class="cartinfo"><a href="#"><span> </span>My bag (0) items</a></li>
+						<div class="clearfix"> </div>
+					</ul>
+				</div>
+				<!-- /cart-info -->
+			</div>
+			<!-- header -->
+		</div>
+		<!-- sub-header -->
+		<div class="sub-header">
+			<div class="container">
+				<!-- top-nav -->
+				<div class="top-nav">
+					<span class="menu"> </span>
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="404.html">About</a></li>
+						<li><a href="collections.html">What's new</a></li>
+						<li><a href="collections.html">Collections</a></li>
+						<li><a href="404.html">Baku Club</a></li>
+						<li><a href="404.html">Store Loation</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<div class="clearfix"> </div>
+					</ul>
+				</div>
+				<!-- top-nav -->
+				<!-- script-for-nav -->
+				<script>
+					$(document).ready(function(){
+						$("span.menu").click(function(){
+							$(".top-nav ul").slideToggle(300);
+						});
+					});
+				</script>
+				<!-- script-for-nav -->
+				<!-- search-form -->
+				<div class="search-form">
+					<form>
+						<input type="text" class="text" value="Keyword or product code" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Keyword or product code';}">
+						<input type="submit" value="" />
+					</form>
+				</div>
+				<div class="clearfix"> </div>
+				<!-- /search-form -->
+			</div>
+		</div>
+		<!-- /sub-header -->
+		<!-- banner -->
+		<div class="banner">
+			<!--- img-slider --->
+				<div class="img-slider">
+						<!----start-slider-script---->
+					<script src="js/responsiveslides.min.js"></script>
+					 <script>
+					    // You can also use "$(window).load(function() {"
+					    $(function () {
+					      // Slideshow 4
+					      $("#slider4").responsiveSlides({
+					        auto: true,
+					        pager: true,
+					        nav: true,
+					        speed: 500,
+					        namespace: "callbacks",
+					        before: function () {
+					          $('.events').append("<li>before event fired.</li>");
+					        },
+					        after: function () {
+					          $('.events').append("<li>after event fired.</li>");
+					        }
+					      });
+					
+					    });
+					  </script>
+					<!----//End-slider-script---->
+					<!-- Slideshow 4 -->
+					    <div  id="top" class="callbacks_container">
+					      <ul class="rslides" id="slider4">
+					        <li>
+					          <img class="img-responsive" src="images/slide.jpg" alt="">
+					        </li>
+					        <li>
+					          <img src="images/slide2.jpg" alt="">
+					        </li>
+					        <li>
+					          <img src="images/slide.jpg" alt="">
+					        </li>
+					      </ul>
+					    </div>
+					    <div class="clearfix"> </div>
+					</div>
+						<!-- slider -->
+		</div>
+		<!-- banner -->
+		<!-- Welcome-note -->
+		<div class="Welcome-note">
+			<div class="Welcome-note-left">
+				<div class="Welcome-note-left-pic">
+					<img src="images/pic1.png" title="name" />
+				</div>
+				<div class="Welcome-note-left-pic-info">
+					<p>Explore our New Arrivals in <span>Sterling Silver</span> and Exciting new colours in semi precious stone jewellery..</p>
+				</div>
+			</div>
+			<div class="Welcome-note-right">
+				<p>What is <span>new</span></p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<!-- Welcome-note -->
+		<!-- content -->
+		<div class="content">
+			<!-- top-grids -->
+			<div class="top-grids">
+			<div class="container">
+				<div class="product-grids">
+					<!---
+						<!----sreen-gallery-cursual---->
+							 <!-- requried-jsfiles-for owl -->
+							<link href="css/owl.carousel.css" rel="stylesheet">
+							    <script src="js/owl.carousel.js"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							        items : 5,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation : true,
+							        navigationText :  false,
+							        pagination : false,
+							      });
+							    });
+							    </script>
+							 <!-- //requried-jsfiles-for owl -->
+							 <!-- start content_slider -->
+						       <div id="owl-demo" class="owl-carousel text-center">
+					                <div onclick="location.href='details.html';" class="item">
+					                	<div class="product-grid">
+											<div class="product-pic">
+												<a href="#"><img src="images/pic2.jpg" title="name" /></a>
+											</div>
+											<div class="product-pic-info">
+												<p>Astley Aquamarine</p>
+											</div>
+										</div>
+					                </div>
+					                <div onclick="location.href='details.html';" class="item">
+					                	<div class="product-grid">
+											<div class="product-pic">
+												<a href="#"><img src="images/pic3.png" title="name" /></a>
+											</div>
+											<div class="product-pic-info">
+												<p>Astley Aquamarine</p>
+											</div>
+										</div>
+					                </div>
+					                <div onclick="location.href='details.html';" class="item">
+					                	<div class="product-grid">
+											<div class="product-pic">
+												<a href="#"><img src="images/pic4.png" title="name" /></a>
+											</div>
+											<div class="product-pic-info">
+												<p>Astley Aquamarine</p>
+											</div>
+										</div>
+					                </div>
+					                <div onclick="location.href='details.html';" class="item">
+					                	<div class="product-grid">
+											<div class="product-pic">
+												<a href="#"><img src="images/pic5.png" title="name" /></a>
+											</div>
+											<div class="product-pic-info">
+												<p>Astley Aquamarine</p>
+											</div>
+										</div>
+					                </div>
+					                <div onclick="location.href='details.html';" class="item">
+					                	<div class="product-grid">
+											<div class="product-pic">
+												<a href="#"><img src="images/pic6.png" title="name" /></a>
+											</div>
+											<div class="product-pic-info">
+												<p>Astley Aquamarine</p>
+											</div>
+										</div>
+					                </div>
+					                <div onclick="location.href='details.html';" class="item">
+					                	<div class="product-grid">
+											<div class="product-pic">
+												<a href="#"><img src="images/pic3.png" title="name" /></a>
+											</div>
+											<div class="product-pic-info">
+												<p>Astley Aquamarine</p>
+											</div>
+										</div>
+					                </div>
+					                <div onclick="location.href='details.html';" class="item">
+					                	<div class="product-grid">
+											<div class="product-pic">
+												<a href="#"><img src="images/pic4.png" title="name" /></a>
+											</div>
+											<div class="product-pic-info">
+												<p>Astley Aquamarine</p>
+											</div>
+										</div>
+					                </div>
+					                <div onclick="location.href='details.html';" class="item">
+					                	<div class="product-grid">
+											<div class="product-pic">
+												<a href="#"><img src="images/pic5.png" title="name" /></a>
+											</div>
+											<div class="product-pic-info">
+												<p>Astley Aquamarine</p>
+											</div>
+										</div>
+					                </div>
+					                <div onclick="location.href='details.html';" class="item">
+					                	<div class="product-grid">
+											<div class="product-pic">
+												<a href="#"><img src="images/pic3.png" title="name" /></a>
+											</div>
+											<div class="product-pic-info">
+												<p>Astley Aquamarine</p>
+											</div>
+										</div>
+					                </div>
+				              </div>
+			</div>
+		</div>
+		</div>
+		<!-- top-grids -->
+		<!-- content -->
+		<!-- footer -->
+		<div class="footer">
+			<div class="footer-grids">
+				<div class="container">
+					<div class="col-md-3 footer-grid">
+						<h4>Services</h4>
+						<ul>
+							<li><a href="#">Contact Customer Service</a></li>
+							<li><a href="#">Free Delivery over $150</a></li>
+							<li><a href="#">View your Wishlist</a></li>
+							<li><a href="#">Ring Size Guide</a></li>
+							<li><a href="#">Returns</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 footer-grid">
+						<h4>Information (FAQ)</h4>
+						<ul>
+							<li><a href="#">Gift certificates</a></li>
+							<li><a href="#">Jewellery care guide</a></li>
+							<li><a href="#">International customers</a></li>
+							<li><a href="#">Wholesale enquires</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 footer-grid">
+						<h4>More details</h4>
+						<ul>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms & COndition</a></li>
+							<li><a href="#">Secure payment</a></li>
+							<li><a href="#">Site map</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 footer-grid contact-grid">
+						<h4>Contact us</h4>
+						<ul>
+							<li><span class="c-icon"> </span>Baku international Pty LTD</li>
+							<li><span class="c-icon1"> </span><a href="#">info@baku.com.au</a></li>
+							<li><span class="c-icon2"> </span>AUSTRALIA  (02) 9283 2280</li>
+						</ul>
+						<ul class="social-icons">
+							<li><a href="#"><span class="facebook"> </span></a></li>
+							<li><a href="#"><span class="twitter"> </span></a></li>
+							<li><a href="#"><span class="thumb"> </span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- news-letter -->
+			<div class="container">
+			<div class="news-letter">
+					<div class="news-letter-left">
+						<a href="#"><span> </span> News letter</a>
+					</div>
+					<div class="news-letter-right">
+						<p>Subscribe to notification about disconunts anf Offers from our store enter your Email id :</p>
+						<form>
+							<input type="text" class="text" value="Enter your mail id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your mail id';}">
+							<input type="submit" value="" />
+						</form>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!-- news-letter -->
+		</div>
+		<!-- footer -->
+		<!-- copy-right -->
+		<div class="copy-right">
+				<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+		</div>
+		<!-- copy-right -->
+		<!-- container -->
+	
+</body>
+</html>
+

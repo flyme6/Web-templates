@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cources</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<meta name="keywords" content="Bootstrap Responsive Templates, Iphone Compatible Templates, Smartphone Compatible Templates, Ipad Compatible Templates, Flat Responsive Templates"/>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script src="js/jquery.min.js"></script>  
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+<script type="text/javascript">
+$(function () {
+	
+	var filterList = {
+	
+		init: function () {
+		
+			// MixItUp plugin
+			// http://mixitup.io
+			$('#portfoliolist').mixitup({
+				targetSelector: '.portfolio',
+				filterSelector: '.filter',
+				effects: ['fade'],
+				easing: 'snap',
+				// call the hover effect
+				onMixEnd: filterList.hoverEffect()
+			});				
+		
+		},
+		
+		hoverEffect: function () {
+		
+			// Simple parallax effect
+			$('#portfoliolist .portfolio').hover(
+				function () {
+					$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+					$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+				},
+				function () {
+					$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+					$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+				}		
+			);				
+		
+		}
+
+	};
+	
+	// Run the show!
+	filterList.init();
+	
+	
+});	
+</script>
+</head>
+<body>
+	<div class="banner1" id="home">
+		<div class="container">
+			<div class="header">
+				<div class="menu">
+                                     <a class="toggleMenu" href="#"><img src="images/menu-icon.png" alt="" /> </a>
+					<ul class="nav" id="nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="academics.html">Academics</a></li>
+					<li><a href="admissions.html">Admissions</a></li>
+					<li class="active"><a href="courses.html" class="active">Courses</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					</ul>
+                                  <!----start-top-nav-script---->
+		                      <script type="text/javascript" src="js/responsive-nav.js"></script>
+					<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+					</script>
+		<!----//End-top-nav-script---->
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- Portfolio Starts Here -->
+	<div class="portfolios" id="portfolio">
+		<div class="container">
+			<h3 class="top-head w_hd">Courses</h3>
+			<span class="line w_l_1">
+				<span class="sub-line w_l_1"></span>
+			</span>
+			<ul id="filters" class="clearfix">
+						<li><span class="filter active" data-filter="app card icon logo web">All</span></li>
+						<li><span class="filter" data-filter="app">Category 1</span></li>
+						<li><span class="filter" data-filter="card">Category 2</span></li>
+						<li><span class="filter" data-filter="icon">Category 3</span></li>
+						<li><span class="filter" data-filter="logos">Category 4</span></li>
+					</ul>
+					<div id="portfoliolist">
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						    <div class="port-1">
+						    	<h5>HINDI LANGUAGE</h5>
+						    	<p>which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.Eum cu tantas legere complectitur, hinc utamur ea eam.</p>
+						    	<div class="port-bttn">
+						    		<a href="#">Read More</a>
+						    	</div>
+						    </div>
+						     <div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+						  		</div></a>
+		                </div>
+					</div>				
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <div class="port-1">
+						    	<h5>ARABIC LANGUAGE</h5>
+						    	<p>which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.Eum cu tantas legere complectitur, hinc utamur ea eam.</p>
+						    	<div class="port-bttn">
+						    		<a href="#">Read More</a>
+						    	</div>
+						    </div>
+						     <div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+						  	 </div></a>
+		                </div>
+					</div>		
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						    <div class="port-1">
+						    	<h5>BENGALI LANGUAGE</h5>
+						    	<p>which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.Eum cu tantas legere complectitur, hinc utamur ea eam.</p>
+						    	<div class="port-bttn">
+						    		<a href="#">Read More</a>
+						    	</div>
+						    </div>
+						     <div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+						  	 </div></a>
+		                </div>
+					</div>				
+					<div class="portfolio logos mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <div class="port-1">
+						    	<h5>ENGLISH LANGUAGE</h5>
+						    	<p>which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.Eum cu tantas legere complectitur, hinc utamur ea eam.</p>
+						    	<div class="port-bttn">
+						    		<a href="#">Read More</a>
+						    	</div>
+						    </div>
+						     <div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+						  	 </div></a>
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <div class="port-1">
+						    	<h5>CHINESE LANGUAGE</h5>
+						    	<p>which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.Eum cu tantas legere complectitur, hinc utamur ea eam.</p>
+						    	<div class="port-bttn">
+						    		<a href="#">Read More</a>
+						    	</div>
+						    </div>
+						     <div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+						  	 </div></a>
+		                </div>
+					</div>			
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <div class="port-1">
+						    	<h5>JAPANESE LANGUAGE</h5>
+						    	<p>which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.Eum cu tantas legere complectitur, hinc utamur ea eam.</p>
+						    	<div class="port-bttn">
+						    		<a href="#">Read More</a>
+						    	</div>
+						    </div>
+						     <div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+						  	 </div></a>
+		                </div>
+					</div>	
+					<div class="portfolio logos mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <div class="port-1">
+						    	<h5>FRENCH LANGUAGE</h5>
+						    	<p>which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.Eum cu tantas legere complectitur, hinc utamur ea eam.</p>
+						    	<div class="port-bttn">
+						    		<a href="#">Read More</a>
+						    	</div>
+						    </div>
+						     <div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+						  	 </div></a>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <div class="port-1">
+						    	<h5>NEPALI LANGUAGE</h5>
+						    	<p>which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.Eum cu tantas legere complectitur, hinc utamur ea eam.</p>
+						    	<div class="port-bttn">
+						    		<a href="#">Read More</a>
+						    	</div>
+						    </div>
+						     <div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+						  	 </div></a>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <div class="port-1">
+						    	<h5>TELUGU LANGUAGE</h5>
+						    	<p>which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.Eum cu tantas legere complectitur, hinc utamur ea eam.</p>
+						    	<div class="port-bttn">
+						    		<a href="#">Read More</a>
+						    	</div>
+						    </div>
+						     <div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+						  	 </div></a>
+		                </div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+		</div>
+	</div>
+	<!-- Portfolio Ends Here -->
+	<!--start-footer-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-main">
+				<div class="col-md-6 footer-left">
+					<ul>
+						<li><a href="#"><span class="fb"> </span></a></li>
+						<li><a href="#"><span class="twit"> </span></a></li>
+						<li><a href="#"><span class="in"> </span></a></li>
+					</ul>
+				</div>
+				<div class="col-md-6 footer-right">
+					<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+					<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+	<!--end-footer-->
+
+</body>
+</html>

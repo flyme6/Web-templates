@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Stylish Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Custom Theme files -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<!-- //js -->	
+<!-- start-smoth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smoth-scrolling-->
+<!--pop-up-->
+<script src="js/menu_jquery.js"></script>
+<!--//pop-up-->
+</head>
+<body>
+	<!--header-->
+	<div class="header">
+		<div class="container">
+			<div class="header-left">
+				<ul> 
+					<li><a href="account.html">ACCOUNT</a></li>
+					<li class="login" >
+						<div id="loginContainer"><a href="#" id="loginButton"><span>LOGIN</span></a>
+						    <div id="loginBox">                
+						        <form id="loginForm">
+									<fieldset id="body">
+										<fieldset>
+											<label for="email">Email Address</label>
+											<input type="text" name="email" id="email">
+										</fieldset>
+										<fieldset>
+											<label for="password">Password</label>
+											<input type="password" name="password" id="password">
+										</fieldset>
+										<input type="submit" id="login" value="Sign in">
+										<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
+									</fieldset>
+									<span><a href="#">Forgot your password?</a></span>
+								</form>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="logo">
+				<a href="index.html"> <img src="images/logo.png" alt=""/></a>
+			</div>
+			<div class="top-nav">
+				<span class="menu"> <img src="images/menu.png" alt=""/> </span>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>					
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="codes.html">Codes</a></li>
+					<li><a class="active" href="contact.html">Contact</a></li>
+				</ul>
+				<!-- script-for-menu -->
+				<script>					
+							$("span.menu").click(function(){
+								$(".top-nav ul").slideToggle("slow" , function(){
+								});
+							});
+				</script>
+				<!-- script-for-menu -->
+			</div>
+			<div class="search-box">
+				<div id="sb-search" class="sb-search">
+					<form>
+						<input class="sb-search-input" placeholder="search term..." type="search" name="search" id="search">
+						<input class="sb-search-submit" type="submit" value="">
+						<span class="sb-icon-search"> </span>
+					</form>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+			<!-- search-scripts -->
+			<script src="js/classie.js"></script>
+			<script src="js/uisearch.js"></script>
+				<script>
+					new UISearch( document.getElementById( 'sb-search' ) );
+				</script>
+			<!-- //search-scripts -->
+		</div>
+	</div>	
+	<!--//header-->
+	<!--banner-->
+	<div class="banner1 about-bnr">
+	</div>	
+	<!--//banner-->
+	<!--contact-->
+	<div class="contact">
+		<div class="container">				
+			<div class="contact-grids">
+				<div class="col-md-8 map">
+					<h1 class="hdng">How to find us</h1>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.182370726!2d-0.10159865000000001!3d51.52864165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2sin!4v1433744055746"></iframe>
+				</div>
+				<div class="col-md-4 address">
+					<h2>Contact info</h2>
+					<p class="cnt-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit,sheets containing Lorem Ipsum passages sed do </p>
+					<p>Eiusmod Tempor inc</p>
+					<p>9560 St Dolor,London</p>
+					<p>Telephone : +2 800 544 6035</p>
+					<p>FAX : +1 800 889 4444</p>
+					<p>Email : <a href="mailto:example@mail.com">mail@example.com</a></p>
+				</div>									
+				<div class="clearfix"> </div>	
+			</div>
+			<div class=" contact-form">
+				<h3 class="title">Contact form</h3>
+				<form>
+					<div class="col-md-6 form-grids">
+						<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+						<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+						<input type="text" value="Telephone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telephone';}" required="">
+					</div>
+					<div class="col-md-6 form-grids">
+						<textarea onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required>Message...</textarea>	
+						<input type="submit" value="Submit" >
+					</div>
+					<div class="clearfix"> </div>					
+				</form>
+			</div>
+		</div>		
+	</div>
+	<!--//contact-->	
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-left">
+				<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+			</div>
+			<div class="social-icons">
+				<ul>
+					<li><a href="#" class="fb"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#" class="gg"></a></li>
+					<li><a href="#" class="pn"></a></li>					
+				</ul>	
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//footer-->
+	<!--smooth-scrolling-of-move-up-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!--//smooth-scrolling-of-move-up-->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+.view {
+   width: 245px;
+   height: 200px;
+   margin: 10px 10px 0;
+   float: left;
+   border: 3px solid #EEE;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   -webkit-box-shadow: 1px 1px 2px #e6e6e6;
+   -moz-box-shadow: 1px 1px 2px #e6e6e6;
+   box-shadow: 1px 1px 2px #e6e6e6;
+   cursor: default;
+   background: #fff url(../images/bgimg.jpg) no-repeat center center;
+}
+.view .mask,.view .content {
+   width: 300px;
+   height: 200px;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+.view img {
+   display: block;
+   position: relative;
+}
+.view h2 {
+   text-transform: uppercase;
+   color: #fff;
+   text-align: center;
+   position: relative;
+   font-size: 14px;
+   padding: 10px;
+   background: rgba(0, 0, 0, 0.8);
+   margin: 20px 0 0 0;
+}
+.view p {
+   font-family: Georgia, serif;
+   font-style: italic;
+   font-size: 11px;
+   position: relative;
+   color: #fff;
+   padding: 10px 10px 20px;
+   text-align: center;
+}
+.view a.info {
+   display: inline-block;
+   text-decoration: none;
+   padding: 7px 14px;
+   background: #000;
+   color: #fff;
+   text-transform: uppercase;
+   -webkit-box-shadow: 0 0 1px #000;
+   -moz-box-shadow: 0 0 1px #000;
+   box-shadow: 0 0 1px #000;
+}
+.view a.info: hover {
+   -webkit-box-shadow: 0 0 5px #000;
+   -moz-box-shadow: 0 0 5px #000;
+   box-shadow: 0 0 5px #000;
+}
+@media (max-width: 1024px)
+{
+.view {
+  width: 197px;
+  height: 161px;
+  }
+  .view img {
+  width: 100%;
+}
+.view-ninth:hover .content {
+  width: 197px;
+}
+.view p {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 10px;
+  overflow: hidden;
+  padding: 6px 10px 20px;
+  height: 48px;
+}
+}
+@media (max-width: 768px)
+{
+.view {
+  width: 196px;
+}
+}
+@media (max-width: 640px)
+{
+.view {
+	  width: 173px;
+	   height: 141px;
+	}
+.view h2 {
+  font-size: 12px;
+  padding: 6px 6px;
+}
+.view p {
+  font-size: 9px;
+  padding: 10px 3px 20px;
+}
+}
+@media (max-width: 480px)
+{
+.view {
+  width: 188px;
+}
+}
+@media (max-width: 320px)
+{
+.view h2 {
+  font-size: 8px;
+  padding: 4px 6px;
+}
+.view {
+  width: 121px;
+  height:101px;
+  margin: 10px 4px 0 !important;
+}
+.view p {
+  padding: 3px 3px 20px;
+}
+.view p {
+  overflow: hidden;
+  height: 63px;
+} 
+.view-ninth:hover .content {
+  width: 100% !important;
+  top: 0px;
+}
+}

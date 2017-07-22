@@ -1,0 +1,234 @@
+*,
+*:after,
+*::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* General styles and layout */
+
+
+
+.container {
+	overflow: hidden;
+	/* we don't want the pseudo-elements sticking out */
+}
+
+.container svg {
+	display: block;
+}
+
+section {
+	position: relative;
+	padding: 6em 13%;
+	background: #2980b9;
+	color: #fff;
+	text-align: center;
+}
+section h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 2.8em;
+	font-weight: 400;
+}
+
+section p {
+	color: rgba(0,0,0,.3);
+	font-size: 1.3em;
+	line-height: 1.5;
+}
+.icon {
+	display: block;
+	width: 2em;
+	height: 2em;
+	border-radius: 50%;
+	background: rgba(0,0,0,0.1);
+	color: #fff;
+	text-align: center;
+	font-size: 8em;
+	line-height: 2em;
+	margin: 0 auto;
+}
+
+section.color h2 {
+	color: #fff;
+}
+
+.color {
+	background: #ECF0F1;
+}
+
+/*** Individual section styles and separators ***/
+
+/* Common style for pseudo-elements */
+section::before,
+section::after {
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
+
+/* Triangles */
+.ss-style-triangles::before,
+.ss-style-triangles::after {
+	left: 50%;
+	width: 100px;
+	height: 100px;
+	-webkit-transform: translateX(-50%) rotate(45deg);
+	transform: translateX(-50%) rotate(45deg);
+}
+
+.ss-style-triangles::before {
+	top: -50px;
+	background: #2980b9;
+}
+
+.ss-style-triangles::after {
+	bottom: -50px;
+	z-index: 10;
+	background: inherit;
+}
+
+/* Double Diagonal line */
+
+.ss-style-doublediagonal {
+	z-index: 1;
+	padding-top: 6em;
+	background: #2072a7;
+}
+
+.ss-style-doublediagonal::before,
+.ss-style-doublediagonal::after {
+	top: 0;
+	left: -25%;
+	z-index: -1;
+	width: 150%;
+	height: 75%;
+	background: inherit;
+	-webkit-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.ss-style-doublediagonal::before {
+	height: 50%;
+	background: #116094;
+	-webkit-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+	-webkit-transform-origin: 3% 0;
+	transform-origin: 3% 0;
+}
+
+/* Half Circle */
+.ss-style-halfcircle::before,
+.ss-style-halfcircle::after {
+	left: 50%;
+	z-index: 10;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: inherit;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.ss-style-halfcircle::before {
+	top: -50px;
+}
+
+.ss-style-halfcircle::after {
+	bottom: -50px;
+}
+
+/* Big Triangle */
+svg#bigTriangleColor {
+	pointer-events: none;
+}
+
+#bigTriangleColor path {
+	fill: #ECF0F1;
+	stroke: #ECF0F1;
+	stroke-width: 2;
+}
+#bigTriangleColor2 path{
+	fill: #ECF0F1;
+	stroke: #ECF0F1;
+	stroke-width: 2;
+}
+#bigTriangleColor3 path{
+	fill: #ECF0F1;
+	stroke: #ECF0F1;
+	stroke-width: 2;
+}
+/* Curves */
+#curveUpColor path,
+#curveDownColor path {
+	fill: #3498db;
+	stroke: #3498db;
+}
+
+/* Multiple Triangles */
+.ss-style-multitriangles::before,
+.ss-style-multitriangles::after {
+	left: 50%;
+	width: 50px;
+	height: 50px;
+	-webkit-transform: translateX(-50%) rotate(45deg);
+	transform: translateX(-50%) rotate(45deg);
+}
+
+.ss-style-multitriangles::before {
+	top: -25px;
+	background: inherit;
+	box-shadow: -50px 50px 0 #3498db, 50px -50px 0 #3498db;
+}
+
+.ss-style-multitriangles::after {
+	bottom: -25px;
+	z-index: 10;
+	background: inherit;
+	box-shadow: -50px 50px 0 #3498db, 50px -50px 0 #3498db;
+}
+
+/* Media Queries for the layout */
+@media(max-width:1440px){
+	section {
+	position: relative;
+	padding: 6em 7%;
+	background: #2980b9;
+	color: #fff;
+	text-align: center;
+	}
+}
+@media(max-width:1366px){
+	section {
+	padding: 6em 4%;
+	}
+}
+@media(max-width:1280px){
+	section {
+	padding: 3em 2%;
+	}
+}
+@media(max-width:1024px){
+	section {
+	padding: 2em 4%;
+	}
+}
+@media(max-width:768px){
+	section {
+	padding: 2em 0%;
+	}
+}
+@media(max-width:640px){
+	section {
+	padding: 2em 4%;
+	}
+}
+@media(max-width:480px){
+	section {
+	padding: 1em 4%;
+	}
+}

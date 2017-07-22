@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!----- theme-style ------>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!----- //theme-style ------>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+<!---script--->
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script src="js/menu_jquery.js"></script>
+<!---script--->
+<!---- animated-css ---->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="js/wow.min.js"></script>
+		<script>
+			 new WOW().init();
+		</script>
+<!---- animated-css ---->		
+</head>
+<body>
+	<!----header---->
+	<div class="header">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png"></a>
+			</div>
+			<div class="top-nav">
+				<div class="top-nav-left">
+					<span class="menu"> </span> 
+					<ul>
+						<li><a href="#home">home</a></li>
+						<li><a href="#works" class="scroll">our works</a></li>
+						<li><a href="#Properties" class="scroll">Properties</a></li>
+						<li><a href="#projects" class="scroll" >Featured project</a></li>
+						<li><a href="#Community" class="scroll">Community</a></li>
+						<div class="clearfix"> </div>
+					</ul>
+				</div>
+						<!---- script-nav ---->
+						<script>
+			$("span.menu").click(function(){
+				$(".top-nav-left ul").slideToggle(500, function(){
+				});
+			});
+			</script>
+			<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+					</script>
+			<!---- script-nav ---->
+				<div class="top-nav-right">
+					<div id="loginContainer"><a href="#" id="loginButton"><span>Login</span></a>
+						    <div id="loginBox">                
+						        <form id="loginForm">
+						                <fieldset id="body">
+						                	<fieldset>
+						                          <label for="email">Email Address</label>
+						                          <input type="text" name="email" id="email">
+						                    </fieldset>
+						                    <fieldset>
+						                            <label for="password">Password</label>
+						                            <input type="password" name="password" id="password">
+						                     </fieldset>
+						                    <input type="submit" id="login" value="Sign in">
+						                	<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
+						            	</fieldset>
+						            <span><a href="#">Forgot your password?</a></span>
+							 </form>
+				        </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!----//header---->
+	
+	<!----banner---->
+	<!----start-slider-script---->
+			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!----//End-slider-script---->
+			<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container" id="home">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			          <img src="images/banner.jpg" alt="">
+						<div class="caption bounceInDown" >
+			          	<div class="slide-text-info">
+			          		<h1>Intellectual Property has the Shelf Life</h1>
+			          		<p>of a Banana.</p>
+							<a class="banner-btn wow bounceIn" data-wow-delay="0.4s" href="#">Become a Member</a>
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/banner.jpg" alt="">
+			        <div class="caption">
+			          	<div class="slide-text-info bounceInDown" >
+			          		<h1>Intellectual Property has the Shelf Life</h1>
+			          		<p>of a Banana.</p>
+							<a class="banner-btn wow bounceIn" data-wow-delay="0.4s" href="#">Become a Member</a>
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/banner.jpg" alt="">
+			          <div class="caption">
+			          	<div class="slide-text-info bounceInDown" >
+			          		<h1>Intellectual Property has the Shelf Life</h1>
+			          		<p>of a Banana.</p>
+							<a class="banner-btn wow bounceIn" data-wow-delay="0.4s" href="#">Become a Member</a>
+			          	</div>
+			          </div>
+			        </li>
+			      </ul>
+			    </div>	         
+			    <div class="clearfix"> </div>
+			<!----- //End-slider---->
+	<!---//banner--->
+	<!----content---->
+<div class="content">
+	<div class="container">
+		<div id="works" class="content-work">
+			<div class="content-top">
+				<img class="ball wow bounceIn" data-wow-delay="0.4s" src="images/ball.png">	
+				<h2> our work is the presentation of our capabilities</h2>
+				<p class="para"> "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+				<p class="para-p">ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+			</div>
+			<div class="content-top-top wow bounceIn" data-wow-delay="0.4s">
+					<div class="list">
+						<ul class="tabs-menu">
+							<li class="col-md-4 current"><a href="#tab-1">
+								 <label class="circle">1</label>
+								 <h3 class="circle_desc">Simple</h3>
+								 <div class="clearfix"></div>
+								 </a>
+							</li> 
+							<li class="col-md-4"><a href="#tab-2">
+								<label class="circle">2</label>
+								 <h3 class="circle_desc">Transparent</h3>
+								 <div class="clearfix"></div>
+								</a> 
+							</li> 
+							<li class="col-md-4"><a href="#tab-3">
+								<label class="circle">3</label>
+								 <h3 class="circle_desc">Collaborative</h3>
+								 <div class="clearfix"></div>
+								</a>
+							</li> 
+					<div class="clearfix"></div>
+						</ul>
+					</div>
+			</div>				
+			<div class="tab">		
+				<div class="content-top-bottom" id="tab-1">
+					<div class="col-md-4 glasses">
+						<img src="images/glass.png">
+					</div>
+					<div class=" col-md-8 top-img-para">
+						<h4>Browse projects,like booking a hotel online!</h4>
+						<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="content-top-bottom" id="tab-2">
+					<div class="col-md-4 glasses">
+						<img src="images/glass.png">
+					</div>
+					<div class=" col-md-8 top-img-para">
+						<h4>Browse projects,like booking a hotel online!</h4>
+						<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+				<div class="clearfix"> </div>
+				</div>
+				<div class="content-top-bottom" id="tab-3">
+					<div class="col-md-4 glasses">
+						<img src="images/glass.png">
+					</div>
+					<div class=" col-md-8 top-img-para">
+						<h4>Browse projects,like booking a hotel online!</h4>
+						<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<!--script-->
+		<script>
+			$(document).ready(function() {
+			$("#tab-2").hide();
+			$("#tab-3").hide();
+			$(".tabs-menu a").click(function(event){
+				event.preventDefault();
+				var tab=$(this).attr("href");
+				$(".content-top-bottom").not(tab).css("display","none");
+				$(tab).fadeIn("slow");
+			});
+		});
+	</script>
+	<!--//script-->
+	<!--properties-->
+	<div class="properties"	id="Properties">
+		<div class="col-md-6 content-bottom-left">
+			<img class="content-chair wow bounceIn" data-wow-delay="0.4s" src="images/chair.png">
+			<div class="content-bottom-left-head">
+				<h5>Find Properties</h5>
+				<p>Sign up browse the portfolio.your journey  to becoming areal estate barons starts here.</p>
+				<a class="content-chair" href="#">Become a Member</a>
+			</div>
+				<div class="clearfix"> </div>
+		</div>
+		<div class="col-md-6 content-bottom-right">
+			<img class="content-bag wow bounceIn" data-wow-delay="0.4s" src="images/bag.png">
+			<div class="content-bottom-right-head">
+				<h5>Find Properties</h5>
+				<p>Sign up browse the portfolio.your journey  to becoming areal estate barons starts here.</p>
+				<a class="content-chair" href="#">Become a Member</a>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+			<div class="clearfix"> </div>
+	</div>
+	<div id="projects" class="projects">
+	    <div class="container">
+			<div class="content-projects">
+				<h2>Featured projects</h2>
+			</div>
+			<div class="content-projects-member">
+				<div class=" col-md-9 content-projects-brief">
+					<p>Brief details of new&listings,projects.To view full listings,you will be required to sign up and become a member.</p>
+				</div>
+				<div class=" col-md-3 content-member">
+					<a  href="#">Become a Member</a>
+				</div>
+					<div class="clearfix"> </div>
+			</div>
+			<div class="content-london wow bounceIn" data-wow-delay="0.4s">
+				<div class="col-md-4 ">
+					<div class="content_grid">
+						<div class="content-new">
+							<img class="img-responsive"  src="images/city.jpg">
+							<span><img  src="images/n.png"></span>
+							<a href="#">From GBP 3600</a>
+						</div>
+						<h2>ontario Tower,LONDON</h2>
+						<P>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. </P>
+					<div class="clearfix"> </div>
+					<div class="content-green">
+						<div style="width:15%;" >
+						 </div>
+					</div>
+					<div class="fun-left">
+						<div class="funded">
+						  <p>10% Funded</p>
+						</div>
+						<div class="days-left">
+						  <p>8 Days Left</p>
+						</div>
+					<div class="clearfix"> </div>
+						</div>
+						<div class="button">
+						   <p>See Projects Details </p>
+						   <img  src="images/button.png">
+						</div>
+					<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="col-md-4 ">
+					<div class="content_grid">
+						<div class="content-new">
+							<img class="img-responsive"  src="images/banner-house.jpg">
+							<span><img  src="images/n.png"></span>
+							<a href="#">From GBP 3600</a>
+						</div>
+							<h2>ontario Tower,LONDON</h2>
+							<P>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. </P>
+						<div class="content-green">
+							<div style="width:60%;" >
+							 </div>
+						</div>
+						<div class="fun-left">
+							<div class="funded">
+							  <p >60% Funded</p>
+							</div>
+							<div class="days-left">
+							  <p>8 Days Left</p>
+							</div>
+						<div class="clearfix"> </div>
+							</div>
+							<div class="button">
+							   <p>See Projects Details </p>
+							   <img  src="images/button.png">
+							</div>
+					<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="col-md-4 ">
+					<div class="content_grid">
+						<div class="content-new">
+							<img class="img-responsive"  src="images/city.jpg">
+							<span><img  src="images/n.png"></span>
+							<a href="#">From GBP 3600</a>
+						</div>
+							<h2>ontario Tower,LONDON</h2>
+							<P>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. </P>
+						<div class="content-green">
+							<div style="width:15%;" >
+							 </div>
+						</div>
+						<div class="fun-left">
+							<div class="funded">
+							  <p>10% Funded</p>
+							</div>
+							<div class="days-left">
+							  <p>8 Days Left</p>
+							</div>
+						<div class="clearfix"> </div>
+							</div>
+							<div class="button">
+							   <p>See Projects Details </p>
+							   <img  src="images/button.png">
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+						<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<div class="community" id="Community"> 
+		 <div class="container">
+			<div class="community-h"> 
+				<h2>Be Part of a Growing international Community</h2>
+				<p>one of the challenges in networking is everybody thinks it's making cols calls to strangers.Actually it's the people who already have strong trust relationship with you</p>
+			</div>
+		<div class="col-md-6 wow bounceIn" data-wow-delay="0.4s"> 
+			<div class="bottom-community-bottom-left"> 
+				<span>One of the best</span>
+				<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>	
+			</div>
+				<img class="white"   src="images/white.png">
+			<div class="bottom-community-left"> 
+				<img class="david"  src="images/dav.png">
+				<p class="back">David Backham</p>
+			<div class="clearfix"> </div> 
+			</div>
+		</div>
+		<div class="col-md-6 wow bounceIn" data-wow-delay="0.4s"> 
+		<div class="bottom-community-bottom-left"> 
+			<span>One of the best</span>
+			<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+			<img class="white"   src="images/white.png">
+		<div class="bottom-community-left"> 
+			<img class="david"  src="images/sac.png">
+			<p class="back">Sachin Tendulkar</p>
+			<div class="clearfix"> </div> 
+		</div>
+		</div>
+		<div class="clearfix"> </div>
+
+		</div>
+		</div>
+	<div class="bottom-yah"> 
+		 <div class="container">
+			<div class="bottom-yah-ic"> 
+				<ul id="flexiselDemo1">     			
+					<li><img src="images/yahoo.png"/></li>
+					<li><img src="images/tech.png"/></li>
+					<li><img src="images/crowd.png"/></li>
+					<li><img src="images/week.png"/></li>
+					<li><img src="images/hk.png"/></li>
+					<li><img src="images/money.png"/></li>
+					<li><img src="images/rthk.png"/></li>
+            	</ul>
+            		<script type="text/javascript">
+		$(window).load(function() {
+		
+			$("#flexiselDemo1").flexisel({
+				visibleItems: 7,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,    		
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+		    	responsiveBreakpoints: { 
+		    		portrait: { 
+		    			changePoint:480,
+		    			visibleItems: 1
+		    		}, 
+		    		landscape: { 
+		    			changePoint:640,
+		    			visibleItems: 2
+		    		},
+		    		tablet: { 
+		    			changePoint:768,
+		    			visibleItems: 3
+		    		}
+		    	}
+		    });
+		    
+		});
+	</script>
+	<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+			</div>
+		 </div>
+	</div>
+</div>
+	<!----content---->
+	<!----footer---->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-class">
+				<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+			</div>
+		</div>
+							<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>						
+	<!----footer---->
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+/* General styles for all menus */
+.cbp-spmenu {
+	background: #FFB600;
+	position: fixed;
+}
+
+.cbp-spmenu h3 {
+	color: #afdefa;
+	font-size: 1.9em;
+	padding: 20px;
+	margin: 0;
+	font-weight: 300;
+	background: #0d77b6;
+}
+
+.cbp-spmenu ul li  {
+	display: block;	
+}
+.cbp-spmenu ul li a {
+	color: #fff;
+	font-size: 1.2em;
+	display: block;
+	margin: 0em;
+	text-transform: uppercase;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+	padding: 0.8em 1em;
+	font-weight: 700;
+	text-align: left;
+	background: #F5AF02;
+}
+.cbp-spmenu ul li a:hover {
+	color: #fff;
+	background:#0064d2;
+}
+.cbp-spmenu a:active {
+	background: #0064d2;
+	color: #fff;
+}
+.cbp-spmenu ul li a:hover, .cbp-spmenu ul li.active a{
+	color:#fff;
+	background: #0064d2;
+}
+.cbp-spmenu ul{
+	padding:0;
+}
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 300px;
+
+	top: 13%;
+	z-index: 1000;
+}
+.cbp-spmenu-vertical a {
+	padding: 1em;
+}
+
+.cbp-spmenu-horizontal {
+	width: 100%;
+	height: 150px;
+	left: 0;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+.cbp-spmenu-horizontal h3 {
+	height: 100%;
+	width: 20%;
+	float: left;
+}
+
+.cbp-spmenu-horizontal a {
+	float: left;
+	width: 20%;
+	padding: 0.8em;
+	border-left: 1px solid #258ecd;
+}
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+	left: -300px;
+}
+
+.cbp-spmenu-right {
+	right: -300px;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open {
+	left: 0px;
+}
+
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: 0px;
+}
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+button#showRight {
+  background: #fff;
+  border: 0;
+  outline: none;
+  float: left;
+  right: 93.5%;
+  position: fixed;
+  top: 7.5%;
+  z-index: 999;
+  background: none;
+}
+
+	/*-- responsive-mediaquries --*/
+@media(max-width:1440px){
+	.cbp-spmenu-vertical {
+	top: 12.8%;
+	
+}
+	button#showRight {
+		right: 92.8%;
+		top:7%;
+	}
+	.cbp-spmenu ul li a {
+		font-size: 1.3em;
+		padding: 0.85em 1.5em;
+	}
+}
+
+@media (max-width: 1366px){
+	button#showRight {
+		right: 92.5%;
+		top:7%;
+	}
+	.cbp-spmenu-vertical {
+	top: 14%;
+}
+@media(max-width: 1280px){		
+	button#showRight {
+		right: 92%;
+		
+	}
+	.cbp-spmenu-vertical {
+		
+	}
+	.cbp-spmenu-vertical {
+	top: 14%;
+}
+}
+@media(max-width: 1024px){
+	button#showRight {
+		right: 92%;
+		top:4.5%;
+}
+.cbp-spmenu-vertical {
+	top: 11%;
+}
+	.cbp-spmenu ul li a {
+		
+		font-size: 1.3em;
+	}
+@media(max-width: 768px){
+	button#showRight {
+		right: 89%;
+		top:4.5%;
+	}
+	.cbp-spmenu ul li a {
+		
+		font-size: 1.2em;
+	}
+	.cbp-spmenu-vertical {
+		
+		width: 270px;
+		top: 10.5%;
+	}
+	button#showRight img {
+		width: 70%;
+	}
+}
+@media(max-width: 640px){
+	button#showRight {
+		right: 87%;
+		top:4%;
+	}
+	.cbp-spmenu ul li a {
+		font-size: 0.99em;
+		padding: 0.8em 1em;
+	}
+	.cbp-spmenu-vertical {
+		top:9.5%;
+		width: 230px;
+	}
+	button#showRight img {
+		width: 50%;
+	}
+}
+@media(max-width: 480px){
+	button#showRight {
+		right: 82%;
+}
+.cbp-spmenu ul li a {
+		font-size: 0.8em;
+	}
+	.cbp-spmenu-vertical {
+		
+		width: 160px;
+	}
+	button#showRight img {
+		width: 47%;
+	}
+	
+}
+@media(max-width: 320px){
+	.cbp-spmenu-vertical {
+		width: 130px;
+		top: 15%;
+	}
+	.cbp-spmenu ul li a {
+		font-size: 0.75em;
+		padding: 0.6em 1em;
+	}
+	button#showRight {
+		right: 75%;
+		top:6%;
+	}
+	button#showRight img {
+		width: 43%;
+}
+}

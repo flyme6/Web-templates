@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Payment</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<link rel="stylesheet" href="css/font-awesome.css">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<link href='http://fonts.useso.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300,300italic,100italic,100' rel='stylesheet' type='text/css'>
+<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+		    <script type="text/javascript">
+			    $(document).ready(function () {
+			        $('#horizontalTab').easyResponsiveTabs({
+			            type: 'default', //Types: default, vertical, accordion           
+			            width: 'auto', //auto or any width like 600px
+			            fit: true   // 100% fit in a container
+			        });
+			    });
+</script>
+		<script src="js/jquery.easydropdown.js" type="text/javascript"></script>
+</head>
+<body>
+	<!-- header-starts -->
+	<div class="page-header">
+		<div class="container">
+			<div class="page-header-info">
+				<div class="page-header-info-head text-center">
+					<a href="index.html"><h1>Travelica</h1></a>
+				</div>
+				<!-- start h_menu4 -->
+					<div class="h_menu4">
+					<a class="toggleMenu" href="">Menu</a>
+					<ul class="nav p-nav">
+						<li class="active"><a href="index.html">HOME</a></li>
+						<li><a href="booking.html">Hotels</a>
+							<ul>
+								<li><a href="booking.html">booking</a></li>
+								<li><a href="rooms.html">rooms</a></li>
+								<li><a href="reservation.html">reservation</a></li>
+								<li><a href="booking.html">large city hotels</a></li>
+								<li><a href="booking.html">small city hotels</a></li>
+							</ul>
+						</li>
+						<li><a href="payment.html">Flights</a>
+							<ul>
+								<li><a href="payment.html">payment</a></li>
+								<li><a href="search.html">search</a></li>
+								<li><a href="search.html">list</a></li>
+							</ul>
+						</li>
+						<li><a href="destination.html" class="root">Destinations</a>
+							<ul>
+								<li><a href="destination.html">philippines</a></li>
+								<li><a href="destination.html">brazil</a></li>
+								<li><a href="destination.html">new york</a></li>
+							</ul>
+						</li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+						<script type="text/javascript" src="js/nav.js"></script>
+				</div>
+				<!-- end h_menu4 -->
+			</div>
+		</div>
+	</div>
+	<!-- header-ends -->
+	<!-- content-section-starts -->
+	<div class="content-section">
+	<div class="container">
+            <div class="paymemt-row-wrap">
+                <div class="col-md-8 ">
+                    <h3>Passengers</h3>
+                    <ul class="list booking-item-passengers">
+                        <li>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label>Sex</label>
+                                    <div class="radio-inline radio-small">
+                                        <label>
+                                            <input class="i-radio" type="radio" name="passenger-1-sex" />Male</label>
+                                    </div>
+                                    <div class="radio-inline radio-small">
+                                        <label>
+                                            <input class="i-radio" type="radio" name="passenger-1-sex" />Female</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Name</label>
+                                        <input class="form-control" type="text" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Surname</label>
+                                        <input class="form-control" type="text" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Date of Birth</label>
+                                        <input class="date-pick-years form-control" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 col-md-offset-3">
+                                    <div class="form-group">
+                                        <label>Citizenship</label>
+                                        <input class="form-control" type="text" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Document Series</label>
+                                        <input class="form-control" type="text" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Expiry Date</label>
+                                        <input class="date-pick-years form-control" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label>Sex</label>
+                                    <div class="radio-inline radio-small">
+                                        <label>
+                                            <input class="i-radio" type="radio" name="passenger-2-sex" />Male</label>
+                                    </div>
+                                    <div class="radio-inline radio-small">
+                                        <label>
+                                            <input class="i-radio" type="radio" name="passenger-2-sex" />Female</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Name</label>
+                                        <input class="form-control" type="text" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Surname</label>
+                                        <input class="form-control" type="text" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Date of Birth</label>
+                                        <input class="date-pick-years form-control" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 col-md-offset-3">
+                                    <div class="form-group">
+                                        <label>Citizenship</label>
+                                        <input class="form-control" type="text" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Document Series</label>
+                                        <input class="form-control" type="text" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Expiry Date</label>
+                                        <input class="date-pick-years form-control" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="gap gap-small"></div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="pp-img" src="images/paypal.png" alt="Image Alternative text" title="Image Title" />
+                            <p>Important: You will be redirected to PayPal's website to securely complete your payment.</p><a class="btn btn-primary">Checkout via Paypal</a>	
+                        </div>
+                        <div class="col-md-6">
+                            <form class="cc-form">
+                                <div class="clearfix">
+                                    <div class="form-group form-group-cc-number">
+                                        <label>Card Number</label>
+                                        <input class="form-control" placeholder="xxxx xxxx xxxx xxxx" type="text" /><span class="cc-card-icon"></span>
+                                    </div>
+                                    <div class="form-group form-group-cc-cvc">
+                                        <label>CVC</label>
+                                        <input class="form-control" placeholder="xxxx" type="text" />
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="form-group form-group-cc-name">
+                                        <label>Cardholder Name</label>
+                                        <input class="form-control" type="text" />
+                                    </div>
+                                    <div class="form-group form-group-cc-date">
+                                        <label>Valid Thru</label>
+                                        <input class="form-control" placeholder="mm/yy" type="text" />
+                                    </div>
+                                </div>
+                                <div class="checkbox checkbox-small">
+                                    <label>
+                                        <input class="i-check" type="checkbox" checked/>Add to My Cards</label>
+                                </div>
+                                <input class="btn btn-primary" type="submit" value="Proceed Payment" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="booking-item-payment">
+                        <header class="clearfix">
+                            <h5 class="mb0">London - New York</h5>
+                        </header>
+                        <ul class="booking-item-payment-details">
+                            <li>
+                                <h5>Flight Details</h5>
+                                <div class="booking-item-payment-flight">
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <div class="booking-item-flight-details">
+                                                <div class="booking-item-departure"><i class="fa fa-plane"></i>
+                                                    <h5>10:25 PM</h5>
+                                                    <p class="booking-item-date">Sun, Mar 22</p>
+                                                    <p class="booking-item-destination">London, England, United Kingdom (LHR)</p>
+                                                </div>
+                                                <div class="booking-item-arrival"><i class="fa fa-plane fa-flip-vertical"></i>
+                                                    <h5>12:25 PM</h5>
+                                                    <p class="booking-item-date">Sat, Mar 23</p>
+                                                    <p class="booking-item-destination">Charlotte, CA, United States (CLT)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="booking-item-flight-duration">
+                                                <p>Duration</p>
+                                                <h5>10h</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>STOP 2 h 55 min Charlotte, United States</p>
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <div class="booking-item-flight-details">
+                                                <div class="booking-item-departure"><i class="fa fa-plane"></i>
+                                                    <h5>10:25 PM</h5>
+                                                    <p class="booking-item-date">Sun, Mar 22</p>
+                                                    <p class="booking-item-destination">London, England, United Kingdom (LHR)</p>
+                                                </div>
+                                                <div class="booking-item-arrival"><i class="fa fa-plane fa-flip-vertical"></i>
+                                                    <h5>12:25 PM</h5>
+                                                    <p class="booking-item-date">Sat, Mar 23</p>
+                                                    <p class="booking-item-destination">Charlotte, CA, United States (CLT)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="booking-item-flight-duration">
+                                                <p>Duration</p>
+                                                <h5>10h</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h5>Flight (2 Passengers)</h5>
+                                <ul class="booking-item-payment-price">
+                                    <li>
+                                        <p class="booking-item-payment-price-title">2 Passengers</p>
+                                        <p class="booking-item-payment-price-amount">$178<small>/per passnger</small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="booking-item-payment-price-title">Taxes</p>
+                                        <p class="booking-item-payment-price-amount">$18<small>/per passnger</small>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p class="booking-item-payment-total">Total trip: <span>$392</span>
+                        </p>
+                    </div>
+                </div>
+				<div class="clearfix"></div>
+            </div>
+            <div class="gap"></div>
+        </div>
+
+	<!-- content-section-ends -->
+	<!-- footer-section-starts -->
+	<div class="footer">
+		<div class="copy-rights text-center">
+			<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+		</div>			
+	</div>
+	<!-- footer-section-ends -->
+
+</body>
+</html>

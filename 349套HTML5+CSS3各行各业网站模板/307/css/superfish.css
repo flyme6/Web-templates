@@ -1,0 +1,231 @@
+
+.navigation  {
+	z-index: 999;
+	float: right;
+	position: relative;
+  	padding: 49px 0 40px;
+}
+
+.select-menu {
+	display: none !important;
+}
+
+.navigation .sf-menu {
+	z-index: 990;
+	text-align: left;
+	position: relative;
+}
+
+nav {
+	 position:relative;
+	 font-family: 'Asap', sans-serif;
+	 padding: 0;
+}
+
+.sf-menu ul {
+	position:absolute;
+	top:-999px; 
+	display:none;
+}
+
+.sf-menu>li>ul>li {
+  	float: none;
+  	position: static;
+}
+
+.sf-menu>li {
+	float: left;
+	position: relative;
+	font-size: 17px;
+	text-transform: uppercase;
+	line-height: 20px;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.sf-menu>li+li {
+	margin-left: 36px;
+}
+
+.sf-menu>li+li:after {
+	position: absolute;
+	left: -22px;
+	top: 7px;
+	content: '';
+	background-color: #f2f2f2;
+	background: url(../images/menu_marker.png) 0 0 no-repeat;
+	width: 7px;
+	height: 7px;
+}
+
+.sf-menu>li>a{
+	font-weight: bold;
+	position: relative;
+	color: #f6eed2; 
+	text-align: center;
+
+}
+
+.sf-menu>li.sfHover>a, .sf-menu>li.current>a, .sf-menu>li>a:hover {
+	color: #ed2c35;
+}
+ 
+.sf-menu>li>ul>li>a.sf-with-ul:after {
+	content: '';
+    font-family: 'FontAwesome';
+	position: absolute;
+	width: 5px;
+	font-size: 13px;
+	line-height: 13px;
+	font-weight: normal;
+	left: 50%;
+	margin-left: -3px;
+	color: #000;
+	bottom: -10px;
+	pointer-events: none;
+	z-index: 999;
+}
+
+.sf-menu>li>a.sf-with-ul:after {	
+	content: '';
+	position: absolute;
+	width: 5px;
+	bottom: 15px;
+	left: 50%;
+	margin-left: -3px;
+	bottom: -5px;
+	pointer-events: none;
+	z-index: 999;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 3px 3px 0 3px;
+	border-color: #f6eed2 transparent transparent transparent;
+}
+
+
+/*================================>> 2 Level <<========================================*/
+.sf-menu>li ul {
+	z-index: 999; 
+	left: 50%;
+	margin-left: -87px;
+	top: 60px;
+	width: 175px;
+	background-color: #db8c0e;
+	padding: 17px 0 21px;
+}
+
+
+
+.sf-menu li ul li {
+	position: relative;
+	float: none !important;
+	text-align: center;
+	text-transform: none;
+	font: 12px/35px Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+.sf-menu li ul li+li {
+}
+
+.sf-menu li ul li a{
+	position: static;
+	color: #fff; 
+	display: block;
+	text-align: center;
+}
+
+
+.sf-menu li li a:hover, 
+.sf-menu li.sfHover li.sfHover>a {  
+	color: #424242;
+}
+
+/*================================>> 3 Level <<========================================*/
+.sf-menu>li ul li ul{
+	position: absolute;
+	left: 176px;
+	margin-left: 0;
+	background-color: #f6eed2;
+	margin-top: 0;
+	top: -18px;
+	padding-top: 19px;
+	padding-bottom: 19px;
+}
+
+
+
+.sf-menu li ul ul li a {
+	color: #424242;
+}
+
+.sf-menu li ul ul li a:hover {
+	color: #db8c0e;
+}
+
+
+/*==================================RESPONSIVE LAYOUTS===============================================*/
+
+
+@media only screen and (max-width: 995px) {
+
+		.sf-menu>li>a {
+
+		}
+
+		.sf-menu>li ul li ul {
+			left: 0;
+			top: 100%;
+			margin-top: 5px;
+		}
+}
+
+@media only screen and (max-width: 767px) {
+	.navigation {
+		float: none !important;
+		padding: 0px 0px 20px !important;
+		clear: both;
+		margin: 0;
+		width: auto;
+		min-height: 0px;
+	}
+
+	
+
+  .navigation  nav{
+  	border: none !important;
+		float:none !important;
+		font:12px/15px Arial, Helvetica, sans-serif;
+		text-transform:uppercase;
+		color:#927c67;
+		margin: 0 auto;
+		padding-left: 0 !important;
+		
+	
+	}
+
+
+	
+
+  header nav ul {
+  	border: none;
+  }
+
+	.sf-menu{display:none !important; float: none;}
+
+	.select-menu {
+		font:12px/15px Arial, Helvetica, sans-serif;
+		color:#202020;
+		width:100%;
+		margin: 0 auto;
+		float: none;
+	    outline: none;
+	    display: block !important;
+		border: 2px solid #333;
+	}
+	
+	
+}

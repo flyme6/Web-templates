@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Acrostia Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--fonts-->
+<link href='http://fonts.useso.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+<!--//fonts-->
+
+<script src="js/responsiveslides.min.js"></script>
+	<script>
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	nav: true,
+      	speed: 500,
+        namespace: "callbacks",
+        pager: true,
+      });
+    });
+  </script>
+  <!---->
+  <script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+					</script>
+
+
+</head>
+<body> 
+<!--header-->
+<!--banner-->
+<div class="banner" id="home">
+	<div class="slider" >
+	    <div class="callbacks_container">
+	      <ul class="rslides" id="slider">
+	        <li>
+	          <img src="images/banner.jpg" alt="">
+			  <div class="banner-matter">
+			  <img class="img-responsive"  src="images/good.png" alt=" " />
+			 
+			  </div>
+	        </li>
+	        <li>
+	          <img src="images/banner1.jpg" alt=""> 
+			<div class="banner-matter">
+				<img  class="img-responsive" src="images/good.png" alt=" " />
+			  
+			  </div>			  
+	        </li>
+	        <li>
+	          <img src="images/banner2.jpg" alt="">
+				<div class="banner-matter">
+				<img class="img-responsive" src="images/good.png" alt=" " />
+			  
+			  </div>
+	        </li>
+	      </ul>
+	  </div>
+	  </div>
+	  </div>
+	<!---->
+	<div class="header" >
+			<div class="container">
+			<div class="fixed-header">
+
+			<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt=" " /></a>
+			</div>
+			
+				<div class="top-nav cssmenu">
+				<nav class="nav clearfix">
+					<a id="menu-toggle" class="anchor-link"><img src="images/menu.png" alt="" /></a>
+					<ul class="simple-toggle" id="nav">
+			        	<li class="current"><a href="#home" class="scroll">Home</a></li>		        	
+			        	<li ><a href="#services" class="scroll"> Services</a></li>
+						<li ><a href="#about" class="scroll">About</a></li>
+			        	<li><a href="#work" class="scroll">Our Work</a></li>
+			        	<li><a href="#contact" class="scroll">Contact</a></li>
+			        </ul>
+				</nav>
+				
+				<script type="text/javascript">
+					  $(document).ready(function() {
+					
+						$('#menu-toggle').click(function () {
+					      $('#nav').toggleClass('open');
+					      e.preventDefault();
+					    });
+					    
+					});
+				</script>
+				<!---->
+				<script src="js/jquery.nav.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#nav').onePageNav({
+			begin: function() {
+			console.log('start')
+			},
+			end: function() {
+			console.log('stop')
+			}
+		});
+	});
+	</script>
+				
+				</div>
+				<div class="clearfix"> </div>
+				</div>
+		</div>
+	</div>
+	
+		<script>
+		$(document).ready(function() {
+			 var navoffeset=$(".header").offset().top;
+			 $(window).scroll(function(){
+				var scrollpos=$(window).scrollTop(); 
+				if(scrollpos >=navoffeset){
+					$(".header").addClass("fixed");
+				}else{
+					$(".header").removeClass("fixed");
+				}
+			 });
+			 
+		});
+		</script>
+		<!-- /script-for sticky-nav -->
+
+<!--content-->
+	<div class="content">
+	<!---->
+		<div class="services" id="services">
+			<div class="container">
+				<div class="service-head">
+					<h3>OUR SERVICES</h3>
+					<span> Cras commodo mattis justo nec <b>lobortis</b>. Nam ut tellus lobortis, ullamcorper massa sit amet</span>
+					<p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>
+				</div>
+				<div class=" services-grid">
+					<div class="col-md-4 service-grid">
+						<a href="#"><img class="img-responsive" src="images/s1.png" alt=" " /></a>
+						<h5>Researching</h5>
+						<p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+					</div>
+					<div class="col-md-4 service-grid">
+						<a href="#"><img class="img-responsive" src="images/s2.png" alt=" " /></a>
+						<h5>Designing</h5>
+						<p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+					</div>
+					<div class="col-md-4 service-grid">
+						<a href="#"><img class="img-responsive" src="images/s3.png" alt=" " /></a>
+						<h5>Development</h5>
+						<p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+					</div>
+					<div class="col-md-4 service-grid ">
+						<a href="#"><img class="img-responsive" src="images/s4.png" alt=" " /></a>
+						<h5>Launch</h5>
+						<p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+					</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		</div>
+		<!---->
+		<div class="team" id="about">
+			<div class="container">
+				<div class="team-head">
+					<h3>Who we are & what we do</h3>
+					<p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>
+					<a href="#" class="meet">Meet the team<span> </span></a>
+				</div>
+				<div class=" team-top">
+				<div class="col-md-4 team-top-grid">
+					<div class="team-grid">
+						<a href="#"><label> </label></a>
+						<h6>Anton Petrov</h6>
+						<small>General manager</small>
+						<ul class="social">
+								<li class="facebook"><a href="#"><span> </span> </a></li>
+								<li class="twitter"><a href="#"><span> </span> </a></li>
+								<li class="gmail"><a href="#"><span> </span> </a></li>
+								<li class="inline"><a href="#"><span> </span> </a></li>
+							</ul>
+					</div>
+					</div>
+					<div class=" col-md-4 team-top-grid">
+					<div class="team-grid">
+						<a href="#"><label> </label></a>
+						<h6>Anton Petrov</h6>
+						<small>General manager</small>
+						<ul class="social">
+								<li class="facebook"><a href="#"><span> </span> </a></li>
+								<li class="twitter"><a href="#"><span> </span> </a></li>
+								<li class="gmail"><a href="#"><span> </span> </a></li>
+								<li class="inline"><a href="#"><span> </span> </a></li>
+							</ul>
+					</div>
+					</div>
+					<div class="col-md-4 team-top-grid">
+					<div class="team-grid">
+						<a href="#"><label> </label></a>
+						<h6>Anton Petrov</h6>
+						<small>General manager</small>
+						<ul class="social">
+								<li class="facebook"><a href="#"><span> </span> </a></li>
+								<li class="twitter"><a href="#"><span> </span> </a></li>
+								<li class="gmail"><a href="#"><span> </span> </a></li>
+								<li class="inline"><a href="#"><span> </span> </a></li>
+							</ul>
+					</div>
+					</div>
+					<div class="col-md-4 team-top-grid  ">
+					<div class="team-grid">
+						<a href="#"><label> </label></a>
+						<h6>Anton Petrov</h6>
+						<small>General manager</small>
+						<ul class="social">
+								<li class="facebook"><a href="#"><span> </span> </a></li>
+								<li class="twitter"><a href="#"><span> </span> </a></li>
+								<li class="gmail"><a href="#"><span> </span> </a></li>
+								<li class="inline"><a href="#"><span> </span> </a></li>
+							</ul>
+					</div>
+						
+						</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+		<!---->
+		<div class="work" id="work">
+			<div class="container">
+				<div class="work-head">
+					<h3>our work</h3>
+					<p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>					
+				</div>
+				<div class=" work-top">					
+				<div class="by-type">
+					<h6>PORTFOLIO</h6>
+				</div>
+					<ul id="filters">
+						<li><span class="filter " data-filter="app card icon web">All</span></li>
+						<li><span class="filter" data-filter="app">Photography</span></li>
+						<li><span class="filter" data-filter="card"> Logo design </span></li>
+						<li><span class="filter" data-filter="icon">Web design</span></li>
+					</ul>
+					<div class="clearfix"> </div>
+				</div>
+					<div id="portfoliolist">
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper ">		
+							<a href="images/p1.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+						    <img class="img-responsive" src="images/p1.jpg" alt=""  /> 
+							<span class="arrow"> </span>
+						     <div class="simple">						    	
+								<label> </label>
+						    </div>		
+						</a>	
+							<p>Aenean a elit</p>													
+						</div>
+					</div>				
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/p2.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+						    <img class="img-responsive" src="images/p2.jpg" alt=""  />
+						    <span class="arrow"> </span>
+						     <div class="simple">						    	
+								<label> </label>
+						    </div>		
+						</a>	
+							<p>Aenean a elit</p>
+		                </div>
+					</div>		
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/p3.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+						     <img class="img-responsive" src="images/p3.jpg"  alt="" />
+						     <span class="arrow"> </span>
+						     <div class="simple">						    	
+								<label> </label>
+						    </div>		
+						</a>	
+							<p>Aenean a elit</p>
+		                </div>
+					</div>				
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper ">		
+							<a href="images/p4.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+						     <img class="img-responsive" src="images/p4.jpg" alt=""  />
+						     <span class="arrow"> </span>
+						     <div class="simple">						    	
+								<label> </label>
+						    </div>		
+						</a>	
+							<p>Aenean a elit</p>	
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper ">		
+							<a href="images/p5.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+						     <img class="img-responsive" src="images/p5.jpg" alt=""  />
+						    <span class="arrow"> </span>
+						     <div class="simple">						    	
+								<label> </label>
+						    </div>		
+						</a>	
+							<p>Aenean a elit</p>	
+		                </div>
+					</div>			
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/p6.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+						     <img class="img-responsive" src="images/p6.jpg" alt=""  />
+						     
+						    <span class="arrow"> </span>
+						     <div class="simple">						    	
+								<label> </label>
+						    </div>		
+						</a>	
+							<p>Aenean a elit</p>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/p7.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+						     <img class="img-responsive" src="images/p7.jpg" alt=""  />
+						     <span class="arrow"> </span>
+						     <div class="simple">						    	
+								<label> </label>
+						    </div>		
+						</a>	
+							<p>Aenean a elit</p>
+		                </div>
+					</div>
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="images/p1.jpg" class="b-link-stripe b-animate-go  thickbox swipebox">
+						     <img class="img-responsive" src="images/p1.jpg" alt=""  />
+						     <span class="arrow"> </span>
+						     <div class="simple">						    	
+								<label> </label>
+						    </div>		
+						</a>	
+							<p>Aenean a elit</p>
+		                </div>
+					</div>
+					<div class="clearfix"> </div>
+					</div>	
+			<!-- Script for gallery Here -->
+				<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+					$(function () {
+						
+						var filterList = {
+						
+							init: function () {
+							
+								// MixItUp plugin
+								// http://mixitup.io
+								$('#portfoliolist').mixitup({
+									targetSelector: '.portfolio',
+									filterSelector: '.filter',
+									effects: ['fade'],
+									easing: 'snap',
+									// call the hover effect
+									onMixEnd: filterList.hoverEffect()
+								});				
+							
+							},
+							
+							hoverEffect: function () {
+							
+								// Simple parallax effect
+								$('#portfoliolist .portfolio').hover(
+									function () {
+										$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+										$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+									},
+									function () {
+										$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+										$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+									}		
+								);				
+							
+							}
+				
+						};
+						
+						// Run the show!
+						filterList.init();
+					});	
+					</script>
+			<!-- Gallery Script Ends -->
+			</div>
+		</div>
+		<!---->
+	<link rel="stylesheet" href="css/swipebox.css">
+	<script src="js/jquery.swipebox.min.js"></script> 
+	    <script type="text/javascript">
+			jQuery(function($) {
+				$(".swipebox").swipebox();
+			});
+		</script>
+
+	<!---->
+
+		<!---->
+		<div class="contact" id="contact">
+			<div class="container">
+				<div class="contact-head">
+					<h3>CONTACT US</h3>
+					<p>Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.</p>					
+				</div>
+				<div class="contact-bottom">
+					<div class="col-md-3 sit-contact">
+						<h5>Address</h5>
+						<div class="contact-add">
+							<ul>
+								<li><span>Acrostia</span></li>
+								<li>Sevenoaks Rd</li>
+								<li>Sevenoaks TN14 7HR, UK</li>	
+							</ul>
+						</div>
+						<div class="contact-in">
+						<ul class="phone">
+							<li>Phone:  <span>+44 555 555 555</span></li>
+							<li>Fax:  <span>+44 556  555 555</span></li>
+							<li>E-mail:  <a href="mailto:info@example.com">info@acrostia.com </a></li>
+							<li>Skype:  <span>Acrostia</span></li>	
+						</ul>							
+						</div>
+						
+					</div>
+					<div class="col-md-3">
+						<div class="map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29266055.398148097!2d133.28132295!3d-26.43907425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b2bfd076787c5df%3A0x538267a1955b1352!2sAustralia!5e0!3m2!1sen!2sin!4v1414839600665"></iframe>
+						</div>						
+					</div>
+					<div class="col-md-6 contact-into">
+						<h5>Ask a question</h5>
+						<form>
+					<div class="contact-grid">
+						<div class="col-md-6 contact-us">
+							<input type="text" value="Name" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Name';}">
+						</div>
+						<div class="col-md-6 contact-us">
+							<input type="text" value="Email-id" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Email-id';}">
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<textarea cols="77" rows="6" value=" " onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+					<div class="send ">
+						<input type="submit" value="SEND" >
+					</div>
+				</form>
+
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+
+			</div>
+		</div>
+	</div>	
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+				<ul class="social-icons">
+					<li><a href="#"><span> </span> </a></li>
+					<li class="twitter"><a href="#"><span> </span></a></li>
+					<li class="gmail"><a href="#"><span> </span> </a></li>
+					<li class="print"><a href="#"><span> </span> </a></li>
+				</ul>
+				<p class="footer-class">Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+		</div>	
+		  <script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+		</div>
+
+
+</body>
+</html>

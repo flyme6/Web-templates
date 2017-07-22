@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Contact</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"> </script>
+		 <!---- animated-css ---->
+		<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<script src="js/wow.min.js"></script>
+		<script>
+		 new WOW().init();
+		</script>
+		<!---- animated-css ---->
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----webfonts--->
+		<link href='http://fonts.useso.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+		<!---//webfonts--->
+	</head>
+	<body>
+		<!----- conatiner ----->
+		<!---- top-header ---->
+		<div class="top-header products-header">
+			<h1>Contact Agro<span>+</span></h1>
+		</div>	
+		<!---- top-header ---->
+			<div class="header">
+					<div class="sticky-navigation">
+					<div class="fixed-header">
+						<div class="container">
+							<div class="top-menu">
+								<span class="menu"> </span>
+					            <ul>
+					            	<li ><a href="index.html">Home</a></li>
+					                <li><a href="about.html">About Us</a></li>
+					                <li><a href="services.html">Services</a></li>
+					                <li><a href="products.html">Products</a></li>
+					                <li class="active"><a href="contact.html">Contact Us</a></li>
+					            </ul>
+				            </div>
+							<script>
+								$("span.menu").click(function(){
+									$(".top-menu ul").slideToggle(500, function(){
+									});
+								});
+							</script>
+				            <!----- search ---->
+				            <div class="top-search">
+				            	<form>
+				            		<input type="text">
+				            		<input type="submit" value="serach" />
+				            	</form>
+				            </div>
+				            <div class="clearfix"> </div>
+				            <!----- search ---->
+				          </div>
+						  </div>
+			        </div>
+				</div>
+			<!------ header ----->
+					<!-- script-for sticky-nav -->
+		<script>
+		$(document).ready(function() {
+			 var navoffeset=$(".header").offset().top;
+			 $(window).scroll(function(){
+				var scrollpos=$(window).scrollTop(); 
+				if(scrollpos >=navoffeset){
+					$(".header").addClass("fixed");
+				}else{
+					$(".header").removeClass("fixed");
+				}
+			 });
+			 
+		});
+		</script>
+
+
+			<!----- Contact ----->
+			<div class="contact">
+				<div class="container">
+					<div class="contact-head text-center">
+						<h2>Contact us</h2>
+						<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</span>
+					</div>		
+					<!----- contact-grids ----->		
+					<div class="contact-grids">
+						<div class="contact-map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1578265.0941403757!2d-98.9828708842255!3d39.41170802696131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sin!4v1407515822047"> </iframe>
+						</div>
+						<!----- contact-form ------>
+						<div class="contact-form">
+							<form>
+								<div class="contact-form-row">
+									<div>
+										<span>Name :</span>
+										<input type="text" class="text"  value="Your Email here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email here';}">
+									</div>
+									<div>
+										<span>Email :</span>
+										<input type="text" class="text"  value="Your Email here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email here';}">
+									</div>
+									<div>
+										<span>Subject :</span>
+										<input type="text" class="text"  value="Your Email here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email here';}">
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="clearfix"> </div>
+								<div class="contact-form-row2">
+									<span>Message :</span>
+									<textarea> </textarea>
+								</div>
+								<input type="submit" value="send" />
+							</form>
+						</div>
+						<!----- contact-form ------>
+					</div>
+					<!----- contact-grids ----->
+				</div>
+			</div>
+			<!----- Contact ----->
+			<!-----soical-share ----->
+			<div class="social-share text-center">
+				<div class="container">
+					<h3>Catch on</h3>
+					<ul>
+						<li><a class="facebook" href="#"><span> </span></a></li>
+						<li><a class="twitter" href="#"><span> </span></a></li>
+						<li><a class="dribble" href="#"><span> </span></a></li>
+						<div class="clearfix"> </div>
+					</ul>
+				</div>
+			</div>
+			<!-----soical-share ----->
+			<!----- news-letter ----->
+			<div class="news-letter">
+				<div class="container">
+					<div class="news-letter-left wow fadeInLeft" data-wow-delay="0.4s">
+						<h3><span> </span> Newsletter</h3>
+					</div>
+					<div class="news-letter-right wow fadeInRight" data-wow-delay="0.4s">
+						<form>
+							<input type="text" class="text" maxlength="20" value="Your Email here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email here';}">
+							<input type="submit" value=" " />
+						</form>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!----- news-letter ----->
+			<!----- footer ---->
+			<div class="footer">
+				<div class="container">
+					<div class="footer-left wow fadeInLeft" data-wow-delay="0.4s">
+							<ul>
+				            	<li><a href="index.html">Home</a></li>
+				                <li><a href="about.html">About Us</a></li>
+				                <li><a href="services.html">Services</a></li>
+				                <li><a href="products.html">Products</a></li>
+				                <li class="active"><a href="contact.html">Contact Us</a></li>
+				            </ul>
+					</div>
+					<div class="footer-right wow fadeInRight" data-wow-delay="0.4s"	>
+						<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!----- footer ---->
+		</div>
+		<!----- conatiner ----->
+	
+</body>
+</html>
+

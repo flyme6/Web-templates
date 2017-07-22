@@ -1,0 +1,57 @@
+.countdown {
+  padding-top: 12px;
+  margin: 0 -11px;
+  text-align: center;
+}
+.countdown #counter {
+  padding-bottom: 81px;
+  overflow: hidden;
+  width: 100%;
+  display: block;
+  font: 48px/48px 'Arial';
+}
+.countdown #counter .years,
+.countdown #counter .month,
+.countdown #counter .weeks,
+.countdown #counter .days,
+.countdown #counter .hours,
+.countdown #counter .minutes,
+.countdown #counter .seconds {
+  width: 138px;
+  color: #fff;
+  display: block;
+  float: left;
+  margin: 0 11px;
+  position: relative;
+  padding: 37px 0 33px;
+  background-color: #f3646b;
+}
+.countdown #counter .years:after,
+.countdown #counter .month:after,
+.countdown #counter .weeks:after,
+.countdown #counter .days:after,
+.countdown #counter .hours:after,
+.countdown #counter .minutes:after,
+.countdown #counter .seconds:after {
+  padding-top: 14px;
+  top: 100%;
+  left: 0;
+  right: 0;
+  font: 14px/24px 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  color: #706f6e;
+  position: absolute;
+  content: 'days';
+}
+.countdown #counter .hours:after {
+  content: 'hours';
+}
+.countdown #counter .minutes:after {
+  content: 'minutes';
+}
+.countdown #counter .seconds:after {
+  content: 'seconds';
+}
+.countdown #counter .separator {
+  display: none;
+}

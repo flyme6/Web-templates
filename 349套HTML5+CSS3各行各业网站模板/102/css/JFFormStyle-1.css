@@ -1,0 +1,85 @@
+﻿    /* custom select */
+        .row {
+		float: right;
+		width: 20%;
+	}
+        form.style-1 .custom-select{ display: none; } /* prevent to display original selects */
+        
+        form.style-1 .custom-dropdown{ 
+            width: 100%; 
+            color: #666; 
+            font-size: 14px; 
+            font-family: 'Open Sans', sans-serif;
+            color:#ffffff;
+            background: #191919;
+            position: relative;
+            margin: 4px 0 !important; 
+        }
+        
+        form.style-1 .custom-head{
+        	border: 1px solid rgba(0, 0, 0, 0.22);
+        	background:#191919; 
+            height: 35px;
+            cursor: hand; 
+            cursor: pointer;       
+            text-transform: uppercase;    
+        }
+        
+        form.style-1 .custom-head span.selector {
+            position: relative;
+            width: 35px; height: 35px;
+        	margin:0;
+        	padding: 0;
+            display: inline-block;
+            cursor: hand; cursor: pointer;
+            float: right; 
+        }    
+        
+        form.style-1 .custom-head span.current{
+            line-height: 35px;
+            padding-left: 10px;
+        }
+        
+        form.style-1 .custom-head span.selector > a{
+            position: absolute;
+            top: 15px;
+            left: 10px;
+            width: 0;
+            border:  solid 7px; 
+            border-color: #909090 transparent  transparent  transparent; 
+        }
+        
+        form.style-1 .custom-body{
+            position: absolute;
+            width: 100% !important;       
+            background: #fff;
+            max-height: 400px;
+            overflow: auto;               
+        }
+        
+        form.style-1 .custom-body ul{
+            padding:  0; margin: 0;
+            list-style: none;
+        }
+        
+        form.style-1 .custom-body ul li {
+			text-align: left;
+			padding: 6px 10px;
+			display: none;
+			cursor: hand;
+			cursor: pointer;
+			background: #fff;
+			color: #191919;
+			margin: 5px 0 0 0;
+        }
+        
+        form.style-1 .custom-body ul li:first-child {
+            margin-top: 0;
+        }
+        
+        form.style-1 .custom-body ul li:hover{
+            background: #f2f2f2;
+        }
+        
+        form.style-1 .selected { background: #f2f2f2 !important; }  
+ 

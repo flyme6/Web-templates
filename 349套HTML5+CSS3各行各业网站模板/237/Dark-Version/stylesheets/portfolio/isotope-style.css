@@ -1,0 +1,137 @@
+/* Start: Recommended Isotope styles */
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+	z-index: 2;
+}
+.isotope-hidden.isotope-item {
+	pointer-events: none;
+	z-index: 1;
+}
+/**** Isotope CSS3 transitions ****/
+
+.isotope, .isotope .isotope-item {
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	-ms-transition-duration: 0.8s;
+	-o-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+}
+.isotope {
+	-webkit-transition-property: height, width;
+	-moz-transition-property: height, width;
+	-ms-transition-property: height, width;
+	-o-transition-property: height, width;
+	transition-property: height, width;
+}
+.isotope .isotope-item {
+	-webkit-transition-property: -webkit-transform, opacity;
+	-moz-transition-property: -moz-transform, opacity;
+	-ms-transition-property: -ms-transform, opacity;
+	-o-transition-property: top, left, opacity;
+	transition-property: transform, opacity;
+}
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition {
+	-webkit-transition-duration: 0s;
+	-moz-transition-duration: 0s;
+	-ms-transition-duration: 0s;
+	-o-transition-duration: 0s;
+	transition-duration: 0s;
+}
+/* End: Recommended Isotope styles */
+
+
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+/**** Base styles ****/
+
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+b ul, ol {
+}
+/*a, a code {
+	color: #FB4;
+	text-decoration: none;
+}
+a:hover, a:hover code {
+	color: #4BF;
+}
+a:active, a:active code {
+	color: #1FB;
+	background: black;
+}*/
+a img {
+	border: none;
+}
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: bold;
+}
+blockquote {
+}
+/**** Isotope styles ****/
+
+/* required for containers to inherit vertical size from window */
+
+
+/**** Isotope styles ****/
+
+/*#contain {
+	
+}*/
+
+
+
+
+
+#container {
+}
+.element {
+	width: 100%;
+	height: auto;/*	float: left;
+  overflow: hidden;
+  position: relative;*/
+ 
+ 
+}
+.element * {
+	margin: 0;
+}
+.variable-sizes .element.width2 {
+	width: 230px;
+}
+.variable-sizes .element.height2 {
+	height: 230px;
+}
+.variable-sizes .element.width2.height2 {
+	font-size: 2.0em;
+}
+.element.large, .variable-sizes .element.large, .variable-sizes .element.large.width2.height2 {
+	font-size: 3.0em;
+	/*width: 300px;
+	height: 300px;*/
+	z-index: 100;
+}
+.clickable .element:hover {
+	cursor: pointer;
+}
+.clickable .element:hover h3 {
+	text-shadow: 0 0 10px white, 0 0 10px white;
+}
+.clickable .element:hover h2 {
+	color: white;
+}

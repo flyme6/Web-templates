@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Home</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<link href='http://fonts.useso.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.useso.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<!-- js -->
+		<script src="js/jquery.min.js"></script>
+		<!-- //js -->
+		<!-- for-mobile-apps -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Princi_Gym Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+				function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!-- //for-mobile-apps -->
+		<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!-- start-smoth-scrolling -->
+<!--start-top-nav-script-->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+<!--End-top-nav-script-->
+</head>
+	
+<body>
+<!-- header -->
+	<div class="header">
+	<div class="container">
+		<div class="header-top-left" id="home">
+			<ul>
+				<li class="activ"><a href="#">LAST NOTICE</a></li>
+				<li>Aliquam sit amet gravida ipsum,vitae scelerisque mi.Maecenas ullamcorper in 
+					metus a ullamcorper.Sed dictum neque</li> 
+			</ul>
+		</div>
+		<div class="header-top-right">
+			<p>Phone Number:<span> 043-234-3453</span></p>
+		</div>
+		<div class="clearfix"> </div>
+		<div class="head-logo">
+			<a href="index.html"><span> </span></a>
+		</div>
+		<div class="header-top">
+		
+		<div class="navigation">
+				 <span class="menu"></span> 
+					<ul class="navig">
+						<li><a href="index.html">Home</a></li>
+						<li class="plan active"><a href="single.html">CLASSES</a>
+							<ul class="sub-nav">
+								<li><a href="single.html">DROP ITEM1</a></li>
+								<li><a href="single.html">DROP ITEM2</a></li>
+							</ul>
+						</li>
+						<li><a href="404.html">PAGES</a></li>
+						<li><a href="news.html" class="act">NEWS</a></li>
+						<li><a href="gallery.html">GALLERY</a></li>
+						<li><a href="trainers.html">TRAINERS</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+						<li><a href="#" class="home-box">CONTACT</a></li>
+						<div class="clearfix"> </div>
+					</ul>
+					
+		</div>
+		<div class="search">
+				<form>
+					<input type="text" placeholder="Type and search..." required=" ">
+				</form>
+		</div>
+		<div class="clearfix"> </div>
+		</div>
+	</div>
+	</div>
+			<!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(" ul.navig").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+		 <!-- script-for-menu -->
+
+<!-- //header -->
+<!-- news -->
+	<div class="news">
+	<div class="container">
+		<div class="news-left">
+			<div class="news-left-l">
+				<h3><a href="single.html">Lorem ipsum dolor sit amet</a></h3>
+				<a href="single.html"><img src="images/banner.jpg" alt=" " /></a>
+				<p>Aliquam in dolor eu ipsum elementum auctor vitae eget felis. 
+				Integer feugiat rutrum accumsan. Donec velit eros, eleifend vitae nisi nec,
+				mattis auctor dui. Aliquam erat volutpat.
+				Curabitur eu felis ac augue mollis auctor hendrerit ut velit. 
+				Maecenas tempus viverra sollicitudin.
+				In hac habitasse platea dictumst. In cursus, massa id aliquet volutpat,
+				turpis dui fermentum purus, tempor rhoncus mauris urna sed tortor.</p>
+				<a href="single.html" class="read">Read More</a>
+			</div>
+			<div class="news-left-l">
+				<a href="single.html"><img src="images/5.jpg" alt=" " /></a>
+				<p>Aliquam in dolor eu ipsum elementum auctor vitae eget felis. 
+				Integer feugiat rutrum accumsan. Donec velit eros, eleifend vitae nisi nec,
+				mattis auctor dui. Aliquam erat volutpat.
+				Curabitur eu felis ac augue mollis auctor hendrerit ut velit. 
+				Maecenas tempus viverra sollicitudin.
+				In hac habitasse platea dictumst. In cursus, massa id aliquet volutpat,
+				turpis dui fermentum purus, tempor rhoncus mauris urna sed tortor.</p>
+				<a href="single.html" class="read">Read More</a>
+			</div>
+		</div>
+		<div class="news-right">
+			<h3>Recent posts</h3>
+			<div class="news-right-text">
+					<img src="images/a.jpg" alt=" " />
+					<p><label>March 28,2010</label></p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Cras euismod justo sit amet porttitor viverra. 
+						In hac habitasse platea dictumst.</p>
+			</div>
+			<div class="news-right-text news-right-mid">
+					<img src="images/b.jpg" alt=" " />
+					<p><label>March 28,2010</label></p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Cras euismod justo sit amet porttitor viverra. 
+						In hac habitasse platea dictumst.</p>
+			</div>
+			<div class="news-right-text">
+					<img src="images/c.jpg" alt=" " />
+					<p><label>March 28,2010</label></p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Cras euismod justo sit amet porttitor viverra. 
+						In hac habitasse platea dictumst.</p>
+			</div>
+		</div>
+		<div class="clearfix"> </div>
+		<div class="news-bottom">
+			<ul>
+				<li><a href="#" class="new1">PREV</a></li>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#" class="new1">NEXT</a></li>
+			</ul>
+		</div>
+	</div>
+	</div>
+<!-- //news -->
+<!-- footer -->
+	<div class="footer">
+	<div class="container">
+		<div class="footer-icon">
+			<a href="#home" class="scroll"><img src="images/row.png" alt=" " /></a>
+		</div>
+		<div class="footer-social">
+			<ul>
+				<li><a href="#" class="dribble"> </a></li>
+				<li><a href="#" class="facebook"> </a></li>
+				<li><a href="#" class="twitter"> </a></li>
+				<li><a href="#" class="be"> </a></li>
+				<li><a href="#" class="in"> </a></li>
+				<li><a href="#" class="fli"> </a></li>
+				<li><a href="#" class="rad"> </a></li>
+			</ul>
+		</div>
+		<div class="footer-nav">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="single.html">ABOUT</a></li>
+				<li><a href="news.html" class="foot">NEWS</a></li>
+				<li><a href="trainers.html">ARCHIVES</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</div>
+		<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+	</div>
+	</div>
+<!-- //footer -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>reviews</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+   		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<!----- start-header---->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							<a href="index.html"><span>T</span>ourister<span>...</span></a>
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li><a href="index.html">Our Story</a></li>
+								<li><a href="menu.html">Menu</a></li>
+								<li><a href="reservation.html">Reservations</a></li>
+								<li><a href="news.html"> News</a></li>
+								<li class="active"><a href="reviews.html">Reviews</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!----- menu-page ----->
+			<div class="reviews">
+				<!------ menu-header ----->
+				<div class="reviews-header">
+					<div class="container">
+						<h1><span>Resto</span> reviews</h1>
+					</div>
+				</div>
+				<!------ menuheader ----->
+			<div class="clearfix"> </div>
+			<div class="reviews-page">
+				<div class="container">
+					<h2><span> </span>&nbsp;&nbsp;&nbsp;&nbsp; Recent-reviews &nbsp;<span> </span></h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in vehicula neque, et aliquam lacus. Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
+				<!---- reviews-grids ----->
+					<div class="reviews-grids">
+						<div class="reviews-grid text-center">
+							<div class="reviews-people">
+								<img src="images/text-people3.jpg" title="name" />
+								<h3>Lorem</h3>
+								<span>consectetur adipiscing</span>
+							</div>
+							<div class="reviews-comment">
+								<p><span>"</span>Sed mollis, sapien quis viverra porta, risus nisi lacinia lectus, feugiat molestie eros tellus vehicula est. Morbi aliquet dignissim risus, a convallis mauris sagittis id. Cras nisl mauris, semper ac magna porta, imperdiet accumsan diam. Quisque hendrerit at elit ut convallis. Nulla eget vestibulum diam, semper rutrum nulla. In consectetur risus id placerat dictum. Mauris eu nunc ac orci vulputate pharetra.<span>"</span></p>
+								<label class="date-reviws"> 20th Aug 2014</label>
+							</div>
+						</div>
+						<div class="reviews-grid text-center">
+							<div class="reviews-people">
+								<img src="images/text-people2.jpg" title="name" />
+								<h3>Sed mollis</h3>
+								<span>consectetur adipiscing</span>
+							</div>
+							<div class="reviews-comment">
+								<p><span>"</span>Sed mollis, sapien quis viverra porta, risus nisi lacinia lectus, feugiat molestie eros tellus vehicula est. Morbi aliquet dignissim risus, a convallis mauris sagittis id. Cras nisl mauris, semper ac magna porta, imperdiet accumsan diam. Quisque hendrerit at elit ut convallis. Nulla eget vestibulum diam, semper rutrum nulla. In consectetur risus id placerat dictum. Mauris eu nunc ac orci vulputate pharetra.<span>"</span></p>
+								<label class="date-reviws"> 19th Aug 2014</label>
+							</div>
+						</div>
+						<div class="reviews-grid text-center">
+							<div class="reviews-people">
+								<img src="images/text-people1.jpg" title="name" />
+								<h3>viverra</h3>
+								<span>consectetur adipiscing</span>
+							</div>
+							<div class="reviews-comment">
+								<p><span>"</span>Sed mollis, sapien quis viverra porta, risus nisi lacinia lectus, feugiat molestie eros tellus vehicula est. Morbi aliquet dignissim risus, a convallis mauris sagittis id. Cras nisl mauris, semper ac magna porta, imperdiet accumsan diam. Quisque hendrerit at elit ut convallis. Nulla eget vestibulum diam, semper rutrum nulla. In consectetur risus id placerat dictum. Mauris eu nunc ac orci vulputate pharetra.<span>"</span></p>
+								<label class="date-reviws"> 18th Aug 2014</label>
+							</div>
+						</div>
+						<!------ reviews-pagenation ----->
+						<div class="reviews-pagenation text-center">
+							<ul>
+								<li><a href="#">Previous</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">Next</a></li>
+							</ul>
+						</div>
+						<!------ reviews-pagenation ----->
+					</div>
+				<!---- reviews-grids ----->
+				</div>
+			</div>
+			<!----- fearuted-diesh ----->
+			<div class="fearuted-diesh">
+				<div class="container">
+					<h3>Featured Locations<span> </span></h3>
+					<!----sreen-gallery-cursual---->
+						<div class="sreen-gallery-cursual">
+							 <!-- requried-jsfiles-for owl -->
+							<link href="css/owl.carousel.css" rel="stylesheet">
+							    <script src="js/owl.carousel.js"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							         items :4,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation : false,
+							        navigationText :  false,
+							        pagination : true,
+							      });
+							    });
+							    </script>
+							 <!-- //requried-jsfiles-for owl -->
+							 <!-- start content_slider -->
+						       <div id="owl-demo" class="owl-carousel">
+					                <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/d1.jpg" title="dish-name" />
+					                		</div>
+					                		<div class="item-info">
+					                			<div class="item-info-left">
+					                				<h4>Fugiat nulla sint</h4>
+					                				<span class="item-rate"> </span>
+					                			</div>
+					                			<div class="item-info-right">
+					                				<label>$130</label>
+					                			</div>
+					                			<div class="clearfix"> </div>
+					                		</div>
+					                	</div>
+					                </div>
+					                <!----->
+					                <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/d2.jpg" title="dish-name" />
+					                		</div>
+					                		<div class="item-info">
+					                			<div class="item-info-left">
+					                				<h4>Daute irure dolor</h4>
+					                				<span class="item-rate"> </span>
+					                			</div>
+					                			<div class="item-info-right">
+					                				<label>$124</label>
+					                			</div>
+					                			<div class="clearfix"> </div>
+					                		</div>
+					                	</div>
+					                </div>
+					                <!----->
+					                <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/d3.jpg" title="dish-name" />
+					                		</div>
+					                		<div class="item-info">
+					                			<div class="item-info-left">
+					                				<h4>Officia deserunt mollit</h4>
+					                				<span class="item-rate"> </span>
+					                			</div>
+					                			<div class="item-info-right">
+					                				<label>$160</label>
+					                			</div>
+					                			<div class="clearfix"> </div>
+					                		</div>
+					                	</div>
+					                </div>
+					                <!----->
+					                <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/d4.jpg" title="dish-name" />
+					                		</div>
+					                		<div class="item-info">
+					                			<div class="item-info-left">
+					                				<h4>Pim minim veniam</h4>
+					                				<span class="item-rate"> </span>
+					                			</div>
+					                			<div class="item-info-right">
+					                				<label>$117</label>
+					                			</div>
+					                			<div class="clearfix"> </div>
+					                		</div>
+					                	</div>
+					                </div>
+					                <!----->
+					                <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/d1.jpg" title="dish-name" />
+					                		</div>
+					                		<div class="item-info">
+					                			<div class="item-info-left">
+					                				<h4>Fugiat nulla sint</h4>
+					                				<span class="item-rate"> </span>
+					                			</div>
+					                			<div class="item-info-right">
+					                				<label>$130</label>
+					                			</div>
+					                			<div class="clearfix"> </div>
+					                		</div>
+					                	</div>
+					                </div>
+					                <!----->
+					                <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/d2.jpg" title="dish-name" />
+					                		</div>
+					                		<div class="item-info">
+					                			<div class="item-info-left">
+					                				<h4>Daute irure dolor</h4>
+					                				<span class="item-rate"> </span>
+					                			</div>
+					                			<div class="item-info-right">
+					                				<label>$124</label>
+					                			</div>
+					                			<div class="clearfix"> </div>
+					                		</div>
+					                	</div>
+					                </div>
+					                <!----->
+					                <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/d3.jpg" title="dish-name" />
+					                		</div>
+					                		<div class="item-info">
+					                			<div class="item-info-left">
+					                				<h4>Officia deserunt mollit</h4>
+					                				<span class="item-rate"> </span>
+					                			</div>
+					                			<div class="item-info-right">
+					                				<label>$160</label>
+					                			</div>
+					                			<div class="clearfix"> </div>
+					                		</div>
+					                	</div>
+					                </div>
+					                <!----->
+					                <div class="item">
+					                	<div class="item-grid">
+					                		<div class="item-pic">
+					                			<img src="images/d4.jpg" title="dish-name" />
+					                		</div>
+					                		<div class="item-info">
+					                			<div class="item-info-left">
+					                				<h4>Pim minim veniam</h4>
+					                				<span class="item-rate"> </span>
+					                			</div>
+					                			<div class="item-info-right">
+					                				<label>$117</label>
+					                			</div>
+					                			<div class="clearfix"> </div>
+					                		</div>
+					                	</div>
+					                </div>
+					                <!----->
+				              </div>
+						<!--//sreen-gallery-cursual---->
+				</div>
+			</div>
+			</div>
+			</div>
+			<!----- fearuted-diesh ----->
+			<!----- End-Menu-page ----->
+			<!----- footer ----->
+			<div class="footer">
+				<div class="container">
+					<div class="footer-grids">
+						<div class="col-md-3 footer-grid">
+							<p>
+								<span>New York tourister</span>
+								<span>3926 Anmoore Road</span>
+								<span>New York, NY 10014</span>
+								<span>718-749-1714</span>
+							</p>
+						</div>
+						<div class="col-md-3 footer-grid">
+							<p>
+								<span>France tourister</span>
+								<span>68, rue  de la Couronne</span>
+								<span>75002 PARIS</span>
+								<span>02.94.23.69.56</span>
+							</p>
+						</div>
+						<div class="col-md-3 footer-grid">
+							<ul>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3 footer-grid copy-right">
+							<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!----- footer ----->
+	
+</body>
+</html>
+

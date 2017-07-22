@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!----- theme-style ------>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!----- //theme-style ------>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+</head>
+<body>
+	<!----header--->
+		<div class="line">
+		</div>
+		<div class="header">
+			<div class="header-top">
+				<div class="container">
+					<div class="logo">
+						<a href="index.html"><h1>Bahr</h1></a>
+					</div>
+				<!--top-nav---->
+					<div class="header-right">
+						<div class="header-right-left">
+							<ul>
+								<li><a  href="#"><span class="face"> </span></a></li>
+								<li><a class="facebook" href="#"><span class="face"> </span></a></li>
+							</ul>
+						</div>
+					<div class="top-nav">
+						<div class="nav-icon">
+							<a href="#" class="right_bt" id="activator"><span> </span> </a>
+						</div>
+						 <div class="box" id="box">
+							 <div class="box_content">        					                         
+								<div class="box_content_center">
+								 	<div class="form_content">
+										<div class="menu_box_list">
+											<ul>
+												<li><a href="#home" class="scroll"><span>home</span></a></li>
+												<li><a href="#services" class="scroll"><span>services</span></a></li>
+												<li><a href="#projects" class="scroll"><span>projects</span></a></li>
+												<li><a href="#testimonials" class="scroll"><span>Testimonials</span></a></li>
+												<li><a href="#contact" class="scroll"><span>Contact</span></a></li>
+												<div class="clearfix"> </div>
+											</ul>
+										</div>
+										<a class="boxclose" id="boxclose"> <span> </span></a>
+									</div>                                  
+								</div> 	
+							</div>  	  
+						</div>
+					<!---start-click-drop-down-menu----->
+			        <!----start-dropdown--->
+			         <script type="text/javascript">
+						var $ = jQuery.noConflict();
+							$(function() {
+								$('#activator').click(function(){
+									$('#box').animate({'top':'0px'},900);
+								});
+								$('#boxclose').click(function(){
+								$('#box').animate({'top':'-1000px'},900);
+								});
+							});
+							$(document).ready(function(){
+							//Hide (Collapse) the toggle containers on load
+							$(".toggle_container").hide(); 
+							//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+							$(".trigger").click(function(){
+								$(this).toggleClass("active").next().slideToggle("slow");
+									return false; //Prevent the browser jump to the link anchor
+							});
+												
+						});
+					</script>
+					<!---//End-click-drop-down-menu----->
+					<!--top-nav---->
+				</div>
+				<div class="clearfix"> </div>
+				</div>
+				</div>
+			</div>
+			<!---banner---->
+				<div class="banner-matter"> 
+					<div class="container">
+						<h2>Lorem Ipsum is simply dummy text of the printing industry</h2>
+						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+						<div class="view "> 
+							<a class="more"  href="#"><span>VIEW MORE</span></a>
+						</div>
+							<a href="#services" class="scroll" ><img src="images/down.png" class="scroll" alt="" /></a>
+					</div>
+				</div>
+			<!---//banner---->
+		</div>
+		<div class="clearfix"> </div>
+	<!----header--->
+	<!----content--->
+	<div class="content">
+		<div id="services" class="content-services">
+			<div class="container">
+				<div class="services-top">
+					<h3>SERVICES</h3>
+				</div>
+				<div class="services-bottom">
+					<div class="col-md-2">
+						<div class="services-bottom-top ">
+							<span> </span>
+							<h4>WEB DESIGN</h4>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="services-bottom-top cross">
+							<span> </span>
+							<h4>WEB DEVELOPMENT</h4>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="services-bottom-top sky">
+							<span> </span>
+							<h4>WEB HOSTING</h4>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="services-bottom-top phone">
+							<span> </span>
+							<h4>MOBILE APPS</h4>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="services-bottom-top setting">
+							<span> </span>
+							<h4>BUSINESS PLANS</h4>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="services-bottom-top circle">
+							<span> </span>
+							<h4>E-MARKETING</h4>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!---projects--->
+		<div id="projects" class="projects">
+			<div class="container">
+				<div class="projects-top">
+					<h3>PROJECTS</h3>
+				</div>
+				<ul id="flexiselDemo2" >
+					<li class="search"><a href="#"><img  src="images/chair.jpg" alt="image01" />
+						<span> </span>
+					</a></li>
+					<li class="search"><a href="#"><img   src="images/black.jpg" alt="image02" />	<span> </span></a></li>
+					<li class="search"><a href="#"><img   src="images/orange.jpg" alt="image02" />	<span> </span></a></li>
+					
+				</ul>
+				<script type="text/javascript">
+					$(window).load(function() {
+						$("#flexiselDemo2").flexisel({
+							visibleItems: 3,
+							animationSpeed: 1000,
+							autoPlay: true,
+							autoPlaySpeed: 5000,    		
+							pauseOnHover: true,
+							enableResponsiveBreakpoints: true,
+					    	responsiveBreakpoints: { 
+					    		portrait: { 
+					    			changePoint:430,
+					    			visibleItems: 1
+					    		}, 
+					    		landscape: { 
+					    			changePoint:640,
+					    			visibleItems: 1
+					    		},
+					    		tablet: { 
+					    			changePoint:768,
+					    			visibleItems: 1
+					    		}
+					    	}
+					    });
+					    
+					});
+			</script>
+	      </div>
+		</div>
+		<!---//projects--->
+		<!---test--->
+		<div  id="testimonials" class="testimonials">
+			<div class="container">
+				<div class="testimonials-top">
+					<h3>TESTIMONIALS</h3>
+				</div>
+				<div class="testimonials-para">
+					<p>Ahmed is a great guy, I worked with him for couple of months and I really likes his work. He really loves his work and can work in extrem situation .. if you want to get something done .. ASK Ahmed!</p>
+					<span> </span>
+				</div>
+				<div class="testimonials-name">
+					<h6 class="name">Andrew Azmi</h6>
+					<small>SEO Editor at Danat eVentures</small>
+				</div>
+            		<ul id="flexiselDemo1" >
+						<li><img class="five" src="images/4.png" alt="" /></li>	
+						<li><img class="five" src="images/women.png" alt="" /></li>
+						<li><img class="five" src="images/mee.png" alt="" /></li>
+						<li><img class="five" src="images/men-w.png" alt="" /></li>
+						<li><img class="five" src="images/men.png" alt="" /></li>
+            		</ul>
+            		<script type="text/javascript">
+		$(window).load(function() {
+			$("#flexiselDemo1").flexisel({
+				visibleItems: 5,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,    		
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+		    	responsiveBreakpoints: { 
+		    		portrait: { 
+		    			changePoint:430,
+		    			visibleItems: 1
+		    		}, 
+		    		landscape: { 
+		    			changePoint:640,
+		    			visibleItems: 2
+		    		},
+		    		tablet: { 
+		    			changePoint:768,
+		    			visibleItems: 3
+		    		}
+		    	}
+		    });
+		    
+		});
+	</script>
+	<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+		</div>
+		<!---//test--->
+	</div>
+	</div>
+	<!---//content--->
+	<!---contant--->
+	<div  id="contact" class="contact">
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d117451.83412789257!2d72.4782171300925!3d23.083554293042766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1408175172215"></iframe>
+			<span> </span>	
+		</div>
+		<div class="clearfix"> </div>
+		<div class="contact-form-top wow bounceIn" data-wow-delay="0.4s">
+			<div class="container">
+				<div class="contact-top">
+					<h3>CONTACT US</h3>
+				</div>
+				<ul class="social-icons">
+					<li><a  href=""><span> </span></a></li>
+					<li><a class="twitter" href="#"><span> </span></a></li>
+					<li><a class="gmail" href=""><span> </span></a></li>
+					<li><a class="inline" href="#"><span> </span></a></li>
+					<li><a  class="browser" href="#"><span> </span></a></li>
+					<li><a  class="been" href="#"><span> </span></a></li>
+					<li><a  class="camera" href="#"><span> </span></a></li>
+					<li><a  class="leaf" href="#"><span> </span></a></li>
+					<div class="clearfix"> </div>
+				</ul>
+		<form>
+			<div class="contact-bottom">
+				<input type="text" value="John simth" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'John simth';}">
+				<span> </span>
+				</div>
+			<div class="contact-bottom-bottom">
+				<input type="text" value="Example@gmail.com" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Example@gmail.com';}">
+				<span> </span>
+				</div>	
+				<textarea cols="70" rows="6" vaule="" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Message';}"> </textarea>
+				<div class="clearfix"> </div>
+				<input type="submit" value="Send it" >
+				<div class="clearfix"> </div>	
+		</form>
+	</div>
+	</div>
+	</div>
+	<!---//contant--->
+	<!---footer--->
+	<div class="footer">
+	<div class="container">
+		<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+		<div class="clearfix"> </div>
+	</div>
+	<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+
+</body>
+</html>

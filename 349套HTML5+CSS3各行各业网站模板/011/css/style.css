@@ -1,0 +1,244 @@
+
+/*
+Free Bootstrap Themes : http://www.365bootstrap.com
+*/
+
+/* ==== Google font ==== */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700,900);
+@import url('http://fonts.googleapis.com/css?family=Ek+Mukta:400,600,700');
+
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------------Html-Body------------------------------- */
+/* ---------------------------------------------------------------------------- */
+body {font-family: 'Ek Mukta', sans-serif;color: #666;background-color: #fff;font-size: 16px;line-height: 1.6em;font-weight: 400;}
+html, body {width:100%; padding:0; margin:0;}
+
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+html { -webkit-text-size-adjust: none;}
+.video embed,.video object,.video iframe { width: 100%;  height: auto;}
+img{max-width:100%;	height: auto;width: auto\9; /* ie8 */}
+
+h1 {font-size: 38px;}
+h2 {font-size: 36px;}
+h3 {font-size: 32px;}
+h4 {font-size: 28px;}
+h5 {font-size: 24px;}
+h6 {font-size: 20px;}
+
+h1,h2,h3,h4,h5,h6 {font-family: 'Roboto', sans-serif;font-weight: 600;color: #111;}
+
+p {margin: 0 0 20px;}
+
+a {
+   color: #333;
+   -webkit-transition: all .2s ease-in-out;
+   -moz-transition: all .2s ease-in-out;
+   transition: all .2s ease-in-out;
+   text-decoration: none;
+}
+a:hover,
+a:focus {text-decoration: none;}
+
+ul {padding: 0;margin: 0;}
+ul li {list-style:none;}
+
+select {border: 0;background: transparent;}
+
+.clear{content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix:after, .clearfix:before{clear: both; content: '\0020'; display: block; visibility: hidden; width: 0; height: 0;}
+
+/* --Line-- */
+hr.line { margin: 15px auto; padding: 0; max-width: 90px;border: 0; border-top: solid 5px #ddd;text-align: center;}
+
+/* ---------------------------------------------------------------------------- */
+/* -----------------------------------Header----------------------------------- */
+/* ---------------------------------------------------------------------------- */
+#top {background: #F6F6F6;padding: 7px 0;}
+#top .language{}
+#top .currency {}
+#top ul.top-link {float: right;}
+#top ul.top-link li {display: inline-block;padding-right: 5px;margin-right: 5px;border-right: 1px solid #bbb;}
+#top ul.top-link li:last-child {border: none;}
+@media(max-width:767px) {
+	#top ul.top-link li{float: none;border: none;}
+}
+
+header {padding: 50px 0; }
+header #logo{margin: 5px 0 15px;}
+header #cart {float: right;}
+header .form-search input{width: 70%;height: 56px;}
+header .form-search button {background: #222; color: #fff;padding: 12px 20px;font-size: 20px;}
+header .form-search button:hover {color: #eee;}
+@media(max-width:968px) {
+	header #cart {margin-top: 20px;}
+	header #cart {float: none;}
+}
+
+#menu {background-color: #111;border-radius: 0;}
+#menu #heading {float: left;padding-left: 15px;font-size: 20px;font-weight: 700;line-height: 40px;color: #fff;margin-top: 10px;text-transform: uppercase;}
+#menu .dropdown-menu {background-color: #111;}
+#menu .dropdown-menu li > a:hover {color: #ffffff;background-color: #3f3f3f;}
+#menu .dropdown-inner {display: table;}
+#menu .dropdown-inner ul {display: table-cell;}
+#menu .dropdown-inner a {min-width: 160px;display: block;padding: 3px 20px;clear: both;line-height: 20px;color: #333333;font-size: 12px;}
+#menu li.dropdown:hover>a, #menu li.dropdown:focus>a, #menu li.dropdown:active>a{background: #272727;}
+#menu ul.nav li a{color: #fff;padding: 20px ;text-transform: uppercase;}
+#menu ul.nav li a:hover{background-color: #3f3f3f;}
+#menu .btn-navbar {font-size: 20px;color: #FFF;padding: 5px 15px;float: right;border: 3px solid #fff;}
+
+@media (min-width: 768px) {
+	#menu .dropdown:hover .dropdown-menu {display: block;}
+}
+@media(max-width:767px) {
+	#menu .navbar-brand {display: block;color: #fff;}
+	#menu {border-radius: 4px;}
+	#menu .dropdown-inner {display: block;}
+	#menu div.dropdown-inner > ul.list-unstyled {display: block;}
+	#menu .dropdown-inner a {width: 100%;color: #fff;}
+	#menu div.dropdown-menu {margin-left: 0 !important;	padding-bottom: 10px;background-color: rgba(0, 0, 0, 0.1);}
+	#menu .dropdown-menu a:hover,
+	#menu .dropdown-menu ul li a:hover {background: rgba(0, 0, 0, 0.1);}
+}
+/* ---------------------------------------------------------------------------- */
+/* -----------------------------------Content---------------------------------- */
+/* ---------------------------------------------------------------------------- */
+#page-content{}
+#page-content.home-page{margin: 50px 0;}
+#page-content.single-page {margin: 50px 0;}
+#page-content .row{	margin-bottom: 30px;}
+
+.carousel-inner{}
+.banner div{margin-bottom: 10px;}
+
+.heading {border-bottom: 1px solid #ddd;margin-bottom: 30px;}
+.heading h1, .heading h2{font-size: 30px;padding-bottom: 10px;}
+
+/* ---breadcrumb--- */
+.breadcrumb {margin-bottom: 40px;border: 1px solid #ddd;}
+.breadcrumb i {font-size: 15px;}
+.breadcrumb > li {text-shadow: 0 1px 0 #FFF;padding: 0 20px;position: relative;white-space: nowrap;}
+.breadcrumb > li + li:before {content: '';padding: 0;}
+.breadcrumb > li:after {content: '';display: block;position: absolute;top: -3px;right: -5px;width: 31px;height: 31px;border-right: 1px solid #DDD;border-bottom: 1px solid #DDD;-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);-o-transform: rotate(-45deg);transform: rotate(-45deg);}
+
+/* ---Product--- */
+.products {text-align: center;}
+.products:after, .products:before{clear: both; content: '\0020'; display: block; visibility: hidden; width: 0; height: 0;}
+.products .product{margin-bottom: 50px;}
+
+.product {}
+.product:after, .product:before{clear: both; content: '\0020'; display: block; visibility: hidden; width: 0; height: 0;}
+.product .image-more {margin-top: 15px;}
+.product .image-more img{border: 1px solid #DDD;max-height: 85px;margin-bottom: 10px;}
+.product .buttons {margin: 10px 0;}
+.product .buttons a {background-color: #eee;}
+.product .name {border-bottom: 1px solid #eee;}
+.product .name h3{font-weight: 500;font-size: 20px;color: #666;margin-top: 10px;}
+.product .info ul li{margin: 10px 0;}
+.product .price {font-size: 22px;margin: 10px 0;}
+.product .price span{color: #aaa;margin-left: 10px;text-decoration: line-through;} 
+.product .rating{margin: 10px 0;}
+.product .rating span {margin-right: 5px;}
+.product .options {margin: 10px 0;}
+.product .options select{border: 1px solid #eee; width: 100%;}
+.product input.form-inline {border-radius: 4px;border: 1px solid #ccc;padding: 4px 6px;width: 40px;}
+.product .share .share-btn {margin-right: 25px;padding-top: 20px;}
+@media(max-width:767px) {.product{border: none;}}
+
+.product-desc{margin: 50px 0;}
+
+.pricedetails {margin-top: 20px;}
+.pricedetails table td {padding-right: 70px;}
+
+
+/* IMG thumb - product.html */
+.modal-body {padding:5px !important;}
+.modal-content {border-radius:0;}.modal-dialog img {text-align:center;margin:0 auto;}
+.controls{width:50px;display:block;font-size:19px;font-weight:500;}
+.next {float:right;text-align:right;}
+/*override modal for demo only*/
+.modal-dialog {max-width:500px;padding-top: 90px;}
+@media screen and (min-width: 768px){
+	.modal-dialog {width:500px;padding-top: 90px}          
+}
+
+/* ---------------------------------------------------------------------------- */
+/* -----------------------------------Sidebar---------------------------------- */
+/* ---------------------------------------------------------------------------- */
+#sidebar{}
+
+.widget {margin-bottom: 30px;border: 1px solid #aaa;padding-bottom: 20px;}
+.widget .heading {background-color: #3F3F3F;padding: 10px 20px;margin: 0;}
+.widget .heading h4{margin: 0;color: #fff;font-size: 21px;}
+.widget .content {padding: 15px 20px;}
+
+.widget.wid-categories {}
+.widget.wid-categories ul li{margin-bottom: 10px;border-bottom: 1px dashed #aaa;padding-bottom: 7px;}
+.widget.wid-categories ul li a{font-size: 17px;}
+
+.widget.wid-product h5{font-size: 19px;font-weight: 500;margin-top: 0;}
+.widget.wid-product img{float: left; margin: 10px; max-height: 110px;}
+.widget.wid-product .wrapper {vertical-align: middle;text-align: left;padding-bottom: 7px;margin-top: 22px;display: inline-block;}
+
+.widget.wid-discouts {}
+.widget.wid-discouts .checkbox, .widget.wid-brand .checkbox{font-weight: 500;}
+
+.widget.wid-type {}
+.widget.wid-type select{width: 100%; border: 1px solid #aaa;margin-top: 20px;padding: 3px;}
+
+/* ---------------------------------------------------------------------------- */
+/* -----------------------------------Footer---------------------------------- */
+/* ---------------------------------------------------------------------------- */
+footer {background: #2A2A2A;}
+
+footer .wrap-footer {padding: 50px 0;}
+
+footer .col-footer {border-right: 1px solid #666;padding: 0 30px;}
+footer .col-footer:last-child {border: none;}
+footer .col-footer .heading {margin: 0 0 20px;}
+footer .col-footer .heading h4{color: #fff;font-size: 23px;font-weight: 500;margin: 0 0 20px;}
+footer .col-footer a {color: #666;}
+footer .col-footer ul {padding-left: 25px;}
+footer .col-footer ul li{list-style: circle;}
+
+footer .footer-1 img{margin-bottom: 10px;}
+footer .footer-2 {}
+footer .footer-3 {}
+footer .footer-4 ul{padding-left: 0px;}
+footer .footer-4 ul li{margin-top: 10px; list-style: none;}
+footer .footer-4 span{margin-right:10px;}
+
+footer .copyright {background: #393939;padding: 20px 0;}
+footer .copyright a {color: #fff;}
+footer .copyright a:hover {text-decoration: underline;}
+footer .copyright ul li {display: inline-block;margin-left: 10px;}
+
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------Form--------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+.form-group {margin-bottom: 25px;}
+.form-group input,.form-group textarea {padding: 10px;}
+.form-group input.form-control {height: auto;}
+.form-group textarea.form-control {height: 180px;}
+
+.review-form {}
+.review-form label textarea {height:130px;}
+.review-form label input, .review-form label textarea {width: 100%;}
+.review-form label, .review-form label span {display: block;}
+.review-form label span {margin: 10px 0;}
+
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------------Tabs------------------------------------ */
+/* ---------------------------------------------------------------------------- */
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{background: #272727;border-radius: 0;color: #fff;}
+.nav-tabs > li > a:hover, .nav-tabs > li > a:focus {background: #272727;border-radius: 0;color: #fff;}
+.tab-content {border-right: 1px solid #ccc;border-bottom: 1px solid #ccc;border-left: 1px solid #ccc;padding: 25px;}
+
+/* ---------------------------------------------------------------------------- */
+/* -----------------------------------Button----------------------------------- */
+/* ---------------------------------------------------------------------------- */
+.btn {}
+.btn.btn-1{ background-color: #222;color: #fff;font-size: 25px;padding: 10px 15px;}
+.btn.btn-2{margin-left: 5px;background: #D9534F;color: #fff;}
+

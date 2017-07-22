@@ -1,0 +1,507 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="ico/favicon.ico">
+
+    <title>h2design</title>
+
+    <!-- Bootstrap core CSS -->
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href='http://fonts.useso.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript" src="js/modernizr.custom.js"></script>
+	
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="..."></a>
+        </div>
+        <div class="collapse navbar-collapse">        
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="index.html">Homepage 1</a></li>
+                <li><a href="index-full.html">Homepage 2</a></li>
+              </ul>
+            </li>
+			<li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="portfolio-item-1.html">Portfolio Item</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="coming-soon.html">Coming Soon</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="help-center.html">Help Center</a></li>
+                <li><a href="help-item.html">Help Item</a></li>
+                <li><a href="pricing-table.html">Pricing Table</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="sign-in.html">Sign In</a></li>
+                <li><a href="sign-up.html">Sign Up</a></li>
+                <li><a href="error-page.html">404 Error Page</a></li>
+              </ul>
+            </li>            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="blog-post.html">Blog Post</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="shop-item.html">Shop Item</a></li>
+                <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                <li><a href="user-profile.html">User Profile</a></li>
+              </ul>
+            </li>
+            <li class="hidden-sm">
+              <a href="ui-elements.html">UI Elements</a>
+            </li>            
+            <!-- Navbar Search -->
+            <li class="hidden-xs" id="navbar-search">
+              <a href="#">
+                <i class="fa fa-search"></i>
+              </a>
+              <div class="hidden" id="navbar-search-box">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <span class="input-group-btn">
+                    <button class="btn btn-danger" type="button">Go!</button>
+                  </span>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- Mobile Search -->
+          <form class="navbar-form navbar-right visible-xs" role="search">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <span class="input-group-btn">
+                <button class="btn btn-danger" type="button">Search!</button>
+              </span>
+            </div>
+          </form>          
+        </div><!--/.nav-collapse -->
+      </div>
+    </div> <!-- / .navigation -->
+	<span id="header_shadow" style="width: 100%; top: 30px;"></span>
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+	  
+	  <!-- Topic Header -->
+      <div class="topic">
+        <div class="container">
+          <div class="row">            
+            <ol class="breadcrumb hidden-xs">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+			  <li class="active">Portfolio Item</li>
+            </ol>                      
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </div> <!-- / .Topic Header -->
+
+      <div class="container">
+        <div class="row">
+          
+		  <div class="col-sm-6">
+			<div class="portfolio-item-view">				
+			  <figure>
+				<img class="img-responsive" src="img/portfolio/portfolio9.jpg" alt="">
+				<figcaption>
+				  <h3><strong><span class="text-red">Animation</span></strong></h3>
+				  <span>Web Design</span>
+				  <a href="portfolio.html">Take a look</a>
+				</figcaption>
+			  </figure>							
+			</div>              
+          </div>
+
+          <div class="col-sm-6">
+            <h1 class="second-child"><span class="text-red">Portfolio</span> Animation</h1>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            <br />
+            <h4><span>File Info</span></h4>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Category<td>
+                  <td>Animation</td>
+                </tr>
+                <tr>
+                  <td>File Size<td>
+                  <td>3.5Mb</td>
+                </tr>
+                <tr>
+                  <td>License<td>
+                  <td>All Rights Reserved</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div> <!-- / .row -->
+		<br /><br />
+		
+		<div class="row">
+		
+		  <div class="col-sm-12">
+            <h1 class="headline"><span>Latest Items</span></h1>
+          </div>
+          <div class="col-sm-3">
+            <div class="portfolio-slideshow">
+              <!-- Image Carousel -->
+              <div id="portfolio-slideshow" class="carousel slide" data-ride="carousel">                
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="portfolio-item">
+					  <div class="portfolio-thumbnail">
+						<img class="img-responsive" src="img/portfolio/portfolio1.jpg" alt="...">
+						<div class="mask">
+						  <p>
+							<a href="img/portfolio/portfolio1.jpg" data-lightbox="template_showcase"><i class="fa fa-search-plus fa-2x"></i></a>
+							<a href="portfolio-item-1.html"><i class="fa fa-link fa-2x"></i></a>
+						  </p>
+						</div>
+					  </div>
+					</div> <!-- / .portfolio-item -->
+                  </div>
+				  <div class="item">
+                    <div class="portfolio-item">
+					  <div class="portfolio-thumbnail">
+						<img class="img-responsive" src="img/portfolio/portfolio4.jpg" alt="...">
+						<div class="mask">
+						  <p>
+							<a href="img/portfolio/portfolio4.jpg" data-lightbox="template_showcase"><i class="fa fa-search-plus fa-2x"></i></a>
+							<a href="portfolio-item-4.html"><i class="fa fa-link fa-2x"></i></a>
+						  </p>
+						</div>
+					  </div>
+					</div> <!-- / .portfolio-item -->
+                  </div>
+				  <div class="item">
+                    <div class="portfolio-item">
+					  <div class="portfolio-thumbnail">
+						<img class="img-responsive" src="img/portfolio/portfolio7.jpg" alt="...">
+						<div class="mask">
+						  <p>
+							<a href="img/portfolio/portfolio7.jpg" data-lightbox="template_showcase"><i class="fa fa-search-plus fa-2x"></i></a>
+							<a href="portfolio-item-7.html"><i class="fa fa-link fa-2x"></i></a>
+						  </p>
+						</div>
+					  </div>
+					</div> <!-- / .portfolio-item -->
+                  </div>                                   
+                </div>                
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="col-sm-3">
+            <div class="portfolio-slideshow">
+              <!-- Image Carousel -->
+              <div id="portfolio-slideshow" class="carousel slide" data-ride="carousel">                
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="portfolio-item">
+					  <div class="portfolio-thumbnail">
+						<img class="img-responsive" src="img/portfolio/portfolio10.jpg" alt="...">
+						<div class="mask">
+						  <p>
+							<a href="img/portfolio/portfolio10.jpg" data-lightbox="template_showcase"><i class="fa fa-search-plus fa-2x"></i></a>
+							<a href="portfolio-item-10.html"><i class="fa fa-link fa-2x"></i></a>
+						  </p>
+						</div>
+					  </div>
+					</div> <!-- / .portfolio-item -->
+                  </div>
+                  <div class="item">
+                    <div class="portfolio-item">
+					  <div class="portfolio-thumbnail">
+						<img class="img-responsive" src="img/portfolio/portfolio11.jpg" alt="...">
+						<div class="mask">
+						  <p>
+							<a href="img/portfolio/portfolio11.jpg" data-lightbox="template_showcase"><i class="fa fa-search-plus fa-2x"></i></a>
+							<a href="portfolio-item-11.html"><i class="fa fa-link fa-2x"></i></a>
+						  </p>
+						</div>
+					  </div>
+					</div> <!-- / .portfolio-item -->
+                  </div>
+                  <div class="item">
+                    <div class="portfolio-item">
+					  <div class="portfolio-thumbnail">
+						<img class="img-responsive" src="img/portfolio/portfolio12.jpg" alt="...">
+						<div class="mask">
+						  <p>
+							<a href="img/portfolio/portfolio12.jpg" data-lightbox="template_showcase"><i class="fa fa-search-plus fa-2x"></i></a>
+							<a href="portfolio-item-12.html"><i class="fa fa-link fa-2x"></i></a>
+						  </p>
+						</div>
+					  </div>
+					</div> <!-- / .portfolio-item -->
+                  </div>                 
+                </div>                
+              </div>
+            </div>
+          </div>
+
+		  <div class="col-sm-3">
+            <div class="portfolio-slideshow">
+              <!-- Image Carousel -->
+              <div id="portfolio-slideshow" class="carousel slide" data-ride="carousel">                
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="portfolio-item">
+					  <div class="portfolio-thumbnail">
+						<img class="img-responsive" src="img/portfolio/portfolio2.jpg" alt="...">
+						<div class="mask">
+						  <p>
+							<a href="img/portfolio/portfolio2.jpg" data-lightbox="template_showcase"><i class="fa fa-search-plus fa-2x"></i></a>
+							<a href="portfolio-item-2.html"><i class="fa fa-link fa-2x"></i></a>
+						  </p>
+						</div>
+					  </div>
+					</div> <!-- / .portfolio-item -->
+                  </div>
+                  <div class="item">
+                    <div class="portfolio-item">
+					  <div class="portfolio-thumbnail">
+						<img class="img-responsive" src="img/portfolio/portfolio3.jpg" alt="...">
+						<div class="mask">
+						  <p>
+							<a href="img/portfolio/portfolio3.jpg" data-lightbox="template_showcase"><i class="fa fa-search-plus fa-2x"></i></a>
+							<a href="portfolio-item-3.html"><i class="fa fa-link fa-2x"></i></a>
+						  </p>
+						</div>
+					  </div>
+					</div> <!-- / .portfolio-item -->
+                  </div>
+                  <div class="item">
+                    <div class="portfolio-item">
+					  <div class="portfolio-thumbnail">
+						<img class="img-responsive" src="img/portfolio/portfolio5.jpg" alt="...">
+						<div class="mask">
+						  <p>
+							<a href="img/portfolio/portfolio5.jpg" data-lightbox="template_showcase"><i class="fa fa-search-plus fa-2x"></i></a>
+							<a href="portfolio-item-5.html"><i class="fa fa-link fa-2x"></i></a>
+						  </p>
+						</div>
+					  </div>
+					</div> <!-- / .portfolio-item -->
+                  </div>                                  
+                </div>                
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="col-sm-3">
+            <div class="portfolio-slideshow">
+              <!-- Image Carousel -->
+              <div id="portfolio-slideshow" class="carousel slide" data-ride="carousel">                
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="portfolio-item">
+					  <div class="portfolio-thumbnail">
+						<img class="img-responsive" src="img/portfolio/portfolio6.jpg" alt="...">
+						<div class="mask">
+						  <p>
+							<a href="img/portfolio/portfolio6.jpg" data-lightbox="template_showcase"><i class="fa fa-search-plus fa-2x"></i></a>
+							<a href="portfolio-item-6.html"><i class="fa fa-link fa-2x"></i></a>
+						  </p>
+						</div>
+					  </div>
+					</div> <!-- / .portfolio-item -->
+                  </div> 
+                  <div class="item">
+                    <div class="portfolio-item">
+					  <div class="portfolio-thumbnail">
+						<img class="img-responsive" src="img/portfolio/portfolio8.jpg" alt="...">
+						<div class="mask">
+						  <p>
+							<a href="img/portfolio/portfolio8.jpg" data-lightbox="template_showcase"><i class="fa fa-search-plus fa-2x"></i></a>
+							<a href="portfolio-item-8.html"><i class="fa fa-link fa-2x"></i></a>
+						  </p>
+						</div>
+					  </div>
+					</div> <!-- / .portfolio-item -->
+                  </div>
+                  <div class="item">
+                    <div class="portfolio-item">
+					  <div class="portfolio-thumbnail">
+						<img class="img-responsive" src="img/portfolio/portfolio9.jpg" alt="...">
+						<div class="mask">
+						  <p>
+							<a href="img/portfolio/portfolio9.jpg" data-lightbox="template_showcase"><i class="fa fa-search-plus fa-2x"></i></a>
+							<a href="portfolio-item-9.html"><i class="fa fa-link fa-2x"></i></a>
+						  </p>
+						</div>
+					  </div>
+					</div> <!-- / .portfolio-item -->
+                  </div>                 
+                </div>                
+              </div>
+            </div>
+          </div>		  
+		  
+		  
+        </div> <!-- / .row -->	
+        
+      </div> <!-- / .container -->
+
+    </div> <!-- / .wrapper -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+		
+          <!-- Contact Us -->
+          <div class="col-xs-12 col-sm-3 col-md-3">
+            <h4>Contact Us</h4>            
+			<p>
+			  051 Ave C South Saskatoon, 10 Elizabeth <br />
+			  Street Mountain Road, CA United States.
+			  <br /><br />
+			  Phone : 92 026 365 2569<br />
+			  Fax   : 92 026 365 2570
+			  <br /><br />
+			  <a href="mailto:#">supportcenter@mail.com</a>
+			</p>			
+          </div><!-- / .Contact Us -->
+		  
+		  <!-- Useful Links -->
+          <div class="col-xs-12 col-sm-3 col-md-3">            
+            <h4>Useful Links</h4>
+            <p>
+              <a href="#">Simple and clean blog design </a><br />
+              <a href="#">We bring good to online presence  </a><br />
+              <a href="#">Fully responsive creative design  </a><br />
+              <a href="#">Creative homepage design </a><br />
+              <a href="#">Our services are most nifty  </a><br />
+              <a href="#">Most flexible theme </a><br />
+            </p>
+          </div><!-- / .Useful Links -->
+		  
+          <!-- Recent Tweets -->
+          <div class="col-xs-12 col-sm-3 col-md-3">
+            <h4>Photo Stream</h4>
+			<div class="gallery clearfix">
+			  <ul class="list-unstyled">
+			    <li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>	
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar.jpg" style="width:60px;height:60px;" alt="..."></a></li>				
+			   </ul>
+			</div>
+          </div><!-- / .Recent Tweets -->
+		  
+          <!-- Newsletter -->
+          <div class="col-xs-12 col-sm-3 col-md-3">
+            <h4>Newsletter</h4>
+            <p>
+              By subscribing to our mailing list you will get the latest news from us.              
+            </p>
+            <form class="form" role="form">
+              <div class="row">
+                <div class="col-xs-12">
+                  <div class="input-group">
+                    <label class="sr-only" for="subscribe-email">Email address</label>
+                    <input type="email" class="form-control" id="subscribe-email" placeholder="Enter your email">
+                    <span class="input-group-btn">
+                      <button type="submit" class="btn btn-danger">Subscribe</button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </form>
+			<br />
+			<h4>Follow us on</h4>
+			  <ul class="list-inline">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="#"><i class="fa fa-skype"></i></a></li>				
+			  </ul>
+          </div><!-- / .Newsletter -->
+		  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		  
+        </div> <!-- / .row -->		
+      </div> <!-- / .container --> 	  
+    </footer><!-- / .Footer -->
+	
+	<!-- Copyright -->
+	<div class="copyrights">
+		<div class="container">
+		  <div class="row">
+			<div class="col-sm-12">
+			  <div class="copyright">
+				Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a>
+			  </div>
+			</div>
+		  </div> <!-- / .row -->
+		</div> <!-- / .container --> 
+	</div><!-- / .Copyright -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.useso.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrolltopcontrol.js"></script>
+	<script src="js/SmoothScroll.js"></script>
+    <script src="js/lightbox-2.6.min.js"></script>
+	<script src="js/toucheffects.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

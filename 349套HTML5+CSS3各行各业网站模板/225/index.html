@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" >
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" >
+<!--//theme-style-->
+<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- script -->
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+ <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
+	   <script type="text/javascript">
+			$(window).load(function(){
+				$('div.description').each(function(){
+					$(this).css('display', 'block');
+				});
+				
+				$('div.content-top-grid').hover(function(){
+					$(this).children('.description').stop().fadeTo(500, 1);
+				},function(){
+					$(this).children('.description').stop().fadeTo(500, 0);
+				});
+				
+			});
+	</script>
+<script type="text/javascript" src="js/jquery.mmenu.js"></script>
+		<script type="text/javascript">
+			//	The menu on the left
+			$(function() {
+				$('nav#menu-left').mmenu();
+			});
+		</script>
+</head>
+<body>
+	<!--header-->
+		<div class="header">
+			<a class="navicon" href="#menu-left"> </a>
+			<div class="container">
+				<div class="header-matter">
+					<h1>tomorrow is a <span>brand</span> new day!</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean commodo ligula eget dolor.Aenean massa</p>
+					<a class="more" href="#">more</a>
+				</div>
+			</div>
+			<nav id="menu-left">
+						<ul>
+							<li><a href="#home" class="scroll">Home</a></li>
+							<li><a href="#about"  class="scroll">About</a></li>
+							<li><a href="#works"  class="scroll">Works</a></li>
+							<li><a href="#choose"  class="scroll">Choose</a></li>
+							<li><a href="#team"  class="scroll">Team</a></li>
+							<li><a href="#skills"  class="scroll">Skills</a></li>
+							<li><a href="#news"  class="scroll">News</a></li>
+							<li><a href="#contact"  class="scroll">Contact</a></li>
+						</ul>
+					</nav>
+					<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+					</script>
+		</div>
+		<div class="clearfix"> </div>
+	<!--//header-->
+	<!--content-->
+	<div class="content">
+		<!--about-->
+		<div class="about" id="about">
+			<div class="container">
+				<div class="about-us">
+					<h3>about us</h3>
+					<img src="images/wave.png" alt="" />
+				</div>
+				<div class="about-grid">
+					<div class="col-md-4 wedsite">
+						<h4>Website Design &amp; Development<img src="images/arrow.png" alt="" /></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+					</div>
+					<div class="col-md-4 wedsite">
+						<h4>Website Design &amp; Development<img src="images/arrow.png" alt=""  /></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+					</div>
+					<div class="col-md-4 wedsite">
+						<h4>Website Design &amp; Development<img src="images/arrow.png" alt=""  /></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>	
+		</div>
+		<!--//about-->
+		<!--works-->
+		<div class="our-work" id="works">
+			<div class="container">
+				<div class="works">
+					<h3>our works</h3>
+				</div>
+				<ul id="filters">
+						<li><span class="filter active" data-filter="app card icon web">ALL</span><label>/</label></li>
+						<li><span class="filter" data-filter="app">architecture</span><label>/</label></li>
+						<li><span class="filter" data-filter="card">interior &amp; furniture design </span><label>/</label></li>
+						<li><span class="filter" data-filter="icon">reserach &amp; graphic design</span></li>
+					</ul>
+					<div id="portfoliolist">
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper ">		
+							<a href="#" class="b-link-stripe b-animate-go  thickbox play-icon">
+						    <img class="img-responsive" src="images/y.jpg" alt=""  />
+						    </a>
+						     <div class="simple">
+						    	<h5>sample</h5>
+						    	<p>Lorem ipsum</p>
+						    </div>		               
+						</div>
+					</div>				
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#" class="b-link-stripe b-animate-go  thickbox play-icon ">
+						    <img class="img-responsive" src="images/cover.jpg" alt=""  /></a>
+						    <div class="simple">
+						    	<h5>sample</h5>
+						    	<p>Lorem ipsum</p>
+						    </div>
+		                </div>
+					</div>		
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#" class="b-link-stripe b-animate-go  thickbox play-icon ">
+						     <img class="img-responsive" src="images/b.jpg"  alt="" /></a>
+						     <div class="simple">
+						    	<h5>sample</h5>
+						    	<p>Lorem ipsum</p>
+						    </div>
+		                </div>
+					</div>				
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper ">		
+							<a href="#" class="b-link-stripe b-animate-go  thickbox play-icon ">
+						     <img class="img-responsive" src="images/box.jpg" alt=""  /></a>
+						     <div class="simple">
+						    	<h5>sample</h5>
+						    	<p>Lorem ipsum</p>
+						    </div>
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper ">		
+							<a href="#" class="b-link-stripe b-animate-go  thickbox play-icon ">
+						     <img class="img-responsive" src="images/light.jpg" alt=""  /></a>
+						     <div class="simple">
+						    	<h5>sample</h5>
+						    	<p>Lorem ipsum</p>
+						    </div>
+		                </div>
+					</div>			
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog5" class="b-link-stripe b-animate-go  thickbox play-icon ">
+						     <img class="img-responsive" src="images/w.jpg" alt=""  />
+						     </a>
+						     <div class="simple">
+						    	<h5>sample</h5>
+						    	<p>Lorem ipsum</p>
+						    </div>
+		                </div>
+
+					</div>
+					<div class="clearfix"> </div>
+					</div>	
+			<!-- Script for gallery Here -->
+				<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+					$(function () {
+						
+						var filterList = {
+						
+							init: function () {
+							
+								// MixItUp plugin
+								// http://mixitup.io
+								$('#portfoliolist').mixitup({
+									targetSelector: '.portfolio',
+									filterSelector: '.filter',
+									effects: ['fade'],
+									easing: 'snap',
+									// call the hover effect
+									onMixEnd: filterList.hoverEffect()
+								});				
+							
+							},
+							
+							hoverEffect: function () {
+							
+								// Simple parallax effect
+								$('#portfoliolist .portfolio').hover(
+									function () {
+										$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+										$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+									},
+									function () {
+										$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+										$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+									}		
+								);				
+							
+							}
+				
+						};
+						
+						// Run the show!
+						filterList.init();
+						
+						
+					});	
+					</script>
+			<!-- Gallery Script Ends -->
+			<div class="text">
+				<a class="more" href="#">more</a>
+			</div>
+			</div>
+		</div>
+		<!--//works-->
+		<!--choose-->
+		<div class="choose-us" id="choose">
+			<div class="container">
+				<div class="choose">
+					<h3>why choose us</h3>
+					<img src="images/wave.png" alt="" />
+				</div>
+				<div class="why-choose">
+					<div class="pencil">
+						<a href="#"><span class="pen"> </span></a>
+					</div>
+					<div class="beautiful"> 
+						<h5>beautiful & enjoyable designs</h5>
+						<label>we define trends.enough said</label>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="why-choose">
+					<div class="pencil">
+						<a href="#"><span class="pen set"> </span></a>
+					</div>
+					<div class="beautiful"> 
+						<h5>beautiful &amp; enjoyable designs</h5>
+						<label>we define trends.enough said</label>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="why-choose">
+					<div class="pencil">
+						<a href="#"><span class="pen circle"> </span></a>
+					</div>
+					<div class="beautiful"> 
+						<h5>beautiful &amp; enjoyable designs</h5>
+						<label>we define trends.enough said</label>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="why-choose">
+					<div class="pencil">
+						<a href="#"><span class="pen star"> </span></a>
+					</div>
+					<div class="beautiful"> 
+						<h5>beautiful &amp; enjoyable designs</h5>
+						<label>we define trends.enough said</label>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!--//choose-->
+		<!--temps-->
+		<div class="temps">
+			<div class="container">
+				<div class="tem-phone">
+					<div class="temp-matter">
+						<h3>voyageur du temps</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean commodo ligula eget dolor.Aenean massa</p>
+						<a class="more temp-more" href="#">more</a>
+					</div>
+					<img  class="img-responsive phone" src="images/phone.png" alt=""  />
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!--//temps-->
+		<!--clock-design-->
+		<div class="clock-design">
+			<div class="container">
+				<div class="col-md-3 men-d">
+					<a href="#"><span class="men"> </span></a>
+					<ul class="eleven">
+						<li><label>11</label></li>
+						<li><label>designer</label></li>
+					</ul>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-3 men-d">
+					<a href="#"><span class="men clock"> </span></a>
+					<ul class="eleven">
+						<li><label>6542</label></li>
+						<li><label>hours worked</label></li>
+					</ul>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-3 men-d">
+					<a href="#"><span class="men fun"> </span></a>
+					<ul class="eleven">
+						<li><label>254</label></li>
+						<li><label>project funished</label></li>
+					</ul>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-3 men-d">
+					<a href="#"><span class="men coffee"> </span></a>
+					<ul class="eleven ">
+						<li><label>435</label></li>
+						<li><label>durnk coffee</label></li>
+					</ul>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<!--//clock-design-->
+		<!--team-->
+		<div class="team" id="team">
+			<div class="container">
+				<div class="our-team">
+					<h3>our team</h3>
+					<img  src="images/wave.png" alt=""  />
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean commodo ligula eget dolor.Aenean massa</p>
+				</div>
+				<div class="women">
+					<div class="col-md-3 senior">
+				<a href="#"><img class="img-responsive doe" src="images/wo.jpg" alt=""  /></a>
+						     <div class="john">
+						    	<h5>joanna doe</h5>
+						    	<p>senior designer</p>
+						    </div>
+					</div>
+					<div class="col-md-3 senior">
+						<a href="#"><img class="img-responsive doe" src="images/wom.jpg" alt=""  /></a>
+						     <div class="john">
+						    	<h5>joanna doe</h5>
+						    	<p>senior designer</p>
+						    </div>
+					</div>
+					<div class="col-md-3 senior">
+						<a href="#"><img class="img-responsive doe" src="images/wome.jpg" alt=""  /></a>
+						     <div class="john">
+						    	<h5>joanna doe</h5>
+						    	<p>senior designer</p>
+						    </div>
+					</div>
+					<div class="col-md-3 senior">
+						<a href="#"><img class="img-responsive doe" src="images/womm.jpg" alt=""  /></a>
+						     <div class="john">
+						    	<h5>joanna doe</h5>
+						    	<p>senior designer</p>
+						    </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!--//team-->
+		<!-- video -->
+		<div class="video">
+			<!--pop-up-box-->
+				<script type="text/javascript" src="js/modernizr.custom.min.js"></script>    
+				<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+					<!--//pop-up-box-->
+						<div id="small-dialog" class="mfp-hide">
+							<iframe width="100%" height="600" src="//www.youtube.com/embed/ANPHddOfz04"> </iframe> 
+						</div>
+							<script>
+									$(document).ready(function() {
+									$('.popup-with-zoom-anim').magnificPopup({
+									type: 'inline',
+									fixedContentPos: false,
+									fixedBgPos: true,
+									overflowY: 'auto',
+									closeBtnInside: true,
+									preloader: false,
+									midClick: true,
+									removalDelay: 300,
+									mainClass: 'my-mfp-zoom-in'
+								});
+																							
+							});
+							</script>
+			</div>								  
+			<!--//video-->
+			<!--our-skills-->
+		<div class="our-skills" id="skills">
+			<div class="container">
+				<div class="skills">
+					<h3>our skills</h3>
+					<img src="images/wave.png" alt=""  />
+				</div>
+				<div class="skills-matter">
+					<div class="col-md-6 layout">
+						<h4>perfect layout &amp; efficient coding</h4>
+						<label>Lorem ipsum dolor sit amet</label>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+					</div>
+					<div class="col-md-6 photoshop">
+						<p class="adobe">adobe photoshop</p>
+						<p class="illustrator">adobe illustrator</p>
+						<p class="five">html5</p>
+						<p class="three">css</p>
+						<p class="java">java script</p>
+						<p class="piton">piton</p>
+						<p class="responsive">responsive designer</p>
+						<p class="illustrator-2">adobe illustrator</p>
+						<p class="five-2">html5</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<div class="channel">
+			<img class="img-responsive" src="images/channel.png" alt=""  />
+		</div>
+		<!--manage-->
+		 <div class="manage">
+			<div class="wmuSlider example1">
+				   <div class="wmuSliderWrapper">
+					   <article style="position: absolute; width: 100%; opacity: 0;">
+							<img class="img-responsive line-in" src="images/gla.png" alt=""  />
+							<div class="dummy-text">
+								<img class="img-responsive line" src="images/line.png" alt=""  />
+								<div class="clearfix"> </div>
+							</div>
+							<p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p>
+							<div class="john-doe">
+								<h6>joanna doe</h6>
+								<span>senior designer,manager</span>
+							</div>
+					 	</article>
+					 	 <article style="position: absolute; width: 100%; opacity: 0;">
+							<img class="img-responsive line-in" src="images/gla.png" alt=""  />
+							<div class="dummy-text">
+								<img class="img-responsive line" src="images/line.png" alt=""  />
+								<div class="clearfix"> </div>
+							</div>
+							<p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p>
+							<div class="john-doe">
+								<h6>joanna doe</h6>
+								<span>senior designer,manager</span>
+							</div>
+					 	</article>
+					 	 <article style="position: absolute; width: 100%; opacity: 0;">
+							<img class="img-responsive line-in" src="images/gla.png" alt=""  />
+							<div class="dummy-text">
+								<img class="img-responsive line" src="images/line.png" alt=""  />
+								<div class="clearfix"> </div>
+							</div>
+							<p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p>
+							<div class="john-doe">
+								<h6>joanna doe</h6>
+								<span>senior designer,manager</span>
+							</div>
+					 	</article>
+					 </div>
+	                <ul class="wmuSliderPagination">
+	                	<li><a href="#" class="">0</a></li>
+	                	<li><a href="#" class="">1</a></li>
+	                	<li><a href="#" class="">2</a></li>
+	                </ul>
+	            </div>
+	            <script src="js/jquery.wmuSlider.js"></script> 
+				  <script>
+	       			$('.example1').wmuSlider();         
+	   		     </script> 	           	         
+		</div>
+		<!--our-news-->
+		<div class="our-news" id="news">
+			<div class="container">
+				<div class="news">
+					<h3>our news</h3>
+					<img src="images/wave.png" alt="" />
+					<p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p>
+				</div>
+				<div class="house">
+					<div class=" col-md-6 house-grid">
+						<a href="#"><img class="img-responsive h-grid " src="images/boat.jpg" alt=""  /></a>
+					</div>
+					<div class=" col-md-6 house-grid-left">
+						<h5><a href="#">perfect layout</a></h5>
+						<small><span>11 au</span>gust 2014 </small>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.</p>
+						<b><a href="#">#Ux</a>  <a href="#">#UI</a>  <a href="#">#Webdesign</a>  <a href="#">#Responsive</a>  <a href="#">#Website</a></b>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="house">
+					<div class=" col-md-6 house-grid">
+						<a href="#"><img class="img-responsive h-grid" src="images/house.jpg" alt=""  /></a>
+					</div>
+					<div class=" col-md-6 house-grid-left">
+						<h5><a href="#">perfect layout</a></h5>
+						<small><span>11 au</span>gust 2014 </small>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.</p>
+						<b><a href="#">#Ux</a>  <a href="#">#UI</a>  <a href="#">#Webdesign</a>  <a href="#">#Responsive</a>  <a href="#">#Website</a></b>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="text">
+				<a class="more" href="#">more</a>
+			</div>
+			</div>
+		</div>
+		<!--thanks-->
+		<div class="thanks">
+			<div class="container">
+				<div class="thank-you">
+					<h3>thank you!</h3>
+				</div>
+				<form>
+				<input type="text" value="name" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'name';}">
+				<input type="text" value="e-mail" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'e-mail';}">
+				<textarea cols="10" rows="1" value=" " onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'message';}">message</textarea>
+				<div class="send">
+				<input type="submit" value="Send" >
+				</div>
+				</form>
+			</div>
+		</div>
+		<!--contact-->
+		<div class="contact" id="contact">
+			<div class="container">
+				<div class="contact-us">
+					<h3>contact us</h3>
+					<img src="images/wave.png" alt="" />
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p>
+				</div>
+				<div class="contact-grid">
+					<div class="col-md-4 hi-grid">
+						<span class="down"> </span>
+						<p>Lorem Ipsum is simply</p>
+					</div>
+					<div class="col-md-4 hi-grid">
+						<span class="down drop"> </span>
+						<p>Lorem Ipsum is simply</p>
+					</div>
+					<div class="col-md-4 hi-grid">
+						<span class="down call"> </span>
+						<p>111-222-333</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--//content-->
+	<!--footer-->
+		<div class="footer">
+			<div class="container">
+				<img src="images/cycle.png" alt="" />
+				<h6>sndsgn</h6>
+				<ul class="social">
+					<li class="facebook"><a href="#"><span> </span></a></li>
+					<li class="twitter"><a href="#"><span> </span></a></li>
+					<li class="browser"><a href="#"><span> </span></a></li>
+					<li class="been"><a href="#"><span> </span></a></li>
+					<li class="inline"><a href="#"><span> </span></a></li>
+					<li class="print"><a href="#"><span> </span></a></li>
+				</ul>
+				<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+			</div>
+				<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+		</div>
+
+</body>
+</html>

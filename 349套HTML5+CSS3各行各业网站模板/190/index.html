@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HOME</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="ECNO Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery-1.11.0.min.js"></script>
+<link href='http://fonts.useso.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+<!---image-carsuals---->
+	    <link href="css/owl.carousel.css" rel="stylesheet">
+	    <link href="css/owl.theme.css" rel="stylesheet">
+   		<script src="js/owl.carousel.js"></script>
+   		<script>
+	    $(document).ready(function() {
+	      $("#owl-demo").owlCarousel({
+	      	navigation: true,
+		    navigationText: [
+		      "<i class='icon-chevron-left icon-white'></i>",
+		      "<i class='icon-chevron-right icon-white'></i>"
+		      ],
+	        items :3,
+	        slideSpeed :100,
+	        lazyLoad : true,
+	        autoPlay : true,
+	      });
+	    });
+	    </script>
+<!---//End-carsuals---->
+</head>
+<body>
+	<!-- banner -->
+	<div id="home" class="banner">
+		<div class="header-info">
+			<div class="header-info-left">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" class="img-responsive" alt=""/></a>
+				</div>
+			</div>
+			<div class="header-info-right">
+				<div class="header cbp-spmenu-push">
+					<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+							<a href="index.html">Home</a>
+							<a class="scroll" href="#feathure">Feathure</a>
+							<a class="scroll" href="#demo">Demo</a>
+							<a href="contact.html">Contact</a>
+					</nav>
+					<!--script-nav -->	
+					<script>
+						$("span.menu").click(function(){
+							$("ul.navigatoin").slideToggle("300" , function(){
+							});
+						});
+					</script>
+					<script type="text/javascript">
+								jQuery(document).ready(function($) {
+									$(".scroll").click(function(event){		
+										event.preventDefault();
+										$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+									});
+								});
+					</script>
+					<div class="clearfix"> </div>
+						<!-- /script-nav -->
+									<div class="main">
+										<section class="buttonset">
+											<button id="showRightPush"><img src="images/menu.png" /></button>
+										</section>
+									</div>
+									<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+									<script src="js/classie.js"></script>
+									<script>
+										var	menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+											showRightPush = document.getElementById( 'showRightPush' ),
+											body = document.body;
+							
+										showRightPush.onclick = function() {
+											classie.toggle( this, 'active' );
+											classie.toggle( body, 'cbp-spmenu-push-toleft' );
+											classie.toggle( menuRight, 'cbp-spmenu-open' );
+											disableOther( 'showRightPush' );
+										};
+									</script>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="banner-bottom">
+			<div class="col-md-6 banner-left">
+				<h1>ECNO IS GREAT APPS</h1>
+				<p>Almost everyday I receive at least 1 email asking; How I became self-taught designer? If I can recommend any book, course? If I have any advise? Rather than keep replying those emails individually, I wanted to write this short post. I will be talking about design, but the things you will be reading can be applied to pretty much everything.</p>
+				<ul>
+					<li><a href="#">APPS</a></li>
+					<li><a class="active" href="#">DOWNLOAD</a></li>
+				</ul>
+			</div>
+			<div class="col-md-6 banner-right">
+				<div  id="top" class="callbacks_container">
+			      		<ul class="rslides" id="slider4">
+				        	<li>
+								<img src="images/mobile.png" alt="" />
+							</li>
+							<li>
+								<img src="images/mobile-1.png" alt="" />
+							</li>
+							<li>
+								<img src="images/mobile.png" alt="" />
+							</li>
+							<li>
+								<img src="images/mobile-2.png" alt="" />
+							</li>
+			      		</ul>
+			    </div>
+			    <div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="arrow">
+			<a href="#feathure" class="scroll"><img src="images/d-1.png" alt="" /></a>
+		</div>
+</div>
+<!--/header-banner-->
+<!--Slider-Starts-Here-->
+				<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: false,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!--End-slider-script-->	
+		<!--start-feathure-->
+		<div class="feathure" id="feathure">
+			<div class="feathure-main">
+				<div class="feathure-top">
+					<h2>Feathure</h2>
+					<p>I will be talking about design, but the things you will be reading can be applied to pretty much everything.</p>
+				</div>
+			</div>
+			<div class="feathure-bottom">
+				<div class="feathure-left">
+					<img src="images/fthr-1.png" alt="" />
+				</div>
+				<div class="feathure-right">
+					<img src="images/fthr-2.png" alt="" />
+				</div>
+				<div class="clearfix"></div>
+				<div class="feathure-left1">
+					<img src="images/fthr-3.png" alt="" />
+				</div>
+				<div class="feathure-right1">
+					<img src="images/fthr-4.png" alt="" />
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<!--end-feathure-->	
+	<!--start-video-->		
+	<div class="video" id="demo">
+		<div class="video-main">
+			<a class="play-icon popup-with-zoom-anim" href="#small-dialog5"><span> </span></a><br />
+		</div>
+	</div>
+	<!--end-video-->
+	<!--video-->
+				<div id="small-dialog5" class="mfp-hide">
+					<iframe src="https://player.vimeo.com/video/35354673?color=56a0d3&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+				 <script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>								  
+			<!--fea-video-->
+			<!--pop-up-box-->
+			<script type="text/javascript" src="js/modernizr.custom.53451.js"></script>  
+			<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all">
+			<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+			<!--pop-up-box-->
+	<!--starts-v-bottom-->
+	<div class="v-bottom">
+		<div class="v-btm">
+			<div class="v-left">
+					<img src="images/v-1.png" alt="" />
+				</div>
+				<div class="v-right">
+					<img src="images/v-2.png" alt="" />
+				</div>
+				<div class="clearfix"></div>
+				<div class="v-left1">
+					<img src="images/v-3.png" alt="" />
+				</div>
+				<div class="v-right1">
+					<img src="images/v-4.png" alt="" />
+				</div>
+				<div class="clearfix"></div>
+		</div>
+	</div>
+	<!--end-v-bottom-->
+	<!--starts-reviews-->
+	<div class="reviews">
+		<div class="container">
+			<div class="reviews-main">
+				<h3>Client Reviews</h3>
+				<div class="review-top">
+					<div  id="top" class="callbacks_container">
+			      		<ul class="rslides" id="slider5">
+			        	<li>
+							<div class="reviews-btm">
+								<img src="images/client-1.png" alt="" />
+								<h4>BREAK DOWN JOY / CO-FOUNDER, EXAMPLE.COM</h4>
+								<p>A dolor, integer augue vut parturient elementum elit porttitor auctor sed dolor massa aenean pellentesque tincidunt lundium odio, adipiscing in porta augue vut. Odio auctor in pulvinar porta! Enim tristique pulvinar dolor scelerisque risus integer nascetur aliquam dapibus.</p>
+							</div>
+						</li>
+						<li>
+							<div class="reviews-btm">
+								<img src="images/client-2.png" alt="" />
+								<h4>DOWN JOY / CO-FOUNDER, EXAMPLE.COM</h4>
+								<p>A dolor, integer augue vut parturient elementum elit porttitor auctor sed dolor massa aenean pellentesque tincidunt lundium odio, adipiscing in porta augue vut. Odio auctor in pulvinar porta! Enim tristique pulvinar dolor scelerisque risus integer nascetur aliquam dapibus.</p>
+							</div>
+						</li>
+						<li>
+							<div class="reviews-btm">
+								<img src="images/client-3.png" alt="" />
+								<h4>BREAK JOY / CO-FOUNDER, EXAMPLE.COM</h4>
+								<p>A dolor, integer augue vut parturient elementum elit porttitor auctor sed dolor massa aenean pellentesque tincidunt lundium odio, adipiscing in porta augue vut. Odio auctor in pulvinar porta! Enim tristique pulvinar dolor scelerisque risus integer nascetur aliquam dapibus.</p>
+							</div>
+						</li>
+			      </ul>
+			    </div>
+			    <div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="d-arrow1">
+					<a href="#activity" class="scroll"><img src="images/d-3.png" alt="" /></a>
+				</div>
+		</div>
+	</div>
+	<!--end-reviews-->
+	<!--Slider-Starts-Here-->
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider5").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: false,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!--End-slider-script-->
+	<!--start-activity-->
+	<div class="activity" id="activity">
+		<div class="activity-main">
+			<h3>Activity Timeline</h3>
+			<p>View your cellar's history as you add, remove, <span>& enjoy bottles from your inventory. Share the wines you enjoy on Twitter & Facebook.</span></p>
+			<div class="activity-top">
+				<div class="img-cursual">
+						<div id="owl-demo" class="owl-carousel">
+			                <div class="item"><img class="lazyOwl" data-src="images/scr-1.png" alt="Lazy Owl Image"></div>
+			                <div class="item"><img class="lazyOwl" data-src="images/scr-2.png" alt="Lazy Owl Image"></div>
+			                <div class="item"><img class="lazyOwl" data-src="images/scr-3.png" alt="Lazy Owl Image"></div>
+			                <div class="item"><img class="lazyOwl" data-src="images/scr-1.png" alt="Lazy Owl Image"></div>
+			                <div class="item"><img class="lazyOwl" data-src="images/scr-2.png" alt="Lazy Owl Image"></div>
+			                <div class="item"><img class="lazyOwl" data-src="images/scr-3.png" alt="Lazy Owl Image"></div>
+			                <div class="item"><img class="lazyOwl" data-src="images/scr-1.png" alt="Lazy Owl Image"></div>
+			                <div class="item"><img class="lazyOwl" data-src="images/scr-2.png" alt="Lazy Owl Image"></div>
+			                <div class="item"><img class="lazyOwl" data-src="images/scr-3.png" alt="Lazy Owl Image"></div>
+			                <div class="item"><img class="lazyOwl" data-src="images/scr-1.png" alt="Lazy Owl Image"></div>
+			                <div class="item"><img class="lazyOwl" data-src="images/scr-2.png" alt="Lazy Owl Image"></div>
+			                <div class="item"><img class="lazyOwl" data-src="images/scr-3.png" alt="Lazy Owl Image"></div>
+			                <div class="item"><img class="lazyOwl" data-src="images/scr-1.png" alt="Lazy Owl Image"></div>
+			                <div class="item"><img class="lazyOwl" data-src="images/scr-2.png" alt="Lazy Owl Image"></div>
+			                <div class="item"><img class="lazyOwl" data-src="images/scr-3.png" alt="Lazy Owl Image"></div>
+		               </div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="d-arrow2">
+		<a href="#posting" class="scroll"><img src="images/d-4.png" alt=""/></a>
+	</div>
+	</div>
+	<!--start-activity-->			
+	<!--start-posting-->
+	<div class="posting" id="posting">
+			<div class="posting-main">
+				<div class="col-md-6 post-left">
+					<h3>Powerful Posting</h3>
+					<p>Looking for a mature wine or something specific? Cellar has an intuitive interface for tracking bottles down quickly.</p>
+				</div>
+				<div class="col-md-6 post-right">
+					<img src="images/p-1.png" alt="" />
+				</div>
+				<div class="clearfix"></div>
+				<div class="d-arrow">
+					<a href="#price" class="scroll"><img src="images/d-3.png" alt="" /></a>
+				</div>
+			</div>
+	</div>
+	<!--end-posting-->
+	<!--start-price-->
+	<div class="price" id="price">
+		<div class="container">
+			<div class="price-mian">
+				<div class="col-md-4 price-left">
+					<div class="price-one">
+						<h4>Trial</h4>
+						<label>Free</label>
+						<ul>
+							<li><p>60 day free trial</p></li>
+							<li><p>Functional offline</p></li>
+							<li><p>Synced to cloud database</p></li>
+							<li><p>Unlimited Bottles</p></li>
+						</ul>
+						<div class="p-btn">
+							<a href="#">REGISTER</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 price-left active">
+					<div class="price-one">
+						<h4>Monthly</h4>
+						<label>$10 per month</label>
+						<ul>
+							<li><p>60 day free trial</p></li>
+							<li><p>Functional offline</p></li>
+							<li><p>Synced to cloud database</p></li>
+							<li><p>Unlimited Bottles</p></li>
+						</ul>
+						<div class="p-btn">
+							<a href="#">REGISTER</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 price-left">
+					<div class="price-one">
+						<h4>Yearly</h4>
+						<label>$100 per year</label>
+						<ul>
+							<li><p>60 day free trial</p></li>
+							<li><p>Functional offline</p></li>
+							<li><p>Synced to cloud database</p></li>
+							<li><p>Unlimited Bottles</p></li>
+						</ul>
+						<div class="p-btn">
+							<a href="#">REGISTER</a>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--end-price-->	
+	<!--start-footer-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-text">
+				<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+			</div>
+		</div>
+		 <script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>	
+	<!--end-footer-->	 
+</body>
+</html>

@@ -1,0 +1,1948 @@
+/* Color import */
+@import url("red.css");
+
+/* Mobile menu */
+.select-menu {
+  display: none; 
+}
+
+
+/*	Base */
+html {
+	overflow-y:auto;
+	background:#fff;	
+}
+
+:focus { outline-color: transparent!important; outline-style: none!important; }
+
+body {
+	margin: 0;
+	padding: 0;                      
+  font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #8c8e90;
+	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-text-size-adjust: 100%;	
+	cursor:default;
+  background:#323232;
+  overflow:hidden;
+}
+
+body::-webkit-scrollbar-corner { 
+  background-color:#323232; 
+}
+
+body::-webkit-scrollbar-track { 
+  background-color:#323232; 
+}
+
+body::-webkit-scrollbar {
+  width:10px;
+  height:10px;
+}
+
+#content {
+  position:relative;
+}
+
+#header {
+  position:relative;
+}
+
+#footer {
+  position:relative;
+}
+
+hr {
+  border-bottom:0px #E0E0E0 solid; 
+  border-top:0px #FFF solid; 
+}
+
+.hide-post {
+  display:none;
+}
+
+.strong {
+  font-weight:bold;
+}
+.icon-middle {
+  vertical-align: middle;
+  margin-right:10px;
+}
+
+
+
+a {
+  font-size:14px;
+  color: #8c8e90;
+  text-decoration:none;
+}
+
+a:hover {
+  font-size:14px;
+  text-decoration:none;
+}
+
+.white {
+  color:#FFF;
+}
+
+.white:hover {
+  color:#FFF;
+}
+
+.dark-color {
+  color:#2C2C2C;
+}
+
+/* Headings and text */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Caudex', Source Sans Pro; 
+  font-weight: normal;
+  line-height:100%;    
+  margin:0px;
+  clear:both;
+  display:block;
+  padding: 30px 20px 10px 30px;
+}
+
+h1 {
+  font-size:26px;
+  color: #111111; 
+  text-transform:uppercase; 
+}
+
+h2 {
+  text-transform:uppercase;
+  font-size:22px;
+  color: #111111; 
+}
+
+
+h3 {
+  text-transform:uppercase;
+  font-size:18px;
+ 	color: #222222;
+}
+
+h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size:18px;
+ 	color: #8c8e90;
+
+}
+
+h5 {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform:uppercase;
+  font-size:16px;
+ 	color: #111111;
+}
+
+h6 {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform:uppercase;
+  font-size:14px;
+ 	color: #111111;
+}
+
+p {
+  padding: 10px 30px 10px 30px;
+  margin:0px;
+  color: #8c8e90;
+}
+
+.small-text {
+  font-size:14px;
+  padding:10px;
+  height:auto;
+}
+
+.small-text-2 {
+  font-family: 'Source Sans Pro'; 
+  font-size:14px;
+  display:none;
+  padding:10px;
+}
+
+
+
+/* Lists */
+
+.list-1, .list-2 {
+  padding:10px 10px 0px 0px;
+  margin:0px;
+  list-style:none;
+}
+
+.list-1 a, .list-2 a{
+  text-decoration:none;
+  color: #8c8e90;  
+}
+
+.list-1 a:hover, .list-2 a:hover{
+  text-decoration:none;
+}
+
+.list-1 li {
+  list-style:none;
+  margin:0px 10px 15px 30px;
+}
+
+.list-1 i {
+  margin-right:5px;
+}
+
+.list-2 li {
+  list-style:none;
+  margin:0px 10px 5px 30px;
+}
+
+.list-2 i {
+  margin-right:5px;
+}
+
+
+/* Backgrounds */
+
+.white-background {
+  background-color: #fff;
+}
+
+.gray-background {
+  background-color: #222;
+}
+
+.dark-background {
+  background-color: #111;
+}
+
+.gray-background-1 {
+  background: rgb(245,245,245);
+  background: -moz-linear-gradient(top,  rgb(245,245,245) 0%, rgb(245,245,245) 25%, rgb(255,255,255) 75%, rgb(255,255,255) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(245,245,245)), color-stop(25%,rgb(245,245,245)), color-stop(75%,rgb(255,255,255)), color-stop(100%,rgb(255,255,255)));
+  background: -webkit-linear-gradient(top,  rgb(245,245,245) 0%,rgb(245,245,245) 25%,rgb(255,255,255) 75%,rgb(255,255,255) 100%);
+  background: -o-linear-gradient(top,  rgb(245,245,245) 0%,rgb(245,245,245) 25%,rgb(255,255,255) 75%,rgb(255,255,255) 100%);
+  background: -ms-linear-gradient(top,  rgb(245,245,245) 0%,rgb(245,245,245) 25%,rgb(255,255,255) 75%,rgb(255,255,255) 100%);
+  background: linear-gradient(to bottom,  rgb(245,245,245) 0%,rgb(245,245,245) 25%,rgb(255,255,255) 75%,rgb(255,255,255) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#ffffff',GradientType=0 );
+}
+.gray-background-2 {
+  background-color: #323232;
+}
+
+/* Header */
+
+.head-logo {
+    position:relative;
+    text-align:center;
+    float: left;
+}
+
+.logo-background {     
+  position:absolute; 
+  top:0; left:0;right:0; margin:0 auto;
+  margin-top:36%;
+  background: url(../img/logo-main.png) top left no-repeat;
+  height: 80px;
+  width:185px;
+  text-align: center;
+  line-height: 80px;
+  border:0px solid;
+}
+
+.logo-background a {
+  font-family: 'Caudex', Source Sans Pro; 
+  font-size:20px;
+  font-weight:normal;
+  letter-spacing:2px;
+}
+
+.logo-background-text {    
+ position:absolute; 
+  top:0; left:0;right:0; margin:0 auto;
+  margin-top:36%;
+  text-align: center;
+  text-transform:uppercase;
+}
+
+.logo-background-text-full {    
+ position:absolute; 
+  top:0; left:0;right:0; margin:0 auto;
+  margin-top:18%;
+  text-align: center;
+  text-transform:uppercase;
+}
+
+
+.logo-background-text p, .logo-background-text-full p{
+  font-family: 'Caudex', Source Sans Pro; 
+	line-height: 26px;
+  font-size:26px;
+  color: #FFF;
+  padding:0px
+  text-transform:uppercase;
+}
+
+.small {
+  font-size:13px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* Image style */
+
+img{
+  width:100%;
+  height:auto;
+}
+
+.square {
+  position:relative;
+  max-width:300px;
+}
+
+.square-ref {
+  position:relative;
+  max-width:300px;
+}
+
+
+.img-container {
+  position:relative;
+}
+
+.square-icon {
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:url(../img/300-267-hover.png) center center no-repeat;
+  cursor:pointer;
+  display:none;
+  max-width:300px;
+
+}
+
+
+.square:hover .square-icon {
+    display: block;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+
+/* Sliders */
+
+.flexslider {
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	margin: 0 0 0 0;
+  background-color: #101010;
+}
+
+
+.slider2 {
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	margin: 0 0 0 0;
+  background-color: transparent;
+  margin-bottom: 48px !important;
+}
+
+
+.slider2 .slides li {
+  width:100%;
+  margin:0px auto;
+  height:280px
+}
+
+.slider2 .slides img {
+  width:100%;
+  max-width:300px;
+  height:auto;
+  margin:0px auto;
+  max-height:280px;
+}
+
+
+
+.slider3 {
+	border: 0px solid;
+	border-radius: 0;
+	box-shadow: none;
+	margin:0px 0 0px 0 !important;
+  margin-bottom: 40px !important;
+  background-color: transparent; 
+}
+
+.slider3 .slides img {
+  width:100%;
+  height:auto;
+  vertical-align: middle;
+  display: inline;
+}
+
+/* our clients - slider */
+.slider4 {
+	border: 0px solid;
+	border-radius: 0;
+	box-shadow: none;
+	margin:0px 0 0px 0 !important;
+  margin-bottom: 40px !important;
+  background-color: transparent;
+ 
+}
+.slider4 .slides img {
+  width:auto;
+  height:auto;
+  vertical-align: middle;
+  display: inline;
+}
+
+
+.center {
+  text-align: center;
+  margin:0px auto;
+}
+
+
+/* Navigation	*/
+  
+.navbar {
+  position:relative;
+  background:#222222;
+  width:100%;
+  height:60px;
+  float:left;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+
+.navbar .nav {
+  background:#222222;
+}
+
+.navbar .nav > li {
+  position:relative;
+  border-right: 1px #323232 solid;
+}
+
+.navbar .nav > li > a {
+  position:relative;
+  height:20px;
+	color: #fff !important;
+  text-shadow: none;
+  padding:20px 30px 20px 30px; 
+}
+
+.navbar .nav > li:hover > a {
+	color:#fff;
+}
+
+.navbar .nav > li.active > a {
+	color:#fff;
+}
+
+/*  Navigation Dropdown */
+        
+  .navbar .nav li ul {
+  	display:none;
+  	z-index:9999;
+    position:relative;
+  	margin:0px; 
+    padding:10px 20px 8px 0px;
+    margin-top:0px !important;
+    list-style-type:none;
+    text-transform: none;
+  	 
+  }  
+  
+  
+.navbar .nav li ul:after {
+	content: ' ';
+  z-index:9999;
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 0px;
+	top: 0px;
+    
+}  
+       
+.navbar .nav li:hover ul {
+  position:absolute;
+  display:block;
+  list-style-type:none; 
+}  
+  
+.navbar .nav li ul li {
+  font-size:13px;
+  margin:0px; 
+  padding:0px;
+  width:200px;  
+  -webkit-transition:all 0.3s;
+  -moz-transition:all 0.3s;
+  -o-transition:all 0.3s;
+  -ms-transition:all 0.3s;
+  transition:all 0.3s;
+  cursor:pointer;
+}
+  
+
+  .navbar .nav li ul li a {
+    height:35px;
+    line-height:35px;
+    color:#fff;
+  	padding:0px 0px 0px 30px; 
+  	margin:0px;
+    display:block;
+    text-decoration:none;
+  }
+  
+  
+      .navbar .nav li ul a.last {
+     padding:0px 0px 20px 30px; 
+  }
+  
+   .navbar .nav li ul li a.first {
+     padding:20px 0px 0px 30px; 
+
+  }
+  
+     .navbar .nav li ul li a.single {
+     padding:10px 0px 10px 30px; 
+
+
+  }
+
+  .navbar .nav li ul li:hover a {
+  	color:#D9D9D9;
+  }
+  
+/* Tabs */
+
+
+.tabs-left > .nav-tabs li:hover  {
+border:none;
+background: #222;
+}
+
+.tabs-left > .nav-tabs {
+  float: left;
+  margin-right: 0px;
+  border-right: 0px solid #ddd;
+  border:none;
+  padding-bottom:30px;
+}
+
+.tabs-left > .nav-tabs > li > a {
+  margin: 0px;
+  -webkit-border-radius: 0px 0 0 0px;
+  -moz-border-radius: 0px 0 0 0px;
+  border-radius: 0px 0 0 0px;
+}
+
+.tabs-left > .nav-tabs li  {
+border:none;
+background-color: #222;
+margin:0px;
+padding:0px;
+
+}
+
+.tabs-left > .nav-tabs li:hover  {
+border:none;
+background: #222;
+}
+
+.tabs-left > .nav-tabs li a:hover {
+  border-right: 0px #323232 solid;
+  border-bottom: 0px #323232 solid;
+  background-color: #111;
+}
+
+.tabs-left > .nav-tabs li.active {
+  border-right: 0px #323232 solid;
+  border-bottom: 1px #323232 solid;
+  background-color: #111111;
+}
+
+.tabs-left > .nav-tabs li.active a {
+  border-right: 0px #323232 solid;
+  border-bottom: 0px #323232 solid;
+  background-color: #111111;
+}
+
+.tabs-left > .nav-tabs li.active a:hover {
+  border-right: 0px #323232 solid;
+  border-bottom: 0px #323232 solid;
+  background-color: #111111;
+}
+
+.tabs-left > .nav-tabs > li > a {
+  margin-right: 0;
+  margin-bottom: 0px;
+}
+
+.nav-tabs > li > a {
+  width: 120px;
+  margin-right: 0;
+  margin-bottom: 0px;
+}
+
+.tabs-left > .nav-tabs li  {
+  border-bottom:1px solid #323232;
+  background-color: #222;
+}
+
+.tabs-left > .nav-tabs li:hover  {
+  border-bottom:1px solid #323232;
+  background-color: #222;
+}
+
+.nav-tabs{
+  margin-bottom:0px !important;
+  border-bottom: 0px solid #DDDDDD;
+  background-color: #222; 
+}
+
+.tab-content {
+	border:none;
+	margin:0px;
+	padding:0px;
+	-webkit-border-radius: 0 0 0px 0px;
+	-moz-border-radius: 0 0 0px 0px;
+	border-radius: 0 0 0px 0px;
+  background-color: #111111;
+}  
+
+.nav-tabs li  {
+  border:none;
+  background-color: #222;
+  text-align:center;
+  margin:0px;
+  padding:0px;
+}
+
+.nav-tabs li:hover  {
+  border:none;
+  background: #222;
+}
+
+.nav-tabs > li > a {
+  border:none;
+  background-color: #222;
+	-webkit-border-radius: 0 0 0px 0px;
+	-moz-border-radius: 0 0 0px 0px;
+	border-radius: 0 0 0px 0px;
+  color: #fff;
+  display:block;
+  padding:20px 30px;
+  margin:0px;
+  border-right: 1px #323232 solid;
+}
+
+.tabs-left > .nav-tabs > li > a {
+  background-color: #222;
+	-webkit-border-radius: 0 0 0px 0px;
+	-moz-border-radius: 0 0 0px 0px;
+	border-radius: 0 0 0px 0px;
+  color: #fff;
+  display:block;
+  padding:20px 30px;
+  margin:0px;
+  border: 0px #323232 solid;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  text-align:left;
+  width: 121px;
+}
+
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
+    border:none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #111111;
+    border-color: #DDDDDD #DDDDDD transparent;
+    border-image: none;
+    border-style: solid;
+    border-width: 0px;
+    color: #fff;
+    cursor: default;
+}
+
+.nav-tabs li a:hover {
+  border-right: 1px #323232 solid;
+  background-color: #111111;
+}
+  
+.nav-tabs li.active {
+  border-right: 1px #323232 solid;
+  background-color: #111111;
+}
+
+
+.nav-tabs li.active a {
+  border-right: 0px #323232 solid;
+  background-color: #111111;
+}
+
+.nav-tabs li.active a:hover {
+  border-right: 0px #323232 solid;
+  background-color: #111111;
+}
+
+/* GRAY TABS */
+
+.nav-tabs.gray{
+  margin-bottom:0px !important;
+  border-bottom: 0px solid #DDDDDD;
+  background-color: #FBFBFB; 
+}
+
+
+.tab-content.gray {
+	border:none;
+	margin:0px;
+	padding:0px;
+	-webkit-border-radius: 0 0 0px 0px;
+	-moz-border-radius: 0 0 0px 0px;
+	border-radius: 0 0 0px 0px;
+  background-color: #fff;
+}  
+
+
+.nav-tabs.gray li  {
+  border:none;
+  background-color: #CCCCCC;
+  text-align:center;
+  margin:0px;
+  padding:0px;
+}
+
+.nav-tabs.gray li:hover  {
+  border:none;
+  background: #222;
+}
+
+.nav-tabs.gray > li > a {
+  border:none;
+  background-color: #CCCCCC;
+	-webkit-border-radius: 0 0 0px 0px;
+	-moz-border-radius: 0 0 0px 0px;
+	border-radius: 0 0 0px 0px;
+  color: #fff;
+  display:block;
+  padding:20px 20px;
+  margin:0px;
+  border-right: 0px #fff solid;
+}
+
+.nav-tabs.gray li a:hover {
+border-right: 0px #fff solid;
+background-color: #fff;
+color:#000;
+
+}
+
+.nav-tabs.gray li.active {
+  border-right: 0px #fff solid;
+  background-color: #fff;
+  color:#000;
+}
+
+.nav-tabs.gray li.active a {
+  border-right: 0px #fff solid;
+  background-color: #fff;
+  color:#000;
+}
+
+.nav-tabs.gray li.active a:hover {
+border-right: 0px #fff solid;
+background-color: #fff;
+color:#000;
+
+}
+
+/*  Forms	*/
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+display: inline-block;
+height: 20px;
+padding: 0px 12px;
+margin-bottom: 10px;
+font-size: 14px;
+line-height: 20px;
+color: #555555;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+vertical-align: middle;
+}
+
+/*form 404 */ 
+
+.form-404 {
+  border:0px solid;
+  overflow:hidden;
+  margin:20px;
+  margin:0px auto;
+  width:40%;
+}
+
+.form-404 input{
+  position:relative;
+  height:52px;
+  width:75%;
+  padding:0% 0%; 
+  margin:0px;
+  color:#999999;
+  background:#222222;
+  border-radius:0px;
+  border:0px;
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  outline:none;
+  text-indent: 10px;
+  float:left;
+}
+
+.form-404 .btn {
+  color:#fff;
+  line-height:52px;
+  width:23%;
+  padding:0px 1%;
+  margin:0px;
+  text-shadow:none;
+  border-radius:0px;
+  -webkit-box-shadow:rgba(0, 0, 0, 0) 0 0 0 !important;
+  box-shadow:rgba(0, 0, 0, 0) 0 0 0 !important;
+  border:0px;
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* form main */
+.form-main {
+  border:0px solid;
+  overflow:hidden;
+  padding:0px 30px 0px 30px;
+  margin:0px;
+}
+
+.form-main input:focus, .form-main textarea:focus, .form-404 input:focus, .form-search .search-input:focus   {
+ -webkit-box-shadow:rgba(0, 0, 0, 0.0) 0 0px 0px inset, rgba(0, 0, 0, 0.0) 0 0 0px;
+ border-color:rgba(0, 0, 0, 0.0);
+ box-shadow:rgba(0, 0, 0, 0.0) 0 0px 0px inset, rgba(0, 0, 0, 0.0) 0 0 0px;
+ outline:0;
+}
+
+.form-main input, .form-main textarea {
+  position:relative;
+  height:20px;
+  width:100%;
+  padding:10px 0px 10px 0px; 
+  margin-top:10px;
+  color:#999999;
+  background:#222222;
+  border-radius:0px;
+  border:0px;
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  outline:0;
+  text-indent: 10px;
+  outline: none;
+}
+
+.form-main textarea {
+  height:120px;
+  resize:none;
+  margin-bottom:0px;
+}
+
+.error {
+	display: none;
+}
+
+#ajaxsuccess {
+  font-size: 16px;
+  font-weight: bold;
+	width: 100%;
+	display: none;
+  clear: both;
+  color: #fff;
+}
+
+/*newsletter */
+  
+.nlsuccess {
+  width:100%;
+  color:#fff;
+  font-size:16px;
+  }
+  
+.nlerror {
+  width:100%;
+  color:#e61736;
+}  
+
+
+.thank {
+  padding-top:0px;
+  margin-bottom:0px;
+  line-height:52px;
+  height:52px;
+  font-size:14px;
+  width:100%;
+}
+  
+  
+    
+  /* Buttons  */
+  
+.btn {
+  color:#fff;
+  height:52px;
+  line-height:52px;
+  padding:0px 22px;
+  text-shadow:none;
+  border-radius:0px;
+  -webkit-box-shadow:rgba(0, 0, 0, 0) 0 0 0 !important;
+  box-shadow:rgba(0, 0, 0, 0) 0 0 0 !important;
+  border:0px;
+  margin-bottom:8px;
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.btn:focus {
+  color:#FFF;
+}
+
+.btn-small {
+  color:#fff;
+  height:32px;
+  line-height:32px;
+  padding:0px 18px;
+  text-shadow:none;
+  border-radius:0px;
+  -webkit-box-shadow:rgba(0, 0, 0, 0) 0 0 0 !important;
+  box-shadow:rgba(0, 0, 0, 0) 0 0 0 !important;
+  border:0px;
+  margin-bottom:8px;
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.btn-mini {
+  color:#fff;
+  height:22px;
+  line-height:16px;
+  padding:0px 14px;
+  text-shadow:none;
+  border-radius:0px;
+  -webkit-box-shadow:rgba(0, 0, 0, 0) 0 0 0 !important;
+  box-shadow:rgba(0, 0, 0, 0) 0 0 0 !important;
+  border:0px;
+  margin-bottom:8px;
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.btn-custom-color:hover {
+  color:#fff;
+  background:#fa2e43;
+}
+
+ /* Video content */
+.video-content{
+
+  height:300px;
+  width:100%;
+  margin:0px;
+  padding:0px;
+  margin-bottom:-5px;
+  border:none;
+  position:relative;
+}
+
+.video-content-post {
+  height:267px;
+  width:100%;
+  padding:0px;
+  margin:0px;
+  margin-bottom:-5px;
+  border:none;
+}
+
+
+/* Clients not in slider and clients say */
+.clients-not-slider {
+ height:auto;
+ border-bottom:0px solid;
+ overflow:hidden;
+ margin-top:1%;
+}
+
+.clients-not-slider img{
+ width:auto;
+ height:auto;
+
+}
+
+.client-says {
+  position: relative;
+  font-style: italic;
+  font-weight: normal;
+  border: 0px;
+  padding: 30px;
+  color: #FFF;
+  background: #222;
+}
+
+.client-says:after {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 40px;
+	bottom: -24px;
+	border: 12px solid;
+	border-color: #222 transparent transparent #222;
+}
+
+.client-says-2 {
+  position: relative;
+  font-style: italic;
+  color: #222;
+  text-align: right;
+  padding-top: 25px;
+  padding-right: 40px;
+  border:0px solid;
+}
+
+.client-name {
+  margin-left:60px;
+  float: left;
+  color: #e61736;
+}
+  
+
+/* Top log and bottom logo */
+.logo-top {
+  background: url(../img/logo.png) top left no-repeat;
+  height:60px; width:140px;text-align:center; overflow:hidden; border:0px solid; padding-top:0px;
+  margin-left:30px;
+  float:left;
+}
+
+.logo {
+  background: url(../img/logo.png) top left no-repeat;
+  height:60px; width:140px;text-align:center; overflow:hidden; border:0px solid; padding-top:0px;
+  margin:0px auto;
+  float:left;
+}
+ 
+  
+.logo .text, .logo-top .text {
+  height:60px;overflow:hidden; border:0px solid; padding-top:20px;
+  text-align:center;
+  color: #FFF;
+  font-family: 'Caudex', Source Sans Pro;
+  letter-spacing:2px;
+} 
+ 
+.text-custom-color {
+  height:60px;overflow:hidden; border:0px solid; padding-top:20px; padding-left:30px;
+  text-align:left; 
+}
+ 
+.entiri {
+  text-align:right;
+  font-size:12px;
+  margin-top:15px;
+} 
+
+.art {
+  margin-top:22px;
+  margin-right:30px;
+} 
+ 
+ 
+/* About */
+ 
+.about-i {
+  margin-bottom:15px;
+}
+ 
+.banner-about-normal {
+  display: table-cell;  vertical-align: middle; text-align:center; color:#2C2C2C;
+  font-size:22px;
+  font-family: 'Caudex', Source Sans Pro; 
+}
+ 
+.banner-out-about {
+  position:relative; float:center; width:100%; display: table; height:250px;
+
+}
+  
+.banner-about-normal:hover {
+  color: #FFF;
+  transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+}
+
+/* blog posts */
+.post {
+  border-bottom:1px #323232 solid;
+  border-right: 0px #323232 solid;
+  float:left;
+  margin-right: 0px;
+  width:299px;
+  background-color: #fff;
+}
+
+.ie8 .post {
+  width:239px;
+}
+
+.image-post a:hover{
+  color: #8c8e90;
+}
+
+.text-post {
+background-color: #fff;
+}
+
+.blockquote-post {
+  background-color:#E9E9E9;
+}
+
+
+.i-bg-post {
+margin:0px 30px;
+}
+
+.p-bq-post{
+ padding:10px 55px;
+}
+
+.link-post {
+  background-color: #111;
+}
+
+.link-post h4{
+  padding-top:10px;
+  color: #FFF; 
+}
+
+.link-post a:hover h4{
+  color: #FFF; 
+}
+
+.link-post a:hover h5{
+  color: #FFF; 
+}
+
+
+
+.link-post a:hover{
+  color: #FFF; 
+}
+  
+  /*  Team */
+    
+.team {
+  width:60%;
+  display:inline-block;
+  overflow:hidden;
+}
+  
+  /* Comments */
+  
+  .comment-title h2, .contact-form-title h2 {
+    padding-bottom:5px;
+  }
+  .comment h6 {
+  padding:9px 30px 5px 0px;
+}
+
+  .comment {
+    margin-bottom:30px;
+    padding-left:120px;
+    background:url('../img/comment-img.png') 30px 10px no-repeat;
+  }
+  .comment p {
+   padding:10px 30px 10px 0px; 
+  }
+
+  .comment-author {
+  text-transform: uppercase;
+    color: #323232;
+    font-weight:normal;
+    padding:6px 30px 5px 0px; 
+  }
+  
+
+  
+  .comment-date {
+    font-size:13px;
+    padding:0px 30px 0px 0px; 
+  }
+
+  
+  .comment-margin-90 {
+    margin-left:90px;
+  }
+  
+  .comment-margin-180 {
+    margin-left:180px;
+  }
+  
+  .comment-line {
+
+  width:96%; border-bottom:1px #E0E0E0 solid; border-top:0px #FFF solid; margin-left:0px;
+} 
+
+
+  
+ /* Scrollable content classes */ 
+  
+.scrollable {
+height:420px;
+} 
+
+.scrollable-2 {
+height:520px;
+}
+
+.ie8 .scrollable-2 {
+height:416px;
+}
+
+.scrollable-3 {
+height: 175px;
+}
+
+.scrollable-4 {
+height:420px;
+} 
+
+.scrollable-5 {
+height:230px;
+} 
+
+.non-scrollable-3 {
+  height:170px;
+}
+  
+  
+ /* Table */
+ 
+.table {
+  width: 90%;
+  margin-bottom: 20px;
+  margin-left:30px;
+}
+
+ 
+.table-bordered {
+  border: 1px solid #FFF;
+  border-collapse: separate;
+  border-left: 0;
+}
+
+.table-bordered th, .table-bordered td {
+  border-left: 1px solid #fff;
+}
+
+.table th, .table td {
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #FFF;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px; 
+}
+
+
+.table-bordered thead:first-child tr:first-child>th:first-child, .table-bordered tbody:first-child tr:first-child>td:first-child, .table-bordered tbody:first-child tr:first-child>th:first-child {
+  -webkit-border-top-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  border-top-left-radius: 0px;
+}
+
+.table-bordered thead:last-child tr:last-child>th:first-child, .table-bordered tbody:last-child tr:last-child>td:first-child, .table-bordered tbody:last-child tr:last-child>th:first-child, .table-bordered tfoot:last-child tr:last-child>td:first-child, .table-bordered tfoot:last-child tr:last-child>th:first-child {
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.table-bordered thead:first-child tr:first-child>th:last-child, .table-bordered tbody:first-child tr:first-child>td:last-child, .table-bordered tbody:first-child tr:first-child>th:last-child {
+  -webkit-border-top-right-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  border-top-right-radius: 0px;
+}
+
+.table-bordered thead:last-child tr:last-child>th:last-child, .table-bordered tbody:last-child tr:last-child>td:last-child, .table-bordered tbody:last-child tr:last-child>th:last-child, .table-bordered tfoot:last-child tr:last-child>td:last-child, .table-bordered tfoot:last-child tr:last-child>th:last-child {
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+  background-color: #525252;
+  color: #FFF;
+}
+  
+  
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+  background-color: #EBEBEB;
+}  
+
+.table-hover tbody tr:hover>td, .table-hover tbody tr:hover>th {
+  color: #111111;
+}
+
+.table-hover tbody tr:hover>td, 
+.table-hover tbody tr:hover>th {
+  background-color: #C8C8C8;
+}
+
+
+.write-comment {
+padding-top: 5px;
+display: block;
+max-width: 200px;
+margin: 0px auto;
+}
+  
+
+.team-people {
+
+ padding-bottom: 0px;
+}
+ 
+  /* Portfolio */
+  
+.portfolio{
+  overflow:hidden;
+  max-width:300px;
+  max-height:267px; 
+  height:100%;
+  width:100%;
+}  
+  
+.portfolio .overlay{
+  position: absolute; 
+  display: none; 
+  height:100%; 
+  width:100%; /*
+  max-width:300px;
+  max-height:225px; */ 
+  left: 0; 
+  bottom: 0; 
+  background: url('../img/300-267-hover.png') center;
+
+}
+
+.overlay-content{
+  font-weight:bold;
+  text-align:center;
+  opacity: 1; 
+}
+
+.overlay-content .title-overlay{
+  position:absolute;
+  top:10px;
+  font-size:18px;
+  width:100%;
+}
+
+.overlay-content .text-overlay{
+  font-family: 'Source Sans Pro', sans-serif;
+  position:absolute;
+  font-size:18px;
+  width:100%;
+  color: #FFF;
+  bottom:15%;
+}
+
+.portfolio a{
+  position: relative;
+  display: block; 
+  height:100%;  
+}
+
+.thumbnail {
+	margin: 0 0 0px 0;
+  padding:0px;
+  border:0px solid #FFF;
+}
+
+
+/*  Accordion  */
+
+.accordion-group {
+  border-radius:0px !important;
+  border:0px;
+  margin-bottom:1px !important;
+  padding:0px 30px 0px 0px;
+}
+ 
+.accordion-heading {
+  background:#EBEBEB; 
+}
+
+.accordion-heading a {
+  color: #222222; 
+}
+
+.accordion-inner {
+  background:#FAFAFA; 
+  border:0px solid #e5e5e5;
+  padding:30px 20px !important;     
+}
+
+.accordion-toggle {
+  padding:20px !important;
+  padding-left:60px !important;  
+  background: url(../img/accordion-toogle.png) 20px center no-repeat;
+
+}
+.accordion-active {
+  padding-left:60px !important; 
+  background: url(../img/accordion-active.png) 20px center no-repeat;
+}
+
+/* Blockquote */
+
+blockquote {
+  margin: 10px 30px;
+  border-left: 5px solid #CBCBCB;
+}
+
+/*  Alerts  */
+       
+.alert {
+  padding: 20px 35px 20px 14px;
+  margin:0px 0px 10px 30px;
+  color:#789ab9;
+  border-radius:0px;
+  border:0px !important;
+  text-shadow:none !important;
+}
+  
+.alert-error {
+  color:#fff;
+}
+
+.alert-info {
+  color:#7f7e00;
+  background:#dfde88;
+}
+
+.alert-success {
+  color:#fff;
+  background:#6ac663;
+}
+
+.alert-normal {
+background: #e4f2ff;
+}
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+/* 404 Error */
+
+.error-404{
+  text-align: center;
+  overflow: hidden;
+  border: 0px solid;
+  padding-top: 0px;
+  margin: 0px auto;
+}
+
+.error-404 img {
+  max-width:300px;
+}
+
+/*	Social Networks Icons */
+   
+.social-form {
+  padding:27px 30px 0px 30px;
+}   
+            
+.social-network, .social-network-2, .social-network-3 { 
+	display:inline-block; 
+	background: url(../img/social-networks.png) no-repeat top left; 
+	width: 50px; 
+	height: 50px; 
+  margin: 0px 4px 0px 0px;
+	background-position-y: -50px; 
+	-webkit-transition:all 0.2s ease;
+	-moz-transition:all 0.2s ease;
+	-o-transition:all 0.2s ease;
+	-ms-transition:all 0.2s ease;
+	transition:all 0.2s ease;
+	cursor:pointer;
+}
+
+.social-network-2 {
+	background: url(../img/social-networks-2.png) no-repeat top left; 
+	width: 30px; 
+	height: 30px; 
+	background-position-y: -30px; 
+}
+
+.social-network-3 {
+	background: url(../img/social-networks-3.png) no-repeat top left; 
+	width: 60px; 
+	height: 60px; 
+	background-position-y: -60px; 
+}
+
+/* normal */
+.social-network.aim{ background-position: 0 -50px}
+.social-network.amazon{ background-position: -50px -50px}
+.social-network.apple{ background-position: -100px -50px}
+.social-network.behance{ background-position: -150px -50px}
+.social-network.blogger{ background-position: -200px -50px}
+.social-network.delicious{ background-position: -250px -50px}
+.social-network.deviantart{ background-position: -300px -50px}
+.social-network.digg{ background-position: -350px -50px}
+.social-network.dribble{ background-position: -400px -50px}
+.social-network.ebay{ background-position: -450px -50px}
+.social-network.evernote{ background-position: -500px -50px}
+.social-network.facebook{ background-position: -550px -50px}
+.social-network.feedburner{ background-position: -600px -50px}
+.social-network.flickr{ background-position: -650px -50px}
+.social-network.forrst{ background-position: -700px -50px}
+.social-network.foursquare{ background-position: -750px -50px}
+.social-network.github{ background-position: -800px -50px}
+.social-network.google{ background-position: -850px -50px}
+.social-network.gowalla{ background-position: -900px -50px}
+.social-network.icq{ background-position: -950px -50px}
+.social-network.itunes{ background-position: -1000px -50px}
+.social-network.lastfm{ background-position: -1050px -50px}
+.social-network.linkedin{ background-position: -1100px -50px}
+.social-network.meetup{ background-position: -1150px -50px}
+.social-network.myspace{ background-position: -1200px -50px}
+.social-network.newsvine{ background-position: -1250px -50px}
+.social-network.openid{ background-position: -1300px -50px}
+.social-network.paypal{ background-position: -1350px -50px}
+.social-network.picasa{ background-position: -1400px -50px}
+.social-network.pinterest{ background-position: -1450px -50px}
+.social-network.posterous{ background-position: -1500px -50px}
+.social-network.reddit{ background-position: -1550px -50px}
+.social-network.rss{ background-position: -1600px -50px}
+.social-network.skype{ background-position: -1650px -50px}
+.social-network.slashdot{ background-position: -1700px -50px}
+.social-network.soundcloud{ background-position: -1750px -50px}
+.social-network.stumbleupon{ background-position: -1800px -50px}
+.social-network.technorati{ background-position: -1850px -50px}
+.social-network.tumblr{ background-position: -1900px -50px}
+.social-network.twitter{ background-position: -1950px -50px}
+.social-network.viddler{ background-position: -2000px -50px}
+.social-network.vimeo{ background-position: -2050px -50px}
+.social-network.virb{ background-position: -2100px -50px}
+.social-network.wordpress{ background-position: -2150px -50px}
+.social-network.xing{ background-position: -2200px -50px}
+.social-network.yahoo{ background-position: -2250px -50px}
+.social-network.yelp{ background-position: -2300px -50px}
+.social-network.youtube{ background-position: -2350px -50px}
+.social-network.zerply{ background-position: -2400px -50px}
+
+/* mouseover */
+.social-network.aim:hover,.active.social-network.aim{ background-position: 0 0px}
+.social-network.amazon:hover,.active.social-network.amazon{ background-position: -50px 0px}
+.social-network.apple:hover,.active.social-network.apple{ background-position: -100px 0px}
+.social-network.behance:hover,.active.social-network.behance{ background-position: -150px 0px}
+.social-network.blogger:hover,.active.social-network.blogger{ background-position: -200px 0px}
+.social-network.delicious:hover,.active.social-network.delicious{ background-position: -250px 0px}
+.social-network.deviantart:hover,.active.social-network.deviantart{ background-position: -300px 0px}
+.social-network.digg:hover,.active.social-network.digg{ background-position: -350px 0px}
+.social-network.dribble:hover,.active.social-network.dribble{ background-position: -400px 0px}
+.social-network.ebay:hover,.active.social-network.ebay{ background-position: -450px 0px}
+.social-network.evernote:hover,.active.social-network.evernote{ background-position: -500px 0px}
+.social-network.facebook:hover,.active.social-network.facebook{ background-position: -550px 0px}
+.social-network.feedburner:hover,.active.social-network.feedburner{ background-position: -600px 0px}
+.social-network.flickr:hover,.active.social-network.flickr{ background-position: -650px 0px}
+.social-network.forrst:hover,.active.social-network.forrst{ background-position: -700px 0px}
+.social-network.foursquare:hover,.active.social-network.foursquare{ background-position: -750px 0px}
+.social-network.github:hover,.active.social-network.github{ background-position: -800px 0px}
+.social-network.google:hover,.active.social-network.google{ background-position: -850px 0px}
+.social-network.gowalla:hover,.active.social-network.gowalla{ background-position: -900px 0px}
+.social-network.icq:hover,.active.social-network.icq{ background-position: -950px 0px}
+.social-network.itunes:hover,.active.social-network.itunes{ background-position: -1000px 0px}
+.social-network.lastfm:hover,.active.social-network.lastfm{ background-position: -1050px 0px}
+.social-network.linkedin:hover,.active.social-network.linkedin{ background-position: -1100px 0px}
+.social-network.meetup:hover,.active.social-network.meetup{ background-position: -1150px 0px}
+.social-network.myspace:hover,.active.social-network.myspace{ background-position: -1200px 0px}
+.social-network.newsvine:hover,.active.social-network.newsvine{ background-position: -1250px 0px}
+.social-network.openid:hover,.active.social-network.openid{ background-position: -1300px 0px}
+.social-network.paypal:hover,.active.social-network.paypal{ background-position: -1350px 0px}
+.social-network.picasa:hover,.active.social-network.picasa{ background-position: -1400px 0px}
+.social-network.pinterest:hover,.active.social-network.pinterest{ background-position: -1450px 0px}
+.social-network.posterous:hover,.active.social-network.posterous{ background-position: -1500px 0px}
+.social-network.reddit:hover,.active.social-network.reddit{ background-position: -1550px 0px}
+.social-network.rss:hover,.active.social-network.rss{ background-position: -1600px 0px}
+.social-network.skype:hover,.active.social-network.skype{ background-position: -1650px 0px}
+.social-network.slashdot:hover,.active.social-network.slashdot{ background-position: -1700px 0px}
+.social-network.soundcloud:hover,.active.social-network.soundcloud{ background-position: -1750px 0px}
+.social-network.stumbleupon:hover,.active.social-network.stumbleupon{ background-position: -1800px 0px}
+.social-network.technorati:hover,.active.social-network.technorati{ background-position: -1850px 0px}
+.social-network.tumblr:hover,.active.social-network.tumblr{ background-position: -1900px 0px}
+.social-network.twitter:hover,.active.social-network.twitter{ background-position: -1950px 0px}
+.social-network.viddler:hover,.active.social-network.viddler{ background-position: -2000px 0px}
+.social-network.vimeo:hover,.active.social-network.vimeo{ background-position: -2050px 0px}
+.social-network.virb:hover,.active.social-network.virb{ background-position: -2100px 0px}
+.social-network.wordpress:hover,.active.social-network.wordpress{ background-position: -2150px 0px}
+.social-network.xing:hover,.active.social-network.xing{ background-position: -2200px 0px}
+.social-network.yahoo:hover,.active.social-network.yahoo{ background-position: -2250px 0px}
+.social-network.yelp:hover,.active.social-network.yelp{ background-position: -2300px 0px}
+.social-network.youtube:hover,.active.social-network.youtube{ background-position: -2350px 0px}
+.social-network.zerply:hover,.active.social-network.zerply{ background-position: -2400px 0px}
+
+/* social network 2 normal */
+.social-network-2.aim{ background-position: 0 -30px}
+.social-network-2.amazon{ background-position: -30px -30px}
+.social-network-2.apple{ background-position: -60px -30px}
+.social-network-2.behance{ background-position: -90px -30px}
+.social-network-2.blogger{ background-position: -120px -30px}
+.social-network-2.delicious{ background-position: -150px -30px}
+.social-network-2.deviantart{ background-position: -180px -30px}
+.social-network-2.digg{ background-position: -210px -30px}
+.social-network-2.dribble{ background-position: -240px -30px}
+.social-network-2.ebay{ background-position: -270px -30px}
+.social-network-2.evernote{ background-position: -300px -30px}
+.social-network-2.facebook{ background-position: -330px -30px}
+.social-network-2.feedburner{ background-position: -360px -30px}
+.social-network-2.flickr{ background-position: -390px -30px}
+.social-network-2.forrst{ background-position: -420px -30px}
+.social-network-2.foursquare{ background-position: -450px -30px}
+.social-network-2.github{ background-position: -480px -30px}
+.social-network-2.google{ background-position: -510px -30px}
+.social-network-2.gowalla{ background-position: -540px -30px}
+.social-network-2.icq{ background-position: -570px -30px}
+.social-network-2.itunes{ background-position: -600px -30px}
+.social-network-2.lastfm{ background-position: -630px -30px}
+.social-network-2.linkedin{ background-position: -660px -30px}
+.social-network-2.meetup{ background-position: -690px -30px}
+.social-network-2.myspace{ background-position: -720px -30px}
+.social-network-2.newsvine{ background-position: -750px -30px}
+.social-network-2.openid{ background-position: -780px -30px}
+.social-network-2.paypal{ background-position: -810px -30px}
+.social-network-2.picasa{ background-position: -840px -30px}
+.social-network-2.pinterest{ background-position: -870px -30px}
+.social-network-2.posterous{ background-position: -900px -30px}
+.social-network-2.reddit{ background-position: -930px -30px}
+.social-network-2.rss{ background-position: -960px -30px}
+.social-network-2.skype{ background-position: -990px -30px}
+.social-network-2.slashdot{ background-position: -1020px -30px}
+.social-network-2.soundcloud{ background-position: -1050px -30px}
+.social-network-2.stumbleupon{ background-position: -1080px -30px}
+.social-network-2.technorati{ background-position: -1110px -30px}
+.social-network-2.tumblr{ background-position: -1140px -30px}
+.social-network-2.twitter{ background-position: -1170px -30px}
+.social-network-2.viddler{ background-position: -1200px -30px}
+.social-network-2.vimeo{ background-position: -1230px -30px}
+.social-network-2.virb{ background-position: -1260px -30px}
+.social-network-2.wordpress{ background-position: -1290px -30px}
+.social-network-2.xing{ background-position: -1320px -30px}
+.social-network-2.yahoo{ background-position: -1350px -30px}
+.social-network-2.yelp{ background-position: -1380px -30px}
+.social-network-2.youtube{ background-position: -1410px -30px}
+.social-network-2.zerply{ background-position: -1440px -30px}
+
+/* social network 2 mouseover */
+.social-network-2.aim:hover,.active.social-network-2.aim{ background-position: 0 0px}
+.social-network-2.amazon:hover,.active.social-network-2.amazon{ background-position: -30px 0px}
+.social-network-2.apple:hover,.active.social-network-2.apple{ background-position: -60px 0px}
+.social-network-2.behance:hover,.active.social-network-2.behance{ background-position: -90px 0px}
+.social-network-2.blogger:hover,.active.social-network-2.blogger{ background-position: -120px 0px}
+.social-network-2.delicious:hover,.active.social-network-2.delicious{ background-position: -150px 0px}
+.social-network-2.deviantart:hover,.active.social-network-2.deviantart{ background-position: -180px 0px}
+.social-network-2.digg:hover,.active.social-network-2.digg{ background-position: -210px 0px}
+.social-network-2.dribble:hover,.active.social-network-2.dribble{ background-position: -240px 0px}
+.social-network-2.ebay:hover,.active.social-network-2.ebay{ background-position: -270px 0px}
+.social-network-2.evernote:hover,.active.social-network-2.evernote{ background-position: -300px 0px}
+.social-network-2.facebook:hover,.active.social-network-2.facebook{ background-position: -330px 0px}
+.social-network-2.feedburner:hover,.active.social-network-2.feedburner{ background-position: -360px 0px}
+.social-network-2.flickr:hover,.active.social-network-2.flickr{ background-position: -390px 0px}
+.social-network-2.forrst:hover,.active.social-network-2.forrst{ background-position: -420px 0px}
+.social-network-2.foursquare:hover,.active.social-network-2.foursquare{ background-position: -450px 0px}
+.social-network-2.github:hover,.active.social-network-2.github{ background-position: -480px 0px}
+.social-network-2.google:hover,.active.social-network-2.google{ background-position: -510px 0px}
+.social-network-2.gowalla:hover,.active.social-network-2.gowalla{ background-position: -540px 0px}
+.social-network-2.icq:hover,.active.social-network-2.icq{ background-position: -570px 0px}
+.social-network-2.itunes:hover,.active.social-network-2.itunes{ background-position: -600px 0px}
+.social-network-2.lastfm:hover,.active.social-network-2.lastfm{ background-position: -630px 0px}
+.social-network-2.linkedin:hover,.active.social-network-2.linkedin{ background-position: -660px 0px}
+.social-network-2.meetup:hover,.active.social-network-2.meetup{ background-position: -690px 0px}
+.social-network-2.myspace:hover,.active.social-network-2.myspace{ background-position: -720px 0px}
+.social-network-2.newsvine:hover,.active.social-network-2.newsvine{ background-position: -750px 0px}
+.social-network-2.openid:hover,.active.social-network-2.openid{ background-position: -780px 0px}
+.social-network-2.paypal:hover,.active.social-network-2.paypal{ background-position: -810px 0px}
+.social-network-2.picasa:hover,.active.social-network-2.picasa{ background-position: -840px 0px}
+.social-network-2.pinterest:hover,.active.social-network-2.pinterest{ background-position: -870px 0px}
+.social-network-2.posterous:hover,.active.social-network-2.posterous{ background-position: -900px 0px}
+.social-network-2.reddit:hover,.active.social-network-2.reddit{ background-position: -930px 0px}
+.social-network-2.rss:hover,.active.social-network-2.rss{ background-position: -960px 0px}
+.social-network-2.skype:hover,.active.social-network-2.skype{ background-position: -990px 0px}
+.social-network-2.slashdot:hover,.active.social-network-2.slashdot{ background-position: -1020px 0px}
+.social-network-2.soundcloud:hover,.active.social-network-2.soundcloud{ background-position: -1050px 0px}
+.social-network-2.stumbleupon:hover,.active.social-network-2.stumbleupon{ background-position: -1080px 0px}
+.social-network-2.technorati:hover,.active.social-network-2.technorati{ background-position: -1110px 0px}
+.social-network-2.tumblr:hover,.active.social-network-2.tumblr{ background-position: -1140px 0px}
+.social-network-2.twitter:hover,.active.social-network-2.twitter{ background-position: -1170px 0px}
+.social-network-2.viddler:hover,.active.social-network-2.viddler{ background-position: -1200px 0px}
+.social-network-2.vimeo:hover,.active.social-network-2.vimeo{ background-position: -1230px 0px}
+.social-network-2.virb:hover,.active.social-network-2.virb{ background-position: -1260px 0px}
+.social-network-2.wordpress:hover,.active.social-network-2.wordpress{ background-position: -1290px 0px}
+.social-network-2.xing:hover,.active.social-network-2.xing{ background-position: -1320px 0px}
+.social-network-2.yahoo:hover,.active.social-network-2.yahoo{ background-position: -1350px 0px}
+.social-network-2.yelp:hover,.active.social-network-2.yelp{ background-position: -1380px 0px}
+.social-network-2.youtube:hover,.active.social-network-2.youtube{ background-position: -1410px 0px}
+.social-network-2.zerply:hover,.active.social-network-2.zerply{ background-position: -1440px 0px}
+
+/* social network 3 normal */
+.social-network-3.aim{ background-position: 0 -60px}
+.social-network-3.amazon{ background-position: -60px -60px}
+.social-network-3.apple{ background-position: -120px -60px}
+.social-network-3.behance{ background-position: -180px -60px}
+.social-network-3.blogger{ background-position: -240px -60px}
+.social-network-3.delicious{ background-position: -300px -60px}
+.social-network-3.deviantart{ background-position: -360px -60px}
+.social-network-3.digg{ background-position: -420px -60px}
+.social-network-3.dribble{ background-position: -480px -60px}
+.social-network-3.ebay{ background-position: -540px -60px}
+.social-network-3.evernote{ background-position: -600px -60px}
+.social-network-3.facebook{ background-position: -660px -60px}
+.social-network-3.feedburner{ background-position: -720px -60px}
+.social-network-3.flickr{ background-position: -780px -60px}
+.social-network-3.forrst{ background-position: -840px -60px}
+.social-network-3.foursquare{ background-position: -900px -60px}
+.social-network-3.github{ background-position: -960px -60px}
+.social-network-3.google{ background-position: -1020px -60px}
+.social-network-3.gowalla{ background-position: -1080px -60px}
+.social-network-3.icq{ background-position: -1140px -60px}
+.social-network-3.itunes{ background-position: -1200px -60px}
+.social-network-3.lastfm{ background-position: -1260px -60px}
+.social-network-3.linkedin{ background-position: -1320px -60px}
+.social-network-3.meetup{ background-position: -1380px -60px}
+.social-network-3.myspace{ background-position: -1440px -60px}
+.social-network-3.newsvine{ background-position: -1500px -60px}
+.social-network-3.openid{ background-position: -1560px -60px}
+.social-network-3.paypal{ background-position: -1620px -60px}
+.social-network-3.picasa{ background-position: -1680px -60px}
+.social-network-3.pinterest{ background-position: -1740px -60px}
+.social-network-3.posterous{ background-position: -1800px -60px}
+.social-network-3.reddit{ background-position: -1860px -60px}
+.social-network-3.rss{ background-position: -1920px -60px}
+.social-network-3.skype{ background-position: -1980px -60px}
+.social-network-3.slashdot{ background-position: -2040px -60px}
+.social-network-3.soundcloud{ background-position: -2100px -60px}
+.social-network-3.stumbleupon{ background-position: -2160px -60px}
+.social-network-3.technorati{ background-position: -2220px -60px}
+.social-network-3.tumblr{ background-position: -2280px -60px}
+.social-network-3.twitter{ background-position: -2340px -60px}
+.social-network-3.viddler{ background-position: -2400px -60px}
+.social-network-3.vimeo{ background-position: -2460px -60px}
+.social-network-3.virb{ background-position: -2520px -60px}
+.social-network-3.wordpress{ background-position: -2580px -60px}
+.social-network-3.xing{ background-position: -2640px -60px}
+.social-network-3.yahoo{ background-position: -2700px -60px}
+.social-network-3.yelp{ background-position: -2760px -60px}
+.social-network-3.youtube{ background-position: -2820px -60px}
+.social-network-3.zerply{ background-position: -2880px -60px}
+
+/* social network 3 mouseover */
+.social-network-3.aim:hover,.active.social-network-3.aim{ background-position: 0 0px}
+.social-network-3.amazon:hover,.active.social-network-3.amazon{ background-position: -60px 0px}
+.social-network-3.apple:hover,.active.social-network-3.apple{ background-position: -120px 0px}
+.social-network-3.behance:hover,.active.social-network-3.behance{ background-position: -180px 0px}
+.social-network-3.blogger:hover,.active.social-network-3.blogger{ background-position: -240px 0px}
+.social-network-3.delicious:hover,.active.social-network-3.delicious{ background-position: -300px 0px}
+.social-network-3.deviantart:hover,.active.social-network-3.deviantart{ background-position: -360px 0px}
+.social-network-3.digg:hover,.active.social-network-3.digg{ background-position: -420px 0px}
+.social-network-3.dribble:hover,.active.social-network-3.dribble{ background-position: -480px 0px}
+.social-network-3.ebay:hover,.active.social-network-3.ebay{ background-position: -540px 0px}
+.social-network-3.evernote:hover,.active.social-network-3.evernote{ background-position: -600px 0px}
+.social-network-3.facebook:hover,.active.social-network-3.facebook{ background-position: -660px 0px}
+.social-network-3.feedburner:hover,.active.social-network-3.feedburner{ background-position: -720px 0px}
+.social-network-3.flickr:hover,.active.social-network-3.flickr{ background-position: -780px 0px}
+.social-network-3.forrst:hover,.active.social-network-3.forrst{ background-position: -840px 0px}
+.social-network-3.foursquare:hover,.active.social-network-3.foursquare{ background-position: -900px 0px}
+.social-network-3.github:hover,.active.social-network-3.github{ background-position: -960px 0px}
+.social-network-3.google:hover,.active.social-network-3.google{ background-position: -1020px 0px}
+.social-network-3.gowalla:hover,.active.social-network-3.gowalla{ background-position: -1080px 0px}
+.social-network-3.icq:hover,.active.social-network-3.icq{ background-position: -1140px 0px}
+.social-network-3.itunes:hover,.active.social-network-3.itunes{ background-position: -1200px 0px}
+.social-network-3.lastfm:hover,.active.social-network-3.lastfm{ background-position: -1260px 0px}
+.social-network-3.linkedin:hover,.active.social-network-3.linkedin{ background-position: -1320px 0px}
+.social-network-3.meetup:hover,.active.social-network-3.meetup{ background-position: -1380px 0px}
+.social-network-3.myspace:hover,.active.social-network-3.myspace{ background-position: -1440px 0px}
+.social-network-3.newsvine:hover,.active.social-network-3.newsvine{ background-position: -1500px 0px}
+.social-network-3.openid:hover,.active.social-network-3.openid{ background-position: -1560px 0px}
+.social-network-3.paypal:hover,.active.social-network-3.paypal{ background-position: -1620px 0px}
+.social-network-3.picasa:hover,.active.social-network-3.picasa{ background-position: -1680px 0px}
+.social-network-3.pinterest:hover,.active.social-network-3.pinterest{ background-position: -1740px 0px}
+.social-network-3.posterous:hover,.active.social-network-3.posterous{ background-position: -1800px 0px}
+.social-network-3.reddit:hover,.active.social-network-3.reddit{ background-position: -1860px 0px}
+.social-network-3.rss:hover,.active.social-network-3.rss{ background-position: -1920px 0px}
+.social-network-3.skype:hover,.active.social-network-3.skype{ background-position: -1980px 0px}
+.social-network-3.slashdot:hover,.active.social-network-3.slashdot{ background-position: -2040px 0px}
+.social-network-3.soundcloud:hover,.active.social-network-3.soundcloud{ background-position: -2100px 0px}
+.social-network-3.stumbleupon:hover,.active.social-network-3.stumbleupon{ background-position: -2160px 0px}
+.social-network-3.technorati:hover,.active.social-network-3.technorati{ background-position: -2220px 0px}
+.social-network-3.tumblr:hover,.active.social-network-3.tumblr{ background-position: -2280px 0px}
+.social-network-3.twitter:hover,.active.social-network-3.twitter{ background-position: -2340px 0px}
+.social-network-3.viddler:hover,.active.social-network-3.viddler{ background-position: -2400px 0px}
+.social-network-3.vimeo:hover,.active.social-network-3.vimeo{ background-position: -2460px 0px}
+.social-network-3.virb:hover,.active.social-network-3.virb{ background-position: -2520px 0px}
+.social-network-3.wordpress:hover,.active.social-network-3.wordpress{ background-position: -2580px 0px}
+.social-network-3.xing:hover,.active.social-network-3.xing{ background-position: -2640px 0px}
+.social-network-3.yahoo:hover,.active.social-network-3.yahoo{ background-position: -2700px 0px}
+.social-network-3.yelp:hover,.active.social-network-3.yelp{ background-position: -2760px 0px}
+.social-network-3.youtube:hover,.active.social-network-3.youtube{ background-position: -2820px 0px}
+.social-network-3.zerply:hover,.active.social-network-3.zerply{ background-position: -2880px 0px}
+
+/* Spacer classes */
+
+.spacer1 {
+  height: 1px !important;
+}
+
+.spacer5 {
+  height: 5px !important;
+}
+  
+.spacer10 {
+  height: 10px !important;
+}
+  
+.spacer15 {
+  height: 15px !important;
+}
+  
+.spacer20 {
+  height: 20px !important;
+}
+
+.spacer25 {
+  height: 25px !important;
+}
+  
+.spacer30 {
+  height: 30px !important;
+}
+
+.spacer35 {
+  height: 35px !important;
+}
+  
+.spacer40 {
+  height: 40px !important;
+}
+  
+.spacer45 {
+  height: 45px !important;
+}
+  
+.spacer50 {
+  height: 50px !important;
+}
+
+.spacer55 {
+  height: 55px !important;
+}
+
+.spacer60 {
+  height: 60px !important;
+}
+
+.spacer65 {
+  height: 65px !important;
+}
+  
+.spacer70 {
+  height: 70px !important;
+}
+
+.spacer75 {
+  height: 75px !important;
+}
+
+.spacer80 {
+  height: 80px !important;
+}
+
+.spacer85 {
+  height: 85px !important;
+}
+
+.spacer90 {
+  height: 90px !important;
+}
+
+.spacer95 {
+  height: 95px !important;
+}
+
+.spacer100 {
+  height: 100px !important;
+}
+
+/* padding classes */
+    
+.padding-30 {
+  padding:0px 30px;
+}  
+.padding-20-30 {
+  padding:20px 30px;
+} 
+.padding-20-0 {
+  padding:20px 0px;
+} 
+
+.padding-75 {
+  padding:75px 0px 0px 0px;
+}
+
+.padding-15 {
+  padding:15px 30px 0px 30px;
+}
+
+.padding-5-30 {
+  padding:5px 30px;
+} 
+.padding-0-5-30 {
+  padding:0px 30px 5px 30px;
+} 
+.padding-0-5-22 {
+  padding:10px 30px 5px 22px;
+}

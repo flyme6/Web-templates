@@ -1,0 +1,67 @@
+/***********************/
+.menu{}
+.minimenu{display:none;}
+
+.minimenu{
+	position: relative;
+	z-index: 30;
+	margin: 0px 10px 20px 10px;
+}
+.minimenu div{
+	
+	padding: 0px 16px;
+	overflow: hidden;
+	position: relative;
+	font: 18px/40px 'PT Sans Narrow';
+	color: #fff;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:bold;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+}
+.minimenu select{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+	cursor: pointer;
+}
+/***********************/
+html {
+   -webkit-text-size-adjust: none;
+}
+.video embed,
+.video object,
+.video iframe {
+   width: 100%;
+   height: auto;
+}
+img{
+	max-width:100%;
+	height: auto;
+   	width: auto\9; /* ie8 */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.container {width:768px; margin:0 auto;}
+}
+
+@media only screen and (max-width: 767px) {
+	.container {width: 100%;}
+	header {height: 180px;}
+	header nav{left: 30px; top: 130px; right:auto;}
+	.main-content{ padding:0;}
+	.main-content .heading img{float:none;}
+}
+
+@media only screen and (max-width: 480px){
+	.menu{display:none;}
+	.minimenu{display:block;}
+}

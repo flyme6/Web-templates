@@ -1,0 +1,782 @@
+body{
+	margin:0;
+	padding:0;
+	background:#fff;
+	font-family:sans-serif;
+ }
+body a{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;			   
+}	
+p{
+	margin:0;
+}
+ul{
+margin:0;
+padding:0;
+}
+/*----*/
+.banner{
+	background:url(../images/bg.jpg) no-repeat;
+	background-size:cover;
+	min-height:720px;
+	position:relative;
+}
+.header{
+	padding-top:2em;
+}
+.logo{
+	float:left;
+}
+.top-nav{
+	float:right;
+	margin-right:0em;
+}
+button#showRightPush {
+  border: none;  
+  padding: 6px;
+  outline: none;
+  position: fixed;
+  z-index: 1;
+  background: #1ce4ef;;
+}
+nav#cbp-spmenu-s2 {
+  background: #fff;
+  text-align: center;
+}
+nav#cbp-spmenu-s2 a {
+	color: rgba(197, 183, 142, 1);
+	display: block;
+	padding: 20px 25px;
+	font-size: 18px;
+	font-weight: 400;
+	border: none;
+	margin: 0;
+	transition: .5s all;
+	border-bottom: 1px dotted rgb(118, 118, 118);
+	text-decoration: none;
+}
+nav#cbp-spmenu-s2 a:hover {
+	text-decoration: none;
+	background: none;
+}
+nav#cbp-spmenu-s2 a.active,nav#cbp-spmenu-s2 a:hover {
+	color: #0f091c;
+}
+nav#cbp-spmenu-s2 h3 {
+  background:#1ce4ef;
+  color: white;
+}
+.hand {
+	position:absolute;
+	right:0px;
+	bottom:0;
+}
+.banner-info {
+  margin-top: 10em;
+  width: 46%;
+  display: inline-block;
+}
+.banner-info h1{
+	color:#fff;
+	font-size:4em;
+	font-weight:600;
+}
+.banner-info h1 span{
+	display:block;
+	font-weight:400;
+}
+.banner-info p{
+	font-size:1em;
+	font-weight:400;
+	color:#fff;
+	line-height:1.3em;
+	margin-top:1em;
+}
+.banner-info a{
+	display:inline-block;
+	margin-top:3em;
+}
+.banner-info a img:hover {
+  opacity: 0.6;  
+}
+.down{
+	margin-top: 3em;
+	text-align:center;
+}
+/*--features--*/
+.features{
+	 background:#0f091c;
+	 padding:5em 0 3em 0;
+}
+.feature-info h3{
+	font-size:3.5em;
+	font-weight:500;
+	color:#1ce4ef;
+	margin-bottom:0.5em;
+}
+.feature-info p{
+	font-size:1.2em;
+	font-weight:600;
+	color:#312c3b;
+	width:60%;
+	margin:0 auto;
+	line-height:1.3em;
+}
+.feature-grids{
+	margin-top:4em;
+}
+.grid1{
+	background:url(../images/ap1.png) no-repeat 0px 0px;
+}
+.grid2{
+	background:url(../images/ap2.png) no-repeat 0px 0px;
+}
+.grid3{
+	background:url(../images/ap3.png) no-repeat 0px 0px;
+}
+.grid4{
+	background:url(../images/ap4.png) no-repeat 0px 0px;
+}
+.feature-grid{
+	padding:0px 0 10px 140px;
+	margin-bottom:4em;
+}
+.feature-grid h3{
+	font-size:1.7em;
+	font-weight:500;
+	color:#1ce4ef;
+	margin-bottom:0.5em;	
+}
+.feature-grid p{
+	font-size:1em;
+	font-weight:500;
+	color:#3d3946;
+	width:80%;	
+	line-height:1.3em;
+}
+/*--landing--*/
+.landing{
+	padding:6em 0;
+	border-bottom:1px solid #9f9da4;
+}
+.landing h3{
+	 color:#1ce4ef;
+	 text-align:center;
+	 font-size:3.5em;
+	 margin-bottom:0.5em;
+	 font-weight:500;
+}
+.landing-info{
+	margin-top: 4em;
+  width: 40.3%;
+  padding-left: 6em;
+}
+.landing-info p{
+	 font-size:1.25em;
+	 font-weight:400;
+	 color:#898989;
+	 margin-bottom:2em;
+}
+.slades img {
+  width: 100%;
+}
+.slades {
+  text-align: center;
+  margin-left: 10em;
+  width: 40%;
+}
+/*--screen-shots--*/
+.screen-shots{
+	padding:5em 0 6em 0;
+	border-bottom:1px solid #9f9da4;
+}
+.screen-shots h3{
+  color: #1ce4ef;
+  text-align: center;
+  font-size: 3.5em;
+  margin-bottom: 1em;
+  font-weight: 500;
+}
+#flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
+	display: none;
+}
+.nbs-flexisel-container {
+	position: relative;
+	max-width: 100%;
+}
+.nbs-flexisel-ul {
+	position: relative;
+	width: 9999px;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	text-align: center;
+}
+.nbs-flexisel-inner {
+	overflow: hidden;
+}
+.nbs-flexisel-item {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+	position: relative;
+	line-height: 0px;
+}
+.nbs-flexisel-item > img {	
+	cursor: pointer;
+	position: relative;
+	  width: 80%;
+  margin: 0 5%;
+}
+/*--team--*/
+.team{
+	background:url(../images/bg2.jpg) no-repeat 0px 0px;
+	background-size:cover;
+	padding:4em 0 0 0;
+	min-height:570px;
+}
+.team h3{
+	 font-size:3.5em;
+	 color:#000;
+	 font-weight:500;
+	 text-align:center;
+}
+.team-grids{
+	margin-top:4em;
+}
+.team-grid img{
+	 margin-bottom:1em;
+}
+.team-grid h4{
+	font-size:1.6em;
+	font-weight:500;
+	margin-bottom:0.5em;
+	color:#000;
+}
+.team-grid p{
+	color:#382e48;
+	font-size:1.15em;
+	font-weight:500;
+}
+.team-grid img{
+	border-radius:50%;
+	-webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.social-icons a{
+	display:inline-block;
+	margin-top:12px;
+}
+.social-icons span{
+	background:url(../images/social.png) no-repeat 0px 0px;
+	width:42px;
+	height:36px;
+	display:inline-block;
+	margin:0 5px;
+}
+.social-icons span.fb{
+	background-position:11px 0px;
+}
+.social-icons span.tweet{
+	background-position:-29px 0px;
+}
+.social-icons span.drib{
+	background-position:-79px 0px;
+}
+.social-icons span.fb:hover{
+	background-position:11px -50px;
+}
+.social-icons span.tweet:hover{
+	background-position:-29px -51px;
+}
+.social-icons span.drib:hover{
+	background-position:-79px -52px;
+}
+/*--subscribe--*/
+.subscribe{
+	background:#1d1130;
+	padding:4em 0 5.5em 0;
+}
+.subscribe h3 {
+  color: #1ce4ef;
+  text-align: center;
+  font-size: 3.5em;
+  margin-bottom: 1em;
+  font-weight: 500;
+}
+.subscribe form{
+	position:relative;
+}
+.subscribe input[type="text"] {
+  font-weight: 400;
+  color: #1f192b;
+  border: none;
+  outline: none;
+  width: 81%;
+  font-size: 1.5em;
+  padding: 14px;
+  color: #4C738F;
+  border: 1px solid #fff;
+   border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+}
+.subscribe input[type="submit"] {
+  font-size: 1.5em;
+  padding: 14px;
+  background: #1ce4ef;
+  width: 13%;
+  border: none;
+  font-weight: 40000;
+  outline: none;
+  color: #1f192b;
+  position: absolute;
+  border: 1px solid #1ce4ef;
+  right: 6%;
+  top: 0px;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+.footer{
+	padding:2em 0;
+}
+.footer p {
+  color: #B3B3B3;
+  font-size:1.3em;
+  margin-top: 9px;
+  font-weight: 400;
+}
+/*--responsive--*/
+@media (max-width: 1366px){
+.landing-info {
+  width: 46.3%;
+}
+.slades {
+  margin-left: 5em;
+  width: 45%;
+}
+.landing {
+  padding: 5em 0;
+}
+}
+@media (max-width: 1280px){
+.landing-info p {
+  font-size: 1.2em;
+}
+.slades {
+  margin-left: 3em;
+  width: 48%;
+}
+.team {
+  min-height: 550px;
+}
+}
+@media (max-width: 1024px){
+.top-nav {
+  margin: 1.3em 2.5em 0 0;
+}
+.banner-info {
+  margin-top: 8em;
+    width: 52%;
+}
+.banner-info h1 {
+  font-size: 3em;
+}
+.hand{
+	width:38%;
+}
+.hand img{
+	background-size:100%;
+	width:100%;
+}
+.banner {
+  min-height:610px;
+}
+.feature-info h3 {
+  font-size: 3em;
+}
+.feature-info p {
+  width: 72%;
+}
+.feature-grid p {
+  width: 85%;
+}
+.landing {
+  padding: 4em 0;
+}
+.landing h3 {
+  font-size: 3em;
+    margin-bottom: 1em;
+}
+.landing-info {
+  width: 44.3%;
+  margin-top: 2em;
+}
+.landing-info p {
+  font-size: 1.1em;
+    overflow: hidden;
+  height: 128px;
+}
+.screen-shots h3{
+	font-size: 3em;
+	margin-bottom:2em;
+}
+.screen-shots {
+  padding: 4em 0 6em 0;
+}
+.subscribe form {
+  margin: 0 30px;
+}
+}
+@media (max-width:768px){
+.banner {
+  min-height: 520px;
+}	
+.banner-info {
+  margin-top: 7em;
+}
+.top-nav {
+    margin: 0.85em 2.7em 0 0;
+}
+.logo img{
+	width:90%;
+	background-size:100%;
+}
+.banner-info p {
+  overflow: hidden;
+  height: 90px;
+}
+.down img{
+	background-size:100%;
+	width:5%;
+}
+.banner-info a img{
+	background-size:100%;
+	width:75%;
+}
+.down {
+  margin-top: 0em;
+}
+.feature-info h3,.landing h3,.screen-shots h3,.team h3,.subscribe h3 {
+  font-size: 2.6em;
+}
+.feature-info p {
+  width: 86%;
+  font-size: 1.1em;
+  line-height: 1.2em;
+}
+.feature-grid h3 {
+  font-size: 1.5em;
+}
+.feature-grid {
+  padding: 0px 0 35px 140px;
+  margin-bottom: 2.5em;
+}
+.features {
+  padding: 5em 0 1em 0;
+}
+.landing {
+  padding: 3em 0;
+}
+.slades {
+  margin-left:0em;
+  width: 50%;
+  float: left;
+}
+.landing-info {
+  width: 46.3%;
+  margin-top: 1em;
+  float: left;
+  padding-left: 3em;
+}
+.landing-info p {
+  font-size: 1em;
+  overflow: hidden;
+  height: 99px;
+  margin-bottom: 1.5em;
+}
+.team-grid {
+	margin-bottom:2em;
+	margin-top: 3em;
+}
+.subscribe input[type="text"] {
+  width: 87%;
+  font-size: 1.3em;
+  padding: 10px;
+}
+.subscribe input[type="submit"] {
+  font-size: 1.3em;
+  padding: 10px;
+  right: 1%;
+}
+.footer p {
+  font-size: 1em;
+}
+}
+@media (max-width:640px){
+.logo img {
+  width: 80%;
+}
+.banner-info h1 {
+  font-size: 2.5em;
+}
+.banner-info {
+  margin-top: 6em;
+}
+.top-nav {
+  margin: 0.5em 2.7em 0 0;
+}
+.banner {
+  min-height: 429px;
+}
+.banner-info a {
+  margin-top: 1.3em;
+}
+.banner-info a img {
+  width: 63%;
+}
+.banner-info p {
+  overflow: hidden;
+  height: 78px;
+  font-size: 0.9em;
+}
+.feature-info h3, .landing h3, .screen-shots h3, .team h3, .subscribe h3 {
+  font-size: 2.3em;
+}
+.features {
+  padding: 3.5em 0 1em 0;
+}
+.feature-info p {
+  width: 96%;
+  font-size: 1em;
+  line-height: 1.2em;
+}
+.feature-grids {
+  margin-top: 3em;
+}
+.grid1,.grid2,.grid3,.grid4 {
+  background-size: 17%;
+}
+.feature-grid {
+  padding: 0px 0 20px 122px;
+  margin-bottom: 2em;
+}
+.feature-grid p {
+  width: 94%;
+}
+.team-grids {
+  margin-top: 3em;
+}
+.team {
+  padding: 3em 0 0 0;
+}
+.team-grid p {
+  font-size: 1em;
+}
+.subscribe input[type="text"],.subscribe input[type="submit"] {
+  font-size: 1.2em;
+}
+.subscribe {
+  padding: 4em 0 4.5em 0;
+}
+.footer p {
+  font-size:0.9em;
+}
+}
+@media (max-width:480px){
+.logo img {
+  width: 65%;
+}
+.top-nav {
+  margin: 0.3em 2em 0 0;
+}
+button#showRightPush img{
+  background-size: 100%;
+  width: 81%;
+}
+button#showRightPush{
+	padding:3px;
+}
+.banner {
+  min-height: 345px;
+}
+.banner-info {
+  margin-top: 4em;
+}
+.banner-info h1 {
+  font-size: 2.1em;
+}
+.banner-info p {
+  height: 76px;
+  font-size: 0.85em;
+}
+.banner-info a img {
+  width: 53%;
+}
+.feature-info h3, .landing h3, .screen-shots h3, .team h3, .subscribe h3 {
+  font-size: 1.85em;
+}
+.features {
+  padding: 3em 0 1em 0;
+}
+.feature-info p {
+  font-size: 0.95em;
+}
+.feature-sec {
+  padding: 0;
+}
+.feature-grid {
+  padding: 0px 0 20px 91px;
+  margin-bottom: 1em;
+  font-size: 0.9em;
+}
+.feature-grid h3 {
+  font-size: 1.3em;
+}
+.landing-info {
+  padding-left: 1em;
+}
+.landing {
+  padding: 2em 0;
+}
+.landing-info p {
+  font-size: 0.9em;
+  height: 71px;
+  margin-bottom: 1em;
+}
+.screen-shots {
+  padding: 3em 0 6em 0;
+}
+.team-grid h4 {
+  font-size: 1.4em;
+}
+.team-grid p {
+  font-size: 0.95em;
+}
+.subscribe input[type="text"], .subscribe input[type="submit"] {
+  font-size: 1em;
+  padding: 8px;
+}
+.subscribe input[type="submit"] {
+  width: 19%;
+}  
+.subscribe {
+  padding: 3em 0 3.5em 0;
+}
+.footer p {
+  font-size:0.85em;
+}
+}
+@media (max-width:320px){
+.banner-info h1 {
+  font-size: 1.3em;
+}
+.banner-info p {
+  height: 45px;
+  }
+.banner-info {
+  width: 100%;
+    margin-top: 3em;
+}
+.hand {
+  width: 47%;
+  display: inline-block;
+  position: inherit;
+  right:-161px;
+}
+.team-grid p {
+  font-size: 0.8em;
+}
+.landing-info p {
+  font-size: 0.8em;
+  height: 48px;
+  margin-bottom: 0.5em;
+}
+.hand img {
+  width: 100%;
+}
+.down img {
+  width: 10%;
+}
+button#showRightPush {
+  padding: 3px;
+}
+.grid1, .grid2, .grid3, .grid4 {
+  background-size: 26%;
+}
+.feature-info p {
+  font-size: 0.85em;
+  overflow: hidden;
+  height: 30px;
+}
+.feature-grids {
+  margin-top: 2em;
+}
+.feature-grid p {
+  width: 100%;
+  overflow: hidden;
+  height: 50px;
+}
+.feature-grid h3 {
+  font-size: 1.1em;
+}
+.feature-info h3, .landing h3, .screen-shots h3, .team h3, .subscribe h3 {
+  font-size: 1.3em;
+}
+.slades {
+  width: 100%;
+}
+.landing-info {
+  width: 100%;
+  margin-top: 1em;
+}
+.screen-shots {
+  padding: 2em 0 4em 0px;
+}
+.team {
+  padding: 2em 0 0 0;
+}
+.team-grid {
+  padding: 0;
+}
+.subscribe form {
+  margin: 0 0px;
+}
+.subscribe input[type="text"] {
+  width: 81%;
+}
+.subscribe input[type="submit"] {
+  width: 25%;
+}
+.team-grid img {
+  border-radius: 65%;
+  -webkit-border-radius: 65%;
+  -moz-border-radius: 65%;
+  -ms-border-radius: 65%;
+  -o-border-radius: 65%;
+  width: 45%;
+}
+.subscribe input[type="text"], .subscribe input[type="submit"] {
+  font-size: 0.9em;
+  padding: 8px;
+}
+.team-grid h4 {
+  font-size: 1.2em;
+}
+.footer {
+  padding: 1em 0;
+}
+.footer p {
+  font-size: 0.8em;
+  text-align:center;
+}
+}

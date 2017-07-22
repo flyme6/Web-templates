@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Account</title>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Stylish Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Custom Theme files -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<!-- //js -->	
+<!-- start-smoth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smoth-scrolling-->
+<!--pop-up-->
+<script src="js/menu_jquery.js"></script>
+<!--//pop-up-->
+</head>
+<body>
+	<!--header-->
+	<div class="header">
+		<div class="container">
+			<div class="header-left">
+				<ul> 
+					<li><a href="account.html">ACCOUNT</a></li>
+					<li class="login" >
+						<div id="loginContainer"><a href="#" id="loginButton"><span>LOGIN</span></a>
+						    <div id="loginBox">                
+						        <form id="loginForm">
+									<fieldset id="body">
+										<fieldset>
+											<label for="email">Email Address</label>
+											<input type="text" name="email" id="email">
+										</fieldset>
+										<fieldset>
+											<label for="password">Password</label>
+											<input type="password" name="password" id="password">
+										</fieldset>
+										<input type="submit" id="login" value="Sign in">
+										<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
+									</fieldset>
+									<span><a href="#">Forgot your password?</a></span>
+								</form>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="logo">
+				<a href="index.html"> <img src="images/logo.png" alt=""/></a>
+			</div>
+			<div class="top-nav">
+				<span class="menu"> <img src="images/menu.png" alt=""/> </span>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>					
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="codes.html">Codes</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				<!-- script-for-menu -->
+				<script>					
+							$("span.menu").click(function(){
+								$(".top-nav ul").slideToggle("slow" , function(){
+								});
+							});
+				</script>
+				<!-- script-for-menu -->
+			</div>
+			<div class="search-box">
+				<div id="sb-search" class="sb-search">
+					<form>
+						<input class="sb-search-input" placeholder="search term..." type="search" name="search" id="search">
+						<input class="sb-search-submit" type="submit" value="">
+						<span class="sb-icon-search"> </span>
+					</form>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+			<!-- search-scripts -->
+			<script src="js/classie.js"></script>
+			<script src="js/uisearch.js"></script>
+				<script>
+					new UISearch( document.getElementById( 'sb-search' ) );
+				</script>
+			<!-- //search-scripts -->
+		</div>
+	</div>	
+	<!--//header-->
+	<!--banner-->
+	<div class="banner1 about-bnr">
+	</div>	
+	<!--//banner-->
+	<!-- reg-form -->
+	<div class="account">
+		<div class="container">		
+			<div class="account-left">
+				<h1>new user ? <span> create an account </span></h1>
+				<!-- Form -->
+				<div class="registration_form">
+					<form id="registration_form">
+						<div>
+							<label>
+								<input placeholder="first name" type="text" tabindex="1">
+							</label>
+						</div>
+						<div>
+							<label>
+								<input placeholder="last name" type="text" tabindex="2">
+							</label>
+						</div>
+						<div>
+							<label>
+								<input placeholder="email address" type="email" tabindex="3">
+							</label>
+						</div>
+						<div>
+							<label>
+								<input placeholder="Mobile" type="text" tabindex="3">
+							</label>
+						</div>					
+							<div class="sky_form1">
+								<ul>
+									<li><label class="radio left"><input type="radio" name="radio" checked=""><i></i>Male</label></li>
+									<li><label class="radio"><input type="radio" name="radio"><i></i>Female</label></li>
+									<div class="clearfix"> </div>
+								</ul>
+							</div>					
+						<div>
+							<label>
+								<input placeholder="password" type="password" tabindex="4">
+							</label>
+						</div>						
+						<div>
+							<label>
+								<input placeholder="retype password" type="password" tabindex="4">
+							</label>
+						</div>	
+						<div>
+							<input type="submit" value="create an account" id="register-submit">
+						</div>
+						<div class="sky-form">
+							<label class="checkbox"><input type="checkbox" name="checkbox" ><i>i agree to example.com &nbsp;<a class="terms" href="#"> terms of service</a></i> </label>
+						</div>
+					</form>
+					<!-- /Form -->
+				</div>
+			</div>
+			<div class="account-left">
+				<h2>existing user</h2>
+				<div class="registration_form">
+					<!-- Form -->
+					<form id="registration_form">
+						<div>
+							<label>
+								<input placeholder="email" type="email" tabindex="3">
+							</label>
+						</div>
+						<div>
+							<label>
+								<input placeholder="password" type="password" tabindex="4">
+							</label>
+						</div>						
+						<div>
+							<input type="submit" value="sign in" id="register-submit">
+						</div>
+						<div class="forget">
+							<a href="#">forgot your password</a>
+						</div>
+					</form>
+					<!-- /Form -->
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-left">
+				<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+			</div>
+			<div class="social-icons">
+				<ul>
+					<li><a href="#" class="fb"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#" class="gg"></a></li>
+					<li><a href="#" class="pn"></a></li>					
+				</ul>	
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//footer-->
+	<!--smooth-scrolling-of-move-up-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!--//smooth-scrolling-of-move-up-->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

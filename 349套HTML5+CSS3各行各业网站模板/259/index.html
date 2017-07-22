@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<script src="js/jquery.min.js"></script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link href='http://fonts.useso.com/css?family=Cabin:400,500,600,700,400italic,500italic,600italic,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/jquery.min.js"></script>
+<!--animated-css-->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+<!--/animated-css-->
+
+<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+
+</head>
+<body>
+<!---->
+<div class="header">
+	 <div class="container">
+		 <div class="top-header">
+			 <div class="logo wow fadeInRight" data-wow-delay="0.5s">
+					<a href="#"><img src="images/logo.png" alt="" /></a>
+			 </div>
+			 <div class="top-menu">
+				 <span class="menu"> </span>
+				 <ul>
+					 <li><a class="scroll" href="#home">HOME</a></li>
+					 <li><a class="scroll" href="#about">ABOUT</a></li>
+					 <li><a class="scroll" href="#features">FEATURES</a></li>
+					 <li><a class="scroll" href="#contact">CONTACT</a></li>
+					 <div class="clearfix"></div>
+				 </ul>
+			 </div>
+			  <!--script-nav-->
+		 <script>
+		 $("span.menu").click(function(){
+		 $(".top-menu ul").slideToggle("slow" , function(){
+		 });
+		 });
+		 </script>
+			  <div class="clearfix"></div>			  
+		 </div>	
+		 <div class="header-info wow fadeInLeft" data-wow-delay="0.5s">	 
+			 <h1>Hello.</h1>
+			 <h2>We take mobile photography to a brand new level.</h2>
+			 <h3>With our free app you can take amazing</h3>
+			 <p>photos straight from your phone.</p>
+			 <a href="#">GET THE FREE APP</a>
+			 <ul class="buttons">
+			 <li><a href="#" class="icon1"></a></li>
+			 <li><a href="#" class="icon2"></a></li>
+			 </ul>
+		 <div class="clearfix"></div>
+		 </div>
+		 <div class="header-image wow fadeInRight" data-wow-delay="0.5s">
+		 <span></span>	 
+		 </div>	
+		 <div class="clearfix"></div>	 
+	 </div>	 
+</div>
+<!---->
+<div class="about" id="about">
+	 <div class="container">		 
+			<div class="col-md-4 about-image wow bounceInLeft" data-wow-delay="0.4s">
+			<i class="iphone"></i>
+			</div>			 
+			<div class="col-md-8 about-info">
+				<script src="js/responsiveslides.min.js"></script>
+				<script>
+				// You can also use "$(window).load(function() {"
+				$(function () {
+				$("#slider2").responsiveSlides({
+				auto: true,
+				pager: true,
+				speed: 300,
+				namespace: "callbacks",
+				});
+				});
+				</script>
+				<h3 class="wow fadeInLeft" data-wow-delay="0.4s">About Us</h3>
+				<div class="slider wow bounceInRight" data-wow-delay="0.4s">
+					<ul class="rslides" id="slider2">
+						<li>Despreneur is a magazine about design, technology and entrepreneurship. Nowadays designers play major roles in successful startups and established companies.
+							 A Despreneur,coined by us, is  a new breed of human being designer with entrepreneurial mindset.</a></li>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id lacus at arcu tempor euismod vitae non velit. Suspendisse potenti. Pellentesque laoreet dapibus 
+							  a new breed of human being designer neque, eu sagittis libero interdum vitae. Duis facilisis blandit finibus. Etiam dignissim. </a></li>
+						<li>Nam a tincidunt nibh, eu laoreet nunc. Ut quis efficitur mi. Vestibulum ex metus Nowadays designers play major roles in successful startups and established companies.
+							 A Despreneur,coined by us, is  a new breed of human being designer with entrepreneurial mindset.</a></li>
+				  </ul>
+				 </div>		 
+			 </div>	
+			<div class="clearfix"></div>
+	 </div>	
+</div>
+<!---->
+<div class="features" id="features">
+	 <div class="tabs-box">
+			<ul class="tabs-menu">
+				<li><a href="#tab1">Macro</a></li>
+				<li><a href="#tab2">Filters</a></li>
+				<li><a class="last" href="#tab3">Sharing</a></li>
+			</ul>
+			<div class="clearfix"> </div>
+			<div class="tab-grids">
+				<div id="tab1" class="tab-grid1">
+					<h3 class="wow fadeInLeft" data-wow-delay="0.4s">Macro Photography.</h3>
+					<h4 class="wow fadeInRight" data-wow-delay="0.4s">No more expensive lenses and heavy editing in photoshop.</h4>
+				</div>
+				<div id="tab2" class="tab-grid2">
+					<h3>Filters.</h3>
+					<h4>No more expensive lenses and heavy editing in photoshop.</h4>
+			    </div>
+				<div id="tab3" class="tab-grid3">
+					<h3>Sharing.</h3>
+					<h4>No more expensive lenses and heavy editing in photoshop.</h4>
+				</div>
+			</div>			
+		</div>
+		
+		<!----- tabs-box ---->
+		<!----- Comman-js-files ----->
+		<script>
+			$(document).ready(function() {
+				$("#tab2").hide();
+				$("#tab3").hide();
+				$(".tabs-menu a").click(function(event){
+					event.preventDefault();
+					var tab=$(this).attr("href");
+					$(".tab-grid1,.tab-grid2,.tab-grid3").not(tab).css("display","none");
+					$(tab).fadeIn("slow");
+				});
+				$("ul.tabs-menu li a").click(function(){
+					$(this).parent().addClass("active a");
+					$(this).parent().siblings().removeClass("active a");
+				});
+			});
+		</script>
+		<!----- Comman-js-files ----->
+</div>
+<!---->
+<div class="contact" id="contact">
+	 <div class="container">	 
+		 <div class="col-md-6 contact-people wow fadeInRight" data-wow-delay="0.4s">
+			 <img src="images/img1.png" alt=""/>			
+			 <h3>BRAYON JOHNS</h3>
+			 <p>Wannabe travel fanatic. Food buff. Internet ninja. Unapologetic web practitioner. 
+			 Tvaholic. Alcohol scholar.</p>
+			 <div class="clearfix"></div>
+			<img src="images/img2.png" alt=""/>			
+			 <h3>BRAYON JOHNS</h3>
+			 <p>Wannabe travel fanatic. Food buff. Internet ninja. Unapologetic web practitioner. 
+			 Tvaholic. Alcohol scholar.</p>	
+				<div class="clearfix"></div>
+		 </div>
+		 <div class="col-md-6 contact-details wow fadeInLeft" data-wow-delay="0.4s">
+		 <h4>Contact Us</h4>
+		 <form>
+			<input type="text" placeholder="Name" required/>
+			<input type="text" placeholder="E-mail" required/>
+			<textarea placeholder="Message"></textarea>
+			<input type="submit" value="SEND"/>
+			</form>
+		 </div>
+		 <div class="clearfix"></div>
+	 </div>
+</div>
+<!--Map-->
+<div class="map wow fadeInUp" data-wow-delay="0.4s">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3206055.8832623623!2d-92.43709899999999!3d38.30466145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1416477480697" frameborder="0" style="border:0"></iframe>
+</div>
+<!---->
+<div class="footer">
+	 <div class="container">
+		 <h3>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></h3>
+		 <ul>
+			<li><a href="#">Instgram.</a></li>
+			<li><a href="#">Twitter.</a></li>
+			<li><a href="#">Facebook</a></li>
+		 </ul>
+		 <div class="clearfix"></div>
+	 </div>
+</div>
+<!---->
+<script type="text/javascript">
+		$(document).ready(function() {
+				/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+				*/
+		$().UItoTop({ easingType: 'easeOutQuart' });
+});
+</script>
+<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+</body>
+</html>

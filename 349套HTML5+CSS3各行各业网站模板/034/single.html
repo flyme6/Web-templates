@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Single Page</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<!--script-->
+	<script src="js/jquery.chocolat.js"></script>
+		<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
+		<!--light-box-files-->
+	<script type="text/javascript" charset="utf-8">
+		$(function() {
+			$('.asd a').Chocolat();
+		});
+	</script>
+<!--script-->
+<!-- menu -->
+<link href="css/component.css" rel="stylesheet" type="text/css"  />
+<!-- //menu -->
+<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+</head>	
+<body class="cbp-spmenu-push">
+<!-- header -->
+	<div class="header">
+		<div class="container">
+			<div class="top-nav">
+					<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s2">
+						<h3>Menu</h3>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="typo.html">Typography</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="index.html">Mail Us</a></li>
+						</ul>
+						<p>© 2015 Music Mix . Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+						<ul class="social-i">
+							<li><a href="#" class="facebook"> </a></li>
+							<li><a href="#" class="twitter"> </a></li>
+							<li><a href="#" class="g"> </a></li>
+							<li><a href="#" class="in"> </a></li>
+						</ul>
+					</nav>
+					<div class="main buttonset">	
+							<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+							<button id="showRightPush"><img src="images/menu.png" alt=""/></button>
+							<!--<span class="menu"></span>-->
+					</div>
+					<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+					<script src="js/classie.js"></script>
+					<script>
+					var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+					showRightPush = document.getElementById( 'showRightPush' ),
+					body = document.body;
+
+					showRightPush.onclick = function() {
+						classie.toggle( this, 'active' );
+						classie.toggle( body, 'cbp-spmenu-push-toleft' );
+						classie.toggle( menuRight, 'cbp-spmenu-open' );
+						disableOther( 'showRightPush' );
+					};
+
+					function disableOther( button ) {
+						if( button !== 'showRightPush' ) {
+							classie.toggle( showRightPush, 'disabled' );
+						}
+					}
+				 </script>
+			</div>
+			<div class="logo">
+				<a href="index.html">Music <span>Mix</span></a>
+			</div>
+			<div class="search">
+		 <!-- start search-->
+				<div class="search-box">
+					<div id="sb-search" class="sb-search">
+						<form>
+							<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+							<input class="sb-search-submit" type="submit" value="">
+							<span class="sb-icon-search"> </span>
+						</form>
+					</div>
+				</div>
+					<!-- search-scripts -->
+					<script src="js/classie.js"></script>
+					<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+					<!-- //search-scripts -->
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //header -->
+<!-- single -->
+	<div class="single-page-artical">
+	<div class="container">
+		<div class="artical-content">
+			<h3>Lorem Ipsum is simply dummy text</h3>
+			<img class="img-responsive" src="images/banner1.jpg" alt=" " />
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="artical-links">
+			<ul>
+				<li><small> </small><span>July 20, 2015</span></li>
+				<li><a href="#"><small class="admin"> </small><span>admin</span></a></li>
+				<li><a href="#"><small class="no"> </small><span>No comments</span></a></li>
+				<li><a href="#"><small class="posts"> </small><span>View posts</span></a></li>
+				<li><a href="#"><small class="link"> </small><span>permalink</span></a></li>
+			</ul>
+		</div>
+		<div class="comment-grid-top">
+			<h3>Responses</h3>
+			<div class="comments-top-top">
+				<div class="top-comment-left">
+					<a href="#"><img class="img-responsive" src="images/co.png" alt=""></a>
+				</div>
+				<div class="top-comment-right">
+					<ul>
+						<li><span class="left-at"><a href="#">Admin</a></span></li>
+						<li><span class="right-at">July 20, 2015 at 10.30am</span></li>
+						<li><a class="reply" href="#">REPLY</a></li>
+					</ul>
+				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.The point of using Lorem Ipsum is that it has a more-or-less </p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="comments-top-top top-grid-comment">
+				<div class="top-comment-left">
+					<a href="#"><img class="img-responsive" src="images/co.png" alt=""></a>
+				</div>
+				<div class="top-comment-right">
+					<ul>
+						<li><span class="left-at"><a href="#">Admin</a></li>
+						<li><span class="right-at">July 20, 2015 at 10.30am</span></li>
+						<li><a class="reply" href="#">REPLY</a></li>
+					</ul>
+				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.The point of using Lorem Ipsum is that it has a more-or-less </p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>			
+		<div class="artical-commentbox">
+			<h3>leave a comment</h3>
+			<div class="table-form">
+				<form>
+					<input type="text" class="textbox" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+					<input type="text" class="textbox" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+					<input type="text" class="textbox" value="Phone number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone number';}">
+					<textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>	
+					<input type="submit" value="Send">
+				</form>
+			</div>
+		</div>	
+	</div>
+	</div>
+<!-- single -->
+<!-- footer -->
+	<div class="footer">
+		<!-- container -->
+		<div class="container">
+			<div class="footer-top">
+					<div class="footer-grids">
+						<div class="col-md-3 footer-logo">
+							<a href="index.html">Music <span>Mix</span></a>
+						</div>
+						<div class="col-md-3 f-address">
+							<h5>Address</h5>
+							<ul>
+								<li>756 gt globel Place,</li>
+								<li>CD-Road,M 07 435.</li>
+								<li>Telephone: +1 234 567 9871</li>
+								<li>FAX: +1 234 567 9871</li>
+								<li>E-mail : <a href="mailto:example@email.com">Example@mail.com</a></li>
+						</ul></div>
+						<div class="col-md-6 f-address f-contact">
+							<h5>Subscribe Here</h5>
+							<form>
+								<input type="text" placeholder="Email address" required="">
+								<input type="submit" value="Subscribe">
+							</form>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+			</div>
+		</div>
+		<!-- //container -->
+		<div class="footer-bottom">
+			<div class="copyright">
+				<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+			</div>
+		</div>
+	</div>
+<!-- //footer -->
+</body>
+</html>

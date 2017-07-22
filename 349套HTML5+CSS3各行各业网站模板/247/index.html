@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<script src="js/jquery-ui.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--webfont-->
+<link href='http://fonts.useso.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Anton' rel='stylesheet' type='text/css'>
+<script src="http://ajax.useso.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/responsiveslides.min.js"></script>
+<script>
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	nav: true,
+      	speed: 500,
+        namespace: "callbacks",
+        pager: true,
+      });
+    });
+	
+  </script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+				});
+			});
+		</script>
+    <!------ Light Box ------>
+    <link rel="stylesheet" href="css/swipebox.css">
+    <script src="js/jquery.swipebox.min.js"></script> 
+    <script type="text/javascript">
+		jQuery(function($) {
+			$(".swipebox").swipebox();
+		});
+	</script>
+    <!------ Eng Light Box ------>	
+	
+</head>
+<body>
+	<!-- header-section-starts -->
+	<div class="header">
+		<div class="top-header">
+			<div class="container">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" class="img-responsive" alt="" /></a>
+				</div>
+				<div class="top-menu">
+				  <span class="menu"> </span>
+					<ul>
+						<li><a href="#home" class="scroll">HOME</a></li>
+						<li><a href="#ABOUT-US" class="scroll">ABOUT US</a></li>
+						<li><a href="#FEATURES" class="scroll">FEATURES</a></li>
+						<li><a href="#portfolio" class="scroll">PORTFOLIO</a></li>
+						<li><a href="#CLIENTS" class="scroll">CLIENTS</a></li>
+						<li><a href="#contact-section" class="scroll">CONTACT US</a></li>
+						<div class="clearfix"></div>
+					</ul>
+				</div>
+				 <!--script-nav-->
+		 <script>
+		 $("span.menu").click(function(){
+		 $(".top-menu ul").slideToggle("slow" , function(){
+		 });
+		 });
+		 </script>
+
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<ul class="header-contact">
+					<li class="span-2">
+						<div class="icon">
+							<i class="message"></i>
+						</div>
+						<div class="icon-data">
+							<p>EMAIL@YOURCOMPANY.COM</p>
+						</div>
+						<div class="clearfix"></div>
+					</li>
+					<li class="span-2">
+						<div class="icon">
+							<i class="telephone"></i>
+						</div>
+						<div class="icon-data">
+							<p>081-25445-4032</p>
+						</div>
+						<div class="clearfix"></div>
+					</li>
+					<li class="social-icons">
+						<a href="#"><i class="feed"></i></a>
+						<a href="#"><i class="facebook"></i></a>
+						<a href="#"><i class="twitter"></i></a>
+						<a href="#"><i class="dribble"></i></a>
+						<a href="#"><i class="pinterest"></i></a>
+					</li>
+					<div class="clearfix"></div>
+				</ul>
+			</div>
+		</div>
+	</div>
+    <!-- header-section-ends --> 
+	<div class="header-slider" id="home">
+		<div class="slider">
+			<div class="callbacks_container">
+			  <ul class="rslides" id="slider">
+				<li>
+				  <img src="images/1.jpg" alt="">
+				  <div class="caption">
+					<h3><span class="color-1">Design,</span> <span class="color-2">Development,</span>  <span class="color-3">SEO</span> </h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida mattis mi vitae tristique. Quisque vel purus tempor, tincidunt tellus ut, blandit lacus. Mauris a arcu placerat, semper felis non, iaculis turpis.</p>
+					<a class="morebtn" href="#">KEEP CALM AND DOWNLOADPSD</a>
+				  </div>
+				</li>
+				<li>
+				  <img src="images/1.jpg" alt="">
+					<div class="caption">
+					<h3><span class="color-1">Development,</span> <span class="color-2">SEO,</span>  <span class="color-3">Design</span> </h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida mattis mi vitae tristique. Quisque vel purus tempor, tincidunt tellus ut, blandit lacus. Mauris a arcu placerat, semper felis non, iaculis turpis.</p>
+					<a class="morebtn" href="#">KEEP CALM AND DOWNLOADPSD</a>
+				  </p>
+				</li>
+				<li>
+				  <img src="images/1.jpg" alt="">
+				  <div class="caption">
+					<h3><span class="color-1">SEO,</span> <span class="color-2">Design,</span>  <span class="color-3">Development</span> </h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida mattis mi vitae tristique. Quisque vel purus tempor, tincidunt tellus ut, blandit lacus. Mauris a arcu placerat, semper felis non, iaculis turpis.</p>
+					<a class="morebtn" href="#">KEEP CALM AND DOWNLOADPSD</a>
+				  </div>
+				</li>
+				<li>
+				  <img src="images/1.jpg" alt="">
+				  <div class="caption">
+					<h3><span class="color-3">Design,</span> <span class="color-1">Development,</span>  <span class="color-2">SEO</span> </h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida mattis mi vitae tristique. Quisque vel purus tempor, tincidunt tellus ut, blandit lacus. Mauris a arcu placerat, semper felis non, iaculis turpis.</p>
+					<a class="morebtn" href="#">KEEP CALM AND DOWNLOADPSD</a>
+				  </div>
+				</li>
+				<li>
+				  <img src="images/1.jpg" alt="">
+				  <div class="caption">
+					<h3><span class="color-2">SEO,</span> <span class="color-3">Design,</span>  <span class="color-1">Development</span> </h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida mattis mi vitae tristique. Quisque vel purus tempor, tincidunt tellus ut, blandit lacus. Mauris a arcu placerat, semper felis non, iaculis turpis.</p>
+					<a class="morebtn" href="#">KEEP CALM AND DOWNLOADPSD</a>
+				  </div>
+				</li>
+			  </ul>
+		  </div>
+	  </div>
+	 </div>
+	 </div>
+	 <!-- content-section-starts -->
+	 <div class="services-section" id="ABOUT-US">
+		 <div class="border">
+			<img src="images/border.png" alt="" />
+		 </div>
+		<div class="container">
+			<div class="services-section-head text-center">
+				<h3>What makes us different?</h3>
+				<p>Capacitance cascading integer reflective interface data development high bus cache dithering transponder.  </p>
+			</div>
+			<div class="services-section-grids text-center">
+				<div class="col-md-4 services-section-grid">
+					<img src="images/service-img-1.png" alt="" />
+					<h5>Experienced</h5>
+					<p>There are many variations of passages of Lorem Ipsum available, but the majority </p>
+				</div>
+				<div class="col-md-4 services-section-grid">
+					<img src="images/services-img-3.png" alt="" />
+					<h5>Responsive</h5>
+					<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sitamet,consectetu radipisci  </p>
+				</div>
+				<div class="col-md-4 services-section-grid">
+					<img src="images/services-img-2.png" alt="" />
+					<h5>Competitive</h5>
+					<p>There are many variations of passages of Lorem Ipsum available, but the majority  </p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	 </div>
+
+     <div class="project-section" id="portfolio">
+	<div class="border">
+			<img src="images/border.png" alt="" />
+		 </div>
+	<div class="project-section-head text-center">
+		  <h3>recent projects</h3>
+		  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+	</div>
+	    <ul id="filters" class="clearfix">
+						<li><span class="filter active" data-filter="app card icon logos web">All</span></li>
+						<li><span class="filter" data-filter="app">Branding</span></li>
+						<li><span class="filter" data-filter="card">Web</span></li>
+						<li><span class="filter" data-filter="icon">Logo Design</span></li>
+						<li><span class="filter" data-filter="logos">Photography</span></li>
+						</ul>
+					<div id="portfoliolist">
+					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="images/pic-1.jpg" class="swipebox"  title="Image Title"> <img src="images/pic-1.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+					</div>				
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="images/pic-2.jpg" class="swipebox"  title="Image Title"> <img src="images/pic-2.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+					</div>					
+					<div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="images/pic-3.jpg" class="swipebox"  title="Image Title"> <img src="images/pic-3.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+
+					</div>
+					
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="images/pic-4.jpg" class="swipebox"  title="Image Title"> <img src="images/pic-4.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+					</div>			
+					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="images/pic-5.jpg" class="swipebox"  title="Image Title"> <img src="images/pic-5.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="images/pic-6.jpg" class="swipebox"  title="Image Title"> <img src="images/pic-6.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+					</div>	
+					<div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="images/pic-7.jpg" class="swipebox"  title="Image Title"> <img src="images/pic-7.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+						</div>
+						<div class="portfolio logos mix_all wow bounceIn" data-wow-delay="0.4s" data-cat="logos" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper grid_box">		
+							 <a href="images/pic-8.jpg" class="swipebox"  title="Image Title"> <img src="images/pic-8.jpg" class="img-responsive" alt=""><span class="zoom-icon"></span> </a>
+
+		                </div>
+					</div>
+					
+<div class="clearfix"></div>					
+				</div>
+				
+				<div class="portfolio-botton">
+						<input type="button" value="Our Portfolio">
+					</div>
+				<div class="border-1">
+			<img src="images/border.png" alt="" />
+		 </div>
+				
+		  <div class="clearfix"></div>
+            </div>
+	  <!-- Script for gallery Here -->
+				<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+					$(function () {
+						
+						var filterList = {
+						
+							init: function () {
+							
+								// MixItUp plugin
+								// http://mixitup.io
+								$('#portfoliolist').mixitup({
+									targetSelector: '.portfolio',
+									filterSelector: '.filter',
+									effects: ['fade'],
+									easing: 'snap',
+									// call the hover effect
+									onMixEnd: filterList.hoverEffect()
+								});				
+							
+							},
+							
+							hoverEffect: function () {
+							
+								// Simple parallax effect
+								$('#portfoliolist .portfolio').hover(
+									function () {
+										$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+										$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+									},
+									function () {
+										$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+										$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+									}		
+								);				
+							
+							}
+				
+						};
+						
+						// Run the show!
+						filterList.init();
+						
+						
+					});	
+					</script>
+			<div class="testimonials-section" id="CLIENTS">
+				<div class="container">
+					<div class="testimonials-section-grids">
+						<div class="col-md-6 testimonial-section-left-grid">
+						    <h3>Client <span>Testimonials</span></h3>
+							<div class="course_demo">
+		          <ul id="flexiselDemo3">	
+					<li>
+						<div class="client-image">
+							<img src="images/client-1.jpg" alt="" />
+						</div>
+						<div class="client-text">
+							<p><i class="open"></i>Lorem ipsum dolor sit amet, consnt dolore magna aliquam erat voaliquamer qui dolorem adipisci velit.<i class="close1"></i></p>
+							<span>Reiter Soumillon</span><br>
+							<a href="#">www.downloadpsd.co</a>
+						</div>
+						<div class="clearfix"></div>
+					</li>
+					<li>
+						<div class="client-image">
+							<img src="images/client-2.jpg" alt="" />
+						</div>
+						<div class="client-text">
+							
+							<p><i class="open"></i>Lorem ipsum dolor sit amet, consnt dolore magna aliquam erat voaliquamer qui dolorem adipisci velit.<i class="close1"></i></p>
+							
+							<span>Reiter Soumillon</span><br>
+							<a href="#">www.downloadpsd.co</a>
+						</div>
+						<div class="clearfix"></div>
+					</li>	
+					<li>
+						<div class="client-image">
+							<img src="images/client-3.jpg" alt="" />
+						</div>
+						<div class="client-text">
+							<p><i class="open"></i>Lorem ipsum dolor sit amet, consnt dolore magna aliquam erat voaliquamer qui dolorem adipisci velit.<i class="close1"></i></p>
+							<span>Reiter Soumillon</span><br>
+							<a href="#">www.downloadpsd.co</a>
+						</div>
+						<div class="clearfix"></div>
+					</li>									    	  	       	   	  									    	  	       	   	    	
+				</ul>
+
+	  </div>
+
+					<script type="text/javascript">
+			$(window).load(function() {
+				$("#flexiselDemo3").flexisel({
+					visibleItems: 1,
+					animationSpeed: 1000,
+					autoPlay: false,
+					autoPlaySpeed: 3000,    		
+					pauseOnHover: true,
+					enableResponsiveBreakpoints: true,
+			    	responsiveBreakpoints: { 
+			    		portrait: { 
+			    			changePoint:480,
+			    			visibleItems: 1
+			    		}, 
+			    		landscape: { 
+			    			changePoint:640,
+			    			visibleItems: 1
+			    		},
+			    		tablet: { 
+			    			changePoint:768,
+			    			visibleItems: 1
+			    		}
+			    	}
+			    });
+			    
+			});
+		</script>
+		<script type="text/javascript" src="js/jquery.flexisel.js"></script>	
+	  </div>
+						<div class="col-md-6 testimonial-section-right-grid">
+	  				  <h3>PIXZEE <span>Skills</span></h3>
+	  					<div class="poling">
+		              <div class="poll">
+			              <div class="poll_desc">
+							<h4>Web Design</h4>
+						  </div>
+						  <div class="percentage">
+							<p>90%</p>
+						  </div>
+						  <div class="clearfix"></div>
+			             <div class="skills">
+			              	<div style="width:95%"> </div>
+	                      </div>
+				       </div>
+				       <div class="poll">
+			              <div class="poll_desc">
+							<h4>HTML/CSS</h4>
+						  </div>
+						  <div class="percentage">
+							<p>95%</p>
+						  </div>
+						  <div class="clearfix"></div>
+			              <div class="skills">
+			              	<div style="width:95%"> </div>
+	                       </div>
+				       </div>
+				        <div class="poll">
+			              <div class="poll_desc">
+							<h4>Joomla</h4>
+						  </div>
+						  <div class="percentage">
+							<p>80%</p>
+						  </div>
+						  <div class="clearfix"></div>
+			              <div class="skills">
+			              	<div style="width:80%"> </div>
+	                      </div>
+				       </div>
+				       <div class="poll nth-child">
+			              <div class="poll_desc">
+							<h4>SEO / SMO</h4>
+						  </div>
+						  <div class="percentage">
+							<p>60%</p>
+						  </div>
+						  <div class="clearfix"></div>
+			              <div class="skills">
+			              	<div style="width:60%"> </div>
+	                      </div>
+				       </div>
+				     </div>
+	  				</div>
+					<div class="clearfix"></div>
+	  			  </div>
+
+						</div>
+						<div class="clearfix"></div>
+					</div>
+			<div class="contact-section" id="contact-section">
+				<div class="contact-section-head">
+				    <div class="down">
+						<img src="images/sayhello.png" alt="" />
+					</div>
+					<div class="container">
+						<h3>Say <span>Hello</span></h3>
+					</div>
+					<div class="border-2">
+			            <img src="images/border.png" alt="" />
+		            </div>
+				</div>
+				<div class="contact-section-grids">
+				    <div class="container">
+						<div class="col-md-8 contact-section-left-grid">
+							<form>
+								<input type="text" class="text" value="your name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'your name';}">
+								<input type="text" class="text" value="e-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'e-mail';}">
+								<input type="text" class="text" value="The Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'The Subject';}">
+								 <textarea onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
+								<input type="button" value="Submit">
+							</form>
+						</div>
+						<div class="col-md-4 contact-section-right-grid">
+							<h4>Contact Details</h4>
+							<p>Mauris interdum tortor et eleifend adipiscing. Nullam congue sodales fermentum. Nullam pulvinar gravida aliquam. Quisque nec lorem nec lacus semper cursus. Suspendisse potenti. Mauris nec vehicula nibh.</p>
+							<ul class="contact-section-list">
+								<li><i class="location"></i></li>
+								<li>18A, Polo Street (Yellow Door)</li>
+							</ul>
+							<ul class="contact-section-list">
+								<li><i class="phone"></i></li>
+								<li>0846 9907 8544</li>
+							</ul>
+							<ul class="contact-section-list">
+								<li><i class="mail"></i></li>
+								<li>support@downloadpsd.co</li>
+							</ul>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+	<!-- content-section-ends -->
+	<!-- footer-section-starts -->
+	<div class="footer">
+		<div class="top-footer">
+			<div class="col-md-8 top-footer-left-grid">
+					<div class="latest-tweets">
+						<h4>Latest Tweets</h4>
+						<div class="icon-3-square">
+							<i class="square-3"></i>
+						</div>
+						<div class="icon-text">
+							<p><span>about 16 hours ago</span> we replied to @<a href="#">daiburchell</a> Donec malesuada vel nulla in vehicula. Quisque facilisis nibh sagittis vestibulum dignissim</p>
+						</div>
+						<div class="clearfix"></div>
+						<div class="icon-3-square">
+							<i class="square-3"></i>
+						</div>
+						<div class="icon-text">
+							<p><span>about 16 hours ago</span> we replied to @<a href="#">hugobrien</a> Donec malesuada vel nulla in vehicula. Quisque facilisis nibh sagittis vestibulum dignissim</p>
+						</div>
+						<div class="clearfix"></div>
+						<div class="icon-3-square">
+							<i class="square-3"></i>
+						</div>
+						<div class="icon-text">
+							<p><span>about 16 hours ago</span> we replied to @<a href="#">danwright</a> Hello Donec malesuada vel nulla in vehicula. Quisque facilisis nibh sagittis vestibulum dignissim</p>
+						</div>
+						<div class="clearfix"></div>
+			        </div>
+					<div class="flickr">
+					    <h4>Flickr Photostream</h4>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+			</div>
+			<div class="col-md-4 top-footer-right-grid">
+				<h4>NEWSLETTER signup</h4>
+				<p>Sign up for our newsletter and get free stuff delivered to your inbox daily</p>
+				<input type="text" class="text" value="Your name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your name';}">
+				<input type="text" class="text" value="Your Email Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Email Address';}">
+				<input type="button" value="subscribe">
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="bottom-footer">
+			<div class="col-md-8 copy-rights">
+				<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+			</div>
+			<div class="col-md-4 fax">
+				<ul>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Sitemap</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!-- footer-section-ends -->
+			  <script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</body>
+</html>

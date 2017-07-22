@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="CREATIVE Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<link href='http://fonts.useso.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!--Animation-->
+<script src="js/wow.min.js"></script>
+<link href="css/animate.css" rel='stylesheet' type='text/css' />
+<script>
+	new WOW().init();
+</script>
+<script src="js/responsiveslides.min.js"></script>
+	<script>
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	nav: true,
+      	speed: 500,
+        namespace: "callbacks",
+        pager: true,
+      });
+    });	
+	</script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+ <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+</head>
+<body>
+	<!-- header-section-starts -->
+	<div class="header">
+		<div class="header-slider" id="home">
+			<div class="slider">
+				<div class="callbacks_container">
+				<ul class="rslides" id="slider">
+					<li>
+					<img src="images/slider1.jpg" alt="">
+					<div class="caption text-center">
+						<h5 class="wow fadeInLeft" data-wow-delay="0.5s">PSD CONCEPT </h5>
+						<h3 class="wow fadeInLeft" data-wow-delay="0.5s">CREATIVE PORTFOLIO</h3>
+						<p class="wow fadeInRight" data-wow-delay="0.5s">WEB DESIGN-DEVELOPMENT-MARKETING</p>
+						<a class="scroll" href="#services"><img src="images/down.png" class="down wow fadeInUp" data-wow-delay="0.4s" alt="" /></a>
+					  </div>
+					</li>
+					<li>
+					  <img src="images/slider1.jpg" alt="">
+						<div class="caption text-center">
+						<h5 class="wow fadeInLeft" data-wow-delay="0.5s">PSD CONCEPT </h5>
+						<h3 class="wow fadeInLeft" data-wow-delay="0.5s">CREATIVE PORTFOLIO</h3>
+						<p class="wow fadeInRight" data-wow-delay="0.5s">WEB DESIGN-DEVELOPMENT-MARKETING</p>
+						<a class="scroll" href="#services"><img src="images/down.png" class="down wow fadeInUp" data-wow-delay="0.4s" alt="" /></a>
+					   </div>
+					</li>
+					<li>
+					  <img src="images/slider1.jpg" alt="">
+					  <div class="caption text-center">
+						<h5 class="wow fadeInLeft" data-wow-delay="0.5s">PSD CONCEPT </h5>
+						<h3 class="wow fadeInLeft" data-wow-delay="0.5s">CREATIVE PORTFOLIO</h3>
+						<p class="wow fadeInRight" data-wow-delay="0.5s">WEB DESIGN-DEVELOPMENT-MARKETING</p>
+						<a class="scroll" href="#services"><img src="images/down.png" class="down wow fadeInUp" data-wow-delay="0.4s" alt="" /></a>
+					  </div>
+					</li>
+					<li>
+					  <img src="images/slider1.jpg" alt="">
+					  <div class="caption text-center">
+						<h5>PSD CONCEPT </h5>
+						<h3>CREATIVE PORTFOLIO</h3>
+						<p>WEB DESIGN-DEVELOPMENT-MARKETING</p>
+						<a class="scroll wow fadeInUp" data-wow-delay="0.4s" href="#services"><img src="images/down.png" class="down" alt="" /></a>
+					  </div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	 </div>
+	 <div class="header-bottom">
+	 <div class="fixed-header">
+		<div class="container">
+			<div class="logo wow fadeInLeft" data-wow-delay="0.5s">
+				<a href="#"><img src="images/logo.png" class="img-responsive" alt="" /></a>
+			</div>
+			<span class="menu"> </span>
+			<div class="top-menu">
+			<nav class="cl-effect-21">
+				<ul>
+					<li><a class="active scroll" href="#about">ABOUT</a></li>
+					<li><a class="scroll" href="#services">SERVICE</a></li>
+					<li><a class="scroll" href="#blog">BLOG</a></li>
+					<li><a class="scroll" href="#pricing">PRICING</a></li>
+					<li><a class="scroll" href="#contact">CONTACT US</a></li>
+				<ul>
+			</nav>		
+			</div>
+		<!-- script for menu -->
+				<script>
+				$( "span.menu" ).click(function() {
+				  $( ".top-menu" ).slideToggle( "slow", function() {
+				    // Animation complete.
+				  });
+				});
+			</script>
+			<!-- script for menu -->
+			<script>
+		$(document).ready(function() {
+			 var navoffeset=$(".header-bottom").offset().top;
+			 $(window).scroll(function(){
+				var scrollpos=$(window).scrollTop(); 
+				if(scrollpos >=navoffeset){
+					$(".header-bottom").addClass("fixed");
+				}else{
+					$(".header-bottom").removeClass("fixed");
+				}
+			 });
+			 
+		});
+		</script>
+			<div class="clearfix"></div>
+		</div>
+	 </div>
+	 </div>
+	</div>
+	<!-- header-section-ends-here -->
+	<!-- contant-section-starts-here -->
+	<div class="content">
+		<!-- service-section-starts-here -->
+		<div class="service-section text-center" id="services">
+			<div class="container">
+				<div class="service-section-head wow bounceInLeft" data-wow-delay="0.4s">
+					<h3>SERVICES</h3>
+					<p>Web Design & Development</p>
+				</div>
+				<div class="service-section-grids">
+					<div class="col-md-4 service-section-grid wow fadeInLeft" data-wow-delay="0.5s">
+						<img src="images/s1.png" alt="" />
+						<h4>PIXEL PERFECT</h4>
+						<p>Donec sed odio dui. Nulla vitae elit libero, a pharetra. Donec sed Donec sed odio dui. Donec sed odio dui. Nulla vitae elit libero, a pharetra. Donec sed Donec sed odio dui. Donec sed Donec sed odio dui.</p>
+						<a class="more btn btn-1 btn-1d" href="">MORE</a>
+					</div>
+					<div class="col-md-4 service-section-grid wow bounceIn" data-wow-delay="0.4s">
+						<img src="images/s2.png" alt="" />
+						<h4>CREATIVE DESIGN</h4>
+						<p>Donec sed odio dui. Nulla vitae elit libero, a pharetra. Donec sed Donec sed odio dui. Donec sed odio dui. Nulla vitae elit libero, a pharetra. Donec sed Donec sed odio dui. Donec sed Donec sed odio dui.</p>
+						<a class="more btn btn-1 btn-1d" href="">MORE</a>
+					</div>
+					<div class="col-md-4 service-section-grid wow fadeInRight" data-wow-delay="0.5s">
+						<img src="images/s3.png" alt="" />
+						<h4>RESPONSIVE DESIGN</h4>
+						<p>Donec sed odio dui. Nulla vitae elit libero, a pharetra. Donec sed Donec sed odio dui. Donec sed odio dui. Nulla vitae elit libero, a pharetra. Donec sed Donec sed odio dui. Donec sed Donec sed odio dui.</p>
+						<a class="more btn btn-1 btn-1d" href="">MORE</a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<!-- service-section-ends-here -->
+		<!-- team-section-starts-here -->
+		<div class="team-section text-center" id="about">
+			<div class="container">
+				<div class="team-section-head wow fadeInLeft" data-wow-delay="0.5s">
+					<h3>OUR TEAM</h3>
+					<p>WE ARE SOME CREATIVE PERSONS</p>
+				</div>
+				<div class="team-section-grids">
+					<div class="col-md-4 team-section-grid wow fadeInRight" data-wow-delay="0.4s">
+						<img src="images/t1.jpg" alt="" />
+						<h4>SAIMON</h4>
+						<p>DESIGNER & DEaDEVELOPER</p>
+						<div class="social-icons1 wow fadeInUp" data-wow-delay="0.4s">
+							<i class="facebook"></i>
+							<i class="twitter"></i>
+							<i class="behance"></i>
+							<i class="dribble"></i>
+						</div>
+					</div>
+					<div class="col-md-4 team-section-grid wow fadeInRight" data-wow-delay="0.4s">
+						<img src="images/t1.jpg" alt="" />
+						<h4>SAIMON</h4>
+						<p>DESIGNER & DEaDEVELOPER</p>
+						<div class="social-icons1 wow fadeInUp" data-wow-delay="0.4s">
+							<i class="facebook"></i>
+							<i class="twitter"></i>
+							<i class="behance"></i>
+							<i class="dribble"></i>
+						</div>
+					</div>
+					<div class="col-md-4 team-section-grid wow fadeInRight" data-wow-delay="0.4s">
+						<img src="images/t1.jpg" alt="" />
+						<h4>SAIMON</h4>
+						<p>DESIGNER & DEaDEVELOPER</p>
+						<div class="social-icons1 wow fadeInUp" data-wow-delay="0.4s">
+							<i class="facebook"></i>
+							<i class="twitter"></i>
+							<i class="behance"></i>
+							<i class="dribble"></i>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<!-- team-section-ends-here -->
+		<!-- experience-section-starts-here -->
+		<div class="experience-section">
+			<div class="container">
+				<div class="experience-section-head text-center wow bounceInRight" data-wow-delay="0.4s">
+					<h3>OUR EXPERIENCES</h3>
+					<p>Lorem Ipsum is simply dummy text of</p>
+				</div>
+				<div class="polling">
+				<div class="polls wow fadeInRight" data-wow-delay="0.5s">
+				<div class="skills">
+			              	<div class="skill1" style="width:97%"> <h4>PHOTOSHOP</h4></div>							
+	                      </div>
+						  <div class="percentage"><h4>97%</h4></div>
+						  <div class="clearfix"></div>
+	                      </div>
+	                      <div class="polls wow fadeInLeft" data-wow-delay="0.5s">
+				<div class="skills">
+			         <div class="skill2" style="width:95%"><h4>WEB DESIGN</h4></div>
+					 
+	            </div>
+				<div class="percentage"><h4>95%</h4></div>
+				<div class="clearfix"></div>
+	                      </div>
+	                      <div class="polls wow fadeInRight" data-wow-delay="0.5s">
+				<div class="skills">
+			              	<div class="skill3" style="width:80%"><h4>ILLUSTRATOR</h4></div>
+							
+	                      </div>
+						  <div class="percentage"><h4>80%</h4></div>
+						  <div class="clearfix"></div>
+	                      </div>
+	  
+				</div>
+			</div>
+		</div>
+		<!-- experience--section-ends-here -->
+		<!-- fun-facts-section-starts-here -->
+		<div class="fun-facts-section text-center">
+			<div class="fun-facts-section-head wow bounceInRight" data-wow-delay="0.4s">
+				<h3>SOME FUN FACTS </h3>
+			</div>
+				<div class="fun-facts-grids wow fadeInUp" data-wow-delay="0.4s">
+					<div class="col-md-3 fun-facts-grid">
+						<i class="cup"></i>
+						<h3>613</h3>
+						<p>CUP OF TEA</p>
+					</div>
+					<div class="col-md-3 fun-facts-grid">
+						<i class="face"></i>
+						<h3>1200</h3>
+						<p>HAPPY CLIENTS</p>
+					</div>
+					<div class="col-md-3 fun-facts-grid">
+						<i class="music"></i>
+						<h3>865</h3>
+						<p>SONG LIETENED</p>
+					</div>
+					<div class="col-md-3 fun-facts-grid">
+						<i class="projucts"></i>
+						<h3>1200</h3>
+						<p>ENDED PROJECT</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+		</div>
+		<!-- fun-facts-section-ends-here -->
+		<!-- blog-section-starts-here -->
+		<div class="blog-section" id="blog">
+			<div class="container">
+				<div class="blog-section-head text-center wow fadeInLeft" data-wow-delay="0.5s">
+					<h3>BLOG</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing</p>
+				</div>
+				<div class="blog-section-grids">
+					<div class="col-md-6 blog-section-grid wow bounceIn" data-wow-delay="0.4s">
+						<div class="client">
+							<img src="images/b4.jpg" class="img-responsive" alt="" />
+						</div>
+						<div class="client-text">
+							<span>11 DECEMBER 2014</span>
+							<h4>A NEW INVENTION FORTHE</h4>
+							<p>Donec sed odio dui. Nulla vilae eli libem a pharera Donec sed odio dui nulla vilae eli libem ...</p>
+							<a class="btn btn-1 btn-1c" href="">MORE</a>
+							
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-md-6 blog-section-grid wow bounceIn" data-wow-delay="0.4s">
+						<div class="client">
+							<img src="images/b3.jpg" class="img-responsive" alt="" />
+						</div>
+						<div class="client-text">
+							<span>11 DECEMBER 2014</span>
+							<h4>A NEW INVENTION FORTHE</h4>
+							<p>Donec sed odio dui. Nulla vilae eli libem a pharera Donec sed odio dui nulla vilae eli libem ...</p>
+							<a class="btn btn-1 btn-1c" href="">MORE</a>
+							
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-md-6 blog-section-grid wow bounceIn" data-wow-delay="0.4s">
+						<div class="client">
+							<img src="images/b2.jpg" class="img-responsive" alt="" />
+						</div>
+						<div class="client-text">
+							<span>11 DECEMBER 2014</span>
+							<h4>A NEW INVENTION FORTHE</h4>
+							<p>Donec sed odio dui. Nulla vilae eli libem a pharera Donec sed odio dui nulla vilae eli libem ...</p>
+							<a class="btn btn-1 btn-1c" href="">MORE</a>
+							
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="col-md-6 blog-section-grid wow bounceIn" data-wow-delay="0.4s">
+						<div class="client">
+							<img src="images/b1.jpg" class="img-responsive" alt="" />
+						</div>
+						<div class="client-text">
+							<span>11 DECEMBER 2014</span>
+							<h4>A NEW INVENTION FORTHE</h4>
+							<p>Donec sed odio dui. Nulla vilae eli libem a pharera Donec sed odio dui nulla vilae eli libem ...</p>
+							<a class="btn btn-1 btn-1c" href="">MORE</a>
+							
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<!-- blog-section-ends-here -->
+		<!-- clients-section-starts-here -->
+		<div class="client-section text-center">
+			<h3 class="wow bounceInLeft" data-wow-delay="0.4s">OUR CLIENTS</h3>
+			<ul class="clients wow fadeInDown" data-wow-delay="0.4s">
+				<li><img src="images/c1.jpg" alt="" /></li>
+				<li><img src="images/c2.jpg" alt="" /></li>
+				<li><img src="images/c3.jpg" alt="" /></li>
+				<li><img src="images/c4.jpg" alt="" /></li>
+			<ul>
+		</div>
+		<!-- clients-section-ends-here -->
+		<!-- prising-section-starts-here -->
+		<div class="pricing-section" id="pricing">
+			<div class="container">
+				<div class="pricing-section-head text-center wow fadeInLeft" data-wow-delay="0.5s">
+					<h3>PRICING TABLE</h3>
+					<p>Donec sed odio dui nulla vilae eli libem dui donec</p>
+				</div>
+				<div class="pricing-section-grids">
+					<div class="pricing-section-grid1">
+						<div class="pricing-section-grid1-head wow fadeInRight" data-wow-delay="0.4s">
+							<div class="rates">
+								
+								<h2><span>$<span>9</h2>
+								<p>per month</p>
+							</div>
+						</div>
+						<div class="pricing-section-grid1-try text-center">
+							<h3>MINI</h3>
+							<p>500 MB STORAGE</p>
+							<p>PUBLIC PROJECT ONLY</p>
+							<p>2 PRODUCTS</p>
+							<p>24/7 CUSTOMER SUPPORT</p>
+							<a href="">TRY</a>
+						</div>
+					</div>
+					<div class="pricing-section-grid1">
+						<div class="pricing-section-grid1-head wow fadeInRight" data-wow-delay="0.4s">
+							<div class="rates span_33">
+								
+								<h2><span>$<span>19</h2>
+								<p>per month</p>
+							</div>
+						</div>
+						<div class="pricing-section-grid1-try text-center span_34">
+							<h3>STANDARD</h3>
+							<p>500 MB STORAGE</p>
+							<p>PUBLIC PROJECT ONLY</p>
+							<p>2 PRODUCTS</p>
+							<p>24/7 CUSTOMER SUPPORT</p>
+							<p>MOBILE VERSION</p>
+							<a href="">TRY</a>
+						</div>
+					</div>
+					<div class="pricing-section-grid1">
+						<div class="pricing-section-grid1-head wow fadeInRight" data-wow-delay="0.4s">
+							<div class="rates sapn_66">
+								
+								<h2><span>$<span>69</h2>
+								<p>per month</p>
+							</div>
+						</div>
+						<div class="pricing-section-grid1-try text-center span_64">
+							<h3>PREMIUM</h3>
+							<p>500 MB STORAGE</p>
+							<p>PUBLIC PROJECT ONLY</p>
+							<p>2 PRODUCTS</p>
+							<p>24/7 CUSTOMER SUPPORT</p>
+							<p>MOBILE VERSION</p>
+							<p>ADS FREE</p>
+							<p>ADMIN PANEL</p>
+							<a href="">TRY</a>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<!-- prising-section-ends-here -->
+		<div class="location-section">
+			<div class="container">
+				<ul>
+					<li><i class="phone wow fadeInUp" data-wow-delay="0.4s"></i></li>
+					<li class="wow fadeInDown" data-wow-delay="0.4s">123-33-333</li>
+				</ul>
+				<ul>
+					<li><i class="mail wow fadeInUp" data-wow-delay="0.4s"></i></li>
+					<li class="wow fadeInDown" data-wow-delay="0.4s"><a href="mail-to:admi@mail.com">admi@mail.com</a></li>
+				</ul>
+				<ul>
+					<li><i class="location wow fadeInUp" data-wow-delay="0.4s"></i></li>
+					<li class="wow fadeInDown" data-wow-delay="0.4s"><p>Dhaka 1362</p><p class="bang">BANGLADESH</p></li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="contact-section" id="contact">
+			<div class="container">
+				<div class="contact-section-head text-center">
+					<h3 class="wow fadeInLeft" data-wow-delay="0.5s">CONTACT US</h3>
+					<p class="wow fadeInRight" data-wow-delay="0.5s">SUBMIT THE FORM AND SEND US</p>
+				</div>
+				<div class="contact-form text-center">
+					<form>
+					<li class="wow fadeInRight" data-wow-delay="0.5s">
+						<input type="text" class="text" value="NAME" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'NAME';}">
+						<a class="icon11" href="#"></a>
+					</li>
+					<div class="clearfix"></div>
+					<li class="wow fadeInLeft" data-wow-delay="0.5s">
+						<input type="text" class="text" value="EMAIL" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'EMAIL';}">
+						<a class="icon12" href="#"></a>
+					</li>
+					<div class="clearfix"></div>
+					<li class="wow fadeInRight" data-wow-delay="0.5s">
+						<textarea onfocus="if(this.value == 'MESSAGE') this.value='';" onblur="if(this.value == '') this.value='MESSAGE';" >MESSAGE</textarea>
+						<a class="icon13" href="#"></a>
+					</li>
+					<div class="clearfix"></div>
+					<div class="wow swing animated" data-wow-delay= "0.4s">
+					<input type="submit" value="SUBMIT">
+					</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		 <div class="map">
+			 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10015.498657932954!2d-0.1570060357124469!3d51.129219866008135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875f1c859d0e855%3A0xb0ce82410da5809!2sA2011%2C+Crawley%2C+West+Sussex+RH10%2C+UK!5e0!3m2!1sen!2sin!4v1409743498026" frameborder="0" style="border:0"></iframe>
+             <div class="location-map text-center">
+			<div class="mark">
+				<h4>location</h4>
+				<h4>DHAKA, 1362</h4>
+				<div class="show">
+					<img src="images/arrow.png" alt="" />
+				</div>
+				</div>
+				</div>
+		</div>
+		<div class="subscribe-section">
+			<div class="subscribe-form text-center">
+					<form>
+						<li class="wow fadeInLeft" data-wow-delay="0.5s">
+						<input type="text" class="text" value="Your email please" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your email please';}">
+						<a class="icon" href="#"></a>
+						</li>
+						<div class="wow swing animated" data-wow-delay= "0.4s">
+						<input type="submit" value="SUBMIT">
+						</div>
+						<div class="clearfix"></div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- contant-section-ends-here -->
+	<div class="footer text-center">
+		<div class="social-icons wow fadeInUp" data-wow-delay="0.4s">
+			<a href="#"><i class="dribble1"></i></a>
+			<a href="#"><i class="behance1"></i></a>
+			<a href="#"><i class="pinterest1"></i></a>
+			<a href="#"><i class="facebook1"></i></a>
+		</div>
+		<div class="copyright text-center wow fadeInLeft" data-wow-delay="0.5s">
+				<p>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+			</div>
+	</div>
+	<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+</body>
+</html>

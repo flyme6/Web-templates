@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<!--bootstarp-css-->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--/bootstarp-css -->
+<!--css-->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<!--/css-->
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--fonts-->
+<link href='http://fonts.useso.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+<!--/fonts-->
+<!--js-->
+<script src="js/jquery.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+				});
+			});
+</script>
+<!--/js-->
+ <!-- Script for gallery Here -->
+				<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+					$(function () {
+						
+						var filterList = {
+						
+							init: function () {
+							
+								// MixItUp plugin
+								// http://mixitup.io
+								$('#portfoliolist').mixitup({
+									targetSelector: '.portfolio',
+									filterSelector: '.filter',
+									effects: ['fade'],
+									easing: 'snap',
+									// call the hover effect
+									onMixEnd: filterList.hoverEffect()
+								});				
+							
+							},
+							
+							hoverEffect: function () {
+							
+								// Simple parallax effect
+								$('#portfoliolist .portfolio').hover(
+									function () {
+										$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+										$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+									},
+									function () {
+										$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+										$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+									}		
+								);				
+							
+							}
+				
+						};
+						
+						// Run the show!
+						filterList.init();
+						
+						
+					});	
+		</script>
+<!--/Script for gallery Here -->
+</head>
+<body>
+<!--header-->
+<div class="header">
+	<div class="container">
+	<div class="logo">
+		<a href="#"><img src="images/logo.png" class="img-responsive" alt=""/></a>
+	</div>
+<!--nav-->
+		 <div class="navigation-0">
+				 	<span class="menu"> </span>
+						<ul>
+							<li><a class="scroll" href="#HOME" title="HOME"><span>HOME</span></a></li>
+							<li><a class="scroll" href="#services" title="SERVICES"><span>SERVICES</span></a></li>
+							<li><a class="scroll" href="#PORTFOLIO" title="PORTFOLIO"><span>PORTFOLIO</span></a></li>
+							<li><a class="scroll" href="#SKILLS" title="SKILLS"><span>SKILLS</span></a></li>
+							<li><a class="scroll" href="#BLOG" title=" BLOG"><span>BLOG</span></a></li>
+							<li><a class="scroll" href="#CUSTOMERS" title="CUSTOMERS"><span>CUSTOMERS</span></a></li>
+							<li><a class="scroll" href="#CONTACT-US" title="CONTACT-US"><span>CONTACT-US</span></a></li>		
+						</ul>	
+			</div>
+					<!-- script-nav -->
+	        <script>
+	        $("span.menu").click(function(){
+				$(".navigation-0 ul").slideToggle("slow" , function(){
+				});
+			});
+			</script>
+			<div class="clearfix"></div>
+			<!-- /script-nav -->
+			<!--/nav-->
+			<div class="clearfix"></div>
+	</div>
+</div>	
+<!--header-->
+<!--header-banner-->
+<div id="HOME" class="top-banner">
+		<div class="top-banner-back">
+		<div class="container">
+			<div class="logo-2">
+			<a href="#"><img src="images/logo-d.png" class="img-responsive" alt=""/></a>
+			</div>
+			<div class="diam">
+				<a href="#"><img src="images/line.png" class="img-responsive" alt=""/></a>
+			</div>
+			<p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit. Nulla porttitor accumsan 
+				tincidunt. Quisque velit nisi, pretium ut lacinia in, elemena porttlit nisi, pretium ut
+ 				lacinia in elementumestibulum ac diam sit anet.</p>
+ 				<a class="theme" href="#">Purchase Theme</a>
+ 		</div>
+		</div>
+		<div class="clearfix"></div>
+</div>
+<!--/header-banner-->
+<!--content-part-->
+<!--our-services-->
+<div class="content">
+	<div id="services" class="services">
+		<div class="container">
+			<div class="services-id">
+				<div class="services-word">
+					<h2>FULLY LAYERED AND CUSTOMIZABLE TEMPLATE</h2>
+					<span>OUR SERVICES</span>
+					<a href="#"><img src="images/line2.png" class="img-responsive" alt=""/></a>
+					<p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit. Nulla porttitor accumsan tinci
+						dunt. Quisque velit nisi, pretium ut lacinia in, elemena porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lac
+						inia in, elementum id enim. Vestibulum ac diam sit anet.</p>
+				</div> 
+							<div class="grids">
+						<div class="col-md-3 grid">
+						<span class="icon1"></span>
+						<h2>School Pickups</h2>
+						<p>Donec sollicitudin molestie malesuada. 
+							Curabitur aliquet quam id dui posuere 
+							blandit. Nulla porttitor.</p>
+						</div>
+						<div class="col-md-3 grid">
+						<span class="icon2"></span>
+						<h2>Extensive Labrary</h2>
+						<p>Donec sollicitudin molestie malesuada. 
+							Curabitur aliquet quam id dui posuere 
+							blandit. Nulla porttitor.</p>
+						</div>
+						<div class="col-md-3 grid">
+						<span class="icon3"></span>
+						<h2>Outdoor Trips</h2>
+					<p>Donec sollicitudin molestie malesuada. 
+							Curabitur aliquet quam id dui posuere 
+							blandit. Nulla porttitor.</p>
+						</div>
+						<div class="col-md-3 grid">
+						<span class="icon4"></span>
+						<h2>Outdoor Trips</h2>
+					<p>Donec sollicitudin molestie malesuada. 
+							Curabitur aliquet quam id dui posuere 
+							blandit. Nulla porttitor.</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+			</div>		
+		</div>
+			<div class="mask">
+				<div class="container">
+						<h3>Design must reflect the practical and aesthetic in business but above all... 
+							good design must primarily serve people.</h3>
+						<p>Thomas J. Watson</p>
+				</div>	
+			</div>
+	</div>
+<!--/our-services-->
+<!--PORTFOLIO-->
+<div id="PORTFOLIO"class="portfollio">
+	<div class="container">
+			<div class="design">
+					<h3>MODERN AND CLEAN DESIGN</h3>
+					<h4>OUR PORTFOLIO</h4>
+					<a href="#"><img src="images/line2.png" class="img-responsive" alt=""/></a>
+					<p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit. Nulla porttitor accumsan tinci
+						dunt. Quisque velit nisi, pretium ut lacinia in, elemena porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lac
+						inia in, elementum id enim. Vestibulum ac diam sit anet.</p>
+			</div>
+			<div class="main">
+			<div class="container">
+			<ul id="og-grid" class="og-grid">
+					<li>
+						<a href="#" data-largesrc="images/img2_b.jpg" class="img-responsive" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+							<img src="images/a.jpg" class="img-responsive" alt="img01"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="images/img3_b.jpg" class="img-responsive" data-title="Veggies sunt bona vobis" data-description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.">
+							<img src="images/b.jpg" class="img-responsive" alt="img02"/>
+						</a>
+					</li>
+					<li>
+						<a href="#" data-largesrc="images/img39_b.jpg" class="img-responsive" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
+							<img src="images/c.jpg" class="img-responsive" alt="img03"/>
+						</a>
+					</li>
+					
+					<li>
+						<a href="#" data-largesrc="images/img47_b.jpg" class="img-responsive" data-title="Veggies sunt bona vobis" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.">
+							<img src="images/d.jpg" class="img-responsive" alt="img01"/>
+						</a>
+					</li>
+			</ul>
+			</div>
+		</div><!-- /container -->		
+		<script src="js/grid.js"></script>
+		<script>
+			$(function() {
+				Grid.init();
+				
+			});
+		</script>
+		<div class="down-arrow">
+			<a href="#menu" class="scroll"><img src="images/down-arrow.png" class="img-responsive" alt=""/></a>
+			<h3>WE LOVE OUR WORK</h3>
+			<p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit. Nulla porttitor accumsan tinci
+					dunt. Quisque velit nisi, pretium ut lacinia in, elemena porttitor accumsan tincidun.</p>
+			<a class="arrow" href="#">Purshase Theme</a>
+		</div>
+	</div>
+</div>
+</div>
+<!--/PORTFOLIO-->
+<!--about-us-->
+<div class="about-us">
+			<div class="container">
+				<h3>FULLY RESPONSIVE DESIGN</h3>
+				<h4>ABOUT US</h4>
+				<div class="line-mate">
+				<a href="#"><img src="images/line.png" class="img-responsive" alt=""/></a>
+				</div>
+				<p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit. Nulla porttitor accumsan tinci
+					dunt. Quisque velit nisi, pretium ut lacinia in, elemena porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lac
+					inia in, elementum id enim. Vestibulum ac diam sit anet.</p>
+			</div>
+						<div class="portfolio-wrapper-1">		
+							<a href="#small-dialog" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+						     <img src="images/yak1.png" class="img-responsive pimg" alt="" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+						<div class="portfolio-wrapper-1">		
+							<a href="#small-dialog1" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+						     <img src="images/yak2.png" class="img-responsive pimg" alt="" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+						<div class="portfolio-wrapper-1">		
+							<a href="#small-dialog2" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+						     <img src="images/yak3.png" class="img-responsive pimg" alt="" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+						<div class="portfolio-wrapper-1">		
+							<a href="#small-dialog3" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+						     <img src="images/yak4.png" class="img-responsive pimg" alt="" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/icon-eye.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+						<div class="clearfix"></div>					
+				</div>
+		        <div class="clearfix"></div>
+			<!-- pop-up-box -->
+					  <script type="text/javascript" src="js/modernizr.custom.min.js"></script>    
+					<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+					<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+			<!-- //pop-up-box -->
+					<script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+			</script>
+			<div id="small-dialog" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/yak1.png" class="img-responsive" alt="" />
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to book.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour. </p>
+						</div>
+					</div>
+					<div id="small-dialog1" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/yak2.png" class="img-responsive" alt="" />
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to book.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+						</div>
+					</div>
+					<div id="small-dialog2" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/yak3.png" class="img-responsive" alt="" />
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to book.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+						</div>
+					</div>
+					<div id="small-dialog3" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/yak4.png" class="img-responsive" alt="" />
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to book.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+						</div>
+					</div>		
+		</div>
+	<!-- Work Ends Here -->
+  <div class="clearfix"></div>		
+</div>	
+<!--/about-us-->
+<!--skills-->
+<div id="SKILLS"class="skills">
+	<div class="skills-top">
+		<div class="container">
+			<div class="company">
+				<h3>WE HAVE SKILLS</h3>
+				<p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit. Nulla porttitor accumsan tinci
+					dunt. Quisque velit nisi, pretium ut lacinia in, elemena porttitor accumsan tincidun.</p>
+			</div>
+		</div>
+	<div class="b-grids">
+		<div class="container">
+			<div class="col-md-6 magna">
+				<h3>Our Company</h3>
+				<p>Cras ultricies ligula sed magna dictum porta. Curabitur arcu erat, accumsan id imperdiet 
+					et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Nulla porttitor accum
+					san tincidunt. Vivamus suscipit tortor eget felis porttitor volutpat. Quisque velit nisi, 
+					pretium ut lacinia in, elementum id enim. Quisque velit nisi, pretium ut lacinia in, 
+					elementum id enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices 
+					posuere cubilia Curae; Donec velit neque, auctor situr arcu erat, accumsan id imperdiet 
+					et, porttitor at sem.</p>
+					<a class="ski" href="#">Read More</a>
+			</div>
+			<div class="col-md-6 erat">
+				<h3>Our Skills</h3>
+				<div class="skill-head">
+					  <span><lable><p>HTML &amp; CSS</p></lable></span>
+					  <span><lable><p>AI &amp; PS</p></lable></span>
+					  <span><lable><p>JSS &amp; PHP</p></lable></span>
+					  <span><lable><p>PHOTOGRAPHY</p></lable></span>
+				 </div>
+			</div>
+		</div>	
+		</div>
+	<div class="skill-icons">
+			<div class="skill-grid-icon">
+				<div class="container">
+					 <div class="col-sm-3">
+   		  	  	  <ul class="service_grid">
+   	   				<i class="s1"> </i>
+   	   				 <li class="desc1">
+					 <p1>230</p1>
+					 <p>Customers</p>
+   	   				 </li>
+   	   				 <div class="clearfix"> </div>
+   	   			   </ul>
+   	   			 </div>
+   	   			 	 <div class="col-sm-3">
+   		  	  	  <ul class="service_grid">
+   	   				<i class="s2"> </i>
+   	   				 <li class="desc1">
+					 <p1>22</p1>
+					 <p>Awards</p>
+   	   				 </li>
+   	   				 <div class="clearfix"> </div>
+   	   			   </ul>
+   	   			 </div>
+   	   			 	 <div class="col-sm-3">
+   		  	  	  <ul class="service_grid">
+   	   				<i class="s3"> </i>
+   	   				 <li class="desc1">
+					 <p1>2380</p1>
+					 <p>Completed Projects</p>
+   	   				 </li>
+   	   				 <div class="clearfix"> </div>
+   	   			   </ul>
+   	   			 </div>
+   	   			 	 <div class="col-sm-3">
+   		  	  	  <ul class="service_grid">
+   	   				<i class="s4"> </i>
+   	   				 <li class="desc1">
+					 <p1>50890</p1>
+					 <p>Followers</p>
+   	   				 </li>
+   	   				 <div class="clearfix"> </div>
+   	   			   </ul>
+   	   			 </div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--/skills-->
+<!--blogs-->
+<div id="BLOG"class="blog">
+	<div id="menu" class="blog-top">
+		<div class="container">
+			<h3>BOOTSTRAP GRID READY</h3>
+			<h4>OUR BLOG</h4>
+			<a href="#"><img src="images/line2.png" class="img-responsive" alt=""/></a>
+			<p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit. Nulla porttitor accumsan tinci
+				dunt. Quisque velit nisi, pretium ut lacinia in, elemena porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lac
+				inia in, elementum id enim. Vestibulum ac diam sit anet.
+			</p>
+			</div>
+		</div>
+			<div class="container">
+   <ul id="filters" class="clearfix">
+						<li><span class="filter active" data-filter="app card icon">All</span></li>
+						<li><span class="filter" data-filter="app">NEWEST</span></li>
+						<li><span class="filter"data-filter="card">OLDEST</span></li>
+						<li><span class="filter"data-filter="icon">MOSTPOPULAR</span></li>
+						</ul>
+						<div id="portfoliolist">
+					<div class="portfolio card mix_all"data-cat="card" style="display: inline-block; opacity: 1;">
+							
+							<img src="images/blog-1.jpg" class="img-responsive" alt="" />
+		               
+					</div>				
+					<div class="portfolio card mix_all"data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-text col-md-2">
+                            <div class="portfolio-top-text">						
+										<h3>Great party we have there</h3>
+						<h4>Published by: John Doe</h4>
+						<p>Donec sollicitudin molestie male
+							suada. Curabitur aliquet quam id
+							dui posuere blandit. Nulla porttitor 
+							accumsan tincidunt. Quisque velit 
+							nisi, pretium ut lacinia in, elemena 
+							porttitor accumsan tincidunt. 
+							Quisque velit nid enim. Vestibulum 
+							ac diam sit anet.
+						</p>
+							</div>
+							<div class="extra-information">								  
+									<div class="iconplus">
+									    <a href="#"><i class="plus"></i></a>
+									</div>
+								<div class="clearfix"></div>
+							</div>
+		                </div>
+					</div>		
+					<div class="portfolio icon mix_all"data-cat="icon" style="display: inline-block; opacity: 1;">
+							<img src="images/blog-2.jpg" class="img-responsive" alt="" />
+                    </div>				
+					<div class="portfolio icon mix_all"data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-text col-md-2">
+                            <div class="portfolio-top-text">						
+										<h3>Great party we have there</h3>
+						<h4>Published by: John Doe</h4>
+						<p>Donec sollicitudin molestie male
+							suada. Curabitur aliquet quam id
+							dui posuere blandit. Nulla porttitor 
+							accumsan tincidunt. Quisque velit 
+							nisi, pretium ut lacinia in, elemena 
+							porttitor accumsan tincidunt. 
+							Quisque velit nid enim. Vestibulum 
+							ac diam sit anet.
+						</p>
+							</div>
+							<div class="extra-information">
+									<div class="iconplus">
+									    <a href="#"><i class="plus"></i></a>
+									</div>
+								<div class="clearfix"></div>
+							</div>
+		                </div>
+					</div>
+					<div class="portfolio app mix_all"data-cat="app" style="display: inline-block; opacity: 1;">	
+							<img src="images/blog-7.jpg" class="img-responsive" alt="" />
+					</div>
+					<div class="portfolio app mix_all"data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-text col-md-2">
+                            <div class="portfolio-top-text">						
+										<h3>Great party we have there</h3>
+						<h4>Published by: John Doe</h4>
+						<p>Donec sollicitudin molestie male
+							suada. Curabitur aliquet quam id
+							dui posuere blandit. Nulla porttitor 
+							accumsan tincidunt. Quisque velit 
+							nisi, pretium ut lacinia in, elemena 
+							porttitor accumsan tincidunt. 
+							Quisque velit nid enim. Vestibulum 
+							ac diam sit anet.
+						</p>
+							</div>
+							<div class="extra-information">
+									<div class="iconplus">
+									    <a href="#"><i class="plus"></i></a>
+									</div>
+								<div class="clearfix"></div>
+							</div>
+		                </div>
+					</div>			
+					<div class="portfolio card mix_all"data-cat="card" style="display: inline-block; opacity: 1;">	
+							<img src="images/blog-7.jpg" class="img-responsive" alt="" />
+					</div>	
+					<div class="portfolio card mix_all"data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-text col-md-2">
+                            <div class="portfolio-top-text">						
+										<h3>Great party we have there</h3>
+						<h4>Published by: John Doe</h4>
+						<p>Donec sollicitudin molestie male
+							suada. Curabitur aliquet quam id
+							dui posuere blandit. Nulla porttitor 
+							accumsan tincidunt. Quisque velit 
+							nisi, pretium ut lacinia in, elemena 
+							porttitor accumsan tincidunt. 
+							Quisque velit nid enim. Vestibulum 
+							ac diam sit anet.
+						</p>
+							</div>
+							<div class="extra-information">
+									<div class="iconplus">
+									    <a href="#"><i class="plus"></i></a>
+									</div>
+								<div class="clearfix"></div>
+							</div>
+		                </div>
+					</div>	
+					<div class="portfolio icon mix_all"data-cat="icon" style="display: inline-block; opacity: 1;">	
+							<img src="images/blog-4.jpg" class="img-responsive" alt="" />
+						</div>
+						<div class="portfolio icon mix_all"data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-text col-md-2">
+                            <div class="portfolio-top-text">						
+		<h3>Great party we have there</h3>
+						<h4>Published by: John Doe</h4>
+						<p>Donec sollicitudin molestie male
+							suada. Curabitur aliquet quam id
+							dui posuere blandit. Nulla porttitor 
+							accumsan tincidunt. Quisque velit 
+							nisi, pretium ut lacinia in, elemena 
+							porttitor accumsan tincidunt. 
+							Quisque velit nid enim. Vestibulum 
+							ac diam sit anet.
+						</p>
+							</div>
+							<div class="extra-information">
+									<div class="iconplus">
+									    <a href="#"><i class="plus"></i></a>
+									</div>
+								<div class="clearfix"></div>
+							</div>
+		                </div>
+					</div>
+					<div class="portfolio icon mix_all"data-cat="icon" style="display: inline-block; opacity: 1;">	
+							<img src="images/blog-4.jpg" class="img-responsive" alt="" />
+						</div>
+						<div class="portfolio icon mix_all"data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-text col-md-2">
+                            <div class="portfolio-top-text">						
+										<h3>Great party we have there</h3>
+						<h4>Published by: John Doe</h4>
+						<p>Donec sollicitudin molestie male
+							suada. Curabitur aliquet quam id
+							dui posuere blandit. Nulla porttitor 
+							accumsan tincidunt. Quisque velit 
+							nisi, pretium ut lacinia in, elemena 
+							porttitor accumsan tincidunt. 
+							Quisque velit nid enim. Vestibulum 
+							ac diam sit anet.
+						</p>
+							</div>
+							<div class="extra-information">
+								   <div class="iconplus">
+									    <a href="#"><i class="plus"></i></a>
+									</div>
+								<div class="clearfix"></div>
+							</div>
+		                </div>
+					</div>
+                  <div class="clearfix"></div>					
+				</div>
+		  <div class="clearfix"></div>						
+</div>
+</div>
+	 <div class="newsletter">
+	 	<div class="container">
+	 		<div class="letter">
+	 			<a href="#menus" class="scroll"><img src="images/down-arrow.png" class="img-responsive" alt=""/></a>
+	 			<h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+	 			<p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit. Nulla porttitor accumsan tinci
+					dunt. Quisque velit nisi, pretium ut lacinia in, elemena porttitor accumsan tincidun.
+				</p>
+				<form>
+					<input type="text" class="text" value="Your Mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Mail';}">
+					<input type="submit" value="Subscribe" />
+				</form>
+	 		</div>
+	 	</div>
+	 </div>
+	 <div class="clearfix"> </div>
+</div>
+<!--/blogs-->
+<!--clients-->
+	<div class="clients">
+			<div id="CUSTOMERS"class="customers">
+				<div class="container">
+			<h3>OUR CUSTOMERS</h3>
+			<p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit. Nulla porttitor accumsan tinci
+				dunt. Quisque velit nisi, pretium ut lacinia in, elemena porttitor accumsan tincidun.
+			</p>
+			<div class="grads">
+				<div class="col-md-2 grad">
+				<i class="icon1"></i>
+				</div>
+				<div class="col-md-2 grad">
+				<i class="icon2"></i>
+				</div>
+				<div class="col-md-2 grad">
+				<i class="icon3"></i>
+				</div>
+				<div class="col-md-2 grad">
+				<i class="icon4"></i>
+				</div>
+				<div class="col-md-2 grad">
+				<i class="icon5"></i>
+				</div>
+				<div class="col-md-2 grad">
+				<i class="icon6"></i>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<div class="testmonal">
+		<div class="container">
+			<h3>TESTIMONIALS</h3>
+			<p>"Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit. Nulla porttitor accumsan tincidunt. 
+				Quisque velit nisi, pretium ut lacinia in, elemena porttitor accumsan tincidunt. Quisque velit nisi."
+			</p>
+			<a href="#"><img src="images/line2.png" class="img-responsive" alt=""/></a>
+			<h4>John Doe</h4>
+		</div>
+	</div>
+</div>
+<!--/clients-->
+<!--contact-us-->
+<div id="CONTACT-US"class="contact-us">
+	<div id="menus" class="fell">
+		<div class="container">
+			<h3>FEEL FREE TO ASK US ANYTHING</h3>
+			<h4>CONTACT US</h4>
+			<a href="#"><img src="images/line.png" class="img-responsive" alt=""/></a>
+			<p>Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit. Nulla porttitor accumsan tinci
+				dunt. Quisque velit nisi, pretium ut lacinia in, elemena porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lac
+				inia in, elementum id enim. Vestibulum ac diam sit anet.
+			</p>
+				<div class="gards">
+				<div class="col-md-4 gard">
+				<u class="icon1"></u>
+				<h3>ADDRESSE</h3>
+				<h4>Awesome Street 234,NY</h4>
+				</div>
+				<div class="col-md-4 gard">
+				<u class="icon2"></u>
+				<h3>MAIL</h3>
+				<a href="#">articamail@mail.com</a>
+				</div>
+				<div class="col-md-4 gard">
+				<u class="icon3"></u>
+				<h3>PHONE</h3>
+				<h4>(000)123-456-789</h4>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="container">
+			 <form>
+			 <input type="text" class="text" value="Enter Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Name';}">
+			 <input type="text" class="text" value="Enter mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter mail';}">
+			 <input type="text" class="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
+			 <textarea onfocus="if(this.value == 'Enter Message Here') this.value='';" onblur="if(this.value == '') this.value='Enter Message';" >Enter Message Here</textarea>	
+			 <div class="clearfix"></div>
+			 <input type="submit" value="SEND MESSAGE">
+		 </form>
+		</div>
+	</div>
+</div>
+<!--/conatct-us-->
+<!--/content-part-->
+<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<div class="bottom-logo">
+				<a href="#"><img src="images/logo-d.png" class="img-responsive" alt=""/></a>
+			</div>
+			<div class="copy-rights">
+				 <p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+			</div>
+		</div>
+	</div>
+<!--/footer-->
+<script type="text/javascript">
+		$(document).ready(function() {
+				/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+				*/
+		$().UItoTop({ easingType: 'easeOutQuart' });
+});
+</script>
+<a href="#to-top" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"> </span></a>
+
+</body>
+</html>

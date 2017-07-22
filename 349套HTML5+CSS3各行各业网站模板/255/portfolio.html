@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Portfolio</title>
+<!--Bootstrap link-->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--Bootstrap link end-->
+<!--CSS stylesheet-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" />
+<!--CSS stylesheet end-->
+ <!--Custom Theme files-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</script>
+<!--Google fonts link start-->
+<link href='http://fonts.useso.com/css?family=Roboto:500,900,100,300,700,100italic,400|Roboto+Condensed:300italic,400,300,700|Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'>
+<!-- Google fonts ends -->
+<script src="js/jquery.min.js"></script>
+ <!--start-smoth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+		
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+<!--FlexSlider-->
+<script defer src="js/jquery.flexslider.js"></script>
+<script src="js/modernizr.js"></script>
+<script type="text/javascript">
+        $(function(){
+			      SyntaxHighlighter.all();
+			    });
+			    $(window).load(function(){
+			      $('.flexslider').flexslider({
+			        animation: "slide",
+			        start: function(slider){
+			          $('body').removeClass('loading');
+			        }
+			      });
+			    });
+			  </script>
+<!--Header starts here-->
+<!--Navigation from Right To Left-->
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script src="js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+		<script type="text/javascript" id="sourcecode">
+			$(function()
+			{
+				$('.scroll-pane').jScrollPane();
+			});
+		</script>
+</head>
+<body>
+	<!--Header Starts Here-->
+	<div class="header" id="home">
+		<div class="top-header">
+			<div class="container">
+					<div class="logo">
+						 <a href="index.html"><img src="images/logo.png" alt=""></a>
+					</div>
+					<div class="menu-bg">
+						<div class="menu">
+							<ul class="menu-top">
+								<li><div class="main">
+											<section>
+												<button id="showRight" class="navig"></button>
+											</section>
+									</div></li>
+							</ul>	
+						</div>
+					</div>
+			</div>
+			<div class="cbp-spmenu-push">
+							<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+								<h3>Menu</h3>
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="about.html">About</a></li>
+									<li class="active"><a href="services.html">Services</a></li>
+									<li><a href="portfolio.html">Portfolio</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									<div class="clearfix"> </div>
+								</ul>
+							</nav>
+						</div> 
+				<script src="js/classie.js"></script>
+						<script>
+							var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+								showRight = document.getElementById( 'showRight' ),
+								body = document.body;
+				
+							showRight.onclick = function() {
+								classie.toggle( this, 'active' );
+								classie.toggle( menuRight, 'cbp-spmenu-open' );
+								disableOther( 'showRight' );
+							};
+				
+							function disableOther( button ) {
+								if( button !== 'showRight' ) {
+									classie.toggle( showRight, 'disabled' );
+								}
+							}
+						</script>
+						<!--Navigation from Right To Left->
+						<div class="clearfix"> </div>
+				</div>
+			<div class="clearfix"> </div>
+	 </div>
+		<!--header ends here-->
+		<!--Banner ends here-->
+		 <div class="Error-found">
+			 	 <div class="error-page">
+						<div class="error-page text-center">
+							<h3>4<span>0</span>4</h3>
+							<p>Sorry Page Not Found</p>
+							<a class="home-btn" href="index.html">back To home</a>
+						</div>
+				</div>
+			</div>
+		<!--Contents start here-->
+			 <div id="contact" class="contact">
+					<div class="container">
+						<div class="contact-main">
+							<div class="col-md-4 contect-text footer-grid1">
+								<div class="Address">
+						     			<h4>Address</h4>
+						     			<p>Building name, some street 0078, Block name,Your city name, State, Country</p>
+								       	<ul class="soc_icons">
+											<li><i class="icon_1"> </i><span>888 555 7777</span></li>
+											<li><i class="icon_2"> </i><span><a href="mailto:info@example.com">info@sitename.com</a></span></li>
+										</ul>
+
+					 			</div>
+					 			<div class="contact-icons">
+									<ul>
+										<li><a class="twitter" href="#"><span> </span></a></li>
+										<li><a class="fb" href="#"><span> </span></a></li>
+										<li><a class="in" href="#"><span> </span></a></li>
+										<div class="clearfix"> </div>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-8 contect-text">		
+							  		<form method="post" action="#">
+										    	<input type="text" class="textbox" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name ';}">
+										    	<input type="text" class="textbox" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Email';}">
+													<div class="clear"> </div>
+											    <div>
+											    	<textarea value="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message ';}">Message</textarea>
+											    </div>	
+											   <div class="submit"> 
+											    	<input type="submit" value="Submit " />
+								              </div>
+										</form>
+ 								</div>	
+ 								<div class="clearfix"> </div>
+ 							</div>	
+						</div>
+					</div>
+					<!--start-footer-->
+				<div class="footer">
+						<div class="container">
+							<div class="copy-right">
+							<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://h2design.taobao.com/">氢设计</a></p>
+
+							</div>	
+						</div>							
+					</div>
+					<!--End-footer-->
+					<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+					</script>-->
+					<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+</body>
+</html>

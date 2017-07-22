@@ -1,0 +1,409 @@
+
+
+#slide-con {
+  width: 637px;
+  height:488px;
+  margin: 0 auto 0;
+  padding:10px 10px;
+  border: 1px solid#737171;
+}
+
+/* line 72, scss/index.scss */
+
+#slide-con #slide-main {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/* line 79, scss/index.scss */
+
+#slide-con #slide-hidden {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  display: none;
+  z-index: -1;
+}
+
+/* line 87, scss/index.scss */
+#slide-con #thumbnails {
+width: 616px;
+height: 104px;
+z-index: 10;
+margin-top: 361px;
+background: rgba(130, 130, 130, 0.6);
+-moz-transition: all 0.5s ease;
+-webkit-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+opacity: 0.6;
+}
+
+/* line 97, scss/index.scss */
+
+#slide-con #thumbnails:hover {
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+
+/* line 102, scss/index.scss */
+
+#slide-con #thumbnails #thumbcon {
+  width:500px;
+  height: 120px;
+  display: inline-block;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
+}
+
+/* line 111, scss/index.scss */
+
+#slide-con #thumbnails #thumbcon .thumb {
+  width: 176px;
+height: auto;
+display: inline;
+margin: 0px 3px;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+/* line 121, scss/index.scss */
+
+#slide-con #thumbnails #thumbcon .thumb:hover {
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 1;
+  -moz-box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 2px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 2px;
+  -o-box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 2px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 2px;
+}
+
+/* line 128, scss/index.scss */
+
+#slide-con #thumbnails #thumbcon .selected {
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 1;
+  -moz-box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 2px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 2px;
+  -o-box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 2px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 2px;
+}
+
+/* line 135, scss/index.scss */
+
+#slide-con #thumbnails .ui-button {
+  width: 16px;
+  height: 16px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(170, 170, 170, 0.85)), color-stop(100%, rgba(215, 215, 215, 0.85)));
+  background-image: -webkit-linear-gradient(top, rgba(170, 170, 170, 0.85) 0%, rgba(215, 215, 215, 0.85) 100%);
+  background-image: -moz-linear-gradient(top, rgba(170, 170, 170, 0.85) 0%, rgba(215, 215, 215, 0.85) 100%);
+  background-image: -o-linear-gradient(top, rgba(170, 170, 170, 0.85) 0%, rgba(215, 215, 215, 0.85) 100%);
+  background-image: -ms-linear-gradient(top, rgba(170, 170, 170, 0.85) 0%, rgba(215, 215, 215, 0.85) 100%);
+  background-image: linear-gradient(top, rgba(170, 170, 170, 0.85) 0%, rgba(215, 215, 215, 0.85) 100%);
+  padding: 10px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 2px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 2px;
+  -o-box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 2px;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 2px;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* line 145, scss/index.scss */
+
+#slide-con #thumbnails .ui-button:hover {
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 1;
+  -moz-box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 3px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 3px;
+  -o-box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 3px;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 3px;
+}
+
+/* line 152, scss/index.scss */
+
+#slide-con #thumbnails #left-arrow {
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  float: left;
+}
+
+/* line 161, scss/index.scss */
+
+#slide-con #thumbnails #right-arrow {
+ margin-top: 49px;
+margin-right: 10px;
+margin-left: 46px;
+display: inline-block;
+float: left;
+}
+
+/* line 170, scss/index.scss */
+
+#slide-con #thumbnails #playtoggle {
+  float: right;
+  margin-top: -40px;
+  margin-right: 10px;
+}
+
+/* line 176, scss/index.scss */
+
+#slide-con #thumbnails .icon {
+  display: inline-block;
+  width:11px;
+  height: 32px;
+  background-image: url(../images/sprites.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 22;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin: -7px -7px;
+}
+
+/* line 187, scss/index.scss */
+
+#slide-con #thumbnails .icon-play {
+  background-position: 0 0;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* line 191, scss/index.scss */
+
+#slide-con #thumbnails .icon-pause {
+  background-position: -32px 0;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* line 195, scss/index.scss */
+
+#slide-con #thumbnails .icon-arrow-right {
+  background-position: -9px 0;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* line 199, scss/index.scss */
+
+#slide-con #thumbnails .icon-arrow-left {
+  background-position: 3px 0;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+@media(max-width:1024px){
+  section#slide-main img{
+    width:100%;
+  }
+  #slide-con {
+    width: 542px!important;
+    height: 446px;
+  }
+  #slide-con #thumbnails {
+    width: 520px!important;
+    margin-top: 319px;
+  }
+  #slide-con #thumbnails #thumbcon {
+    width: 411px;
+  }
+}
+@media(max-width:768px){
+  section#slide-main img{
+    width:530px;
+  }
+  #slide-con {
+  width: 552px!important;
+  height: 446px;
+  }
+  #slide-con #thumbnails {
+  width: 530px!important;
+  margin-top: 319px;
+  }
+  #slide-con #thumbnails #thumbcon {
+    width: 420px;
+  }
+  #slide-con #thumbnails #thumbcon .thumb {
+    width: 169px;
+    height: auto;
+    display: inline;
+    margin: 0px 4px;
+  }
+}
+@media(max-width:640px){
+  section#slide-main img{
+    width:380px;
+  }
+  #slide-con {
+  width: 401px!important;
+  height:356px;
+  }
+  #slide-con #thumbnails {
+  width:380px!important;
+  margin-top:230px;
+  }
+  #slide-con #thumbnails #thumbcon .thumb {
+    width: 117px;
+  height: auto;
+  display: inline;
+  margin: 18px 3px;
+  }
+  #slide-con #thumbnails #thumbcon {
+  width: 277px;
+  }
+  #slide-con #thumbnails #right-arrow {
+  margin-top: 49px;
+  margin-right: -2px;
+  margin-left: 26px;
+  display: inline-block;
+  float: left;
+  }
+
+}
+@media(max-width:320px){
+  #slide-con {
+  width: 246px!important;
+  height: 356px;
+  }
+   section#slide-main img{
+    width:226px;
+  }
+  #slide-con #thumbnails {
+    width: 226px!important;
+    margin-top: 138px;
+  }
+  #slide-con #thumbnails #thumbcon {
+    width: 132px;
+  }
+  .new-section h2 {
+  font-size: 1.2em;
+  }
+  .new-section {
+  padding-top: 0em;
+  }
+  #slide-con {
+    width: 246px!important;
+    height: 261px;
+  }
+  .news-left-grid-pic {
+  width: 100%;
+  }
+  div#testimonial h3 {
+  margin: 4% 0;
+  font-size: 1.3em;
+  }
+  .news-left-grid-info {
+  float: right;
+  width: 100%;
+  }
+  .news-left-grid-info {
+  padding: 2em 2em 0.5em 2em;
+  }
+  .top-btn {
+    margin-top: 1em;
+  }
+  .top-grid-text label.line1 {
+  width: 29%;
+  height: 1px;
+  top: 59%;
+  left: 7%;
+  }
+  .news-left-grid-info label {
+  width: 29%;
+  top: 66%;
+  left: 7%;
+  height: 1px;
+  }
+  .news-right-grid-bottom:before {
+  content: url(../images/top-arrow.png) no-repeat 0px 0px;
+  display: none;
+  }
+  .top-btn.three {
+  margin-top: -3.5em;
+  }
+  .news-grids {
+    margin-top: 1em;
+  }
+  .news-right-grid-bottom label.line2 {
+  width: 27%;
+  top: 55%;
+  left: 13%;
+  height: 1px;
+  }
+  .curl-bottom-right1 {
+  padding: 0.6em 0.6em;
+  font-size: 1.1em;
+  width: 40%;
+  }
+  .col-md-3.testmonial-img img {
+  width: 52%;
+  border: 4px solid#66ce5b;
+  }
+  .port-section h3 {
+  font-size: 1.2em;
+  }
+  .subscribe-section p {
+  font-size: 1.1em;
+  }
+  .donate-top span {
+  font-size: 0.85em;
+  }
+  .donate-top h3 {
+  font-size: 1em;
+  line-height: 1.8em;
+  }
+  .donate-top input[type="text"] {
+  width: 34%;
+  padding: 12px;
+  font-size: 12px;
+  }
+  select {
+  width: 40%;
+  padding: 8px;
+  }
+  .donate-top input[type="submit"] {
+  font-size: 1em;
+  padding: 0.6em 1em;
+  width: 49%;
+  margin-left: 26%;
+  }
+}
